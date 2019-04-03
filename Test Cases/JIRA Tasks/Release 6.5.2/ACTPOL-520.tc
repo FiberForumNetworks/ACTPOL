@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>When I am clicking search titles,it is not showing any action.
+
+Test Plan::
+Step 1: Go to Opposing: Arrestanten Select new
+Step 2: Go to Onder Supervisie and click Search titles (Auto complete) 
+Step 3: Unable to click the Auto complete</description>
+   <name>ACTPOL-520</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>41335357-40f1-4907-b433-9524d8f378d8</testCaseGuid>
+</TestCaseEntity>

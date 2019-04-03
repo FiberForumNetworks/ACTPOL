@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Assistentie
+Step 2: Enter text Adres
+Step 3: Click Search
+Step 4: Search results should show assistentie that has entered Assistentie and adres</description>
+   <name>Algemene Zoekopdracht - Select type Assistentie-Set text Assistentie AND Set text Adres</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c5077b18-4973-4943-a51d-7f8c75369e82</testCaseGuid>
+</TestCaseEntity>

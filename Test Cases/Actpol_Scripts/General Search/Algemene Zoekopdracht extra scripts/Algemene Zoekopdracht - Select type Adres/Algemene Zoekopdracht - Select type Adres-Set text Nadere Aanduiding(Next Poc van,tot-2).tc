@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Adres
+Step 2:Set text Nadere Aanduiding
+Step 3:Set text Next Poc ,Next Poc tot
+Step 4:Search results is an Set text Nadere Aanduiding and Set text Next Poc ,Next Poc tot</description>
+   <name>Algemene Zoekopdracht - Select type Adres-Set text Nadere Aanduiding(Next Poc van,tot-2)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>25488ef9-4ca1-40bb-b7e5-5238037e04c5</testCaseGuid>
+</TestCaseEntity>

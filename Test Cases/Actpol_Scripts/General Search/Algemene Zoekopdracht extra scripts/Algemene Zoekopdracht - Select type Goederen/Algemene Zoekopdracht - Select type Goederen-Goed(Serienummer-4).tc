@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Goederen
+Step 2: Set text Goed
+Step 3: Set text Merk
+Step 4: Set text Model/Type
+Step 5: Set text Serienummer
+Step 6: Search results is an Goed,Merk,Model/Type and Serienummer</description>
+   <name>Algemene Zoekopdracht - Select type Goederen-Goed(Serienummer-4)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e12c9f12-f816-411a-b87e-d56744bba13f</testCaseGuid>
+</TestCaseEntity>

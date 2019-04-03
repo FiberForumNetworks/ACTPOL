@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Enter an new Patrouille record fill all possible fields and tabs</description>
+   <name>Patrouille - view</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a7a999d5-e881-458d-b36e-044baeebd8b9</testCaseGuid>
+</TestCaseEntity>

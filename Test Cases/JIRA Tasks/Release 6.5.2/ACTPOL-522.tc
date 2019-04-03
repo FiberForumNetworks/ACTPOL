@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>All tabs Not showing the data
+
+Test Plan::
+Step 1: Go to Geavanceerd Zoekopdracht Select type alle
+Step 2: Go to Zoeken Text “test” 
+Step 3: Go to filter 
+Step 4: See tabs Onderzoek, Entiteiten,Andere  are not showing data</description>
+   <name>ACTPOL-522</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1423fa00-c173-499e-a9e9-b5a453912c5e</testCaseGuid>
+</TestCaseEntity>

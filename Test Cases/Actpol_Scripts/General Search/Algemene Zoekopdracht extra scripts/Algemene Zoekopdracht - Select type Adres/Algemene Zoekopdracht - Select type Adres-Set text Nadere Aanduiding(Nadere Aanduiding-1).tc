@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Adres
+Step 2:Set text Nadere Aanduiding
+Step 3:Search results is an Set text Nadere Aanduiding</description>
+   <name>Algemene Zoekopdracht - Select type Adres-Set text Nadere Aanduiding(Nadere Aanduiding-1)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>36e50db9-dd42-4a6a-b66a-f2ba78008e9d</testCaseGuid>
+</TestCaseEntity>

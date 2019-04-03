@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Assistentie
+Step 2: Set text Assistentie
+Step 3: Select Adres
+Step 4: Select Klasse
+Step 5: Select Status
+Step 6: Click poging and search
+Step 7: Search results is an Adres,Klasse,Status and poging</description>
+   <name>Algemene Zoekopdracht - Select type Assistentie-Set text Assistentie,Select Adres,Select Klasse,Select Status and click poging</name>
+   <tag>Algemene Zoekopdracht</tag>
+   <comment></comment>
+   <testCaseGuid>fe2c0cb4-ee11-47b7-9c8a-7b6de1ad0811</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Vaartuig
+Step 2: Set text Type Vartuig
+Step 3: Search results is an Type Vartuig</description>
+   <name>Algemene Zoekopdracht - Select type Vaartuig-Type Vartuig(Type Vartuig-1)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>42aabb71-8c03-4fac-8001-d62367bf0275</testCaseGuid>
+</TestCaseEntity>

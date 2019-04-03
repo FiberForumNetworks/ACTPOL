@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Assistentie
+Step 2: Set text Next Poc van time and tot time
+Step 3: Search results is an Next Poc van time and tot time</description>
+   <name>Algemene Zoekopdracht - Select type Assistentie-Set text Next Poc van and Next Poc tot(Next Poc van time and tot time-2)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>02dd554b-48d9-4f66-81e2-434ced3a596f</testCaseGuid>
+</TestCaseEntity>

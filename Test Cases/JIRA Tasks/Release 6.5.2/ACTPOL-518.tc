@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>When I am generating pdf file. It is not showing any action.
+
+Test Plan::
+Step 1: Go to Generiek: Geweld/Disciplinaire Rapport Select optional user
+Step 2: Click the pdf icon
+Step 3: It’s not generating the pdf report as per selected user!</description>
+   <name>ACTPOL-518</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e9c8495a-39a1-4d1d-8f2e-59d4b1a65318</testCaseGuid>
+</TestCaseEntity>

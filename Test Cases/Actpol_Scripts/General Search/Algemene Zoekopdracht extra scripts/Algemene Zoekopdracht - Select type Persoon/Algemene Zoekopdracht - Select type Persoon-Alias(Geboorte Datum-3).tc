@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Persoon
+Step 2: Set text Alias
+Step 3: Set text Leeftijd
+Step 4: Set text Geboorte Datum
+Step 5: Search results is an Alias,Leeftijd and Geboorte Datum</description>
+   <name>Algemene Zoekopdracht - Select type Persoon-Alias(Geboorte Datum-3)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d87318cb-0649-4ad5-ab70-08ca66c8f1ed</testCaseGuid>
+</TestCaseEntity>

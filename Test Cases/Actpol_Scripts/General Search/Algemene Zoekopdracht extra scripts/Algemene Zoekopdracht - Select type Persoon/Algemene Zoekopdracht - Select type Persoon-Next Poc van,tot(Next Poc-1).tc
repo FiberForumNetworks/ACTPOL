@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Persoon
+Step 2: Set text Next Poc van,tot
+Step 3: Search results is an Next Poc van,tot</description>
+   <name>Algemene Zoekopdracht - Select type Persoon-Next Poc van,tot(Next Poc-1)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b00403fb-d2e7-48bc-8319-3ac782fe2c46</testCaseGuid>
+</TestCaseEntity>

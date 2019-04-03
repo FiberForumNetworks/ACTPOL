@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Assistentie
+Step 2: Select Status
+Step 3: Click Poging and Relationeel geweld
+Step 4: Select Aangewezen aan
+Step 5: Set text Titel
+Step 6:Search results is an Select status ,select Aangewezen aan,Titel and control</description>
+   <name>Algemene Zoekopdracht - Select type Assistentie-Select Status(Control-4)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>027c7b91-b9a6-41a8-bdd0-c073b2ef78c3</testCaseGuid>
+</TestCaseEntity>

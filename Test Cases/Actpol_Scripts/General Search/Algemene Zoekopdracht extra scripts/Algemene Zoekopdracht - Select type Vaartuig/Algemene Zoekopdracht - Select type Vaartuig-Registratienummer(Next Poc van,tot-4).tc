@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Vaartuig
+Step 2: Set text Registratienummer
+Step 3: Set text Last Poc
+Step 4: Set text Next Poc
+Step 5: Set text Next Poc van,tot
+Step 6: Search results is an Registratienummer,Last poc ,Next poc and Next Poc van,tot</description>
+   <name>Algemene Zoekopdracht - Select type Vaartuig-Registratienummer(Next Poc van,tot-4)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>296f0a67-729c-4294-949c-15c36a6c6047</testCaseGuid>
+</TestCaseEntity>

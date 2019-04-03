@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Voertuig
+Step 2:Set text Merk
+Step 3:Select Model
+Step 4:Set text Motornummer
+Step 5:Search results is an Merk,Model and Motornummer(Merk and model independence drop downs first fill merk after fill model)</description>
+   <name>Algemene Zoekopdracht - Select type Voertuig-Merk,Model(Motornummer-2)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0765709a-c653-426d-9a80-81e4d155edd7</testCaseGuid>
+</TestCaseEntity>

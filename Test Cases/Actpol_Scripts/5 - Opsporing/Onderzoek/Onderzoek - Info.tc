@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Add Info Aanvraag and Info Ontvangen fill in all fields</description>
+   <name>Onderzoek - Info</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fa871512-e113-4f59-943c-fb1eb352c65a</testCaseGuid>
+</TestCaseEntity>

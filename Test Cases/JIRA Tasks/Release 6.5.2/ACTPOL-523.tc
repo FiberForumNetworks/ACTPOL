@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>All fields should be visible current format
+
+Test Plan::
+
+Step 1: Go to Opsporing: Onderzoek Select Optional user
+Step 2: Go to Entiteiten tab 
+Step 3: Click new  Entiteiten
+Step 4: Select roll process type “persoon”
+Step 5: fill the Personalia details 
+Step 6: go to Rol/Proces select type Vreemdeling</description>
+   <name>ACTPOL-523</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5c281484-21a5-455c-85fc-a031e9fc7d9d</testCaseGuid>
+</TestCaseEntity>

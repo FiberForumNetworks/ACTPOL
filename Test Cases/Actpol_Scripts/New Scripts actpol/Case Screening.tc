@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Case Screening</name>
+   <tag></tag>
+   <comment>this record will go into opsporing tactiek</comment>
+   <testCaseGuid>0b0e48d6-19f6-4c5f-b0db-b009d54afe48</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Persoon
+Step 2: Set text Alias
+Step 3: Set text Leeftijd
+Step 4: Set text Geboorte Datum
+Step 5: Select Rol/Proces Type
+Step 6: Set text Next Poc van,tot
+Step 7: Search results is an Alias,Geboorte Datum,Rol/Proces Type and Next Poc van,tot</description>
+   <name>Algemene Zoekopdracht - Select type Persoon-Alias(Next Poc-5)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ab8f93b8-5609-41f1-b962-b65f6e240458</testCaseGuid>
+</TestCaseEntity>

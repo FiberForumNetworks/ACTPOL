@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>EA New user editing</description>
+   <name>Editing a newly registered case - all mixing code</name>
+   <tag>EA</tag>
+   <comment></comment>
+   <testCaseGuid>71616bd3-4254-43ee-8cd2-c843856e7647</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Voertuig
+Step 2: Select kleur
+Step 3: Set text Next Poc van,tot
+Step 4: Search results is an kleur and Next Poc van,tot</description>
+   <name>Algemene Zoekopdracht - Select type Voertuig-kleur(Next Poc van,tot-2)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>23b99980-c696-4653-960d-423b910e92c5</testCaseGuid>
+</TestCaseEntity>

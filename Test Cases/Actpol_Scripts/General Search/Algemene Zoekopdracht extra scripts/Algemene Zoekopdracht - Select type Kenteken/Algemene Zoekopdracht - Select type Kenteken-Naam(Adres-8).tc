@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Kenteken
+Step 2; Set text Naam
+Step 3: Set text Model/Type
+Step 4: Set text Kenteken
+Step 5: Set text Bouwjaar
+Step 6: Set text Chassisnummer
+Step 7: Set text Kleur
+Step 8: Set text Merk
+Step 9: Set text Adres
+Step 10: Search results is an Model/Type,Kenteken,Bouwjaar,Chassisnummer,Kleur,Merk and Adres</description>
+   <name>Algemene Zoekopdracht - Select type Kenteken-Naam(Adres-8)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0562b7ab-9286-421d-b3a2-6893b434ea1c</testCaseGuid>
+</TestCaseEntity>

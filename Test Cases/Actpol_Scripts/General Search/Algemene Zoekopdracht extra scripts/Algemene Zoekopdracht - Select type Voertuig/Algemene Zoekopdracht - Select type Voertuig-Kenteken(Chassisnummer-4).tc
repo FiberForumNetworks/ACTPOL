@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Voertuig
+Step 2:Set text Kenteken
+Step 3:Set text Merk
+Step 4:Select Model
+Step 5:Set text Motornummer
+Step 6:Set text Chassisnummer
+Step 7:Search results is an Kenteken,Merk,Model,Motornummer and Step 3:Set text Chassisnummer(Merk and model independence drop downs first fill merk after fill model)</description>
+   <name>Algemene Zoekopdracht - Select type Voertuig-Kenteken(Chassisnummer-4)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d30eb7f2-c1ba-4d14-8b4d-55660d4da627</testCaseGuid>
+</TestCaseEntity>

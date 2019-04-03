@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Kenteken
+Step 2: Set text Model Type
+Step 3: Search results is an Model Type</description>
+   <name>Algemene Zoekopdracht - Select type Kenteken-Model Type(Model Type-1)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9af97cb3-39ba-4bab-89d4-34242ed077c1</testCaseGuid>
+</TestCaseEntity>

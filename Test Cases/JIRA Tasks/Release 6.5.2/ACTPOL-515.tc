@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>When I am entering unit required fields, it is not saving data.
+
+Test plan::
+
+Step 1: Go to Noodhulp: Onderhoud van Patrouilles Select optional user
+Step 2: Click new Unit
+Step 3: Select unit type “POLITIE”
+Step 4: Select Wijkteam type “NOG EEN TEST” and click save i am unable to save the data</description>
+   <name>ACTPOL-515</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>be73e425-6547-44f4-917a-96bb70575c01</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Voertuig
+Step 2:Set text Motornummer
+Step 3:Search results is an Motornummer</description>
+   <name>Algemene Zoekopdracht - Select type Voertuig-Motornummer(Motornummer-1)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2dd6433d-1caa-42bd-93c1-122dd2166c1a</testCaseGuid>
+</TestCaseEntity>

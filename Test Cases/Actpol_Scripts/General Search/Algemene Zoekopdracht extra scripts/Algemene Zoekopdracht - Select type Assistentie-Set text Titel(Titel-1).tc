@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Assistentie
+Step 2: Set text Titel
+Step 3: Search results is an Titel</description>
+   <name>Algemene Zoekopdracht - Select type Assistentie-Set text Titel(Titel-1)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d93ddb1a-bd4b-4a97-b56a-acce61dba690</testCaseGuid>
+</TestCaseEntity>

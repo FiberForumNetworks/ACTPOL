@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description>ifrm107</description>
+   <name>leftiframe</name>
+   <tag></tag>
+   <elementGuidId>675f4f18-50a8-41ed-b97c-3b8cd3da4f67</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;ifrm107&quot;]</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#ifrm107</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>BASIC</selectorMethod>
+   <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;ifrm107&quot;]</value>
+   </webElementProperties>
+</WebElementEntity>

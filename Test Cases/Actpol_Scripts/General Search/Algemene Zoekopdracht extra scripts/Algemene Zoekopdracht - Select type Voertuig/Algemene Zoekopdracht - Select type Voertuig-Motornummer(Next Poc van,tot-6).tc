@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Voertuig
+Step 2: Set text Motornummer
+Step 3: Set text Chassisnummer
+Step 4: Set text Bouwjaar van,tot
+Step 5: Select Status
+Step 6: Select kleur
+Step 7: Set text Next Poc van,tot
+Step 8: Search results is an Chassisnummer,Bouwjaar van,tot,Status,kleur and Next Poc van,tot</description>
+   <name>Algemene Zoekopdracht - Select type Voertuig-Motornummer(Next Poc van,tot-6)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>dc509cd0-c202-47be-af37-74d0a680c13d</testCaseGuid>
+</TestCaseEntity>

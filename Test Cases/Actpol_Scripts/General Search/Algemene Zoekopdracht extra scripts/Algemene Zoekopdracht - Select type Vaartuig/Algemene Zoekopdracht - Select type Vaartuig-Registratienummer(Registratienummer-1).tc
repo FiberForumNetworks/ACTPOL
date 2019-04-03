@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Vaartuig
+Step 2: Set text Registratienummer
+Step 3: Search results is an Registratienummer</description>
+   <name>Algemene Zoekopdracht - Select type Vaartuig-Registratienummer(Registratienummer-1)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4f387330-7144-43d1-96e9-f3a573941136</testCaseGuid>
+</TestCaseEntity>

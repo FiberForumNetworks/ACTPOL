@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>EA New user editing</description>
+   <name>Editing a newly registered case - Afdoening all dropdowns coverd</name>
+   <tag>EA</tag>
+   <comment></comment>
+   <testCaseGuid>61138cc8-4fbb-4c95-bd40-9f46345f3bc1</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Create new Dienstovername</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>96196ac5-de96-486c-8466-90cc44a8fa20</testCaseGuid>
+   <variable>
+      <defaultValue>'20/02/2019'</defaultValue>
+      <description></description>
+      <id>17c3657f-9cc7-46a1-a17f-f41c0d856a35</id>
+      <masked>false</masked>
+      <name>variable</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Go to Genereriek - Dienstovername/wachtovername
+Step 2: Add a new record and add in tab Journaal new record with text &quot;Test441&quot;
+Step 3: Click on save
+Step 4: In the left column search module in search field Journaal add criteria Test441.
+Step 5: Record entered should show in the search results.</description>
+   <name>Navigation Generiek - dienstovername wachtovername - tab Journaal</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4c37b0ed-71cf-4044-9bb2-5ba982ef563e</testCaseGuid>
+</TestCaseEntity>

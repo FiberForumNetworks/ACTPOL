@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Grid not showing data on Persoon
+
+Test Plan::
+Step 1: Go to Home: Algemene Zoekopdracht Select Type Persoon
+Step 2: Go to roll process type “AANGEVER”
+Step 2: Go to Next poc van,tot fill the data  
+Step 3: Click the filter</description>
+   <name>ACTPOL-527</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f474c4c9-b599-495c-a04e-0efb126844d3</testCaseGuid>
+</TestCaseEntity>

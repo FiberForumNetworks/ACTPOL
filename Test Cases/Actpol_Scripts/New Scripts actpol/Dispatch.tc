@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Generiek: Dienstovername
+Setp 2: Select new Dienstovername
+Setp 3: fill the required fields
+Step 4: Than select 1 - Generiek: Assistenties
+Step 5: Select existing user
+Step 6: Click roll process</description>
+   <name>Dispatch</name>
+   <tag></tag>
+   <comment>creating Assistenties module</comment>
+   <testCaseGuid>2815b16d-8516-438f-af09-2f81b376b10c</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Kenteken
+Step 2: Set text Bouwjaar
+Step 3: Search results is an Bouwjaar</description>
+   <name>Algemene Zoekopdracht - Select type Kenteken-Bouwjaar(Bouwjaar-1)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>112b59f4-def8-4ad9-b4e1-84b8dad4d411</testCaseGuid>
+</TestCaseEntity>

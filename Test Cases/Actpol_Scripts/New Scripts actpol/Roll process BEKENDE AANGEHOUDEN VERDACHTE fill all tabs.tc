@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Roll process BEKENDE AANGEHOUDEN VERDACHTE fill all tabs</name>
+   <tag></tag>
+   <comment>BEKENDE/AANGEHOUDEN VERDACHTE  start
+Voorgeleiding/IVS
+Vaartuig
+Vaartuig
+Goederen
+Wapen
+Getuige
+Mede bekende/aangehouden verdachte</comment>
+   <testCaseGuid>5969c06d-65a6-4c40-be4e-bc0fe7f9fb80</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>1. go to Generiek and select option Assistentie.
+2. Open an exisiting assistentie, add a new rol/proces aangifte.
+3. Select a person that has the field Beroep entered.
+4. This field should populate in the aangifte proces.
+4. Save rol/proces
+5. When reopening the rol/procesBeroep this field should be visible with the value entered</description>
+   <name>Navigation Generiek - open an exisiting assistentie, add a new rol proces aangifte</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b28f5024-2f4d-4948-92e6-ac61461f3735</testCaseGuid>
+</TestCaseEntity>

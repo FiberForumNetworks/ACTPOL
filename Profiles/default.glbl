@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalVariableEntities>
+   <description></description>
+   <name>default</name>
+   <tag></tag>
+   <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description>URL of the Application Under Test (AUT)</description>
+      <initValue>'http://10.20.10.7:8203/actprmdev/jprm154/nxmenu.pgm?docnum=551'</initValue>
+      <name>URL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>A valid account used during the test</description>
+      <initValue>'kolanu13'</initValue>
+      <name>password</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>The password that has been encrypted used during the test</description>
+      <initValue>'ZL79PUUVa9nhd4g3NLBVYw=='</initValue>
+      <name>encrypted_password</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>A valid account used during the test</description>
+      <initValue>'sasi'</initValue>
+      <name>username</name>
+   </GlobalVariableEntity>
+</GlobalVariableEntities>

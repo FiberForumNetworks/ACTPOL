@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Assistentie
+Step 2: Set text Assistentie
+Step 3: Select Klasse
+Step 4: Select Status
+Step 5: Click Relationeel geweld and search
+Step 6: Search results is an Klasse,Status ,Poging and Relationeel geweld</description>
+   <name>Algemene Zoekopdracht - Select type Assistentie-Set text Assistentie,Select Klasse,Select Status ,Click poging and Relationeel geweld</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>df1f47f6-6608-4d3a-a30d-3ea68545c410</testCaseGuid>
+</TestCaseEntity>

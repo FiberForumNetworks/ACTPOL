@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Voertuig
+Step 2: Select Status
+Step 3: Select kleur
+Step 4: Search results is an Staus and kleur</description>
+   <name>Algemene Zoekopdracht - Select type Voertuig-Status(kleur-2)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>51766809-d8b9-4e00-a930-b43281790510</testCaseGuid>
+</TestCaseEntity>

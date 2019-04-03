@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Adres
+Step 2:Select the Adres
+Step 2:Search results is an Select Adres</description>
+   <name>Algemene Zoekopdracht - Select type Adres-Select Adres(Adres-1)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d834e191-f251-4301-9806-1e6eff280c68</testCaseGuid>
+</TestCaseEntity>

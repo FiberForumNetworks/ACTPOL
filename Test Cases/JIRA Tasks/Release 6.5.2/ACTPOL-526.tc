@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Filter does not work on voertuig(status,Bouwjaar).
+
+Test paln ::
+
+Step 1: Go to Home: Algemene Zoekopdracht Select Type voertuig
+Step 2: Go to Bouwjaar van, to fill data
+Step 2: Go to Status select optional value  
+Step 3: Click the filter</description>
+   <name>ACTPOL-526</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>69fb1839-089d-4f87-98bb-1db294515b6e</testCaseGuid>
+</TestCaseEntity>

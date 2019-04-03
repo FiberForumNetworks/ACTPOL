@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>This task belongs to Algemene Zoekopdracht select type persoon or  any one search text user than display the data.
+user as permission only display both arrest and onderzoek information displayed ,otherwise it display some information only</description>
+   <name>JPOL107 task Algemene Zoekopdracht</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d3063e2d-0cc7-4d1e-b8b5-ca69c803c53c</testCaseGuid>
+</TestCaseEntity>

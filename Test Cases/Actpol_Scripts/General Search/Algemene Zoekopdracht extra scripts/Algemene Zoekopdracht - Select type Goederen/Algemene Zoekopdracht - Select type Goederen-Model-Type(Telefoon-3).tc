@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Goederen
+Step 2: Set text Model Type
+Step 3: Set text Serienummer
+Step 4: Set text Telefoon
+Step 5: Search results is an Model/Type,Serienummer and Telefoon</description>
+   <name>Algemene Zoekopdracht - Select type Goederen-Model-Type(Telefoon-3)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0646612e-a07e-421a-a44f-e0638c5d4bbb</testCaseGuid>
+</TestCaseEntity>

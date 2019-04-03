@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Automate menu Rapportage</description>
+   <name>Rapportage</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0fee787b-bf88-4934-9a7d-6321f6e01d93</testCaseGuid>
+</TestCaseEntity>

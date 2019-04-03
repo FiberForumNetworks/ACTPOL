@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Assistentie
+Step 2: Select Aangewezen aan
+Step 3: Set text Titel
+Step 4:Search results is an Aangewezen aan,Titel and  Control,Next Poc van and Next Poc tot</description>
+   <name>Algemene Zoekopdracht - Select type Assistentie-Select Aangewezen aan(Next Poc van and tot-4)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0cbc696e-7441-4306-963b-f0dcf8799998</testCaseGuid>
+</TestCaseEntity>

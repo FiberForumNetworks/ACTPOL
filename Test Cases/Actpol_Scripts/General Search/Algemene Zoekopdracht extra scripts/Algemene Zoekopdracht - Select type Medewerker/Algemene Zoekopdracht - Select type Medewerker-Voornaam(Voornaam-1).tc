@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Medewerker
+Step 2; Set text Voornaam
+Step 3: Search results is an Voornaam</description>
+   <name>Algemene Zoekopdracht - Select type Medewerker-Voornaam(Voornaam-1)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>9cafd0ef-4fa1-4657-9238-9e10878a2c6a</testCaseGuid>
+</TestCaseEntity>

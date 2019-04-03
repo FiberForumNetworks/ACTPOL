@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Assistentie
+Step 2: Select Klasse
+Step 3: Select Status
+Step 4: Click Poging andRelationeel geweld
+Step 5: Select Aangewezen aan
+Step 6: Set text Titel
+Step 7:Search results is an Select Klasse,Select status ,select Aangewezen aan,Titel and  Control,Next Poc van and Next Poc tot</description>
+   <name>Algemene Zoekopdracht - Select type Assistentie-Select Klasse(Next Poc van and tot-6)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>df5ae9b0-f792-450a-a776-b149f29d5116</testCaseGuid>
+</TestCaseEntity>

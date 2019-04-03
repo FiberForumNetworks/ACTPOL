@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>EA New user editing</description>
+   <name>Editing a newly registered case - main file</name>
+   <tag>EA</tag>
+   <comment></comment>
+   <testCaseGuid>0fa9199b-b413-4a42-b5dc-6c96041a2da0</testCaseGuid>
+</TestCaseEntity>

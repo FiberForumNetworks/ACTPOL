@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Enter an new Patrouille record fill all possible fields and tabs</description>
+   <name>Patrouille - delete</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fc43e4d2-0500-44e7-a0f7-d85336838f8d</testCaseGuid>
+</TestCaseEntity>

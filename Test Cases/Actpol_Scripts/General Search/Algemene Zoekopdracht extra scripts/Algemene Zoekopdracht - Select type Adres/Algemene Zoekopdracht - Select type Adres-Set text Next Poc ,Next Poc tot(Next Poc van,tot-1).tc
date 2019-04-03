@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Adres
+Step 2:Set text Next Poc ,Next Poc tot
+Step 3:Search results is an Set text Next Poc ,Next Poc tot</description>
+   <name>Algemene Zoekopdracht - Select type Adres-Set text Next Poc ,Next Poc tot(Next Poc van,tot-1)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>73e52cbb-71c3-4f54-b884-7e2140183f14</testCaseGuid>
+</TestCaseEntity>

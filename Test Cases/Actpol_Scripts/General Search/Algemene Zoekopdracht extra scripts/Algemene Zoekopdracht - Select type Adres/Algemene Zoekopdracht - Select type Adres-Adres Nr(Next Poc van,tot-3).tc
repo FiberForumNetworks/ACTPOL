@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Adres
+Step 2:Set text Adres Nr or Latitude/Longitude
+Step 3:Set text Nadere Aanduiding
+Step 4:Set text Next Poc ,Next Poc tot
+Step 3:Search results is an Select Adres, Adres Nr or Latitude/Longitude,Set text Nadere Aanduiding and Set text Next Poc ,Next Poc tot</description>
+   <name>Algemene Zoekopdracht - Select type Adres-Adres Nr(Next Poc van,tot-3)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5d438647-e4b5-4bd5-9edc-ae5d6f18d33d</testCaseGuid>
+</TestCaseEntity>

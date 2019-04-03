@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Adres
+Step 2:Set text Adres Nr or Latitude/Longitude
+Step 3:Set text Nadere Aanduiding
+Step 4:Search results is an Select Adres, Adres Nr or Latitude/Longitude and Set text Nadere Aanduiding</description>
+   <name>Algemene Zoekopdracht - Select type Adres- Set text Adres Nr(Nadere Aanduiding-2)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>42e76bdf-7e02-451f-afc0-37406ca0be9b</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Menu, Click on Assistenties
+Step 2: Select roll proccess Vreemdeling 
+Step 3: fill the required fields and save
+Step 4: Click new Reisdocumenten 
+Step 5: fill the required fields and save</description>
+   <name>Navigation Generiek - Assistenties roll process(ACTPOL-460)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ab63c4e0-343c-4ed3-ad2a-f8f4180ee6ac</testCaseGuid>
+</TestCaseEntity>

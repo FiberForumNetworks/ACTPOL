@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Go to Generiek - Melding
+Step 2: Add a melding and select Type Tip or Informatie.
+Step 3: Details Tab should not be visible
+Step 4: save this record.
+Step 5: Go to Melding search (left column).
+Step 6: search on Type Tip and after warts on Type informatie.
+Step 7: Information of record entered should become visible.</description>
+   <name>Navigation Generiek - option Melding</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>cecf9d28-7145-4961-8a70-ce42f7a68d12</testCaseGuid>
+</TestCaseEntity>

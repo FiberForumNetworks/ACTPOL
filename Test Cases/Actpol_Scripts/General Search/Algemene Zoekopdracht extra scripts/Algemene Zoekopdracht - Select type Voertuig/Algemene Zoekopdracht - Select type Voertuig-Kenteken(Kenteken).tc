@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Voertuig
+Step 2:Set text Kenteken
+Step 3:Search results is an Kenteken</description>
+   <name>Algemene Zoekopdracht - Select type Voertuig-Kenteken(Kenteken)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>744dcf84-ed6f-415f-bc10-ea39e32a0e7c</testCaseGuid>
+</TestCaseEntity>

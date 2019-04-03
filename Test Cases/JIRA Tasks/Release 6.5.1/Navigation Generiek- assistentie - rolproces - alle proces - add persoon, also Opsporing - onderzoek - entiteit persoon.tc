@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Go to Generiek- assistentie
+Step 2: Open tab rolproces and add a new rol/proces
+Step 3: Add a new persoon it should be possible to enter Geboorteplaats after Geboorteland</description>
+   <name>Navigation Generiek- assistentie - rolproces - alle proces - add persoon, also Opsporing - onderzoek - entiteit persoon</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fff214b8-ff3f-4b60-b908-5b42940154b8</testCaseGuid>
+</TestCaseEntity>

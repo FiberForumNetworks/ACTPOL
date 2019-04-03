@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Document grid must be display in data
+
+Test Plan::
+Step 1: Go to Opsporing: Onderzoek Select Optional user
+Step 2: Go to Entiteiten tab 
+Step 3: Click new Entiteiten
+Step 4: Select roll process type “persoon”
+Step 5: Fill the required fields and then select roll process type “AANGEVER” save the data
+Step 6: Go to Documenten click new Documenten
+Step 7: Fill the required fields save the data it’s showing web smart error</description>
+   <name>ACTPOL-524</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bf652a83-1077-4e5b-9df7-669df8cee7c1</testCaseGuid>
+</TestCaseEntity>

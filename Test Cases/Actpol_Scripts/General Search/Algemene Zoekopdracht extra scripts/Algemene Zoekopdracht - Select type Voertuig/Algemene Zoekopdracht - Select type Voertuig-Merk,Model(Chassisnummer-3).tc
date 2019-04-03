@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Voertuig
+Step 2:Set text Merk
+Step 3:Select Model
+Step 4:Set text Motornummer
+Step 5:Set text Chassisnummer
+Step 6:Search results is an Merk,Model,Motornummer and Step 3:Set text Chassisnummer(Merk and model independence drop downs first fill merk after fill model)</description>
+   <name>Algemene Zoekopdracht - Select type Voertuig-Merk,Model(Chassisnummer-3)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1649efaa-58e1-48b0-957d-3bca18fc3b03</testCaseGuid>
+</TestCaseEntity>

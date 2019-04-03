@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Medewerker
+Step 2: Set text User ID
+Step 3: Select Rol/Proces Type
+Step 4: Set text Klasse
+Step 5: Search results is an User ID,Rol/Proces Type and Klasse</description>
+   <name>Algemene Zoekopdracht - Select type Medewerker-User ID(Klasse-3)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6f887fa1-8f0b-4c7c-b370-59783d82daca</testCaseGuid>
+</TestCaseEntity>

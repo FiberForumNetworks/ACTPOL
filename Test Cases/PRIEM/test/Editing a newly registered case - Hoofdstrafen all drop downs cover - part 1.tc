@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>EA New user editing</description>
+   <name>Editing a newly registered case - Hoofdstrafen all drop downs cover - part 1</name>
+   <tag>EA</tag>
+   <comment>starting  code Bijzondere voorwaarden 
+starting  code Gelast de bewaring ten behoeve van de rechthebbende
+ Geldboete 
+Gevangenisstraf drop down selection '1'    
+drop down selection Hechtenis
+drop down selection Jeugddetentie
+drop down selection Leerstraf
+drop down selection Maatregel betreffende het gedrag van de jeugdige
+drop down selection Onder curatele stelling (niet naast vrijheidstraf)
+drop down selection Ontneming van het wederrechtelijk verkregen voordeel
+drop down selection Onttrekking aan het verkeer
+drop down selection Ontzegging rijbevoegdheid
+drop down selection Ontzetting uit het ambt
+drop down selection Plaatsing inrichting voor jeugdigen
+drop down selection Plaatsing psychaitrische inrichtung
+drop down selection Schadevergoeding
+drop down selection Strafrechtelijke opvang verslaafden
+drop down selection Taakstraf</comment>
+   <testCaseGuid>e5c59137-126c-482e-837b-08af9a7ab1c7</testCaseGuid>
+</TestCaseEntity>

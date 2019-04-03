@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Assistentie
+Step 2: Set text Titel
+Step 3:Search results is an Titel and  Control,Next Poc van and Next Poc tot</description>
+   <name>Algemene Zoekopdracht - Select type Assistentie-Set text Titel(Next Poc van and tot-3)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>54341e98-5329-47be-92b3-1f217ca2ef80</testCaseGuid>
+</TestCaseEntity>

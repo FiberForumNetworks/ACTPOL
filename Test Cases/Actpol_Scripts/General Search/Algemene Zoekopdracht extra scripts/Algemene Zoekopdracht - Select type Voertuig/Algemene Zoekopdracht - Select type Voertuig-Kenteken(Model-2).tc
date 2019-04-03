@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Voertuig
+Step 2:Set text Kenteken
+Step 3:Set text Merk
+Step 4:Set text Model
+Step 5:Search results is an Keteken,Merk and Model(Merk and model independence drop downs first fill merk after fill model)</description>
+   <name>Algemene Zoekopdracht - Select type Voertuig-Kenteken(Model-2)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f1a3f9e5-8f81-45cc-ab6b-ba1b468256e5</testCaseGuid>
+</TestCaseEntity>

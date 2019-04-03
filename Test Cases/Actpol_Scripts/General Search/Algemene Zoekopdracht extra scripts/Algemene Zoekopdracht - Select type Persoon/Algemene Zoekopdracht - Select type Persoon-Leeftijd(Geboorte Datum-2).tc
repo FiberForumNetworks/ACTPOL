@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Persoon
+Step 2: Set text Leeftijd
+Step 3: Set text Geboorte Datum
+Step 4: Search results is an Leeftijd and Geboorte Datum</description>
+   <name>Algemene Zoekopdracht - Select type Persoon-Leeftijd(Geboorte Datum-2)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2162715f-fb71-4adf-ade7-f46fdf740041</testCaseGuid>
+</TestCaseEntity>

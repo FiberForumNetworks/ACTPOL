@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Persoon
+Step 2: Set text Leeftijd
+Step 2: Set text Geboorte Datum
+Step 3: Select Rol/Proces Type
+Step 4: Set text Next Poc van,tot
+Step 5: Search results is an Geboorte Datum,Rol/Proces Type and Next Poc van,tot</description>
+   <name>Algemene Zoekopdracht - Select type Persoon-Leeftijd(Next Poc-4)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>eb72a272-f3c0-4e84-89c8-e54b18c7a54f</testCaseGuid>
+</TestCaseEntity>

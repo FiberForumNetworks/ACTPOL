@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Voertuig
+Step 2:Set text Bouwjaar van ,tot
+Step 3:Search results is an Bouwjaar van ,tot</description>
+   <name>Algemene Zoekopdracht - Select type Voertuig-Bouwjaar van,tot (Bouwjaar van,tot-1)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e37f7cd5-5c27-4842-a3ac-0b1466a6ad06</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Voertuig
+Step 2:Set text Merk
+Step 3:Search results is an Merk</description>
+   <name>Algemene Zoekopdracht - Select type Voertuig-Merk(Merk-1)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6aa563e8-3d7a-43d3-8ba5-79c415102113</testCaseGuid>
+</TestCaseEntity>

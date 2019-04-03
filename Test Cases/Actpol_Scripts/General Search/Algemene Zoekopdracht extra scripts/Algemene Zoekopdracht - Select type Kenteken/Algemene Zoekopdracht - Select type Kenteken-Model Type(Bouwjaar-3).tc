@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Kenteken
+Step 2: Set text Model Type
+Step 3: Set text Kenteken
+Step 4: Set text Bouwjaar
+Step 5: Search results is an Model Type,Kenteken and Bouwjaar</description>
+   <name>Algemene Zoekopdracht - Select type Kenteken-Model Type(Bouwjaar-3)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ee3faa88-3d3d-4100-8926-d3717afb1528</testCaseGuid>
+</TestCaseEntity>

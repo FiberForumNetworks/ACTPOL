@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Filter does not work on voertuig(status).
+
+Test Plan:;
+Step 1: Go to Home: Algemene Zoekopdracht Select Type voertuig
+Step 2: Go to Status select optional value  
+Step 3: Click the filter</description>
+   <name>ACTPOL-525</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f2e3ce1b-7a1e-469a-b6a3-f6626c7398f4</testCaseGuid>
+</TestCaseEntity>

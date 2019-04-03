@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Assistentie all roll process part 1</name>
+   <tag></tag>
+   <comment>creating Assistenties module
+AANGEVER  process start
+AANGEVER  process close</comment>
+   <testCaseGuid>0660519a-ec48-4b21-ab30-dcebba3e5efd</testCaseGuid>
+</TestCaseEntity>

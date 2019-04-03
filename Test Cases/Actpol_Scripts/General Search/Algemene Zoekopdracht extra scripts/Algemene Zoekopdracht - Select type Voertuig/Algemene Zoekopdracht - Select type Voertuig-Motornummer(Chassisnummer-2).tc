@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Voertuig
+Step 2:Set text Motornummer
+Step 3:Set text Chassisnummer
+Step 4:Search results is an Motornummer and Chassisnummer</description>
+   <name>Algemene Zoekopdracht - Select type Voertuig-Motornummer(Chassisnummer-2)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>7c80dbda-5307-4e45-9f76-a857b70ec353</testCaseGuid>
+</TestCaseEntity>

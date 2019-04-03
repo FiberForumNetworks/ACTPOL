@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>EA naviagation flow</description>
+   <name>Registering a new case</name>
+   <tag>EA</tag>
+   <comment></comment>
+   <testCaseGuid>f1ae9e32-a883-417a-9f51-e1df328112b8</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Medewerker
+Step 2: Set text KC nummer
+Step 3: Set text User ID
+Step 4: Select Rol/Proces Type
+Step 5: Set text Klasse
+Step 6: Search results is an KC nummer,User ID,Rol/Proces Type and Klasse</description>
+   <name>Algemene Zoekopdracht - Select type Medewerker-KC nummer(Klasse-4)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e6ad4d0c-7e1d-4a38-b3dc-d04c032758ad</testCaseGuid>
+</TestCaseEntity>
