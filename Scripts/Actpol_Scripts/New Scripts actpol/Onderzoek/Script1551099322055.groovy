@@ -193,7 +193,7 @@ WebUI.delay(1)
 
 WebUI.click(findTestObject('JIRA/A onderzoel roll process/Roll process'))
 
-WebUI.delay(1)
+WebUI.delay(4)
 
 WebUI.click(findTestObject('JIRA/A onderzoel roll process/Roll process new'))
 
@@ -266,10 +266,6 @@ WebUI.delay(3)
 WebUI.focus(findTestObject('Actpol_Scripts/Extra script/Getuige Slachtofferhulp na'))
 
 WebUI.click(findTestObject('Actpol_Scripts/Extra script/Getuige Slachtofferhulp na'))
-
-not_run: WebUI.delay(1)
-
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Extra script/Getuige Slachtofferhulp na'))
 
 WebUI.scrollToPosition(10, 8)
 

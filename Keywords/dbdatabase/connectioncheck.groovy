@@ -39,7 +39,7 @@ public class connectioncheck {
 
 		Class.forName("com.ibm.db2.jcc.DB2Driver");
 
-		String url = "jdbc:db2://10.20.10.7:456/S1031e70";
+		String url = "jdbc:db2://10.20.10.7:4015/S1031e70";
 		// Set URL for data source
 		String user = 'SASI2'
 		String password = 'sasi2'

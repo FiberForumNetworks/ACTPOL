@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@key = 'Strafbare_feiten' and @title = 'Strafbare feiten' and @ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame']</value>
+         <value>//*[@key = 'Strafbare_feiten' and @title = 'Strafbaar feit' and @ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame']</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -28,7 +27,7 @@
       <matchCondition>equals</matchCondition>
       <name>title</name>
       <type>Main</type>
-      <value>Strafbare feiten</value>
+      <value>Strafbaar feit</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

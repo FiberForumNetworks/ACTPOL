@@ -26,7 +26,7 @@ WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Assistentie/Ro
 
 WebUI.delay(3)
 
-WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Assistentie/Aangever Achternaam'), 'AAADAK')
+WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Assistentie/Aangever Achternaam'), 'BESTER')
 
 WebUI.delay(2)
 

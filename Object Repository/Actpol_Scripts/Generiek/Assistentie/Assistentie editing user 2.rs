@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//td[text()='200601950']/preceding-sibling::td/a[2]</value>
+         <value>//td[text()='200601658']/preceding-sibling::td/a[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
