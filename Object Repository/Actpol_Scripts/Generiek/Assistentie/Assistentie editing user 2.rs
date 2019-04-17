@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//td[text()='200601658']/preceding-sibling::td/a[2]</value>
+         <value>//td[text()='200601667']/preceding-sibling::td/a[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -22,4 +22,9 @@
       <type>Main</type>
       <value>Object Repository/Actpol_Scripts/Iframe/RightFrame</value>
    </webElementProperties>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <value>[text()='200601658']/preceding-sibling::td/a[2]</value>
+   </webElementXpaths>
 </WebElementEntity>

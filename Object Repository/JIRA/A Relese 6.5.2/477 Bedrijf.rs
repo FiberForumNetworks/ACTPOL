@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Goederen Goed artikel lb</name>
+   <name>477 Bedrijf</name>
    <tag></tag>
-   <elementGuidId>5386e31f-874e-4d8a-a04c-e113ea0f68e0</elementGuidId>
+   <elementGuidId>638b36c4-7b58-47d7-b93b-b82aac129b25</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@name = 'ARTCODdesc' and @ref_element = 'Object Repository/Actpol_Scripts/Iframe/iframetoevoegen_goederen']</value>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[text()=&quot;ABONNEMENT&quot;]</value>
+         <value>//a[@href='POL93001.pgm?task=callpgm&amp;pgmnm=KPSL0023.pgm&amp;MNTTITL=Bedrijf&amp;authview=1&amp;authedit=1&amp;authadd=1&amp;authdel=1&amp;authsel=0']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,6 +21,6 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Actpol_Scripts/Iframe/iframetoevoegen_goederen</value>
+      <value>Object Repository/Actpol_Scripts/Iframe/RightFrame</value>
    </webElementProperties>
 </WebElementEntity>

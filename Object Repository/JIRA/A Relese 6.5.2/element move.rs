@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Goederen Goed artikel lb</name>
+   <name>element move</name>
    <tag></tag>
-   <elementGuidId>5386e31f-874e-4d8a-a04c-e113ea0f68e0</elementGuidId>
+   <elementGuidId>bc0e48ca-6913-4753-a9ae-3071eba87e10</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@name = 'ARTCODdesc' and @ref_element = 'Object Repository/Actpol_Scripts/Iframe/iframetoevoegen_goederen']</value>
+         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[text()=&quot;ABONNEMENT&quot;]</value>
+         <value>//*[@id=&quot;aangeverOpgenomenDoor1&quot;]/input[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,6 +21,6 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Actpol_Scripts/Iframe/iframetoevoegen_goederen</value>
+      <value>Object Repository/Actpol_Scripts/Iframe/RightFrame</value>
    </webElementProperties>
 </WebElementEntity>

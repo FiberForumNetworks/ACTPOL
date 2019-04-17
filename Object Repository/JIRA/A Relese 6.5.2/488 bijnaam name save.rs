@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Goederen Goed artikel lb</name>
+   <name>488 bijnaam name save</name>
    <tag></tag>
-   <elementGuidId>5386e31f-874e-4d8a-a04c-e113ea0f68e0</elementGuidId>
+   <elementGuidId>ff0c370c-902a-490e-93cb-5aadb525f94e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@name = 'ARTCODdesc' and @ref_element = 'Object Repository/Actpol_Scripts/Iframe/iframetoevoegen_goederen']</value>
+         <value>//*[@key = 'bijnaam' and @title = 'Bijnaam' and @ref_element = 'Object Repository/Actpol_Scripts/Iframe/Newpersoniframe']</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[text()=&quot;ABONNEMENT&quot;]</value>
+         <value>//input[@id='modeBijnaam']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,6 +21,6 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Actpol_Scripts/Iframe/iframetoevoegen_goederen</value>
+      <value>Object Repository/Actpol_Scripts/Iframe/Newpersoniframe</value>
    </webElementProperties>
 </WebElementEntity>

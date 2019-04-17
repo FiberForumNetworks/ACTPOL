@@ -32,7 +32,7 @@ WebUI.selectOptionByValue(findTestObject('JIRA/A Relese 6.5.2/Unit Type'), 'P', 
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('JIRA/A Relese 6.5.2/Unit name'), 'Pa1213')
+WebUI.setText(findTestObject('JIRA/A Relese 6.5.2/Unit name'), 'Pa1218')
 
 WebUI.delay(1)
 

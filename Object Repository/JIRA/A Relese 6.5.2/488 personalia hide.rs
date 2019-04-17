@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Drugs gebruik ja</name>
+   <name>488 personalia hide</name>
    <tag></tag>
-   <elementGuidId>0424734c-e399-4dc5-be88-a5a4eeae0c7c</elementGuidId>
+   <elementGuidId>8412422d-8f3a-40f4-a4d8-fe55c9d52846</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@name = 'ADDDRGG' and @id = 'ADDDRGG1']</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;verdachteinfo&quot;]/tbody/tr[15]/td[2]/label[1]/span</value>
+         <value>//*[@key = 'personalia' and @title = 'Personalia']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -19,22 +15,22 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>name</name>
+      <name>key</name>
       <type>Main</type>
-      <value>ADDDRGG</value>
+      <value>personalia</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>title</name>
       <type>Main</type>
-      <value>ADDDRGG1</value>
+      <value>Personalia</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Actpol_Scripts/Iframe/RightFrame</value>
+      <value>Object Repository/Actpol_Scripts/Iframe/Newpersoniframe</value>
    </webElementProperties>
 </WebElementEntity>

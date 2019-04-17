@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;contents&quot;]/table/tbody/tr[4]/td[1]/a[3]/img</value>
+         <value>//*[@id=&quot;new-foto-upload&quot;]/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

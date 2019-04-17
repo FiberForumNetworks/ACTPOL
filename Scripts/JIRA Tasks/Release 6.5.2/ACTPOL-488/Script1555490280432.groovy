@@ -15,49 +15,63 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.delay(2)
+
 WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Generiek'))
 
 WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Assistenties'))
 
-WebUI.delay(2)
+WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Extra script/Edit assit user 3'))
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Assistentie editing user 2'))
 
-WebUI.delay(2)
+WebUI.delay(5)
 
 WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Click roll process'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Click new process'))
+WebUI.click(findTestObject('JIRA/A Relese 6.5.2/488 click existing roll process'))
 
-WebUI.delay(2)
+WebUI.delay(3)
 
-WebUI.comment('BEKEURDE PERSOON   start')
+WebUI.click(findTestObject('JIRA/A Relese 6.5.2/488 Aangever Achternaam click edit'))
 
-'BEKEURDE PERSOON'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Assistentie/Rol Proces Type'), '3', false)
+WebUI.delay(3)
 
-WebUI.delay(2)
-
-'OPROEPINGSPROCES-VERBAAL'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Extra script/Soort Procesverbaal'), '1', false)
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Actpol_Scripts/Extra script/Voertuig radio click'))
+WebUI.scrollToElement(findTestObject('JIRA/A Relese 6.5.2/488 bijnaam tab'), 5)
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Extra script/Voertuig new'))
+WebUI.click(findTestObject('JIRA/A Relese 6.5.2/488 bijnaam tab'))
 
-WebUI.delay(3)
+WebUI.delay(1)
 
-WebUI.setText(findTestObject('JIRA/A Relese 6.5.2/Voertuig'), 'a')
+WebUI.click(findTestObject('JIRA/A Relese 6.5.2/488 bijnaam new'))
 
-WebUI.delay(3)
+WebUI.delay(1)
 
-WebUI.takeScreenshot()
+WebUI.setText(findTestObject('JIRA/A Relese 6.5.2/488 bijnaam name enter(alias)'), 'hai1')
+
+WebUI.delay(1)
+
+WebUI.click(findTestObject('JIRA/A Relese 6.5.2/488 bijnaam name save'))
+
+WebUI.delay(1)
+
+WebUI.click(findTestObject('JIRA/A Relese 6.5.2/488 bijnaam popup save'))
+
+WebUI.delay(1)
+
+'Persoon\r\n'
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie'), 'persoon', 
+    false)
+
+WebUI.setText(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Alias'), 'hai1')
+
+WebUI.delay(1)
+
+WebUI.click(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Zoeken new'))
 

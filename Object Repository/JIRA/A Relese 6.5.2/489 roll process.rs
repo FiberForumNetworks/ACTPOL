@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Drugs gebruik ja</name>
+   <name>489 roll process</name>
    <tag></tag>
-   <elementGuidId>0424734c-e399-4dc5-be88-a5a4eeae0c7c</elementGuidId>
+   <elementGuidId>6fbcd377-d2be-415a-8e95-a22a21cd4815</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@name = 'ADDDRGG' and @id = 'ADDDRGG1']</value>
+         <value>//*[@key = 'Rol_Proces' and @class = 'Heading lang']</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;verdachteinfo&quot;]/tbody/tr[15]/td[2]/label[1]/span</value>
+         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -19,16 +19,16 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>name</name>
+      <name>key</name>
       <type>Main</type>
-      <value>ADDDRGG</value>
+      <value>Rol_Proces</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>class</name>
       <type>Main</type>
-      <value>ADDDRGG1</value>
+      <value>Heading lang</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

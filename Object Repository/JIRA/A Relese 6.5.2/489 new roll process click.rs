@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Goederen Goed artikel lb</name>
+   <name>489 new roll process click</name>
    <tag></tag>
-   <elementGuidId>5386e31f-874e-4d8a-a04c-e113ea0f68e0</elementGuidId>
+   <elementGuidId>6f95423f-88fa-4989-b74f-bb1afa7d9878</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@name = 'ARTCODdesc' and @ref_element = 'Object Repository/Actpol_Scripts/Iframe/iframetoevoegen_goederen']</value>
+         <value>//*[@key = 'Rol_Proces' and @class = 'Heading lang' and @ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame']</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[text()=&quot;ABONNEMENT&quot;]</value>
+         <value>//*[@id=&quot;INV23001accordion-6&quot;]/input[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>
@@ -21,6 +21,6 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Actpol_Scripts/Iframe/iframetoevoegen_goederen</value>
+      <value>Object Repository/Actpol_Scripts/Iframe/RightFrame</value>
    </webElementProperties>
 </WebElementEntity>

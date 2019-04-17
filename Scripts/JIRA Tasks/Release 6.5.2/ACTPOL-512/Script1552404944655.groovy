@@ -13,7 +13,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('main/Actpol_Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Handhaving/Handhaving'))
 
@@ -49,7 +49,7 @@ WebUI.click(findTestObject('JIRA/A Relese 6.5.2/Nieuw Goederen'))
 
 WebUI.delay(2)
 
-WebUI.setText(findTestObject('JIRA/A Relese 6.5.2/Goederen Goed artikel'), 'AANPLAKBILJET')
+WebUI.setText(findTestObject('JIRA/A Relese 6.5.2/Goederen Goed artikel'), 'ABONNEMENT')
 
 WebUI.delay(2)
 
@@ -65,11 +65,7 @@ WebUI.click(findTestObject('JIRA/A Relese 6.5.2/Goederen save'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('JIRA/A Relese 6.5.2/Zoeken slide open'))
-
-WebUI.delay(1)
-
-WebUI.setText(findTestObject('JIRA/A Relese 6.5.2/Goed artikel'), '')
+WebUI.click(findTestObject('JIRA/A Relese 6.5.2/Goed artikel new'))
 
 WebUI.delay(1)
 
@@ -83,13 +79,7 @@ WebUI.click(findTestObject('JIRA/A Relese 6.5.2/Filter'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('JIRA/A Relese 6.5.2/Reset'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('JIRA/A Relese 6.5.2/Goed artikel new user selection'))
-
-WebUI.delay(2)
-
 WebUI.takeScreenshot()
+
+WebUI.click(findTestObject('JIRA/A Relese 6.5.2/Reset'))
 

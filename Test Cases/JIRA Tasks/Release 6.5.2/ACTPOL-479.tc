@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Navigation :
+Opsporing - Onderzoek - Entiteiten - Persoon - Aangever tab Verklaring or Bekende aangehouden verdachte tab Verhoor.
+Testplan :
+Step 1: Go to Opsporing - Onderzoek and create a new Onderzoek
+Step 2: Go to tab Entiteiten and select persoon and add a rol/proces Aangever
+Step 3: Fill in mandatory fields and save
+Step 4: Go to tab Verklaring and enter earlier time than when created the onderzoek and save.
+Step 5: record should save without error or warning.
+Step 6: Go to tab Entiteiten and select persoon and add a rol/proces Bekende aangehouden verdachte.
+Step 7: Fill in mandatory fields and save
+Step 8: Go to tab Verhoor and enter earlier time and date than the one when created the onderzoek and save.
+Step 9: record should save without error or warning.</description>
+   <name>ACTPOL-479</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>bcb37a49-a233-453b-acc2-78e79684bef5</testCaseGuid>
+</TestCaseEntity>

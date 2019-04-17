@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Solution
+Fix code for when record is set to inactief (Y), record should not display.
+
+Testplan:
+1- Go to Onderhoud - Basis Bestand Meldkamer option Bedrijf
+2- Open an existing record with edit and set to inactief
+3- in Grid record should display with status
+4- Go to Generiek - assistentie select new assistentie and select field Bekende plaats.
+5- Record made inactief should not be present/visible in dropdown</description>
+   <name>ACTPOL-477</name>
+   <tag>ACTPOL-477</tag>
+   <comment></comment>
+   <testCaseGuid>b1bb7d82-b886-4016-ba48-f9858b97e211</testCaseGuid>
+</TestCaseEntity>
