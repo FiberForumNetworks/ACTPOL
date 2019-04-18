@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>EA New user editing</description>
-   <name>TRANSACTIE test case</name>
-   <tag>EA</tag>
-   <comment></comment>
-   <testCaseGuid>3e789d89-14bd-4685-860d-15fe8d3812b9</testCaseGuid>
-</TestCaseEntity>

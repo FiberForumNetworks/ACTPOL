@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>Report all sub modules navigation</description>
-   <name>Report</name>
-   <tag>all</tag>
-   <comment></comment>
-   <testCaseGuid>cb1c481a-947f-4f0a-8159-ce7ca0458712</testCaseGuid>
-</TestCaseEntity>

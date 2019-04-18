@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>EA New user editing</description>
-   <name>VOEGING test case</name>
-   <tag>EA</tag>
-   <comment></comment>
-   <testCaseGuid>84d2ae31-2f79-4c2e-bdcb-278d6a7c88b4</testCaseGuid>
-</TestCaseEntity>

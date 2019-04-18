@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description></description>
-   <name>Jeugddetentie</name>
-   <tag></tag>
-   <comment>drop down selection Jeugddetentie</comment>
-   <testCaseGuid>b25d433d-c06e-463b-b90d-9dea8b323aa5</testCaseGuid>
-</TestCaseEntity>

@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TestCaseEntity>
-   <description>EA New user editing</description>
-   <name>Editing a newly registered case - Hoofdstrafen all drop downs cover - total raw file</name>
-   <tag>EA</tag>
-   <comment></comment>
-   <testCaseGuid>c558b08a-21fe-4a32-8e38-1c3bf7897fe6</testCaseGuid>
-</TestCaseEntity>
