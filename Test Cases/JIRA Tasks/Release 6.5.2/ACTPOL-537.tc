@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Description:
+
+It is displaying extra field.
+
+Solution:
+
+Unknown Field should be remove .
+
+ 
+
+Test plan:
+
+Step 1: Go to Opsporing: Case Screening Select existing user in View mode.
+
+Step 2: Check the all the fields .
+
+ ** 
+
+Navigation:
+
+Opsporing: Case Screening</description>
+   <name>ACTPOL-537</name>
+   <tag>ACTPOL-537</tag>
+   <comment></comment>
+   <testCaseGuid>a8f6fa43-85ff-483d-99ca-c9c949eac5b4</testCaseGuid>
+</TestCaseEntity>

@@ -23,30 +23,30 @@ WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Dashboard/Rapportage'
 
 WebUI.delay(2)
 
-WebUI.setText(findTestObject('JIRA/Begin Datum'), '30/01/2018')
+WebUI.setText(findTestObject('JIRA/A NEW/Begin Datum'), '30/01/2018')
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('JIRA/Eind Datum'), '30/01/2019')
+WebUI.setText(findTestObject('JIRA/A NEW/Eind Datum'), '30/01/2019')
 
 WebUI.delay(1)
 
-WebUI.selectOptionByValue(findTestObject('JIRA/Repo Status'), '', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Repo Status'), '', false)
 
-WebUI.selectOptionByValue(findTestObject('JIRA/Repo Wijkteam'), '', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Repo Wijkteam'), '', false)
 
-WebUI.selectOptionByValue(findTestObject('JIRA/Repo Wijk'), '', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Repo Wijk'), '', false)
 
 'TEST1212'
-WebUI.selectOptionByValue(findTestObject('JIRA/Lokatie type'), '8', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Lokatie type'), '8', false)
 
-WebUI.selectOptionByValue(findTestObject('JIRA/Aangewezen aan'), '', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Aangewezen aan'), '', false)
 
 WebUI.delay(1)
 
-WebUI.focus(findTestObject('JIRA/Periode niets'))
+WebUI.focus(findTestObject('JIRA/A NEW/Periode niets'))
 
-WebUI.click(findTestObject('JIRA/zoeken'))
+WebUI.click(findTestObject('JIRA/A NEW/zoeken'))
 
 WebUI.delay(3)
 

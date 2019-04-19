@@ -21,11 +21,11 @@ WebUI.waitForPageLoad(30)
 
 WebUI.maximizeWindow()
 
-WebUI.navigateToUrl(GlobalVariable.URL)
+WebUI.navigateToUrl(GlobalVariable.DEVURL)
 
-WebUI.setText(findTestObject('Actpol_Scripts/login/userid'), GlobalVariable.ID)
+WebUI.setText(findTestObject('Actpol_Scripts/login/userid'), GlobalVariable.username)
 
-WebUI.setEncryptedText(findTestObject('Actpol_Scripts/login/password'), GlobalVariable.enpassword)
+WebUI.setText(findTestObject('Actpol_Scripts/login/password'), GlobalVariable.password)
 
 WebUI.click(findTestObject('Actpol_Scripts/login/login'))
 

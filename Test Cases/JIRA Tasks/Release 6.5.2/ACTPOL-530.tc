@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Navigation
+Generiek - Assistentie - Actie Wachtrapport
+Testplan
+Step 1: Go to Generiek - Assistentie - Actie Wachtrapport
+Step 2: Select melding 200601654(tst environment), contacten, mutatie and ambtshandeling and click filter
+Step 3: The melding should be shown on the Wachtrapport</description>
+   <name>ACTPOL-530</name>
+   <tag>ACTPOL-530</tag>
+   <comment></comment>
+   <testCaseGuid>4e583176-ce6f-413d-ac2c-04c024a085db</testCaseGuid>
+</TestCaseEntity>

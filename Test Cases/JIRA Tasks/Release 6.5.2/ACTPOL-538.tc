@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Description:
+Dossier Field it is showing web smart error.
+Solution:
+Tab should display in data.
+Test plan:
+Step 1: Go to Opsporing: Onderzoek Select existing user in View mode.
+Step 2: Go to Dossier click on Dossier
+Navigation:
+Opsporing: Onderzoek</description>
+   <name>ACTPOL-538</name>
+   <tag>ACTPOL-538</tag>
+   <comment></comment>
+   <testCaseGuid>7228e9b5-5691-4abf-9d05-23f5eb7d2674</testCaseGuid>
+</TestCaseEntity>

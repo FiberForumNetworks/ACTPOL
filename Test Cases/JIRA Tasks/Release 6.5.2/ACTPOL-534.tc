@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Description:
+After selecting the record in &quot;Opsporing &quot; and clicking on Verdachte. it's displayed all fields are invisible.
+
+Solution:
+Data should be displayed in proper format .
+Test plan:
+Step 1: Go to Opsporing: Case Screening Select existing user
+Step 2: Go to Verdachte
+Step 3: View on Verdachte it is displaying invisible fields.
+
+ 
+
+Navigation:
+
+Opsporing : Case Screening</description>
+   <name>ACTPOL-534</name>
+   <tag>ACTPOL-534</tag>
+   <comment></comment>
+   <testCaseGuid>73f7eb39-18ca-4197-9b20-9476510beb53</testCaseGuid>
+</TestCaseEntity>

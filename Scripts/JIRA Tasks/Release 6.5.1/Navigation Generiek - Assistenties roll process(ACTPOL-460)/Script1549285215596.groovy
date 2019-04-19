@@ -39,7 +39,7 @@ WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Assistenties
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('JIRA/Assistentie editing'))
+WebUI.click(findTestObject('JIRA/A NEW/Assistentie editing'))
 
 WebUI.delay(3)
 

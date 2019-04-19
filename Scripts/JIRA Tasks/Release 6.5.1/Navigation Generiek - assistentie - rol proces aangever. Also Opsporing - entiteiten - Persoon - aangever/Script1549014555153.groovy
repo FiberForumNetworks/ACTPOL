@@ -39,7 +39,7 @@ WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Assistenties
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('JIRA/Assistentie editing'))
+WebUI.click(findTestObject('JIRA/A NEW/Assistentie editing'))
 
 WebUI.delay(3)
 
@@ -47,7 +47,7 @@ WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Click roll proce
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('JIRA/Roll process edit'))
+WebUI.click(findTestObject('JIRA/A NEW/Roll process edit'))
 
 WebUI.delay(2)
 
@@ -55,135 +55,135 @@ WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Aangever'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('JIRA/Bekende Aangehouden Verdachte'))
+WebUI.click(findTestObject('JIRA/A NEW/Bekende Aangehouden Verdachte'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('JIRA/Bekende Aangehouden Verdachte new'))
+WebUI.click(findTestObject('JIRA/A NEW/Bekende Aangehouden Verdachte new'))
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('JIRA/Verdachte Info new/Achternaam'), 'cal')
+WebUI.setText(findTestObject('JIRA/A NEW/Verdachte Info new/Achternaam'), 'cal')
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('JIRA/Verdachte Info new/Achternaam lb'))
+WebUI.click(findTestObject('JIRA/A NEW/Verdachte Info new/Achternaam lb'))
 
 WebUI.delay(1)
 
 'I.V.M. GIJZELING'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Reden'), '3', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Reden'), '3', false)
 
 'test'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Type'), '8', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Type'), '8', false)
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('JIRA/Verdachte Info new/Verdachte Info'))
+WebUI.click(findTestObject('JIRA/A NEW/Verdachte Info new/Verdachte Info'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('JIRA/Verdachte Info new/Strafbare feiten'))
+WebUI.click(findTestObject('JIRA/A NEW/Verdachte Info new/Strafbare feiten'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('JIRA/Verdachte Info new/Strafbare feiten new'))
+WebUI.click(findTestObject('JIRA/A NEW/Verdachte Info new/Strafbare feiten new'))
 
 WebUI.delay(4)
 
 'anu test 3'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Uitvoering 1'), '8', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Uitvoering 1'), '8', false)
 
 'new record'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Daderschap 1'), '23', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Daderschap 1'), '23', false)
 
 'new record'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Juntu 1'), '10', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Juntu 1'), '10', false)
 
 WebUI.delay(2)
 
 'anu test 3'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Uitvoering 2'), '8', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Uitvoering 2'), '8', false)
 
 'new record'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Daderschap 2'), '23', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Daderschap 2'), '23', false)
 
 'new record'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Juntu 2'), '10', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Juntu 2'), '10', false)
 
 WebUI.delay(2)
 
 'anu test 3'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Uitvoering 3'), '8', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Uitvoering 3'), '8', false)
 
 'new record'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Daderschap 3'), '23', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Daderschap 3'), '23', false)
 
 'new record'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Juntu 3'), '10', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Juntu 3'), '10', false)
 
 WebUI.delay(2)
 
 'anu test 3'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Uitvoering 4'), '8', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Uitvoering 4'), '8', false)
 
 'new record'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Daderschap 4'), '23', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Daderschap 4'), '23', false)
 
 'new record'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Juntu 4'), '10', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Juntu 4'), '10', false)
 
 WebUI.delay(2)
 
 'anu test 3'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Uitvoering 5'), '8', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Uitvoering 5'), '8', false)
 
 'new record'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Daderschap 5'), '23', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Daderschap 5'), '23', false)
 
 'new record'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Juntu 5'), '10', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Juntu 5'), '10', false)
 
 WebUI.delay(2)
 
 'anu test 3'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Uitvoering 6'), '8', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Uitvoering 6'), '8', false)
 
 'new record'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Daderschap 6'), '23', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Daderschap 6'), '23', false)
 
 'new record'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Juntu 6'), '10', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Juntu 6'), '10', false)
 
 WebUI.delay(2)
 
 'anu test 3'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Uitvoering 7'), '8', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Uitvoering 7'), '8', false)
 
 'new record'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Daderschap 7'), '23', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Daderschap 7'), '23', false)
 
 'new record'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Juntu 7'), '10', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Juntu 7'), '10', false)
 
 WebUI.delay(2)
 
 'anu test 3'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Uitvoering 8'), '8', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Uitvoering 8'), '8', false)
 
 'new record'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Daderschap 8'), '23', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Daderschap 8'), '23', false)
 
 'new record'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Juntu 8'), '10', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Juntu 8'), '10', false)
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('JIRA/Verdachte Info new/sf save'))
+WebUI.click(findTestObject('JIRA/A NEW/Verdachte Info new/sf save'))
 
 WebUI.delay(4)
 
-WebUI.click(findTestObject('JIRA/Verdachte Info new/total save'))
+WebUI.click(findTestObject('JIRA/A NEW/Verdachte Info new/total save'))
 
 WebUI.delay(10)
 
@@ -191,131 +191,131 @@ WebUI.scrollToPosition(10, 8)
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('JIRA/Bekende Aangehouden Verdachte new'))
+WebUI.click(findTestObject('JIRA/A NEW/Bekende Aangehouden Verdachte new'))
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('JIRA/Verdachte Info new/Achternaam'), 'cal')
+WebUI.setText(findTestObject('JIRA/A NEW/Verdachte Info new/Achternaam'), 'cal')
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('JIRA/Verdachte Info new/Achetemaam lb2'))
+WebUI.click(findTestObject('JIRA/A NEW/Verdachte Info new/Achetemaam lb2'))
 
 WebUI.delay(1)
 
 'I.V.M. GIJZELING'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Reden'), '3', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Reden'), '3', false)
 
 'test'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Type'), '8', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Type'), '8', false)
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('JIRA/Verdachte Info new/Verdachte Info'))
+WebUI.click(findTestObject('JIRA/A NEW/Verdachte Info new/Verdachte Info'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('JIRA/Verdachte Info new/Strafbare feiten'))
+WebUI.click(findTestObject('JIRA/A NEW/Verdachte Info new/Strafbare feiten'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('JIRA/Verdachte Info new/Strafbare feiten new'))
+WebUI.click(findTestObject('JIRA/A NEW/Verdachte Info new/Strafbare feiten new'))
 
 WebUI.delay(4)
 
 'anu test 3'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Uitvoering 1'), '8', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Uitvoering 1'), '8', false)
 
 'new record'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Daderschap 1'), '23', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Daderschap 1'), '23', false)
 
 'new record'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Juntu 1'), '10', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Juntu 1'), '10', false)
 
 WebUI.delay(2)
 
 'anu test 3'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Uitvoering 2'), '8', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Uitvoering 2'), '8', false)
 
 'new record'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Daderschap 2'), '23', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Daderschap 2'), '23', false)
 
 'new record'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Juntu 2'), '10', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Juntu 2'), '10', false)
 
 WebUI.delay(2)
 
 'anu test 3'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Uitvoering 3'), '8', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Uitvoering 3'), '8', false)
 
 'new record'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Daderschap 3'), '23', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Daderschap 3'), '23', false)
 
 'new record'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Juntu 3'), '10', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Juntu 3'), '10', false)
 
 WebUI.delay(2)
 
 'anu test 3'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Uitvoering 4'), '8', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Uitvoering 4'), '8', false)
 
 'new record'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Daderschap 4'), '23', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Daderschap 4'), '23', false)
 
 'new record'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Juntu 4'), '10', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Juntu 4'), '10', false)
 
 WebUI.delay(2)
 
 'anu test 3'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Uitvoering 5'), '8', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Uitvoering 5'), '8', false)
 
 'new record'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Daderschap 5'), '23', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Daderschap 5'), '23', false)
 
 'new record'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Juntu 5'), '10', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Juntu 5'), '10', false)
 
 WebUI.delay(2)
 
 'anu test 3'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Uitvoering 6'), '8', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Uitvoering 6'), '8', false)
 
 'new record'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Daderschap 6'), '23', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Daderschap 6'), '23', false)
 
 'new record'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Juntu 6'), '10', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Juntu 6'), '10', false)
 
 WebUI.delay(2)
 
 'anu test 3'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Uitvoering 7'), '8', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Uitvoering 7'), '8', false)
 
 'new record'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Daderschap 7'), '23', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Daderschap 7'), '23', false)
 
 'new record'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Juntu 7'), '10', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Juntu 7'), '10', false)
 
 WebUI.delay(2)
 
 'anu test 3'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Uitvoering 8'), '8', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Uitvoering 8'), '8', false)
 
 'new record'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Daderschap 8'), '23', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Daderschap 8'), '23', false)
 
 'new record'
-WebUI.selectOptionByValue(findTestObject('JIRA/Verdachte Info new/Juntu 8'), '10', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Verdachte Info new/Juntu 8'), '10', false)
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('JIRA/Verdachte Info new/sf save'))
+WebUI.click(findTestObject('JIRA/A NEW/Verdachte Info new/sf save'))
 
 WebUI.delay(4)
 
-WebUI.click(findTestObject('JIRA/Verdachte Info new/total save'))
+WebUI.click(findTestObject('JIRA/A NEW/Verdachte Info new/total save'))
 
 WebUI.delay(2)
 

@@ -26,7 +26,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 		
-		String dbURL = "jdbc:db2://10.20.10.7:9471/S1031e70";
+		String dbURL = "jdbc:db2://10.20.10.7:4015/S1031e70";
 		       String username = "SASI2";
 			   String password = "SASI2";
 			   //Load DB2 JDBC Driver

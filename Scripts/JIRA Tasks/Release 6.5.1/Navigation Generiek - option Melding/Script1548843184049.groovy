@@ -51,7 +51,7 @@ WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Melding/Naam Melder'), 'te
 'Selecting KMAR'
 WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Melding/Werkzaam bij'), '110', false)
 
-WebUI.setText(findTestObject('JIRA/Datum'), '30/01/2019')
+WebUI.setText(findTestObject('JIRA/A NEW/Datum'), '30/01/2019')
 
 WebUI.delay(1)
 
@@ -64,32 +64,32 @@ WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Melding/Omschrijving'), 'T
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('JIRA/Melding save'))
+WebUI.click(findTestObject('JIRA/A NEW/Melding save'))
 
 WebUI.delay(2)
 
-WebUI.setText(findTestObject('JIRA/Datum van'), '30/01/2019')
+WebUI.setText(findTestObject('JIRA/A NEW/Datum van'), '30/01/2019')
 
-WebUI.setText(findTestObject('JIRA/Datum tot'), '30/01/2019')
+WebUI.setText(findTestObject('JIRA/A NEW/Datum tot'), '30/01/2019')
 
 WebUI.delay(1)
 
 'Informatie'
-WebUI.selectOptionByValue(findTestObject('JIRA/Type melding'), '214', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Type melding'), '214', false)
 
 WebUI.delay(1)
 
 'Afgehandeld'
-WebUI.selectOptionByValue(findTestObject('JIRA/Status'), '115', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Status'), '115', false)
 
 WebUI.delay(1)
 
 'KMAR'
-WebUI.selectOptionByValue(findTestObject('JIRA/Werkzaam bij'), '110', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Werkzaam bij'), '110', false)
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('JIRA/Filter'))
+WebUI.click(findTestObject('JIRA/A NEW/Filter'))
 
 WebUI.scrollToPosition(5, 5)
 

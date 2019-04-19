@@ -6,15 +6,23 @@
    <elementGuidId>f24398df-43e6-4ff5-b54a-68a1d1216898</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//td[text()='200601667']/preceding-sibling::td/a[2]</value>
       </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//td[text()='200601667']/preceding-sibling::td/a[2]</value>
+      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//td[text()='200601667']/preceding-sibling::td/a[2]</value>
+   </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>

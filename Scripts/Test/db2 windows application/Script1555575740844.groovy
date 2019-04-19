@@ -69,40 +69,61 @@ getCopyText2.click()
 
 Thread.sleep(10000)
 
-driver.findElement(By.id('59664')).click()
+
+driver.findElement(By.name('S1031e70')).click()
+
+By locator3 = By.name('S1031e70')
+
+WebElement rightClickElement3 = driver.findElement(locator3)
+
+action.contextClick(rightClickElement3).build().perform()
+
+WebElement getCopyText3 = driver.findElement(By.name('Run SQL Scripts...'))
+
+getCopyText3.click()
+
+Thread.sleep(10000)
+
+
+
+
+
+not_run: driver.findElement(By.id('59664')).click()
+
+
 
 //Vertical Scroll Bar
-Thread.sleep(5000)
+not_run: Thread.sleep(5000)
 
-driver.findElement(By.name('Schemas')).click()
+not_run: driver.findElement(By.name('Schemas')).click()
 
-Thread.sleep(8000)
+not_run: Thread.sleep(8000)
 
-driver.findElement(By.name('KCDEVDTA')).click()
+not_run: driver.findElement(By.name('KCDEVDTA')).click()
 
-By locator13 = By.name('KCDEVDTA')
+not_run: By locator13 = By.name('KCDEVDTA')
 
-WebElement rightClickElementa = driver.findElement(locator13)
+not_run: WebElement rightClickElementa = driver.findElement(locator13)
 
-action.contextClick(rightClickElementa).build().perform()
+not_run: action.contextClick(rightClickElementa).build().perform()
 
-WebElement getCopyTextd = driver.findElement(By.id('Item 1'))
+not_run: WebElement getCopyTextd = driver.findElement(By.id('Item 1'))
 
-getCopyTextd.click()
+not_run: getCopyTextd.click()
 
-Thread.sleep(8000)
+not_run: Thread.sleep(8000)
 
-driver.findElement(By.name('Procedures')).click()
+not_run: driver.findElement(By.name('Procedures')).click()
 
-WebElement element = driver.findElement(By.name('Procedures'))
+not_run: WebElement element = driver.findElement(By.name('Procedures'))
 
-action.doubleClick(element).perform()
+not_run: action.doubleClick(element).perform()
 
-Thread.sleep(26000)
+not_run: Thread.sleep(26000)
 
-driver.findElement(By.name('ACTPOLGETVLGNR ( CHAR(), CHAR(), DECIMAL() ) ')).click()
+not_run: driver.findElement(By.name('ACTPOLGETVLGNR ( CHAR(), CHAR(), DECIMAL() ) ')).click()
 
-Thread.sleep(5000)
+not_run: Thread.sleep(5000)
 
-driver.close()
+not_run: driver.close()
 

@@ -12,6 +12,7 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Generiek'))
 
@@ -56,8 +57,15 @@ WebUI.setText(findTestObject('Actpol_Scripts/Extra script/Assistentienummer'), A
 
 WebUI.delay(2)
 
+//Assistentienummer WebUI.click(findTestObject('Actpol_Scripts/Extra script/Assistentienummer lb'))
+String Assistnumberpath = ('//*[contains(text(),"' + Assistentienummer) + '")]'
+
 'based on user'
-WebUI.click(findTestObject('Actpol_Scripts/Extra script/Assistentienummer lb'))
+TestObject to = findTestObject('Actpol_Scripts/Extra script/Assistentienummer lb')
+
+to.addProperty('xpath', ConditionType.EQUALS, Assistnumberpath)
+
+WebUI.click(to)
 
 WebUI.delay(2)
 

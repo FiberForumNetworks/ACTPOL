@@ -6,29 +6,16 @@
    <elementGuidId>662dff75-77f9-4343-8f25-4557a2400743</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@key = 'Strafbare_feiten' and @title = 'Strafbaar feit' and @ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame']</value>
+         <key>XPATH</key>
+         <value>//*[@key = 'Strafbare_feiten' and @title = 'Strafbaar feit' or @key = 'Strafbare_feit']</value>
       </entry>
       <entry>
-         <key>XPATH</key>
+         <key>BASIC</key>
+         <value>//*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>key</name>
-      <type>Main</type>
-      <value>Strafbare_feiten</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>title</name>
-      <type>Main</type>
-      <value>Strafbaar feit</value>
-   </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>

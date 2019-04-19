@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Description:
+After selecting the record in &quot;melding&quot; and clicking on delete button to delete selected record but the program is throwing error.
+
+ 
+
+Solution:
+
+Melding Mensenhandel person should be delete .
+
+Test plan:
+
+Step 1: Go to Generiek: Melding Mensenhandel Select existing user
+
+Step 2: Click on delete icon 
+
+ 
+
+Navigation:
+
+Generiek: Melding Mensenhandel</description>
+   <name>ACTPOL-533</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>821b960a-d5cd-433f-8310-e5ee94ceb0c2</testCaseGuid>
+</TestCaseEntity>

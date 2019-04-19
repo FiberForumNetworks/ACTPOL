@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Description:
+Pagina should be aligned in the middle of the columns.
+Solution:
+Pagina all columns should be aligning in the middle.
+Test plan:
+ Step 1: Go to *Opsporing: Register Select Existing user.
+ Step 2: Go to Coordinatie.
+ Step 3:  Check “Coordinatie” and “Controle”.
+Navigation:
+Opsporing: Register</description>
+   <name>ACTPOL-541</name>
+   <tag>ACTPOL-541</tag>
+   <comment></comment>
+   <testCaseGuid>d76a69a6-32d1-4c3e-806f-1b7cd072ed56</testCaseGuid>
+</TestCaseEntity>

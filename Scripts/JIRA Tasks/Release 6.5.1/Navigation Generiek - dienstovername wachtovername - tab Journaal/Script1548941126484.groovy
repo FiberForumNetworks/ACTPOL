@@ -39,7 +39,7 @@ WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Dienstoverna
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('JIRA/Dienstovername new'))
+WebUI.click(findTestObject('JIRA/A NEW/Dienstovername new'))
 
 WebUI.delay(2)
 
@@ -118,23 +118,23 @@ WebUI.click(findTestObject('Actpol_Scripts/Generiek/Dienstovername/d total save'
 
 WebUI.delay(2)
 
-WebUI.setText(findTestObject('JIRA/Wachtovername Zoekopdracht Dataam'), '31/01/2019')
+WebUI.setText(findTestObject('JIRA/A NEW/Wachtovername Zoekopdracht Dataam'), '31/01/2019')
 
 WebUI.delay(1)
 
 'ADMINISTRATIE JUSTICIELE DIENST'
-WebUI.selectOptionByValue(findTestObject('JIRA/Wijkteam'), '45', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Wijkteam'), '45', false)
 
 WebUI.delay(1)
 
 'AVONDDIENST'
-WebUI.selectOptionByValue(findTestObject('JIRA/Type dienst'), '2', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Type dienst'), '2', false)
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('JIRA/Journal'), 'Test441')
+WebUI.setText(findTestObject('JIRA/A NEW/Journal'), 'Test441')
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('JIRA/submit'))
+WebUI.click(findTestObject('JIRA/A NEW/submit'))
 

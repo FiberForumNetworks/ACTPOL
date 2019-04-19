@@ -39,7 +39,7 @@ WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Assistenties
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('JIRA/Generiek Assistenties user edit'))
+WebUI.click(findTestObject('JIRA/A NEW/Generiek Assistenties user edit'))
 
 WebUI.delay(5)
 
@@ -119,7 +119,7 @@ WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Reden Aangifte c
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('JIRA/ra save'))
+WebUI.click(findTestObject('JIRA/A NEW/ra save'))
 
 WebUI.delay(2)
 
@@ -164,77 +164,77 @@ WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Assistentie/Ui
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('JIRA/sf save'))
+WebUI.click(findTestObject('JIRA/A NEW/sf save'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('JIRA/Strafbaar feit edit 1'))
-
-WebUI.delay(2)
-
-'anu test2'
-WebUI.selectOptionByValue(findTestObject('JIRA/Uitvoering'), '7', false)
-
-WebUI.delay(1)
-
-WebUI.click(findTestObject('JIRA/vo save'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('JIRA/Strafbaar feit edit 2'))
+WebUI.click(findTestObject('JIRA/A NEW/Strafbaar feit edit 1'))
 
 WebUI.delay(2)
 
 'anu test2'
-WebUI.selectOptionByValue(findTestObject('JIRA/Uitvoering'), '7', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Uitvoering'), '7', false)
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('JIRA/vo save'))
+WebUI.click(findTestObject('JIRA/A NEW/vo save'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('JIRA/Strafbaar feit edit 3'))
+WebUI.click(findTestObject('JIRA/A NEW/Strafbaar feit edit 2'))
 
 WebUI.delay(2)
 
 'anu test2'
-WebUI.selectOptionByValue(findTestObject('JIRA/Uitvoering'), '7', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Uitvoering'), '7', false)
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('JIRA/vo save'))
+WebUI.click(findTestObject('JIRA/A NEW/vo save'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('JIRA/Reden Slachtofferhulp'))
+WebUI.click(findTestObject('JIRA/A NEW/Strafbaar feit edit 3'))
+
+WebUI.delay(2)
+
+'anu test2'
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/Uitvoering'), '7', false)
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('JIRA/rs new'))
+WebUI.click(findTestObject('JIRA/A NEW/vo save'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('JIRA/A NEW/Reden Slachtofferhulp'))
+
+WebUI.delay(1)
+
+WebUI.click(findTestObject('JIRA/A NEW/rs new'))
 
 WebUI.delay(1)
 
 WebUI.delay(2)
 
 'NEW RECORD'
-WebUI.selectOptionByValue(findTestObject('JIRA/redenHulp'), '6', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A NEW/redenHulp'), '6', false)
 
 WebUI.delay(2)
 
-WebUI.setText(findTestObject('JIRA/Omschrijving'), 'Testing')
+WebUI.setText(findTestObject('JIRA/A NEW/Omschrijving'), 'Testing')
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('JIRA/rs save'))
+WebUI.click(findTestObject('JIRA/A NEW/rs save'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('JIRA/total save'))
+WebUI.click(findTestObject('JIRA/A NEW/total save'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('JIRA/Contact'))
+WebUI.click(findTestObject('JIRA/A NEW/Contact'))
 
 WebUI.delay(4)
 

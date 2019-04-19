@@ -6,12 +6,11 @@
    <elementGuidId>b14eb5d8-8c6a-4a7a-8a0f-4e426677b5c6</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//ul/li[text()=&quot;RSCHOOL BUENAVISTA&quot;]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//ul/li[text()=&quot;GARAGE HUMPHREY PIE&quot;]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

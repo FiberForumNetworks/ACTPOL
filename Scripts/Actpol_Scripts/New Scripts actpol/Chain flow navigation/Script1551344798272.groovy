@@ -15,6 +15,7 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.WebDriver as WebDriver
 import com.kms.katalon.core.webui.driver.DriverFactory as DriverFactory
 import org.openqa.selenium.By as By
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -38,7 +39,7 @@ WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Telefoon nummer'),
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('Actpol_Scripts/Extra script/Longitude'), '12')
+WebUI.setText(findTestObject('Actpol_Scripts/Extra script/Longitude'), '12', FailureHandling.OPTIONAL)
 
 WebUI.delay(1)
 
@@ -97,7 +98,12 @@ WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Assistenties
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Extra script/Edit assit user'))
+//WebUI.click(findTestObject('Actpol_Scripts/Extra script/Edit assit user'))
+TestObject to = findTestObject('Actpol_Scripts/Extra script/Edit assit user')
+
+to.addProperty('xpath', ConditionType.EQUALS, Ass)
+
+WebUI.click(to)
 
 'COMERCIELE INSTELLING'
 WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Assistentie/Lokatie type'), '1', false)
