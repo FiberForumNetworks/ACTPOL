@@ -6,7 +6,7 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description>URL of the Application Under Test (AUT)</description>
-      <initValue>'http://10.20.10.7:8203/actprmdev/jprm154/nxmenu.pgm?docnum=551'</initValue>
+      <initValue>'http://10.20.10.7:8202/actpoldev/jpol523/nxmenu.pgm?docnum=604'</initValue>
       <name>DEVURL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -26,7 +26,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Change evary time we need id</description>
-      <initValue>'200601661'</initValue>
+      <initValue>'200601669'</initValue>
       <name>AssistentieID</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

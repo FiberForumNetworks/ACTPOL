@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Description
+Datum afgifte in grid reisdocument in vreemdeling proces should have the same layout as the input field (DD-MM-YYYY)
+
+Solution
+Change layout in Grid Reisdocumenten for datum Afgifte to DD-MM-YYYY
+
+Testplan
+Step 1: Go to Generiek - assistentie - rolproces - Vreemdeling - tab reisdocument
+Step 2: Enter Vreemdeling information and save
+Step 3: Enter residocument information and afgiftedatum (31-12-1999) and click save
+Step 4: In grid datum afgifte is - 31-12-1999
+
+Navigation
+Generiek - assistentie - rolproces - Vreemdeling - tab reisdocument</description>
+   <name>ACTPOL-544</name>
+   <tag>ACTPOL-544</tag>
+   <comment></comment>
+   <testCaseGuid>0da11927-5445-4b7e-9138-adffd8fc7cfa</testCaseGuid>
+</TestCaseEntity>

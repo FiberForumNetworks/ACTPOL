@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Description
+Currently the field Vlag in vaartuigen module is showing land instead of Nationality.
+
+Solution
+Change code for Vaartuig, so field &quot;Vlag&quot; will look at KPSLPF0074.
+
+Testplan
+Step 1: Go to Generiek - assistentie - (all) rolproces - for example Aangever
+Step 2: Enter Aangever mandatory fields and save
+Step 3: Go to tab Vaartuig and enter mandatory fields.
+Step 4: dropdown vlag should show same records as Nationaliteit in Person module
+
+Navigation
+Generiek - assistentie - rolproces - aangifte - tab Vaartuig - field Vlag</description>
+   <name>ACTPOL-545</name>
+   <tag>ACTPOL-545</tag>
+   <comment></comment>
+   <testCaseGuid>eef72d81-0b42-4e3a-a89d-3aeb75872a37</testCaseGuid>
+</TestCaseEntity>

@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Edit assit user 4</name>
+   <name>411 filter click test</name>
    <tag></tag>
-   <elementGuidId>21dc2208-7779-4133-8811-676869c3bc85</elementGuidId>
+   <elementGuidId>7d7ca642-a0e5-47ba-bb9d-cc2b74e3123b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[text()=&quot;200601653&quot;]/preceding-sibling::td/a[2]</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//*[text()=&quot;200601653&quot;]/preceding-sibling::td/a[2]</value>
+         <value>//tr[@class='uneven']//input[1][count(. | //*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/LeftFrame']) = count(//*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/LeftFrame'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,18 +17,13 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[text()=&quot;200601653&quot;]/preceding-sibling::td/a[2]</value>
+      <value>//tr[@class='uneven']//input[1]</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Actpol_Scripts/Iframe/RightFrame</value>
+      <value>Object Repository/Actpol_Scripts/Iframe test env/Left frame ifrm87</value>
    </webElementProperties>
-   <webElementXpaths>
-      <isSelected>false</isSelected>
-      <matchCondition>equals</matchCondition>
-      <value>/html/body/div[1]/table/tbody/tr[2]/td[1]/a[2]/img</value>
-   </webElementXpaths>
 </WebElementEntity>

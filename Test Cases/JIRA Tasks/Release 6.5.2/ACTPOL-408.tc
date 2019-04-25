@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Doorsturen OPV. When searching for a user with a special character in his or her name, it is not found. 
+
+issue for kc1292 Jaïm and also kc1227 Rosiël
+
+ 
+
+Testing steps:
+
+Menu, Handhaving, Doorsturen OPV
+At the left, in search module, type at Voornaam &quot; Jaïm &quot;
+Select officer Jaïm O'Kirsch
+Click on Filter: Records are found for this user
+At the left, in search module, type at Achternaam &quot; Rosiël &quot;
+Select officer Hubert Rosiël
+Click on Filter: Records are found for this user
+Navigation: Handhaving – Doorsturen OPV, left column Doorsturen OPV search fields.</description>
+   <name>ACTPOL-408</name>
+   <tag>ACTPOL-408</tag>
+   <comment></comment>
+   <testCaseGuid>553fe9b2-6673-40dc-b415-8d9dad3c2d90</testCaseGuid>
+</TestCaseEntity>

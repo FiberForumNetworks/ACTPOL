@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Assistentie</name>
+   <name>90 Assistentie number</name>
    <tag></tag>
-   <elementGuidId>acf71e9b-d732-43fd-a2fe-77bda37fa851</elementGuidId>
+   <elementGuidId>3925932d-c353-4c6e-b0e3-cb62d73e1989</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;general-search&quot;]/table/tbody/tr/td/select[@name=&quot;sType&quot;]</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
+         <value>//*[@name = 'ww_fINCEVENT' and @ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>ww_fINCEVENT</value>
+   </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
