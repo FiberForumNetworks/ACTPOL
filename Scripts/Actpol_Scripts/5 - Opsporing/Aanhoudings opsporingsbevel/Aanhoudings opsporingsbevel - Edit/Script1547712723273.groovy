@@ -12,16 +12,9 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.testobject.ConditionType as type
 
 WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
-
-not_run: WebUI.delay(4)
-
-not_run: WebUI.click(findTestObject('test/click preview'))
-
-not_run: WebUI.delay(180, FailureHandling.STOP_ON_FAILURE)
-
-not_run: WebUI.click(findTestObject('test/moord test'))
 
 WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Opsporing'))
 
@@ -31,7 +24,18 @@ WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Aanhoudings
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/edit'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/edit'))
+
+'Remember first set default assistentieid after run the script'
+String Aanhoudings_Opsporings_bevel_ID = GlobalVariable.AanhoudingsOpsporingsbevelID
+
+String Assistentiexpath = ('//*[text()="' + Aanhoudings_Opsporings_bevel_ID) + '"]/preceding-sibling::td/a[2]'
+
+TestObject to = findTestObject('Actpol_Scripts/Generiek/Assistentie/Assistentie editing user 2')
+
+to.addProperty('xpath', type.EQUALS, Assistentiexpath)
+
+WebUI.click(to)
 
 WebUI.delay(2)
 

@@ -12,6 +12,7 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -23,7 +24,18 @@ WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Arrestanten
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Arrestanten user selection'))
+//WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Arrestanten user selection'))
+'Remember first set default assistentieid after run the script'
+String ArrestantenId = GlobalVariable.AssistentieID
+
+String Assistentiexpath = ('//*[text()="' + ArrestantenId) + '"]/preceding-sibling::td/input[@name="actionselect"]'
+
+TestObject to = findTestObject('Actpol_Scripts/Opsporing/Arrestanten/user edit select radio btn')
+
+to.addProperty('xpath', ConditionType.EQUALS, Assistentiexpath)
+
+WebUI.click(to)
+
 
 WebUI.delay(1)
 

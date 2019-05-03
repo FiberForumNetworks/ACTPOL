@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>actie Activiteiten Rapport</name>
+   <name>register existing user</name>
    <tag></tag>
-   <elementGuidId>2bf4d74b-9fa3-494a-8167-1e2d2aa8939e</elementGuidId>
+   <elementGuidId>e460be20-794c-4b76-9000-ce4221819323</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;listbottomcontrol&quot;]/div[1]/span[2]/ul/li/ul/li[6]/a</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//*[@key = 'Activiteiten Rapport']</value>
+         <value>//*[text()=&quot;318&quot;]/preceding-sibling::td/a[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -19,9 +15,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>key</name>
+      <name>xpath</name>
       <type>Main</type>
-      <value>Activiteiten Rapport</value>
+      <value>//*[text()=&quot;318&quot;]/preceding-sibling::td/a[2]</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

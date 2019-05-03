@@ -12,8 +12,9 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
-WebUI.callTestCase(findTestCase('main/Actpol_Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Opsporing'))
 
@@ -23,15 +24,24 @@ WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Onderzoek')
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/existing user onderzoek'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/existing user onderzoek'))
+
+WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Generiek'))
+
+WebUI.delay(1)
+
+'Remember first set default assistentieid after run the script'
+String OnderzoekID = GlobalVariable.OnderzoekID
+
+String Assistentiexpath = ('//*[text()="' + OnderzoekID) + '"]/preceding-sibling::td/a[2]'
+
+TestObject to = findTestObject('Actpol_Scripts/Opsporing/Onderzoek/existing user onderzoek')
+
+to.addProperty('xpath', ConditionType.EQUALS, Assistentiexpath)
+
+WebUI.click(to)
 
 WebUI.delay(2)
-
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Onderzoek close'))
-
-not_run: WebUI.delay(2)
-
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Onderzoek existing user'))
 
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Entiteiten'))
 
@@ -40,59 +50,6 @@ WebUI.delay(3)
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Nieuwe Entiteit'))
 
 WebUI.delay(1)
-
-'Selecting Persoon\r\n'
-not_run: WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Type Entiteit'), '13', false)
-
-not_run: WebUI.delay(2)
-
-not_run: WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Achternaam'), 'Test')
-
-not_run: WebUI.delay(2)
-
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Achternaam lb'))
-
-not_run: WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Opmerking on'), 'Testing')
-
-'Selecting BETROKKENE\r\n'
-not_run: WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Rol Proces'), '5', false)
-
-not_run: WebUI.delay(6)
-
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Slachtofferhulp ja'))
-
-not_run: WebUI.scrollToPosition(10, 8)
-
-not_run: WebUI.delay(1)
-
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Contacten'))
-
-not_run: WebUI.delay(1)
-
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Reden Slachtofferhulp'))
-
-not_run: WebUI.delay(1)
-
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Reden new'))
-
-not_run: WebUI.delay(1)
-
-'Selecting rada asdfsad12'
-not_run: WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Reden new drop down'), '4', false)
-
-not_run: WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/red Omschrijving'), 'Testing')
-
-not_run: WebUI.delay(1)
-
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Red save'))
-
-not_run: WebUI.delay(3)
-
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/person save'))
-
-not_run: WebUI.delay(6)
-
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/person save 2'))
 
 WebUI.delay(6)
 

@@ -1,28 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>actie Activiteiten Rapport</name>
+   <name>user edit select radio btn</name>
    <tag></tag>
-   <elementGuidId>2bf4d74b-9fa3-494a-8167-1e2d2aa8939e</elementGuidId>
+   <elementGuidId>0feadac4-b6d7-4513-b776-5d70af34f418</elementGuidId>
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;listbottomcontrol&quot;]/div[1]/span[2]/ul/li/ul/li[6]/a</value>
+         <value>//*[text()=&quot;15/11/2015&quot;]/preceding-sibling::td/input[@name=&quot;actionselect&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//*[@key = 'Activiteiten Rapport']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>key</name>
-      <type>Main</type>
-      <value>Activiteiten Rapport</value>
-   </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>

@@ -29,4 +29,24 @@
       <initValue>'200601669'</initValue>
       <name>AssistentieID</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Change evary time we need id</description>
+      <initValue>'09/07/2018'</initValue>
+      <name>ArrestantenId</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Change evary time we need id</description>
+      <initValue>'315'</initValue>
+      <name>OnderzoekID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Change evary time we need id</description>
+      <initValue>'292'</initValue>
+      <name>RegisterID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Change evary time we need id</description>
+      <initValue>'Kolanu BOELDAK'</initValue>
+      <name>AanhoudingsOpsporingsbevelID</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
