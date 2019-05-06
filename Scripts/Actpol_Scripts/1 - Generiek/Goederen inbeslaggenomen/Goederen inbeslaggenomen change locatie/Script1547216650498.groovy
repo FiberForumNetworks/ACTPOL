@@ -21,9 +21,21 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Goederen Inbeslaggenomen'))
 
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Generiek/Goederen inbeslaggenomen/Goederen inbeslaggenomen-one locatie'))
+
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Generiek/Goederen inbeslaggenomen/Goederen inbeslaggenomen-one locatie'))
+//WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Edit Dienstovername'))
+'Remember first set default assistentieid after run the script'
+String Mixingid = GlobalVariable.Total_Generiek_Module
+
+String Assistentiexpath = ('//*[text()="' + Mixingid) + '"]/preceding-sibling::td/a[2]'
+
+TestObject to = findTestObject('Actpol_Scripts/Generiek/Assistentie/Edit Dienstovername')
+
+to.addProperty('xpath', type.EQUALS, Assistentiexpath)
+
+WebUI.click(to)
 
 WebUI.delay(2)
 

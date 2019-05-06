@@ -20,11 +20,7 @@ WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Generiek
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Taken'))
-
-WebUI.delay(2)
-
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Generiek/Taken/taken edit'))
+WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Overtime'))
 
 WebUI.delay(2)
 
@@ -39,25 +35,4 @@ TestObject to = findTestObject('Actpol_Scripts/Generiek/Assistentie/Edit Diensto
 to.addProperty('xpath', type.EQUALS, Assistentiexpath)
 
 WebUI.click(to)
-
-'CENTRALIST'
-not_run: WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Taken/Rang'), '7', false)
-
-'TER INFORMATIE'
-not_run: WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Taken/Onderwerp'), '7', false)
-
-not_run: WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Taken/Betreft'), 'Test')
-
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Generiek/Taken/Persoon click'))
-
-not_run: WebUI.delay(2)
-
-'10516 - BHUSHAN, Anuradha'
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Generiek/Taken/Persoon lb'))
-
-not_run: WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Taken/Taak Beschrijving'), 'Testing')
-
-not_run: WebUI.delay(1)
-
-WebUI.focus(findTestObject('Actpol_Scripts/Generiek/Taken/Taken save'))
 

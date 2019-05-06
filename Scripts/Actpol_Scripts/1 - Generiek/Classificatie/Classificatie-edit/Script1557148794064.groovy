@@ -12,7 +12,7 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.testobject.ConditionType as type
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -20,56 +20,53 @@ WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Generiek
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Goederen Inbeslaggenomen'))
+WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Classificatie'))
 
 WebUI.delay(2)
 
+//CHECK CODE
+//WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Assistentie editing user 2'))
 'Remember first set default assistentieid after run the script'
 String AssistentiedynamicId = GlobalVariable.Total_Generiek_Module
 
-String Assistentiexpath = ('//*[text()="' + AssistentiedynamicId) + '"]/preceding-sibling::td/a[1]'
+String Assistentiexpath = ('//*[text()="' + AssistentiedynamicId) + '"]/preceding-sibling::td/a[2]'
 
 TestObject to = findTestObject('Actpol_Scripts/Generiek/Assistentie/Assistentie editing user 2')
 
-to.addProperty('xpath', type.EQUALS, Assistentiexpath)
+to.addProperty('xpath', ConditionType.EQUALS, Assistentiexpath)
 
 WebUI.click(to)
 
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Generiek/Goederen inbeslaggenomen/Goederen inbeslaggenomen-one locatie'))
+WebUI.delay(2)
+
+'Persoon'
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Classificatie/Select Type Entiteit'), '205', false)
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Generiek/Goederen inbeslaggenomen/Nieuw Locatie'))
+WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Classificatie/Achternaam'), 'ARBNDELL')
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Generiek/Goederen inbeslaggenomen/Goed'))
-
-'Ontvangen'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Goederen inbeslaggenomen/Reden'), '76', false)
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Classificatie/Achternaam lb'))
 
 WebUI.delay(1)
 
-'OM'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Goederen inbeslaggenomen/Type'), '80', false)
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Classificatie/Classificatie BeginDatum'))
 
 WebUI.delay(1)
 
-'Aname1, Vname1'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Goederen inbeslaggenomen/Type 2'), '50014', false)
-
-'Andere'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Goederen inbeslaggenomen/Locatie'), '83', false)
-
-WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Goederen inbeslaggenomen/Locatie 2'), 'Test')
-
-WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Goederen inbeslaggenomen/Opmerking'), 'Testing')
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Classificatie/Classificatie BeginDatum'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Generiek/Goederen inbeslaggenomen/Goederen Locatie'))
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Classificatie/Person Clasificatie'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Generiek/Goederen inbeslaggenomen/save'))
+WebUI.scrollToPosition(10, 8)
+
+WebUI.delay(1)
+
+WebUI.focus(findTestObject('Actpol_Scripts/Generiek/Classificatie/Save data'))
 

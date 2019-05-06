@@ -12,8 +12,9 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.testobject.ConditionType as type
 
-WebUI.callTestCase(findTestCase('main/Actpol_Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Generiek'))
 
@@ -23,7 +24,17 @@ WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Dienstoverna
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Edit Dienstovername'))
+//WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Edit Dienstovername'))
+'Remember first set default assistentieid after run the script'
+String Mixingid = GlobalVariable.Total_Generiek_Module
+
+String Assistentiexpath = ('//*[text()="' + Mixingid) + '"]/preceding-sibling::td/a[2]'
+
+TestObject to = findTestObject('Actpol_Scripts/Generiek/Assistentie/Edit Dienstovername')
+
+to.addProperty('xpath', type.EQUALS, Assistentiexpath)
+
+WebUI.click(to)
 
 WebUI.delay(2)
 

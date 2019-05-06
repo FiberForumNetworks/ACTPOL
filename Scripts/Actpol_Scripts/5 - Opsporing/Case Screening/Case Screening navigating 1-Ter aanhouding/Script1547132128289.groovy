@@ -12,6 +12,7 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.testobject.ConditionType as type
 
 WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -23,7 +24,20 @@ WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Case Screen
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Case screning/Invoer Case Screening user selection'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Case screning/Invoer Case Screening user selection'))
+
+'Remember first set default assistentieid after run the script'
+String CaseScreeningID_ID = GlobalVariable.CaseScreeningID
+
+String Casescreeingxpath = ('(//td[text()="' + CaseScreeningID_ID) + '"]/preceding-sibling::td/a[2])[1]'
+
+TestObject to = findTestObject('Actpol_Scripts/Generiek/Assistentie/Assistentie editing user 2')
+
+to.addProperty('xpath', type.EQUALS, Casescreeingxpath)
+
+WebUI.click(to)
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Case screning/Bureau'))
 
@@ -38,7 +52,7 @@ WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Case screning/Bekende Verda
 WebUI.delay(1)
 
 'selecting 1-ter'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Opsporing/Case screning/Daderindicatie'), '123', false)
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Opsporing/Case screning/Daderindicatie'), '182', false)
 
 WebUI.delay(1)
 

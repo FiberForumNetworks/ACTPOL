@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ta Invoer Case Screening user selection</name>
+   <name>Classificatie EindDatum</name>
    <tag></tag>
-   <elementGuidId>f65434fb-8083-4f37-8028-2008f55dbf33</elementGuidId>
+   <elementGuidId>cbbe9a81-a5c9-4693-8b76-0dfaa6c4b6ce</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//td[text()='Drew']/preceding-sibling::td[2]/a[2]</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>(//td[text()='07/08/2014']/preceding-sibling::td/a[2])[1]</value>
+         <value>//*[@name = 'CLSFENDDT']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -19,9 +15,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath</name>
+      <name>name</name>
       <type>Main</type>
-      <value>(//td[text()='07/08/2014']/preceding-sibling::td/a[2])[1]</value>
+      <value>CLSFENDDT</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

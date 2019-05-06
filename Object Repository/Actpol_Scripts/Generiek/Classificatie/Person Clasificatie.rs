@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ta Invoer Case Screening user selection</name>
+   <name>Person Clasificatie</name>
    <tag></tag>
-   <elementGuidId>f65434fb-8083-4f37-8028-2008f55dbf33</elementGuidId>
+   <elementGuidId>b45e3c90-4c7f-4606-a741-a4d5e08877fa</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//td[text()='Drew']/preceding-sibling::td[2]/a[2]</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>(//td[text()='07/08/2014']/preceding-sibling::td/a[2])[1]</value>
+         <value>//*[@id = 'Optie1' and @class = 'CLSEVLG' and @name = 'CLSEVLG']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -19,9 +15,23 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath</name>
+      <name>id</name>
       <type>Main</type>
-      <value>(//td[text()='07/08/2014']/preceding-sibling::td/a[2])[1]</value>
+      <value>Optie1</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>CLSEVLG</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>CLSEVLG</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

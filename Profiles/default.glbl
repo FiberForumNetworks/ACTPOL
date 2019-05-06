@@ -11,7 +11,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>A valid account used during the test</description>
-      <initValue>'vidhya'</initValue>
+      <initValue>'vidhya01'</initValue>
       <name>password</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -48,5 +48,25 @@
       <description>Change evary time we need id</description>
       <initValue>'Kolanu BOELDAK'</initValue>
       <name>AanhoudingsOpsporingsbevelID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'22/04/2019'</initValue>
+      <name>CaseScreeningID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'DOE'</initValue>
+      <name>TaktiekID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'200600247/0'</initValue>
+      <name>VoorarrestID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'ALARMPISTOOL'</initValue>
+      <name>Total_Generiek_Module</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

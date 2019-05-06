@@ -23,7 +23,18 @@ WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Tactiek'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/tactiek/ta Invoer Case Screening user selection'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/tactiek/ta Invoer Case Screening user selection'))
+
+'Remember first set default assistentieid after run the script'
+String Taktiek_ID = GlobalVariable.TaktiekID
+
+String Casescreeingxpath = ('(//td[text()="' + Taktiek_ID) + '"]/preceding-sibling::td/a[2])[1]'
+
+TestObject to = findTestObject('Actpol_Scripts/Opsporing/tactiek/ta Invoer Case Screening user selection')
+
+to.addProperty('xpath', type.EQUALS, Casescreeingxpath)
+
+WebUI.click(to)
 
 WebUI.delay(1)
 
@@ -37,7 +48,7 @@ WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Opsporing/tactiek/Besli
 WebUI.delay(1)
 
 'selecting 1-Ter aanhouding'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Opsporing/Case screning/Daderindicatie'), '124', false)
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Opsporing/Case screning/Daderindicatie'), '183', false)
 
 WebUI.delay(1)
 

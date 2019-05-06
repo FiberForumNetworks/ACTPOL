@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ta Invoer Case Screening user selection</name>
+   <name>Save data</name>
    <tag></tag>
-   <elementGuidId>f65434fb-8083-4f37-8028-2008f55dbf33</elementGuidId>
+   <elementGuidId>e9dd2f83-4e33-4679-a4da-9fb29ac104cb</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//td[text()='Drew']/preceding-sibling::td[2]/a[2]</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>(//td[text()='07/08/2014']/preceding-sibling::td/a[2])[1]</value>
+         <value>//div[@class='content-header-action']//input[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>(//td[text()='07/08/2014']/preceding-sibling::td/a[2])[1]</value>
+      <value>//div[@class='content-header-action']//input[2]</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

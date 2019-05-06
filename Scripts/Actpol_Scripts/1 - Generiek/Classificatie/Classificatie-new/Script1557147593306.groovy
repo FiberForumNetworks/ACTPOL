@@ -12,7 +12,7 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.testobject.ConditionType as type
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -20,27 +20,44 @@ WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Generiek
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Melding'))
+WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Classificatie'))
 
 WebUI.delay(2)
 
-WebUI.delay(2)
 
-//WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Edit Dienstovername'))
-'Remember first set default assistentieid after run the script'
-String Mixingid = GlobalVariable.Total_Generiek_Module
 
-String Assistentiexpath = ('//*[text()="' + Mixingid) + '"]/preceding-sibling::td/a[3]'
-
-TestObject to = findTestObject('Actpol_Scripts/Generiek/Assistentie/Edit Dienstovername')
-
-to.addProperty('xpath', type.EQUALS, Assistentiexpath)
-
-WebUI.click(to)
-
-WebUI.delay(5)
-
-WebUI.click(findTestObject('Actpol_Scripts/Generiek/Melding/delete 2'))
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Classificatie/new'))
 
 WebUI.delay(2)
+
+'Persoon'
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Classificatie/Select Type Entiteit'), '205', false)
+
+WebUI.delay(2)
+
+WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Classificatie/Achternaam'), 'ARBNDELL')
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Classificatie/Achternaam lb'))
+
+WebUI.delay(1)
+
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Classificatie/Classificatie BeginDatum'))
+
+WebUI.delay(1)
+
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Classificatie/Classificatie BeginDatum'))
+
+WebUI.delay(1)
+
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Classificatie/Person Clasificatie'))
+
+WebUI.delay(1)
+
+WebUI.scrollToPosition(10, 8)
+
+WebUI.delay(1)
+
+WebUI.focus(findTestObject('Actpol_Scripts/Generiek/Classificatie/Save data'))
 

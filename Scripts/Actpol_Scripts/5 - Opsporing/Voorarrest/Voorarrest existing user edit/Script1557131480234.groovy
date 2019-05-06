@@ -14,47 +14,27 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testobject.ConditionType as type
 
-WebUI.callTestCase(findTestCase('main/Actpol_Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Opsporing'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Tactiek'))
+WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Voorarrest'))
 
 WebUI.delay(1)
 
 //WebUI.click(findTestObject('Actpol_Scripts/Opsporing/tactiek/ta Invoer Case Screening user selection'))
 'Remember first set default assistentieid after run the script'
-String Taktiek_ID = GlobalVariable.TaktiekID
+String Voorarrest_ID = GlobalVariable.VoorarrestID
 
-String Casescreeingxpath = ('(//td[text()="' + Taktiek_ID) + '"]/preceding-sibling::td/a[2])[1]'
+String Voorarrestxpath = ('(//td[text()="' + Voorarrest_ID) + '"]/preceding-sibling::td/a[2])[1]'
 
 TestObject to = findTestObject('Actpol_Scripts/Opsporing/tactiek/ta Invoer Case Screening user selection')
 
-to.addProperty('xpath', type.EQUALS, Casescreeingxpath)
+to.addProperty('xpath', type.EQUALS, Voorarrestxpath)
 
 WebUI.click(to)
 
 WebUI.delay(1)
-
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Case screning/Bekende Verdachte ja'))
-
-WebUI.delay(1)
-
-'select Afronden\r\n'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Opsporing/tactiek/Beslissing OM'), '3', false)
-
-WebUI.delay(1)
-
-'selecting 1-Ter aanhouding'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Opsporing/Case screning/Daderindicatie'), '182', false)
-
-WebUI.delay(1)
-
-WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Case screning/Omschrijving extra factor'), 'Testing')
-
-WebUI.delay(1)
-
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Case screning/Invoer Case Screening close tab'))
 

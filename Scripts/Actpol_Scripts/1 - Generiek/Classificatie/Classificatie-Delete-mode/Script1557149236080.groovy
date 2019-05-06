@@ -12,7 +12,7 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.testobject.ConditionType as type
+import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -20,27 +20,24 @@ WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Generiek
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Melding'))
+WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Classificatie'))
 
 WebUI.delay(2)
 
-WebUI.delay(2)
-
-//WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Edit Dienstovername'))
+//CHECK CODE
+//WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Assistentie editing user 2'))
 'Remember first set default assistentieid after run the script'
-String Mixingid = GlobalVariable.Total_Generiek_Module
+String AssistentiedynamicId = GlobalVariable.Total_Generiek_Module
 
-String Assistentiexpath = ('//*[text()="' + Mixingid) + '"]/preceding-sibling::td/a[3]'
+String Assistentiexpath = ('//*[text()="' + AssistentiedynamicId) + '"]/preceding-sibling::td/a[3]'
 
-TestObject to = findTestObject('Actpol_Scripts/Generiek/Assistentie/Edit Dienstovername')
+TestObject to = findTestObject('Actpol_Scripts/Generiek/Assistentie/Assistentie editing user 2')
 
-to.addProperty('xpath', type.EQUALS, Assistentiexpath)
+to.addProperty('xpath', ConditionType.EQUALS, Assistentiexpath)
 
 WebUI.click(to)
 
-WebUI.delay(5)
+WebUI.delay(4)
 
-WebUI.click(findTestObject('Actpol_Scripts/Generiek/Melding/delete 2'))
-
-WebUI.delay(2)
+WebUI.focus(findTestObject('Actpol_Scripts/Generiek/Classificatie/select Delete'))
 

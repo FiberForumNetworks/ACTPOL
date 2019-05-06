@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>ta Invoer Case Screening user selection</name>
+   <name>select Delete</name>
    <tag></tag>
-   <elementGuidId>f65434fb-8083-4f37-8028-2008f55dbf33</elementGuidId>
+   <elementGuidId>c967283b-82c0-4e65-9b22-77e8d06f00c9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//td[text()='Drew']/preceding-sibling::td[2]/a[2]</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>(//td[text()='07/08/2014']/preceding-sibling::td/a[2])[1]</value>
+         <value>//*[@key = 'Delete' and @title = 'Verwijderen']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -19,9 +15,16 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath</name>
+      <name>key</name>
       <type>Main</type>
-      <value>(//td[text()='07/08/2014']/preceding-sibling::td/a[2])[1]</value>
+      <value>Delete</value>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>title</name>
+      <type>Main</type>
+      <value>Verwijderen</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
