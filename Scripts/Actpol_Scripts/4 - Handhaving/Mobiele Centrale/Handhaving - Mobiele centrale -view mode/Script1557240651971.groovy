@@ -31,7 +31,7 @@ not_run: WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/
 'Remember first set default assistentieid after run the script'
 String Id = GlobalVariable.Total_HandhavingID
 
-String xpath = ('(//*[text()="' + Id) + '"]/preceding-sibling::td/a[5])[1]'
+String xpath = ('(//*[text()="' + Id) + '"]/preceding-sibling::td/a[2])[1]'
 
 TestObject to = findTestObject('Actpol_Scripts/Generiek/Assistentie/Assistentie editing user 2')
 

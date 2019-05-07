@@ -23,9 +23,17 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Noodhulp/Onderhoud van Patrouilles'))
 
+WebUI.delay(2)
+
+WebUI.setText(findTestObject('Actpol_Scripts/Noodhulp/Unit Id'), GlobalVariable.NoodhulpID)
+
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Noodhulp/delete user'))
+WebUI.click(findTestObject('Actpol_Scripts/Noodhulp/Noodhulp filter'))
+
+WebUI.delay(1)
+
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Noodhulp/delete user'))
 
 WebUI.delay(2)
 

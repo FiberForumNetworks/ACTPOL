@@ -16,22 +16,26 @@ import com.kms.katalon.core.testobject.ConditionType as type
 
 WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Handhaving/Handhaving'))
+WebUI.delay(1)
+
+WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Noodhulp/Noodhulp'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Handhaving/Mobiele Centrale'))
+WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Noodhulp/Onderhoud van Patrouilles'))
+
+WebUI.delay(1)
+
+WebUI.setText(findTestObject('Actpol_Scripts/Noodhulp/Filter lijst unit id'), GlobalVariable.NoodhulpID)
+
+WebUI.click(findTestObject('Actpol_Scripts/Noodhulp/filter'))
 
 WebUI.delay(2)
-
-WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/refre'))
-
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/Chart icon click'))
 
 'Remember first set default assistentieid after run the script'
-String Id = GlobalVariable.Total_HandhavingID
+String Id = GlobalVariable.NoodhulpID
 
-String xpath = ('(//*[text()="' + Id) + '"]/preceding-sibling::td/a[5])[1]'
+String xpath = ('//*[text()="' + Id) + '"]/preceding-sibling::td/span[1]'
 
 TestObject to = findTestObject('Actpol_Scripts/Generiek/Assistentie/Assistentie editing user 2')
 
@@ -39,5 +43,5 @@ to.addProperty('xpath', type.EQUALS, xpath)
 
 WebUI.click(to)
 
-WebUI.delay(4)
+WebUI.delay(1)
 

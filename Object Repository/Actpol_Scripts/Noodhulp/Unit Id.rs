@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Optie user delete</name>
+   <name>Unit Id</name>
    <tag></tag>
-   <elementGuidId>e4538b8b-9254-4dc5-ad2a-339e587e0d9b</elementGuidId>
+   <elementGuidId>579eff74-5a86-47fc-a8e5-6c22b12cf9a3</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//a[@class='delUnitDienst']//img</value>
+         <value>//*[@name = 'ww_fUNTUNID']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>name</name>
+      <type>Main</type>
+      <value>ww_fUNTUNID</value>
+   </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>

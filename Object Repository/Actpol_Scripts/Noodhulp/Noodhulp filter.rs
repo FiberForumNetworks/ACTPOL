@@ -1,20 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Optie user delete</name>
+   <name>Noodhulp filter</name>
    <tag></tag>
-   <elementGuidId>e4538b8b-9254-4dc5-ad2a-339e587e0d9b</elementGuidId>
+   <elementGuidId>2f0e31a8-aadb-4d1f-bd15-726e6fb29221</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//a[@class='delUnitDienst']//img</value>
+         <value>//*[@id = 'filter']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>filter</value>
+   </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>

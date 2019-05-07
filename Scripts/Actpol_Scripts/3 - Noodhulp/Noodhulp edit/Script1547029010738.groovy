@@ -12,6 +12,7 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.testobject.ConditionType as type
 
 WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -25,7 +26,22 @@ WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Noodhulp/Onderhoud va
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Noodhulp/Edit unit'))
+WebUI.setText(findTestObject('Actpol_Scripts/Noodhulp/Unit Id'), GlobalVariable.NoodhulpID)
+
+WebUI.delay(1)
+
+WebUI.click(findTestObject('Actpol_Scripts/Noodhulp/Noodhulp filter'))
+
+'Remember first set default assistentieid after run the script'
+String Id = GlobalVariable.NoodhulpID
+
+String xpath = ('//*[text()="' + Id) + '"]/preceding-sibling::td/span[2]'
+
+TestObject to = findTestObject('Actpol_Scripts/Generiek/Assistentie/Assistentie editing user 2')
+
+to.addProperty('xpath', type.EQUALS, xpath)
+
+WebUI.click(to)
 
 WebUI.delay(1)
 

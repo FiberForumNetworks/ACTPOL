@@ -50,23 +50,33 @@
       <name>AanhoudingsOpsporingsbevelID</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>Change evary time we need id</description>
       <initValue>'22/04/2019'</initValue>
       <name>CaseScreeningID</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>Change evary time we need id</description>
       <initValue>'DOE'</initValue>
       <name>TaktiekID</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>Change evary time we need id</description>
       <initValue>'200600247/0'</initValue>
       <name>VoorarrestID</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
-      <description></description>
+      <description>Change evary time we need id</description>
       <initValue>'ALARMPISTOOL'</initValue>
       <name>Total_Generiek_Module</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Change evary time we need id</description>
+      <initValue>'C11'</initValue>
+      <name>NoodhulpID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Change evary time we need id</description>
+      <initValue>'01/05/2018'</initValue>
+      <name>Total_HandhavingID</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

@@ -12,6 +12,7 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.testobject.ConditionType as type
 
 WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -25,17 +26,28 @@ WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Noodhulp/Onderhoud va
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('Actpol_Scripts/Noodhulp/Filter lijst unit id'), '1234')
+WebUI.setText(findTestObject('Actpol_Scripts/Noodhulp/Filter lijst unit id'), GlobalVariable.NoodhulpID)
 
 WebUI.click(findTestObject('Actpol_Scripts/Noodhulp/filter'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Noodhulp/unit user 32'))
+'Remember first set default assistentieid after run the script'
+String Id = GlobalVariable.NoodhulpID
 
-WebUI.delay(2)
+String xpath = ('//*[text()="' + Id) + '"]/preceding-sibling::td/span[3]'
 
-WebUI.click(findTestObject('Actpol_Scripts/Noodhulp/Optie user select'))
+TestObject to = findTestObject('Actpol_Scripts/Generiek/Assistentie/Assistentie editing user 2')
+
+to.addProperty('xpath', type.EQUALS, xpath)
+
+WebUI.click(to)
+
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Noodhulp/unit user 32'))
+
+not_run: WebUI.delay(2)
+
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Noodhulp/Optie user select'))
 
 WebUI.delay(1)
 
@@ -43,5 +55,5 @@ WebUI.focus(findTestObject('Actpol_Scripts/Noodhulp/Optie user delete'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Noodhulp/Unit save'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Noodhulp/Unit save'))
 
