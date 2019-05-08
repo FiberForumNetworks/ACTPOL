@@ -16,20 +16,26 @@ import com.kms.katalon.core.testobject.ConditionType as type
 
 WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Handhaving/Handhaving'))
+WebUI.delay(1)
+
+WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Autorisatie/Autorisatie'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Handhaving/Patrouille'))
+WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Autorisatie/Onderhoud Gebruiker Autorisatie'))
 
-WebUI.delay(2)
+WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/refre'))
+WebUI.setText(findTestObject('Actpol_Scripts/9 - Autorisatie/Gebruiker Serach set option'), GlobalVariable.Total_AutorisatieID)
 
-//not_run: WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Patrouille/p view'))
+WebUI.delay(1)
+
+WebUI.click(findTestObject('Actpol_Scripts/9 - Autorisatie/Filter'), FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(3)
 
 'Remember first set default assistentieid after run the script'
-String Id = GlobalVariable.Total_HandhavingID
+String Id = GlobalVariable.Total_AutorisatieID
 
 String xpath = ('(//*[text()="' + Id) + '"]/preceding-sibling::td/a[1])[1]'
 
@@ -40,6 +46,4 @@ to.addProperty('xpath', type.EQUALS, xpath)
 WebUI.click(to)
 
 WebUI.delay(3)
-
-WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Patrouille/p close'))
 

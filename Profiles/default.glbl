@@ -76,7 +76,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Change evary time we need id</description>
-      <initValue>'01/05/2018'</initValue>
+      <initValue>'07/01/2019'</initValue>
       <name>Total_HandhavingID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'TESTA'</initValue>
+      <name>Total_AutorisatieID</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>
