@@ -81,7 +81,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'TESTA'</initValue>
+      <initValue>'75'</initValue>
       <name>Total_AutorisatieID</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

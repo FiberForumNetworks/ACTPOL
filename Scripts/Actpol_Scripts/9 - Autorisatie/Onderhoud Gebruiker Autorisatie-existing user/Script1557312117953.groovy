@@ -26,11 +26,11 @@ WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Autorisatie/Onderhoud
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('Actpol_Scripts/9 - Autorisatie/Gebruiker Serach set option'), GlobalVariable.Total_AutorisatieID)
+WebUI.setText(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Gebruiker Serach set option'), GlobalVariable.Total_AutorisatieID)
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/9 - Autorisatie/Filter'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Filter'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(3)
 
@@ -47,73 +47,73 @@ WebUI.click(to)
 
 WebUI.delay(3)
 
-WebUI.setText(findTestObject('Actpol_Scripts/9 - Autorisatie/Achternaam'), 'Test12')
+WebUI.setText(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Achternaam'), 'Test12')
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('Actpol_Scripts/9 - Autorisatie/Voornaam'), 'test')
+WebUI.setText(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Voornaam'), 'test')
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('Actpol_Scripts/9 - Autorisatie/Middelnaam'), 'test')
+WebUI.setText(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Middelnaam'), 'test')
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/9 - Autorisatie/Geslacht Man'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Geslacht Man'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('Actpol_Scripts/9 - Autorisatie/Email'), 'Test@email.com')
+WebUI.setText(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Email'), 'Test@email.com')
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('Actpol_Scripts/9 - Autorisatie/Politieagent nummer'), '12')
+WebUI.setText(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Politieagent nummer'), '12')
 
 WebUI.delay(1)
 
 'AMBULANCE'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/9 - Autorisatie/Korps'), '3', false)
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Korps'), '3', false)
 
 WebUI.delay(1)
 
 'ADMINISTRATIE JUSTICIELE DIENST'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/9 - Autorisatie/Wijkteam_Bureau'), '45', false)
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Wijkteam_Bureau'), '45', false)
 
 WebUI.delay(1)
 
 'PLOEG 1'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/9 - Autorisatie/Ploeg'), '1', false)
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Ploeg'), '1', false)
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/9 - Autorisatie/Soort Ambtenaar Burger'))
+WebUI.click(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Soort Ambtenaar Burger'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/9 - Autorisatie/Weergave in Lijs Ja'))
+WebUI.click(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Weergave in Lijs Ja'))
 
 WebUI.delay(1)
 
 'ADMINISTRATIEVE MEDEWERKER'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/9 - Autorisatie/Functie'), '2', false)
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Functie'), '2', false)
 
 WebUI.delay(1)
 
 'ADJUNCT-COMMIES 1STE KLASSE'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/9 - Autorisatie/Rang'), '2', false)
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Rang'), '2', false)
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('Actpol_Scripts/9 - Autorisatie/Gebruiker id'), 'test18', FailureHandling.OPTIONAL)
+WebUI.setText(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Gebruiker id'), 'test18', FailureHandling.OPTIONAL)
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/9 - Autorisatie/Actief Ja'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Actief Ja'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(1)
 
 'BUREAU CHEF BIJZONDERE ONDERZOEKEN'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/9 - Autorisatie/Gebruikersgroep'), '62', false)
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Gebruikersgroep'), '62', false)
 
 WebUI.delay(1)
 
@@ -121,5 +121,5 @@ WebUI.scrollToPosition(10, 8, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(1)
 
-WebUI.focus(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud Gebruiker Autorisatie-Save'))
+WebUI.focus(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Onderhoud Gebruiker Autorisatie-Save'))
 

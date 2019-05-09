@@ -22,28 +22,38 @@ WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Autorisatie/Autor
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Autorisatie/Onderhoud Gebruiker Autorisatie'))
+WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Autorisatie/Onderhoud Groep Autorisatie'))
 
 WebUI.delay(1)
-
-WebUI.setText(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Gebruiker Serach set option'), GlobalVariable.Total_AutorisatieID)
-
-WebUI.delay(1)
-
-WebUI.click(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Filter'), FailureHandling.STOP_ON_FAILURE)
-
-WebUI.delay(3)
 
 'Remember first set default assistentieid after run the script'
 String Id = GlobalVariable.Total_AutorisatieID
 
-String xpath = ('(//*[text()="' + Id) + '"]/preceding-sibling::td/a[1])[1]'
+String xpath = ('//*[text()="' + Id) + '"]/preceding-sibling::td/a[1]'
 
 TestObject to = findTestObject('Actpol_Scripts/Generiek/Assistentie/Assistentie editing user 2')
 
 to.addProperty('xpath', type.EQUALS, xpath)
 
+WebUI.delay(2)
+
 WebUI.click(to)
 
-WebUI.delay(3)
+WebUI.delay(1)
+
+WebUI.click(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud Groep Autorisatie/Onderhoud Groep Autorisatie -select new'))
+
+WebUI.delay(2)
+
+'ARRESTANTEN'
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud Groep Autorisatie/Programa'), 'POL41001', 
+    false)
+
+WebUI.delay(1)
+
+WebUI.click(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud Groep Autorisatie/Authorisatie Raadplegen'))
+
+WebUI.delay(1)
+
+WebUI.click(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud Groep Autorisatie/Authorisatie add'))
 
