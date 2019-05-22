@@ -1,28 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>View Assistentie</name>
+   <name>Conformation ok select</name>
    <tag></tag>
-   <elementGuidId>8a981daa-3599-4336-8c66-82922baf8518</elementGuidId>
+   <elementGuidId>f62c7bae-432a-4414-8371-62e65c818fee</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;result-list&quot;]/table/tbody/tr/td[1]/a[1]/img
-</value>
+         <value>//a[@class='goto-confirm-dialog']//img[@class='lang']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;result-list&quot;]/table/tbody/tr/td[1]/a[1]/img</value>
+      <value>//a[@class='goto-confirm-dialog']//img[@class='lang']</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

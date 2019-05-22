@@ -7,14 +7,22 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value>//form[@id='general-search']//span[contains(text(),'zoeken')]</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>//*[@id=&quot;general-search&quot;]/table/tbody/tr/td/button/span[text()=&quot;zoeken&quot;]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//form[@id='general-search']//span[contains(text(),'zoeken')]</value>
+   </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>

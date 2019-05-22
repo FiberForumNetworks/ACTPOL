@@ -22,6 +22,14 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Dienstovername'))
 
+WebUI.delay(1)
+
+WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Dienstovername/Wachtovername Zoekopdracht Datum'), GlobalVariable.Total_Generiek_Module)
+
+WebUI.delay(1)
+
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Dienstovername/Wachtovername Zoekopdracht Filter'))
+
 WebUI.delay(2)
 
 //WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Edit Dienstovername'))

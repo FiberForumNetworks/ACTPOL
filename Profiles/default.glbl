@@ -26,7 +26,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Change evary time we need id</description>
-      <initValue>'200601669'</initValue>
+      <initValue>'200601675'</initValue>
       <name>AssistentieID</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -66,7 +66,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Change evary time we need id</description>
-      <initValue>'ALARMPISTOOL'</initValue>
+      <initValue>'03/03/2015 10.43.35'</initValue>
       <name>Total_Generiek_Module</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

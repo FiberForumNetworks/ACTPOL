@@ -1,34 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>View Assistentie</name>
+   <name>Wachtovername Zoekopdracht Datum</name>
    <tag></tag>
-   <elementGuidId>8a981daa-3599-4336-8c66-82922baf8518</elementGuidId>
+   <elementGuidId>89b7ddaf-28c4-47d4-a56f-64e78f163e7d</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;result-list&quot;]/table/tbody/tr/td[1]/a[1]/img
-</value>
+         <value>//*[@name = 'ww_fDNSDATE']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath</name>
+      <name>name</name>
       <type>Main</type>
-      <value>//*[@id=&quot;result-list&quot;]/table/tbody/tr/td[1]/a[1]/img</value>
+      <value>ww_fDNSDATE</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Actpol_Scripts/Iframe test env/Right general search frame ifrm89</value>
+      <value>Object Repository/Actpol_Scripts/Iframe test env/Left frame ifrm87</value>
    </webElementProperties>
 </WebElementEntity>
