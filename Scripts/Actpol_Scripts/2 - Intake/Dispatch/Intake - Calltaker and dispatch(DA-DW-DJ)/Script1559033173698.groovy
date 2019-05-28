@@ -28,7 +28,7 @@ WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Bekende plaats'), 
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Adres van Incident lb 4'))
+WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Adres van Incident lb 5'))
 
 WebUI.delay(1)
 
@@ -91,7 +91,6 @@ WebUI.switchToWindowIndex(1, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('Actpol_Scripts/Extra script/Dipath edit'))
 
-
 /*String AssistentiedynamicId = Assistentie
 
 'Remember first set default assistentieid after run the script'
@@ -102,7 +101,6 @@ TestObject to1 = findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdr
 to1.addProperty('xpath', con.EQUALS, Assistentiexpath)
 
 WebUI.click(to1)*/
-
 WebUI.delay(1)
 
 WebUI.click(findTestObject('Actpol_Scripts/Extra script/Unit radio click'))
@@ -122,6 +120,11 @@ WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Extra script/Dispath St
 
 WebUI.delay(1)
 
-'DH'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Extra script/Dispath Status'), 'TH', false)
+'DW'
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Extra script/Dispath Status'), 'WF', false)
+
+WebUI.delay(1)
+
+'DJ'
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Extra script/Dispath Status'), 'TS', false)
 
