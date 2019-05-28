@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Creating scripts for bekende aangehouden verdachte reden select I.V.M. GIJZELING and type selected BUITEN HETERDAAD</description>
+   <name>Reden-RECHTSHULP VERZOEK and type -IN ONDERZOEK</name>
+   <tag></tag>
+   <comment>BEKENDE/AANGEHOUDEN VERDACHTE  start</comment>
+   <testCaseGuid>e2e28261-d39e-4ba7-9d0d-94fb5a4a33d3</testCaseGuid>
+</TestCaseEntity>
