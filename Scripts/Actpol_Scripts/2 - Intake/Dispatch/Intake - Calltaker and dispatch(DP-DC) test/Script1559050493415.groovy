@@ -15,8 +15,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testobject.ConditionType as con
 
-import org.openqa.selenium.WebDriver
-import org.openqa.selenium.By
 
 WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -35,6 +33,12 @@ WebUI.switchToWindowIndex(1, FailureHandling.STOP_ON_FAILURE)
 WebUI.scrollToElement(findTestObject('Actpol_Scripts/Extra script/Dipath edit'), 5)
 WebUI.delay(2)
 
-WebDriver driver=new WebDriver()
+String AssistentiedynamicId = GlobalVariable.AssistentieID
 
-driver.findElement(By.xpath('//*[@id="listPrOverig"]/table/tbody/tr/td/input[@event="200601685"]'))
+String Assistentiexpath = '//input[@class="selMeld"][@event="200601705"]'
+
+TestObject to = findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/View Assistentie')
+
+to.addProperty('xpath', con.EQUALS, Assistentiexpath)
+
+WebUI.click(to)
