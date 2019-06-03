@@ -24,15 +24,15 @@ WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Intake/Calltaker'))
 
 WebUI.delay(2)
 
-WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Bekende plaats'), 'ea')
+WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Bekende plaats'), 'SS')
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Adres van Incident lb 29'))
+WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Adres van Incident lb 33'))
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Telefoon nummer'), '7854')
+WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Telefoon nummer'), '7866')
 
 WebUI.delay(1)
 
@@ -105,15 +105,20 @@ WebUI.click(findTestObject('Actpol_Scripts/Extra script/Koppelen save'))
 
 WebUI.delay(1)
 
-'DA'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Extra script/Dispath Status'), 'AR', false)
+'DO'
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Extra script/Dispath Status'), 'CT', false)
 
-WebUI.delay(2)
+WebUI.delay(4)
 
-'DH'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Extra script/Dispath Status'), 'TH', false)
+'DJ'
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Extra script/Dispath Status'), 'TS', false)
 
-WebUI.delay(2)
+WebUI.delay(4)
+
+'DS'
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Extra script/Dispath Status'), 'AS', false)
+
+WebUI.delay(4)
 
 'FR'
 WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Extra script/Dispath Status'), 'FR', false)
