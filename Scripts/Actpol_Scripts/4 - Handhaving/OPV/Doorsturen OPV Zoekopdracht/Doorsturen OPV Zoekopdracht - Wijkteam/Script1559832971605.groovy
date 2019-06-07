@@ -12,7 +12,6 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import com.kms.katalon.core.testobject.ConditionType as type
 
 WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -22,31 +21,26 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Handhaving/Doorsturen OPV'))
 
+/*WebUI.delay(2)
+
+WebUI.setText(findTestObject('Actpol_Scripts/Handhaving/OPV/A Doorsturen OPV Zoekopdracht/Start Datum'), '26/02/2019')
+
+WebUI.delay(1)
+
+WebUI.setText(findTestObject('Actpol_Scripts/Handhaving/OPV/A Doorsturen OPV Zoekopdracht/Eind Datum'), '26/02/2014')*/
+
+
+WebUI.delay(1)
+
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Handhaving/OPV/A Doorsturen OPV Zoekopdracht/Wijkteam'), '1' , false)
+
+
+WebUI.delay(1)
+
+WebUI.click(findTestObject('Actpol_Scripts/Handhaving/OPV/A Doorsturen OPV Zoekopdracht/Filter'))
+
+
 WebUI.delay(2)
 
 WebUI.takeScreenshot()
-
-//WebUI.click(findTestObject('Actpol_Scripts/Handhaving/OPV/OPV user view'))
-'Remember first set default assistentieid after run the script'
-String Id = GlobalVariable.Total_HandhavingID
-
-String xpath = ('(//*[text()="' + Id) + '"]/preceding-sibling::td/a[1])[1]'
-
-TestObject to = findTestObject('Actpol_Scripts/Generiek/Assistentie/Assistentie editing user 2')
-
-to.addProperty('xpath', type.EQUALS, xpath)
-
-WebUI.click(to)
-
-WebUI.delay(4)
-
-WebUI.click(findTestObject('Actpol_Scripts/Handhaving/OPV/grid disaper'))
-
-WebUI.delay(1)
-
-WebUI.verifyElementPresent(to, 5, FailureHandling.CONTINUE_ON_FAILURE)
-
-WebUI.takeScreenshot()
-
-WebUI.delay(1)
 

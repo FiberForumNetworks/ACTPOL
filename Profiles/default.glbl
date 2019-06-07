@@ -76,7 +76,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Change evary time we need id</description>
-      <initValue>'07/01/2019'</initValue>
+      <initValue>'ISULGINO, Anastatia'</initValue>
       <name>Total_HandhavingID</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
