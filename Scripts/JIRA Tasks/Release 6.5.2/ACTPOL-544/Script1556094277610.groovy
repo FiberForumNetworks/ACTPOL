@@ -25,7 +25,7 @@ WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Assistenties
 WebUI.delay(2)
 
 'Remember first set default assistentieid after run the script'
-String AssistentiedynamicId = GlobalVariable.AssistentieID
+String AssistentiedynamicId = '200601716'
 
 String Assistentiexpath = ('//*[text()="' + AssistentiedynamicId) + '"]/preceding-sibling::td/a[2]'
 

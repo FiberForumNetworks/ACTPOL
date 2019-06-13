@@ -20,6 +20,6 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Actpol_Scripts/Iframe test env/Left frame ifrm87</value>
+      <value>Object Repository/Actpol_Scripts/Iframe test env/Left frame ifrm17</value>
    </webElementProperties>
 </WebElementEntity>

@@ -6,12 +6,12 @@
    <elementGuidId>5386e31f-874e-4d8a-a04c-e113ea0f68e0</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//*[@name = 'ARTCODdesc' and @ref_element = 'Object Repository/Actpol_Scripts/Iframe/iframetoevoegen_goederen']</value>
+         <key>XPATH</key>
+         <value>//*[text()=&quot;ALARMINSTALLATIE&quot;]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//*[text()=&quot;ABONNEMENT&quot;]</value>
+         <key>BASIC</key>
+         <value>//*[@name = 'ARTCODdesc' and @ref_element = 'Object Repository/Actpol_Scripts/Iframe/iframetoevoegen_goederen']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

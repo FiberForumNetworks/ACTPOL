@@ -35,7 +35,7 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Afdeling lb'))
 
-WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Naam Onderzoek name'), 'Test1230')
+WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Naam Onderzoek name'), 'Test1233')
 
 WebUI.delay(1)
 

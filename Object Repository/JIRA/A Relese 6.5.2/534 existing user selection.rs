@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[text()=&quot;28/02/2019&quot;]/preceding-sibling::td/a[2]</value>
+         <value>(//*[text()=&quot;28/02/2019&quot;]/preceding-sibling::td/a[2])[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -49,7 +49,7 @@ WebUI.click(findTestObject('JIRA/A Relese 6.5.2/Nieuw Goederen'))
 
 WebUI.delay(2)
 
-WebUI.setText(findTestObject('JIRA/A Relese 6.5.2/Goederen Goed artikel'), 'ABONNEMENT')
+WebUI.setText(findTestObject('JIRA/A Relese 6.5.2/Goederen Goed artikel'), 'ALARMINSTALLATIE')
 
 WebUI.delay(2)
 
@@ -57,7 +57,7 @@ WebUI.click(findTestObject('JIRA/A Relese 6.5.2/Goederen Goed artikel lb'))
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('JIRA/A Relese 6.5.2/Merk'), '129878')
+WebUI.setText(findTestObject('JIRA/A Relese 6.5.2/Merk'), '9874')
 
 WebUI.delay(1)
 
@@ -69,7 +69,7 @@ WebUI.click(findTestObject('JIRA/A Relese 6.5.2/Goed artikel new'))
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('JIRA/A Relese 6.5.2/Slide Merk'), '129878')
+WebUI.setText(findTestObject('JIRA/A Relese 6.5.2/Slide Merk'), '9874')
 
 WebUI.takeScreenshot()
 

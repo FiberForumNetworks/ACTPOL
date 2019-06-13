@@ -17,28 +17,27 @@ WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandli
 
 WebUI.delay(2)
 
-WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Generiek'))
+/*not_run: WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Generiek'))
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Assistenties'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Assistenties'))
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
 'Creating New Incident\r\n'
-WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Assistentie New'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Assistentie New'))
 
-WebUI.delay(1)
+not_run: WebUI.delay(1)
 
-WebUI.setText(findTestObject('JIRA/A Relese 6.5.2/477 Bekende plaats'), 'CURTEST')
+not_run: WebUI.setText(findTestObject('JIRA/A Relese 6.5.2/477 Bekende plaats'), 'CURTEST')
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
 '\r\n'
-WebUI.click(findTestObject('JIRA/A Relese 6.5.2/477 Bekende plaats lb'))
+not_run: WebUI.click(findTestObject('JIRA/A Relese 6.5.2/477 Bekende plaats lb'))
 
-WebUI.delay(1)
-
+not_run: WebUI.delay(1)*/
 WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Onderhoud/Onderhoud'))
 
 WebUI.delay(2)
@@ -89,6 +88,8 @@ WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Assistentie New'
 WebUI.delay(1)
 
 WebUI.setText(findTestObject('JIRA/A Relese 6.5.2/477 Bekende plaats'), 'CURTEST')
+
+WebUI.delay(1)
 
 WebUI.takeScreenshot()
 

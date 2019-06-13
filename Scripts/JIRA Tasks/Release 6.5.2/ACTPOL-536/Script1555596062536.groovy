@@ -25,37 +25,37 @@ WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Assistenties
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('JIRA/A Relese 6.5.2/536 view user'))
+WebUI.click(findTestObject('JIRA/A Relese 6.5.2/536 view user'), FailureHandling.OPTIONAL)
 
-WebUI.delay(5)
+WebUI.delay(5, FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('JIRA/A Relese 6.5.2/535 Coordinatie'))
+WebUI.click(findTestObject('JIRA/A Relese 6.5.2/535 Coordinatie'), FailureHandling.OPTIONAL)
 
-WebUI.delay(5)
+WebUI.delay(5, FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('JIRA/A Relese 6.5.2/535 Coordinatie hide'))
+WebUI.click(findTestObject('JIRA/A Relese 6.5.2/535 Coordinatie hide'), FailureHandling.OPTIONAL)
 
-WebUI.delay(1)
+WebUI.delay(1, FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('JIRA/A Relese 6.5.2/535 Werkopdrachten'))
+WebUI.click(findTestObject('JIRA/A Relese 6.5.2/535 Werkopdrachten'), FailureHandling.OPTIONAL)
 
-WebUI.delay(1)
+WebUI.delay(1, FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('JIRA/A Relese 6.5.2/535 Persoon toegestaan hide'))
+WebUI.click(findTestObject('JIRA/A Relese 6.5.2/535 Persoon toegestaan hide'), FailureHandling.OPTIONAL)
 
-WebUI.delay(1)
+WebUI.delay(1, FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('JIRA/A Relese 6.5.2/535 Controle'))
+WebUI.click(findTestObject('JIRA/A Relese 6.5.2/535 Controle'), FailureHandling.OPTIONAL)
 
-WebUI.delay(1)
+WebUI.delay(1, FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('JIRA/A Relese 6.5.2/535 Mutatie hide'))
+WebUI.click(findTestObject('JIRA/A Relese 6.5.2/535 Mutatie hide'), FailureHandling.OPTIONAL)
 
-WebUI.delay(1)
+WebUI.delay(1, FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('JIRA/A Relese 6.5.2/535 Slachtofferhulp Email hide'))
+WebUI.click(findTestObject('JIRA/A Relese 6.5.2/535 Slachtofferhulp Email hide'), FailureHandling.OPTIONAL)
 
-WebUI.delay(1)
+WebUI.delay(1, FailureHandling.OPTIONAL)
 
 WebUI.takeScreenshot()
 

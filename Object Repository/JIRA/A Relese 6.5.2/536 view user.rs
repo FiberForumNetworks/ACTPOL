@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[text()='200601667']/preceding-sibling::td/a[1]</value>
+         <value>//*[text()='200601723']/preceding-sibling::td/a[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

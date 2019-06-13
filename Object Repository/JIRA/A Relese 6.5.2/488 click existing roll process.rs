@@ -6,12 +6,11 @@
    <elementGuidId>675b4aa3-b0a0-4458-8dca-3c1c7d716e62</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//*[text()=' ADADA']/preceding-sibling::td/a[2]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//*[text()=' AAADAK']/preceding-sibling::td/a[2]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -25,6 +25,10 @@ WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Onderzoek')
 
 WebUI.delay(2)
 
+WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Generiek'))
+
+WebUI.delay(2)
+
 WebUI.click(findTestObject('JIRA/A Relese 6.5.2/540 existing user edit'))
 
 WebUI.delay(2)

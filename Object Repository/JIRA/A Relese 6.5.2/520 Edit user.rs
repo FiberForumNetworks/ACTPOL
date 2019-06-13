@@ -6,12 +6,11 @@
    <elementGuidId>fc3961eb-b431-41b9-8256-e1eddb4c6f6a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//*[text()=&quot;09/07/2018&quot;]/preceding-sibling::td/a[2]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//*[text()=&quot;30/06/2016&quot;]/preceding-sibling::td/a[2]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

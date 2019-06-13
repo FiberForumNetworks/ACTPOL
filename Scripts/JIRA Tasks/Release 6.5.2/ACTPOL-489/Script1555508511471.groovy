@@ -23,6 +23,10 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Onderzoek'))
 
+WebUI.delay(2)
+
+WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Generiek'))
+
 WebUI.delay(1)
 
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/new onderzoek'))
@@ -35,7 +39,7 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Afdeling lb'))
 
-WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Naam Onderzoek name'), 'Test1111')
+WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Naam Onderzoek name'), 'Test11test12')
 
 WebUI.delay(1)
 

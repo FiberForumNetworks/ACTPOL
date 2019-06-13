@@ -6,12 +6,11 @@
    <elementGuidId>7579a186-9ec7-43f8-b357-931cc6fe2332</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//td[text()=&quot;ABCD&quot;]/preceding-sibling::td/span[2]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//td[text()=&quot;AMB029384&quot;]/preceding-sibling::td/span[2]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

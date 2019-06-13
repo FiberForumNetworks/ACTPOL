@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@key = 'action' and @title = 'Actie']</value>
+         <value>//*[@key = 'action' and @title = 'Actie' and @ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -31,6 +31,6 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Actpol_Scripts/Iframe/RightFrame</value>
+      <value>Object Repository/Actpol_Scripts/Iframe test env/Right general search frame ifrm89</value>
    </webElementProperties>
 </WebElementEntity>

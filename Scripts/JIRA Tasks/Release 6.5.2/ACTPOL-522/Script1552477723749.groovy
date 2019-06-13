@@ -29,19 +29,19 @@ WebUI.click(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht/
 
 WebUI.delay(80, FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('JIRA/A Relese 6.5.2/521 Arrestanten tab'))
+WebUI.click(findTestObject('JIRA/A Relese 6.5.2/521 Arrestanten tab'), FailureHandling.OPTIONAL)
 
 WebUI.takeScreenshot()
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('JIRA/A Relese 6.5.2/522 Assistentie tab'))
+WebUI.click(findTestObject('JIRA/A Relese 6.5.2/522 Assistentie tab'), FailureHandling.OPTIONAL)
 
 WebUI.takeScreenshot()
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('JIRA/A Relese 6.5.2/522 Onderzoek tab'))
+WebUI.click(findTestObject('JIRA/A Relese 6.5.2/522 Onderzoek tab'), FailureHandling.OPTIONAL)
 
 WebUI.takeScreenshot()
 

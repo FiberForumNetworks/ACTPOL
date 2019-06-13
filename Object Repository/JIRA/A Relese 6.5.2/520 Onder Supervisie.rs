@@ -6,12 +6,11 @@
    <elementGuidId>e8d9e5ee-4842-46f6-b565-31b8b3bd89f6</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//input[@id=&quot;ARROFFR1_desc&quot;]/following::input[@class=&quot;searchTitles&quot;]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;regtable&quot;]/tbody/tr[15]/td[2]/input[3]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

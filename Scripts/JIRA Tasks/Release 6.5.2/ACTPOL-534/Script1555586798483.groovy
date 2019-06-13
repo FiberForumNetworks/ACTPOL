@@ -23,6 +23,18 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Case Screening'))
 
+WebUI.delay(1)
+
+WebUI.setText(findTestObject('JIRA/A Relese 6.5.2/534 Case Screening Period van'), '28/02/2019')
+
+WebUI.delay(1)
+
+WebUI.setText(findTestObject('JIRA/A Relese 6.5.2/534 Case Screening Period tot'), '28/02/2019')
+
+WebUI.delay(1)
+
+WebUI.click(findTestObject('JIRA/A Relese 6.5.2/534 Case Screening filter'), FailureHandling.STOP_ON_FAILURE)
+
 WebUI.delay(2)
 
 WebUI.click(findTestObject('JIRA/A Relese 6.5.2/534 existing user selection'))
