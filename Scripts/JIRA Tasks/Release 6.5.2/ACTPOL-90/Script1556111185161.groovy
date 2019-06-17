@@ -17,7 +17,7 @@ WebUI.callTestCase(findTestCase('main/Actpol_Login'), [:], FailureHandling.STOP_
 
 WebUI.delay(2)
 
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht/Assistentie'), 'assist', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A Relese 6.5.2/90 assistance'), 'assist', false)
 
 WebUI.delay(1)
 
@@ -25,7 +25,7 @@ WebUI.setText(findTestObject('JIRA/A Relese 6.5.2/90 Assistentie number'), '2006
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht/zoeken'))
+WebUI.click(findTestObject('JIRA/A Relese 6.5.2/90 filter'))
 
 WebUI.delay(3)
 
@@ -59,7 +59,7 @@ WebUI.delay(1)
 
 WebUI.scrollToElement(findTestObject('Actpol_Scripts/Extra script/AANGEVER Documenten new'), 5)
 
-WebUI.delay(1)
+WebUI.delay(5)
 
 WebUI.click(findTestObject('Actpol_Scripts/Extra script/AANGEVER Documenten new'))
 

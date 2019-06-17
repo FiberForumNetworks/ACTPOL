@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[text()=&quot;09/07/2018&quot;]/preceding-sibling::td/a[2]</value>
+         <value>(//*[@src=&quot;img/edit.png&quot; and @alt=&quot;Edit&quot; and @title=&quot;Edit&quot; and @alttxt=&quot;img_edit&quot;])[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>

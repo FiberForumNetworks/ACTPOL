@@ -6,12 +6,11 @@
    <elementGuidId>9b0d17e8-7147-41a0-8f5c-8b8d97f00f19</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>//*[text()=&quot;505 - CANDELARIA, &quot;]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//*[text()=&quot;, Anouk&quot;]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

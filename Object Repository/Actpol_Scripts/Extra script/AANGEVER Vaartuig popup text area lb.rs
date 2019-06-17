@@ -6,12 +6,11 @@
    <elementGuidId>7727662f-8f2d-4d46-b2b0-433fd34ef687</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//*[text()=&quot;D, Barkje - Vis&quot;]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

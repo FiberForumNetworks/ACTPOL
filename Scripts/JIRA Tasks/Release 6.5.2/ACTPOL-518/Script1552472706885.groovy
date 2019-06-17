@@ -23,11 +23,11 @@ WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Geweld_ Disc
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('JIRA/A Relese 6.5.2/518 user selection'))
+WebUI.click(findTestObject('JIRA/A Relese 6.5.2/518 user selection'), FailureHandling.OPTIONAL)
 
-WebUI.delay(2)
+WebUI.delay(5)
 
-WebUI.click(findTestObject('JIRA/A Relese 6.5.2/518 pdf click'))
+WebUI.click(findTestObject('JIRA/A Relese 6.5.2/518 pdf click'), FailureHandling.OPTIONAL)
 
 WebUI.waitForPageLoad(10)
 

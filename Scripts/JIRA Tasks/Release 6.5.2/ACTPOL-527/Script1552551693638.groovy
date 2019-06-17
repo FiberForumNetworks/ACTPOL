@@ -13,7 +13,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('main/Actpol_Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(2)
 
@@ -21,7 +21,7 @@ WebUI.delay(2)
 WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht/Assistentie'), 'persoon', 
     false)
 
-WebUI.delay(1)
+WebUI.delay(4)
 
 'VERDACHTE SIGNALEMENTEN'
 WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht/Rol Proces Type'), '16', false)
@@ -29,6 +29,8 @@ WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/General Search/Algemene
 WebUI.delay(1)
 
 WebUI.setText(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht/Next Poc van'), '24/01/2018')
+
+WebUI.delay(1)
 
 WebUI.setText(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht/Next Poc tot'), '24/01/2019')
 

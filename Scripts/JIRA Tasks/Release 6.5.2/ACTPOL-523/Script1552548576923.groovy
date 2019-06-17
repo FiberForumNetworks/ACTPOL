@@ -33,7 +33,7 @@ WebUI.delay(4)
 
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Entiteiten'))
 
-WebUI.delay(3)
+WebUI.delay(4)
 
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Nieuwe Entiteit'))
 

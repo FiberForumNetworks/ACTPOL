@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[text()=&quot;ALARMINSTALLATIE&quot;]</value>
+         <value>//*[text()=&quot;SLOOPAVAL&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>

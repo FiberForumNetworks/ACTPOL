@@ -13,7 +13,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.callTestCase(findTestCase('main/Actpol_Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(2)
 
@@ -21,17 +21,18 @@ WebUI.delay(2)
 WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht/Assistentie'), 'officer', 
     false)
 
-WebUI.delay(2)
+WebUI.delay(4)
 
-WebUI.setText(findTestObject('JIRA/A Relese 6.5.2/528 medewerker unit id'), 'JAIRO')
+WebUI.setText(findTestObject('JIRA/A Relese 6.5.2/528 unit id'), 'JAIRO')
 
 WebUI.delay(1)
 
 'BEKENDE/AANGEHOUDEN VERDACHTE'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht/Medewaker rol process type'), 
-    '1', false)
+WebUI.selectOptionByValue(findTestObject('JIRA/A Relese 6.5.2/528 roll process type'), '1', false)
 
-WebUI.click(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht/Medewaker Klasse click'))
+WebUI.delay(1)
+
+WebUI.click(findTestObject('JIRA/A Relese 6.5.2/528 medewerker Klasse click'))
 
 WebUI.delay(2)
 
@@ -39,11 +40,11 @@ WebUI.click(findTestObject('JIRA/A Relese 6.5.2/528 medewerker Klasse'))
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht/Next Poc van'), '21/01/2017')
+WebUI.setText(findTestObject('JIRA/A Relese 6.5.2/528 medewerker Next Poc van'), '21/01/2017')
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht/Next Poc tot'), '21/01/2019')
+WebUI.setText(findTestObject('JIRA/A Relese 6.5.2/528 medewerker Next Poc tot'), '21/01/2019')
 
 WebUI.delay(1)
 

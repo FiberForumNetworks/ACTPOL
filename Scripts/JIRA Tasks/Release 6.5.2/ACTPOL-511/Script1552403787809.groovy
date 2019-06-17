@@ -40,7 +40,7 @@ WebUI.comment('BEKEURDE PERSOON   start')
 'BEKEURDE PERSOON'
 WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Assistentie/Rol Proces Type'), '3', false)
 
-WebUI.delay(2)
+WebUI.delay(5)
 
 'OPROEPINGSPROCES-VERBAAL'
 WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Extra script/Soort Procesverbaal'), '1', false)
@@ -49,11 +49,11 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Extra script/Voertuig radio click'))
 
-WebUI.delay(1)
+WebUI.delay(5)
 
 WebUI.click(findTestObject('Actpol_Scripts/Extra script/Voertuig new'))
 
-WebUI.delay(3)
+WebUI.delay(5)
 
 WebUI.setText(findTestObject('JIRA/A Relese 6.5.2/Voertuig'), 'a')
 

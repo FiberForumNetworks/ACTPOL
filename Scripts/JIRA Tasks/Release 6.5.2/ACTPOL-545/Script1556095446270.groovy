@@ -25,7 +25,7 @@ WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Assistenties
 WebUI.delay(2)
 
 'Remember first set default assistentieid after run the script'
-String AssistentiedynamicId = '200601725'
+String AssistentiedynamicId = '200601720'
 
 String Assistentiexpath = ('//*[text()="' + AssistentiedynamicId) + '"]/preceding-sibling::td/a[2]'
 
@@ -41,7 +41,7 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Click roll process'))
 
-WebUI.delay(2)
+WebUI.delay(4)
 
 WebUI.click(findTestObject('JIRA/A Relese 6.5.2/545 click existing AANGEVER'))
 
@@ -69,7 +69,7 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Extra script/AANGEVER Vaartuig popup text area lb'), FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(1)
+WebUI.delay(4)
 
 WebUI.setText(findTestObject('JIRA/A Relese 6.5.2/545 Vlag text area click'), 'ALGERIJNSE')
 

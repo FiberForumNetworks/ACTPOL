@@ -25,15 +25,15 @@ WebUI.delay(2)
 
 WebUI.takeScreenshot()
 
-WebUI.delay(1)
+WebUI.delay(1, FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Actpol_Scripts/Generiek/Geweld - Disciplinaire Rapport/Delete user'))
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Geweld - Disciplinaire Rapport/Delete user'), FailureHandling.OPTIONAL)
 
-WebUI.delay(2)
+WebUI.delay(2, FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Actpol_Scripts/Generiek/Geweld - Disciplinaire Rapport/delete 2 user'))
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Geweld - Disciplinaire Rapport/delete 2 user'), FailureHandling.OPTIONAL)
 
-WebUI.waitForPageLoad(10)
+WebUI.waitForPageLoad(10, FailureHandling.OPTIONAL)
 
-WebUI.takeScreenshot()
+WebUI.takeScreenshot(FailureHandling.OPTIONAL)
 

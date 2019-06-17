@@ -39,7 +39,8 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Afdeling lb'))
 
-WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Naam Onderzoek name'), 'Test11test12')
+'We can change every time runing'
+WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Naam Onderzoek name'), 'testv82')
 
 WebUI.delay(1)
 
@@ -122,11 +123,11 @@ WebUI.delay(1)
 
 WebUI.scrollToElement(findTestObject('Actpol_Scripts/Generiek/Assistentie/Drugs gebruik ja'), 5)
 
-WebUI.delay(1)
+WebUI.delay(5)
 
 WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Drugs gebruik ja'))
 
-WebUI.delay(2)
+WebUI.delay(5)
 
 'LSD'
 WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Assistentie/Drugs gebruik type'), '3', false)
@@ -212,9 +213,11 @@ WebUI.scrollToElement(findTestObject('JIRA/A Relese 6.5.2/489 roll process'), 5)
 
 WebUI.click(findTestObject('JIRA/A Relese 6.5.2/489 roll process'))
 
-WebUI.delay(1)
+WebUI.delay(8)
 
 WebUI.click(findTestObject('JIRA/A Relese 6.5.2/489 new roll process click'))
+
+WebUI.delay(1)
 
 'BEKENDE/AANGEHOUDEN VERDACHTE'
 WebUI.selectOptionByValue(findTestObject('JIRA/A Relese 6.5.2/489 new roll process type'), '1', false)

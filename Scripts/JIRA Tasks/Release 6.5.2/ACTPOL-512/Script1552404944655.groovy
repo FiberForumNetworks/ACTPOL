@@ -49,7 +49,8 @@ WebUI.click(findTestObject('JIRA/A Relese 6.5.2/Nieuw Goederen'))
 
 WebUI.delay(2)
 
-WebUI.setText(findTestObject('JIRA/A Relese 6.5.2/Goederen Goed artikel'), 'ALARMINSTALLATIE')
+'change on run time'
+WebUI.setText(findTestObject('JIRA/A Relese 6.5.2/Goederen Goed artikel'), 'SLOOPAVAL')
 
 WebUI.delay(2)
 
@@ -65,21 +66,7 @@ WebUI.click(findTestObject('JIRA/A Relese 6.5.2/Goederen save'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('JIRA/A Relese 6.5.2/Goed artikel new'))
-
-WebUI.delay(1)
-
-WebUI.setText(findTestObject('JIRA/A Relese 6.5.2/Slide Merk'), '9874')
+WebUI.click(findTestObject('JIRA/A Relese 6.5.2/512 checkbox ignore click'), FailureHandling.OPTIONAL)
 
 WebUI.takeScreenshot()
-
-WebUI.delay(1)
-
-WebUI.click(findTestObject('JIRA/A Relese 6.5.2/Filter'))
-
-WebUI.delay(2)
-
-WebUI.takeScreenshot()
-
-WebUI.click(findTestObject('JIRA/A Relese 6.5.2/Reset'))
 

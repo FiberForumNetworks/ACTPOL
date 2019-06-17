@@ -25,7 +25,7 @@ WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Assistenties
 WebUI.delay(2)
 
 'Remember first set default assistentieid after run the script'
-String AssistentiedynamicId = '200601716'
+String AssistentiedynamicId = '200601724'
 
 String Assistentiexpath = ('//*[text()="' + AssistentiedynamicId) + '"]/preceding-sibling::td/a[2]'
 
@@ -39,11 +39,11 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Click roll process'))
 
-WebUI.delay(2)
+WebUI.delay(5)
 
 WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Click new process'))
 
-WebUI.delay(2)
+WebUI.delay(6)
 
 WebUI.comment('VREEMDELING')
 
@@ -83,7 +83,7 @@ WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Extra script/A VREEMDEL
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('Actpol_Scripts/Extra script/A VREEMDELING/Document nummer'), '1225')
+WebUI.setText(findTestObject('Actpol_Scripts/Extra script/A VREEMDELING/Document nummer'), '1212')
 
 WebUI.delay(1)
 

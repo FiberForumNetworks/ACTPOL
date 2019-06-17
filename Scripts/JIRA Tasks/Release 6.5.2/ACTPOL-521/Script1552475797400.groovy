@@ -27,7 +27,7 @@ WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/General Search/Algemene
 
 WebUI.click(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht/Zoeken 2'))
 
-WebUI.delay(80, FailureHandling.STOP_ON_FAILURE)
+WebUI.delay(120, FailureHandling.STOP_ON_FAILURE)
 
 WebUI.click(findTestObject('JIRA/A Relese 6.5.2/521 Arrestanten tab'))
 

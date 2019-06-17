@@ -23,6 +23,10 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Onderzoek'))
 
+WebUI.delay(2)
+
+WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Generiek'))
+
 WebUI.delay(1)
 
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/new onderzoek'))
@@ -35,7 +39,7 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Afdeling lb'))
 
-WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Naam Onderzoek name'), 'Test1233')
+WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Naam Onderzoek name'), 'tst3261')
 
 WebUI.delay(1)
 
@@ -173,7 +177,7 @@ WebUI.delay(2, FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Strafbaar feit new new'), FailureHandling.OPTIONAL)
 
-WebUI.delay(2)
+WebUI.delay(5)
 
 WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Wetboek'))
 
@@ -181,6 +185,8 @@ WebUI.delay(3)
 
 'VERGUNNINGSLANDSVERORDENING'
 WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Wetboek lb'))
+
+WebUI.delay(1)
 
 'VERGUNNING'
 WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Assistentie/Titel new'), '197', false)

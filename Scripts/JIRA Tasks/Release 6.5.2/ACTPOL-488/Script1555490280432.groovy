@@ -47,13 +47,14 @@ WebUI.delay(1)
 
 WebUI.click(findTestObject('JIRA/A Relese 6.5.2/488 bijnaam tab'))
 
-WebUI.delay(1)
+WebUI.delay(5)
 
 WebUI.click(findTestObject('JIRA/A Relese 6.5.2/488 bijnaam new'))
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('JIRA/A Relese 6.5.2/488 bijnaam name enter(alias)'), 'hai111')
+'cahnge every time'
+WebUI.setText(findTestObject('JIRA/A Relese 6.5.2/488 bijnaam name enter(alias)'), 'ha18')
 
 WebUI.delay(1)
 
@@ -69,7 +70,7 @@ WebUI.delay(1)
 WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie'), 'persoon', 
     false)
 
-WebUI.setText(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Alias'), 'hai111')
+WebUI.setText(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Alias'), 'ha18')
 
 WebUI.delay(1)
 

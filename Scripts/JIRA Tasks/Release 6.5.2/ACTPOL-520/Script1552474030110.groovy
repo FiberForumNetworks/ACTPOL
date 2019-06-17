@@ -21,7 +21,11 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Arrestanten'))
 
-WebUI.delay(1)
+WebUI.delay(2)
+
+WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Generiek'))
+
+WebUI.delay(4)
 
 WebUI.click(findTestObject('JIRA/A Relese 6.5.2/520 Edit user'))
 

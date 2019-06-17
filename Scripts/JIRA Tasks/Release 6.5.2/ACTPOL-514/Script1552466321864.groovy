@@ -31,11 +31,11 @@ WebUI.click(findTestObject('JIRA/A Relese 6.5.2/Nood loop opti new officer'))
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('JIRA/A Relese 6.5.2/Unit officier Naam'), 'teeuwe')
+WebUI.setText(findTestObject('JIRA/A Relese 6.5.2/Unit officier Naam'), 'Bennie')
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('JIRA/A Relese 6.5.2/Unit officier Naam Lb'))
+WebUI.click(findTestObject('JIRA/A Relese 6.5.2/Unit officier Naam Lb'), FailureHandling.OPTIONAL)
 
 WebUI.delay(1)
 

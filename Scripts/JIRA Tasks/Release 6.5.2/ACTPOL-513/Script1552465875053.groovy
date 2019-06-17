@@ -29,11 +29,11 @@ WebUI.delay(3)
 
 WebUI.click(findTestObject('JIRA/A Relese 6.5.2/Proces Verbaal'))
 
-WebUI.delay(2)
+WebUI.delay(4)
 
 WebUI.click(findTestObject('Actpol_Scripts/Handhaving/OPV/Goederen'))
 
-WebUI.delay(1)
+WebUI.delay(4)
 
 WebUI.click(findTestObject('Actpol_Scripts/Handhaving/OPV/Goederen new'))
 
