@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Onderzoek</name>
+   <name>only ifrmviewdocnr ight side</name>
    <tag></tag>
-   <elementGuidId>fc2e89a4-55c6-4c22-bd84-c04de0dd6ca9</elementGuidId>
+   <elementGuidId>504dd62c-9086-45ca-8298-4559eb8b4942</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//a[text()=&quot;Onderzoek&quot; or text()=&quot;Onderzoek&quot;]</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value></value>
+         <value>//*[@name=&quot;ifrmviewdoc&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//a[text()=&quot;Onderzoek&quot; or text()=&quot;Onderzoek&quot;]</value>
+      <value>//*[@name=&quot;ifrmviewdoc&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

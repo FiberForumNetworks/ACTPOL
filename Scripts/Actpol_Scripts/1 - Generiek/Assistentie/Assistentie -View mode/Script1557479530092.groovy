@@ -38,3 +38,9 @@ to.addProperty('xpath', ConditionType.EQUALS, Assistentiexpath)
 
 WebUI.click(to)
 
+WebUI.delay(2)
+
+WebUI.takeScreenshot()
+
+WebUI.closeBrowser()
+

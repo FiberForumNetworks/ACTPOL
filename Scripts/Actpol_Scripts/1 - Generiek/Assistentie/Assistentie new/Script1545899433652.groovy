@@ -38,7 +38,8 @@ WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Assistentie/Telefoon numme
 
 WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Assistentie/Titel'), 'Testing test')
 
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Assistentie/Lokatie type'), '8', false)
+'Select drop down from the list :: COMERCIELE INSTELLING'
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Assistentie/Lokatie type'), '1', false)
 
 WebUI.delay(2)
 
@@ -51,16 +52,16 @@ WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Incident Adres l
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/ter hoogte van'))
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/ter hoogte van'), FailureHandling.OPTIONAL)
 
 WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Assistentie/Nadere Aanduiding'), 'Testing')
 
-WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Bekende plaats'))
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Bekende plaats'), FailureHandling.OPTIONAL)
 
 WebUI.delay(2)
 
 'Selecting AA\r\n'
-WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Bekende plaats Lb'))
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Bekende plaats Lb'), FailureHandling.OPTIONAL)
 
 WebUI.delay(5)
 
@@ -78,12 +79,12 @@ WebUI.delay(5)
 
 WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Poging'))
 
-'Select CALLTAKER\r\n'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Assistentie/Melding Prioriteit'), '18', false)
+'Select ZELF CONSTATERING\r\n'
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Assistentie/Melding Prioriteit'), '3', false)
 
-WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Dispatch ja'))
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Dispatch ja'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Contact verzoek ja'))
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Contact verzoek ja'), FailureHandling.OPTIONAL)
 
 'Select ST Maarten\r\n'
 WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Assistentie/Eiland'), 'SXM', false)
@@ -109,11 +110,11 @@ WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Achternaam'))
 WebUI.delay(2)
 
 'Selecting "Overige"'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Assistentie/Zoek Criteria'), '201', false)
+not_run: WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Assistentie/Zoek Criteria'), '218', false)
 
-WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Assistentie/Achternaam new person'), 'Aaadak')
+not_run: WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Assistentie/Achternaam new person'), 'DAVELAAR')
 
-WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Filter new person'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Filter new person'))
 
 WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Resultaat Personen bestand person selection'))
 
@@ -160,5 +161,9 @@ not_run: WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Assistentie/Mutat
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Save melding'))
+WebUI.focus(findTestObject('Actpol_Scripts/Generiek/Assistentie/Save melding'))
+
+WebUI.takeScreenshot()
+
+WebUI.closeBrowser()
 

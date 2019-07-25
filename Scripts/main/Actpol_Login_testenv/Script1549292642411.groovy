@@ -21,11 +21,116 @@ WebUI.waitForPageLoad(30)
 
 WebUI.maximizeWindow()
 
-WebUI.navigateToUrl(GlobalVariable.TESTURL)
+/*WebUI.navigateToUrl(GlobalVariable.TESTURL)
 
 WebUI.setText(findTestObject('Actpol_Scripts/login/userid'), GlobalVariable.username)
 
 WebUI.setMaskedText(findTestObject('Actpol_Scripts/login/password'), GlobalVariable.password)
 
-WebUI.click(findTestObject('Actpol_Scripts/login/login'))
+WebUI.click(findTestObject('Actpol_Scripts/login/login'))*/
+int ACTPOLTESTENV = 1
+
+int ACTPOLDEVENV = 2
+
+int ACTPOLKCENV = 3
+
+int ACTPOLKBKPCNENV = 4
+
+int ACTPOLKBKMARENV = 5
+
+int ACTPOLKMENV = 6
+
+int ACTPOLKWENV = 7
+
+int environment = ACTPOLKMENV
+
+String Selectenv
+
+switch (environment) {
+    case 1:
+        println(Selectenv = 'ACTPOL-TEST-ENV')
+
+        WebUI.navigateToUrl(GlobalVariable.TESTURL)
+
+        WebUI.setText(findTestObject('Actpol_Scripts/login/userid'), GlobalVariable.username)
+
+        WebUI.setMaskedText(findTestObject('Actpol_Scripts/login/password'), GlobalVariable.password)
+
+        WebUI.click(findTestObject('Actpol_Scripts/login/login'))
+
+        break
+    case 2:
+        println(Selectenv = 'ACTPOL-DEV-ENV')
+
+        WebUI.navigateToUrl(GlobalVariable.DEVURL)
+
+        WebUI.setText(findTestObject('Actpol_Scripts/login/userid'), GlobalVariable.username)
+
+        WebUI.setMaskedText(findTestObject('Actpol_Scripts/login/password'), GlobalVariable.password)
+
+        WebUI.click(findTestObject('Actpol_Scripts/login/login'))
+
+        break
+    case 3:
+        println(Selectenv = 'ACTPOL-KC-ENV')
+
+        WebUI.navigateToUrl(GlobalVariable.KCURL)
+
+        WebUI.setEncryptedText(findTestObject('Actpol_Scripts/login/userid'), GlobalVariable.KCusername)
+
+        WebUI.setEncryptedText(findTestObject('Actpol_Scripts/login/password'), GlobalVariable.kcpassword)
+
+        WebUI.click(findTestObject('Actpol_Scripts/login/login'))
+
+        break
+    case 4:
+        println(Selectenv = 'ACTPOL-KBKPCN-ENV')
+
+        WebUI.navigateToUrl(GlobalVariable.KBKPCNURL)
+
+        WebUI.setEncryptedText(findTestObject('Actpol_Scripts/login/userid'), GlobalVariable.KBKPCNusername)
+
+        WebUI.setEncryptedText(findTestObject('Actpol_Scripts/login/password'), GlobalVariable.kcpassword)
+
+        WebUI.click(findTestObject('Actpol_Scripts/login/login'))
+
+        break
+    case 5:
+        println(Selectenv = 'ACTPOL-KBKMAR-ENV')
+
+        WebUI.navigateToUrl(GlobalVariable.KBKMARURL)
+
+        WebUI.setEncryptedText(findTestObject('Actpol_Scripts/login/userid'), GlobalVariable.KBKMARusername)
+
+        WebUI.setEncryptedText(findTestObject('Actpol_Scripts/login/password'), GlobalVariable.kcpassword)
+
+        WebUI.click(findTestObject('Actpol_Scripts/login/login'))
+
+        break
+    case 6:
+        println(Selectenv = 'ACTPOL-KM-ENV')
+
+        WebUI.navigateToUrl(GlobalVariable.KMURL)
+
+        WebUI.setEncryptedText(findTestObject('Actpol_Scripts/login/userid'), GlobalVariable.KMusername)
+
+        WebUI.setEncryptedText(findTestObject('Actpol_Scripts/login/password'), GlobalVariable.kcpassword)
+
+        WebUI.click(findTestObject('Actpol_Scripts/login/login'))
+
+        break
+    case 7:
+        println(Selectenv = 'ACTPOL-KW-ENV')
+
+        WebUI.navigateToUrl(GlobalVariable.KWURL)
+
+        WebUI.setEncryptedText(findTestObject('Actpol_Scripts/login/userid'), GlobalVariable.KWusername)
+
+        WebUI.setEncryptedText(findTestObject('Actpol_Scripts/login/password'), GlobalVariable.kcpassword)
+
+        WebUI.click(findTestObject('Actpol_Scripts/login/login'))
+
+        break
+    default:
+        println(Selectenv = 'Invalide environment selected')}
 

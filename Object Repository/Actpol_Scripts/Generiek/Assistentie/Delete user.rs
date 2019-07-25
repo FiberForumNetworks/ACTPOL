@@ -24,6 +24,6 @@
       <matchCondition>equals</matchCondition>
       <name>ref_element</name>
       <type>Main</type>
-      <value>Object Repository/Actpol_Scripts/Iframe/RightFrame</value>
+      <value>Object Repository/Actpol_Scripts/Iframe test env/Delete iframe use</value>
    </webElementProperties>
 </WebElementEntity>

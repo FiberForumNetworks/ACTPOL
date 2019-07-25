@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Right general search frame ifrm89</name>
+   <name>left general search frame</name>
    <tag></tag>
-   <elementGuidId>37cd2fd7-a291-4358-9ba8-1d3a60189d83</elementGuidId>
+   <elementGuidId>12ed2117-2127-43ab-a7dd-3fda1eef6bdd</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;ifrm227&quot; or @id=&quot;ifrm89&quot; or @name=&quot;ifrm201&quot; or@name=&quot;ifrm214&quot; or @name=&quot;ifrm259&quot; or @name=&quot;ifrm142&quot;]</value>
+         <value>//*[@id=&quot;ifrm227&quot; or @id=&quot;ifrm89&quot; or @name=&quot;ifrm202&quot;]</value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -57,6 +57,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;ifrm227&quot; or @id=&quot;ifrm89&quot; or @name=&quot;ifrm201&quot; or@name=&quot;ifrm214&quot; or @name=&quot;ifrm259&quot; or @name=&quot;ifrm142&quot;]</value>
+      <value>//*[@id=&quot;ifrm227&quot; or @id=&quot;ifrm89&quot; or @name=&quot;ifrm202&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

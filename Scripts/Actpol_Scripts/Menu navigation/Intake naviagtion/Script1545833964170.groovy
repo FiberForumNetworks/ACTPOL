@@ -25,3 +25,9 @@ WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Intake/Dispatch'))
 
 WebUI.switchToWindowIndex(0)
 
+WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Intake/Intake'), FailureHandling.OPTIONAL)
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Actpol_Scripts/Intake/Mobiele Centrale'), FailureHandling.OPTIONAL)
+

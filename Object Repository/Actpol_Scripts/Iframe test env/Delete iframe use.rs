@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Onderzoek</name>
+   <name>Delete iframe use</name>
    <tag></tag>
-   <elementGuidId>fc2e89a4-55c6-4c22-bd84-c04de0dd6ca9</elementGuidId>
+   <elementGuidId>fc6f4ba6-f4cb-4e81-b470-7455e920664c</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//a[text()=&quot;Onderzoek&quot; or text()=&quot;Onderzoek&quot;]</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value></value>
+         <value>//*[@name=&quot;ifrm201&quot; or @name=&quot;ifrm227&quot; or @name=&quot;ifrm214&quot; or @name=&quot;ifrm142&quot; or @name=&quot;ifrm259&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//a[text()=&quot;Onderzoek&quot; or text()=&quot;Onderzoek&quot;]</value>
+      <value>//*[@name=&quot;ifrm201&quot; or @name=&quot;ifrm227&quot; or @name=&quot;ifrm214&quot; or @name=&quot;ifrm142&quot; or @name=&quot;ifrm259&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

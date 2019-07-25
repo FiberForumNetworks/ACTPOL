@@ -13,29 +13,11 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+not_run: WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
+
 WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Dashboard/Dashboard'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Dashboard/Dienstovername'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Dashboard/Meldkamer'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Dashboard/New Report'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Dashboard/Rapportage'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Dashboard/Rapportage Assistentie'))
-
-WebUI.delay(2, FailureHandling.OPTIONAL)
-
-WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Dashboard/Test Clover Report'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Rapportage/RAutorisatie'), FailureHandling.OPTIONAL)
 

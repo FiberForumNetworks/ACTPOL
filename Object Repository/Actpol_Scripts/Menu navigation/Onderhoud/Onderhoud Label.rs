@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[text()=&quot;Onderhoud Label&quot;]</value>
+         <value>//*[text()=&quot;Onderhoud Label&quot; or text()=&quot;Labels&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

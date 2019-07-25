@@ -17,5 +17,13 @@ WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Rapportage/Rappor
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Rapportage/Rapportages'))
+WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Rapportage/Diverse Rapportages'), FailureHandling.OPTIONAL)
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Rapportage/Mutatie Overzicht Rapportage'), FailureHandling.OPTIONAL)
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Rapportage/Rapportages'), FailureHandling.OPTIONAL)
 

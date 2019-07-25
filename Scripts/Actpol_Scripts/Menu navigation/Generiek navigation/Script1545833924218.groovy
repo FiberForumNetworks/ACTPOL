@@ -13,6 +13,8 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+not_run: WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
+
 WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Generiek'))
 
 WebUI.delay(2)
@@ -21,11 +23,11 @@ WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Assistenties
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Controle'))
+WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Controle'), FailureHandling.OPTIONAL)
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Dienstovername'))
+WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Dienstovername'), FailureHandling.OPTIONAL)
 
 WebUI.delay(2)
 
@@ -33,7 +35,7 @@ WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Geweld_ Disc
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Goederen Inbeslaggenomen'))
+WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Goederen Inbeslaggenomen'), FailureHandling.OPTIONAL)
 
 WebUI.delay(2)
 
@@ -46,4 +48,12 @@ WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Overtime'))
 WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Taken'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Coordinatie'), FailureHandling.OPTIONAL)
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Doorsturen OPV'), FailureHandling.OPTIONAL)
 

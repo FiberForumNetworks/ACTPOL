@@ -38,7 +38,11 @@ to.addProperty('xpath', ConditionType.EQUALS, Assistentiexpath)
 
 WebUI.click(to)
 
-WebUI.delay(2)
+WebUI.delay(4)
 
 WebUI.focus(findTestObject('Actpol_Scripts/Generiek/Assistentie/Delete user'))
+
+WebUI.takeScreenshot()
+
+WebUI.closeBrowser()
 

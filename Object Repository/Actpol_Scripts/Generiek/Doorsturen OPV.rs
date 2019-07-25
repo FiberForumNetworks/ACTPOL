@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Onderzoek</name>
+   <name>Doorsturen OPV</name>
    <tag></tag>
-   <elementGuidId>fc2e89a4-55c6-4c22-bd84-c04de0dd6ca9</elementGuidId>
+   <elementGuidId>6b4c59a2-492d-43d4-a91b-82d2c1c7d04e</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//a[text()=&quot;Onderzoek&quot; or text()=&quot;Onderzoek&quot;]</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value></value>
+         <value>//a[text()=&quot;Doorsturen OPV&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//a[text()=&quot;Onderzoek&quot; or text()=&quot;Onderzoek&quot;]</value>
+      <value>//a[text()=&quot;Doorsturen OPV&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

@@ -26,7 +26,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Change evary time we need id</description>
-      <initValue>'200601708'</initValue>
+      <initValue>'201901514'</initValue>
       <name>AssistentieID</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -83,5 +83,60 @@
       <description></description>
       <initValue>'75'</initValue>
       <name>Total_AutorisatieID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://10.153.158.69/kcpolprdpublic/nxlogin.pgm'</initValue>
+      <name>KCURL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'ijFRF5CaPMk='</initValue>
+      <name>KCusername</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'IdysrhYGU7RyywL55PEQHQ=='</initValue>
+      <name>kcpassword</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://10.153.158.64/kbpolprdpublic/nxlogin.pgm'</initValue>
+      <name>KBKPCNURL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'VamLGWMFHtLihLUo1VnIpg=='</initValue>
+      <name>KBKPCNusername</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://10.153.158.65/kmarplprdpublic/nxlogin.pgm'</initValue>
+      <name>KBKMARURL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'VamLGWMFHtLihLUo1VnIpg=='</initValue>
+      <name>KBKMARusername</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://10.153.158.32/kmpolprdpublic/nxlogin.pgm'</initValue>
+      <name>KMURL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'s62/MOaiU9RFAGMryGS9Yg=='</initValue>
+      <name>KMusername</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://10.153.158.34/kwpolprdpublic/nxlogin.pgm'</initValue>
+      <name>KWURL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Dvm0xiHHXD0Qh6vrTYQg0A=='</initValue>
+      <name>KWusername</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

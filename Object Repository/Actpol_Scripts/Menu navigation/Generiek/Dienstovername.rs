@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[text()=&quot;Dienstovername&quot;]</value>
+         <value>//*[text()=&quot;Dienstovername&quot; or text()=&quot;Wachtovername&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

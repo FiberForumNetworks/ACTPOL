@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[text()=&quot;Goederen inbeslaggenomen&quot; or text()=&quot;Goederen Locatie&quot;]</value>
+         <value>//*[text()=&quot;Goederen inbeslaggenomen&quot; or text()=&quot;Goederen Locatie&quot; or text()=&quot;Goederen inbeslaggenomen Locatie&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

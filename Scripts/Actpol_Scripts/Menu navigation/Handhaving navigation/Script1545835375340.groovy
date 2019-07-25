@@ -17,11 +17,11 @@ WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Handhaving/Handha
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Handhaving/Doorsturen OPV'))
+WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Handhaving/Doorsturen OPV'), FailureHandling.OPTIONAL)
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Handhaving/Mobiele Centrale'))
+WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Handhaving/Mobiele Centrale'), FailureHandling.OPTIONAL)
 
 WebUI.delay(2)
 

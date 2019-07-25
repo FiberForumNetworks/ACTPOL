@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//*[text()=&quot;2019029518&quot;]/preceding-sibling::td/a[2][count(. | //*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe test env/left general search frame']) = count(//*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe test env/left general search frame'])]</value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -18,11 +18,11 @@
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
-      <isSelected>false</isSelected>
+      <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;result-list&quot;]/table/tbody/tr/td[1]/a[1]/img</value>
+      <value>//*[text()=&quot;2019029518&quot;]/preceding-sibling::td/a[2]</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

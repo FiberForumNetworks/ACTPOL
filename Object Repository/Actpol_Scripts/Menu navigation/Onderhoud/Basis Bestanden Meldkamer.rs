@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//*[text()=&quot;Basis Bestanden Meldkamer&quot;])[2]</value>
+         <value>(//*[text()=&quot;Basis Bestanden Meldkamer&quot;])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

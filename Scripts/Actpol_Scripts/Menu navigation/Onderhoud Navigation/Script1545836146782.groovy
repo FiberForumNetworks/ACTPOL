@@ -17,17 +17,17 @@ WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Onderhoud/Onderho
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Onderhoud/Basis Bestanden Handhaving'))
+WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Onderhoud/Basis Bestanden Handhaving'), FailureHandling.OPTIONAL)
+
+not_run: WebUI.delay(2)
+
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Onderhoud/Basis Bestanden Meldkamer'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Onderhoud/Basis Bestanden Meldkamer'))
+WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Onderhoud/Basis Bestanden Meldkamer'), FailureHandling.OPTIONAL)
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Onderhoud/Basis Bestanden Meldkamer'))
-
-WebUI.delay(2)
-
-WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Onderhoud/Onderhoud Label'))
+WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Onderhoud/Onderhoud Label'), FailureHandling.OPTIONAL)
 

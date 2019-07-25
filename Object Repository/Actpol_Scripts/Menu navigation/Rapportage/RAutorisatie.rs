@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Taken</name>
+   <name>RAutorisatie</name>
    <tag></tag>
-   <elementGuidId>304c7eee-7287-4fee-9977-a98fb2eeb0aa</elementGuidId>
+   <elementGuidId>b23e750b-7d83-41d8-bf34-6899bd4984ee</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[text()=&quot;Taken&quot; or text()=&quot;Classificatie&quot;]</value>
+         <value>//*[text()=&quot;Assistentie&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -13,6 +13,8 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
+not_run: WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
+
 WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Opsporing'))
 
 WebUI.delay(2)
@@ -25,25 +27,29 @@ WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Arrestanten
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Case Screening'))
+WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Case Screening'), FailureHandling.OPTIONAL)
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Classificatie'))
+WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Classificatie'), FailureHandling.OPTIONAL)
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Onderzoek'))
+WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Onderzoek'), FailureHandling.OPTIONAL)
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Register'))
+WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Register'), FailureHandling.OPTIONAL)
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Tactiek'))
+WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Tactiek'), FailureHandling.OPTIONAL)
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Voorarrest'))
+WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Voorarrest'), FailureHandling.OPTIONAL)
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Onderzoek Oud'), FailureHandling.OPTIONAL)
 
