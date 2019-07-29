@@ -23,11 +23,11 @@ WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Intake/Calltaker'))
 
 WebUI.delay(2)
 
-WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Bron'), 'test')
+WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Bron'), 't')
 
 WebUI.delay(2)
 
-'select user "test6"'
+'Default first one is selected'
 WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Bron lb'))
 
 WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Telefoon nummer'), '4754')
@@ -38,9 +38,9 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Adres van Incident lb'))
 
-WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Latitude'), 'GG')
+WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Latitude'), 'GG', FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/ter hoogte van'))
+WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/ter hoogte van'), FailureHandling.OPTIONAL)
 
 WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Nadere aanduiding'), 'Testing')
 
@@ -48,7 +48,7 @@ WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Bekende plaats'), 
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Bekende plaats lb'))
+WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Bekende plaats lb'), FailureHandling.OPTIONAL)
 
 WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Incident'), 'ac')
 
@@ -60,16 +60,16 @@ WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Poging'))
 
 WebUI.delay(1)
 
-'select user "CALLTAKER"'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Intake/Calltaker/Melding Prioriteit'), '18', false)
+'Select based on environment'
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Intake/Calltaker/Melding Prioriteit'), '3', false)
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Ambulance'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Ambulance'), FailureHandling.OPTIONAL)
 
-WebUI.delay(1)
+not_run: WebUI.delay(1, FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Politie'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Politie'), FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Achternaam'))
 
@@ -79,5 +79,5 @@ WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Resultaat Personen b
 
 WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Mutatie'), 'Testing')
 
-WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Intake Save'))
+WebUI.focus(findTestObject('Actpol_Scripts/Intake/Calltaker/Intake Save'))
 

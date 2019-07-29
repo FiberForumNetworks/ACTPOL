@@ -71,13 +71,18 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Change evary time we need id</description>
-      <initValue>'C11'</initValue>
+      <initValue>'LIKAUA'</initValue>
       <name>NoodhulpID</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Change evary time we need id</description>
-      <initValue>'ISULGINO, Anastatia'</initValue>
+      <initValue>'04/03/2019'</initValue>
       <name>Total_HandhavingID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description>Change evary time we need id</description>
+      <initValue>'GRAN MARCHA'</initValue>
+      <name>Total_MObile cenrale</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>

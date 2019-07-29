@@ -6,11 +6,11 @@
    <elementGuidId>29152d1d-c041-4313-86a6-3415ac4c3d6a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//ul/li[text()=&quot; | BRIEVENGAT | WIJKTEAM BRIEVENGAT&quot;]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>/html/body/div[2]/ul/li[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

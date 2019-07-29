@@ -42,7 +42,7 @@ int ACTPOLKMENV = 6
 
 int ACTPOLKWENV = 7
 
-int environment = ACTPOLKMENV
+int environment = ACTPOLKCENV
 
 String Selectenv
 

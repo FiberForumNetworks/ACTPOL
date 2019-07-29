@@ -45,3 +45,7 @@ WebUI.click(to)
 
 WebUI.delay(1)
 
+WebUI.takeScreenshot()
+
+WebUI.closeBrowser()
+

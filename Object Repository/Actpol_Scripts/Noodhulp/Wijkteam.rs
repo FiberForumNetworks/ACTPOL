@@ -6,11 +6,11 @@
    <elementGuidId>40f45c08-e276-4332-8bb1-1a26c3a2b870</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;UNTBEAT&quot;]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;UNTBEAT&quot; or @id=&quot;UNTDVBEAT&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -43,17 +43,19 @@ to.addProperty('xpath', type.EQUALS, xpath)
 
 WebUI.click(to)
 
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Noodhulp/unit user 32'))
+/*not_run: WebUI.click(findTestObject('Actpol_Scripts/Noodhulp/unit user 32'))
 
 not_run: WebUI.delay(2)
 
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Noodhulp/Optie user select'))
+WebUI.click(findTestObject('Actpol_Scripts/Noodhulp/Optie user select'))
 
 WebUI.delay(1)
 
-WebUI.focus(findTestObject('Actpol_Scripts/Noodhulp/Optie user delete'))
+WebUI.focus(findTestObject('Actpol_Scripts/Noodhulp/Optie user delete'), FailureHandling.OPTIONAL)
 
 WebUI.delay(1)
 
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Noodhulp/Unit save'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Noodhulp/Unit save'))*/
+
+WebUI.closeBrowser()
 

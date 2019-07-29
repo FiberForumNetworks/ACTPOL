@@ -29,15 +29,15 @@ WebUI.click(findTestObject('Actpol_Scripts/Noodhulp/Nieuw Unit'))
 
 WebUI.delay(2)
 
-'KUSTWACHT'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Noodhulp/Unit Type'), 'K', false)
+'Select based on the required dropdown'
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Noodhulp/Unit Type'), 'P', false)
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('Actpol_Scripts/Noodhulp/Unit data name'), 'aa')
+WebUI.setText(findTestObject('Actpol_Scripts/Noodhulp/Unit data name'), 'P999')
 
-'CALLTAKER'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Noodhulp/Wijkteam'), '66', false)
+'Select based on the required dropdown'
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Noodhulp/Wijkteam'), '30', false)
 
 WebUI.delay(1)
 
@@ -59,9 +59,19 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Noodhulp/Unit save'))
 
+WebUI.takeScreenshot()
+
+WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Noodhulp/Noodhulp'))
+
+WebUI.delay(2)
+
+WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Noodhulp/Onderhoud van Patrouilles'))
+
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('Actpol_Scripts/Noodhulp/Filter lijst unit id'), 'aa')
+WebUI.setText(findTestObject('Actpol_Scripts/Noodhulp/Filter lijst unit id'), 'P999')
 
 WebUI.click(findTestObject('Actpol_Scripts/Noodhulp/filter'))
+
+WebUI.closeBrowser()
 

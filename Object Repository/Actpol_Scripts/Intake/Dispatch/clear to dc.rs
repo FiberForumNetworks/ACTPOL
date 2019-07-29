@@ -6,15 +6,23 @@
    <elementGuidId>0509b7e8-a43f-43d6-a62c-a83c1f16ae6f</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;listPrOverig&quot;]/table/tbody/tr[2]/td[4]/font/select</value>
+         <key>BASIC</key>
+         <value>//*[@id=&quot;listPriority2&quot;]/table/tbody/tr[3]/td[4]/font/select[count(. | //*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame']) = count(//*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame'])]</value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;listPrOverig&quot;]/table/tbody/tr[4]/td[4]/font/select</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;listPriority2&quot;]/table/tbody/tr[3]/td[4]/font/select</value>
+   </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>

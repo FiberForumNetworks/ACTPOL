@@ -27,37 +27,37 @@ WebUI.click(findTestObject('Actpol_Scripts/Intake/Dispatch/Kentaken btn'))
 
 WebUI.delay(2)
 
-WebUI.setText(findTestObject('Actpol_Scripts/Intake/Dispatch/Kentaken/Naam'), 'nazira')
+WebUI.setText(findTestObject('Actpol_Scripts/Intake/Dispatch/Kentaken/Naam'), 'aa')
 
 WebUI.delay(2)
 
 'select user "SAAB NAZIRA C.A."'
-WebUI.click(findTestObject('Actpol_Scripts/Intake/Dispatch/Kentaken/Naam lb'))
+WebUI.click(findTestObject('Actpol_Scripts/Intake/Dispatch/Kentaken/Naam lb'), FailureHandling.OPTIONAL)
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('Actpol_Scripts/Intake/Dispatch/Kentaken/Kenteken'), 'BNA')
+not_run: WebUI.setText(findTestObject('Actpol_Scripts/Intake/Dispatch/Kentaken/Kenteken'), 'BNA')
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
 'BNA  014'
-WebUI.click(findTestObject('Actpol_Scripts/Intake/Dispatch/Kentaken/Kentaken lb'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Intake/Dispatch/Kentaken/Kentaken lb'))
 
-WebUI.delay(1)
+not_run: WebUI.delay(1)
 
-WebUI.setText(findTestObject('Actpol_Scripts/Intake/Dispatch/Kentaken/Chasissnr'), 'jn1taaw')
+not_run: WebUI.setText(findTestObject('Actpol_Scripts/Intake/Dispatch/Kentaken/Chasissnr'), 'jn1taaw')
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Intake/Dispatch/Kentaken/Chasissnr lb'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Intake/Dispatch/Kentaken/Chasissnr lb'))
 
-WebUI.delay(1)
+not_run: WebUI.delay(1)
 
-WebUI.setText(findTestObject('Actpol_Scripts/Intake/Dispatch/Kentaken/Merk'), 'adven')
+not_run: WebUI.setText(findTestObject('Actpol_Scripts/Intake/Dispatch/Kentaken/Merk'), 'adven')
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Intake/Dispatch/Kentaken/Merk lb'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Intake/Dispatch/Kentaken/Merk lb'))
 
 WebUI.click(findTestObject('Actpol_Scripts/Intake/Dispatch/Kentaken/Search'))
 
@@ -101,7 +101,7 @@ WebUI.click(findTestObject('Actpol_Scripts/Intake/Dispatch/Incidenten/date 3rd')
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('Actpol_Scripts/Intake/Dispatch/Incidenten/Straat'), 'ANDRES BELLO WEG')
+WebUI.setText(findTestObject('Actpol_Scripts/Intake/Dispatch/Incidenten/Straat'), 'aa')
 
 WebUI.delay(2)
 
@@ -134,7 +134,7 @@ WebUI.click(findTestObject('Actpol_Scripts/Intake/Dispatch/Unit Status/Unit'))
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('Actpol_Scripts/Intake/Dispatch/Unit Status/Unit Id'), 'c11')
+WebUI.setText(findTestObject('Actpol_Scripts/Intake/Dispatch/Unit Status/Unit Id'), 'B-5')
 
 WebUI.delay(1)
 
@@ -146,25 +146,25 @@ WebUI.click(findTestObject('Actpol_Scripts/Intake/Dispatch/Unit Status/Unit clos
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Intake/Dispatch/Kentaken/AMBULANCE'))
+WebUI.click(findTestObject('Actpol_Scripts/Intake/Dispatch/Kentaken/AMBULANCE'), FailureHandling.OPTIONAL)
 
-WebUI.delay(1)
+WebUI.delay(1, FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Actpol_Scripts/Intake/Dispatch/Spoedgevallen AMBULANCE'))
+WebUI.click(findTestObject('Actpol_Scripts/Intake/Dispatch/Spoedgevallen AMBULANCE'), FailureHandling.OPTIONAL)
 
-WebUI.delay(2)
+WebUI.delay(2, FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Actpol_Scripts/Intake/Dispatch/Optie'))
+WebUI.click(findTestObject('Actpol_Scripts/Intake/Dispatch/Optie'), FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Actpol_Scripts/Intake/Dispatch/Kopplean save tab'))
+WebUI.click(findTestObject('Actpol_Scripts/Intake/Dispatch/Kopplean save tab'), FailureHandling.OPTIONAL)
 
-WebUI.delay(2)
+WebUI.delay(2, FailureHandling.OPTIONAL)
 
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Intake/Dispatch/clear to dc'), 'AR', false)
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Intake/Dispatch/clear to dc'), 'AR', false, FailureHandling.OPTIONAL)
 
-WebUI.delay(2)
+WebUI.delay(2, FailureHandling.OPTIONAL)
 
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Intake/Dispatch/clear to dc'), 'CL', false)
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Intake/Dispatch/clear to dc'), 'CL', false, FailureHandling.OPTIONAL)
 
 WebUI.delay(2)
 

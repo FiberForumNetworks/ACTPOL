@@ -14,7 +14,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testobject.ConditionType as type
 
-
 WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Handhaving/Handhaving'))
@@ -28,11 +27,10 @@ WebUI.delay(2)
 WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/refre'))
 
 //WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Patrouille/p edit'))
-
 'Remember first set default assistentieid after run the script'
 String Id = GlobalVariable.Total_HandhavingID
 
-String xpath = '(//*[text()="' + Id + '"]/preceding-sibling::td/a[2])[1]'
+String xpath = ('(//*[text()="' + Id) + '"]/preceding-sibling::td/a[2])[1]'
 
 TestObject to = findTestObject('Actpol_Scripts/Generiek/Assistentie/Assistentie editing user 2')
 
@@ -79,9 +77,9 @@ WebUI.setText(findTestObject('Actpol_Scripts/Handhaving/Patrouille/Politie Rayon
 
 WebUI.setText(findTestObject('Actpol_Scripts/Handhaving/Patrouille/Bijzonderheden'), 'Testing')
 
-WebUI.setText(findTestObject('Actpol_Scripts/Handhaving/Patrouille/Patrouille Agenten 1'), '465')
+WebUI.setText(findTestObject('Actpol_Scripts/Handhaving/Patrouille/Patrouille Agenten 1'), 'ac')
 
-WebUI.delay(4)
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Patrouille/Patrouille Agenten lb'))
 

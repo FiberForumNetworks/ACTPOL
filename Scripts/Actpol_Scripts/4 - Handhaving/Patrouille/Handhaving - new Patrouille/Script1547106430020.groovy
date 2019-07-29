@@ -66,7 +66,7 @@ WebUI.setText(findTestObject('Actpol_Scripts/Handhaving/Patrouille/Politie Rayon
 
 WebUI.setText(findTestObject('Actpol_Scripts/Handhaving/Patrouille/Bijzonderheden'), 'Testing')
 
-WebUI.setText(findTestObject('Actpol_Scripts/Handhaving/Patrouille/Patrouille Agenten 1'), '465')
+WebUI.setText(findTestObject('Actpol_Scripts/Handhaving/Patrouille/Patrouille Agenten 1'), 'aa')
 
 WebUI.delay(4)
 

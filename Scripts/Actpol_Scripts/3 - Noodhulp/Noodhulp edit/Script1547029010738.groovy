@@ -45,12 +45,16 @@ WebUI.click(to)
 
 WebUI.delay(1)
 
-'WIJKTEAM DIVERSE 3'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Noodhulp/Wijkteam'), '3', false)
+'Select required dropdown'
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Noodhulp/Wijkteam'), '5', false)
 
 WebUI.click(findTestObject('Actpol_Scripts/Noodhulp/Unit Beschikbaar'))
 
+WebUI.takeScreenshot()
+
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Noodhulp/Unit save'))
+WebUI.focus(findTestObject('Actpol_Scripts/Noodhulp/Unit save'))
+
+WebUI.closeBrowser()
 
