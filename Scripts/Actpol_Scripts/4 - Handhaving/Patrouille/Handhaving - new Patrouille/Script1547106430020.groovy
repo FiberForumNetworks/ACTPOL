@@ -59,8 +59,8 @@ WebUI.setText(findTestObject('Actpol_Scripts/Handhaving/Patrouille/Eind tijd'), 
 
 WebUI.delay(1)
 
-'AMSTERDAM'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Handhaving/Patrouille/Wijk'), '4', false)
+'Select required dropdown'
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Handhaving/Patrouille/Wijk'), '70002', false)
 
 WebUI.setText(findTestObject('Actpol_Scripts/Handhaving/Patrouille/Politie Rayon'), '1')
 

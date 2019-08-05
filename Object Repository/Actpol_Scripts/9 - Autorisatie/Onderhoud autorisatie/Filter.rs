@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@key = 'filteren' and @value = 'zoeken' and @alt = 'zoeken']</value>
+         <value>//*[@key = 'filteren' and @value = 'filteren' and @alt = 'filteren' ]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,23 +15,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>key</name>
+      <name>xpath</name>
       <type>Main</type>
-      <value>filteren</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>value</name>
-      <type>Main</type>
-      <value>zoeken</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>alt</name>
-      <type>Main</type>
-      <value>zoeken</value>
+      <value>//*[@key = 'filteren' and @value = 'filteren' and @alt = 'filteren' ]</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

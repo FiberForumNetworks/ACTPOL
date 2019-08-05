@@ -29,7 +29,7 @@ WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/refre'))
 not_run: WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/edit mobiele centrale'))
 
 'Remember first set default assistentieid after run the script'
-String Id = GlobalVariable.Total_HandhavingID
+String Id = GlobalVariable.handhaving_mobileid
 
 String xpath = ('(//*[text()="' + Id) + '"]/preceding-sibling::td/a[3])[1]'
 
@@ -78,70 +78,70 @@ WebUI.delay(1)
 
 WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/Personeel'))
 
-WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/Materiaal'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/Materiaal'))
 
-WebUI.delay(1)
+not_run: WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/newMateriaal'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/newMateriaal'))
 
 'Test1'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/Materiaal type'), '1', false)
+not_run: WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/Materiaal type'), '1', false)
 
-WebUI.setText(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/Aantal'), 'TEst')
+not_run: WebUI.setText(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/Aantal'), 'TEst')
 
-WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/m save'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/m save'))
+
+not_run: WebUI.delay(1)
+
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/Materiaal'))
+
+not_run: WebUI.delay(1)
+
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/Tijdschema'))
+
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/newTijd'))
+
+not_run: WebUI.delay(1)
+
+not_run: WebUI.setText(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/Positie'), 'New direction')
+
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/Spitswagen datum'))
+
+not_run: WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Monthyear/Rightmonth'), '0', false)
+
+not_run: WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Monthyear/Rightyear'), '2019', false)
+
+not_run: WebUI.delay(1)
+
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Date/8th right frame'))
+
+not_run: WebUI.delay(1)
+
+not_run: WebUI.setText(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/Spitswagen tijd'), '10.00.00')
+
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/Sluitwagen datum'))
+
+not_run: WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Monthyear/Rightmonth'), '0', false)
+
+not_run: WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Monthyear/Rightyear'), '2019', false)
+
+not_run: WebUI.delay(1)
+
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Date/8th right frame'))
+
+not_run: WebUI.delay(1)
+
+not_run: WebUI.setText(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/Sluitwagen tijd'), '10.00.00')
+
+not_run: WebUI.delay(2)
+
+not_run: WebUI.focus(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/tid save'))
+
+not_run: WebUI.delay(1)
+
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/Tijdschema'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/Materiaal'))
-
-WebUI.delay(1)
-
-WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/Tijdschema'))
-
-WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/newTijd'))
-
-WebUI.delay(1)
-
-WebUI.setText(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/Positie'), 'New direction')
-
-WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/Spitswagen datum'))
-
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Monthyear/Rightmonth'), '0', false)
-
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Monthyear/Rightyear'), '2019', false)
-
-WebUI.delay(1)
-
-WebUI.click(findTestObject('Actpol_Scripts/Date/8th right frame'))
-
-WebUI.delay(1)
-
-WebUI.setText(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/Spitswagen tijd'), '10.00.00')
-
-WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/Sluitwagen datum'))
-
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Monthyear/Rightmonth'), '0', false)
-
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Monthyear/Rightyear'), '2019', false)
-
-WebUI.delay(1)
-
-WebUI.click(findTestObject('Actpol_Scripts/Date/8th right frame'))
-
-WebUI.delay(1)
-
-WebUI.setText(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/Sluitwagen tijd'), '10.00.00')
-
-WebUI.delay(2)
-
-WebUI.focus(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/tid save'))
-
-WebUI.delay(1)
-
-WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/Tijdschema'))
-
-WebUI.delay(1)
-
-WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/Mobiele Centrale total save'))
+WebUI.focus(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/Mobiele Centrale total save'))
 

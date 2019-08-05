@@ -28,7 +28,7 @@ WebUI.takeScreenshot()
 
 //WebUI.click(findTestObject('Actpol_Scripts/Handhaving/OPV/OPV user view'))
 'Remember first set default assistentieid after run the script'
-String Id = GlobalVariable.Total_HandhavingID
+String Id = GlobalVariable.Total_HandhavingID_OPV
 
 String xpath = ('(//*[text()="' + Id) + '"]/preceding-sibling::td/a[1])[1]'
 
@@ -40,11 +40,11 @@ WebUI.click(to)
 
 WebUI.delay(4)
 
-WebUI.click(findTestObject('Actpol_Scripts/Handhaving/OPV/grid disaper'))
+WebUI.focus(findTestObject('Actpol_Scripts/Handhaving/OPV/grid disaper'))
 
-WebUI.delay(1)
+not_run: WebUI.delay(1)
 
-WebUI.verifyElementPresent(to, 5, FailureHandling.CONTINUE_ON_FAILURE)
+not_run: WebUI.verifyElementPresent(to, 5, FailureHandling.CONTINUE_ON_FAILURE)
 
 WebUI.takeScreenshot()
 

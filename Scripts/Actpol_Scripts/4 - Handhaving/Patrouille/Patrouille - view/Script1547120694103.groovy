@@ -27,9 +27,8 @@ WebUI.delay(2)
 WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/refre'))
 
 //not_run: WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Patrouille/p view'))
-
 'Remember first set default assistentieid after run the script'
-String Id = GlobalVariable.Total_HandhavingID
+String Id = GlobalVariable.handhaving_patrouile
 
 String xpath = ('(//*[text()="' + Id) + '"]/preceding-sibling::td/a[1])[1]'
 

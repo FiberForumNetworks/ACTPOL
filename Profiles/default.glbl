@@ -76,17 +76,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Change evary time we need id</description>
-      <initValue>'04/03/2019'</initValue>
-      <name>Total_HandhavingID</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description>Change evary time we need id</description>
-      <initValue>'GRAN MARCHA'</initValue>
-      <name>Total_MObile cenrale</name>
+      <initValue>' Carti KISSINGER '</initValue>
+      <name>Total_HandhavingID_OPV</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'75'</initValue>
+      <initValue>'DOUANE'</initValue>
       <name>Total_AutorisatieID</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -143,5 +138,20 @@
       <description></description>
       <initValue>'Dvm0xiHHXD0Qh6vrTYQg0A=='</initValue>
       <name>KWusername</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Grote Carnaval Playa 2018'</initValue>
+      <name>handhaving_mobileid</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'01/08/2013'</initValue>
+      <name>handhaving_patrouile</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'19'</initValue>
+      <name>Groep_AutorisatieID</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

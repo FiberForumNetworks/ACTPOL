@@ -30,7 +30,7 @@ WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/Mobiele C
 WebUI.delay(2)
 
 'GRAN MARCHA'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/Event type'), '1', false)
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/Event type'), '1', false, FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/Begin datum'))
 
@@ -108,7 +108,7 @@ WebUI.delay(1)
 WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/newMateriaal'))
 
 'HANDBOEIEN'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/Materiaal type'), '17', false)
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/Materiaal type'), '8', false)
 
 WebUI.setText(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/Aantal'), 'TEst')
 

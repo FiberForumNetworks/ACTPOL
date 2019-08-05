@@ -53,17 +53,17 @@ WebUI.setText(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisat
 
 WebUI.delay(1)
 
-'AMBULANCE'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Korps'), '3', false)
+'Select required drop down'
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Korps'), '1', false)
 
 WebUI.delay(1)
 
-'ADMINISTRATIE JUSTICIELE DIENST'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Wijkteam_Bureau'), '45', false)
+'Select required drop down'
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Wijkteam_Bureau'), '1', false)
 
 WebUI.delay(1)
 
-'PLOEG 1'
+'Select required drop down'
 WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Ploeg'), '1', false)
 
 WebUI.delay(1)
@@ -72,30 +72,30 @@ WebUI.click(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie
 
 WebUI.delay(1)
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Weergave in Lijs Ja'))
 
-WebUI.delay(1)
-
-'ADMINISTRATIEVE MEDEWERKER'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Functie'), '2', false)
+'Select required drop down'
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Functie'), '1', false)
 
 WebUI.delay(1)
 
-'ADJUNCT-COMMIES 1STE KLASSE'
+'Select required drop down'
 WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Rang'), '2', false)
-
-WebUI.delay(1)
-
-WebUI.setText(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Gebruiker id'), 'test18')
 
 WebUI.delay(1)
 
 WebUI.click(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Actief Ja'), FailureHandling.STOP_ON_FAILURE)
 
+WebUI.setText(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Gebruiker id'), 'test18')
+
 WebUI.delay(1)
 
-'BUREAU CHEF BIJZONDERE ONDERZOEKEN'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Gebruikersgroep'), '62', false)
+WebUI.delay(1)
+
+'Select required drop down'
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Gebruikersgroep'), '1', false)
 
 WebUI.delay(1)
 

@@ -26,7 +26,7 @@ WebUI.delay(2)
 
 //WebUI.click(findTestObject('Actpol_Scripts/Handhaving/OPV/OPV user view'))
 'Remember first set default assistentieid after run the script'
-String Id = GlobalVariable.Total_HandhavingID
+String Id = GlobalVariable.Total_HandhavingID_OPV
 
 String xpath = '(//*[text()="' + Id + '"]/preceding-sibling::td/a[1])[1]'
 

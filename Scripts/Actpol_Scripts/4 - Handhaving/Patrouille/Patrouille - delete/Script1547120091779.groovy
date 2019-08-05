@@ -14,7 +14,6 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testobject.ConditionType as type
 
-
 WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Handhaving/Handhaving'))
@@ -28,10 +27,8 @@ WebUI.delay(2)
 WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/refre'))
 
 //WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Patrouille/delete user'))
-
-
 'Remember first set default assistentieid after run the script'
-String Id = GlobalVariable.Total_HandhavingID
+String Id = GlobalVariable.handhaving_patrouile
 
 String xpath = ('(//*[text()="' + Id) + '"]/preceding-sibling::td/a[3])[1]'
 
@@ -40,6 +37,7 @@ TestObject to = findTestObject('Actpol_Scripts/Generiek/Assistentie/Assistentie 
 to.addProperty('xpath', type.EQUALS, xpath)
 
 WebUI.click(to)
+
 WebUI.delay(3)
 
 WebUI.focus(findTestObject('Actpol_Scripts/Handhaving/Patrouille/delete user 2'))

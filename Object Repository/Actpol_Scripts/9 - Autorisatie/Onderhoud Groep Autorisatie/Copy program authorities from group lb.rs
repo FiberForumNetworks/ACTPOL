@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[text()=&quot;BUREAU CHEF BIJZONDERE ONDERZOEKEN&quot;]</value>
+         <value>/html/body/div[2]/ul/li[1][count(. | //*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame']) = count(//*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[text()=&quot;BUREAU CHEF BIJZONDERE ONDERZOEKEN&quot;]</value>
+      <value>/html/body/div[2]/ul/li[1]</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

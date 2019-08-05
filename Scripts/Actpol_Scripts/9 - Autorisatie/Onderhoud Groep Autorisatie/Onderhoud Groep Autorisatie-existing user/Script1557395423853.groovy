@@ -27,7 +27,7 @@ WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Autorisatie/Onderhoud
 WebUI.delay(1)
 
 'Remember first set default assistentieid after run the script'
-String Id = GlobalVariable.Total_AutorisatieID
+String Id = GlobalVariable.Groep_AutorisatieID
 
 String xpath = ('(//*[text()="' + Id) + '"]/preceding-sibling::td/a[3])[1]'
 
@@ -36,8 +36,6 @@ TestObject to = findTestObject('Actpol_Scripts/Generiek/Assistentie/Assistentie 
 to.addProperty('xpath', type.EQUALS, xpath)
 
 WebUI.click(to)
-
-
 
 WebUI.delay(1)
 
@@ -72,13 +70,13 @@ WebUI.click(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud Groep Autor
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud Groep Autorisatie/Copy program authorities from group'), 
-    'BUREAU CHEF BIJZONDERE ONDERZOEKEN')
+not_run: WebUI.setText(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud Groep Autorisatie/Copy program authorities from group'), 
+    'aa', FailureHandling.OPTIONAL)
 
-WebUI.delay(2)
+not_run: WebUI.delay(2, FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud Groep Autorisatie/Copy program authorities from group lb'), 
-    FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.click(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud Groep Autorisatie/Copy program authorities from group lb'), 
+    FailureHandling.OPTIONAL)
 
 WebUI.delay(1)
 

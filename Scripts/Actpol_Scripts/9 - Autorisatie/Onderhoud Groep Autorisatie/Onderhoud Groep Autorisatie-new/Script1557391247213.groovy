@@ -63,7 +63,7 @@ WebUI.click(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud Groep Autor
 WebUI.delay(1)
 
 WebUI.setText(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud Groep Autorisatie/Copy program authorities from group'), 
-    'BUREAU CHEF BIJZONDERE ONDERZOEKEN')
+    'a')
 
 WebUI.delay(2)
 

@@ -27,7 +27,7 @@ WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Autorisatie/Onderhoud
 WebUI.delay(1)
 
 'Remember first set default assistentieid after run the script'
-String Id = GlobalVariable.Total_AutorisatieID
+String Id = GlobalVariable.Groep_AutorisatieID
 
 String xpath = ('(//*[text()="' + Id) + '"]/preceding-sibling::td/a[2])[1]'
 

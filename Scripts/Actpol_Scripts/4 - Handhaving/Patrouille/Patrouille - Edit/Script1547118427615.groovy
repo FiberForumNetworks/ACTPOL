@@ -28,7 +28,7 @@ WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/refre'))
 
 //WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Patrouille/p edit'))
 'Remember first set default assistentieid after run the script'
-String Id = GlobalVariable.Total_HandhavingID
+String Id = GlobalVariable.handhaving_patrouile
 
 String xpath = ('(//*[text()="' + Id) + '"]/preceding-sibling::td/a[2])[1]'
 
@@ -70,8 +70,8 @@ WebUI.setText(findTestObject('Actpol_Scripts/Handhaving/Patrouille/Eind tijd'), 
 
 WebUI.delay(1)
 
-'AMSTERDAM'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Handhaving/Patrouille/Wijk'), '4', false)
+'Select required dropdown'
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Handhaving/Patrouille/Wijk'), '90003', false)
 
 WebUI.setText(findTestObject('Actpol_Scripts/Handhaving/Patrouille/Politie Rayon'), 'Test')
 

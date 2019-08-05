@@ -72,12 +72,12 @@ WebUI.setText(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisat
 WebUI.delay(1)
 
 'AMBULANCE'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Korps'), '3', false)
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Korps'), '1', false)
 
 WebUI.delay(1)
 
 'ADMINISTRATIE JUSTICIELE DIENST'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Wijkteam_Bureau'), '45', false)
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Wijkteam_Bureau'), '1', false)
 
 WebUI.delay(1)
 
@@ -113,7 +113,7 @@ WebUI.click(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie
 WebUI.delay(1)
 
 'BUREAU CHEF BIJZONDERE ONDERZOEKEN'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Gebruikersgroep'), '62', false)
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/9 - Autorisatie/Onderhoud autorisatie/Gebruikersgroep'), '1', false)
 
 WebUI.delay(1)
 

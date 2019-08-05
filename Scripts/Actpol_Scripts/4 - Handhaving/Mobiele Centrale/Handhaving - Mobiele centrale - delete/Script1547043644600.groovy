@@ -29,7 +29,7 @@ WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/refre'))
 not_run: WebUI.click(findTestObject('Actpol_Scripts/Handhaving/Mobiele Centrale/Delete mobiele centrale'))
 
 'Remember first set default assistentieid after run the script'
-String Id = GlobalVariable.Total_HandhavingID
+String Id = GlobalVariable.handhaving_mobileid
 
 String xpath = ('(//*[text()="' + Id) + '"]/preceding-sibling::td/a[4])[1]'
 
