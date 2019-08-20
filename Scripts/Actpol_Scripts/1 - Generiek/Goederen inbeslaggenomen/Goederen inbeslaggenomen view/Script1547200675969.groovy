@@ -25,7 +25,7 @@ WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Goederen Inb
 WebUI.delay(2)
 
 'Remember first set default assistentieid after run the script'
-String AssistentiedynamicId = GlobalVariable.Total_Generiek_Module
+String AssistentiedynamicId = GlobalVariable.GoederenLocatie
 
 String Assistentiexpath = ('//*[text()="' + AssistentiedynamicId) + '"]/preceding-sibling::td/a[1]'
 
@@ -46,17 +46,17 @@ WebUI.delay(2)
 WebUI.click(findTestObject('Actpol_Scripts/Generiek/Goederen inbeslaggenomen/Goed'))
 
 'Ontvangen'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Goederen inbeslaggenomen/Reden'), '76', false)
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Goederen inbeslaggenomen/Reden'), '78', false)
 
 WebUI.delay(1)
 
 'OM'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Goederen inbeslaggenomen/Type'), '80', false)
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Goederen inbeslaggenomen/Type'), '81', false)
 
 WebUI.delay(1)
 
 'Aname1, Vname1'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Goederen inbeslaggenomen/Type 2'), '50014', false)
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Goederen inbeslaggenomen/Type 2'), '86', false)
 
 'Andere'
 WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Goederen inbeslaggenomen/Locatie'), '83', false)
@@ -67,9 +67,9 @@ WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Goederen inbeslaggenomen/O
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Generiek/Goederen inbeslaggenomen/Goederen Locatie'))
+WebUI.focus(findTestObject('Actpol_Scripts/Generiek/Goederen inbeslaggenomen/Goederen Locatie'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Generiek/Goederen inbeslaggenomen/save'))
+WebUI.focus(findTestObject('Actpol_Scripts/Generiek/Goederen inbeslaggenomen/save'))
 

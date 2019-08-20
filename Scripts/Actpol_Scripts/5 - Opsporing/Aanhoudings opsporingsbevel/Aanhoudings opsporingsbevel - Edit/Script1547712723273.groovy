@@ -22,6 +22,8 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Aanhoudings_Opsporings bevel'))
 
+WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Generiek'))
+
 WebUI.delay(2)
 
 not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/edit'))
@@ -48,8 +50,8 @@ WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings beve
 
 WebUI.delay(2)
 
-'HEMELAAR, Maarten'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Met toestemming van'), '54', 
+'Select required drop down'
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Met toestemming van'), '2', 
     false)
 
 WebUI.delay(1)
@@ -65,7 +67,15 @@ WebUI.delay(1)
 
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Details'))
 
+WebUI.delay(3)
+
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Reason for Warrant'))
+
+WebUI.delay(1)
+
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Reason for Warrant'))
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Reason for Warrant new'))
 
@@ -75,68 +85,74 @@ WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings be
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Reason for Warrant plus'))
+WebUI.focus(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/a o save'))
 
-WebUI.delay(2)
+WebUI.closeBrowser()
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Reason for Warrant'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Reason for Warrant plus'))
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Event'))
+not_run: WebUI.delay(2)
 
-WebUI.delay(1)
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Reason for Warrant'))
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/event new'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Event'))
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Assistentie Nr'))
+not_run: WebUI.delay(1)
 
-WebUI.delay(2)
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/event new'))
+
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Assistentie Nr'))
+
+not_run: WebUI.delay(2)
 
 '200600268\r\n'
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Assistentie Nr lb'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Assistentie Nr lb'))
 
-WebUI.delay(1)
+not_run: WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Event plus'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Event plus'))
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Event'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Event'))
 
-WebUI.delay(1)
+not_run: WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Uiterlijke Bijzonderheid'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Uiterlijke Bijzonderheid'))
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Uiterlijke Bijzonderheid new'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Uiterlijke Bijzonderheid new'))
 
-WebUI.delay(1)
+not_run: WebUI.delay(1)
 
 '4 - LITTEKEN                                                                   '
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Uiterlijke Bijzonderheid drop down'), 
+not_run: WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Uiterlijke Bijzonderheid drop down'), 
     '4', false)
 
 '3 - HALS                                                                       '
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Lichaamsdeel Bijzonderheid'), 
+not_run: WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Lichaamsdeel Bijzonderheid'), 
     '3', false)
 
-WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Omschrijving'), 'Testing')
+not_run: WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Omschrijving'), 'Testing')
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Uiterlijke Bijzonderheid plush'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Uiterlijke Bijzonderheid plush'))
 
-WebUI.delay(1)
+not_run: WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Uiterlijke Bijzonderheid'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Uiterlijke Bijzonderheid'))
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Foto'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Foto'))
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Foto new'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Foto new'))
 
-WebUI.uploadFile(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/upload'), 'C:\\Users\\user4\\Desktop\\jquery\\old desktop\\opv 1.png')
+not_run: WebUI.uploadFile(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/upload'), 'C:\\Users\\user4\\Desktop\\jquery\\old desktop\\opv 1.png')
 
-WebUI.delay(1)
+not_run: WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Foto plush'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Foto plush'))
 
-WebUI.delay(1)
+not_run: WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Foto'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Foto'))
 
-WebUI.focus(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/a o save'))
+not_run: WebUI.focus(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/a o save'))
+
+not_run: WebUI.closeBrowser()
 

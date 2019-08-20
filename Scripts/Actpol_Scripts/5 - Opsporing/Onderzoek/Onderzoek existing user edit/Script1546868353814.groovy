@@ -63,7 +63,7 @@ WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Assistentie Nr lb
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/imp entite save'))
+WebUI.focus(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/imp entite save'))
 
 WebUI.delay(2)
 
@@ -71,58 +71,60 @@ WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/imp ent close'))
 
 WebUI.delay(3)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Import melding'))
+WebUI.closeBrowser()
 
-WebUI.delay(3)
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Import melding'))
 
-WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Melding Nr'), '21')
+not_run: WebUI.delay(3)
 
-WebUI.delay(2)
+not_run: WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Melding Nr'), '21')
+
+not_run: WebUI.delay(2)
 
 'Selecting 129'
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Melding Nr lb 2'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Melding Nr lb 2'))
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/meld save'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/meld save'))
 
-WebUI.delay(3)
+not_run: WebUI.delay(3)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Documenten'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Documenten'))
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Documenten new'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Documenten new'))
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Document open'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Document open'))
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/dob'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/dob'))
 
-WebUI.delay(1)
+not_run: WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Uitgewerkte Tapverslag'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Uitgewerkte Tapverslag'))
 
-WebUI.delay(3)
+not_run: WebUI.delay(3)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/new doc close'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/new doc close'))
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/new doc upload'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/new doc upload'))
 
-WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Document Naam'), 'NEW')
+not_run: WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Document Naam'), 'NEW')
 
-WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Betreft'), 'ddc')
+not_run: WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Betreft'), 'ddc')
 
-WebUI.delay(1)
+not_run: WebUI.delay(1)
 
-WebUI.uploadFile(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Document'), 'C:\\Users\\user4\\Desktop\\test.docx')
+not_run: WebUI.uploadFile(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Document'), 'C:\\Users\\user4\\Desktop\\test.docx')
 
-WebUI.delay(3)
+not_run: WebUI.delay(3)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/doc save'), FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/doc save'), FailureHandling.STOP_ON_FAILURE)
 

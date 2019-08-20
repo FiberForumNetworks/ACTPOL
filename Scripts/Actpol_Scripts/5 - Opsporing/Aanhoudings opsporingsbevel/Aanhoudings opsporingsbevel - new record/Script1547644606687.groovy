@@ -15,7 +15,7 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
 
-not_run: WebUI.delay(4)
+WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Generiek'))
 
 not_run: WebUI.click(findTestObject('test/click preview'))
 
@@ -28,6 +28,8 @@ WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Opspori
 WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Aanhoudings_Opsporings bevel'))
+
+WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Generiek'))
 
 not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Pagina chck'))
 
@@ -46,8 +48,8 @@ WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings beve
 
 WebUI.delay(2)
 
-'HEMELAAR, Maarten'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Met toestemming van'), '54', 
+'select required rop down'
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Met toestemming van'), '2', 
     false)
 
 WebUI.delay(1)
@@ -63,7 +65,15 @@ WebUI.delay(1)
 
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Details'))
 
+WebUI.delay(2)
+
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Reason for Warrant'))
+
+WebUI.delay(2)
+
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Reason for Warrant'))
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Reason for Warrant new'))
 
@@ -79,5 +89,7 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/Reason for Warrant'))
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/a o save'))
+WebUI.focus(findTestObject('Actpol_Scripts/Opsporing/Aanhoudings Opsporings bevel/a o save'))
+
+WebUI.closeBrowser()
 

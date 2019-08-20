@@ -28,12 +28,12 @@ WebUI.click(findTestObject('Actpol_Scripts/Generiek/Melding/new melding'))
 WebUI.delay(2)
 
 'Selecting Informatie'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Melding/Type Melding'), '210', false)
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Melding/Type Melding'), '214', false)
 
 WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Melding/Naam Melder'), 'aaa1226')
 
-'Selecting KMAR'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Melding/Werkzaam bij'), '97', false)
+'Select required'
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Melding/Werkzaam bij'), '92', false)
 
 WebUI.click(findTestObject('Actpol_Scripts/Generiek/Melding/Dataam img src'))
 
@@ -168,9 +168,11 @@ not_run: WebUI.click(findTestObject('Actpol_Scripts/Generiek/Melding/Hotel ja'))
 
 not_run: WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Generiek/Melding/Meld save'))
+WebUI.focus(findTestObject('Actpol_Scripts/Generiek/Melding/Meld save'))
 
-WebUI.delay(2)
+WebUI.closeBrowser()
 
-WebUI.click(findTestObject('Actpol_Scripts/Generiek/Melding/meld naam filter a-z'))
+not_run: WebUI.delay(2)
+
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Generiek/Melding/meld naam filter a-z'))
 

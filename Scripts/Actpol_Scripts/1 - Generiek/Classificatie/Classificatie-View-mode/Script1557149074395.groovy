@@ -27,9 +27,9 @@ WebUI.delay(2)
 //CHECK CODE
 //WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Assistentie editing user 2'))
 'Remember first set default assistentieid after run the script'
-String AssistentiedynamicId = GlobalVariable.Total_Generiek_Module
+String AssistentiedynamicId = GlobalVariable.ClassificatieID
 
-String Assistentiexpath = ('//*[text()="' + AssistentiedynamicId) + '"]/preceding-sibling::td/a[1]'
+String Assistentiexpath = ('(//*[text()="' + AssistentiedynamicId) + '"]/preceding-sibling::td/a[1])[1]'
 
 TestObject to = findTestObject('Actpol_Scripts/Generiek/Assistentie/Assistentie editing user 2')
 
@@ -40,4 +40,8 @@ WebUI.click(to)
 WebUI.delay(2)
 
 WebUI.takeScreenshot()
+
+WebUI.closeBrowser()
+
+
 

@@ -31,43 +31,43 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Change evary time we need id</description>
-      <initValue>'09/07/2018'</initValue>
+      <initValue>'17/03/2015'</initValue>
       <name>ArrestantenId</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Change evary time we need id</description>
-      <initValue>'315'</initValue>
+      <initValue>'380'</initValue>
       <name>OnderzoekID</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Change evary time we need id</description>
-      <initValue>'292'</initValue>
+      <initValue>'317'</initValue>
       <name>RegisterID</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Change evary time we need id</description>
-      <initValue>'Kolanu BOELDAK'</initValue>
+      <initValue>'ALARCON ZAMUDIO'</initValue>
       <name>AanhoudingsOpsporingsbevelID</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Change evary time we need id</description>
-      <initValue>'22/04/2019'</initValue>
+      <initValue>'04/08/2019'</initValue>
       <name>CaseScreeningID</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Change evary time we need id</description>
-      <initValue>'DOE'</initValue>
+      <initValue>'10/05/2017'</initValue>
       <name>TaktiekID</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Change evary time we need id</description>
-      <initValue>'200600247/0'</initValue>
+      <initValue>'201500289/0'</initValue>
       <name>VoorarrestID</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Change evary time we need id</description>
-      <initValue>'03/03/2015 10.43.35'</initValue>
-      <name>Total_Generiek_Module</name>
+      <initValue>'201901648'</initValue>
+      <name>Generiekassistenite_Module</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Change evary time we need id</description>
@@ -153,5 +153,25 @@
       <description></description>
       <initValue>'19'</initValue>
       <name>Groep_AutorisatieID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'Vaartuig'</initValue>
+      <name>ClassificatieID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'OVERIGE'</initValue>
+      <name>GoederenLocatie</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'1'</initValue>
+      <name>Meldingid</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'19/08/2019 06.30.00'</initValue>
+      <name>Dienstovername_WachtovernameID</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

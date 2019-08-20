@@ -21,6 +21,8 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Arrestanten'))
 
+WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Generiek'))
+
 WebUI.delay(1)
 
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/New'))
@@ -29,12 +31,12 @@ WebUI.delay(2)
 
 WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Type Arrestant'), '3', false)
 
-WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Naam Arrestant'), 'TER')
+WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Naam Arrestant'), 'a')
 
 WebUI.delay(2)
 
 'Ter'
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Naam Arrestant lb'))
+WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Naam Arrestant lb'), FailureHandling.OPTIONAL)
 
 WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Onder Supervisie'), 'a')
 
@@ -81,26 +83,26 @@ WebUI.delay(1)
 
 WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Insluiting Tijd'), '08.00.00')
 
-WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Insluiting Plaats'), 'n')
+WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Insluiting Plaats'), 'a')
 
 WebUI.delay(2)
 
 'BON FUTURO BLOK 1'
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Insluiting Plaats lb'))
 
-WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/1ste Binnen gebracht door'), 'Anouck')
+WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/1ste Binnen gebracht door'), 'a')
 
 WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/1ste Binnen gebracht door lb'))
 
-WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Op last van'), 'Caroll')
+WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Op last van'), 'a')
 
 WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Op last van lb'))
 
-WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/In kennis gesteld'), 'Cleotis')
+WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/In kennis gesteld'), 'a')
 
 WebUI.delay(2)
 
@@ -128,20 +130,20 @@ WebUI.delay(1)
 
 WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Ontslag Tijd'), '20.00.00')
 
-WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Ontslagen op last van'), 'dave')
+WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Ontslagen op last van'), 'aa')
 
 WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Ontslagen op last van lb'))
 
-WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Teamleider bij ontslag'), 'dave')
+WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Teamleider bij ontslag'), 'a')
 
 WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Teamleider bij ontslag lb'))
 
 '5-VERPLAATSING NAAR ANDERE POLITIE BUREAU\r\n'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Einde insluiting i.v.m'), '5', false)
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Einde insluiting i.v.m'), '1', false, FailureHandling.OPTIONAL)
 
 WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Bijzonderheden einde arrestatie'), 'Testing')
 
@@ -158,6 +160,8 @@ WebUI.delay(2)
 not_run: WebUI.acceptAlert()
 
 WebUI.delay(1)
+
+WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Insluiting'))
 
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Insluiting'))
 
@@ -203,13 +207,13 @@ WebUI.delay(2)
 
 WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Fouillering Time'), '08.39.00')
 
-WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Gefouilleerd door'), 'Jurgen')
+WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Gefouilleerd door'), 'aa')
 
 WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Gefouilleerd door lb'))
 
-WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Onder supervisie van'), 'Gilbert')
+WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Onder supervisie van'), 'aa')
 
 WebUI.delay(2)
 
@@ -249,5 +253,7 @@ WebUI.delay(2)
 
 not_run: WebUI.acceptAlert()
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Arrestanten save'))
+WebUI.focus(findTestObject('Actpol_Scripts/Opsporing/Arrestanten/Arrestanten save'))
+
+WebUI.closeBrowser()
 

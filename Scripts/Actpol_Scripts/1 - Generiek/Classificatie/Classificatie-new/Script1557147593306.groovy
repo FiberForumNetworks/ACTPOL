@@ -24,18 +24,16 @@ WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Classificati
 
 WebUI.delay(2)
 
-
-
 WebUI.click(findTestObject('Actpol_Scripts/Generiek/Classificatie/new'))
 
 WebUI.delay(2)
 
 'Persoon'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Classificatie/Select Type Entiteit'), '205', false)
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Classificatie/Select Type Entiteit'), '204', false)
 
 WebUI.delay(2)
 
-WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Classificatie/Achternaam'), 'ARBNDELL')
+WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Classificatie/Achternaam'), 'a')
 
 WebUI.delay(2)
 
@@ -51,13 +49,15 @@ WebUI.click(findTestObject('Actpol_Scripts/Generiek/Classificatie/Classificatie 
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Generiek/Classificatie/Person Clasificatie'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Generiek/Classificatie/Person Clasificatie'))
 
-WebUI.delay(1)
+not_run: WebUI.delay(1)
 
-WebUI.scrollToPosition(10, 8)
+not_run: WebUI.scrollToPosition(10, 8)
 
-WebUI.delay(1)
+not_run: WebUI.delay(1)
 
-WebUI.focus(findTestObject('Actpol_Scripts/Generiek/Classificatie/Save data'))
+not_run: WebUI.focus(findTestObject('Actpol_Scripts/Generiek/Classificatie/Save data'))
+
+WebUI.closeBrowser()
 

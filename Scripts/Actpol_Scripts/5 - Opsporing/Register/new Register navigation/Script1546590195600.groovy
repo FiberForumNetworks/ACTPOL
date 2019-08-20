@@ -21,6 +21,8 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Register'))
 
+WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Generiek'))
+
 WebUI.delay(1)
 
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Register/New register'))
@@ -31,18 +33,24 @@ WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Register/Afdeling'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Register/Afdeling lb'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Register/Afdeling lb'), FailureHandling.OPTIONAL)
 
 WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Register/Naam Onderzoek'), 'Test11')
 
 'Proces-Verbaal TCI'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Opsporing/Register/Redden Opname Register'), '111', false)
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Opsporing/Register/Redden Opname Register'), '112', false)
 
 WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Register/Opmerking'), 'Testing')
 
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Register/Register'))
 
+WebUI.delay(1)
+
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Register/Klasse'))
+
+WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Register/Klasse'))
+
+WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Register/Klasse click'))
 
@@ -52,143 +60,145 @@ WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Register/Klasse click lb'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Register/r save'))
+WebUI.focus(findTestObject('Actpol_Scripts/Opsporing/Register/r save'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Entiteiten'))
+WebUI.closeBrowser()
 
-WebUI.delay(3)
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Entiteiten'))
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Nieuwe Entiteit'))
+not_run: WebUI.delay(3)
 
-WebUI.delay(1)
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Nieuwe Entiteit'))
+
+not_run: WebUI.delay(1)
 
 'Selecting Persoon\r\n'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Type Entiteit'), '13', false)
+not_run: WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Type Entiteit'), '13', false)
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
-WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Achternaam'), 'Test')
+not_run: WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Achternaam'), 'Test')
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Achternaam lb'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Achternaam lb'))
 
-WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Opmerking on'), 'Testing')
+not_run: WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Opmerking on'), 'Testing')
 
 'Selecting BETROKKENE\r\n'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Rol Proces'), '5', false)
+not_run: WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Rol Proces'), '5', false)
 
-WebUI.delay(6)
+not_run: WebUI.delay(6)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Slachtofferhulp ja'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Slachtofferhulp ja'))
 
-WebUI.scrollToPosition(10, 8)
+not_run: WebUI.scrollToPosition(10, 8)
 
-WebUI.delay(1)
+not_run: WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Contacten'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Contacten'))
 
-WebUI.delay(1)
+not_run: WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Reden Slachtofferhulp'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Reden Slachtofferhulp'))
 
-WebUI.delay(1)
+not_run: WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Reden new'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Reden new'))
 
-WebUI.delay(1)
+not_run: WebUI.delay(1)
 
 'Selecting rada asdfsad12'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Reden new drop down'), '4', false)
+not_run: WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Reden new drop down'), '4', false)
 
-WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/red Omschrijving'), 'Testing')
+not_run: WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/red Omschrijving'), 'Testing')
 
-WebUI.delay(1)
+not_run: WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Red save'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Red save'))
 
-WebUI.delay(3)
+not_run: WebUI.delay(3)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/person save'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/person save'))
 
-WebUI.delay(6)
+not_run: WebUI.delay(6)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/person save 2'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/person save 2'))
 
-WebUI.delay(6)
+not_run: WebUI.delay(6)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Importeren Entiteit'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Importeren Entiteit'))
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Assistentie Nr'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Assistentie Nr'))
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Assistentie Nr lb'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Assistentie Nr lb'))
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/imp entite save'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/imp entite save'))
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/imp ent close'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/imp ent close'))
 
-WebUI.delay(6)
+not_run: WebUI.delay(6)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Import melding'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Import melding'))
 
-WebUI.delay(3)
+not_run: WebUI.delay(3)
 
-WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Melding Nr'), '29')
+not_run: WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Melding Nr'), '29')
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
 '29'
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Melding Nr lb 4'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Melding Nr lb 4'))
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/meld save'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/meld save'))
 
-WebUI.delay(3)
+not_run: WebUI.delay(3)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Documenten'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Documenten'))
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Documenten new'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Documenten new'))
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Document open'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Document open'))
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/dob'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/dob'))
 
-WebUI.delay(1)
+not_run: WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Uitgewerkte Tapverslag'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Uitgewerkte Tapverslag'))
 
-WebUI.delay(3)
+not_run: WebUI.delay(3)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/new doc close'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/new doc close'))
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/new doc upload'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/new doc upload'))
 
-WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Document Naam'), 'NEW')
+not_run: WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Document Naam'), 'NEW')
 
-WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Betreft'), 'ddc')
+not_run: WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Betreft'), 'ddc')
 
-WebUI.delay(1)
+not_run: WebUI.delay(1)
 
-WebUI.uploadFile(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Document'), 'C:\\Users\\user4\\Desktop\\test.docx')
+not_run: WebUI.uploadFile(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/Document'), 'C:\\Users\\user4\\Desktop\\test.docx')
 
-WebUI.delay(3)
+not_run: WebUI.delay(3)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/doc save'), FailureHandling.STOP_ON_FAILURE)
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Onderzoek/doc save'), FailureHandling.STOP_ON_FAILURE)
 

@@ -26,7 +26,7 @@ WebUI.delay(2)
 
 //WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Edit Dienstovername'))
 'Remember first set default assistentieid after run the script'
-String Mixingid = GlobalVariable.Total_Generiek_Module
+String Mixingid = GlobalVariable.Generiekassistenite_Module
 
 String Assistentiexpath = ('//*[text()="' + Mixingid) + '"]/preceding-sibling::td/a[2]'
 

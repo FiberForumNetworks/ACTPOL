@@ -11,11 +11,18 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
+         <value>//*[@key = 'Personeel']</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>key</name>
+      <type>Main</type>
+      <value>Personeel</value>
+   </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>

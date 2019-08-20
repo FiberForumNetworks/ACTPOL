@@ -97,6 +97,8 @@ WebUI.click(findTestObject('Actpol_Scripts/Rapportage/s close'))
 
 WebUI.delay(1)
 
+not_run: WebUI.acceptAlert()
+
 not_run: WebUI.click(findTestObject('Actpol_Scripts/Rapportage/Reden Aangifte'), FailureHandling.OPTIONAL)
 
 not_run: WebUI.delay(1, FailureHandling.OPTIONAL)

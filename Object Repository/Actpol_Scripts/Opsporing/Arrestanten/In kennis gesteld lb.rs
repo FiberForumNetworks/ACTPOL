@@ -10,7 +10,7 @@
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>(//ul/li[text()=&quot;888 - O'STIANA, &quot;])</value>
+         <value>/html/body/div[8]/ul/li[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

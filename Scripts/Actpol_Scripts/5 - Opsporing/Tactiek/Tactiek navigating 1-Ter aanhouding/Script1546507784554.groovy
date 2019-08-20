@@ -14,13 +14,15 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.testobject.ConditionType as type
 
-WebUI.callTestCase(findTestCase('main/Actpol_Login'), [:], FailureHandling.STOP_ON_FAILURE)
+WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Opsporing'))
 
 WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Tactiek'))
+
+WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Generiek'))
 
 WebUI.delay(1)
 
@@ -57,4 +59,6 @@ WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Case screning/Omschrijvin
 WebUI.delay(1)
 
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Case screning/Invoer Case Screening close tab'))
+
+WebUI.closeBrowser()
 

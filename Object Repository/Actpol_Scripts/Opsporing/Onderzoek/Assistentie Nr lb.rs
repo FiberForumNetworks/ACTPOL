@@ -6,12 +6,11 @@
    <elementGuidId>bb0fe172-7cdc-46f9-b585-58f2efd02ef7</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>/html/body/div[6]/ul/li[1]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//ul/li[text()=&quot;200600192&quot;]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

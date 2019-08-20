@@ -6,12 +6,11 @@
    <elementGuidId>ec927ca6-e473-4455-8b12-5a58f3f70647</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>/html/body/div[6]/ul/li[1]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>(//ul/li[text()='DIENST'])[3]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

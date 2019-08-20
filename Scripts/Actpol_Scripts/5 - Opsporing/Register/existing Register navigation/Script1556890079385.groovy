@@ -22,6 +22,8 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Register'))
 
+WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Generiek'))
+
 WebUI.delay(1)
 
 //WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Register/register existing user'))
@@ -55,15 +57,21 @@ WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Register/Opmerking'), 'Te
 
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Register/Register'))
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Register/Klasse'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Register/Klasse'))
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Register/Klasse click'))
+not_run: WebUI.delay(1)
 
-WebUI.delay(2)
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Register/Klasse'))
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Register/Klasse click lb'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Register/Klasse click'))
 
-WebUI.delay(1)
+not_run: WebUI.delay(2)
+
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Register/Klasse click lb'))
+
+not_run: WebUI.delay(1)
 
 WebUI.focus(findTestObject('Actpol_Scripts/Opsporing/Register/r save'))
+
+WebUI.closeBrowser()
 

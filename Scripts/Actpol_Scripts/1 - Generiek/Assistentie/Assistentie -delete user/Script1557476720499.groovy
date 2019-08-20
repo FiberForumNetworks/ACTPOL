@@ -19,7 +19,7 @@ WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandli
 WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie'), 'assist', 
     false)
 
-WebUI.setText(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie Set text'), GlobalVariable.AssistentieID)
+WebUI.setText(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie Set text'), GlobalVariable.Generiekassistenite_Module)
 
 WebUI.delay(2)
 
@@ -28,7 +28,7 @@ WebUI.click(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht 
 //CHECK CODE 
 //WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Assistentie editing user 2'))
 'Remember first set default assistentieid after run the script'
-String AssistentiedynamicId = GlobalVariable.AssistentieID
+String AssistentiedynamicId = GlobalVariable.Generiekassistenite_Module
 
 String Assistentiexpath = ('//*[text()="' + AssistentiedynamicId) + '"]/preceding-sibling::td/a[3]'
 

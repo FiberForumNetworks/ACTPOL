@@ -28,7 +28,7 @@ WebUI.click(findTestObject('Actpol_Scripts/Generiek/Overtime/new overtime'))
 WebUI.delay(2)
 
 'AFDELING LEC'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Overtime/Unit Bureau'), '22', false)
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Overtime/Unit Bureau'), '7', false)
 
 WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Overtime/IDnummer'), '123456')
 
@@ -45,13 +45,13 @@ WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Overtime/Overtime tot'), '
 WebUI.delay(1)
 
 'AFDELING LEC'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Overtime/Ten behoeve van'), '22', false)
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Overtime/Ten behoeve van'), '3', false)
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Overtime/Omschrijving'), 'testing')
+WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Overtime/Omschrijving'), 'testing', FailureHandling.OPTIONAL)
 
-WebUI.click(findTestObject('Actpol_Scripts/Generiek/Overtime/overtime save'))
+WebUI.focus(findTestObject('Actpol_Scripts/Generiek/Overtime/overtime save'))
 
 WebUI.closeBrowser()
 

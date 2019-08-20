@@ -34,7 +34,7 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Born lb'))
 
-WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Assistentie/Telefoon nummer'), '9999999999')
+WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Assistentie/Telefoon nummer'), '9999999999', FailureHandling.OPTIONAL)
 
 WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Assistentie/Titel'), 'Testing test')
 
@@ -56,12 +56,12 @@ WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/ter hoogte van')
 
 WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Assistentie/Nadere Aanduiding'), 'Testing')
 
-WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Bekende plaats'), FailureHandling.OPTIONAL)
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Bekende plaats'), FailureHandling.OPTIONAL)
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
 'Selecting AA\r\n'
-WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Bekende plaats Lb'), FailureHandling.OPTIONAL)
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Bekende plaats Lb'), FailureHandling.OPTIONAL)
 
 WebUI.delay(5)
 

@@ -22,6 +22,8 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Case Screening'))
 
+WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Generiek'))
+
 WebUI.delay(1)
 
 not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Case screning/Invoer Case Screening user selection'))
@@ -60,5 +62,7 @@ WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/Case screning/Omschrijvin
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Case screning/Invoer Case Screening close tab'))
+WebUI.focus(findTestObject('Actpol_Scripts/Opsporing/Case screning/Invoer Case Screening close tab'))
+
+WebUI.closeBrowser()
 

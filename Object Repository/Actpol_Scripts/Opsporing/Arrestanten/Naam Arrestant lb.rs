@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//ul/li[text()=&quot; HAAR, Lucille, 01/02/1964&quot;]</value>
+         <value>/html/body/div[4]/ul/li[1]</value>
       </entry>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

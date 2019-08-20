@@ -6,12 +6,11 @@
    <elementGuidId>9e11922d-8733-430d-b6fd-ef64fc00ca8a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//ul/li[text()=&quot;2626 - NOORDEN, &quot;])[2]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
-         <value></value>
+         <key>XPATH</key>
+         <value>/html/body/div[6]/ul/li[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

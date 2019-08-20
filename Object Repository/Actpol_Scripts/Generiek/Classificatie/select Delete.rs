@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@key = 'Delete' and @title = 'Verwijderen']</value>
+         <value>//*[@key = 'Delete' and @title = 'Verwijderen' or @title=&quot;Delete&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,16 +15,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>key</name>
+      <name>xpath</name>
       <type>Main</type>
-      <value>Delete</value>
-   </webElementProperties>
-   <webElementProperties>
-      <isSelected>true</isSelected>
-      <matchCondition>equals</matchCondition>
-      <name>title</name>
-      <type>Main</type>
-      <value>Verwijderen</value>
+      <value>//*[@key = 'Delete' and @title = 'Verwijderen' or @title=&quot;Delete&quot;]</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
