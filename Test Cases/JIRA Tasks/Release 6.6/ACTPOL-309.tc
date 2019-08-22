@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Description
+For the Vremdeling module phase 2 there are some chanes required in the Reisdocument tab.
+Tab reisdocument logic will be modified.
+
+Solution
+When opening the tab reisdocument user must first select type of Document.(Passport, Visa or Travel Document) for each Travel Document a new record can be added in this tab.
+Based on the selection the required fields should show.
+
+See attachment for detailed description and field changes and screenshot.
+
+Testplan
+Step 1: Go to Generiek - Assistentie.
+Step 2: Go to Rol/proces tab and add a new Vreemdeling proces
+Step 3: Select Soort Document Visum.
+Step 4: Should be possible to enter Visum Hoofdbestemming &quot;Caribisch Gebied Hoofddoel Curaçao&quot;
+Step 5: when filling the mandatory fields record should be saved.
+Step 6: Create an additional Reisdocument
+Step 7: Select Soort document Paspoort
+Step 8: fill in mandatory fields and save record
+
+Navigation
+Generiek - Asstentie - rol/proces - Vreemdeling - tab Reisdocument</description>
+   <name>ACTPOL-309</name>
+   <tag>ACTPOL-308</tag>
+   <comment>Select process &quot;VREEMDELING&quot;</comment>
+   <testCaseGuid>f3221e19-09e0-45f4-abdd-76bce72aaeb4</testCaseGuid>
+</TestCaseEntity>

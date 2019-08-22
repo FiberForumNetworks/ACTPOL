@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Description
+Add more information in grid Doorsturen OPV to make it easier to find record.
+
+Solution
+Add in Grid Doorsturen OPV the Procesverbaal number this can be found in the Bekeurd persoon/Doorsturen OPV record.
+and also add Geimporteerd kolom in the Doorsturen OPV grid. Thyis value indicated if a OPV is imported. This value can be found in the query for OPV in Rapportages.
+As seen on screenshot the Geimporteerd J/N values per record.
+
+Test plan
+Step 1: Go to generiek - Assistentie open an existing record and add in Rol/proces a Bekeurd persoon
+Step 2: This record should be visible in Handhaving -Doorsturen OPV.
+Step 3: The Procesverbaal number column should be visible in the grid and also column &quot;Geimporteerd&quot;.
+Step 4: Proces verbaal number and import status should be according to record.
+
+Navigation
+Handhaving - Doorsturen OPV</description>
+   <name>ACTPOL-507</name>
+   <tag>ACTPOL-507</tag>
+   <comment></comment>
+   <testCaseGuid>6a93941e-3631-4dad-83e0-1e10d051658a</testCaseGuid>
+</TestCaseEntity>

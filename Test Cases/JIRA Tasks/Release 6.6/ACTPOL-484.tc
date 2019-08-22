@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Description
+Change field Type verzekering in Voertuig module.
+Currently this field has 2 bullets. this should be changed into a dropdown containing these values.
+So next to Type verzekering &quot;WA&quot; and &quot;Allrisk&quot; more types can be added like &quot;WA+&quot;.
+Check attachment.
+
+Solution
+Change field &quot;Type verzekering&quot; in dropdown.
+
+Testplan :
+1- Fill in an new proces Ongeval.
+2- fill in mandatory fields and also in voertuig add the color of the vehicle, chasis number and insurance number in tab Bescheiden.
+3- There should be a dropdown to select Type Verzekering
+3- Generate document verkeersregistratie KPA.
+4- Document should contain information added in the nieuw ongeval proces.
+
+Navigation : Generiek- assistentie - open exisiting assistentie. rol/proces add new ongeval add in tab Partijen/Objecten voertuig add a new Voertuig and tab Bescheiden.</description>
+   <name>ACTPOL-484</name>
+   <tag>ACTPOL-484</tag>
+   <comment></comment>
+   <testCaseGuid>1a2f2e95-e918-4964-83c4-7039bd1975c4</testCaseGuid>
+</TestCaseEntity>

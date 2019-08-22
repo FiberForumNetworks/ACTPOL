@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Description
+To be able to create documents with more information, new fields should be added to the Vreemdeling proces.
+
+Solution
+In process Vreemdeling below field Land, 
+add field 'CRV nummer' and ‘IND BES nummer’. 
+These new fields should not be mandatory, if a person has a CRV or IND BES number in ACTFMS this can be automatically included. (KPNAPF09G.BVDRCRVN)
+Also add the fieldsLuchtvaart maatschappij/ rederij, naam vliegtuig/boot, telefoon nummer Boot/ vliegtuig, Agentschap, Geboorte plaats, telefoon nummer (Thuis, Mobiel en Werk), ticketnummer, PNR nummer, Meereizende minderjarige kinderen. As shown in the screenshot. 
+This field should be saved in the same table as now Vreemdeling is saved.
+
+See detailed description and screenshot in attachment.
+
+Testplan
+Step 1: Go to Generiek - assistentie - rol/proces - Vreemdeling
+Step 2: Add a new vVreemdeling and fill all fields.
+Step 3: it should be possible to register CRV nummer, ticketnummer, PNR nummer etc.
+
+Navigation
+Generiek - assistentie - rol/proces - Vreemdeling</description>
+   <name>ACTPOL-308</name>
+   <tag>ACTPOL-308</tag>
+   <comment></comment>
+   <testCaseGuid>29ddf862-9d8c-4f46-843b-696632fc8aeb</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Description
+It should be possible to add additional Toezicht verbalisant in Vreemdeling proces Tab Toegang.
+
+Solution
+Add addition the two fields Tozicht Verbalisant in tab Toegang, These two additional fields should contain the same users list as Verbalisant.
+When a Werkopdracht is send to these Toegang Verbalisant 1 or Toegang Verbalisant 2, this should also be sent to The Toezicht Verbalisant 1 and Toezicht Verbalisant 2.
+Functionality for sending a Werkopdracht will be described in another task.
+
+Test plan
+Step 1: Go to generiek - Assistentie open an existing record and add in Rol/proces a Vreemdeling
+Step 2: in tab Toegang there should be a possibility to add Toezicht Verbalisant 1 and 2.
+Step 3: It should be possible top save this record.
+
+Navigation
+Generiek - Assistentie - Rol/proces - Vreemdeling</description>
+   <name>ACTPOL-310</name>
+   <tag>ACTPOL-310</tag>
+   <comment></comment>
+   <testCaseGuid>fc80f99c-3eba-4de2-8e9f-bc4e4a6f7155</testCaseGuid>
+</TestCaseEntity>

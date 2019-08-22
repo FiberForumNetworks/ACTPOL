@@ -42,7 +42,7 @@ int ACTPOLKMENV = 6
 
 int ACTPOLKWENV = 7
 
-int environment = ACTPOLKWENV
+int environment = ACTPOLTESTENV
 
 String Selectenv
 
@@ -57,8 +57,11 @@ switch (environment) {
         WebUI.setMaskedText(findTestObject('Actpol_Scripts/login/password'), GlobalVariable.password)
 
         WebUI.click(findTestObject('Actpol_Scripts/login/login'))
-
+		
+		WebUI.getWindowTitle()
         break
+        
+       
     case 2:
         println(Selectenv = 'ACTPOL-DEV-ENV')
 
@@ -69,6 +72,7 @@ switch (environment) {
         WebUI.setMaskedText(findTestObject('Actpol_Scripts/login/password'), GlobalVariable.password)
 
         WebUI.click(findTestObject('Actpol_Scripts/login/login'))
+		WebUI.getWindowTitle()
 
         break
     case 3:
@@ -81,6 +85,7 @@ switch (environment) {
         WebUI.setEncryptedText(findTestObject('Actpol_Scripts/login/password'), GlobalVariable.kcpassword)
 
         WebUI.click(findTestObject('Actpol_Scripts/login/login'))
+		WebUI.getWindowTitle()
 
         break
     case 4:
@@ -93,6 +98,7 @@ switch (environment) {
         WebUI.setEncryptedText(findTestObject('Actpol_Scripts/login/password'), GlobalVariable.kcpassword)
 
         WebUI.click(findTestObject('Actpol_Scripts/login/login'))
+		WebUI.getWindowTitle()
 
         break
     case 5:
@@ -105,6 +111,7 @@ switch (environment) {
         WebUI.setEncryptedText(findTestObject('Actpol_Scripts/login/password'), GlobalVariable.kcpassword)
 
         WebUI.click(findTestObject('Actpol_Scripts/login/login'))
+		WebUI.getWindowTitle()
 
         break
     case 6:
@@ -117,6 +124,7 @@ switch (environment) {
         WebUI.setEncryptedText(findTestObject('Actpol_Scripts/login/password'), GlobalVariable.kcpassword)
 
         WebUI.click(findTestObject('Actpol_Scripts/login/login'))
+		WebUI.getWindowTitle()
 
         break
     case 7:
@@ -129,6 +137,7 @@ switch (environment) {
         WebUI.setEncryptedText(findTestObject('Actpol_Scripts/login/password'), GlobalVariable.kcpassword)
 
         WebUI.click(findTestObject('Actpol_Scripts/login/login'))
+		WebUI.getWindowTitle()
 
         break
     default:

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Possibility to enter, as a Rijbewijs, a Vaarbewijs in ACTPOL at the personen module
+
+ 
+
+Make changes to POL0009.pdw to add a new section for Vaarbewijs. Can follow the
+logic and copy the HTML from Rijbewijs to implement. Each section is a set of tasks
+add/update/delete in the same program. 
+Table KPNAPF09C is for the existing vehicle type data, make a new KPNAPF09[new
+letter] for the vessel type data. 
+File KPSLPF0288 is for new list values. Use this file for the new Vessel License Type
+field values/dropdown.</description>
+   <name>ACTPOL-344</name>
+   <tag>ACTPOL-344</tag>
+   <comment>Select process &quot;VREEMDELING&quot;</comment>
+   <testCaseGuid>3b53c5dc-82fa-4d79-9888-025a9a3e4eaf</testCaseGuid>
+</TestCaseEntity>
