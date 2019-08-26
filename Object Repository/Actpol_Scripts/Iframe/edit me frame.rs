@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'editMe']</value>
+         <value>//*[@id = 'editMe' or @id=&quot;POL01001editMe&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,9 +15,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>xpath</name>
       <type>Main</type>
-      <value>editMe</value>
+      <value>//*[@id = 'editMe' or @id=&quot;POL01001editMe&quot;]</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

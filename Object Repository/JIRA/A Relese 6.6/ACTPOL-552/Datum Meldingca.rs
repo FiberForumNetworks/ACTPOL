@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Incident lb</name>
+   <name>Datum Meldingca</name>
    <tag></tag>
-   <elementGuidId>71cf2f44-161c-4886-88f1-48b5df198088</elementGuidId>
+   <elementGuidId>47ef4831-ae0e-43cd-bd6d-ee2525f3f1df</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>/html/body/div[7]/ul/li[1]</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>/html/body/div[7]/ul/li[1][count(. | //*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame']) = count(//*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame'])]</value>
+         <value>//*[@id=&quot;firsttbl&quot;]/tbody/tr[22]/td[2]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/div[7]/ul/li[1]</value>
+      <value>//*[@id=&quot;firsttbl&quot;]/tbody/tr[22]/td[2]</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

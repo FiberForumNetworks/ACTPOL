@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Incident lb</name>
+   <name>Incident Adres</name>
    <tag></tag>
-   <elementGuidId>71cf2f44-161c-4886-88f1-48b5df198088</elementGuidId>
+   <elementGuidId>18cc4e02-5a48-43db-8b6a-7f674902deb6</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>/html/body/div[7]/ul/li[1]</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>/html/body/div[7]/ul/li[1][count(. | //*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame']) = count(//*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame'])]</value>
+         <value>//*[@id = 'adresdrop']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -19,9 +15,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>xpath</name>
+      <name>id</name>
       <type>Main</type>
-      <value>/html/body/div[7]/ul/li[1]</value>
+      <value>adresdrop</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

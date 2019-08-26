@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Incident lb</name>
+   <name>After Proces Verbaal Nr text</name>
    <tag></tag>
-   <elementGuidId>71cf2f44-161c-4886-88f1-48b5df198088</elementGuidId>
+   <elementGuidId>92fbff8f-0a2b-4aa7-832c-125f1e74563b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>/html/body/div[7]/ul/li[1]</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>/html/body/div[7]/ul/li[1][count(. | //*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame']) = count(//*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame'])]</value>
+         <value>//*[@id=&quot;contents&quot;]/table/tbody/tr[2]/td[5]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/div[7]/ul/li[1]</value>
+      <value>//*[@id=&quot;contents&quot;]/table/tbody/tr[2]/td[5]</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

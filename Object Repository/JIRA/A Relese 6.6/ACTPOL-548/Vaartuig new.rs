@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Incident lb</name>
+   <name>Vaartuig new</name>
    <tag></tag>
-   <elementGuidId>71cf2f44-161c-4886-88f1-48b5df198088</elementGuidId>
+   <elementGuidId>084bf994-54e2-4913-a3e0-754a031a5b60</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>/html/body/div[7]/ul/li[1]</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>/html/body/div[7]/ul/li[1][count(. | //*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame']) = count(//*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame'])]</value>
+         <value>//*[@id=&quot;POL35001accordion-4B&quot;]/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/div[7]/ul/li[1]</value>
+      <value>//*[@id=&quot;POL35001accordion-4B&quot;]/input</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

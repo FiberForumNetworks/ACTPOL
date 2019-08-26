@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>When registering an opvarende, if you don't specify 'yes' of 'no' at bemanninslid, the opvarende is saved, but it is NOT saved with the boat. 
+Testing Steps:
+
+Select an assistentie
+select any rol/proces
+Click on the Vaartuig accordeon
+Click on new vaartuig
+Register a Vaartuig
+Go to accordeon Opvarende
+Click on new opvarende
+Remember: leave the field bemanningslid empty
+Add a name, making sure NOT to select bemanningslid yes or no.
+add more names if you want, still not touching field bemanningslid
+Click save
+Save the vaartuig and the rol process.
+ 
+
+On the rol process screen you will see the names appear as opvarende, but if you open the rol/process and the vaartuig, the accordeon opvarende will be empty.
+
+ 
+
+If you repeat the steps and you select Nee at bemanningslid, the opvarende will save correctly. Just as if you select Ja, it will also save correctly as bemanning. Issue arises when you don't select anything.</description>
+   <name>ACTPOL-548</name>
+   <tag>ACPOL-548</tag>
+   <comment></comment>
+   <testCaseGuid>3f8273a5-4d15-4274-ad17-2bf34e884435</testCaseGuid>
+</TestCaseEntity>

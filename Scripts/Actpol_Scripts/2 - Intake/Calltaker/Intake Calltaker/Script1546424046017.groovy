@@ -44,17 +44,23 @@ WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/ter hoogte van'), Fa
 
 WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Nadere aanduiding'), 'Testing')
 
-WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Bekende plaats'), 'te')
+WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Bekende plaats'), 'a')
 
 WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Bekende plaats lb'), FailureHandling.OPTIONAL)
 
-WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Incident'), 'ac')
+WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Incident'), 'a')
 
 WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Incident lb'))
+
+WebUI.delay(1)
+
+WebUI.click(findTestObject('JIRA/A Relese 6.6/ACTPOL-552/Mensenhandel Mensensmokkel'))
+
+WebUI.delay(1)
 
 WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Poging'))
 

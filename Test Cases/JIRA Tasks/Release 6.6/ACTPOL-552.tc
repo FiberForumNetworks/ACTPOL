@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Description
+Possibility to Kopie Assistentie into Melding Mensenhandel.
+
+Solution
+Add in Assistentie Melding a button called 'Mensenhandel/Mensensmokkel'.
+When this information is selected the following information should be copied:
+
+Incident (number) - Assistentie number-Eventnumber
+Adres van incident
+Adres # van incident
+Incident
+Datum Melding
+Tijd Melding
+Aangewezen aan
+Mutatie
+(assistentie should be saved and everything should remain the same).
+This information copied should create automatically a new record in Generiek - Melding.
+Type Melding should be Assistentie
+Naam Melder should be the user that created the Assistentie
+Wekzaam bij should be organisation of this user
+Datum should be same as when button Mensenhandel/Mensensmokkel is selected
+Status is automatically in Behandeling.
+The copied information should be added in the Omschrijving field.
+
+Testplan
+Step 1: Generiek - Assistentie - add a new assistentie
+Step 2: Fill in mandatory fields and save.
+Step 3: Edit existing record and select button Mensenhandel/Mensensmokkel and click save
+Step 4: Go to Melding Mensenhandel - the information entered in the assistentie should be visible here.
+
+Navigation
+Generiek - Assistentie - Nieuw assistentie
+Intake - Calltaker
+Also Generiek Melding Mensenhandel</description>
+   <name>ACTPOL-552</name>
+   <tag>ACTPOL-552</tag>
+   <comment></comment>
+   <testCaseGuid>c9252d02-ee7a-4a63-8c7e-82282ec7a04c</testCaseGuid>
+</TestCaseEntity>

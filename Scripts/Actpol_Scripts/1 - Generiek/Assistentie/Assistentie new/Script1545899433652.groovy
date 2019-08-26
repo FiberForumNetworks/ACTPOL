@@ -86,6 +86,18 @@ WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Dispatch ja'), F
 
 WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Contact verzoek ja'), FailureHandling.OPTIONAL)
 
+WebUI.delay(1)
+
+'Click on Aangewezen aan auto search titles'
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Aangewezen aan'))
+
+WebUI.delay(2)
+
+'Select required dropdown'
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Aangewezen aan lb'))
+
+WebUI.delay(1)
+
 'Select ST Maarten\r\n'
 WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Assistentie/Eiland'), 'SXM', false)
 
@@ -165,5 +177,5 @@ WebUI.focus(findTestObject('Actpol_Scripts/Generiek/Assistentie/Save melding'))
 
 WebUI.takeScreenshot()
 
-WebUI.closeBrowser()
+not_run: WebUI.closeBrowser()
 

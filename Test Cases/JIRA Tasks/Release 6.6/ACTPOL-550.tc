@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Fix doorsturen OPV to remove record from grid when sent. (production issue)
+
+Detailed Testing Instructions:
+
+ Testplan:
+Step 1: Go to Handhaving- Doorsturen OPV
+Step 2: Select a record and Click on the loop (view) icoon.
+Step 3: In the upper right corner click on the green (approve icon).
+Step 4: record should be send to Priem and should not be visible in this grid anymore.
+
+Navigation: 
+Handhaving- Doorsturen OPV</description>
+   <name>ACTPOL-550</name>
+   <tag>ACTPOL-550</tag>
+   <comment></comment>
+   <testCaseGuid>26994dcf-ba80-4a38-aacc-4c0f9515d3c5</testCaseGuid>
+</TestCaseEntity>
