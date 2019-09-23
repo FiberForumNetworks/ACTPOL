@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Description:
+Add in the MBES18 module a possibility to enter Bezitting/Bagage (personal items and lugage).
+
+Solution:
+Create a tab called Bezitting/Bagage to register fields in the fields in the attachment.
+
+Testplan:
+Step 1: Go to Opsporing - MBES18 fill in required fields and click save
+Step 2: Go to Tab Bezitting/Bagage fill in all fields
+Step 3: save record.
+
+Navigation:
+Opsporing - MBES18 - Tab Bezitting/Bagage</description>
+   <name>ACTPOL-565</name>
+   <tag>ACTPOL-565</tag>
+   <comment>INBEWARINGSTELLINGS C.Q. PLAATSINGSGEGEVENS tab data filling
+Checking dropdown
+Checking jaa validation</comment>
+   <testCaseGuid>b35ed078-aad7-4556-9a30-d9e61d620c36</testCaseGuid>
+</TestCaseEntity>

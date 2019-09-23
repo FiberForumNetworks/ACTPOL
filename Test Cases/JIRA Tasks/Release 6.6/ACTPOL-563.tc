@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Description:
+Add in the MBES18 module a possibility to enter Incident.
+
+Solution:
+Create a tab called Incident to register fields in the fields in the attachment.
+
+Testplan:
+Step 1: Go to Opsporing - MBES18 fill in required fields and click save
+Step 2: Go to Tab Incident fill in all fields
+Step 3: save record.
+
+Navigation:
+Opsporing - MBES18 - Tab Incident</description>
+   <name>ACTPOL-563</name>
+   <tag>ACTPOL-563</tag>
+   <comment></comment>
+   <testCaseGuid>e3eacbb6-077e-480a-abdb-14dea953c4bf</testCaseGuid>
+</TestCaseEntity>

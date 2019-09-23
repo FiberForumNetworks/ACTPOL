@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Description:
+For the purpose of careful and efficient provision of information to all parties involved in the forced departure (expulsion) of a foreign national(Vreemdeling), the registration form, model MBES18, is required.
+
+Solution:
+Create a new module in Tab Opsporing called MBES18.
+When opening this module a grid wil show as in Arrestanten, with the Options volgnummer, Datum incident, Bijzonderheden, Organisatie, Contact persoon, telefoon numer, Voornaam, Achternaam en Geboortedatum.
+
+Testplan:
+Step 1: Go to Opsporing and choose tab MBES18
+Step 2: Grid as attachment should pop up
+Step 3: Grid should contain columns mentioned.
+
+Navigation:
+Opsporing - MBES18</description>
+   <name>ACTPOL-558</name>
+   <tag>ACTPOL-558</tag>
+   <comment></comment>
+   <testCaseGuid>21108bf2-f745-48c8-9048-8520b7d0d368</testCaseGuid>
+</TestCaseEntity>

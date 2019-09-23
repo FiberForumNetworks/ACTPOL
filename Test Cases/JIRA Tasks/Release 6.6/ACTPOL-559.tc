@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Description:
+Per incident a new record should be created.
+This should contain tab registratie, Personalia, Inbewaringstellings c.q. Plaatsingegevens, Gedrag/Medisch, Incidenten, Overige gegevens, Bezittingen/Bagage, Documenten.
+In other task we will cover the various tabs. This task contains the registratie tab.
+
+Solution:
+Create the record for MBES18 records.
+This should contain tab registratie, Personalia, Inbewaringstellings c.q. Plaatsingegevens, Gedrag/Medisch, Incidenten, Overige gegevens, Bezittingen/Bagage, Documenten.
+In other task we will cover the various tabs. This task contains the registratie tab.
+
+Testplan:
+Step 1: Go to Opsporing - MBES18
+Step 2: Enter all field in tab Registratie
+Step 3: Save record
+
+Navigation:
+Opsporing - MBES18</description>
+   <name>ACTPOL-559</name>
+   <tag>ACTPOL-559</tag>
+   <comment>Checking This should contain tab registratie, Personalia, Inbewaringstellings c.q. Plaatsingegevens, Gedrag/Medisch, Incidenten, Overige gegevens, Bezittingen/Bagage, Documenten. 
+Data entering in Registratie tab
+Editing existing record in Registratie
+View existing record in Registratie
+View existing record in Registratie</comment>
+   <testCaseGuid>c49662a5-e70c-46c0-ae9e-a7819377952b</testCaseGuid>
+</TestCaseEntity>

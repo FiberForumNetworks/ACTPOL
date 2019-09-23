@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Change the dropdown item Wijkteam to Bureau/Afdeling in POLRAP0002
+Navigation:
+Display dropdown name ::  Bureau/Afdeling
+
+Navigation:
+Dashboard: Rapportage Assistentie
+Click edit
+Click Filter
+Check Filter Change the dropdown item Wijkteam to Bureau/Afdeling</description>
+   <name>ACTPOL-547</name>
+   <tag>ACTPOL-547</tag>
+   <comment></comment>
+   <testCaseGuid>bf370047-fcb2-4753-b95f-700446d18737</testCaseGuid>
+</TestCaseEntity>

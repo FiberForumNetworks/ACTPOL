@@ -16,6 +16,8 @@ import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.waitForPageLoad(30)
+
 WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie'), 'assist', 
     false)
 
@@ -316,7 +318,7 @@ WebUI.delay(1)
 'Click save btn'
 WebUI.click(findTestObject('JIRA/A Relese 6.6/ACTPOL-309/Reisdocumenten save'))
 
-WebUI.delay(2)
+WebUI.delay(6)
 
 'Click Reisdocumenten new btn'
 WebUI.click(findTestObject('JIRA/A Relese 6.6/ACTPOL-309/Reisdocumenten new'))

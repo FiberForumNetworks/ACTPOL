@@ -6,12 +6,12 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description>URL of the Application Under Test (AUT)</description>
-      <initValue>'http://10.20.10.7:8202/actpoldev/jpol523/nxmenu.pgm?docnum=604'</initValue>
+      <initValue>'http://10.20.10.7:8202/actpoldev/JPOL558/nxmenu.pgm?docnum=604'</initValue>
       <name>DEVURL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>A valid account used during the test</description>
-      <initValue>'vidhya03'</initValue>
+      <initValue>'vidhya04'</initValue>
       <name>password</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -26,12 +26,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Change evary time we need id</description>
-      <initValue>'201901514'</initValue>
+      <initValue>'200601752'</initValue>
       <name>AssistentieID</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Change evary time we need id</description>
-      <initValue>'17/03/2015'</initValue>
+      <initValue>'02/06/2016'</initValue>
       <name>ArrestantenId</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -66,7 +66,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>Change evary time we need id</description>
-      <initValue>'200601728'</initValue>
+      <initValue>'200601757'</initValue>
       <name>Generiekassistenite_Module</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

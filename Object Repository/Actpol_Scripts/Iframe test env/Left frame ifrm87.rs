@@ -6,13 +6,13 @@
    <elementGuidId>a027e639-0ab2-40ea-a2ef-f6a5c2cc7c55</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>//iframe[@id = 'ifrm87' or @id=&quot;ifrm226&quot; or @id = 'ifrm17' or @id=&quot;ifrm215&quot; and @name = 'ifrm87' or @name=&quot;ifrm141&quot; or @name=&quot;ifrm17&quot; or @name=&quot;ifrm215&quot; or @name=&quot;ifrm226&quot; or @name=&quot;ifrm202&quot; or @name=&quot;ifrm258&quot;]</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>//iframe[@id = 'ifrm87' and @name = 'ifrm87' and @src = 'acts/genlftcol.pgm' and (text() = 'No IFRAME support' or . = 'No IFRAME support')]
 //iframe[@name = 'ifrm89' and @id = 'ifrm89' and @src = 'acts/genzoeken.pgm' and (text() = 'No IFRAME support' or . = 'No IFRAME support')]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>//iframe[@name = 'ifrm87' or @name=&quot;ifrm141&quot; or @name=&quot;ifrm17&quot; or @name=&quot;ifrm18&quot; or @name=&quot;ifrm215&quot; or @name=&quot;ifrm226&quot; or @name=&quot;ifrm202&quot; or @name=&quot;ifrm258&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -57,6 +57,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//iframe[@id = 'ifrm87' or @id=&quot;ifrm226&quot; or @id = 'ifrm17' or @id=&quot;ifrm215&quot; and @name = 'ifrm87' or @name=&quot;ifrm141&quot; or @name=&quot;ifrm17&quot; or @name=&quot;ifrm215&quot; or @name=&quot;ifrm226&quot; or @name=&quot;ifrm202&quot; or @name=&quot;ifrm258&quot;]</value>
+      <value>//iframe[@name = 'ifrm87' or @name=&quot;ifrm141&quot; or @name=&quot;ifrm17&quot; or @name=&quot;ifrm18&quot; or @name=&quot;ifrm215&quot; or @name=&quot;ifrm226&quot; or @name=&quot;ifrm202&quot; or @name=&quot;ifrm258&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Description
+For the Vremdeling module phase 2 there are some chanes required.
+To have additional field to create complete documents and to register Bewaring.
+
+Solution
+Add in the Vreemdeling rol/process, a new tab called &quot;Maatregelen bewaring&quot;. This should be linked to the role process &quot;bekende aangehouden verdachte&quot;.
+This should be stored in a new table that will linked to the table series KPNAPF04xx.
+This should be a new table but there should be an additional column to differentiate between &quot;Bekende aangehouden verdachte&quot; records and &quot;Maatregelen bewaring&quot; records in query.
+
+For detailled description and screenshots, check attachment.
+
+Testplan
+Step 1: Go to Generiek - Assistentie.
+Step 2: Go to Rol/proces tab and add a new Vreemdeling proces
+Step 3: Fill in mandatory fields and save
+Step 4: Go to tab Maatregelen Bewaring and fill in the mandatory fields.
+Step 5: Save record.
+
+Navigation
+Generiek - Asstentie - rol/proces - Vreemdeling - tab Weigering</description>
+   <name>ACTPOL-317</name>
+   <tag>ACTPOL-317</tag>
+   <comment></comment>
+   <testCaseGuid>f7edbec8-1913-4c53-90c1-1a55f6025403</testCaseGuid>
+</TestCaseEntity>

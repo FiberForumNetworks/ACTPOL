@@ -17,7 +17,9 @@ WebUI.openBrowser('')
 
 WebUI.deleteAllCookies()
 
-WebUI.waitForPageLoad(30)
+WebUI.waitForPageLoad(60)
+
+WebUI.waitForJQueryLoad(30)
 
 WebUI.maximizeWindow()
 
@@ -57,11 +59,10 @@ switch (environment) {
         WebUI.setMaskedText(findTestObject('Actpol_Scripts/login/password'), GlobalVariable.password)
 
         WebUI.click(findTestObject('Actpol_Scripts/login/login'))
-		
-		WebUI.getWindowTitle()
+
+        WebUI.getWindowTitle()
+
         break
-        
-       
     case 2:
         println(Selectenv = 'ACTPOL-DEV-ENV')
 
@@ -72,7 +73,8 @@ switch (environment) {
         WebUI.setMaskedText(findTestObject('Actpol_Scripts/login/password'), GlobalVariable.password)
 
         WebUI.click(findTestObject('Actpol_Scripts/login/login'))
-		WebUI.getWindowTitle()
+
+        WebUI.getWindowTitle()
 
         break
     case 3:
@@ -85,7 +87,8 @@ switch (environment) {
         WebUI.setEncryptedText(findTestObject('Actpol_Scripts/login/password'), GlobalVariable.kcpassword)
 
         WebUI.click(findTestObject('Actpol_Scripts/login/login'))
-		WebUI.getWindowTitle()
+
+        WebUI.getWindowTitle()
 
         break
     case 4:
@@ -98,7 +101,8 @@ switch (environment) {
         WebUI.setEncryptedText(findTestObject('Actpol_Scripts/login/password'), GlobalVariable.kcpassword)
 
         WebUI.click(findTestObject('Actpol_Scripts/login/login'))
-		WebUI.getWindowTitle()
+
+        WebUI.getWindowTitle()
 
         break
     case 5:
@@ -111,7 +115,8 @@ switch (environment) {
         WebUI.setEncryptedText(findTestObject('Actpol_Scripts/login/password'), GlobalVariable.kcpassword)
 
         WebUI.click(findTestObject('Actpol_Scripts/login/login'))
-		WebUI.getWindowTitle()
+
+        WebUI.getWindowTitle()
 
         break
     case 6:
@@ -124,7 +129,8 @@ switch (environment) {
         WebUI.setEncryptedText(findTestObject('Actpol_Scripts/login/password'), GlobalVariable.kcpassword)
 
         WebUI.click(findTestObject('Actpol_Scripts/login/login'))
-		WebUI.getWindowTitle()
+
+        WebUI.getWindowTitle()
 
         break
     case 7:
@@ -137,7 +143,8 @@ switch (environment) {
         WebUI.setEncryptedText(findTestObject('Actpol_Scripts/login/password'), GlobalVariable.kcpassword)
 
         WebUI.click(findTestObject('Actpol_Scripts/login/login'))
-		WebUI.getWindowTitle()
+
+        WebUI.getWindowTitle()
 
         break
     default:

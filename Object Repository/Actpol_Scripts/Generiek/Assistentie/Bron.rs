@@ -6,11 +6,11 @@
    <elementGuidId>923c47f9-9972-414f-80c4-0fcf341bf55a</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;melding-bron&quot;]/input[2]</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;melding-bron&quot;]/input[3]</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

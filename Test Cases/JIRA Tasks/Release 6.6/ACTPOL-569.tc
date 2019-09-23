@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Description:
+Possibility to search in MBES18 module (left column).
+
+Solution:
+Create in the MBES18 module posibility to search on Datum incident, Bijzonderheden, Voornaam, Achternaam and Geboortedatum.
+
+Testplan:
+Step 1: Go to Opsporing - MBES18
+Step 2: Select a voornaam that is visible in the grid.
+Step 3: enter this voornaam in the left column in field voornaam and click filter.
+Step 4: All record where this voornaam is entered should show in the search results.
+
+Navigation:
+Opsporing - MBES18</description>
+   <name>ACTPOL-569</name>
+   <tag>ACTPOL-569</tag>
+   <comment>Adding all feilds of MBES18 
+Checking combinations Search module
+Checking Datum Incident  and Bijzonderheden
+Checking Datum Incident  and Voornaam
+Checking Datum Incident  and Achternaam
+Checking Datum Incident  and Geboortedatum</comment>
+   <testCaseGuid>1462925c-9fde-46ea-9dac-f6789bb45b84</testCaseGuid>
+   <variable>
+      <defaultValue>'KORPS POLITIE CURACAO'</defaultValue>
+      <description></description>
+      <id>16f73b95-5224-434e-962d-7c4af3bf70b6</id>
+      <masked>false</masked>
+      <name>Bijzonderheden</name>
+   </variable>
+   <variable>
+      <defaultValue>'AAA'</defaultValue>
+      <description></description>
+      <id>f418cbf5-c9ae-4157-adf0-b450b07adbcd</id>
+      <masked>false</masked>
+      <name>Voornaam</name>
+   </variable>
+   <variable>
+      <defaultValue>'AA'</defaultValue>
+      <description></description>
+      <id>9652cf7b-c5af-468e-b71f-97a4cfc29e75</id>
+      <masked>false</masked>
+      <name>Achternaam</name>
+   </variable>
+   <variable>
+      <defaultValue>'01012019'</defaultValue>
+      <description></description>
+      <id>77c6b283-8d5d-42e2-b575-3c722bb06586</id>
+      <masked>false</masked>
+      <name>Geboortedatum</name>
+   </variable>
+</TestCaseEntity>

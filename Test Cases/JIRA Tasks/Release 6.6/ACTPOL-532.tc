@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Description:
+In Opsporing Arrestanten in the Tab Goederen there is no functionality to copy goederen as in the remaining Goederen modules.
+
+Currently when you add a Goed and save you have an additional button to copy.
+This can be found in assistentie- rol/proces - enter for example bekende aangehouden verdachte or aangifte fill in mandatory fields and save.
+A tab called Goederen will appear here you can see that you can Copy an entered goederen.
+But when you go to Opsporing- arrestanten and tab goederen you cannot Copy the entered goed.
+
+Solution:
+Copy in Opsporing Arrestanten in the Tab Goederen the functionality to copy goederen as in the remaining Goederen modules.
+
+Testplan:
+Step 1: Go to Opsporing - Arrestanten - tab Goederen
+Step 2: Open an existing Arrestenten record.
+Step 3: Add in tab Goederen an object (goed) and Save.
+Step 4: Go to this Goed and click on the copy button and save.
+Step 5: it should be possible to copy this goed muultiple times and save.
+
+Navigation:
+Opsporing - Arrestanten - tab Goederen</description>
+   <name>ACTPOL-532</name>
+   <tag>ACTPOL-532</tag>
+   <comment></comment>
+   <testCaseGuid>76e86b29-5ef0-4ccd-98d1-b9cd0411d32a</testCaseGuid>
+   <variable>
+      <defaultValue>'Katalon testing'</defaultValue>
+      <description></description>
+      <id>a36234c3-cfe5-4113-9c2c-e8ac1b086506</id>
+      <masked>false</masked>
+      <name>Testing</name>
+   </variable>
+   <variable>
+      <defaultValue>'11111'</defaultValue>
+      <description></description>
+      <id>5f829b33-91a6-4c0a-8a42-071d1628331a</id>
+      <masked>false</masked>
+      <name>number</name>
+   </variable>
+   <variable>
+      <defaultValue>'KAST NR 1 LADE 2'</defaultValue>
+      <description></description>
+      <id>beb7b3bb-adf4-4c6c-9333-4b9e06ef4427</id>
+      <masked>false</masked>
+      <name>dropdown</name>
+   </variable>
+   <variable>
+      <defaultValue>2</defaultValue>
+      <description></description>
+      <id>a1608e9e-828b-49d9-8495-dbd99186518d</id>
+      <masked>false</masked>
+      <name>kopieren</name>
+   </variable>
+</TestCaseEntity>

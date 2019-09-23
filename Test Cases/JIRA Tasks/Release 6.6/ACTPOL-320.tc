@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Description
+For the Vremdeling module phase 2 there are some changes required.
+To send out an email when &quot;Toegang onder Voorwaarde&quot; (TOV) is selected and saved. (Access with a condition)
+
+Solution
+When creating an Toegang Onder Voorwaarde (TOV) in tab Toegang, that automatically an email to a pre-authorized email adres. 
+For example Vreemdelingen Toezicht (VT) or KPCN automatically receives an email at the moment that a TOV has been issued by KMAR. (Vreemdelingen Toezicht (VT) email: Vreemdelingen.Toezicht@politiecn.com - this should be configurable)
+This e-mail contains: - name of verbalisant who has issued TOV,
+
+name vreemdeling,
+date (datum) and
+which (voorwaarde) condition Toegang has been granted.(dropdown value selected in voorwaarde field).
+Testplan
+Step 1: Go to Generiek - Assistentie.
+Step 2: Go to Rol/proces tab and add a new Vreemdeling proces
+Step 3: Fill in mandatory fields and save
+Step 4: Go to tab Toegang and fill in the mandatory fields.
+Step 5: add any voorwaarde for example &quot;Overleggen garantie verklaring, ondertekend door&quot; or &quot;oplegging van de plicht van 72 uren&quot;.
+Step 6: Save record.
+Step 7: Email is send to &quot;Testemail&quot;. (Instead of Vreemdelingen.Toezicht@politiecn.com configure a test email)
+
+Navigation
+Generiek - Asstentie - rol/proces - Vreemdeling - tab Toegang</description>
+   <name>ACTPOL-320</name>
+   <tag>ACTPOL-320</tag>
+   <comment></comment>
+   <testCaseGuid>e6c82e6e-3448-4d9e-bed1-21c3e88c7854</testCaseGuid>
+</TestCaseEntity>

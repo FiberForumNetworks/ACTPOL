@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description>#MBES18 module</description>
+   <name>ACTPOL-569</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>0</numberOfRerun>
+   <pageLoadTimeout>20</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <testSuiteGuid>c1e6d66a-b590-4bdc-a12b-cdb2e26c0bd3</testSuiteGuid>
+   <testCaseLink>
+      <guid>2cb00221-d56a-4672-bb6f-db5b8fbc96f4</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/JIRA Tasks/Release 6.6/ACTPOL-569</testCaseId>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>16f73b95-5224-434e-962d-7c4af3bf70b6</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>f418cbf5-c9ae-4157-adf0-b450b07adbcd</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>9652cf7b-c5af-468e-b71f-97a4cfc29e75</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>77c6b283-8d5d-42e2-b575-3c722bb06586</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>

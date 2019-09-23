@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Description:
+In this MBES18 module there should be possibility to enter Bewaringstelling (detainment information) and plaatsingsgegevens (location information).
+
+Solution:
+Create a tab called Bewaringstellings c.q. Plaatsingsgegevens.
+This tab should contain the field in added screenshot.
+
+Testplan:
+Step 1: Go to Opsporing - MBES18 fill in required fields and click save
+Step 2: Go to Tab Bewaringstellings c.q. Plaatsingsgegevens fill in all fields
+Step 3: save record.
+
+Navigation:
+Opsporing - MBES18 - Tab Bewaringstellings c.q. Plaatsingsgegevens</description>
+   <name>ACTPOL-561</name>
+   <tag>ACTPOL-561</tag>
+   <comment>Chcking validation
+INBEWARINGSTELLINGS C.Q. PLAATSINGSGEGEVENS  error messages
+INBEWARINGSTELLINGS C.Q. PLAATSINGSGEGEVENS tab data filling
+Checking dropdown
+checking auto search</comment>
+   <testCaseGuid>a915a543-2e6a-4434-8e62-0bb3802a6b7e</testCaseGuid>
+</TestCaseEntity>

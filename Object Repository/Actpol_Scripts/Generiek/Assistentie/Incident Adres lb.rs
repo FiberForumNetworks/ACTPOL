@@ -6,12 +6,12 @@
    <elementGuidId>b4060e05-e5c3-4b92-8a4d-16646f19a7f9</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>/html/body/div[8]/ul/li[1][count(. | //*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame']) = count(//*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame'])]</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>/html/body/div[9]/ul/li[1]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>/html/body/div[8]/ul/li[5][count(. | //*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame']) = count(//*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,7 +21,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/div[8]/ul/li[1]</value>
+      <value>/html/body/div[8]/ul/li[5]</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

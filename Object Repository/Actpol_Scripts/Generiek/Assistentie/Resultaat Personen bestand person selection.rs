@@ -6,11 +6,11 @@
    <elementGuidId>8ce2d922-e652-4942-85ec-b2d8b967e233</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;unContents&quot;]/table/tbody/tr[5]/td[1]/a[3]/img</value>
       </entry>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;unContents&quot;]/table/tbody/tr[3]/td[1]/a[3]/img</value>
+         <key>BASIC</key>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;ifrm227&quot; or @id=&quot;ifrm89&quot; or @name=&quot;ifrm201&quot; or@name=&quot;ifrm214&quot; or @name=&quot;ifrm259&quot; or @name=&quot;ifrm142&quot;]</value>
+         <value>//*[@id=&quot;ifrm227&quot; or @id=&quot;ifrm89&quot; or @name=&quot;ifrm201&quot; or@name=&quot;ifrm214&quot; or @name=&quot;ifrm259&quot; or @name=&quot;ifrm142&quot; or @name=&quot;ifrm18&quot;]</value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -57,6 +57,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;ifrm227&quot; or @id=&quot;ifrm89&quot; or @name=&quot;ifrm201&quot; or@name=&quot;ifrm214&quot; or @name=&quot;ifrm259&quot; or @name=&quot;ifrm142&quot;]</value>
+      <value>//*[@id=&quot;ifrm227&quot; or @id=&quot;ifrm89&quot; or @name=&quot;ifrm201&quot; or@name=&quot;ifrm214&quot; or @name=&quot;ifrm259&quot; or @name=&quot;ifrm142&quot; or @name=&quot;ifrm18&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

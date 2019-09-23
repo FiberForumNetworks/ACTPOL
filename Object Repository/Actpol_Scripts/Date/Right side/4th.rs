@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;ui-datepicker-div&quot;]/table/tbody/tr/td/a[text()=&quot;4&quot;]</value>
+         <value>//*[@id=&quot;ui-datepicker-div&quot;]/table/tbody/tr/td/a[text()=&quot;22&quot;]</value>
       </entry>
       <entry>
          <key>BASIC</key>

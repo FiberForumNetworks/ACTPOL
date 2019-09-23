@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Description:
+It should be possible to create documents related to this Vreemdeling.
+
+Solution:
+create a tab Document with the functionality to fetch information of all these MBES18 tabs and records.
+This in done in all rol/proces and also in Arrestanten module.
+
+Testplan:
+Step 1: Go to Opsporing - MBES18
+Step 2: Enter a new record in MBES18 module, fill in the required fields and click save.
+Step 3: Go to tab Documenten and generate a document
+Step 4: This document should contain the same values in the MBES18 record
+
+Navigation:
+Opsporing - MBES18 -Tab Documenten</description>
+   <name>ACTPOL-566</name>
+   <tag>ACTPOL-566</tag>
+   <comment>Creating new document
+Editing existing document
+View existing document
+Delete existing document</comment>
+   <testCaseGuid>d87941e5-6f08-4953-a70a-21097020f8b2</testCaseGuid>
+</TestCaseEntity>

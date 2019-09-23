@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;INDCLASS_descr&quot;]</value>
+         <value>//*[@id=&quot;actAssistance&quot;]/table/tbody/tr[3]/td[3]/span/font[count(. | //*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame']) = count(//*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;INDCLASS_descr&quot;]</value>
+      <value>//*[@id=&quot;actAssistance&quot;]/table/tbody/tr[3]/td[3]/span/font</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

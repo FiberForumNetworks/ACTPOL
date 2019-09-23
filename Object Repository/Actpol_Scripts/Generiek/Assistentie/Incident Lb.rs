@@ -6,12 +6,12 @@
    <elementGuidId>bb2a5314-e744-420c-be7b-d22bf82f19a4</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>BASIC</key>
-         <value>/html/body/div[9]/ul/li[1][count(. | //*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame']) = count(//*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame'])]</value>
-      </entry>
-      <entry>
          <key>XPATH</key>
          <value>/html/body/div[9]/ul/li[1]</value>
+      </entry>
+      <entry>
+         <key>BASIC</key>
+         <value>/html/body/div[9]/ul/li[1][count(. | //*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame']) = count(//*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>

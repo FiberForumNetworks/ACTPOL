@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>In file KPSLPF0044, a new set of OPV codes are being used, so we need to be able to hide the old ones. As we cannot just delete them, because they have been used previously and still need to be displayed in 'old' fines, we have defined field OBVFLG2 as the field to determine whether the opv should be shown or not. 
+
+ 
+
+J  = active, show when displaying the select OPV code screen
+
+N = inactive, do not show when displaying the select OPV code screen
+
+ 
+
+Related to this, the following program should be adjusted: POL10001
+
+Please check if something must be done for POL10003 also, not sure.
+
+ 
+
+Testing Steps:
+
+Open any assistentie and go to tab Proces
+Select rol/proces 'Bekeurde Persoon'
+Soort procesverbaal = Oproepingsproces-verbaal
+Transportmiddel = Voertuig
+Go to accordeon Strafbaar feit and click on NEW
+ONLY records were OBVFLG2 = 'J' should be displayed</description>
+   <name>ACTPOL-570</name>
+   <tag>ACTPOL-570</tag>
+   <comment></comment>
+   <testCaseGuid>b11e030f-056e-46e9-9db9-e4a4f59a3469</testCaseGuid>
+</TestCaseEntity>

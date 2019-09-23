@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Description:
+Add in the MBES18 module a possibility to enter Overige gegevens (additional information).
+
+Solution:
+Create a tab called Overige gegevenst to register fields in the fields in the attachment.
+
+Testplan:
+Step 1: Go to Opsporing - MBES18 fill in required fields and click save
+Step 2: Go to Tab Overige gegevens fill in all fields
+Step 3: save record.
+
+Navigation:
+Opsporing - MBES18 - Tab Overige gegevens</description>
+   <name>ACTPOL-564</name>
+   <tag>ACTPOL-564</tag>
+   <comment>INBEWARINGSTELLINGS C.Q. PLAATSINGSGEGEVENS tab data filling
+Checking dropdown
+Checking jaa validation</comment>
+   <testCaseGuid>feaf8a66-8e4b-4bc1-b912-958342603879</testCaseGuid>
+</TestCaseEntity>

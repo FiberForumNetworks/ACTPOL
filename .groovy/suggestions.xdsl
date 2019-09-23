@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<projectSuggestions>
+<declaringtype type="java.lang.Object">
+<method isActive="true" isStatic="true" name="format" type="java.lang.String">
+<parameters useNamedArguments="false"/>
+<doc/>
+</method>
+</declaringtype>
+<declaringtype type="java.lang.String">
+<method isActive="true" isStatic="false" name="lenght" type="java.lang.String">
+<parameters useNamedArguments="false"/>
+<doc/>
+</method>
+</declaringtype>
+<declaringtype type="SimpleDateFormat">
+<method isActive="true" isStatic="true" name="format" type="java.lang.String">
+<parameters useNamedArguments="false"/>
+<doc/>
+</method>
+<method isActive="true" isStatic="true" name="parse" type="java.lang.String">
+<parameters useNamedArguments="false"/>
+<doc/>
+</method>
+</declaringtype>
+</projectSuggestions>

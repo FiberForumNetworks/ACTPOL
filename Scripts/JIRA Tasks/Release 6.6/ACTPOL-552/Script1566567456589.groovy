@@ -16,71 +16,79 @@ import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
 WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
 
-/*not_run: WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Generiek'))
+WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Generiek'))
 
-not_run: WebUI.delay(2)
+WebUI.delay(2)
 
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Assistenties'))
+WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Assistenties'))
 
-not_run: WebUI.delay(2)
+WebUI.delay(2)
 
 'Creating New Incident\r\n'
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Assistentie New'))
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Assistentie New'))
 
-not_run: WebUI.delay(5)
+WebUI.delay(5)
 
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Bron'))
+WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Assistentie/Bron'), 'k')
 
-not_run: WebUI.delay(2)
+WebUI.delay(2)
 
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Born lb'))
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Born lb'))
 
-not_run: WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Assistentie/Telefoon nummer'), '9999999999', FailureHandling.OPTIONAL)
+WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Assistentie/Telefoon nummer'), '9999999999', FailureHandling.OPTIONAL)
 
-not_run: WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Assistentie/Titel'), 'Testing test')
+WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Assistentie/Titel'), 'Testing test')
 
 'Select drop down from the list :: COMERCIELE INSTELLING'
-not_run: WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Assistentie/Lokatie type'), '1', false)
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Assistentie/Lokatie type'), '1', false)
 
-not_run: WebUI.delay(2)
+WebUI.delay(2)
 
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Incident Adres'))
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Incident Adres'))
 
-not_run: WebUI.delay(2)
+WebUI.delay(2)
 
 'ANDRES BELLO WEG'
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Incident Adres lb'))
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Incident Adres lb'))
 
-not_run: WebUI.delay(5)
+WebUI.delay(5)
 
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/ter hoogte van'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/ter hoogte van'), FailureHandling.OPTIONAL)
 
-not_run: WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Assistentie/Nadere Aanduiding'), 'Testing')
+WebUI.setText(findTestObject('Actpol_Scripts/Generiek/Assistentie/Nadere Aanduiding'), 'Testing')
 
-not_run: WebUI.delay(5)
+WebUI.delay(5)
 
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Incident'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Bekende plaats'))
 
 not_run: WebUI.delay(2)
 
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Incident Lb'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Bekende plaats Lb'))
 
-not_run: WebUI.delay(5)
+not_run: WebUI.delay(2)
 
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Relationeel Geweld'))
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Incident'))
 
-not_run: WebUI.delay(5)
+WebUI.delay(2)
 
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Poging'))
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Incident Lb'))
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Relationeel Geweld'))
+
+WebUI.delay(5)
+
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Poging'))
 
 'Select ZELF CONSTATERING\r\n'
-not_run: WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Assistentie/Melding Prioriteit'), '3', false)
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Assistentie/Melding Prioriteit'), '3', false)
 
 not_run: WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Dispatch ja'), FailureHandling.OPTIONAL)
 
 not_run: WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Contact verzoek ja'), FailureHandling.OPTIONAL)
 
-not_run: WebUI.delay(1)
+WebUI.delay(1)
 
 'Click on Aangewezen aan auto search titles'
 not_run: WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Aangewezen aan'))
@@ -90,190 +98,194 @@ not_run: WebUI.delay(2)
 'Select required dropdown'
 not_run: WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Aangewezen aan lb'))
 
-not_run: WebUI.delay(1)
+WebUI.delay(1)
 
 'Select ST Maarten\r\n'
-not_run: WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Assistentie/Eiland'), 'SXM', false)
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Generiek/Assistentie/Eiland'), 'SXM', false)
 
-not_run: WebUI.scrollToPosition(29, 7)
+WebUI.scrollToPosition(29, 7)
 
-not_run: WebUI.delay(2)
+WebUI.delay(2)
 
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Melding'))
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Melding'))
 
-not_run: WebUI.delay(1)
+WebUI.delay(1)
 
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Melder'))
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Melder'))
 
-not_run: WebUI.delay(1)
+WebUI.delay(1)
 
 'Select required dropdown\r\n'
-not_run: WebUI.selectOptionByLabel(findTestObject('Actpol_Scripts/Generiek/Assistentie/Rol-Proces'), 'AANGEVER', false)
+WebUI.selectOptionByLabel(findTestObject('Actpol_Scripts/Generiek/Assistentie/Rol-Proces'), 'AANGEVER', false)
 
 'Clicking new person\r\n'
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Achternaam'))
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Achternaam'))
 
-not_run: WebUI.delay(2)
+WebUI.delay(2)
 
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Resultaat Personen bestand person selection'))
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Resultaat Personen bestand person selection'))
 
-not_run: WebUI.scrollToPosition(0, 21)
+WebUI.scrollToPosition(0, 21)
 
-not_run: WebUI.delay(3)
+WebUI.delay(3)
 
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Melder'))
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Melder'))
 
-not_run: WebUI.delay(1)
+WebUI.delay(1)
 
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Save melding'))
+WebUI.click(findTestObject('Actpol_Scripts/Generiek/Assistentie/Save melding'))
 
-not_run: WebUI.delay(8)
+WebUI.delay(8)
 
-not_run: WebUI.takeScreenshot()
+WebUI.takeScreenshot()
 
-not_run: WebUI.delay(3)
+WebUI.delay(3)
 
 'Click Melding tab'
-not_run: WebUI.click(findTestObject('JIRA/A Relese 6.6/ACTPOL-552/Melding TAB'))
+WebUI.click(findTestObject('JIRA/A Relese 6.6/ACTPOL-552/Melding TAB'))
 
-not_run: WebUI.delay(2)
+WebUI.delay(2)
 
 'Get text from the feild:: Assistentie number'
-not_run: Assistentienumber = WebUI.getText(findTestObject('JIRA/A Relese 6.6/ACTPOL-552/Assistentie number'))
+Assistentienumber = WebUI.getText(findTestObject('JIRA/A Relese 6.6/ACTPOL-552/Assistentie number'))
 
-not_run: WebUI.delay(1)
+WebUI.delay(1)
 
 'Get text from the feild:: Incident Adres'
-not_run: IncidentAdres = WebUI.getText(findTestObject('JIRA/A Relese 6.6/ACTPOL-552/Incident Adres'))
+IncidentAdres = WebUI.getText(findTestObject('JIRA/A Relese 6.6/ACTPOL-552/Incident Adres'))
 
-not_run: WebUI.delay(1)
+WebUI.delay(1)
 
 'Get text from the feild:: Aangewezen aan'
-not_run: Aangewezenaan = WebUI.getText(findTestObject('JIRA/A Relese 6.6/ACTPOL-552/Aangewezen aan'))
+Aangewezenaan = WebUI.getText(findTestObject('JIRA/A Relese 6.6/ACTPOL-552/Aangewezen aan'))
 
-not_run: WebUI.delay(1)
+WebUI.delay(1)
 
 'Get text from the feild:: Incident'
-not_run: Incident = WebUI.getText(findTestObject('JIRA/A Relese 6.6/ACTPOL-552/Incident'))
+Incident = WebUI.getText(findTestObject('JIRA/A Relese 6.6/ACTPOL-552/Incident'))
 
-not_run: WebUI.delay(1)
+WebUI.delay(1)
 
 'Get text from the feild:: Datum Melding'
-not_run: DatumMelding = WebUI.getText(findTestObject('JIRA/A Relese 6.6/ACTPOL-552/Datum Melding'))
+DatumMelding = WebUI.getText(findTestObject('JIRA/A Relese 6.6/ACTPOL-552/Datum Melding'))
 
-not_run: WebUI.delay(1)
+WebUI.delay(1)
 
 'Get text from the feild:: Tijd Melding'
-not_run: TijdMelding = WebUI.getText(findTestObject('JIRA/A Relese 6.6/ACTPOL-552/Datum Melding'))
+TijdMelding = WebUI.getText(findTestObject('JIRA/A Relese 6.6/ACTPOL-552/Datum Melding'))
 
-not_run: KeywordLogger log = new KeywordLogger()
+KeywordLogger log = new KeywordLogger()
 
-not_run: log.logInfo('Assistentie number is : ' + Assistentienumber)
+log.logInfo('Assistentie number is : ' + Assistentienumber)
 
-not_run: log.logInfo('Incident Adres is : ' + IncidentAdres)
+log.logInfo('Incident Adres is : ' + IncidentAdres)
 
-not_run: log.logInfo('Aangewezen aan is : ' + Aangewezenaan)
+log.logInfo('Aangewezen aan is : ' + Aangewezenaan)
 
-not_run: log.logInfo('Incident is: ' + Incident)
+log.logInfo('Incident is: ' + Incident)
 
-not_run: log.logInfo('Datum Melding is : ' + DatumMelding)
+log.logInfo('Datum Melding is : ' + DatumMelding)
 
-not_run: log.logInfo('Tijd Melding is : ' + TijdMelding)
+log.logInfo('Tijd Melding is : ' + TijdMelding)
 
-not_run: test = WebUI.concatenate('\n', 'Assistentie number is : ' + Assistentienumber, '\n', 'Incident Adres is : ' + IncidentAdres, 
+test = WebUI.concatenate('\n', 'Assistentie number is : ' + Assistentienumber, '\n', 'Incident Adres is : ' + IncidentAdres, 
     '\n', 'Incident is: ' + Incident, '\n', 'Datum Melding is : ' + DatumMelding, '\n', 'Tijd Melding is : ' + TijdMelding)
 
 //println(test)
-not_run: log.logInfo(test)
+log.logInfo(test)
 
-not_run: WebUI.delay(2)
+WebUI.delay(2)
 
-not_run: WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Generiek'))
+WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Generiek'))
 
-not_run: WebUI.delay(2)
+WebUI.delay(2)
 
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Melding'))
+WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Melding'))
 
-not_run: WebUI.delay(2)
+WebUI.delay(2)
 
 'Melding view select'
-not_run: WebUI.click(findTestObject('JIRA/A Relese 6.6/ACTPOL-552/medlding view default first selected'))
+WebUI.click(findTestObject('JIRA/A Relese 6.6/ACTPOL-552/medlding view default first selected'))
 
-not_run: WebUI.delay(2)
+WebUI.delay(2)
 
-not_run: Omschrijving = WebUI.getText(findTestObject('JIRA/A Relese 6.6/ACTPOL-552/Omschrijving'))
+Omschrijving = WebUI.getText(findTestObject('JIRA/A Relese 6.6/ACTPOL-552/Omschrijving'))
 
-not_run: log.logInfo(Omschrijving)
+log.logInfo(Omschrijving)
 
-not_run: WebUI.comment('intake mode')
+WebUI.comment('intake mode')
 
-not_run: WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Intake/Intake'))
+WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Intake/Intake'))
 
-not_run: WebUI.delay(2)
+WebUI.delay(2)
 
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Intake/Calltaker'))
+WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Intake/Calltaker'))
 
-not_run: WebUI.delay(2)
+WebUI.delay(2)
 
-not_run: WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Bron'), 't')
+WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Bron'), 't')
 
-not_run: WebUI.delay(2)
+WebUI.delay(2)
 
 'Default first one is selected'
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Bron lb'))
+WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Bron lb'))
 
-not_run: WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Telefoon nummer'), '4754')
+WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Telefoon nummer'), '4754')
 
-not_run: WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Adres van Incident'), 'aa')
+WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Adres van Incident'), 'aa')
 
-not_run: WebUI.delay(2)
+WebUI.delay(2)
 
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Adres van Incident lb'))
+WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Adres van Incident lb'))
 
-not_run: WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Latitude'), 'GG', FailureHandling.OPTIONAL)
+WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Latitude'), 'GG', FailureHandling.OPTIONAL)
 
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/ter hoogte van'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/ter hoogte van'), FailureHandling.OPTIONAL)
 
-not_run: WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Nadere aanduiding'), 'Testing')
+WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Nadere aanduiding'), 'Testing')
 
-not_run: WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Bekende plaats'), 'a')
+WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Bekende plaats'), 'a')
 
-not_run: WebUI.delay(2)
+WebUI.delay(2)
 
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Bekende plaats lb'), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Bekende plaats lb'), FailureHandling.OPTIONAL)
 
-not_run: WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Incident'), 'a')
+WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Incident'), 'a')
 
-not_run: WebUI.delay(2)
+WebUI.delay(2)
 
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Incident lb'))
+WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Incident lb'))
 
-not_run: WebUI.delay(1)
+WebUI.delay(1)
 
-not_run: WebUI.click(findTestObject('JIRA/A Relese 6.6/ACTPOL-552/Mensenhandel Mensensmokkel'))
+WebUI.click(findTestObject('JIRA/A Relese 6.6/ACTPOL-552/Mensenhandel Mensensmokkel'))
 
-not_run: WebUI.delay(1)
+WebUI.delay(1)
 
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Poging'))
+WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Poging'))
 
-not_run: WebUI.delay(1)
+WebUI.delay(1)
 
 'Select based on environment'
-not_run: WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Intake/Calltaker/Melding Prioriteit'), '3', false)
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Intake/Calltaker/Melding Prioriteit'), '3', false)
 
-not_run: WebUI.delay(1)
+WebUI.delay(1, FailureHandling.OPTIONAL)
 
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Achternaam'))
+WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Politie'), FailureHandling.OPTIONAL)
 
-not_run: WebUI.delay(2)
+WebUI.delay(1)
 
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Resultaat Personen bestand'))
+WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Achternaam'))
 
-not_run: WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Mutatie'), 'Testing')
+WebUI.delay(2)
 
-not_run: WebUI.focus(findTestObject('Actpol_Scripts/Intake/Calltaker/Intake Save'))*/
+WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Resultaat Personen bestand'))
 
-WebUI.delay(3)
+WebUI.setText(findTestObject('Actpol_Scripts/Intake/Calltaker/Mutatie'), 'Testing')
+
+WebUI.click(findTestObject('Actpol_Scripts/Intake/Calltaker/Intake Save'))
+
+WebUI.delay(5)
 
 WebUI.click(findTestObject('JIRA/A Relese 6.6/ACTPOL-552/Actieve Assistentie'))
 
@@ -334,7 +346,8 @@ test1 = WebUI.concatenate('\n', 'Incident number:' + Incidentnumber, '\n', 'Adre
     avi1, '\n', 'Incident:' + Incidentca, '\n', 'Datum Melding:' + DatumMeldingca, '\n', 'Tijd Melding:' + TijdMeldingca, 
     '\n', 'Aangewezen aan:' + Aangewezenaan1)
 
-//println(test)
+println(test1)
+
 log1.logInfo(test1)
 
 WebUI.delay(2)
@@ -354,5 +367,27 @@ WebUI.delay(2)
 
 Omschrijving = WebUI.getText(findTestObject('JIRA/A Relese 6.6/ACTPOL-552/Omschrijving'))
 
-log1.logInfo(Omschrijving)
+println(Omschrijving)
+
+if (test1 == Omschrijving) {
+    println('Calltaker and melding both are match')
+
+    log1.logInfo('Calltaker and melding both are match')
+} else {
+    println('Calltaker and melding both are not match')
+
+    log1.logInfo('Calltaker and melding both are not match')
+}
+
+/*String s = DatumMeldingca
+
+int len = s.length()
+
+String rev = ''
+
+for (int i = len - 1; i >= 0; i--) {
+    rev = (rev + s.charAt(i))
+}
+
+println(rev)*/
 

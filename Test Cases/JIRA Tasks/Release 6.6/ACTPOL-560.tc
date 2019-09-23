@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Description:
+Possibility to register an Vreemdeling and Caretaker/husband etc
+
+Solution:
+Create a tab Called Personalia in the MBES18 module to register a Persoon as in rol/proces and in addition to this fields for registering an additional person as in Vreemdeling tab Toegang.
+
+Testplan:
+Step 1: Go to Opsporing - MBES18
+Step 2: Enter mandatory fields and save
+Step 2: Go to Tab personalia and enter a new person, also enter a person in field Garantsteller and save record.
+Step 4: record is saved with bot Person information displayed.
+
+Navigation:
+Opsporing - MBES18 -Tab Personalia</description>
+   <name>ACTPOL-560</name>
+   <tag>ACTPOL-560</tag>
+   <comment>Checking button how it is working
+Checking text box how it is working
+Checking edit btn how it is working
+Checking Search btn how it is working</comment>
+   <testCaseGuid>aa27aacd-170c-4204-8c93-ef61566f14e3</testCaseGuid>
+</TestCaseEntity>

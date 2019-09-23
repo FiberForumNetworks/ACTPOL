@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Description:
+Add in the MBES18 module a possibility to enter medisch gedrag.
+
+Solution:
+Create a tab called Gedrag medisch to register fields in the fields in the attachment.
+
+Testplan:
+Step 1: Go to Opsporing - MBES18 fill in required fields and click save
+Step 2: Go to Tab Gedrag medisch fill in all fields
+Step 3: save record.
+
+Navigation:
+Opsporing - MBES18 - Tab Gedrag medisch</description>
+   <name>ACTPOL-562</name>
+   <tag>ACTPOL-562</tag>
+   <comment>INBEWARINGSTELLINGS C.Q. PLAATSINGSGEGEVENS tab data filling
+Checking dropdown
+Checking jaa validation
+Checking nee validation
+Checking onbekend validation</comment>
+   <testCaseGuid>0b7b4b63-9442-4421-8b44-11957e9f1078</testCaseGuid>
+</TestCaseEntity>

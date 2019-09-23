@@ -36,6 +36,6 @@ Intake - Calltaker
 Also Generiek Melding Mensenhandel</description>
    <name>ACTPOL-552</name>
    <tag>ACTPOL-552</tag>
-   <comment></comment>
+   <comment>intake mode</comment>
    <testCaseGuid>c9252d02-ee7a-4a63-8c7e-82282ec7a04c</testCaseGuid>
 </TestCaseEntity>
