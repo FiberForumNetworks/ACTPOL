@@ -31,6 +31,16 @@ WebUI.delay(2)
 'Click MBES tab'
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/MBES18/MBES18 TAB'))
 
+WebUI.delay(2)
+
+'Click MBES tab'
+WebUI.click(findTestObject('Actpol_Scripts/Opsporing/MBES18/MBES18 TAB'))
+
+WebUI.delay(2)
+
+'Click MBES tab'
+WebUI.click(findTestObject('Actpol_Scripts/Opsporing/MBES18/MBES18 TAB'))
+
 log.logInfo('Clicking MBES18 tab ')
 
 WebUI.delay(3)
@@ -107,5 +117,6 @@ WebUI.delay(1)
 geb = WebUI.getText(findTestObject('JIRA/A Relese 6.6/ACTPOL-558/Geboortedatum'))
 
 log.logInfo('Grid is shown contains columns mentioned ::' + geb)
+
 log.logInfo('MBES18 module a grid will shown in Arrestanten, with the Options Vrnummer, Datum incident, Organisatie,Voornaam, Achternaam and  Geboortedatum.')
 

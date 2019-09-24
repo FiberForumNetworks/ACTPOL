@@ -42,14 +42,14 @@ WebUI.delay(8)
 'Mouse over to Generic tab'
 WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Autorisatie/Autorisatie'))
 
-WebUI.delay(2)
+WebUI.delay(6)
 
 'Click new btn'
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/MBES18/mbes new'))
 
 log.logInfo('Clicking MBES18 new button ')
 
-WebUI.delay(6)
+WebUI.delay(8)
 
 'Click new btn in Registratie'
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/MBES18/Registratie new'))
@@ -180,7 +180,7 @@ WebUI.click(findTestObject('Actpol_Scripts/Date/16th right frame'))
 WebUI.delay(1)
 
 WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Plaatsing sinds'), 
-    'testing :: Plaatsing sinds')
+    '01012019')
 
 WebUI.comment('Checking dropdown')
 

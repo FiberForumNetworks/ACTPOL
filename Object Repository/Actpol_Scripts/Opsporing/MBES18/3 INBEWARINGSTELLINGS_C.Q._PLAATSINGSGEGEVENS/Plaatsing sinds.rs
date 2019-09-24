@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@name = 'MBESPLDS']</value>
+         <value>//*[@id = 'MBESPLDT']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -15,9 +15,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>name</name>
+      <name>id</name>
       <type>Main</type>
-      <value>MBESPLDS</value>
+      <value>MBESPLDT</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

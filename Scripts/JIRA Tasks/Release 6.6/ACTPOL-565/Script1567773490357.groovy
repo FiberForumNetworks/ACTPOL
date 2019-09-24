@@ -35,9 +35,14 @@ WebUI.delay(2)
 'Click MBES tab'
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/MBES18/MBES18 TAB'))
 
-log.logInfo('Clicking MBES18 tab ')
+WebUI.delay(2)
+
+'Click MBES tab'
+WebUI.click(findTestObject('Actpol_Scripts/Opsporing/MBES18/MBES18 TAB'))
 
 WebUI.delay(1)
+
+log.logInfo('Clicking MBES18 tab ')
 
 WebUI.delay(8)
 
@@ -177,7 +182,7 @@ WebUI.click(findTestObject('Actpol_Scripts/Date/16th right frame'))
 WebUI.delay(1)
 
 WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Plaatsing sinds'), 
-    'testing :: Plaatsing sinds')
+    '01012019')
 
 WebUI.comment('Checking dropdown')
 

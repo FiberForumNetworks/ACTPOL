@@ -39,7 +39,7 @@ log.logInfo('Clicking MBES18 tab ')
 
 WebUI.delay(1)
 
-WebUI.delay(8)
+WebUI.delay(9)
 
 'Click new btn'
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/MBES18/mbes new'))
@@ -177,7 +177,7 @@ WebUI.click(findTestObject('Actpol_Scripts/Date/16th right frame'))
 WebUI.delay(1)
 
 WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Plaatsing sinds'), 
-    'testing :: Plaatsing sinds')
+    '01012019')
 
 WebUI.comment('Checking dropdown')
 
@@ -299,9 +299,9 @@ for (int i = 1; i <= 19; i++) {
     String value2 = 'J'
 
     if (value1 == value2) {
-        WebUI.click(to) /*if (i == 9) {
+        WebUI.click(to /*if (i == 9) {
 		 WebUI.click(to)
-	 }*/
+	 }*/ )
     } else {
         WebUI.setText(to, 'katalon testing')
     }

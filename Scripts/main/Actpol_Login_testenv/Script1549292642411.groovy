@@ -19,8 +19,6 @@ WebUI.deleteAllCookies()
 
 WebUI.waitForPageLoad(60)
 
-WebUI.waitForJQueryLoad(30)
-
 WebUI.maximizeWindow()
 
 /*WebUI.navigateToUrl(GlobalVariable.TESTURL)
@@ -61,7 +59,7 @@ switch (environment) {
         WebUI.click(findTestObject('Actpol_Scripts/login/login'))
 
         WebUI.getWindowTitle()
-
+		WebUI.delay(5)
         break
     case 2:
         println(Selectenv = 'ACTPOL-DEV-ENV')
@@ -75,6 +73,7 @@ switch (environment) {
         WebUI.click(findTestObject('Actpol_Scripts/login/login'))
 
         WebUI.getWindowTitle()
+		WebUI.delay(5)
 
         break
     case 3:
