@@ -21,6 +21,6 @@ Navigation
 Generiek - assistentie - rol/proces - Vreemdeling</description>
    <name>ACTPOL-308</name>
    <tag>ACTPOL-308</tag>
-   <comment></comment>
+   <comment>Select process &quot;VREEMDELING&quot;</comment>
    <testCaseGuid>29ddf862-9d8c-4f46-843b-696632fc8aeb</testCaseGuid>
 </TestCaseEntity>

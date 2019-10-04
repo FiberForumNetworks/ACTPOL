@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@name = 'ifrm18' or @name=&quot;ifrm89&quot;]</value>
+         <value>//*[@name = 'ifrm18' or @name=&quot;ifrm89&quot; or @name=&quot;ifrm97&quot; or @name=&quot;ifrm98&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -24,6 +24,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@name = 'ifrm18' or @name=&quot;ifrm89&quot;]</value>
+      <value>//*[@name = 'ifrm18' or @name=&quot;ifrm89&quot; or @name=&quot;ifrm97&quot; or @name=&quot;ifrm98&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

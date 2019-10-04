@@ -80,7 +80,7 @@ not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/MBES18/5 INCIDENTE
 
 WebUI.delay(1)
 
-WebUI.selectOptionByLabel(findTestObject('Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/Organisatie'), 'SKS', false)
+WebUI.selectOptionByIndex(findTestObject('Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/Organisatie'), '1', FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(1)
 

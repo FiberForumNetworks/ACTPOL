@@ -6,8 +6,16 @@
    <elementGuidId>e7aa5d38-b739-433f-ba94-681884ed8cbc</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;listbottomcontrol&quot;]/div[1]/span/img</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>#listbottomcontrol > div.head-control > span > img</value>
+      </entry>
+      <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;listbottomcontrol&quot;]/div[1]/span/img[count(. | //*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame']) = count(//*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame'])]</value>
+         <value>/html/body/div[2]/div[1]/div[1]/span/img[count(. | //*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame']) = count(//*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +25,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;listbottomcontrol&quot;]/div[1]/span/img</value>
+      <value>/html/body/div[2]/div[1]/div[1]/span/img</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

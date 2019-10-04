@@ -14,7 +14,7 @@
          <value>//*[text()=&quot;1 - Generiek&quot; or text()=&quot;1 - Algemeen&quot;]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>BASIC</selectorMethod>
+   <selectorMethod>XPATH</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>

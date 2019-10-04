@@ -42,7 +42,11 @@ int ACTPOLKMENV = 6
 
 int ACTPOLKWENV = 7
 
-int environment = ACTPOLTESTENV
+int ACTPOLFATKPCNENV = 8
+
+int ACTPOLFATKMARENV = 9
+
+int environment = ACTPOLFATKMARENV
 
 String Selectenv
 
@@ -59,7 +63,9 @@ switch (environment) {
         WebUI.click(findTestObject('Actpol_Scripts/login/login'))
 
         WebUI.getWindowTitle()
-		WebUI.delay(5)
+
+        WebUI.delay(5)
+
         break
     case 2:
         println(Selectenv = 'ACTPOL-DEV-ENV')
@@ -73,7 +79,8 @@ switch (environment) {
         WebUI.click(findTestObject('Actpol_Scripts/login/login'))
 
         WebUI.getWindowTitle()
-		WebUI.delay(5)
+
+        WebUI.delay(5)
 
         break
     case 3:
@@ -140,6 +147,34 @@ switch (environment) {
         WebUI.setEncryptedText(findTestObject('Actpol_Scripts/login/userid'), GlobalVariable.KWusername)
 
         WebUI.setEncryptedText(findTestObject('Actpol_Scripts/login/password'), GlobalVariable.kcpassword)
+
+        WebUI.click(findTestObject('Actpol_Scripts/login/login'))
+
+        WebUI.getWindowTitle()
+
+        break
+    case 8:
+        println(Selectenv = 'ACTPOL-FATKPCN-ENV')
+
+        WebUI.navigateToUrl(GlobalVariable.FATKPCNURL)
+
+        WebUI.setEncryptedText(findTestObject('Actpol_Scripts/login/userid'), GlobalVariable.FATKPCNID)
+
+        WebUI.setEncryptedText(findTestObject('Actpol_Scripts/login/password'), GlobalVariable.FATKPCNPASSWORD)
+
+        WebUI.click(findTestObject('Actpol_Scripts/login/login'))
+
+        WebUI.getWindowTitle()
+
+        break
+    case 9:
+        println(Selectenv = 'ACTPOL-FATKMAR-ENV')
+
+        WebUI.navigateToUrl(GlobalVariable.FATKUMARURL)
+
+        WebUI.setEncryptedText(findTestObject('Actpol_Scripts/login/userid'), GlobalVariable.FATKMARID)
+
+        WebUI.setEncryptedText(findTestObject('Actpol_Scripts/login/password'), GlobalVariable.FATKMARPASWORD)
 
         WebUI.click(findTestObject('Actpol_Scripts/login/login'))
 

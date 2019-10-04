@@ -13,11 +13,16 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
+//import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords 
+import com.kms.katalon.core.util.KeywordUtil
+
 
 'Login to the application'
 WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
 
 KeywordLogger log = new KeywordLogger()
+
+WebUI.waitForPageLoad(60)
 
 WebUI.delay(1)
 
@@ -31,19 +36,28 @@ WebUI.delay(3)
 'Click MBES tab'
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/MBES18/MBES18 TAB'))
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
 'Click MBES tab'
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/MBES18/MBES18 TAB'), FailureHandling.OPTIONAL)
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/MBES18/MBES18 TAB'), FailureHandling.OPTIONAL)
 
 log.logInfo('Clicking MBES18 tab ')
 
 WebUI.delay(1)
 
-WebUI.delay(5)
+not_run: WebUI.delay(5)
+
+WebUI.click(findTestObject('JIRA/A Relese 6.6/ACTPOL-559/empty position'))
+
+WebUI.delay(2)
 
 'Click new btn'
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/MBES18/mbes new'))
+
+not_run: WebUI.delay(1)
+
+'Click new btn'
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/MBES18/mbes new'))
 
 log.logInfo('Clicking MBES18 new button ')
 
@@ -109,7 +123,7 @@ WebUI.comment('Data entering in Registratie tab')
 WebUI.delay(1)
 
 'Click new btn in Registratie'
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/MBES18/Registratie new'))
+WebUI.doubleClick(findTestObject('Actpol_Scripts/Opsporing/MBES18/Registratie new'))
 
 not_run: WebUI.delay(1)
 
@@ -141,25 +155,22 @@ not_run: WebUI.selectOptionByValue(findTestObject('Object Repository/temp/Page_A
     '1', true)
 
 'Select required dropdown fro the list'
-WebUI.selectOptionByLabel(findTestObject('Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie van 1'), 'KORPS POLITIE CURACAO', 
-    false)
+WebUI.selectOptionByIndex(findTestObject('Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie van 1'), '1', FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(1)
 
 'Select required dropdown fro the list'
-WebUI.selectOptionByLabel(findTestObject('Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie Naar 1'), 'OPENBARE MINISTERIE', 
-    false)
+WebUI.selectOptionByIndex(findTestObject('Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie Naar 1'), '2', FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(1)
 
 'Select required dropdown fro the list'
-WebUI.selectOptionByLabel(findTestObject('Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie van 2'), 'AMBULANCE', 
-    false)
+WebUI.selectOptionByIndex(findTestObject('Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie van 2'), '3', FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(1)
 
 'Select required dropdown fro the list'
-WebUI.selectOptionByLabel(findTestObject('Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie Naar 2'), 'SKS', false)
+WebUI.selectOptionByIndex(findTestObject('Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie Naar 2'), '4', FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(1)
 
@@ -214,25 +225,22 @@ WebUI.click(findTestObject('JIRA/A Relese 6.6/ACTPOL-559/edit existing record in
 WebUI.delay(2)
 
 'Select required dropdown fro the list'
-WebUI.selectOptionByLabel(findTestObject('Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie van 1'), 'KORPS POLITIE CURACAO', 
-    false)
+WebUI.selectOptionByIndex(findTestObject('Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie van 1'), '1', FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(1)
 
 'Select required dropdown fro the list'
-WebUI.selectOptionByLabel(findTestObject('Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie Naar 1'), 'OPENBARE MINISTERIE', 
-    false)
+WebUI.selectOptionByIndex(findTestObject('Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie Naar 1'), '2', FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(1)
 
 'Select required dropdown fro the list'
-WebUI.selectOptionByLabel(findTestObject('Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie van 2'), 'AMBULANCE', 
-    false)
+WebUI.selectOptionByIndex(findTestObject('Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie van 2'), '3', FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(1)
 
 'Select required dropdown fro the list'
-WebUI.selectOptionByLabel(findTestObject('Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie Naar 2'), 'SKS', false)
+WebUI.selectOptionByIndex(findTestObject('Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie Naar 2'), '4', FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(1)
 
