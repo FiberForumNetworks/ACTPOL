@@ -6,11 +6,11 @@
    <elementGuidId>f37e708f-40cd-4ea7-81ca-c7fa055a43cd</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//td[text()='AANHOUDING']/preceding-sibling::td/a[2])[1]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>(//td[text()='200601762']/preceding-sibling::td/a[2])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

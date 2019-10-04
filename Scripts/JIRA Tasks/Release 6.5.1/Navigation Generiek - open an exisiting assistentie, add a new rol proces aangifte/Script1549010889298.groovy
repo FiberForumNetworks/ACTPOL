@@ -13,21 +13,8 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('')
 
-WebUI.deleteAllCookies()
-
-WebUI.waitForPageLoad(30)
-
-WebUI.maximizeWindow()
-
-WebUI.navigateToUrl('http://10.20.10.7:8202/actpoldev/JPOL392/nxmenu.pgm?docnum=604')
-
-WebUI.setText(findTestObject('Actpol_Scripts/login/userid'), GlobalVariable.ID)
-
-WebUI.setEncryptedText(findTestObject('Actpol_Scripts/login/password'), GlobalVariable.enpassword)
-
-WebUI.click(findTestObject('Actpol_Scripts/login/login'))
+WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(2)
 

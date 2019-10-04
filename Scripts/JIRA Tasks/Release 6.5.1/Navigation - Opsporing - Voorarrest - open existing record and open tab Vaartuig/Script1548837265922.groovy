@@ -13,27 +13,19 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('')
+WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.deleteAllCookies()
-
-WebUI.waitForPageLoad(30)
-
-WebUI.maximizeWindow()
-
-WebUI.navigateToUrl('http://10.20.10.7:8202/actpoldev/JPOL446/nxmenu.pgm?docnum=604')
-
-WebUI.setText(findTestObject('Actpol_Scripts/login/userid'), GlobalVariable.ID)
-
-WebUI.setEncryptedText(findTestObject('Actpol_Scripts/login/password'), GlobalVariable.enpassword)
-
-WebUI.click(findTestObject('Actpol_Scripts/login/login'))
+WebUI.delay(3)
 
 WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Opsporing'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Voorarrest'))
+WebUI.doubleClick(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Voorarrest'))
+
+WebUI.delay(2)
+
+WebUI.doubleClick(findTestObject('Actpol_Scripts/Menu navigation/Opsporing/Voorarrest'))
 
 WebUI.delay(2)
 
@@ -51,7 +43,7 @@ WebUI.delay(2)
 
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Voorarrest/Vaartuig'))
 
-WebUI.delay(2)
+WebUI.delay(6)
 
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/Voorarrest/Vaartuig new'))
 

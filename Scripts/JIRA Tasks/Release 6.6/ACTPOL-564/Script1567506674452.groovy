@@ -18,6 +18,8 @@ import com.kms.katalon.core.testobject.ConditionType as ConditionType
 'Login to the application'
 WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
 
+WebUI.delay(6)
+
 KeywordLogger log = new KeywordLogger()
 
 'Mouse over to Generic tab'
@@ -25,7 +27,7 @@ WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Generiek
 
 log.logInfo('Successfully logged')
 
-WebUI.delay(2)
+WebUI.delay(4)
 
 'Click MBES tab'
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/MBES18/MBES18 TAB'))

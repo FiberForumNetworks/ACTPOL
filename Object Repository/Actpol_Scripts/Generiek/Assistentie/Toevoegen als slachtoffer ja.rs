@@ -7,14 +7,22 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value>//*[@id = 'GIFHULP1' and @ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame']</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>//*[@id=&quot;POL22001accordion-1&quot;]/table/tbody/tr[20]/td[2]/label[1]/span</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>id</name>
+      <type>Main</type>
+      <value>GIFHULP1</value>
+   </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>

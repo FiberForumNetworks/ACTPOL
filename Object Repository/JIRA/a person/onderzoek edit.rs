@@ -7,11 +7,10 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value></value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[text()=&quot;466&quot;]/preceding-sibling :: td/ a[2]</value>
+         <value>/html/body/div/table/tbody/tr[2]/td[1]/a[2]/img</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

@@ -16,14 +16,14 @@ import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 
 WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(1)
+WebUI.delay(6)
 
 'Mouse over to Generic tab'
 WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Generiek'))
 
 KeywordLogger log = new KeywordLogger()
 
-WebUI.delay(2)
+WebUI.delay(4)
 
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/MBES18/MBES18 TAB'))
 

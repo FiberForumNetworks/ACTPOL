@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Voegen in Strafproces ja</name>
+   <name>Bekende Aangehouden Verdachte new new</name>
    <tag></tag>
-   <elementGuidId>0a39e339-ec4b-4c95-bfa7-5ed19519b1e9</elementGuidId>
+   <elementGuidId>b51f9fc5-552c-4a69-8107-d9bd35d31e22</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id = 'GIFSTRAF1']</value>
+         <value>//*[@id=&quot;allVerdachte&quot;]/input</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//*[@id=&quot;POL22001accordion-1&quot;]/table/tbody/tr[22]/td[2]/label[1]/span</value>
+         <value>//*[@id=&quot;POL22001accordion-17&quot;]/input</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -19,9 +19,9 @@
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>id</name>
+      <name>xpath</name>
       <type>Main</type>
-      <value>GIFSTRAF1</value>
+      <value>//*[@id=&quot;allVerdachte&quot;]/input</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

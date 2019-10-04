@@ -15,16 +15,16 @@ import internal.GlobalVariable as GlobalVariable
 
 WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.delay(1)
+WebUI.delay(6)
 
 'Mouse over to Generic tab'
 WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Generiek'))
 
-WebUI.delay(2)
+WebUI.delay(4)
 
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/MBES18/MBES18 TAB'))
+WebUI.doubleClick(findTestObject('Actpol_Scripts/Opsporing/MBES18/MBES18 TAB'))
 
-WebUI.delay(1)
+WebUI.delay(8)
 
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/MBES18/8 Documenten/edit default mbes 18'))
 
@@ -113,7 +113,7 @@ WebUI.delay(1)
 
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/MBES18/8 Documenten/document popup save'))
 
-WebUI.delay(1)
+WebUI.delay(15)
 
 WebUI.click(findTestObject('Actpol_Scripts/Opsporing/MBES18/8 Documenten/New Document Close'), FailureHandling.OPTIONAL)
 

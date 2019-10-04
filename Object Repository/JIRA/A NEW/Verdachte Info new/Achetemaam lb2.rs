@@ -6,11 +6,11 @@
    <elementGuidId>418a34e8-0889-4d9f-9738-2c85568a691b</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>(//ul/li[text()=&quot;MES, Rennox, 21/12/1981&quot;])[2]</value>
+         <key>BASIC</key>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
+         <value>(//ul/li[contains(text(),&quot;aaa&quot;])[1]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>XPATH</selectorMethod>

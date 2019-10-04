@@ -8,6 +8,6 @@ Step 5: Click on new icon in tab bekendeaangehoudenverdachte,
 Step 6: The bekendeaangehoudenverdachte selected should not be avauilable again to select</description>
    <name>Navigation Generiek - assistentie - rol proces aangever. Also Opsporing - entiteiten - Persoon - aangever</name>
    <tag></tag>
-   <comment></comment>
+   <comment>Entiteiten proces start</comment>
    <testCaseGuid>d1023da2-e3ba-4966-81d7-741916a0829b</testCaseGuid>
 </TestCaseEntity>

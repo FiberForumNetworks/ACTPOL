@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>/html/body/div[2]/table/tbody/tr[6]/td[1]/a[2]/img[count(. | //*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame']) = count(//*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame'])]</value>
+         <value>/html/body/div[2]/table/tbody/tr[2]/td[1]/a[2]/img[count(. | //*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame']) = count(//*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -17,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>/html/body/div[2]/table/tbody/tr[6]/td[1]/a[2]/img</value>
+      <value>/html/body/div[2]/table/tbody/tr[2]/td[1]/a[2]/img</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

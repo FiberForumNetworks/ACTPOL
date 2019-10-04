@@ -19,7 +19,7 @@ WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandli
 
 KeywordLogger log = new KeywordLogger()
 
-WebUI.delay(1)
+WebUI.delay(4)
 
 'Mouse over to Generic tab'
 WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Generiek'))

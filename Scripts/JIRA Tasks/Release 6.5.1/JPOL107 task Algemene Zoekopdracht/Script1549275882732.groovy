@@ -13,21 +13,7 @@ import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 
-WebUI.openBrowser('')
-
-WebUI.deleteAllCookies()
-
-WebUI.waitForPageLoad(30)
-
-WebUI.maximizeWindow()
-
-WebUI.navigateToUrl('http://10.20.10.7:8202/actpoldev/JPOL107/nxmenu.pgm?docnum=604')
-
-WebUI.setText(findTestObject('Actpol_Scripts/login/userid'), GlobalVariable.ID)
-
-WebUI.setEncryptedText(findTestObject('Actpol_Scripts/login/password'), GlobalVariable.enpassword)
-
-WebUI.click(findTestObject('Actpol_Scripts/login/login'))
+WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
 
 WebUI.delay(2)
 
@@ -41,11 +27,11 @@ WebUI.setText(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdrach
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht/Next Poc van'), '24/01/2018')
+WebUI.setText(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht/Next Poc van'), '24012018')
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht/Next Poc tot'), '24/01/2019')
+WebUI.setText(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht/Next Poc tot'), '24012019')
 
 WebUI.delay(1)
 
@@ -54,4 +40,6 @@ WebUI.click(findTestObject('JIRA/a person/Zoekan'))
 WebUI.delay(2)
 
 WebUI.click(findTestObject('JIRA/a person/person selection'))
+
+WebUI.closeBrowser()
 
