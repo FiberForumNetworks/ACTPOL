@@ -21,9 +21,9 @@ WebUI.delay(2)
 WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie'), 'persoon', 
     false)
 
-not_run: WebUI.delay(1)
+WebUI.delay(1)
 
-not_run: WebUI.setText(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Achternaam'), 'JONG')
+WebUI.setText(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Achternaam'), 'Belioso')
 
 not_run: WebUI.delay(1)
 
@@ -49,11 +49,11 @@ not_run: WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/General Search
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Next Poc van'), '24/01/2018')
+WebUI.setText(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Next Poc van'), '24092019')
 
 WebUI.delay(1)
 
-WebUI.setText(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Next Poc tot'), '24/01/2019')
+WebUI.setText(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Next Poc tot'), '30092019')
 
 WebUI.delay(1)
 

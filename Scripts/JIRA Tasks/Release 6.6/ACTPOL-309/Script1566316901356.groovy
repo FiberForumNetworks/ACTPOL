@@ -16,16 +16,17 @@ import com.kms.katalon.core.testobject.ConditionType as ConditionType
 
 WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
 
-WebUI.waitForPageLoad(30)
+not_run: WebUI.waitForPageLoad(30)
 
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie'), 'assist', 
-    false)
+not_run: WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie'), 
+    'assist', false)
 
-WebUI.setText(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie Set text'), GlobalVariable.Generiekassistenite_Module)
+not_run: WebUI.setText(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie Set text'), 
+    GlobalVariable.Generiekassistenite_Module)
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Zoeken new'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Zoeken new'))
 
 WebUI.delay(2)
 
@@ -44,9 +45,11 @@ WebUI.delay(5)
 
 WebUI.click(to)
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Confirmeren'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Confirmeren'))
+
+not_run: WebUI.switchToWindowIndex(0)
 
 WebUI.delay(5)
 

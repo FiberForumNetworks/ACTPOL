@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>#Enhancement Dienstovername (alarm KPA)
+Description
+It should be possible to have the same Dienstovername registered twice.
+
+Solution
+Add validation check for not being able to overlap in Generiek- Dienstovername (check on the following field: Afdeling, Type Dienst, Team, type Proces, Datum van/tot and Diensttijd van/tot and teamleiding should never be the same).
+If these fields are the same user should get error message and prevent to save record.
+
+Also create an SQL statement to find all shift overlaps so that they can be fixed when implementing this change.
+see where the Dienstovername volgnummer is connected to other DB2 files to get a sense of the impact of deleting a record.
+
+Testplan
+Step 1: Go to Generiek Dienstovername
+Step 2: Enter a Dienstovername with all the mandatory fields and save.
+Step 3: Go to Generiek Dienstovername and enter the same information in a new record.
+Step 4: user should get an error message and second dienstovername should not save.
+Navigation
+Generiek - Wachtovername/Dienstovername</description>
+   <name>ACTPOL-593</name>
+   <tag>ACTPOL-593</tag>
+   <comment></comment>
+   <testCaseGuid>b15ee467-f6e5-467d-8619-bcc353850a36</testCaseGuid>
+</TestCaseEntity>

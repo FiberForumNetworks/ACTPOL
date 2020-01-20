@@ -6,12 +6,12 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description>URL of the Application Under Test (AUT)</description>
-      <initValue>'http://10.20.10.7:8202/actpoldev/JPOL558/nxmenu.pgm?docnum=604'</initValue>
+      <initValue>'http://10.20.10.7:8202/actpoldev/JPOL318/nxmenu.pgm?docnum=604'</initValue>
       <name>DEVURL</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description>A valid account used during the test</description>
-      <initValue>'vidhya04'</initValue>
+      <initValue>'vidhya06'</initValue>
       <name>password</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -173,5 +173,35 @@
       <description></description>
       <initValue>'19/08/2019 06.30.00'</initValue>
       <name>Dienstovername_WachtovernameID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://10.153.158.74/kbpoltstpublic/nxlogin.pgm'</initValue>
+      <name>FATKPCNURL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'2C/nj9vcEjGfgjgwjaP+LA=='</initValue>
+      <name>FATKPCNID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'bSsEeu5kcl7GBBpwhLwLfQ=='</initValue>
+      <name>FATKPCNPASSWORD</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'http://10.153.158.75/kmarpltstpublic/nxlogin.pgm'</initValue>
+      <name>FATKUMARURL</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'FFjq04bh1JTyzrV0uBQnTg=='</initValue>
+      <name>FATKMARID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'bSsEeu5kcl7GBBpwhLwLfQ=='</initValue>
+      <name>FATKMARPASWORD</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

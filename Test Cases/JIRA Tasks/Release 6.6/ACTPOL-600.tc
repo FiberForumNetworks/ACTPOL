@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Decription :
+Based on feedback of the client we have some change request.
+Currently in MBES18 module in the Tab Incident, the field Bijzonderheden is too small.
+Step 1: Go to Generiek - MBES18.
+Step 2: Open an existing record and go to tab Incident.
+Step 3: Fill all mandatory fields and add a text of 350 characters in the Bijzonderheden field. Click save.
+Step 4: record should be saved and be visible.
+Generiek - MBES18 - tab Incident - field Bijzonderheden</description>
+   <name>ACTPOL-600</name>
+   <tag>ACTPOL-600</tag>
+   <comment></comment>
+   <testCaseGuid>d8b46857-bb15-4e46-815b-763a390f99d4</testCaseGuid>
+</TestCaseEntity>

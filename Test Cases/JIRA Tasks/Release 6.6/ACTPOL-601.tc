@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Description :
+In Vreemdeling module the field Type below Reisdocument Visum contains the wrong information.
+Step 1: Go to Generiek - Assistentie - Rol/proces - Vreemdeling fill in mandatory fields and save
+Step 2: Go to tab Reisdocumenten and select in soort visum
+Step 3: Open dropdown Type. This should contain these values: CN, US, CAN or SCHENGEN
+Step 4: Save record.
+Generiek - Assistentie - Rol/proces - Vreemdeling - Tab Reisdocumenten</description>
+   <name>ACTPOL-601</name>
+   <tag>ACTPOL-601</tag>
+   <comment></comment>
+   <testCaseGuid>07612b6a-d0fd-4ac1-997b-df38b9e356bc</testCaseGuid>
+</TestCaseEntity>

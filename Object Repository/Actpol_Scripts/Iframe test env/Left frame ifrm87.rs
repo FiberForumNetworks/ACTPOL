@@ -12,7 +12,7 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//iframe[@name = 'ifrm87' or @name=&quot;ifrm141&quot; or @name=&quot;ifrm17&quot; or @name=&quot;ifrm18&quot; or @name=&quot;ifrm215&quot; or @name=&quot;ifrm226&quot; or @name=&quot;ifrm202&quot; or @name=&quot;ifrm258&quot;]</value>
+         <value>//iframe[@name = 'ifrm87' or @name=&quot;ifrm141&quot; or @name=&quot;ifrm17&quot; or @name=&quot;ifrm18&quot; or @name=&quot;ifrm215&quot; or @name=&quot;ifrm226&quot; or @name=&quot;ifrm202&quot; or @name=&quot;ifrm258&quot; or @name=&quot;ifrm96&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -57,6 +57,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//iframe[@name = 'ifrm87' or @name=&quot;ifrm141&quot; or @name=&quot;ifrm17&quot; or @name=&quot;ifrm18&quot; or @name=&quot;ifrm215&quot; or @name=&quot;ifrm226&quot; or @name=&quot;ifrm202&quot; or @name=&quot;ifrm258&quot;]</value>
+      <value>//iframe[@name = 'ifrm87' or @name=&quot;ifrm141&quot; or @name=&quot;ifrm17&quot; or @name=&quot;ifrm18&quot; or @name=&quot;ifrm215&quot; or @name=&quot;ifrm226&quot; or @name=&quot;ifrm202&quot; or @name=&quot;ifrm258&quot; or @name=&quot;ifrm96&quot;]</value>
    </webElementProperties>
 </WebElementEntity>

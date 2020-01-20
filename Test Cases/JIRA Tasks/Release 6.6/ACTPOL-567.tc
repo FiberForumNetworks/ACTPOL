@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>#Date search in Persoon algemene zoekopdracht
+When searching person in algemene zoekopdracht and Datum van/tot is filled the user will get no results.
+Step 1: Go to Algemene zoekopdracht - Persoon
+Step 2: Enter in the Achternaam field &quot;Belioso&quot; and enter in datum van field 1-8-2019 in tot 21-8-2019
+Step 3: Click on filter and the search results should show Belioso..
+Algemene zoekopdracht - Persoon</description>
+   <name>ACTPOL-567</name>
+   <tag>ACTPOL-567</tag>
+   <comment></comment>
+   <testCaseGuid>7a837170-4919-4f24-ab60-4c7b2bad03fd</testCaseGuid>
+</TestCaseEntity>

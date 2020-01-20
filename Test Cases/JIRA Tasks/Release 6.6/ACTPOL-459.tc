@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>#KPC, KPSM and KPA: Dienst Registratie Bug
+This is an issue on Aruba Production that i have NOT been able to reproduce in any other environment with exeption of Aruba Test.
+Menu-Generiek-Assistenties
+Select any assistentie in edit mode
+Click on tab Activiteiten
+Click on Nieuw Dienst Registratie
+Select an activity, edit the eind tijd and fill in a bijzonderheid (detail/peculiarity)
+Click on save</description>
+   <name>ACTPOL-459</name>
+   <tag>ACTPOL-459</tag>
+   <comment></comment>
+   <testCaseGuid>afc5eac3-a9a7-4e3a-912b-b9295b4edf27</testCaseGuid>
+</TestCaseEntity>

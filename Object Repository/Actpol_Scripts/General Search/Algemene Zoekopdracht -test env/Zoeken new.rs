@@ -11,7 +11,7 @@
       </entry>
       <entry>
          <key>BASIC</key>
-         <value>//form[@id='general-search']//span[contains(text(),'zoeken') or text()=&quot;filteren&quot;][count(. | //*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe test env/Left frame ifrm87']) = count(//*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe test env/Left frame ifrm87'])]</value>
+         <value> (//span[text()='zoeken' or text()=&quot;filteren&quot;])[1][count(. | //*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe test env/Left frame ifrm87']) = count(//*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe test env/Left frame ifrm87'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,7 +21,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//form[@id='general-search']//span[contains(text(),'zoeken') or text()=&quot;filteren&quot;]</value>
+      <value> (//span[text()='zoeken' or text()=&quot;filteren&quot;])[1]</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

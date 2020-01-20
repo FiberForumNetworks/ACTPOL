@@ -7,12 +7,20 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value>//*[@id=&quot;wetboek&quot;]/input[3]</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>//*[@id=&quot;wetboek&quot;]/input[3]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//*[@id=&quot;wetboek&quot;]/input[3]</value>
+   </webElementProperties>
 </WebElementEntity>

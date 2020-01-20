@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>To make clear and give more option for entering Bedrag and Valuta a change is required.
+Step 1: Go to Generiek - MBES18 edit an existing record.
+Step 2: Go to tab Bezittingen en Baggage fill in mandatory fields and enter behind field Geld in the &quot;Bedrag en Valuta Omschrijving&quot; field various amounts and valuta.
+Step 3: Save this record.
+Step 4: Record is saved and entered information is visible.
+Generiek - MBES18 - tab Bezittingen en Baggage</description>
+   <name>ACTPOL-606</name>
+   <tag>ACTPOL-606</tag>
+   <comment></comment>
+   <testCaseGuid>ce776ff1-7d70-4a37-a0d0-8ed71f109c93</testCaseGuid>
+   <variable>
+      <defaultValue>'!@#$%^&amp;*() _+ ?>&lt;&quot;:qwertyuiop{}[]asdfghjkl.,mnbvcxz123654789/*-+~dlkbvfbvbfkv fdm;lmf;dmbfmb nfn fm lmf kfv nklpdvnds\r\nsvslnvsdnv;dnsvnd;snndklb kaadad'</defaultValue>
+      <description></description>
+      <id>13790902-d286-4fea-9142-c7a1a880cc05</id>
+      <masked>false</masked>
+      <name>Textarea</name>
+   </variable>
+</TestCaseEntity>

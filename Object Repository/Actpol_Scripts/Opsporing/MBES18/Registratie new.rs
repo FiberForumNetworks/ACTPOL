@@ -9,6 +9,10 @@
          <key>BASIC</key>
          <value>//*[@id=&quot;RegistratieAUform&quot;]/following::div[@id=&quot;errRegistratie&quot;]/following::input[1][count(. | //*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame']) = count(//*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame'])]</value>
       </entry>
+      <entry>
+         <key>XPATH</key>
+         <value>//*[@id=&quot;accordion-2&quot;]/input[5]</value>
+      </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>

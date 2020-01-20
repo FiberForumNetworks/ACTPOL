@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Testplan :
+Step 1: Go to Generiek - MBES18.
+Step 2: Open an existing record and go to tab Incident.
+Step 3: Go to tab “Inbewaringstelling c.q. Plaatsingsgegevens” and fill all mandatory fields and leave the following field blank. Field &quot;Inbewaringstelling sinds&quot;, Field “Bekend bij IND-CN in het kader van toelating/bescherming&quot; and Field &quot;Datum beeindiging rechtmatig verblijf&quot;
+Step 4: Go to tab “Overige gegevens” fill all mandatory fields and leave this field blank. Field &quot;Contact diplomatieke vertegenwoordeging ter verkrijging van een vervangend reisdocument&quot;
+Step 5: Save this record.
+Step 6: MBES18 record should be saved without error message.</description>
+   <name>ACTPOL-599</name>
+   <tag>ACTPOL-599</tag>
+   <comment></comment>
+   <testCaseGuid>45028db8-2c28-469a-b816-11a5adab5019</testCaseGuid>
+</TestCaseEntity>

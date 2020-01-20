@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>#Omschrijving field Card omschrijving instead of bedrag maximale opname
+To make clear and give more option for entering Pinpas/credit card a change is required.
+Step 1: Go to Generiek - MBES18 edit an existing record.
+Step 2: Go to tab Bezittingen en Baggage fill in mandatory fields and enter behind field Pinpas/credit card in the &quot;Card Omschrijving&quot; field various types of cards.
+Step 3: Save this record.
+Step 4: Record is saved and entered information is visible.
+Generiek - MBES18 - tab Bezittingen en Baggage</description>
+   <name>ACTPOL-607</name>
+   <tag>ACTPOL-607</tag>
+   <comment></comment>
+   <testCaseGuid>3d5610cb-bf3c-4a9f-85e0-836708a6fcfc</testCaseGuid>
+   <variable>
+      <defaultValue>'!@#$%^&amp;*() _+ ?>&lt;&quot;:qwertyuiop{}[]asdfghjkl.,mnbvcxz123654789/*-+~dlkbvfbvbfkv fdm;lmf;dmbfmb nfn fm lmf kfv nklpdvnds\r\nsvslnvsdnv;dnsvnd;snndklb kaadad'</defaultValue>
+      <description></description>
+      <id>ce39a1a2-6253-418e-a9a8-2b0ee5b9fbf0</id>
+      <masked>false</masked>
+      <name>Textarea</name>
+   </variable>
+</TestCaseEntity>

@@ -7,14 +7,22 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value>/html/body/div[6]/ul/li[1]</value>
       </entry>
       <entry>
          <key>XPATH</key>
-         <value>//ul/li[text()=&quot;, Tarun, 17/10/1985&quot;]</value>
+         <value>/html/body/div[6]/ul/li[1]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html/body/div[6]/ul/li[1]</value>
+   </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>

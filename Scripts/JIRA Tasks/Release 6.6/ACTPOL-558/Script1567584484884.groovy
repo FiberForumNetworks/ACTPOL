@@ -34,12 +34,12 @@ WebUI.click(findTestObject('Actpol_Scripts/Opsporing/MBES18/MBES18 TAB'))
 WebUI.delay(2)
 
 'Click MBES tab'
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/MBES18/MBES18 TAB'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/MBES18/MBES18 TAB'))
 
-WebUI.delay(2)
+not_run: WebUI.delay(2)
 
 'Click MBES tab'
-WebUI.click(findTestObject('Actpol_Scripts/Opsporing/MBES18/MBES18 TAB'))
+not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/MBES18/MBES18 TAB'))
 
 log.logInfo('Clicking MBES18 tab ')
 

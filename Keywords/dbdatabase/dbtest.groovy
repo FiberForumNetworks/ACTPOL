@@ -20,9 +20,7 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords
 
 import internal.GlobalVariable
 
-import MobileBuiltInKeywords as Mobile
-import WSBuiltInKeywords as WS
-import WebUiBuiltInKeywords as WebUI
+
 
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.WebDriver
@@ -52,45 +50,52 @@ import java.sql.Statement;
 class dbtest {
 	private WebDriver Driver;
 	@Keyword
-	def refreshBrowser() throws SQLException, ClassNotFoundException {
+	def RandomString() throws SQLException, ClassNotFoundException {
 
-		//10.20.10.7
-		String dbURL = "jdbc:db2://10.20.10.7:4015/S1031e70";
-		String username = "sasi2";
-		String password = "sasi2";
-		//Load DB2 JDBC Driver
-		// example /com.ibm.db2.jcc.DB2Driver
-		Class.forName("com.ibm.db2.jcc.DB2Driver");
 
-		//Creating connection to the database
-		Connection con = DriverManager.getConnection("dbURL","username","password");
-		//Creating statement object
-		//Statement st = con.createStatement();
-		System.out.print("mani");
-		con.close();
 
-		/*String selectquery = "select  EIJDMLDMNT,EIJDVLGNR,EIJDDTM2,EIJDEXPRTM,EIJDRSLT from kcdevdta.pbbpf2070 where EIJDEVENT=5860001918;";
-		 //Executing the SQL Query and store the results in ResultSet
-		 ResultSet rs = st.executeQuery(selectquery);
-		 //While loop to iterate through all data and print results
-		 while (rs.next()) {
-		 System.out.println("Displaying record...");
-		 String  id  = rs.getInt("EIJDMLDMNT");
-		 String  id2  = rs.getInt("EIJDVLGNR");
-		 String	date = rs.getString ("EIJDDTM2");
-		 String	time = rs.getString("EIJDEXPRTM");
-		 String	yesorno = rs.getString("EIJDRSLT");
-		 //Display values
-		 System.out.print("EIJDMLDMNT: " + id);
-		 System.out.print("EIJDVLGNR: " + id2);
-		 System.out.print("EIJDDTM2: " + date);
-		 System.out.print("EIJDEXPRTM: " + time);
-		 System.out.println("EIJDRSLT: " + yesorno);*/
+		// function to generate a random string of length n
+		String getAlphaNumericString= n
+
+
+		// chose a Character random from this String
+		String AlphaNumericString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"+ "0123456789"+ "abcdefghijklmnopqrstuvxyz";
+
+
+
+		// create StringBuffer size of AlphaNumericString
+		StringBuilder sb = new StringBuilder(n);
+
+		for (int i = 0; i < n; i++) {
+
+			// generate a random number between
+			// 0 to AlphaNumericString variable length
+
+			int index = (int)(AlphaNumericString.length()
+					* Math.random());
+
+			// add Character one by one in end of sb
+			sb.append(AlphaNumericString
+					.charAt(index));
+		}
+
+		return sb.toString();
 	}
-	//Closing DB Connection
+
+	public static void main(String[] args)
+	{
+
+		// Get the size n
+		int n = 350;
+
+		// Get and display the alphanumeric string
+		System.out.println(RandomString
+				.getAlphaNumericString(n));
+	}
+
+
 
 }
-
 
 
 

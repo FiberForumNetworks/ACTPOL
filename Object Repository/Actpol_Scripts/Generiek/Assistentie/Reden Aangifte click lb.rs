@@ -7,14 +7,22 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value>/html/body/div[11]/ul/li[4]</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>/html/body/div[11]/ul/li[4]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>/html/body/div[11]/ul/li[4]</value>
+   </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>

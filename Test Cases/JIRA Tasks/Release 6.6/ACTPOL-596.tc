@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>#Disappearing persoon entity
+In onderzoek, when you add an entity person and attach a rol/proces to this person: if you update the rolproces by clicking directly on it in the grid, the entity disappears. 
+
+If you first open the person record, and from there update the rol/proces, it will not disappear.
+Menu, Opsporing, Onderzoek
+Select any existing onderzoek. 
+Click on tab Entiteiten
+Click on button nieuwe entiteit
+Select type entiteit 'Persoon'
+Field achternaam: start typing any name and select an existing person
+Select a Rol/Proces e.g. 'Aangifte/Aangever'
+Fill mandatory fields on main accordeon: toevoegen als slachtoffer- NEE, Slachtofferhulp- NEE
+Click on accordion Reden Aangifte and add one
+Click on accordion Strafbaar feit and add one
+Click on Save: the rol/process is saved
+Click on Save again to save the persoon
+Persoon does not disappear:
+Person disappears:</description>
+   <name>ACTPOL-596</name>
+   <tag>ACTPOL-596</tag>
+   <comment></comment>
+   <testCaseGuid>4d5caa06-263c-4ef0-8532-da15232dfc34</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>#Issue Rapportage MPO
+When trying to create report from 11 nov 2018 to 31 nov 2018 (In Production).
+Results are shown but when trying to create an Excell only 3 are shown in the rport.
+Also when there are multiple pages of information, you have to export each page individualy.
+Step 1: Generate report MPO with a period where you get much results:
+
+DEV: Jan 11 2019 to Aug 9th 2019.
+TEST: Aug 1st 2015 to Sept 30th 2015.
+Step 2: Export results on Excell
+Step 3: results on Excell and PDF should be the same as on screen.
+
+Navigation:
+Algemene rapportages - Aanrijding MPO</description>
+   <name>ACTPOL-554</name>
+   <tag>ACTPOL-554</tag>
+   <comment></comment>
+   <testCaseGuid>b3a5dbbe-f412-4c35-a2fa-c70743c0f7aa</testCaseGuid>
+</TestCaseEntity>

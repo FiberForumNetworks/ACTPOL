@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>#Deadline signal for condition access - (phase 2-vreemdeling)
+Description
+For the Vremdeling module phase 2 there are some chanes required.
+To send out Werk opdracht ones period of time is passed.
+
+Solution
+Create functionality that when in the Vreemdeling proces, in the Toegang tab when voorwaarde een &quot;oplegging van de plicht van 72 uren&quot; is selected, a signal is sent when this 72 hours (in hours) is exceeded.
+This signal comes in the form of a Werkopdracht.
+This Werkopdracht contains which plicht/voorwaarde has been exceeded, naam Verbalisant, naam Vreemdeling, datum, welke voorwaarde en verblijf adres.
+After selecting and saving the voorwaarde, 72 hours must start counting. Here is also the possibility that when selecting an article with meldplicht that also a Notification/werkopdracht is sent to the Verbalisant entered in tab Toegang.
+
+Check attachment for detailed description.
+
+Testplan
+Step 1: Go to Generiek - Assistentie.
+Step 2: Go to Rol/proces tab and add a new Vreemdeling proces
+Step 3: Fill in mandatory fields and save
+Step 4: Go to tab Toegang and fill in the mandatory fields.
+Step 5: add voorwaarde - &quot;oplegging van de plicht van 72 uren&quot; and changes date to 71 hours previous then current time.
+Step 6: Save record.
+Step 7: after 1hour and 1 minute a Werkopdracht has to be sent to the Verbalisant filled in Toegang (If record is updated with a Information in tab vertrek, werkopdracht should not be sent)
+
+Note: In local TEST and DEV we don't have all 24 scheduled jobs setup. Instead what you can do is create the scheduled job if it isn't there and submit it immediately instead of waiting an hour. In dev you can run scheduled job &quot;POL3800201&quot; and for test run &quot;POL38002T1&quot;. Your Vreemdeling still needs to be older than VREEMDELING_TOEGANG_DEADLINE_HOURS hours in order to make the task record though. The scheduled job just checks Vreemdelings.
+
+Navigation
+Generiek - Asstentie - rol/proces - Vreemdeling - tab Toegang</description>
+   <name>ACTPOL-319</name>
+   <tag>ACTPOL-319</tag>
+   <comment></comment>
+   <testCaseGuid>25de73e2-38a3-4c0a-bb0b-808d7bfca713</testCaseGuid>
+</TestCaseEntity>
