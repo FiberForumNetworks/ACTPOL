@@ -14,6 +14,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
 import com.kms.katalon.core.logging.KeywordLogger as KeywordLogger
 import com.kms.katalon.core.util.KeywordUtil as KeywordUtil
+import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
+import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
 
 WebUI.callTestCase(findTestCase('main/Actpol_Login_testenv'), [:], FailureHandling.STOP_ON_FAILURE)
 
@@ -28,10 +30,6 @@ WebUI.click(findTestObject('Actpol_Scripts/Opsporing/MBES18/MBES18 TAB'))
 
 'Mouse over to Generic tab'
 WebUI.mouseOver(findTestObject('Actpol_Scripts/Menu navigation/Generiek/Generiek'))
-
-not_run: WebUI.delay(2)
-
-not_run: WebUI.click(findTestObject('Actpol_Scripts/Opsporing/MBES18/MBES18 TAB'), FailureHandling.OPTIONAL)
 
 WebUI.delay(1)
 
@@ -54,13 +52,13 @@ String Verify = WebUI.verifyElementVisible(findTestObject('JIRA/A Relese 6.6/ACT
 KeywordUtil.logInfo(Verify)
 
 String Verify2 = 'true'
-if (Verify==Verify2) {
+
+if (Verify == Verify2) {
     WebUI.click(findTestObject('JIRA/A Relese 6.6/ACTPOL-600/Default Incidenten edit'))
 
     WebUI.delay(4)
 
-    WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/Bejzonderheden'), 
-		'/*-!@!@!@!@!#$^%$&%*&((&)()*_)_)+781613131zxzcbvcmbn,./alkjhfdsasqwqewrtetoiirpkp[[pkkgmengehhygpengheohgpeohgehbvlbde```````fefegeggegresvfrbrs2423432')
+    WebUI.setText(findTestObject('Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/Bejzonderheden'), '/*-!@!@!@!@!#$^%$&%*&((&)()*_)_)+781613131zxzcbvcmbn,./alkjhfdsasqwqewrtetoiirpkp[[pkkgmengehhygpengheohgpeohgehbvlbde```````fefegeggegresvfrbrs2423432')
 
     WebUI.delay(1)
 
@@ -73,6 +71,8 @@ if (Verify==Verify2) {
     KeywordUtil.logInfo('Bijzonderheden in tab Incidenten and make this 350 characters is saved')
 
     KeywordUtil.markPassed('Bijzonderheden in tab Incidenten and make this 350 characters is saved')
+
+    WebUI.closeBrowser()
 } else {
     KeywordUtil.logInfo('INCIDENTEN data is not find')
 
@@ -129,5 +129,7 @@ if (Verify==Verify2) {
     KeywordUtil.logInfo('Bijzonderheden in tab Incidenten and make this 350 characters is saved')
 
     KeywordUtil.markPassed('Bijzonderheden in tab Incidenten and make this 350 characters is saved')
+
+    WebUI.closeBrowser()
 }
 

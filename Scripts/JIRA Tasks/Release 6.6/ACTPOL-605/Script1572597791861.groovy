@@ -82,12 +82,15 @@ WebUI.delay(1)
 String checktext = Textarea
 
 if (Textarea.equals(true) == AftertextOmschrijving.equals(true)) {
+	
     KeywordUtil.logInfo(AftertextOmschrijving)
 
     KeywordUtil.logInfo(Textarea)
 
     KeywordUtil.markPassed(((Textarea + 'entered text and') + AftertextOmschrijving) + 'both are matching')
+	
 } else {
+	
     KeywordUtil.logInfo(AftertextOmschrijving)
 
     KeywordUtil.logInfo(Textarea)

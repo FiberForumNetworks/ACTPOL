@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Testplan
+Step 1: Go to Info organisatie - Info organisatie open an existing record in edit mode.
+Step 2: Enter mandatory fields and save.
+Step 3: Go to the Documenten tab en generate MBES18, MBES19 and MBES20 document
+Step 4: Documents should display with information entered in the MBES18 request.
+Step 5: Check the 4 documents that all data is filled correctly.
+Navigation
+Info organisatie - Info organisatie - tab Documenten</description>
+   <name>ACTPOL-590</name>
+   <tag>ACTPOL-590</tag>
+   <comment></comment>
+   <testCaseGuid>9acb0de9-b076-4e75-9f50-40579c6be0a4</testCaseGuid>
+</TestCaseEntity>
