@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Aangever Achternaam</name>
+   <name>Page 2 click</name>
    <tag></tag>
-   <elementGuidId>27de7cc9-7982-4d18-9176-dec23fa715fc</elementGuidId>
+   <elementGuidId>d21ff731-7ca7-4342-aa30-81c2bfe8a68c</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;Aangperson&quot;]/input[2]</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;Aangperson&quot;]/input[2][count(. | //*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe test env/only ifrmviewdocnr ight side']) = count(//*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe test env/only ifrmviewdocnr ight side'])]</value>
+         <value>//div[@data-target=&quot;INV24005accordion-1&quot;]//span[@class=&quot;prev-next-links&quot;]//following::a[text()=&quot;2&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;Aangperson&quot;]/input[2]</value>
+      <value>//div[@data-target=&quot;INV24005accordion-1&quot;]//span[@class=&quot;prev-next-links&quot;]//following::a[text()=&quot;2&quot;]</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

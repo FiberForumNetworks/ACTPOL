@@ -7,14 +7,22 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value>//li[@class='ac_even ac_over']</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>//ul/li[text()=&quot;TTT, Aagttt, 01/01/2019&quot;]</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//li[@class='ac_even ac_over']</value>
+   </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>

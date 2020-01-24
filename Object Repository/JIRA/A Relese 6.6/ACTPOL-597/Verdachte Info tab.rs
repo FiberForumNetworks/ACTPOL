@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Aangever Achternaam</name>
+   <name>Verdachte Info tab</name>
    <tag></tag>
-   <elementGuidId>27de7cc9-7982-4d18-9176-dec23fa715fc</elementGuidId>
+   <elementGuidId>00be9ca3-0781-4132-bb8b-3a3f6c7eb818</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;Aangperson&quot;]/input[2]</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;Aangperson&quot;]/input[2][count(. | //*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe test env/only ifrmviewdocnr ight side']) = count(//*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe test env/only ifrmviewdocnr ight side'])]</value>
+         <value>//span[contains(text(),'Verdachte Info')][count(. | //*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe test env/only ifrmviewdocnr ight side']) = count(//*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe test env/only ifrmviewdocnr ight side'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;Aangperson&quot;]/input[2]</value>
+      <value>//span[contains(text(),'Verdachte Info')]</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

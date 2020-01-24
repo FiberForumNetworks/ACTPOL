@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Go to Generiek - Assistentie - rol/proces - for example aangever - new persoon
+Step 2: enter in the field ID nummer numbers and letters and save
+Step 3: Reopen dit Persoon. The entered data in ID nummer fied shoudl be visible</description>
+   <name>ACTPOL-510</name>
+   <tag>ACTPOL-510</tag>
+   <comment></comment>
+   <testCaseGuid>1f724476-d64e-4381-9e0c-933c0fa551f0</testCaseGuid>
+   <variable>
+      <defaultValue>'12test'</defaultValue>
+      <description></description>
+      <id>c77c60a9-90f8-42e7-9617-8017d3834653</id>
+      <masked>false</masked>
+      <name>id</name>
+   </variable>
+</TestCaseEntity>

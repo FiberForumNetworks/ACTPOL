@@ -7,19 +7,20 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
+         <value>//*[@id=&quot;titeldesc&quot;]/select</value>
       </entry>
       <entry>
          <key>XPATH</key>
          <value>//*[@id=&quot;accordion-1&quot;]/table/tbody/tr[4]/td[2]/input</value>
       </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>
-      <name>ref_element</name>
+      <name>xpath</name>
       <type>Main</type>
-      <value>Object Repository/Actpol_Scripts/Iframe/RightFrame</value>
+      <value>//*[@id=&quot;titeldesc&quot;]/select</value>
    </webElementProperties>
 </WebElementEntity>

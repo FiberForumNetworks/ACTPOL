@@ -6,11 +6,11 @@
    <elementGuidId>21dc2208-7779-4133-8811-676869c3bc85</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[text()=&quot;200601653&quot;]/preceding-sibling::td/a[2]</value>
+         <key>BASIC</key>
+         <value>(//img[@alt=&quot;Edit&quot; and @title=&quot;Edit&quot; and @alttxt=&quot;img_edit&quot;])[1]</value>
       </entry>
       <entry>
-         <key>BASIC</key>
+         <key>XPATH</key>
          <value>//*[text()=&quot;200601653&quot;]/preceding-sibling::td/a[2]</value>
       </entry>
    </selectorCollection>
@@ -21,7 +21,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[text()=&quot;200601653&quot;]/preceding-sibling::td/a[2]</value>
+      <value>(//img[@alt=&quot;Edit&quot; and @title=&quot;Edit&quot; and @alttxt=&quot;img_edit&quot;])[1]</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
@@ -33,6 +33,7 @@
    <webElementXpaths>
       <isSelected>false</isSelected>
       <matchCondition>equals</matchCondition>
+      <type>Main</type>
       <value>/html/body/div[1]/table/tbody/tr[2]/td[1]/a[2]/img</value>
    </webElementXpaths>
 </WebElementEntity>

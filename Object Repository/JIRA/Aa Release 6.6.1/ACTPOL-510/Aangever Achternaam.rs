@@ -3,15 +3,11 @@
    <description></description>
    <name>Aangever Achternaam</name>
    <tag></tag>
-   <elementGuidId>27de7cc9-7982-4d18-9176-dec23fa715fc</elementGuidId>
+   <elementGuidId>f1a9ba8e-0cf9-48ee-9417-08d99519f2cb</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;Aangperson&quot;]/input[2]</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;Aangperson&quot;]/input[2][count(. | //*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe test env/only ifrmviewdocnr ight side']) = count(//*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe test env/only ifrmviewdocnr ight side'])]</value>
+         <value>//input[@name='Persoon']</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;Aangperson&quot;]/input[2]</value>
+      <value>//input[@name='Persoon']</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

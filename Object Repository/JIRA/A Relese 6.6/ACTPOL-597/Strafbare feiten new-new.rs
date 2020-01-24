@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Artikel lb</name>
+   <name>Strafbare feiten new-new</name>
    <tag></tag>
-   <elementGuidId>2ef2595a-ee61-425c-b8f0-e1f715e34076</elementGuidId>
+   <elementGuidId>29ab60ef-065e-4202-8c6b-16202ff05627</elementGuidId>
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//li[@class='ac_even ac_over']</value>
-      </entry>
-      <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;nxmenu&quot;]/div[6]/ul/li[1]</value>
+         <value>//input[@class='newOvertreding addButton lang'][count(. | //*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe test env/only ifrmviewdocnr ight side']) = count(//*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe test env/only ifrmviewdocnr ight side'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,6 +17,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//li[@class='ac_even ac_over']</value>
+      <value>//input[@class='newOvertreding addButton lang']</value>
    </webElementProperties>
 </WebElementEntity>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Menu, Opsporing, Onderzoek
+Open any existing onderzoek (that has lots of BOB documents. to create these docs click on tab Documenten, New document, Indeling, Bob. You need to have a person registered with rol/process aangehouden/aanhouding)
+Click on tab Termijnen
+Click on page 2 (or further)
+You will see the grid closes and opens alternatively showing contents of page 1 only</description>
+   <name>ACTPOL-597</name>
+   <tag>ACTPOL-597</tag>
+   <comment></comment>
+   <testCaseGuid>9f531d77-82a4-4b49-b73a-b27555d012f8</testCaseGuid>
+</TestCaseEntity>

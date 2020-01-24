@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Description
+Possibility to register and Vreemdeling nummer in MBES18 and also in Vreemdeling rol/proces.
+This should be also a criteria to search on in the generic Personmodule.
+Testplan
+Step 1: Go to Generiek Assistentie and add in new person in rol/proces Vreemdeling.
+Step 2: Enter a Vreemdeling and a Vreemdeling nummer should be created.
+Step 3: Save this new persoon.
+Step 4: Check grid MBES18 record should be shown with the Vreemdeling number in the grid.
+Step 5: Go to algemeen zoekopdracht and search on this Vreemdeling record.
+Step 6: Right Persoon should be shown in the search results.
+Navigation
+
+Generic Personalia module.
+Generiek - MBES18 - Personalia (display)
+Generiek - assistentie - Rol/proces - Vreemdeling (Display)</description>
+   <name>ACTPOL-592</name>
+   <tag>ACTPOL-592</tag>
+   <comment></comment>
+   <testCaseGuid>c62a25cc-8eb8-4dd9-9f4c-cf06a21c7530</testCaseGuid>
+</TestCaseEntity>

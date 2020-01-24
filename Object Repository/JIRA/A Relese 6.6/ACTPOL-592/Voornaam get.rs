@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebElementEntity>
    <description></description>
-   <name>Aangever Achternaam</name>
+   <name>Voornaam get</name>
    <tag></tag>
-   <elementGuidId>27de7cc9-7982-4d18-9176-dec23fa715fc</elementGuidId>
+   <elementGuidId>8ced5749-de40-48d1-8bd1-60620596e5f0</elementGuidId>
    <selectorCollection>
       <entry>
-         <key>XPATH</key>
-         <value>//*[@id=&quot;Aangperson&quot;]/input[2]</value>
-      </entry>
-      <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;Aangperson&quot;]/input[2][count(. | //*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe test env/only ifrmviewdocnr ight side']) = count(//*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe test env/only ifrmviewdocnr ight side'])]</value>
+         <value>//*[@id=&quot;Aangfname&quot;]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>
@@ -21,7 +17,7 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;Aangperson&quot;]/input[2]</value>
+      <value>//*[@id=&quot;Aangfname&quot;]</value>
    </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>

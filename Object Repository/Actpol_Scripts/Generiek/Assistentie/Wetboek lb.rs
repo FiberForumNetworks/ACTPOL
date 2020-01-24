@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//*[@id=&quot;nxmenu&quot;]/div[5]/ul/li[1][count(. | //*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame']) = count(//*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe/RightFrame'])]</value>
+         <value>//li[@class='ac_even ac_over']</value>
       </entry>
       <entry>
          <key>XPATH</key>
@@ -21,6 +21,6 @@
       <matchCondition>equals</matchCondition>
       <name>xpath</name>
       <type>Main</type>
-      <value>//*[@id=&quot;nxmenu&quot;]/div[5]/ul/li[1]</value>
+      <value>//li[@class='ac_even ac_over']</value>
    </webElementProperties>
 </WebElementEntity>
