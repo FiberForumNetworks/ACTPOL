@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Go to Info organisatie - Info organisatie
+Step 2: Create a new record fill mandatory fields and save.
+Step 3: Add a couple of objecten in Objecten tab and save.
+Step 4: Tab Ambtsverslag and Journaal becomes visible.
+Info organisatie - Info organisatie (next to Onderhoud)</description>
+   <name>ACTPOL-577</name>
+   <tag>ACTPOL-576</tag>
+   <comment></comment>
+   <testCaseGuid>26468088-b018-424c-99b2-cb6f1ec4f0ba</testCaseGuid>
+</TestCaseEntity>

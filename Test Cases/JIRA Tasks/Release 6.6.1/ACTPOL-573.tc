@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Go to Info Organisatie
+Step 2: click on menu item info organisatie
+Step 3: Info organisatie and Journaal option should become visible
+Step 4: select Info organisatie
+Step 5: Grid as seen on Screenshot should become visible
+Info organisatie - Info organisatie (next to Onderhoud)</description>
+   <name>ACTPOL-573</name>
+   <tag>ACTPOL-573</tag>
+   <comment></comment>
+   <testCaseGuid>7a81994c-3c0f-4782-831a-31d32139eb2c</testCaseGuid>
+</TestCaseEntity>

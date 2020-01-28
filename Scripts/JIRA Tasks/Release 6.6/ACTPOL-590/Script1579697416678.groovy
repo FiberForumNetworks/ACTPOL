@@ -22,31 +22,31 @@ WebUI.callTestCase(findTestCase('main/Actpol_Login'), [:], FailureHandling.STOP_
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Info organisatie/Info organisatie tab'))
+WebUI.click(findTestObject('Actpol_Scripts/Info organisatie/A infoorg/Info organisatie tab'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Info organisatie/Info organisatie sub tab'))
+WebUI.click(findTestObject('Actpol_Scripts/Info organisatie/A infoorg/Info organisatie sub tab'))
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('Actpol_Scripts/Info organisatie/Infodesk new'))
+WebUI.click(findTestObject('Actpol_Scripts/Info organisatie/A infoorg/Infodesk new'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Info organisatie/Verzoeker click'))
+WebUI.click(findTestObject('Actpol_Scripts/Info organisatie/A infoorg/Verzoeker click'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Info organisatie/Verzoeker click lb'))
+WebUI.click(findTestObject('Actpol_Scripts/Info organisatie/A infoorg/Verzoeker click lb'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Info organisatie/Afdeling click'))
+WebUI.click(findTestObject('Actpol_Scripts/Info organisatie/A infoorg/Afdeling click'))
 
 WebUI.delay(2)
 
-WebUI.click(findTestObject('Actpol_Scripts/Info organisatie/Afdeling click lb'))
+WebUI.click(findTestObject('Actpol_Scripts/Info organisatie/A infoorg/Afdeling click lb'))
 
 WebUI.delay(1)
 
@@ -78,7 +78,7 @@ println('todaymonth -- ' + Todaym)
 
 println('todayyear -- ' + Todayy)
 
-WebUI.click(findTestObject('Actpol_Scripts/Info organisatie/Datum verzoek'), FailureHandling.STOP_ON_FAILURE)
+WebUI.click(findTestObject('Actpol_Scripts/Info organisatie/A infoorg/Datum verzoek'), FailureHandling.STOP_ON_FAILURE)
 
 WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Monthyear/Rightmonth'), '0', false)
 
@@ -86,46 +86,46 @@ WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/Monthyear/Rightyear'), 
 
 WebUI.click(findTestObject('Actpol_Scripts/Date/Right side/1st'))
 
-WebUI.setText(findTestObject('Actpol_Scripts/Info organisatie/Tijd'), '010101')
+WebUI.setText(findTestObject('Actpol_Scripts/Info organisatie/A infoorg/Tijd'), '010101')
 
-WebUI.selectOptionByIndex(findTestObject('Actpol_Scripts/Info organisatie/Type verzoek'), 1)
+WebUI.selectOptionByIndex(findTestObject('Actpol_Scripts/Info organisatie/A infoorg/Type verzoek'), 1)
 
-WebUI.setText(findTestObject('Actpol_Scripts/Info organisatie/Onderzoeknaam'), 'test katalon')
+WebUI.setText(findTestObject('Actpol_Scripts/Info organisatie/A infoorg/Onderzoeknaam'), 'test katalon')
 
-WebUI.click(findTestObject('Actpol_Scripts/Info organisatie/Zaakofficier click'))
+WebUI.click(findTestObject('Actpol_Scripts/Info organisatie/A infoorg/Zaakofficier click'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Info organisatie/Zaakofficier click lb'))
+WebUI.click(findTestObject('Actpol_Scripts/Info organisatie/A infoorg/Zaakofficier click lb'))
 
-WebUI.selectOptionByIndex(findTestObject('Actpol_Scripts/Info organisatie/Status'), 1)
+WebUI.selectOptionByIndex(findTestObject('Actpol_Scripts/Info organisatie/A infoorg/Status'), 1)
 
-WebUI.setText(findTestObject('Actpol_Scripts/Info organisatie/Verzochte informatie'), 'test katalon')
+WebUI.setText(findTestObject('Actpol_Scripts/Info organisatie/A infoorg/Verzochte informatie'), 'test katalon')
 
-WebUI.click(findTestObject('Actpol_Scripts/Info organisatie/default save'))
+WebUI.click(findTestObject('Actpol_Scripts/Info organisatie/A infoorg/default save'))
 
 WebUI.delay(5)
 
-WebUI.click(findTestObject('Actpol_Scripts/Info organisatie/default edit'))
+WebUI.click(findTestObject('Actpol_Scripts/Info organisatie/A infoorg/default edit'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Info organisatie/Algemeen tab'))
+WebUI.click(findTestObject('Actpol_Scripts/Info organisatie/A infoorg/Algemeen tab'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Info organisatie/Doc tab'))
+WebUI.click(findTestObject('Actpol_Scripts/Info organisatie/A infoorg/Doc tab'))
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Info organisatie/Doc new'))
+WebUI.click(findTestObject('Actpol_Scripts/Info organisatie/A infoorg/Doc new'))
 
 WebUI.delay(1)
 
-WebUI.selectOptionByLabel(findTestObject('Actpol_Scripts/Info organisatie/Selecteer Documentsjabloon'), 'MBES18_Algemeen', 
+WebUI.selectOptionByLabel(findTestObject('Actpol_Scripts/Info organisatie/A infoorg/Selecteer Documentsjabloon'), 'MBES18_Algemeen', 
     false)
 
 WebUI.delay(1)
 
-WebUI.click(findTestObject('Actpol_Scripts/Info organisatie/doc save'))
+WebUI.click(findTestObject('Actpol_Scripts/Info organisatie/A infoorg/doc save'))
 

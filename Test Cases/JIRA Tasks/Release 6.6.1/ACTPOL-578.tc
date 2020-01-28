@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Testplan
+Step 1: Go to Info organisatie - Info organisatie
+Step 2: Create a new record fill mandatory fields and save.
+Step 3: Add a couple of objecten in Objecten tab and save.
+Step 4: Tab Ambtsverslag and save.
+Step 5: check Journaal there should be records created for saving Objects and Ambtsverslag.
+
+Navigation
+Info organisatie - Info organisatie</description>
+   <name>ACTPOL-578</name>
+   <tag>ACTPOL-578</tag>
+   <comment></comment>
+   <testCaseGuid>81187fa7-9c47-411b-b269-b278ddaf2b0f</testCaseGuid>
+</TestCaseEntity>
