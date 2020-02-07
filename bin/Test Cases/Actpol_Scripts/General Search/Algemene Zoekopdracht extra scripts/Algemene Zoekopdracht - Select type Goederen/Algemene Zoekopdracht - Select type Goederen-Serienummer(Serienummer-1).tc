@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Goederen
+Step 2: Set text Serienummer
+Step 3: Search results is an Serienummer</description>
+   <name>Algemene Zoekopdracht - Select type Goederen-Serienummer(Serienummer-1)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b9b0f701-bd3b-4df4-a8c2-a4617a7b83be</testCaseGuid>
+</TestCaseEntity>

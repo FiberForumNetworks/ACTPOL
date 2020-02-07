@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Unable to see data in arrestanten tab.
+
+Test Plan::
+Step 1: Go to Geavanceerd Zoekopdracht Select type alle
+Step 2: Go to Zoeken Text “test” 
+Step 3: Go to filter 
+Step 4: Go to arrestanten
+Step 5: It’s showing web smart error</description>
+   <name>ACTPOL-521</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>993779c3-988d-495f-ab53-13992debb9b7</testCaseGuid>
+</TestCaseEntity>

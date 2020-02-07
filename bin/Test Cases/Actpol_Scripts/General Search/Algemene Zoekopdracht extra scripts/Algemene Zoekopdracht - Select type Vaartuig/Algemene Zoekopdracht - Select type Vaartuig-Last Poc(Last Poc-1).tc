@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Vaartuig
+Step 2: Set text Last Poc
+Step 3: Search results is an Last Poc</description>
+   <name>Algemene Zoekopdracht - Select type Vaartuig-Last Poc(Last Poc-1)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>78992dcf-2f3a-4878-817b-5bf3c6a7952b</testCaseGuid>
+</TestCaseEntity>

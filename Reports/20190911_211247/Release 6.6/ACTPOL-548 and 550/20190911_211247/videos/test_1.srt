@@ -1,0 +1,304 @@
+1
+00:00:00,957 --> 00:00:00,973
+1. callTestCase(findTestCase("main/Actpol_Login_testenv"), [:], STOP_ON_FAILURE)
+
+2
+00:00:02,503 --> 00:00:02,515
+1. openBrowser("")
+
+3
+00:00:20,435 --> 00:00:20,437
+5. deleteAllCookies()
+
+4
+00:00:20,814 --> 00:00:20,816
+9. waitForPageLoad(30)
+
+5
+00:00:27,870 --> 00:00:27,873
+13. maximizeWindow()
+
+6
+00:00:29,054 --> 00:00:29,055
+17. ACTPOLTESTENV = 1
+
+7
+00:00:29,057 --> 00:00:29,059
+21. ACTPOLDEVENV = 2
+
+8
+00:00:29,063 --> 00:00:29,065
+25. ACTPOLKCENV = 3
+
+9
+00:00:29,068 --> 00:00:29,069
+29. ACTPOLKBKPCNENV = 4
+
+10
+00:00:29,071 --> 00:00:29,075
+33. ACTPOLKBKMARENV = 5
+
+11
+00:00:29,078 --> 00:00:29,083
+37. ACTPOLKMENV = 6
+
+12
+00:00:29,089 --> 00:00:29,093
+41. ACTPOLKWENV = 7
+
+13
+00:00:29,104 --> 00:00:29,110
+45. environment = ACTPOLTESTENV
+
+14
+00:00:29,114 --> 00:00:29,117
+49. Selectenv = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>
+
+15
+00:00:29,118 --> 00:00:29,121
+53. switch (environment)
+
+16
+00:00:29,158 --> 00:00:29,160
+2. println(Selectenv = "ACTPOL-TEST-ENV")
+
+17
+00:00:29,169 --> 00:00:29,170
+6. navigateToUrl(TESTURL)
+
+18
+00:00:50,434 --> 00:00:50,436
+10. setText(findTestObject("Actpol_Scripts/login/userid"), username)
+
+19
+00:01:06,960 --> 00:01:06,961
+14. setMaskedText(findTestObject("Actpol_Scripts/login/password"), password)
+
+20
+00:01:08,620 --> 00:01:08,627
+18. click(findTestObject("Actpol_Scripts/login/login"))
+
+21
+00:01:09,942 --> 00:01:09,945
+22. getWindowTitle()
+
+22
+00:01:10,077 --> 00:01:10,082
+26. break
+
+23
+00:01:10,109 --> 00:01:10,111
+5. selectOptionByValue(findTestObject("Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie"), "assist", false)
+
+24
+00:01:38,166 --> 00:01:38,168
+9. setText(findTestObject("Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie Set text"), Generiekassistenite_Module)
+
+25
+00:01:40,604 --> 00:01:40,606
+13. delay(2)
+
+26
+00:01:42,628 --> 00:01:42,629
+17. click(findTestObject("Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Zoeken new"))
+
+27
+00:01:51,240 --> 00:01:51,242
+21. delay(2)
+
+28
+00:01:53,248 --> 00:01:53,249
+27. Remember first set default assistentieid after run the script
+
+29
+00:01:53,251 --> 00:01:53,254
+31. Assistentiexpath = "//*[text()="" + AssistentiedynamicId + ""]/preceding-sibling::td/a[2]"
+
+30
+00:01:53,256 --> 00:01:53,257
+35. to = findTestObject("Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/View Assistentie")
+
+31
+00:01:54,931 --> 00:01:54,933
+39. to.addProperty("xpath", EQUALS, Assistentiexpath)
+
+32
+00:01:54,957 --> 00:01:54,960
+43. delay(5)
+
+33
+00:01:59,966 --> 00:01:59,968
+47. click(to)
+
+34
+00:02:00,749 --> 00:02:00,750
+51. delay(2)
+
+35
+00:02:02,759 --> 00:02:02,761
+55. click(findTestObject("Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Confirmeren"))
+
+36
+00:02:19,695 --> 00:02:19,698
+59. delay(5)
+
+37
+00:02:24,702 --> 00:02:24,703
+63. click(findTestObject("Actpol_Scripts/Generiek/Assistentie/Click roll process"))
+
+38
+00:02:29,182 --> 00:02:29,185
+67. delay(2)
+
+39
+00:02:31,191 --> 00:02:31,198
+71. click(findTestObject("Actpol_Scripts/Generiek/Assistentie/Click new process"))
+
+40
+00:02:32,260 --> 00:02:32,264
+75. delay(2)
+
+41
+00:02:34,273 --> 00:02:34,274
+79. comment("Select process "BETROKKEN VAARTUIG"")
+
+42
+00:02:34,290 --> 00:02:34,292
+85. Select required dropdown
+
+43
+00:02:37,486 --> 00:02:37,487
+89. delay(3)
+
+44
+00:02:40,494 --> 00:02:40,496
+95. Click Contacten tab
+
+45
+00:02:41,778 --> 00:02:41,779
+99. delay(1)
+
+46
+00:02:42,787 --> 00:02:42,789
+105. Click Vaartuig tab
+
+47
+00:02:43,933 --> 00:02:43,936
+109. delay(2)
+
+48
+00:02:45,942 --> 00:02:45,943
+115. Click Vaartuig  new btn
+
+49
+00:02:46,801 --> 00:02:46,803
+119. delay(4)
+
+50
+00:02:50,810 --> 00:02:50,817
+125. Click new Vaartuig  tab
+
+51
+00:02:51,348 --> 00:02:51,349
+129. delay(1)
+
+52
+00:02:52,358 --> 00:02:52,360
+135. Click Opvarende tab
+
+53
+00:02:52,785 --> 00:02:52,787
+139. delay(2)
+
+54
+00:02:54,792 --> 00:02:54,794
+145. Click Opvarende new
+
+55
+00:02:55,469 --> 00:02:55,471
+149. delay(4)
+
+56
+00:02:59,488 --> 00:02:59,491
+155. enter text from the feild :: toevoegen inzittende
+
+57
+00:03:00,372 --> 00:03:00,374
+159. delay(2)
+
+58
+00:03:02,384 --> 00:03:02,387
+165. Select required dropdown
+
+59
+00:03:02,957 --> 00:03:02,958
+169. delay(1)
+
+60
+00:03:03,967 --> 00:03:03,969
+175. Click save btn
+
+61
+00:03:04,540 --> 00:03:04,542
+179. delay(1)
+
+62
+00:03:05,550 --> 00:03:05,552
+183. takeScreenshot()
+
+63
+00:03:07,344 --> 00:03:07,346
+187. delay(1)
+
+64
+00:03:08,354 --> 00:03:08,357
+193. Select required drop down :: Bemaningslid ja
+
+65
+00:03:08,865 --> 00:03:08,868
+197. delay(2)
+
+66
+00:03:10,877 --> 00:03:10,879
+203. Select required drop down :: Bemaningslid Nee
+
+67
+00:03:11,455 --> 00:03:11,456
+207. delay(2)
+
+68
+00:03:13,466 --> 00:03:13,469
+213. Enter text from the feild :: toevoegen inzittende Naam 2
+
+69
+00:03:14,545 --> 00:03:14,546
+217. delay(2)
+
+70
+00:03:16,554 --> 00:03:16,555
+223. Select required dropdown
+
+71
+00:03:17,096 --> 00:03:17,097
+227. delay(1)
+
+72
+00:03:18,103 --> 00:03:18,105
+233. Click save btn
+
+73
+00:03:18,570 --> 00:03:18,571
+237. delay(1)
+
+74
+00:03:19,589 --> 00:03:19,591
+241. scrollToPosition(10, 7)
+
+75
+00:03:20,166 --> 00:03:20,168
+245. delay(1)
+
+76
+00:03:21,177 --> 00:03:21,181
+249. takeScreenshot()
+

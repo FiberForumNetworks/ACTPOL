@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>When I am clicking on new foto it is not showing.
+
+Test plan:
+
+Step 1: Go to Handhaving: Doorsturen OPV Select optional user
+Step 2: Go to Goederen and click new Goederen
+Step 3: Go to Foto and click new Foto not showing pop up window</description>
+   <name>ACTPOL-513</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>6bae143e-44f5-4413-bd20-10e6d5cd954e</testCaseGuid>
+</TestCaseEntity>

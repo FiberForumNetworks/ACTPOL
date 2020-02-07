@@ -1,0 +1,98 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ACTPOL-552,Chrome 76.0.3809.100,#Enhancements Vreemdelingen Module,,2019-08-27 14:04:46,2019-08-27 14:08:00,3m - 14.186s,INCOMPLETE
+,,,,,,,
+Test Cases/JIRA Tasks/Release 6.6/ACTPOL-552,Chrome 76.0.3809.100,"Description
+Possibility to Kopie Assistentie into Melding Mensenhandel.
+
+Solution
+Add in Assistentie Melding a button called 'Mensenhandel/Mensensmokkel'.
+When this information is selected the following information should be copied:
+
+Incident (number) - Assistentie number-Eventnumber
+Adres van incident
+Adres # van incident
+Incident
+Datum Melding
+Tijd Melding
+Aangewezen aan
+Mutatie
+(assistentie should be saved and everything should remain the same).
+This information copied should create automatically a new record in Generiek - Melding.
+Type Melding should be Assistentie
+Naam Melder should be the user that created the Assistentie
+Wekzaam bij should be organisation of this user
+Datum should be same as when button Mensenhandel/Mensensmokkel is selected
+Status is automatically in Behandeling.
+The copied information should be added in the Omschrijving field.
+
+Testplan
+Step 1: Generiek - Assistentie - add a new assistentie
+Step 2: Fill in mandatory fields and save.
+Step 3: Edit existing record and select button Mensenhandel/Mensensmokkel and click save
+Step 4: Go to Melding Mensenhandel - the information entered in the assistentie should be visible here.
+
+Navigation
+Generiek - Assistentie - Nieuw assistentie
+Intake - Calltaker
+Also Generiek Melding Mensenhandel",ACTPOL-552,2019-08-27 14:04:47,2019-08-27 14:08:00,3m - 13.433s,FAILED
+"callTestCase(findTestCase(""main/Actpol_Login_testenv""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-08-27 14:04:48,2019-08-27 14:05:34,45.759s,PASSED
+"mouseOver(findTestObject(""Actpol_Scripts/Menu navigation/Generiek/Generiek""))",Chrome 76.0.3809.100,,,2019-08-27 14:05:34,2019-08-27 14:05:51,16.595s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 14:05:51,2019-08-27 14:05:53,2.018s,PASSED
+"click(findTestObject(""Actpol_Scripts/Menu navigation/Generiek/Assistenties""))",Chrome 76.0.3809.100,,,2019-08-27 14:05:53,2019-08-27 14:05:57,4.299s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 14:05:57,2019-08-27 14:05:59,2.008s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Assistentie New""))",Chrome 76.0.3809.100,"Creating New Incident
+",,2019-08-27 14:05:59,2019-08-27 14:06:14,14.821s,PASSED
+delay(5),Chrome 76.0.3809.100,,,2019-08-27 14:06:14,2019-08-27 14:06:19,5.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Bron""))",Chrome 76.0.3809.100,,,2019-08-27 14:06:19,2019-08-27 14:06:19,0.587s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 14:06:19,2019-08-27 14:06:21,2.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Born lb""))",Chrome 76.0.3809.100,,,2019-08-27 14:06:21,2019-08-27 14:06:22,0.607s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Telefoon nummer""), ""9999999999"", OPTIONAL)",Chrome 76.0.3809.100,,,2019-08-27 14:06:22,2019-08-27 14:06:23,0.760s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Titel""), ""Testing test"")",Chrome 76.0.3809.100,,,2019-08-27 14:06:23,2019-08-27 14:06:24,0.853s,PASSED
+"selectOptionByValue(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Lokatie type""), ""1"", false)",Chrome 76.0.3809.100,Select drop down from the list :: COMERCIELE INSTELLING,,2019-08-27 14:06:24,2019-08-27 14:06:25,1.007s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 14:06:25,2019-08-27 14:06:27,2.004s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Incident Adres""))",Chrome 76.0.3809.100,,,2019-08-27 14:06:27,2019-08-27 14:06:27,0.572s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 14:06:27,2019-08-27 14:06:29,2.008s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Incident Adres lb""))",Chrome 76.0.3809.100,ANDRES BELLO WEG,,2019-08-27 14:06:29,2019-08-27 14:06:30,0.794s,PASSED
+delay(5),Chrome 76.0.3809.100,,,2019-08-27 14:06:30,2019-08-27 14:06:35,5.007s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/ter hoogte van""), OPTIONAL)",Chrome 76.0.3809.100,,,2019-08-27 14:06:35,2019-08-27 14:06:36,0.644s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Nadere Aanduiding""), ""Testing"")",Chrome 76.0.3809.100,,,2019-08-27 14:06:36,2019-08-27 14:06:36,0.653s,PASSED
+delay(5),Chrome 76.0.3809.100,,,2019-08-27 14:06:36,2019-08-27 14:06:41,5.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Incident""))",Chrome 76.0.3809.100,,,2019-08-27 14:06:41,2019-08-27 14:06:42,0.585s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 14:06:42,2019-08-27 14:06:44,2.007s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Incident Lb""))",Chrome 76.0.3809.100,,,2019-08-27 14:06:44,2019-08-27 14:06:45,0.575s,PASSED
+delay(5),Chrome 76.0.3809.100,,,2019-08-27 14:06:45,2019-08-27 14:06:50,5.007s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Relationeel Geweld""))",Chrome 76.0.3809.100,,,2019-08-27 14:06:50,2019-08-27 14:06:50,0.594s,PASSED
+delay(5),Chrome 76.0.3809.100,,,2019-08-27 14:06:50,2019-08-27 14:06:55,5.009s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Poging""))",Chrome 76.0.3809.100,,,2019-08-27 14:06:55,2019-08-27 14:06:56,0.648s,PASSED
+"selectOptionByValue(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Melding Prioriteit""), ""3"", false)",Chrome 76.0.3809.100,"Select ZELF CONSTATERING
+",,2019-08-27 14:06:56,2019-08-27 14:06:56,0.548s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Dispatch ja""), OPTIONAL)",Chrome 76.0.3809.100,,,2019-08-27 14:06:56,2019-08-27 14:06:58,1.285s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Contact verzoek ja""), OPTIONAL)",Chrome 76.0.3809.100,,,2019-08-27 14:06:58,2019-08-27 14:06:58,0.565s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-27 14:06:58,2019-08-27 14:06:59,1.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Aangewezen aan""))",Chrome 76.0.3809.100,Click on Aangewezen aan auto search titles,,2019-08-27 14:06:59,2019-08-27 14:07:00,0.980s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 14:07:00,2019-08-27 14:07:02,2.004s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Aangewezen aan lb""))",Chrome 76.0.3809.100,Select required dropdown,,2019-08-27 14:07:02,2019-08-27 14:07:03,0.551s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-27 14:07:03,2019-08-27 14:07:04,1.007s,PASSED
+"selectOptionByValue(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Eiland""), ""SXM"", false)",Chrome 76.0.3809.100,"Select ST Maarten
+",,2019-08-27 14:07:04,2019-08-27 14:07:04,0.526s,PASSED
+"scrollToPosition(29, 7)",Chrome 76.0.3809.100,,,2019-08-27 14:07:04,2019-08-27 14:07:04,0.037s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 14:07:04,2019-08-27 14:07:06,2.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Melding""))",Chrome 76.0.3809.100,,,2019-08-27 14:07:06,2019-08-27 14:07:07,0.543s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-27 14:07:07,2019-08-27 14:07:08,1.012s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Melder""))",Chrome 76.0.3809.100,,,2019-08-27 14:07:08,2019-08-27 14:07:08,0.540s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-27 14:07:08,2019-08-27 14:07:09,1.007s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Rol-Proces""), ""AANGEVER"", false)",Chrome 76.0.3809.100,"Select required dropdown
+",,2019-08-27 14:07:09,2019-08-27 14:07:10,0.532s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Achternaam""))",Chrome 76.0.3809.100,"Clicking new person
+",,2019-08-27 14:07:10,2019-08-27 14:07:18,7.949s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 14:07:18,2019-08-27 14:07:20,2.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Resultaat Personen bestand person selection""))",Chrome 76.0.3809.100,,,2019-08-27 14:07:20,2019-08-27 14:07:21,1.024s,PASSED
+"scrollToPosition(0, 21)",Chrome 76.0.3809.100,,,2019-08-27 14:07:21,2019-08-27 14:07:21,0.032s,PASSED
+delay(3),Chrome 76.0.3809.100,,,2019-08-27 14:07:21,2019-08-27 14:07:24,3.009s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Melder""))",Chrome 76.0.3809.100,,,2019-08-27 14:07:24,2019-08-27 14:07:24,0.453s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-27 14:07:24,2019-08-27 14:07:25,1.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Save melding""))",Chrome 76.0.3809.100,,,2019-08-27 14:07:25,2019-08-27 14:07:26,0.589s,PASSED
+delay(8),Chrome 76.0.3809.100,,,2019-08-27 14:07:26,2019-08-27 14:07:34,8.007s,PASSED
+takeScreenshot(),Chrome 76.0.3809.100,,,2019-08-27 14:07:34,2019-08-27 14:07:35,0.775s,PASSED
+delay(3),Chrome 76.0.3809.100,,,2019-08-27 14:07:35,2019-08-27 14:07:38,3.010s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-552/Melding TAB""))",Chrome 76.0.3809.100,Click Melding tab,,2019-08-27 14:07:38,2019-08-27 14:08:00,22.161s,FAILED

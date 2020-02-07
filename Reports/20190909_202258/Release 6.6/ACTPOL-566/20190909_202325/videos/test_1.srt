@@ -1,0 +1,168 @@
+1
+00:00:00,657 --> 00:00:00,665
+1. callTestCase(findTestCase("main/Actpol_Login_testenv"), [:], STOP_ON_FAILURE)
+
+2
+00:00:02,065 --> 00:00:02,068
+1. openBrowser("")
+
+3
+00:00:59,134 --> 00:00:59,140
+5. deleteAllCookies()
+
+4
+00:00:59,202 --> 00:00:59,204
+9. waitForPageLoad(30)
+
+5
+00:01:04,180 --> 00:01:04,182
+13. maximizeWindow()
+
+6
+00:01:05,525 --> 00:01:05,527
+17. ACTPOLTESTENV = 1
+
+7
+00:01:05,528 --> 00:01:05,530
+21. ACTPOLDEVENV = 2
+
+8
+00:01:05,576 --> 00:01:05,579
+25. ACTPOLKCENV = 3
+
+9
+00:01:05,582 --> 00:01:05,584
+29. ACTPOLKBKPCNENV = 4
+
+10
+00:01:05,588 --> 00:01:05,590
+33. ACTPOLKBKMARENV = 5
+
+11
+00:01:05,591 --> 00:01:05,595
+37. ACTPOLKMENV = 6
+
+12
+00:01:05,600 --> 00:01:05,602
+41. ACTPOLKWENV = 7
+
+13
+00:01:05,604 --> 00:01:05,606
+45. environment = ACTPOLDEVENV
+
+14
+00:01:05,655 --> 00:01:05,659
+49. Selectenv = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>
+
+15
+00:01:05,662 --> 00:01:05,665
+53. switch (environment)
+
+16
+00:01:06,092 --> 00:01:06,094
+2. println(Selectenv = "ACTPOL-DEV-ENV")
+
+17
+00:01:06,103 --> 00:01:06,106
+6. navigateToUrl(DEVURL)
+
+18
+00:01:56,432 --> 00:01:56,435
+10. setText(findTestObject("Actpol_Scripts/login/userid"), username)
+
+19
+00:02:10,961 --> 00:02:10,963
+14. setMaskedText(findTestObject("Actpol_Scripts/login/password"), password)
+
+20
+00:02:13,238 --> 00:02:13,240
+18. click(findTestObject("Actpol_Scripts/login/login"))
+
+21
+00:02:14,505 --> 00:02:14,507
+22. getWindowTitle()
+
+22
+00:02:14,876 --> 00:02:14,877
+26. break
+
+23
+00:02:14,906 --> 00:02:14,907
+5. mouseOver(findTestObject("Actpol_Scripts/Menu navigation/Opsporing/Opsporing"))
+
+24
+00:02:43,170 --> 00:02:43,171
+9. delay(2)
+
+25
+00:02:45,194 --> 00:02:45,196
+13. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/MBES18 TAB"))
+
+26
+00:02:54,580 --> 00:02:54,583
+17. delay(1)
+
+27
+00:02:55,590 --> 00:02:55,594
+21. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/8 Documenten/edit default mbes 18"))
+
+28
+00:02:59,423 --> 00:02:59,424
+25. delay(8)
+
+29
+00:03:07,429 --> 00:03:07,431
+29. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/Registratie tab"), OPTIONAL)
+
+30
+00:03:08,566 --> 00:03:08,571
+33. delay(2)
+
+31
+00:03:10,580 --> 00:03:10,582
+37. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/8 Documenten/Documenten tab"), OPTIONAL)
+
+32
+00:03:11,684 --> 00:03:11,687
+41. delay(1)
+
+33
+00:03:12,697 --> 00:03:12,701
+45. comment("Creating new document")
+
+34
+00:03:12,717 --> 00:03:12,720
+49. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/8 Documenten/Document new"), OPTIONAL)
+
+35
+00:03:14,547 --> 00:03:14,552
+53. delay(2)
+
+36
+00:03:16,558 --> 00:03:16,560
+57. selectOptionByIndex(findTestObject("Actpol_Scripts/Opsporing/MBES18/8 Documenten/Selecteer Documentsjabloon"), 2, STOP_ON_FAILURE)
+
+37
+00:03:21,865 --> 00:03:21,867
+61. list = "Selecteer een ander document."
+
+38
+00:03:21,870 --> 00:03:21,873
+65. delay(3)
+
+39
+00:03:24,963 --> 00:03:24,964
+69. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/8 Documenten/new document save"))
+
+40
+00:03:25,594 --> 00:03:25,596
+73. delay(4)
+
+41
+00:03:29,605 --> 00:03:29,608
+77. comment("Editing existing document")
+
+42
+00:03:29,613 --> 00:03:29,615
+81. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/8 Documenten/edit existing doc default"))
+

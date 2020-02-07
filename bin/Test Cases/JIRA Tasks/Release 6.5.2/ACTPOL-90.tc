@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User has somehow inserted a person with birth date 27/03/1070 (a typo for 1970, we assume)
+When creating a PV aangifte (or I guess any document) for this person, this error message as can be seen in attached document appears due to this erroneous birth date.
+
+Is there any way to avoid this from appearing/happening ?
+
+Either a message that doc cannot be created because of the erroneous birth date or still create the doc even with the erroneous birth date.
+
+ 
+
+Test Plan:
+
+Menu, click on Generiek
+click on Assistentie
+In DEV: open assistentie 200601644 in edit mode
+click on tab Rol/Proces. I already added an aangifte where mr Wambimba has an erroneous birth date 01/02/1056
+create the following document: XML PV AANGIFTE. (Notice the error message. After the fix user should not receive this error message anymore)</description>
+   <name>ACTPOL-90</name>
+   <tag>ACTPOL-90</tag>
+   <comment></comment>
+   <testCaseGuid>dfad514c-469a-42ff-bdb6-190220509152</testCaseGuid>
+</TestCaseEntity>

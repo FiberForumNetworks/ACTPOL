@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Unable to select the existing user and unable to save new user also.
+
+Test Plan::
+Step 1: Go to Handhaving: Doorsturen OPV Select optional user
+Step 2: Go to Goederen and click new Goederen
+Step 3: Go to Goed/artikel and click new Goed/artikel
+Step 4: And select Goed artikel i am unable to select the user
+Step 5: Go to Nieuw Goederen enter all required fields and save
+Step 6: Click On Save, unable to save Goederen data.</description>
+   <name>ACTPOL-512</name>
+   <tag></tag>
+   <comment>Firest create new</comment>
+   <testCaseGuid>afa63b4e-7bf6-4406-b622-60f9bf07cd23</testCaseGuid>
+</TestCaseEntity>

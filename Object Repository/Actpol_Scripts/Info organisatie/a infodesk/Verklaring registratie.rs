@@ -7,7 +7,7 @@
    <selectorCollection>
       <entry>
          <key>BASIC</key>
-         <value>//body[@id='tinymce'][count(. | //*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe test env/only ifrmviewdocnr ight side']) = count(//*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe test env/only ifrmviewdocnr ight side'])]</value>
+         <value>//body[@id='tinymce'][count(. | //*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe test env/info iframe']) = count(//*[@ref_element = 'Object Repository/Actpol_Scripts/Iframe test env/info iframe'])]</value>
       </entry>
    </selectorCollection>
    <selectorMethod>BASIC</selectorMethod>

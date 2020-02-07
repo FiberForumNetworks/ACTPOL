@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Menu, Click on Onderhoud
+Step 2: Click on Basis BestandenMeldkamer
+Step 3: Click on OfficieleStraatnamen
+Step 4: Add a new or edit an existing record. 
+Step 5: User should be able to indicate if address is Zee, (Ja)yes or (Nee) no.
+Step 6: When searching on adres this should be visible as a sea (zee) adress.</description>
+   <name>Navigation Onderhoud - Basisi Bestanden Meldkamer - Officiele Straatnamen(ACTPOL-221)</name>
+   <tag>Onderhoud</tag>
+   <comment></comment>
+   <testCaseGuid>5cfdcf99-578d-4186-808c-4e3450a9b191</testCaseGuid>
+</TestCaseEntity>

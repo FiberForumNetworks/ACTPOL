@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Medewerker
+Step 2; Set text Next Poc
+Step 3: Search results is an Next Poc</description>
+   <name>Algemene Zoekopdracht - Select type Medewerker-Next Poc(Next Poc-1)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>06b01c49-a5f6-47e1-a011-d372207a830d</testCaseGuid>
+</TestCaseEntity>

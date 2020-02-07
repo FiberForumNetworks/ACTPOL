@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Medewerker
+Step 2: Set text Achternaam
+Step 3: Set text Voornaam
+Step 4: Set text KC nummer
+Step 5: Set text User ID
+Step 6: Select Rol Proces Type
+Step 7: Set text Klasse
+Step 8: Set text Next Poc
+Step 9: Search results is an Achternaam,KC nummer,Rol Proces Type,Klasse and Next Poc</description>
+   <name>Algemene Zoekopdracht - Select type Medewerker-Achternaam(Next Poc-7)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>de0b4296-ad50-42b1-8638-e8b64015d254</testCaseGuid>
+</TestCaseEntity>

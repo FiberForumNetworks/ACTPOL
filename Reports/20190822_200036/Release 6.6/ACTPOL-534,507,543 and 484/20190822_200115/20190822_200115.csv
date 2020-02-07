@@ -1,0 +1,217 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+"ACTPOL-534,507,543 and 484",Chrome 76.0.3809.100,Enhancements Vreemdelingen Module(V 6.6),,2019-08-22 20:02:01,2019-08-22 20:09:49,7m - 47.502s,INCOMPLETE
+,,,,,,,
+Test Cases/JIRA Tasks/Release 6.6/ACTPOL-534,Chrome 76.0.3809.100,"Description:
+
+ 
+
+After selecting the record in ""Opsporing "" and clicking on Verdachte. it's displayed all fields are invisible.
+
+ 
+
+Solution:
+
+Data should be displayed in proper format .
+
+ 
+
+Test plan:
+
+Step 1: Go to Opsporing: Case Screening Select existing user
+
+Step 2: Go to Verdachte
+
+Step 3: View on Verdachte it is displaying invisible fields.
+
+ 
+
+Navigation:
+
+Opsporing : Case Screening",ACTPOL-534,2019-08-22 20:02:03,2019-08-22 20:05:12,3m - 9.108s,PASSED
+"callTestCase(findTestCase(""main/Actpol_Login_testenv""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-08-22 20:02:04,2019-08-22 20:03:45,1m - 40.655s,PASSED
+"mouseOver(findTestObject(""Actpol_Scripts/Menu navigation/Opsporing/Opsporing""))",Chrome 76.0.3809.100,,,2019-08-22 20:03:45,2019-08-22 20:04:08,23.282s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-22 20:04:08,2019-08-22 20:04:10,2.016s,PASSED
+"click(findTestObject(""Actpol_Scripts/Menu navigation/Opsporing/Case Screening""))",Chrome 76.0.3809.100,,,2019-08-22 20:04:10,2019-08-22 20:04:17,6.844s,PASSED
+"mouseOver(findTestObject(""Actpol_Scripts/Menu navigation/Generiek/Generiek""))",Chrome 76.0.3809.100,,,2019-08-22 20:04:17,2019-08-22 20:04:19,1.506s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-22 20:04:19,2019-08-22 20:04:20,1.006s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-534/Period van""))",Chrome 76.0.3809.100,Click Calendar icon,,2019-08-22 20:04:20,2019-08-22 20:04:23,3.015s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-22 20:04:23,2019-08-22 20:04:24,1.006s,PASSED
+"selectOptionByValue(findTestObject(""Actpol_Scripts/Monthyear/Leftmonth""), ""1"", false)",Chrome 76.0.3809.100,Select required month,,2019-08-22 20:04:24,2019-08-22 20:04:26,2.236s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-22 20:04:26,2019-08-22 20:04:27,1.005s,PASSED
+"selectOptionByValue(findTestObject(""Actpol_Scripts/Monthyear/Leftyear""), ""2019"", false)",Chrome 76.0.3809.100,Select required year,,2019-08-22 20:04:27,2019-08-22 20:04:28,1.339s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-22 20:04:28,2019-08-22 20:04:30,2.004s,PASSED
+"click(findTestObject(""Actpol_Scripts/Date/28th""))",Chrome 76.0.3809.100,,,2019-08-22 20:04:30,2019-08-22 20:04:32,2.157s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-22 20:04:32,2019-08-22 20:04:33,1.005s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-534/Period tot""))",Chrome 76.0.3809.100,Click Calendar icon,,2019-08-22 20:04:33,2019-08-22 20:04:34,0.858s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-22 20:04:34,2019-08-22 20:04:35,1.007s,PASSED
+"selectOptionByValue(findTestObject(""Actpol_Scripts/Monthyear/Leftmonth""), ""1"", false)",Chrome 76.0.3809.100,Select required month,,2019-08-22 20:04:35,2019-08-22 20:04:36,0.777s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-22 20:04:36,2019-08-22 20:04:37,1.005s,PASSED
+"selectOptionByValue(findTestObject(""Actpol_Scripts/Monthyear/Leftyear""), ""2019"", false)",Chrome 76.0.3809.100,Select required year,,2019-08-22 20:04:37,2019-08-22 20:04:38,0.738s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-22 20:04:38,2019-08-22 20:04:40,2.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Date/28th""))",Chrome 76.0.3809.100,,,2019-08-22 20:04:40,2019-08-22 20:04:40,0.624s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-22 20:04:40,2019-08-22 20:04:41,1.007s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-534/Filter""))",Chrome 76.0.3809.100,Click Filter btn,,2019-08-22 20:04:41,2019-08-22 20:04:45,3.877s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-22 20:04:45,2019-08-22 20:04:46,1.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/Case screning/Invoer Case Screening user selection""))",Chrome 76.0.3809.100,,,2019-08-22 20:04:46,2019-08-22 20:04:46,0.002s,NOT_RUN
+CaseScreeningID_ID = CaseScreeningID,Chrome 76.0.3809.100,Remember first set default assistentieid after run the script,,2019-08-22 20:04:46,2019-08-22 20:04:46,0.001s,PASSED
+"Casescreeingxpath = ""(//td[text()="""" + CaseScreeningID_ID + """"]/preceding-sibling::td/a[2])[1]""",Chrome 76.0.3809.100,,,2019-08-22 20:04:46,2019-08-22 20:04:46,0.001s,PASSED
+"to = findTestObject(""Actpol_Scripts/Generiek/Assistentie/Assistentie editing user 2"")",Chrome 76.0.3809.100,,,2019-08-22 20:04:46,2019-08-22 20:04:48,1.527s,PASSED
+"to.addProperty(""xpath"", EQUALS, Casescreeingxpath)",Chrome 76.0.3809.100,,,2019-08-22 20:04:48,2019-08-22 20:04:48,0.015s,PASSED
+click(to),Chrome 76.0.3809.100,,,2019-08-22 20:04:48,2019-08-22 20:04:57,8.795s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-22 20:04:57,2019-08-22 20:04:59,2.007s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-534/Screening""))",Chrome 76.0.3809.100,Click Screening tab,,2019-08-22 20:04:59,2019-08-22 20:04:59,0.520s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-22 20:04:59,2019-08-22 20:05:00,1.007s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-534/Verdachte tab""))",Chrome 76.0.3809.100,Click Verdachte tab.,,2019-08-22 20:05:00,2019-08-22 20:05:01,0.985s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-22 20:05:01,2019-08-22 20:05:02,1.004s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-534/Verdachte edit""))",Chrome 76.0.3809.100,Click Verdachte edit ,,2019-08-22 20:05:02,2019-08-22 20:05:03,0.921s,PASSED
+delay(5),Chrome 76.0.3809.100,,,2019-08-22 20:05:03,2019-08-22 20:05:08,5.011s,PASSED
+takeScreenshot(),Chrome 76.0.3809.100,,,2019-08-22 20:05:08,2019-08-22 20:05:11,3.367s,PASSED
+"println(""data displaying properly"")",Chrome 76.0.3809.100,,,2019-08-22 20:05:11,2019-08-22 20:05:12,0.055s,PASSED
+,,,,,,,
+Test Cases/JIRA Tasks/Release 6.6/ACTPOL-507,Chrome 76.0.3809.100,"Description
+Add more information in grid Doorsturen OPV to make it easier to find record.
+
+Solution
+Add in Grid Doorsturen OPV the Procesverbaal number this can be found in the Bekeurd persoon/Doorsturen OPV record.
+and also add Geimporteerd kolom in the Doorsturen OPV grid. Thyis value indicated if a OPV is imported. This value can be found in the query for OPV in Rapportages.
+As seen on screenshot the Geimporteerd J/N values per record.
+
+Test plan
+Step 1: Go to generiek - Assistentie open an existing record and add in Rol/proces a Bekeurd persoon
+Step 2: This record should be visible in Handhaving -Doorsturen OPV.
+Step 3: The Procesverbaal number column should be visible in the grid and also column ""Geimporteerd"".
+Step 4: Proces verbaal number and import status should be according to record.
+
+Navigation
+Handhaving - Doorsturen OPV",ACTPOL-507,2019-08-22 20:05:12,2019-08-22 20:06:56,1m - 44.149s,PASSED
+"callTestCase(findTestCase(""main/Actpol_Login_testenv""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-08-22 20:05:13,2019-08-22 20:05:42,28.827s,PASSED
+"selectOptionByValue(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie""), ""assist"", false)",Chrome 76.0.3809.100,,,2019-08-22 20:05:42,2019-08-22 20:05:58,16.063s,PASSED
+"setText(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie Set text""), Generiekassistenite_Module)",Chrome 76.0.3809.100,,,2019-08-22 20:05:58,2019-08-22 20:05:59,1.201s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-22 20:05:59,2019-08-22 20:06:01,2.007s,PASSED
+"click(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Zoeken new""))",Chrome 76.0.3809.100,,,2019-08-22 20:06:01,2019-08-22 20:06:05,4.179s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-22 20:06:05,2019-08-22 20:06:07,2.006s,PASSED
+AssistentiedynamicId = Generiekassistenite_Module,Chrome 76.0.3809.100,Remember first set default assistentieid after run the script,,2019-08-22 20:06:07,2019-08-22 20:06:07,0.002s,PASSED
+"Assistentiexpath = ""//*[text()="""" + AssistentiedynamicId + """"]/preceding-sibling::td/a[2]""",Chrome 76.0.3809.100,,,2019-08-22 20:06:07,2019-08-22 20:06:07,0.002s,PASSED
+"to = findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/View Assistentie"")",Chrome 76.0.3809.100,,,2019-08-22 20:06:07,2019-08-22 20:06:08,0.702s,PASSED
+"to.addProperty(""xpath"", EQUALS, Assistentiexpath)",Chrome 76.0.3809.100,,,2019-08-22 20:06:08,2019-08-22 20:06:08,0.000s,PASSED
+delay(5),Chrome 76.0.3809.100,,,2019-08-22 20:06:08,2019-08-22 20:06:13,5.004s,PASSED
+click(to),Chrome 76.0.3809.100,,,2019-08-22 20:06:13,2019-08-22 20:06:14,0.650s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-22 20:06:14,2019-08-22 20:06:16,2.004s,PASSED
+"click(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Confirmeren""))",Chrome 76.0.3809.100,,,2019-08-22 20:06:16,2019-08-22 20:06:25,9.671s,PASSED
+delay(5),Chrome 76.0.3809.100,,,2019-08-22 20:06:25,2019-08-22 20:06:30,5.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Click roll process""))",Chrome 76.0.3809.100,,,2019-08-22 20:06:30,2019-08-22 20:06:34,3.775s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-22 20:06:34,2019-08-22 20:06:36,2.002s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-507/View BEKEURDE PERSOON""))",Chrome 76.0.3809.100,Click View btn on BEKEURDE PERSOON process,,2019-08-22 20:06:36,2019-08-22 20:06:37,0.620s,PASSED
+delay(3),Chrome 76.0.3809.100,,,2019-08-22 20:06:37,2019-08-22 20:06:40,3.005s,PASSED
+"ProcesverbaalnumberinRol = getText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-507/Proces Verbaal Nr generiek assistance""))",Chrome 76.0.3809.100,,,2019-08-22 20:06:40,2019-08-22 20:06:40,0.476s,PASSED
+"println(""Procesverbaal number in Rol/process is :"" + ProcesverbaalnumberinRol)",Chrome 76.0.3809.100,,,2019-08-22 20:06:40,2019-08-22 20:06:40,0.001s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-22 20:06:40,2019-08-22 20:06:41,1.004s,PASSED
+takeScreenshot(),Chrome 76.0.3809.100,,,2019-08-22 20:06:41,2019-08-22 20:06:42,0.448s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-22 20:06:42,2019-08-22 20:06:43,1.005s,PASSED
+"mouseOver(findTestObject(""Actpol_Scripts/Menu navigation/Handhaving/Handhaving""))",Chrome 76.0.3809.100,Click Handhaving menu,,2019-08-22 20:06:43,2019-08-22 20:06:43,0.386s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-22 20:06:43,2019-08-22 20:06:45,2.004s,PASSED
+"click(findTestObject(""Actpol_Scripts/Menu navigation/Handhaving/Doorsturen OPV""), OPTIONAL)",Chrome 76.0.3809.100,Click opv menu,,2019-08-22 20:06:45,2019-08-22 20:06:47,2.231s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-22 20:06:47,2019-08-22 20:06:49,2.010s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-507/Doorsturen OPV view""))",Chrome 76.0.3809.100,Click Doorsturen OPV view,,2019-08-22 20:06:49,2019-08-22 20:06:50,0.645s,PASSED
+delay(4),Chrome 76.0.3809.100,,,2019-08-22 20:06:50,2019-08-22 20:06:54,4.005s,PASSED
+"opv = getText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-507/Doorsturen OPV Proces Verbaal Nr""))",Chrome 76.0.3809.100,Doorsturen OPV Proces Verbaal Nr get text,,2019-08-22 20:06:54,2019-08-22 20:06:54,0.445s,PASSED
+"println(""Procesverbaal number in Doorsturen OPV is :"" + opv)",Chrome 76.0.3809.100,,,2019-08-22 20:06:54,2019-08-22 20:06:54,0.001s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-22 20:06:54,2019-08-22 20:06:55,1.003s,PASSED
+takeScreenshot(),Chrome 76.0.3809.100,,,2019-08-22 20:06:55,2019-08-22 20:06:56,0.390s,PASSED
+,,,,,,,
+Test Cases/JIRA Tasks/Release 6.6/ACTPOL-543,Chrome 76.0.3809.100,"Description:
+
+Nothing is happening when user click on ""PDF"" icon.
+
+ 
+
+Solution:
+
+PDF report should generate.
+
+ 
+
+Test plan:
+
+Step 1: Go to Opsporing: Taktiek.
+
+Step 2: Go to Case Screening Uitgedeeld.
+
+Step 3: Click Pdf File.
+
+ 
+Navigation:
+
+ Opsporing: Taktiek",ACTPOL-543,2019-08-22 20:06:56,2019-08-22 20:07:48,51.643s,PASSED
+"callTestCase(findTestCase(""main/Actpol_Login_testenv""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-08-22 20:06:57,2019-08-22 20:07:20,22.677s,PASSED
+"mouseOver(findTestObject(""Actpol_Scripts/Menu navigation/Opsporing/Opsporing""))",Chrome 76.0.3809.100,,,2019-08-22 20:07:20,2019-08-22 20:07:34,14.183s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-22 20:07:34,2019-08-22 20:07:36,2.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Menu navigation/Opsporing/Tactiek""))",Chrome 76.0.3809.100,,,2019-08-22 20:07:36,2019-08-22 20:07:41,4.822s,PASSED
+"mouseOver(findTestObject(""Actpol_Scripts/Menu navigation/Generiek/Generiek""))",Chrome 76.0.3809.100,,,2019-08-22 20:07:41,2019-08-22 20:07:41,0.497s,PASSED
+delay(3),Chrome 76.0.3809.100,,,2019-08-22 20:07:41,2019-08-22 20:07:44,3.009s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-543/PDF icon""))",Chrome 76.0.3809.100,,,2019-08-22 20:07:44,2019-08-22 20:07:45,0.949s,PASSED
+delay(3),Chrome 76.0.3809.100,,,2019-08-22 20:07:45,2019-08-22 20:07:48,3.005s,PASSED
+"switchToWindowIndex(""0"", STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-08-22 20:07:48,2019-08-22 20:07:48,0.103s,PASSED
+,,,,,,,
+Test Cases/JIRA Tasks/Release 6.6/ACTPOL-484,Chrome 76.0.3809.100,"Description
+Change field Type verzekering in Voertuig module.
+Currently this field has 2 bullets. this should be changed into a dropdown containing these values.
+So next to Type verzekering ""WA"" and ""Allrisk"" more types can be added like ""WA+"".
+Check attachment.
+
+Solution
+Change field ""Type verzekering"" in dropdown.
+
+Testplan :
+1- Fill in an new proces Ongeval.
+2- fill in mandatory fields and also in voertuig add the color of the vehicle, chasis number and insurance number in tab Bescheiden.
+3- There should be a dropdown to select Type Verzekering
+3- Generate document verkeersregistratie KPA.
+4- Document should contain information added in the nieuw ongeval proces.
+
+Navigation : Generiek- assistentie - open exisiting assistentie. rol/proces add new ongeval add in tab Partijen/Objecten voertuig add a new Voertuig and tab Bescheiden.",ACTPOL-484,2019-08-22 20:07:48,2019-08-22 20:09:49,2m - 0.737s,PASSED
+"callTestCase(findTestCase(""main/Actpol_Login_testenv""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-08-22 20:07:49,2019-08-22 20:08:08,19.376s,PASSED
+"selectOptionByValue(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie""), ""assist"", false)",Chrome 76.0.3809.100,,,2019-08-22 20:08:08,2019-08-22 20:08:21,12.501s,PASSED
+"setText(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie Set text""), Generiekassistenite_Module)",Chrome 76.0.3809.100,,,2019-08-22 20:08:21,2019-08-22 20:08:21,0.834s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-22 20:08:21,2019-08-22 20:08:23,2.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Zoeken new""))",Chrome 76.0.3809.100,,,2019-08-22 20:08:23,2019-08-22 20:08:28,4.434s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-22 20:08:28,2019-08-22 20:08:30,2.007s,PASSED
+AssistentiedynamicId = Generiekassistenite_Module,Chrome 76.0.3809.100,Remember first set default assistentieid after run the script,,2019-08-22 20:08:30,2019-08-22 20:08:30,0.001s,PASSED
+"Assistentiexpath = ""//*[text()="""" + AssistentiedynamicId + """"]/preceding-sibling::td/a[2]""",Chrome 76.0.3809.100,,,2019-08-22 20:08:30,2019-08-22 20:08:30,0.000s,PASSED
+"to = findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/View Assistentie"")",Chrome 76.0.3809.100,,,2019-08-22 20:08:30,2019-08-22 20:08:30,0.569s,PASSED
+"to.addProperty(""xpath"", EQUALS, Assistentiexpath)",Chrome 76.0.3809.100,,,2019-08-22 20:08:30,2019-08-22 20:08:30,0.001s,PASSED
+delay(5),Chrome 76.0.3809.100,,,2019-08-22 20:08:30,2019-08-22 20:08:35,5.003s,PASSED
+click(to),Chrome 76.0.3809.100,,,2019-08-22 20:08:35,2019-08-22 20:08:36,0.570s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-22 20:08:36,2019-08-22 20:08:38,2.004s,PASSED
+"click(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Confirmeren""))",Chrome 76.0.3809.100,,,2019-08-22 20:08:38,2019-08-22 20:08:50,11.637s,PASSED
+delay(5),Chrome 76.0.3809.100,,,2019-08-22 20:08:50,2019-08-22 20:08:55,5.004s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Click roll process""))",Chrome 76.0.3809.100,,,2019-08-22 20:08:55,2019-08-22 20:08:58,2.994s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-22 20:08:58,2019-08-22 20:09:00,2.005s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-484/Nieuw Ongeval""))",Chrome 76.0.3809.100,Click new ongeval btn,,2019-08-22 20:09:00,2019-08-22 20:09:00,0.765s,PASSED
+delay(5),Chrome 76.0.3809.100,,,2019-08-22 20:09:00,2019-08-22 20:09:05,5.005s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-484/Algemeen tab""))",Chrome 76.0.3809.100,Click Algemeen tab,,2019-08-22 20:09:05,2019-08-22 20:09:06,0.599s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-22 20:09:06,2019-08-22 20:09:07,1.004s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-484/Partijen or Objecten""))",Chrome 76.0.3809.100,Click Partijen or Objecten tab,,2019-08-22 20:09:07,2019-08-22 20:09:08,0.606s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-22 20:09:08,2019-08-22 20:09:09,1.005s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-484/Partijen or Objecten new""))",Chrome 76.0.3809.100,Click Partijen or Objecten new btn,,2019-08-22 20:09:09,2019-08-22 20:09:09,0.608s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-22 20:09:09,2019-08-22 20:09:11,2.005s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-484/Radio Voertuig""))",Chrome 76.0.3809.100,Click radio btn Voertuig,,2019-08-22 20:09:11,2019-08-22 20:09:12,0.584s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-22 20:09:12,2019-08-22 20:09:14,2.005s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-484/Voertuig nummer new""))",Chrome 76.0.3809.100,Click Voertuig nummer new ,,2019-08-22 20:09:14,2019-08-22 20:09:14,0.607s,PASSED
+delay(4),Chrome 76.0.3809.100,,,2019-08-22 20:09:14,2019-08-22 20:09:18,4.006s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-484/Voertuig new btn""))",Chrome 76.0.3809.100,Click Voertuig new btn,,2019-08-22 20:09:18,2019-08-22 20:09:23,4.988s,PASSED
+delay(4),Chrome 76.0.3809.100,,,2019-08-22 20:09:23,2019-08-22 20:09:27,4.004s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-484/Nieuw Voertuig edit default""))",Chrome 76.0.3809.100,"Click Voertuig select
+",,2019-08-22 20:09:27,2019-08-22 20:09:28,0.729s,PASSED
+delay(3),Chrome 76.0.3809.100,,,2019-08-22 20:09:28,2019-08-22 20:09:31,3.006s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-484/Reden Inschrijving""), ""ZAAKWAARNEMING"", false)",Chrome 76.0.3809.100,Select required drop down,,2019-08-22 20:09:31,2019-08-22 20:09:32,0.409s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-22 20:09:32,2019-08-22 20:09:34,2.005s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-484/Voertuig""))",Chrome 76.0.3809.100,Click Voertuig tab,,2019-08-22 20:09:34,2019-08-22 20:09:34,0.322s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-22 20:09:34,2019-08-22 20:09:35,1.004s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-484/Bescheiden""))",Chrome 76.0.3809.100,Click Bescheiden tab.,,2019-08-22 20:09:35,2019-08-22 20:09:36,0.812s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-22 20:09:36,2019-08-22 20:09:37,1.008s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-484/Bestuurder new""))",Chrome 76.0.3809.100,Click  Bestuurder tab,,2019-08-22 20:09:37,2019-08-22 20:09:43,5.927s,PASSED
+delay(4),Chrome 76.0.3809.100,,,2019-08-22 20:09:43,2019-08-22 20:09:47,4.005s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-484/nieuw persoon edit default""))",Chrome 76.0.3809.100,Edit Select persoon,,2019-08-22 20:09:47,2019-08-22 20:09:47,0.725s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-22 20:09:47,2019-08-22 20:09:48,1.004s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-484/Type verzekering""), ""Comprehensive"", false)",Chrome 76.0.3809.100,Select required drop down :: Type verzekering,,2019-08-22 20:09:48,2019-08-22 20:09:49,0.463s,PASSED

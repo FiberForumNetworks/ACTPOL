@@ -1,0 +1,39 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ACTPOL-566,Chrome 76.0.3809.132,#MBES18 module,,2019-09-09 20:23:39,2019-09-09 20:27:37,3m - 58.038s,INCOMPLETE
+,,,,,,,
+Test Cases/JIRA Tasks/Release 6.6/ACTPOL-566,Chrome 76.0.3809.132,"Description:
+It should be possible to create documents related to this Vreemdeling.
+
+Solution:
+create a tab Document with the functionality to fetch information of all these MBES18 tabs and records.
+This in done in all rol/proces and also in Arrestanten module.
+
+Testplan:
+Step 1: Go to Opsporing - MBES18
+Step 2: Enter a new record in MBES18 module, fill in the required fields and click save.
+Step 3: Go to tab Documenten and generate a document
+Step 4: This document should contain the same values in the MBES18 record
+
+Navigation:
+Opsporing - MBES18 -Tab Documenten",ACTPOL-566,2019-09-09 20:23:40,2019-09-09 20:27:37,3m - 57.182s,FAILED
+"callTestCase(findTestCase(""main/Actpol_Login_testenv""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.132,,,2019-09-09 20:23:42,2019-09-09 20:25:56,2m - 14.247s,PASSED
+"mouseOver(findTestObject(""Actpol_Scripts/Menu navigation/Opsporing/Opsporing""))",Chrome 76.0.3809.132,,,2019-09-09 20:25:56,2019-09-09 20:26:25,28.263s,PASSED
+delay(2),Chrome 76.0.3809.132,,,2019-09-09 20:26:25,2019-09-09 20:26:27,2.024s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/MBES18 TAB""))",Chrome 76.0.3809.132,,,2019-09-09 20:26:27,2019-09-09 20:26:36,9.386s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-09 20:26:36,2019-09-09 20:26:37,1.009s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/8 Documenten/edit default mbes 18""))",Chrome 76.0.3809.132,,,2019-09-09 20:26:37,2019-09-09 20:26:41,3.831s,PASSED
+delay(8),Chrome 76.0.3809.132,,,2019-09-09 20:26:41,2019-09-09 20:26:49,8.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/Registratie tab""), OPTIONAL)",Chrome 76.0.3809.132,,,2019-09-09 20:26:49,2019-09-09 20:26:50,1.137s,PASSED
+delay(2),Chrome 76.0.3809.132,,,2019-09-09 20:26:50,2019-09-09 20:26:52,2.013s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/8 Documenten/Documenten tab""), OPTIONAL)",Chrome 76.0.3809.132,,,2019-09-09 20:26:52,2019-09-09 20:26:53,1.104s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-09 20:26:53,2019-09-09 20:26:54,1.012s,PASSED
+"comment(""Creating new document"")",Chrome 76.0.3809.132,,,2019-09-09 20:26:54,2019-09-09 20:26:54,0.017s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/8 Documenten/Document new""), OPTIONAL)",Chrome 76.0.3809.132,,,2019-09-09 20:26:54,2019-09-09 20:26:56,1.830s,PASSED
+delay(2),Chrome 76.0.3809.132,,,2019-09-09 20:26:56,2019-09-09 20:26:58,2.008s,PASSED
+"selectOptionByIndex(findTestObject(""Actpol_Scripts/Opsporing/MBES18/8 Documenten/Selecteer Documentsjabloon""), 2, STOP_ON_FAILURE)",Chrome 76.0.3809.132,,,2019-09-09 20:26:58,2019-09-09 20:27:03,5.307s,PASSED
+"list = ""Selecteer een ander document.""",Chrome 76.0.3809.132,,,2019-09-09 20:27:03,2019-09-09 20:27:03,0.005s,PASSED
+delay(3),Chrome 76.0.3809.132,,,2019-09-09 20:27:03,2019-09-09 20:27:07,3.090s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/8 Documenten/new document save""))",Chrome 76.0.3809.132,,,2019-09-09 20:27:07,2019-09-09 20:27:07,0.632s,PASSED
+delay(4),Chrome 76.0.3809.132,,,2019-09-09 20:27:07,2019-09-09 20:27:11,4.010s,PASSED
+"comment(""Editing existing document"")",Chrome 76.0.3809.132,,,2019-09-09 20:27:11,2019-09-09 20:27:11,0.007s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/8 Documenten/edit existing doc default""))",Chrome 76.0.3809.132,,,2019-09-09 20:27:11,2019-09-09 20:27:34,22.970s,FAILED

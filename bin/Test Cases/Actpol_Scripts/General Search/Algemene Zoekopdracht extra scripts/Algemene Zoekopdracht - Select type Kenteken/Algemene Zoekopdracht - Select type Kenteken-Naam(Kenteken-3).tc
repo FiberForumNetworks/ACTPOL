@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Kenteken
+Step 2: Set text Naam
+Step 3: Set text Kenteken
+Step 4: Set text Model Type
+Step 5: Search results is an Naam,Kenteken and Model Type</description>
+   <name>Algemene Zoekopdracht - Select type Kenteken-Naam(Kenteken-3)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>21d19956-a916-4661-b035-4023567beeda</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,557 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+"ACTPOL-308,309,310,316 and 344",Chrome 76.0.3809.100,Version Release 6.6\r\n\r\nEnhancements Vreemdelingen Module,,2019-08-21 19:07:03,2019-08-21 19:21:53,14m - 50.170s,INCOMPLETE
+,,,,,,,
+Test Cases/JIRA Tasks/Release 6.6/ACTPOL-308,Chrome 76.0.3809.100,"Description
+To be able to create documents with more information, new fields should be added to the Vreemdeling proces.
+
+Solution
+In process Vreemdeling below field Land, 
+add field 'CRV nummer' and ‘IND BES nummer’. 
+These new fields should not be mandatory, if a person has a CRV or IND BES number in ACTFMS this can be automatically included. (KPNAPF09G.BVDRCRVN)
+Also add the fieldsLuchtvaart maatschappij/ rederij, naam vliegtuig/boot, telefoon nummer Boot/ vliegtuig, Agentschap, Geboorte plaats, telefoon nummer (Thuis, Mobiel en Werk), ticketnummer, PNR nummer, Meereizende minderjarige kinderen. As shown in the screenshot. 
+This field should be saved in the same table as now Vreemdeling is saved.
+
+See detailed description and screenshot in attachment.
+
+Testplan
+Step 1: Go to Generiek - assistentie - rol/proces - Vreemdeling
+Step 2: Add a new vVreemdeling and fill all fields.
+Step 3: it should be possible to register CRV nummer, ticketnummer, PNR nummer etc.
+
+Navigation
+Generiek - assistentie - rol/proces - Vreemdeling",ACTPOL-308,2019-08-21 19:07:06,2019-08-21 19:09:57,2m - 51.231s,PASSED
+"callTestCase(findTestCase(""main/Actpol_Login_testenv""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-08-21 19:07:07,2019-08-21 19:08:23,1m - 16.358s,PASSED
+"selectOptionByValue(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie""), ""assist"", false)",Chrome 76.0.3809.100,,,2019-08-21 19:08:23,2019-08-21 19:08:39,15.848s,PASSED
+"setText(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie Set text""), Generiekassistenite_Module)",Chrome 76.0.3809.100,,,2019-08-21 19:08:39,2019-08-21 19:08:41,1.868s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:08:41,2019-08-21 19:08:43,2.076s,PASSED
+"click(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Zoeken new""))",Chrome 76.0.3809.100,,,2019-08-21 19:08:43,2019-08-21 19:08:47,3.987s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:08:47,2019-08-21 19:08:49,2.014s,PASSED
+AssistentiedynamicId = Generiekassistenite_Module,Chrome 76.0.3809.100,Remember first set default assistentieid after run the script,,2019-08-21 19:08:49,2019-08-21 19:08:49,0.003s,PASSED
+"Assistentiexpath = ""//*[text()="""" + AssistentiedynamicId + """"]/preceding-sibling::td/a[2]""",Chrome 76.0.3809.100,,,2019-08-21 19:08:49,2019-08-21 19:08:49,0.003s,PASSED
+"to = findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/View Assistentie"")",Chrome 76.0.3809.100,,,2019-08-21 19:08:49,2019-08-21 19:08:50,0.678s,PASSED
+"to.addProperty(""xpath"", EQUALS, Assistentiexpath)",Chrome 76.0.3809.100,,,2019-08-21 19:08:50,2019-08-21 19:08:50,0.019s,PASSED
+delay(5),Chrome 76.0.3809.100,,,2019-08-21 19:08:50,2019-08-21 19:08:55,5.009s,PASSED
+click(to),Chrome 76.0.3809.100,,,2019-08-21 19:08:55,2019-08-21 19:08:55,0.668s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:08:55,2019-08-21 19:08:57,2.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Confirmeren""))",Chrome 76.0.3809.100,,,2019-08-21 19:08:57,2019-08-21 19:09:08,10.343s,PASSED
+delay(5),Chrome 76.0.3809.100,,,2019-08-21 19:09:08,2019-08-21 19:09:13,5.009s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Click roll process""))",Chrome 76.0.3809.100,,,2019-08-21 19:09:13,2019-08-21 19:09:16,3.198s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:09:16,2019-08-21 19:09:18,2.008s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Click new process""))",Chrome 76.0.3809.100,,,2019-08-21 19:09:18,2019-08-21 19:09:19,0.780s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:09:19,2019-08-21 19:09:21,2.006s,PASSED
+"comment(""Select process ""VREEMDELING"""")",Chrome 76.0.3809.100,,,2019-08-21 19:09:21,2019-08-21 19:09:21,0.034s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Rol Proces Type""), ""VREEMDELING"", false)",Chrome 76.0.3809.100,Select required dropdown,,2019-08-21 19:09:21,2019-08-21 19:09:22,0.777s,PASSED
+delay(3),Chrome 76.0.3809.100,,,2019-08-21 19:09:22,2019-08-21 19:09:25,3.006s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-308/Vliegmaatschappij_Rederij""), ""Katalon testing"")",Chrome 76.0.3809.100,Enter the text,,2019-08-21 19:09:25,2019-08-21 19:09:26,1.056s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:09:26,2019-08-21 19:09:27,1.005s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-308/Naam boot_vliegtuig""), ""Katalon testing"")",Chrome 76.0.3809.100,Enter the text,,2019-08-21 19:09:27,2019-08-21 19:09:28,0.927s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:09:28,2019-08-21 19:09:29,1.007s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-308/Telefoon boot_vliegtuig""), ""Katalon testing"")",Chrome 76.0.3809.100,Enter the telefoon number,,2019-08-21 19:09:29,2019-08-21 19:09:30,1.152s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:09:30,2019-08-21 19:09:31,1.008s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-308/Agentschap""), ""Katalon testing"")",Chrome 76.0.3809.100,Enter the text,,2019-08-21 19:09:31,2019-08-21 19:09:32,0.939s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:09:32,2019-08-21 19:09:33,1.005s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-308/Achternaam""), ""aaa"")",Chrome 76.0.3809.100,Enter the text,,2019-08-21 19:09:33,2019-08-21 19:09:34,1.366s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:09:34,2019-08-21 19:09:36,2.007s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-308/Achternaam lb""))",Chrome 76.0.3809.100,Select required dropdown,,2019-08-21 19:09:36,2019-08-21 19:09:37,0.699s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:09:37,2019-08-21 19:09:38,1.004s,PASSED
+"Geboorteplaats = getText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-308/Geboorte Plaats""), OPTIONAL)",Chrome 76.0.3809.100,Get text frim the feild:: Geboorte Plaats,,2019-08-21 19:09:38,2019-08-21 19:09:38,0.459s,PASSED
+println(Geboorteplaats),Chrome 76.0.3809.100,,,2019-08-21 19:09:38,2019-08-21 19:09:38,0.002s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:09:38,2019-08-21 19:09:39,1.004s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-308/Telefoon 1""), ""123456789"")",Chrome 76.0.3809.100,Enter Telefoon 1,,2019-08-21 19:09:39,2019-08-21 19:09:40,0.776s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:09:40,2019-08-21 19:09:41,1.004s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-308/Telefoon 2""), ""987456123"")",Chrome 76.0.3809.100,Enter Telefoon 2,,2019-08-21 19:09:41,2019-08-21 19:09:42,0.925s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:09:42,2019-08-21 19:09:43,1.006s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-308/Telefoon 3""), ""987456123"")",Chrome 76.0.3809.100,Enter Telefoon 3,,2019-08-21 19:09:43,2019-08-21 19:09:44,1.020s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:09:44,2019-08-21 19:09:45,1.005s,PASSED
+"CRVnummer = getText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-308/CRV nummer""), OPTIONAL)",Chrome 76.0.3809.100,Get text frim the feild:: CRV nummer,,2019-08-21 19:09:45,2019-08-21 19:09:45,0.466s,PASSED
+println(CRVnummer),Chrome 76.0.3809.100,,,2019-08-21 19:09:45,2019-08-21 19:09:45,0.001s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:09:45,2019-08-21 19:09:46,1.006s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-308/IND-BES nummer""), ""123456789"")",Chrome 76.0.3809.100,Enter the text,,2019-08-21 19:09:46,2019-08-21 19:09:48,1.714s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:09:48,2019-08-21 19:09:49,1.006s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-308/Ticket nummer""), ""987456123"")",Chrome 76.0.3809.100,Enter the Ticket number,,2019-08-21 19:09:49,2019-08-21 19:09:50,1.008s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:09:50,2019-08-21 19:09:51,1.015s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-308/PNR nummer""), ""987456123"")",Chrome 76.0.3809.100,Enter the PNR number,,2019-08-21 19:09:51,2019-08-21 19:09:52,0.683s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:09:52,2019-08-21 19:09:53,1.005s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-308/Meereizende minderjarige kinderen ja""))",Chrome 76.0.3809.100,Click radio btn Meereizende minderjarige kinderen ja,,2019-08-21 19:09:53,2019-08-21 19:09:53,0.578s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:09:53,2019-08-21 19:09:54,1.004s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-308/Aantal""), ""123456789"")",Chrome 76.0.3809.100,Enter the text,,2019-08-21 19:09:54,2019-08-21 19:09:55,0.728s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:09:55,2019-08-21 19:09:56,1.006s,PASSED
+"focus(findTestObject(""JIRA/A Relese 6.6/ACTPOL-308/Save Vreemdeling""), OPTIONAL)",Chrome 76.0.3809.100,,,2019-08-21 19:09:56,2019-08-21 19:09:57,0.543s,PASSED
+,,,,,,,
+Test Cases/JIRA Tasks/Release 6.6/ACTPOL-309,Chrome 76.0.3809.100,"Description
+For the Vremdeling module phase 2 there are some chanes required in the Reisdocument tab.
+Tab reisdocument logic will be modified.
+
+Solution
+When opening the tab reisdocument user must first select type of Document.(Passport, Visa or Travel Document) for each Travel Document a new record can be added in this tab.
+Based on the selection the required fields should show.
+
+See attachment for detailed description and field changes and screenshot.
+
+Testplan
+Step 1: Go to Generiek - Assistentie.
+Step 2: Go to Rol/proces tab and add a new Vreemdeling proces
+Step 3: Select Soort Document Visum.
+Step 4: Should be possible to enter Visum Hoofdbestemming ""Caribisch Gebied Hoofddoel Curaçao""
+Step 5: when filling the mandatory fields record should be saved.
+Step 6: Create an additional Reisdocument
+Step 7: Select Soort document Paspoort
+Step 8: fill in mandatory fields and save record
+
+Navigation
+Generiek - Asstentie - rol/proces - Vreemdeling - tab Reisdocument",ACTPOL-308,2019-08-21 19:09:57,2019-08-21 19:15:21,5m - 23.984s,PASSED
+"callTestCase(findTestCase(""main/Actpol_Login_testenv""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-08-21 19:09:58,2019-08-21 19:10:28,29.704s,PASSED
+"selectOptionByValue(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie""), ""assist"", false)",Chrome 76.0.3809.100,,,2019-08-21 19:10:28,2019-08-21 19:10:41,12.976s,PASSED
+"setText(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie Set text""), Generiekassistenite_Module)",Chrome 76.0.3809.100,,,2019-08-21 19:10:41,2019-08-21 19:10:42,1.628s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:10:42,2019-08-21 19:10:44,2.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Zoeken new""))",Chrome 76.0.3809.100,,,2019-08-21 19:10:44,2019-08-21 19:10:49,4.858s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:10:49,2019-08-21 19:10:51,2.011s,PASSED
+AssistentiedynamicId = Generiekassistenite_Module,Chrome 76.0.3809.100,Remember first set default assistentieid after run the script,,2019-08-21 19:10:51,2019-08-21 19:10:51,0.002s,PASSED
+"Assistentiexpath = ""//*[text()="""" + AssistentiedynamicId + """"]/preceding-sibling::td/a[2]""",Chrome 76.0.3809.100,,,2019-08-21 19:10:51,2019-08-21 19:10:51,0.001s,PASSED
+"to = findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/View Assistentie"")",Chrome 76.0.3809.100,,,2019-08-21 19:10:51,2019-08-21 19:10:54,2.705s,PASSED
+"to.addProperty(""xpath"", EQUALS, Assistentiexpath)",Chrome 76.0.3809.100,,,2019-08-21 19:10:54,2019-08-21 19:10:54,0.003s,PASSED
+delay(5),Chrome 76.0.3809.100,,,2019-08-21 19:10:54,2019-08-21 19:10:59,5.096s,PASSED
+click(to),Chrome 76.0.3809.100,,,2019-08-21 19:10:59,2019-08-21 19:11:00,1.129s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:11:00,2019-08-21 19:11:02,2.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Confirmeren""))",Chrome 76.0.3809.100,,,2019-08-21 19:11:02,2019-08-21 19:11:11,9.174s,PASSED
+delay(5),Chrome 76.0.3809.100,,,2019-08-21 19:11:11,2019-08-21 19:11:16,5.004s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Click roll process""))",Chrome 76.0.3809.100,,,2019-08-21 19:11:16,2019-08-21 19:11:19,2.629s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:11:19,2019-08-21 19:11:21,2.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Click new process""))",Chrome 76.0.3809.100,,,2019-08-21 19:11:21,2019-08-21 19:11:21,0.654s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:11:21,2019-08-21 19:11:23,2.007s,PASSED
+"comment(""Select process ""VREEMDELING"""")",Chrome 76.0.3809.100,,,2019-08-21 19:11:23,2019-08-21 19:11:24,0.004s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Rol Proces Type""), ""VREEMDELING"", false)",Chrome 76.0.3809.100,Select required dropdown,,2019-08-21 19:11:24,2019-08-21 19:11:24,0.739s,PASSED
+delay(3),Chrome 76.0.3809.100,,,2019-08-21 19:11:24,2019-08-21 19:11:27,3.006s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Vreemdeling TAB""))",Chrome 76.0.3809.100,Click Vreemdeling tab,,2019-08-21 19:11:27,2019-08-21 19:11:28,0.921s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:11:28,2019-08-21 19:11:29,1.008s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Reisdocumenten tab""))",Chrome 76.0.3809.100,Click Reisdocumenten tab,,2019-08-21 19:11:29,2019-08-21 19:11:30,0.740s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:11:30,2019-08-21 19:11:32,2.007s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Reisdocumenten new""))",Chrome 76.0.3809.100,Click Reisdocumenten new btn,,2019-08-21 19:11:32,2019-08-21 19:11:33,0.720s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:11:33,2019-08-21 19:11:34,1.006s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Soort Document""), ""ID"", false)",Chrome 76.0.3809.100,Select required dropdown:: ID,,2019-08-21 19:11:34,2019-08-21 19:11:34,0.625s,PASSED
+delay(4),Chrome 76.0.3809.100,,,2019-08-21 19:11:34,2019-08-21 19:11:38,4.007s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Type""), ""Identiteitsbewijs"", false)",Chrome 76.0.3809.100,Select required dropdown:: Identiteitsbewijs,,2019-08-21 19:11:38,2019-08-21 19:11:39,0.598s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:11:39,2019-08-21 19:11:40,1.006s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Document nummer""), ""123456"")",Chrome 76.0.3809.100,Enter the text from the feild :: Document nummer,,2019-08-21 19:11:40,2019-08-21 19:11:41,1.131s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:11:41,2019-08-21 19:11:42,1.006s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Plaats afgifte""))",Chrome 76.0.3809.100,"Click Plaats afgifte feild
+",,2019-08-21 19:11:42,2019-08-21 19:11:43,0.632s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:11:43,2019-08-21 19:11:45,2.006s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Plaats afgifte lb""))",Chrome 76.0.3809.100,Select the required drop down,,2019-08-21 19:11:45,2019-08-21 19:11:45,0.638s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:11:45,2019-08-21 19:11:46,1.006s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Reisdocumenten save""))",Chrome 76.0.3809.100,Click save btn,,2019-08-21 19:11:46,2019-08-21 19:11:47,0.713s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:11:47,2019-08-21 19:11:49,2.005s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Reisdocumenten new""))",Chrome 76.0.3809.100,Click Reisdocumenten new btn,,2019-08-21 19:11:49,2019-08-21 19:11:50,0.616s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:11:50,2019-08-21 19:11:51,1.005s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Soort Document""), ""Paspoort"", false)",Chrome 76.0.3809.100,Select required dropdown:: Paspoort,,2019-08-21 19:11:51,2019-08-21 19:11:52,1.168s,PASSED
+delay(4),Chrome 76.0.3809.100,,,2019-08-21 19:11:52,2019-08-21 19:11:56,4.006s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Type""), ""dienstpaspoort"", false)",Chrome 76.0.3809.100,Select required dropdown:: dienstpaspoort,,2019-08-21 19:11:56,2019-08-21 19:11:57,0.855s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:11:57,2019-08-21 19:11:58,1.002s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Document nummer""), ""123456"")",Chrome 76.0.3809.100,Enter the text from the feild :: Document nummer,,2019-08-21 19:11:58,2019-08-21 19:11:59,0.851s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:11:59,2019-08-21 19:12:00,1.007s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Plaats afgifte""))",Chrome 76.0.3809.100,"Click Plaats afgifte feild
+",,2019-08-21 19:12:00,2019-08-21 19:12:00,0.505s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:12:00,2019-08-21 19:12:02,2.005s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Plaats afgifte lb 2""))",Chrome 76.0.3809.100,Select the required drop down,,2019-08-21 19:12:02,2019-08-21 19:12:04,1.965s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:12:04,2019-08-21 19:12:05,1.006s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Reisdocumenten save""))",Chrome 76.0.3809.100,Click save btn,,2019-08-21 19:12:05,2019-08-21 19:12:06,0.701s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:12:06,2019-08-21 19:12:08,2.008s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Reisdocumenten new""))",Chrome 76.0.3809.100,Click Reisdocumenten new btn,,2019-08-21 19:12:08,2019-08-21 19:12:08,0.524s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:12:08,2019-08-21 19:12:09,1.006s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Soort Document""), ""Paspoort"", false)",Chrome 76.0.3809.100,Select required dropdown:: Paspoort,,2019-08-21 19:12:09,2019-08-21 19:12:11,1.417s,PASSED
+delay(4),Chrome 76.0.3809.100,,,2019-08-21 19:12:11,2019-08-21 19:12:15,4.007s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Type""), ""diplomatiek paspoort"", false)",Chrome 76.0.3809.100,Select required dropdown:: diplomatiek paspoort,,2019-08-21 19:12:15,2019-08-21 19:12:15,0.500s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:12:15,2019-08-21 19:12:16,1.008s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Document nummer""), ""123456"")",Chrome 76.0.3809.100,Enter the text from the feild :: Document nummer,,2019-08-21 19:12:16,2019-08-21 19:12:17,0.746s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:12:17,2019-08-21 19:12:18,1.005s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Plaats afgifte""))",Chrome 76.0.3809.100,"Click Plaats afgifte feild
+",,2019-08-21 19:12:18,2019-08-21 19:12:19,0.743s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:12:19,2019-08-21 19:12:21,2.004s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Plaats afgifte lb 3""))",Chrome 76.0.3809.100,Select the required drop down,,2019-08-21 19:12:21,2019-08-21 19:12:22,0.862s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:12:22,2019-08-21 19:12:23,1.004s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Reisdocumenten save""))",Chrome 76.0.3809.100,Click save btn,,2019-08-21 19:12:23,2019-08-21 19:12:23,0.500s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:12:23,2019-08-21 19:12:25,2.005s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Reisdocumenten new""))",Chrome 76.0.3809.100,Click Reisdocumenten new btn,,2019-08-21 19:12:25,2019-08-21 19:12:26,0.555s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:12:26,2019-08-21 19:12:27,1.008s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Soort Document""), ""Paspoort"", false)",Chrome 76.0.3809.100,Select required dropdown:: Paspoort,,2019-08-21 19:12:27,2019-08-21 19:12:27,0.572s,PASSED
+delay(4),Chrome 76.0.3809.100,,,2019-08-21 19:12:27,2019-08-21 19:12:31,4.008s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Type""), ""laissez-passer"", false)",Chrome 76.0.3809.100,Select required dropdown:: laissez-passer,,2019-08-21 19:12:31,2019-08-21 19:12:32,0.633s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:12:32,2019-08-21 19:12:33,1.007s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Document nummer""), ""123456"")",Chrome 76.0.3809.100,Enter the text from the feild :: Document nummer,,2019-08-21 19:12:33,2019-08-21 19:12:34,0.766s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:12:34,2019-08-21 19:12:35,1.005s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Plaats afgifte""))",Chrome 76.0.3809.100,"Click Plaats afgifte feild
+",,2019-08-21 19:12:35,2019-08-21 19:12:35,0.606s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:12:35,2019-08-21 19:12:37,2.004s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Plaats afgifte lb 4""))",Chrome 76.0.3809.100,Select the required drop down,,2019-08-21 19:12:37,2019-08-21 19:12:38,0.708s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:12:38,2019-08-21 19:12:39,1.005s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Reisdocumenten save""))",Chrome 76.0.3809.100,Click save btn,,2019-08-21 19:12:39,2019-08-21 19:12:40,0.572s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:12:40,2019-08-21 19:12:42,2.006s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Reisdocumenten new""))",Chrome 76.0.3809.100,Click Reisdocumenten new btn,,2019-08-21 19:12:42,2019-08-21 19:12:42,0.611s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:12:42,2019-08-21 19:12:43,1.004s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Soort Document""), ""Paspoort"", false)",Chrome 76.0.3809.100,Select required dropdown:: Paspoort,,2019-08-21 19:12:43,2019-08-21 19:12:44,0.683s,PASSED
+delay(4),Chrome 76.0.3809.100,,,2019-08-21 19:12:44,2019-08-21 19:12:48,4.005s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Type""), ""nationaal paspoort"", false)",Chrome 76.0.3809.100,Select required dropdown:: nationaal paspoort,,2019-08-21 19:12:48,2019-08-21 19:12:49,0.673s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:12:49,2019-08-21 19:12:50,1.006s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Document nummer""), ""123456"")",Chrome 76.0.3809.100,Enter the text from the feild :: Document nummer,,2019-08-21 19:12:50,2019-08-21 19:12:50,0.635s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:12:50,2019-08-21 19:12:51,1.005s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Plaats afgifte""))",Chrome 76.0.3809.100,"Click Plaats afgifte feild
+",,2019-08-21 19:12:51,2019-08-21 19:12:52,0.559s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:12:52,2019-08-21 19:12:54,2.005s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Plaats afgifte lb 5""))",Chrome 76.0.3809.100,Select the required drop down,,2019-08-21 19:12:54,2019-08-21 19:12:55,0.878s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:12:55,2019-08-21 19:12:56,1.007s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Reisdocumenten save""))",Chrome 76.0.3809.100,Click save btn,,2019-08-21 19:12:56,2019-08-21 19:12:56,0.502s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:12:56,2019-08-21 19:12:58,2.006s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Reisdocumenten new""))",Chrome 76.0.3809.100,Click Reisdocumenten new btn,,2019-08-21 19:12:58,2019-08-21 19:12:59,0.629s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:12:59,2019-08-21 19:13:00,1.004s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Soort Document""), ""Paspoort"", false)",Chrome 76.0.3809.100,Select required dropdown:: Paspoort,,2019-08-21 19:13:00,2019-08-21 19:13:02,1.799s,PASSED
+delay(4),Chrome 76.0.3809.100,,,2019-08-21 19:13:02,2019-08-21 19:13:06,4.006s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Type""), ""noodpaspoort"", false)",Chrome 76.0.3809.100,Select required dropdown:: noodpaspoort,,2019-08-21 19:13:06,2019-08-21 19:13:06,0.543s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:13:06,2019-08-21 19:13:07,1.006s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Document nummer""), ""123456"")",Chrome 76.0.3809.100,Enter the text from the feild :: Document nummer,,2019-08-21 19:13:07,2019-08-21 19:13:09,1.478s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:13:09,2019-08-21 19:13:10,1.005s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Plaats afgifte""))",Chrome 76.0.3809.100,"Click Plaats afgifte feild
+",,2019-08-21 19:13:10,2019-08-21 19:13:10,0.461s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:13:10,2019-08-21 19:13:12,2.004s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Plaats afgifte lb 6""))",Chrome 76.0.3809.100,Select the required drop down,,2019-08-21 19:13:12,2019-08-21 19:13:13,0.709s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:13:13,2019-08-21 19:13:14,1.006s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Reisdocumenten save""))",Chrome 76.0.3809.100,Click save btn,,2019-08-21 19:13:14,2019-08-21 19:13:14,0.530s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:13:14,2019-08-21 19:13:16,2.007s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Reisdocumenten new""))",Chrome 76.0.3809.100,Click Reisdocumenten new btn,,2019-08-21 19:13:16,2019-08-21 19:13:17,0.525s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:13:17,2019-08-21 19:13:18,1.034s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Soort Document""), ""Paspoort"", false)",Chrome 76.0.3809.100,Select required dropdown:: Paspoort,,2019-08-21 19:13:18,2019-08-21 19:13:19,0.615s,PASSED
+delay(4),Chrome 76.0.3809.100,,,2019-08-21 19:13:19,2019-08-21 19:13:23,4.004s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Type""), ""zakenpaspoort"", false)",Chrome 76.0.3809.100,Select required dropdown:: zakenpaspoort,,2019-08-21 19:13:23,2019-08-21 19:13:23,0.638s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:13:23,2019-08-21 19:13:24,1.007s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Document nummer""), ""123456"")",Chrome 76.0.3809.100,Enter the text from the feild :: Document nummer,,2019-08-21 19:13:24,2019-08-21 19:13:26,1.822s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:13:26,2019-08-21 19:13:27,1.005s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Plaats afgifte""))",Chrome 76.0.3809.100,"Click Plaats afgifte feild
+",,2019-08-21 19:13:27,2019-08-21 19:13:28,0.580s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:13:28,2019-08-21 19:13:30,2.006s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Plaats afgifte lb 7""))",Chrome 76.0.3809.100,Select the required drop down,,2019-08-21 19:13:30,2019-08-21 19:13:30,0.582s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:13:30,2019-08-21 19:13:31,1.015s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Reisdocumenten save""))",Chrome 76.0.3809.100,Click save btn,,2019-08-21 19:13:31,2019-08-21 19:13:32,0.663s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:13:32,2019-08-21 19:13:34,2.006s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Reisdocumenten new""))",Chrome 76.0.3809.100,Click Reisdocumenten new btn,,2019-08-21 19:13:34,2019-08-21 19:13:34,0.541s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:13:34,2019-08-21 19:13:35,1.005s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Soort Document""), ""Paspoort"", false)",Chrome 76.0.3809.100,Select required dropdown:: Paspoort,,2019-08-21 19:13:35,2019-08-21 19:13:36,0.532s,PASSED
+delay(4),Chrome 76.0.3809.100,,,2019-08-21 19:13:36,2019-08-21 19:13:40,4.005s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Type""), ""2e paspoort"", false)",Chrome 76.0.3809.100,Select required dropdown:: 2e paspoort,,2019-08-21 19:13:40,2019-08-21 19:13:40,0.511s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:13:40,2019-08-21 19:13:41,1.006s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Document nummer""), ""123456"")",Chrome 76.0.3809.100,Enter the text from the feild :: Document nummer,,2019-08-21 19:13:41,2019-08-21 19:13:42,0.769s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:13:42,2019-08-21 19:13:43,1.005s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Plaats afgifte""))",Chrome 76.0.3809.100,"Click Plaats afgifte feild
+",,2019-08-21 19:13:43,2019-08-21 19:13:44,0.825s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:13:44,2019-08-21 19:13:46,2.006s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Plaats afgifte lb 8""))",Chrome 76.0.3809.100,Select the required drop down,,2019-08-21 19:13:46,2019-08-21 19:13:47,0.576s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:13:47,2019-08-21 19:13:48,1.006s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Reisdocumenten save""))",Chrome 76.0.3809.100,Click save btn,,2019-08-21 19:13:48,2019-08-21 19:13:48,0.548s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:13:48,2019-08-21 19:13:50,2.008s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Reisdocumenten new""))",Chrome 76.0.3809.100,Click Reisdocumenten new btn,,2019-08-21 19:13:50,2019-08-21 19:13:51,0.506s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:13:51,2019-08-21 19:13:52,1.006s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Soort Document""), ""REISDOCUMENT"", false)",Chrome 76.0.3809.100,Select required dropdown:: REISDOCUMENT,,2019-08-21 19:13:52,2019-08-21 19:13:52,0.511s,PASSED
+delay(4),Chrome 76.0.3809.100,,,2019-08-21 19:13:52,2019-08-21 19:13:56,4.004s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Type""), ""Reisdocument voor vluchtelingen"", false)",Chrome 76.0.3809.100,Select required dropdown:: Reisdocument voor vluchtelingen,,2019-08-21 19:13:56,2019-08-21 19:13:57,0.555s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:13:57,2019-08-21 19:13:58,1.029s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Document nummer""), ""123456"")",Chrome 76.0.3809.100,Enter the text from the feild :: Document nummer,,2019-08-21 19:13:58,2019-08-21 19:13:59,1.503s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:13:59,2019-08-21 19:14:00,1.004s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Plaats afgifte""))",Chrome 76.0.3809.100,"Click Plaats afgifte feild
+",,2019-08-21 19:14:00,2019-08-21 19:14:01,0.595s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:14:01,2019-08-21 19:14:03,2.005s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Plaats afgifte lb 9""))",Chrome 76.0.3809.100,Select the required drop down,,2019-08-21 19:14:03,2019-08-21 19:14:04,0.823s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:14:04,2019-08-21 19:14:05,1.006s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Reisdocumenten save""))",Chrome 76.0.3809.100,Click save btn,,2019-08-21 19:14:05,2019-08-21 19:14:05,0.685s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:14:05,2019-08-21 19:14:07,2.009s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Reisdocumenten new""))",Chrome 76.0.3809.100,Click Reisdocumenten new btn,,2019-08-21 19:14:07,2019-08-21 19:14:08,0.645s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:14:08,2019-08-21 19:14:09,1.006s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Soort Document""), ""REISDOCUMENT"", false)",Chrome 76.0.3809.100,Select required dropdown:: REISDOCUMENT,,2019-08-21 19:14:09,2019-08-21 19:14:13,3.502s,PASSED
+delay(4),Chrome 76.0.3809.100,,,2019-08-21 19:14:13,2019-08-21 19:14:17,4.006s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Type""), ""Reisdocument voor vreemdelingen"", false)",Chrome 76.0.3809.100,Select required dropdown:: Reisdocument voor vreemdelingen,,2019-08-21 19:14:17,2019-08-21 19:14:18,1.068s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:14:18,2019-08-21 19:14:19,1.375s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Document nummer""), ""123456"")",Chrome 76.0.3809.100,Enter the text from the feild :: Document nummer,,2019-08-21 19:14:19,2019-08-21 19:14:20,1.446s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:14:20,2019-08-21 19:14:21,1.004s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Plaats afgifte""))",Chrome 76.0.3809.100,"Click Plaats afgifte feild
+",,2019-08-21 19:14:21,2019-08-21 19:14:23,1.410s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:14:23,2019-08-21 19:14:25,2.006s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Plaats afgifte lb 10""))",Chrome 76.0.3809.100,Select the required drop down,,2019-08-21 19:14:25,2019-08-21 19:14:26,0.652s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:14:26,2019-08-21 19:14:27,1.005s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Reisdocumenten save""))",Chrome 76.0.3809.100,Click save btn,,2019-08-21 19:14:27,2019-08-21 19:14:27,0.641s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:14:27,2019-08-21 19:14:29,2.004s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Reisdocumenten new""))",Chrome 76.0.3809.100,Click Reisdocumenten new btn,,2019-08-21 19:14:29,2019-08-21 19:14:30,0.764s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:14:30,2019-08-21 19:14:31,1.009s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Soort Document""), ""Visum"", false)",Chrome 76.0.3809.100,Select required dropdown:: Visum,,2019-08-21 19:14:31,2019-08-21 19:14:32,0.771s,PASSED
+delay(4),Chrome 76.0.3809.100,,,2019-08-21 19:14:32,2019-08-21 19:14:36,4.025s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Type""), ""Studie"", false)",Chrome 76.0.3809.100,Select required dropdown:: Studie,,2019-08-21 19:14:36,2019-08-21 19:14:36,0.512s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:14:36,2019-08-21 19:14:37,1.005s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Document nummer""), ""123456"")",Chrome 76.0.3809.100,Enter the text from the feild :: Document nummer,,2019-08-21 19:14:37,2019-08-21 19:14:38,0.740s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:14:38,2019-08-21 19:14:39,1.004s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Plaats afgifte""))",Chrome 76.0.3809.100,"Click Plaats afgifte feild
+",,2019-08-21 19:14:39,2019-08-21 19:14:40,0.578s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:14:40,2019-08-21 19:14:42,2.007s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Plaats afgifte lb 11""))",Chrome 76.0.3809.100,Select the required drop down,,2019-08-21 19:14:42,2019-08-21 19:14:42,0.739s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:14:42,2019-08-21 19:14:43,1.005s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Reisdocumenten save""))",Chrome 76.0.3809.100,Click save btn,,2019-08-21 19:14:43,2019-08-21 19:14:44,0.664s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:14:44,2019-08-21 19:14:46,2.008s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Reisdocumenten new""))",Chrome 76.0.3809.100,Click Reisdocumenten new btn,,2019-08-21 19:14:46,2019-08-21 19:14:47,0.643s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:14:47,2019-08-21 19:14:48,1.005s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Soort Document""), ""Visum"", false)",Chrome 76.0.3809.100,Select required dropdown:: Visum,,2019-08-21 19:14:48,2019-08-21 19:14:50,1.882s,PASSED
+delay(4),Chrome 76.0.3809.100,,,2019-08-21 19:14:50,2019-08-21 19:14:54,4.004s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Type""), ""Toerist"", false)",Chrome 76.0.3809.100,Select required dropdown:: Toerist,,2019-08-21 19:14:54,2019-08-21 19:14:54,0.908s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:14:54,2019-08-21 19:14:55,1.006s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Document nummer""), ""123456"")",Chrome 76.0.3809.100,Enter the text from the feild :: Document nummer,,2019-08-21 19:14:55,2019-08-21 19:14:56,0.685s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:14:56,2019-08-21 19:14:57,1.004s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Plaats afgifte""))",Chrome 76.0.3809.100,"Click Plaats afgifte feild
+",,2019-08-21 19:14:57,2019-08-21 19:14:58,0.476s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:14:58,2019-08-21 19:15:00,2.005s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Plaats afgifte lb 12""))",Chrome 76.0.3809.100,Select the required drop down,,2019-08-21 19:15:00,2019-08-21 19:15:00,0.505s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:15:00,2019-08-21 19:15:01,1.003s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Reisdocumenten save""))",Chrome 76.0.3809.100,Click save btn,,2019-08-21 19:15:01,2019-08-21 19:15:02,0.635s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:15:02,2019-08-21 19:15:04,2.127s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Reisdocumenten new""))",Chrome 76.0.3809.100,Click Reisdocumenten new btn,,2019-08-21 19:15:04,2019-08-21 19:15:05,0.601s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:15:05,2019-08-21 19:15:06,1.005s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Soort Document""), ""Visum"", false)",Chrome 76.0.3809.100,Select required dropdown:: Visum,,2019-08-21 19:15:06,2019-08-21 19:15:08,1.964s,PASSED
+delay(4),Chrome 76.0.3809.100,,,2019-08-21 19:15:08,2019-08-21 19:15:12,4.002s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Type""), ""Werk"", false)",Chrome 76.0.3809.100,Select required dropdown:: Werk,,2019-08-21 19:15:12,2019-08-21 19:15:12,0.520s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:15:12,2019-08-21 19:15:13,1.003s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Document nummer""), ""123456"")",Chrome 76.0.3809.100,Enter the text from the feild :: Document nummer,,2019-08-21 19:15:13,2019-08-21 19:15:14,0.648s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:15:14,2019-08-21 19:15:15,1.004s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Plaats afgifte""))",Chrome 76.0.3809.100,"Click Plaats afgifte feild
+",,2019-08-21 19:15:15,2019-08-21 19:15:15,0.574s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:15:15,2019-08-21 19:15:17,2.008s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Plaats afgifte lb 13""))",Chrome 76.0.3809.100,Select the required drop down,,2019-08-21 19:15:17,2019-08-21 19:15:18,0.726s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:15:18,2019-08-21 19:15:19,1.005s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Reisdocumenten save""))",Chrome 76.0.3809.100,Click save btn,,2019-08-21 19:15:19,2019-08-21 19:15:20,1.489s,PASSED
+,,,,,,,
+Test Cases/JIRA Tasks/Release 6.6/ACTPOL-310,Chrome 76.0.3809.100,"Description
+It should be possible to add additional Toezicht verbalisant in Vreemdeling proces Tab Toegang.
+
+Solution
+Add addition the two fields Tozicht Verbalisant in tab Toegang, These two additional fields should contain the same users list as Verbalisant.
+When a Werkopdracht is send to these Toegang Verbalisant 1 or Toegang Verbalisant 2, this should also be sent to The Toezicht Verbalisant 1 and Toezicht Verbalisant 2.
+Functionality for sending a Werkopdracht will be described in another task.
+
+Test plan
+Step 1: Go to generiek - Assistentie open an existing record and add in Rol/proces a Vreemdeling
+Step 2: in tab Toegang there should be a possibility to add Toezicht Verbalisant 1 and 2.
+Step 3: It should be possible top save this record.
+
+Navigation
+Generiek - Assistentie - Rol/proces - Vreemdeling",ACTPOL-310,2019-08-21 19:15:21,2019-08-21 19:17:34,2m - 12.593s,PASSED
+"callTestCase(findTestCase(""main/Actpol_Login_testenv""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-08-21 19:15:23,2019-08-21 19:15:56,32.584s,PASSED
+"selectOptionByValue(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie""), ""assist"", false)",Chrome 76.0.3809.100,,,2019-08-21 19:15:56,2019-08-21 19:16:10,14.417s,PASSED
+"setText(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie Set text""), Generiekassistenite_Module)",Chrome 76.0.3809.100,,,2019-08-21 19:16:10,2019-08-21 19:16:12,1.964s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:16:12,2019-08-21 19:16:14,2.003s,PASSED
+"click(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Zoeken new""))",Chrome 76.0.3809.100,,,2019-08-21 19:16:14,2019-08-21 19:16:19,4.700s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:16:19,2019-08-21 19:16:21,2.003s,PASSED
+AssistentiedynamicId = Generiekassistenite_Module,Chrome 76.0.3809.100,Remember first set default assistentieid after run the script,,2019-08-21 19:16:21,2019-08-21 19:16:21,0.002s,PASSED
+"Assistentiexpath = ""//*[text()="""" + AssistentiedynamicId + """"]/preceding-sibling::td/a[2]""",Chrome 76.0.3809.100,,,2019-08-21 19:16:21,2019-08-21 19:16:21,0.001s,PASSED
+"to = findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/View Assistentie"")",Chrome 76.0.3809.100,,,2019-08-21 19:16:21,2019-08-21 19:16:23,2.173s,PASSED
+"to.addProperty(""xpath"", EQUALS, Assistentiexpath)",Chrome 76.0.3809.100,,,2019-08-21 19:16:23,2019-08-21 19:16:23,0.066s,PASSED
+delay(5),Chrome 76.0.3809.100,,,2019-08-21 19:16:23,2019-08-21 19:16:28,5.004s,PASSED
+click(to),Chrome 76.0.3809.100,,,2019-08-21 19:16:28,2019-08-21 19:16:29,0.716s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:16:29,2019-08-21 19:16:31,2.007s,PASSED
+"click(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Confirmeren""))",Chrome 76.0.3809.100,,,2019-08-21 19:16:31,2019-08-21 19:16:39,8.659s,PASSED
+delay(5),Chrome 76.0.3809.100,,,2019-08-21 19:16:39,2019-08-21 19:16:44,5.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Click roll process""))",Chrome 76.0.3809.100,,,2019-08-21 19:16:44,2019-08-21 19:16:47,3.135s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:16:47,2019-08-21 19:16:50,2.004s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Click new process""))",Chrome 76.0.3809.100,,,2019-08-21 19:16:50,2019-08-21 19:16:50,0.605s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:16:50,2019-08-21 19:16:52,2.050s,PASSED
+"comment(""Select process ""VREEMDELING"""")",Chrome 76.0.3809.100,,,2019-08-21 19:16:52,2019-08-21 19:16:52,0.046s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Rol Proces Type""), ""VREEMDELING"", false)",Chrome 76.0.3809.100,Select required dropdown,,2019-08-21 19:16:52,2019-08-21 19:16:53,0.658s,PASSED
+delay(3),Chrome 76.0.3809.100,,,2019-08-21 19:16:53,2019-08-21 19:16:56,3.005s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-308/Vliegmaatschappij_Rederij""), ""Katalon testing"")",Chrome 76.0.3809.100,Enter the text,,2019-08-21 19:16:56,2019-08-21 19:16:57,1.062s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:16:57,2019-08-21 19:16:58,1.004s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-308/Naam boot_vliegtuig""), ""Katalon testing"")",Chrome 76.0.3809.100,Enter the text,,2019-08-21 19:16:58,2019-08-21 19:17:00,1.835s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:17:00,2019-08-21 19:17:01,1.003s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-308/Telefoon boot_vliegtuig""), ""Katalon testing"")",Chrome 76.0.3809.100,Enter the telefoon number,,2019-08-21 19:17:01,2019-08-21 19:17:02,0.982s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:17:02,2019-08-21 19:17:03,1.004s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-308/Agentschap""), ""Katalon testing"")",Chrome 76.0.3809.100,Enter the text,,2019-08-21 19:17:03,2019-08-21 19:17:04,1.026s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:17:04,2019-08-21 19:17:05,1.004s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-308/Achternaam""), ""aaa"")",Chrome 76.0.3809.100,Enter the text,,2019-08-21 19:17:05,2019-08-21 19:17:05,0.552s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:17:05,2019-08-21 19:17:07,2.004s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-308/Achternaam lb""))",Chrome 76.0.3809.100,Select required dropdown,,2019-08-21 19:17:07,2019-08-21 19:17:08,0.597s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:17:08,2019-08-21 19:17:10,2.003s,PASSED
+"scrollToElement(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Vreemdeling TAB""), 5)",Chrome 76.0.3809.100,Click Vreemdeling tab,,2019-08-21 19:17:10,2019-08-21 19:17:10,0.113s,NOT_RUN
+"scrollToPosition(10, 8)",Chrome 76.0.3809.100,,,2019-08-21 19:17:10,2019-08-21 19:17:10,0.309s,PASSED
+delay(3),Chrome 76.0.3809.100,,,2019-08-21 19:17:10,2019-08-21 19:17:13,3.003s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Vreemdeling TAB""))",Chrome 76.0.3809.100,Click Vreemdeling tab,,2019-08-21 19:17:13,2019-08-21 19:17:15,1.204s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:17:15,2019-08-21 19:17:16,1.006s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-310/Toegang""))",Chrome 76.0.3809.100,"Click Toegang tab
+",,2019-08-21 19:17:16,2019-08-21 19:17:16,0.827s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:17:16,2019-08-21 19:17:17,1.006s,PASSED
+"scrollToElement(findTestObject(""JIRA/A Relese 6.6/ACTPOL-310/Toezicht verbalisant2""), 1)",Chrome 76.0.3809.100,Click Toezicht verbalisant2 Search titles,,2019-08-21 19:17:17,2019-08-21 19:17:18,0.594s,PASSED
+"scrollToPosition(1, 0)",Chrome 76.0.3809.100,,,2019-08-21 19:17:18,2019-08-21 19:17:18,0.062s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:17:18,2019-08-21 19:17:20,2.424s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-310/Toezicht verbalisant1""))",Chrome 76.0.3809.100,Click Toezicht verbalisant1 Search titles,,2019-08-21 19:17:20,2019-08-21 19:17:22,1.978s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:17:22,2019-08-21 19:17:24,2.004s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-310/Toezicht verbalisant1 lb""))",Chrome 76.0.3809.100,Select required drop down,,2019-08-21 19:17:24,2019-08-21 19:17:25,0.856s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:17:25,2019-08-21 19:17:27,2.006s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-310/Toezicht verbalisant2""))",Chrome 76.0.3809.100,Click Toezicht verbalisant2 Search titles,,2019-08-21 19:17:27,2019-08-21 19:17:28,0.813s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:17:28,2019-08-21 19:17:30,2.003s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-310/Toezicht verbalisant lb2""))",Chrome 76.0.3809.100,Select required drop down,,2019-08-21 19:17:30,2019-08-21 19:17:31,1.148s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:17:31,2019-08-21 19:17:33,2.006s,PASSED
+"focus(findTestObject(""JIRA/A Relese 6.6/ACTPOL-310/Vreemdeling save""))",Chrome 76.0.3809.100,,,2019-08-21 19:17:33,2019-08-21 19:17:34,0.567s,PASSED
+,,,,,,,
+Test Cases/JIRA Tasks/Release 6.6/ACTPOL-316,Chrome 76.0.3809.100,"Description
+For the Vremdeling module phase 2 there are some chanes required in the Weigering tab.
+To have additional field to create complete documents.
+
+Solution
+In Weigering Tab In Vreemdeling process, the following fields are added in the Weigering tab. Fields: To operator, To telephone, To telefax, Beheerst Nederlandse tijd (ja/nee), Taal verhoor (dropdown) naam Tolk, are processed in the Weigering tab.
+
+Check attachment for detailed description.
+
+Testplan
+Step 1: Go to Generiek - Assistentie.
+Step 2: Go to Rol/proces tab and add a new Vreemdeling proces
+Step 3: Fill in mandatory fields and save
+Step 4: Go to Weigering tab and add mandatory fields.
+SteP 5: It should be possible to fill in ""Telefoon"", ""Telefax"" en ""Beheerst Nederlandse taal""
+Step 6: It should be possible to save record.
+
+Navigation
+Generiek - Asstentie - rol/proces - Vreemdeling - tab Weigering",ACTPOL-316,2019-08-21 19:17:34,2019-08-21 19:19:40,2m - 5.651s,PASSED
+"callTestCase(findTestCase(""main/Actpol_Login_testenv""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-08-21 19:17:35,2019-08-21 19:18:01,25.769s,PASSED
+"selectOptionByValue(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie""), ""assist"", false)",Chrome 76.0.3809.100,,,2019-08-21 19:18:01,2019-08-21 19:18:14,13.268s,PASSED
+"setText(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie Set text""), Generiekassistenite_Module)",Chrome 76.0.3809.100,,,2019-08-21 19:18:14,2019-08-21 19:18:15,1.097s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:18:15,2019-08-21 19:18:18,2.107s,PASSED
+"click(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Zoeken new""))",Chrome 76.0.3809.100,,,2019-08-21 19:18:18,2019-08-21 19:18:22,4.272s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:18:22,2019-08-21 19:18:24,2.005s,PASSED
+AssistentiedynamicId = Generiekassistenite_Module,Chrome 76.0.3809.100,Remember first set default assistentieid after run the script,,2019-08-21 19:18:24,2019-08-21 19:18:24,0.002s,PASSED
+"Assistentiexpath = ""//*[text()="""" + AssistentiedynamicId + """"]/preceding-sibling::td/a[2]""",Chrome 76.0.3809.100,,,2019-08-21 19:18:24,2019-08-21 19:18:24,0.001s,PASSED
+"to = findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/View Assistentie"")",Chrome 76.0.3809.100,,,2019-08-21 19:18:24,2019-08-21 19:18:24,0.502s,PASSED
+"to.addProperty(""xpath"", EQUALS, Assistentiexpath)",Chrome 76.0.3809.100,,,2019-08-21 19:18:24,2019-08-21 19:18:24,0.000s,PASSED
+delay(5),Chrome 76.0.3809.100,,,2019-08-21 19:18:24,2019-08-21 19:18:29,5.103s,PASSED
+click(to),Chrome 76.0.3809.100,,,2019-08-21 19:18:29,2019-08-21 19:18:30,0.459s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:18:30,2019-08-21 19:18:32,2.004s,PASSED
+"click(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Confirmeren""))",Chrome 76.0.3809.100,,,2019-08-21 19:18:32,2019-08-21 19:18:39,7.400s,PASSED
+delay(5),Chrome 76.0.3809.100,,,2019-08-21 19:18:39,2019-08-21 19:18:44,5.004s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Click roll process""))",Chrome 76.0.3809.100,,,2019-08-21 19:18:44,2019-08-21 19:18:47,2.527s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:18:47,2019-08-21 19:18:49,2.004s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Click new process""))",Chrome 76.0.3809.100,,,2019-08-21 19:18:49,2019-08-21 19:18:49,0.620s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:18:49,2019-08-21 19:18:51,2.003s,PASSED
+"comment(""Select process ""VREEMDELING"""")",Chrome 76.0.3809.100,,,2019-08-21 19:18:51,2019-08-21 19:18:51,0.003s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Rol Proces Type""), ""VREEMDELING"", false)",Chrome 76.0.3809.100,Select required dropdown,,2019-08-21 19:18:51,2019-08-21 19:18:52,0.559s,PASSED
+delay(3),Chrome 76.0.3809.100,,,2019-08-21 19:18:52,2019-08-21 19:18:55,3.003s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-308/Vliegmaatschappij_Rederij""), ""Katalon testing"")",Chrome 76.0.3809.100,Enter the text,,2019-08-21 19:18:55,2019-08-21 19:18:56,1.068s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:18:56,2019-08-21 19:18:57,1.003s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-308/Naam boot_vliegtuig""), ""Katalon testing"")",Chrome 76.0.3809.100,Enter the text,,2019-08-21 19:18:57,2019-08-21 19:18:58,0.737s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:18:58,2019-08-21 19:18:59,1.004s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-308/Telefoon boot_vliegtuig""), ""Katalon testing"")",Chrome 76.0.3809.100,Enter the telefoon number,,2019-08-21 19:18:59,2019-08-21 19:19:00,0.710s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:19:00,2019-08-21 19:19:01,1.003s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-308/Agentschap""), ""Katalon testing"")",Chrome 76.0.3809.100,Enter the text,,2019-08-21 19:19:01,2019-08-21 19:19:01,0.780s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:19:01,2019-08-21 19:19:02,1.004s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-308/Achternaam""), ""aa"")",Chrome 76.0.3809.100,Enter the text,,2019-08-21 19:19:02,2019-08-21 19:19:03,0.592s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:19:03,2019-08-21 19:19:05,2.006s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-308/Achternaam lb""))",Chrome 76.0.3809.100,Select required dropdown,,2019-08-21 19:19:05,2019-08-21 19:19:05,0.506s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:19:05,2019-08-21 19:19:07,2.003s,PASSED
+"scrollToPosition(10, 8)",Chrome 76.0.3809.100,,,2019-08-21 19:19:07,2019-08-21 19:19:07,0.060s,PASSED
+delay(3),Chrome 76.0.3809.100,,,2019-08-21 19:19:07,2019-08-21 19:19:10,3.004s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-309/Vreemdeling TAB""))",Chrome 76.0.3809.100,Click Vreemdeling tab,,2019-08-21 19:19:10,2019-08-21 19:19:11,0.584s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:19:11,2019-08-21 19:19:12,1.006s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-316/Weigering tab""))",Chrome 76.0.3809.100,Click Weigering tab,,2019-08-21 19:19:12,2019-08-21 19:19:13,0.633s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:19:13,2019-08-21 19:19:14,1.004s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-316/Weigering door1""))",Chrome 76.0.3809.100,Click Weigering door1,,2019-08-21 19:19:14,2019-08-21 19:19:14,0.566s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:19:14,2019-08-21 19:19:16,2.005s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-316/Weigering door1 lb1""))",Chrome 76.0.3809.100,Select required dropdown,,2019-08-21 19:19:16,2019-08-21 19:19:17,0.612s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:19:17,2019-08-21 19:19:18,1.004s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-316/Weigering door2""))",Chrome 76.0.3809.100,Click Weigering door2,,2019-08-21 19:19:18,2019-08-21 19:19:18,0.526s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:19:18,2019-08-21 19:19:20,2.003s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-316/Weigering door2 lb 2""))",Chrome 76.0.3809.100,Select required dropdown,,2019-08-21 19:19:20,2019-08-21 19:19:21,0.539s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:19:21,2019-08-21 19:19:22,1.006s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-316/Gebeld naar""), ""Gebeld naar"")",Chrome 76.0.3809.100,Enter text from the feild :: Gebeld naar,,2019-08-21 19:19:22,2019-08-21 19:19:23,0.768s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:19:23,2019-08-21 19:19:24,1.002s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-316/Gebelde nummer""), ""Gebelde nummer"")",Chrome 76.0.3809.100,Enter text from the feild :: Gebelde nummer,,2019-08-21 19:19:24,2019-08-21 19:19:25,0.774s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:19:25,2019-08-21 19:19:26,1.006s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-316/Telefax""), ""Telefax"")",Chrome 76.0.3809.100,Enter text from the feild :: Telefax,,2019-08-21 19:19:26,2019-08-21 19:19:26,0.622s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:19:26,2019-08-21 19:19:27,1.005s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-316/Beheerst nederlandse taal""))",Chrome 76.0.3809.100,"Click Beheerst nederlandse taal ja
+",,2019-08-21 19:19:27,2019-08-21 19:19:28,0.546s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:19:28,2019-08-21 19:19:29,1.004s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-316/Taal verhoor""), ""CHINEES"", false)",Chrome 76.0.3809.100,Select required dropdown from the list,,2019-08-21 19:19:29,2019-08-21 19:19:29,0.560s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:19:29,2019-08-21 19:19:30,1.003s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-316/Naam Tolk""), ""Naam Tolk"")",Chrome 76.0.3809.100,Enter the text :: Naam Tolk,,2019-08-21 19:19:30,2019-08-21 19:19:31,0.699s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:19:31,2019-08-21 19:19:32,1.004s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-316/Weigering post""), ""Bonaire Post 1"", false)",Chrome 76.0.3809.100,Select required drop down :: Weigering post,,2019-08-21 19:19:32,2019-08-21 19:19:33,0.610s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:19:33,2019-08-21 19:19:34,1.002s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-310/Vreemdeling save""))",Chrome 76.0.3809.100,,,2019-08-21 19:19:34,2019-08-21 19:19:34,0.602s,PASSED
+delay(3),Chrome 76.0.3809.100,,,2019-08-21 19:19:34,2019-08-21 19:19:37,3.003s,PASSED
+takeScreenshot(),Chrome 76.0.3809.100,,,2019-08-21 19:19:37,2019-08-21 19:19:40,2.514s,PASSED
+,,,,,,,
+Test Cases/JIRA Tasks/Release 6.6/ACTPOL-344,Chrome 76.0.3809.100,"Possibility to enter, as a Rijbewijs, a Vaarbewijs in ACTPOL at the personen module
+
+ 
+
+Make changes to POL0009.pdw to add a new section for Vaarbewijs. Can follow the
+logic and copy the HTML from Rijbewijs to implement. Each section is a set of tasks
+add/update/delete in the same program. 
+Table KPNAPF09C is for the existing vehicle type data, make a new KPNAPF09[new
+letter] for the vessel type data. 
+File KPSLPF0288 is for new list values. Use this file for the new Vessel License Type
+field values/dropdown.",ACTPOL-344,2019-08-21 19:19:40,2019-08-21 19:21:53,2m - 13.155s,PASSED
+"callTestCase(findTestCase(""main/Actpol_Login_testenv""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-08-21 19:19:41,2019-08-21 19:20:07,25.725s,PASSED
+"selectOptionByValue(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie""), ""assist"", false)",Chrome 76.0.3809.100,,,2019-08-21 19:20:07,2019-08-21 19:20:20,13.103s,PASSED
+"setText(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie Set text""), Generiekassistenite_Module)",Chrome 76.0.3809.100,,,2019-08-21 19:20:20,2019-08-21 19:20:21,0.982s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:20:21,2019-08-21 19:20:23,2.003s,PASSED
+"click(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Zoeken new""))",Chrome 76.0.3809.100,,,2019-08-21 19:20:23,2019-08-21 19:20:27,4.231s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:20:27,2019-08-21 19:20:29,2.003s,PASSED
+AssistentiedynamicId = Generiekassistenite_Module,Chrome 76.0.3809.100,Remember first set default assistentieid after run the script,,2019-08-21 19:20:29,2019-08-21 19:20:29,0.001s,PASSED
+"Assistentiexpath = ""//*[text()="""" + AssistentiedynamicId + """"]/preceding-sibling::td/a[2]""",Chrome 76.0.3809.100,,,2019-08-21 19:20:29,2019-08-21 19:20:29,0.000s,PASSED
+"to = findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/View Assistentie"")",Chrome 76.0.3809.100,,,2019-08-21 19:20:29,2019-08-21 19:20:29,0.393s,PASSED
+"to.addProperty(""xpath"", EQUALS, Assistentiexpath)",Chrome 76.0.3809.100,,,2019-08-21 19:20:29,2019-08-21 19:20:29,0.001s,PASSED
+delay(5),Chrome 76.0.3809.100,,,2019-08-21 19:20:29,2019-08-21 19:20:34,5.006s,PASSED
+click(to),Chrome 76.0.3809.100,,,2019-08-21 19:20:34,2019-08-21 19:20:35,0.510s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:20:35,2019-08-21 19:20:37,2.003s,PASSED
+"click(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Confirmeren""))",Chrome 76.0.3809.100,,,2019-08-21 19:20:37,2019-08-21 19:20:46,9.060s,PASSED
+delay(5),Chrome 76.0.3809.100,,,2019-08-21 19:20:46,2019-08-21 19:20:51,5.002s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Click roll process""))",Chrome 76.0.3809.100,,,2019-08-21 19:20:51,2019-08-21 19:20:54,2.607s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:20:54,2019-08-21 19:20:56,2.004s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Click new process""))",Chrome 76.0.3809.100,,,2019-08-21 19:20:56,2019-08-21 19:20:56,0.515s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:20:56,2019-08-21 19:20:58,2.005s,PASSED
+"comment(""Select process ""VREEMDELING"""")",Chrome 76.0.3809.100,,,2019-08-21 19:20:58,2019-08-21 19:20:58,0.004s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Rol Proces Type""), ""VREEMDELING"", false)",Chrome 76.0.3809.100,Select required dropdown,,2019-08-21 19:20:58,2019-08-21 19:20:59,0.522s,PASSED
+delay(3),Chrome 76.0.3809.100,,,2019-08-21 19:20:59,2019-08-21 19:21:02,3.003s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-308/Vliegmaatschappij_Rederij""), ""Katalon testing"")",Chrome 76.0.3809.100,Enter the text,,2019-08-21 19:21:02,2019-08-21 19:21:03,0.975s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:21:03,2019-08-21 19:21:04,1.003s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-308/Naam boot_vliegtuig""), ""Katalon testing"")",Chrome 76.0.3809.100,Enter the text,,2019-08-21 19:21:04,2019-08-21 19:21:04,0.765s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:21:04,2019-08-21 19:21:05,1.003s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-308/Telefoon boot_vliegtuig""), ""Katalon testing"")",Chrome 76.0.3809.100,Enter the telefoon number,,2019-08-21 19:21:05,2019-08-21 19:21:06,0.713s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:21:06,2019-08-21 19:21:07,1.003s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-308/Agentschap""), ""Katalon testing"")",Chrome 76.0.3809.100,Enter the text,,2019-08-21 19:21:07,2019-08-21 19:21:08,0.793s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:21:08,2019-08-21 19:21:09,1.003s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-344/Achternaam new btn click""))",Chrome 76.0.3809.100,Click Achternaam new btn,,2019-08-21 19:21:09,2019-08-21 19:21:14,5.177s,PASSED
+delay(4),Chrome 76.0.3809.100,,,2019-08-21 19:21:14,2019-08-21 19:21:18,4.029s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-344/Persoon edit default""))",Chrome 76.0.3809.100,Click Personen  edit btn,,2019-08-21 19:21:18,2019-08-21 19:21:19,0.742s,PASSED
+delay(4),Chrome 76.0.3809.100,,,2019-08-21 19:21:19,2019-08-21 19:21:23,4.003s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-344/Personalia tab""))",Chrome 76.0.3809.100,Click Personen  tab,,2019-08-21 19:21:23,2019-08-21 19:21:25,1.877s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:21:25,2019-08-21 19:21:27,2.006s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-344/Vaarbewijs""))",Chrome 76.0.3809.100,Click Vaarbewijs tab,,2019-08-21 19:21:27,2019-08-21 19:21:27,0.646s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:21:27,2019-08-21 19:21:29,2.003s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-344/Vaarbewijs new""))",Chrome 76.0.3809.100,Click Vaarbewijs new,,2019-08-21 19:21:29,2019-08-21 19:21:30,0.493s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:21:30,2019-08-21 19:21:31,1.005s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-344/Vaarbewijs Vaarbewijs""), ""Vaarbewijs test"")",Chrome 76.0.3809.100,Enter text from the feild:: Vaarbewijs,,2019-08-21 19:21:31,2019-08-21 19:21:32,0.851s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:21:32,2019-08-21 19:21:33,1.003s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-344/Vaarbewijs type""), ""INTERNATIONAAL"", false)",Chrome 76.0.3809.100,Select required dropdown from the list,,2019-08-21 19:21:33,2019-08-21 19:21:33,0.582s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:21:33,2019-08-21 19:21:34,1.004s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-344/Categorie""), ""Beroeps"", false)",Chrome 76.0.3809.100,Select required dropdown from the list,,2019-08-21 19:21:34,2019-08-21 19:21:35,0.589s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:21:35,2019-08-21 19:21:36,1.004s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-344/Land afgifte""), ""AFGHANISTAN"", false)",Chrome 76.0.3809.100,Select required dropdown from the list,,2019-08-21 19:21:36,2019-08-21 19:21:36,0.463s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:21:36,2019-08-21 19:21:37,1.003s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-344/Datum afgifte""))",Chrome 76.0.3809.100,Click Datum afgifte Calendar icon,,2019-08-21 19:21:37,2019-08-21 19:21:38,0.583s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:21:38,2019-08-21 19:21:39,1.005s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-344/newpersonmonth""), ""maa"", false)",Chrome 76.0.3809.100,Select month,,2019-08-21 19:21:39,2019-08-21 19:21:40,0.630s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:21:40,2019-08-21 19:21:41,1.004s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-344/newpersonyear""), ""2018"", false)",Chrome 76.0.3809.100,Select year,,2019-08-21 19:21:41,2019-08-21 19:21:41,0.556s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:21:41,2019-08-21 19:21:42,1.002s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-344/newperson 10th""))",Chrome 76.0.3809.100,Click 10th date,,2019-08-21 19:21:42,2019-08-21 19:21:43,0.541s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:21:43,2019-08-21 19:21:44,1.004s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-344/Verval datum""))",Chrome 76.0.3809.100,Click Verval datum Calendar icon,,2019-08-21 19:21:44,2019-08-21 19:21:44,0.558s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:21:44,2019-08-21 19:21:45,1.004s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-344/newpersonmonth""), ""maa"", false)",Chrome 76.0.3809.100,Select month,,2019-08-21 19:21:45,2019-08-21 19:21:46,0.562s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:21:46,2019-08-21 19:21:47,1.004s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-344/newpersonyear""), ""2019"", false)",Chrome 76.0.3809.100,Select year,,2019-08-21 19:21:47,2019-08-21 19:21:47,0.391s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:21:47,2019-08-21 19:21:48,1.005s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-344/newperson 11th""))",Chrome 76.0.3809.100,Click 10th date,,2019-08-21 19:21:48,2019-08-21 19:21:49,0.599s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-21 19:21:49,2019-08-21 19:21:50,1.015s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-344/Vaarbewijs add on""))",Chrome 76.0.3809.100,Click save btn,,2019-08-21 19:21:50,2019-08-21 19:21:50,0.623s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-21 19:21:50,2019-08-21 19:21:52,2.004s,PASSED
+takeScreenshot(),Chrome 76.0.3809.100,,,2019-08-21 19:21:52,2019-08-21 19:21:53,0.492s,PASSED

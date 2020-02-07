@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Goederen
+Step 2: Set text Merk
+Step 3: Set text IMEI
+Step 4: Search results is an Merk and IMEI</description>
+   <name>Algemene Zoekopdracht - Select type Goederen-IMEI(IMEI-1)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>aa4da875-8fe6-42dd-b7a0-00b32a8632b9</testCaseGuid>
+</TestCaseEntity>

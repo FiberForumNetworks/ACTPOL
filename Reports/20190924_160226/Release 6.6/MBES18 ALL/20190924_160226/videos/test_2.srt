@@ -1,0 +1,116 @@
+1
+00:00:00,728 --> 00:00:00,731
+3. Login to the application
+
+2
+00:00:00,902 --> 00:00:00,903
+1. openBrowser("")
+
+3
+00:00:04,473 --> 00:00:04,475
+5. deleteAllCookies()
+
+4
+00:00:04,513 --> 00:00:04,515
+9. waitForPageLoad(60)
+
+5
+00:00:04,561 --> 00:00:04,562
+13. waitForJQueryLoad(30)
+
+6
+00:00:04,590 --> 00:00:04,591
+17. maximizeWindow()
+
+7
+00:00:05,755 --> 00:00:05,756
+21. ACTPOLTESTENV = 1
+
+8
+00:00:05,758 --> 00:00:05,760
+25. ACTPOLDEVENV = 2
+
+9
+00:00:05,778 --> 00:00:05,779
+29. ACTPOLKCENV = 3
+
+10
+00:00:05,780 --> 00:00:05,781
+33. ACTPOLKBKPCNENV = 4
+
+11
+00:00:05,783 --> 00:00:05,788
+37. ACTPOLKBKMARENV = 5
+
+12
+00:00:05,790 --> 00:00:05,792
+41. ACTPOLKMENV = 6
+
+13
+00:00:05,793 --> 00:00:05,794
+45. ACTPOLKWENV = 7
+
+14
+00:00:05,795 --> 00:00:05,797
+49. environment = ACTPOLTESTENV
+
+15
+00:00:05,799 --> 00:00:05,800
+53. Selectenv = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>
+
+16
+00:00:05,801 --> 00:00:05,803
+57. switch (environment)
+
+17
+00:00:05,805 --> 00:00:05,806
+2. println(Selectenv = "ACTPOL-TEST-ENV")
+
+18
+00:00:05,809 --> 00:00:05,811
+6. navigateToUrl(TESTURL)
+
+19
+00:00:12,533 --> 00:00:12,537
+10. setText(findTestObject("Actpol_Scripts/login/userid"), username)
+
+20
+00:00:13,365 --> 00:00:13,366
+14. setMaskedText(findTestObject("Actpol_Scripts/login/password"), password)
+
+21
+00:00:14,167 --> 00:00:14,168
+18. click(findTestObject("Actpol_Scripts/login/login"))
+
+22
+00:00:14,661 --> 00:00:14,662
+22. getWindowTitle()
+
+23
+00:00:14,710 --> 00:00:14,711
+26. break
+
+24
+00:00:14,716 --> 00:00:14,717
+7. log = new com.kms.katalon.core.logging.KeywordLogger()
+
+25
+00:00:14,720 --> 00:00:14,722
+11. delay(1)
+
+26
+00:00:15,730 --> 00:00:15,732
+17. Mouse over to Generic tab
+
+27
+00:00:18,927 --> 00:00:18,928
+21. log.logInfo("Successfully logged")
+
+28
+00:00:18,930 --> 00:00:18,932
+25. delay(3)
+
+29
+00:00:21,952 --> 00:00:21,954
+31. Click MBES tab
+

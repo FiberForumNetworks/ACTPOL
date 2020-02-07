@@ -1,0 +1,27 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ACTPOL-317,Chrome 77.0.3865.120,#New Tab Maatregelen Bewaring vreemdeling,,2019-10-22 20:19:59,2019-10-22 20:21:39,1m - 40.012s,INCOMPLETE
+,,,,,,,
+Test Cases/JIRA Tasks/Release 6.6/ACTPOL-317,Chrome 77.0.3865.120,"Description
+For the Vremdeling module phase 2 there are some chanes required.
+To have additional field to create complete documents and to register Bewaring.
+
+Solution
+Add in the Vreemdeling rol/process, a new tab called ""Maatregelen bewaring"". This should be linked to the role process ""bekende aangehouden verdachte"".
+This should be stored in a new table that will linked to the table series KPNAPF04xx.
+This should be a new table but there should be an additional column to differentiate between ""Bekende aangehouden verdachte"" records and ""Maatregelen bewaring"" records in query.
+
+For detailled description and screenshots, check attachment.
+
+Testplan
+Step 1: Go to Generiek - Assistentie.
+Step 2: Go to Rol/proces tab and add a new Vreemdeling proces
+Step 3: Fill in mandatory fields and save
+Step 4: Go to tab Maatregelen Bewaring and fill in the mandatory fields.
+Step 5: Save record.
+
+Navigation
+Generiek - Asstentie - rol/proces - Vreemdeling - tab Weigering",ACTPOL-317,2019-10-22 20:19:59,2019-10-22 20:21:39,1m - 39.491s,FAILED
+"callTestCase(findTestCase(""main/Actpol_Login_testenv""), [:], STOP_ON_FAILURE)",Chrome 77.0.3865.120,,,2019-10-22 20:20:01,2019-10-22 20:20:32,30.686s,PASSED
+"markPassed(""PASS::Actpol web application login successfully"")",Chrome 77.0.3865.120,,,2019-10-22 20:20:32,2019-10-22 20:20:32,0.081s,PASSED
+log = new com.kms.katalon.core.logging.KeywordLogger(),Chrome 77.0.3865.120,,,2019-10-22 20:20:32,2019-10-22 20:20:32,0.006s,PASSED
+"selectOptionByValue(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie""), ""assist"", false)",Chrome 77.0.3865.120,,,2019-10-22 20:20:32,2019-10-22 20:21:36,1m - 4.614s,FAILED

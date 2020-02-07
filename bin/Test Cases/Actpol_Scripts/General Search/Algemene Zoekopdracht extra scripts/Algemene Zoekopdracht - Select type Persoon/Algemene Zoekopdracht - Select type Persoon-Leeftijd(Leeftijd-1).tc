@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Persoon
+Step 2: Set text Leeftijd
+Step 3: Search results is an Leeftijd</description>
+   <name>Algemene Zoekopdracht - Select type Persoon-Leeftijd(Leeftijd-1)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fd5285bf-d042-49ce-83fe-585f1a61dde2</testCaseGuid>
+</TestCaseEntity>

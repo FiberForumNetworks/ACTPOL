@@ -1,0 +1,25 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ACTPOL-532,Chrome 77.0.3865.75,,,2019-09-12 21:28:27,2019-09-12 21:31:12,2m - 45.813s,INCOMPLETE
+,,,,,,,
+Test Cases/JIRA Tasks/Release 6.6/ACTPOL-532,Chrome 77.0.3865.75,"Description:
+In Opsporing Arrestanten in the Tab Goederen there is no functionality to copy goederen as in the remaining Goederen modules.
+
+Currently when you add a Goed and save you have an additional button to copy.
+This can be found in assistentie- rol/proces - enter for example bekende aangehouden verdachte or aangifte fill in mandatory fields and save.
+A tab called Goederen will appear here you can see that you can Copy an entered goederen.
+But when you go to Opsporing- arrestanten and tab goederen you cannot Copy the entered goed.
+
+Solution:
+Copy in Opsporing Arrestanten in the Tab Goederen the functionality to copy goederen as in the remaining Goederen modules.
+
+Testplan:
+Step 1: Go to Opsporing - Arrestanten - tab Goederen
+Step 2: Open an existing Arrestenten record.
+Step 3: Add in tab Goederen an object (goed) and Save.
+Step 4: Go to this Goed and click on the copy button and save.
+Step 5: it should be possible to copy this goed muultiple times and save.
+
+Navigation:
+Opsporing - Arrestanten - tab Goederen",ACTPOL-532,2019-09-12 21:28:27,2019-09-12 21:31:12,2m - 45.066s,FAILED
+"callTestCase(findTestCase(""main/Actpol_Login_testenv""), [:], STOP_ON_FAILURE)",Chrome 77.0.3865.75,,,2019-09-12 21:28:30,2019-09-12 21:30:31,2m - 1.347s,PASSED
+"mouseOver(findTestObject(""Actpol_Scripts/Menu navigation/Opsporing/Opsporing""))",Chrome 77.0.3865.75,,,2019-09-12 21:30:31,2019-09-12 21:31:09,37.862s,FAILED

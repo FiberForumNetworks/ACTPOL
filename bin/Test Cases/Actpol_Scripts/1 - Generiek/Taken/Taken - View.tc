@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Enter a new new werkopdracht and fill all possible fields and tabs</description>
+   <name>Taken - View</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>78f90df0-c5b5-4358-bbd1-352ee9850674</testCaseGuid>
+</TestCaseEntity>

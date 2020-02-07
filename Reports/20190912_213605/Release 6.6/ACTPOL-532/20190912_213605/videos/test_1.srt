@@ -1,0 +1,316 @@
+1
+00:00:00,866 --> 00:00:00,876
+1. callTestCase(findTestCase("main/Actpol_Login_testenv"), [:], STOP_ON_FAILURE)
+
+2
+00:00:02,778 --> 00:00:02,779
+1. openBrowser("")
+
+3
+00:00:14,257 --> 00:00:14,259
+5. deleteAllCookies()
+
+4
+00:00:14,317 --> 00:00:14,322
+9. waitForPageLoad(30)
+
+5
+00:00:19,578 --> 00:00:19,580
+13. maximizeWindow()
+
+6
+00:00:20,888 --> 00:00:20,891
+17. ACTPOLTESTENV = 1
+
+7
+00:00:20,895 --> 00:00:20,900
+21. ACTPOLDEVENV = 2
+
+8
+00:00:20,902 --> 00:00:20,904
+25. ACTPOLKCENV = 3
+
+9
+00:00:20,906 --> 00:00:20,908
+29. ACTPOLKBKPCNENV = 4
+
+10
+00:00:20,909 --> 00:00:20,911
+33. ACTPOLKBKMARENV = 5
+
+11
+00:00:20,913 --> 00:00:20,920
+37. ACTPOLKMENV = 6
+
+12
+00:00:20,923 --> 00:00:20,927
+41. ACTPOLKWENV = 7
+
+13
+00:00:20,932 --> 00:00:20,935
+45. environment = ACTPOLDEVENV
+
+14
+00:00:21,049 --> 00:00:21,052
+49. Selectenv = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>
+
+15
+00:00:21,053 --> 00:00:21,055
+53. switch (environment)
+
+16
+00:00:21,211 --> 00:00:21,212
+2. println(Selectenv = "ACTPOL-DEV-ENV")
+
+17
+00:00:21,424 --> 00:00:21,426
+6. navigateToUrl(DEVURL)
+
+18
+00:00:36,663 --> 00:00:36,665
+10. setText(findTestObject("Actpol_Scripts/login/userid"), username)
+
+19
+00:00:46,569 --> 00:00:46,571
+14. setMaskedText(findTestObject("Actpol_Scripts/login/password"), password)
+
+20
+00:00:47,366 --> 00:00:47,368
+18. click(findTestObject("Actpol_Scripts/login/login"))
+
+21
+00:00:48,271 --> 00:00:48,273
+22. getWindowTitle()
+
+22
+00:00:48,310 --> 00:00:48,311
+26. break
+
+23
+00:00:48,332 --> 00:00:48,334
+5. mouseOver(findTestObject("Actpol_Scripts/Menu navigation/Opsporing/Opsporing"))
+
+24
+00:01:09,539 --> 00:01:09,541
+9. delay(2)
+
+25
+00:01:11,557 --> 00:01:11,559
+13. click(findTestObject("Actpol_Scripts/Menu navigation/Opsporing/Arrestanten"))
+
+26
+00:01:18,602 --> 00:01:18,604
+17. delay(1)
+
+27
+00:01:19,612 --> 00:01:19,614
+21. mouseOver(findTestObject("Actpol_Scripts/Menu navigation/Generiek/Generiek"))
+
+28
+00:01:20,541 --> 00:01:20,543
+25. delay(1)
+
+29
+00:01:21,549 --> 00:01:21,551
+31. Remember first set default assistentieid after run the script
+
+30
+00:01:21,554 --> 00:01:21,559
+35. Assistentiexpath = "(//*[text()="" + ArrestantenId + ""]/preceding-sibling::td/a[2])[1]"
+
+31
+00:01:21,560 --> 00:01:21,562
+39. to = findTestObject("Actpol_Scripts/Opsporing/Arrestanten/user edit select radio btn")
+
+32
+00:01:23,872 --> 00:01:23,875
+43. to.addProperty("xpath", EQUALS, Assistentiexpath)
+
+33
+00:01:23,897 --> 00:01:23,900
+47. click(to)
+
+34
+00:01:25,322 --> 00:01:25,323
+51. delay(8)
+
+35
+00:01:33,331 --> 00:01:33,333
+55. click(findTestObject("Actpol_Scripts/Opsporing/Arrestanten/Registratie"))
+
+36
+00:01:34,419 --> 00:01:34,421
+59. delay(1)
+
+37
+00:01:35,428 --> 00:01:35,429
+63. delay(1)
+
+38
+00:01:36,434 --> 00:01:36,436
+67. click(findTestObject("Actpol_Scripts/Opsporing/Arrestanten/Goederen"))
+
+39
+00:01:38,327 --> 00:01:38,329
+71. delay(1)
+
+40
+00:01:39,341 --> 00:01:39,343
+75. click(findTestObject("Actpol_Scripts/Opsporing/Arrestanten/Goederen new"))
+
+41
+00:01:40,479 --> 00:01:40,481
+79. delay(4)
+
+42
+00:01:44,490 --> 00:01:44,491
+83. setText(findTestObject("Actpol_Scripts/Opsporing/Arrestanten/Voorwerpen"), "aa")
+
+43
+00:01:45,468 --> 00:01:45,470
+87. delay(2)
+
+44
+00:01:47,476 --> 00:01:47,480
+91. click(findTestObject("Actpol_Scripts/Opsporing/Arrestanten/Voorwerpen lb"))
+
+45
+00:01:48,343 --> 00:01:48,347
+95. delay(1)
+
+46
+00:01:49,354 --> 00:01:49,356
+99. setText(findTestObject("Actpol_Scripts/Opsporing/Arrestanten/Merk"), Testing)
+
+47
+00:01:51,388 --> 00:01:51,390
+103. delay(1)
+
+48
+00:01:52,399 --> 00:01:52,400
+107. setText(findTestObject("Actpol_Scripts/Opsporing/Arrestanten/Model"), Testing)
+
+49
+00:01:53,747 --> 00:01:53,749
+111. delay(1)
+
+50
+00:01:54,752 --> 00:01:54,754
+115. setText(findTestObject("Actpol_Scripts/Opsporing/Arrestanten/Kleur"), Testing)
+
+51
+00:01:56,342 --> 00:01:56,343
+119. delay(1)
+
+52
+00:01:57,347 --> 00:01:57,349
+123. setText(findTestObject("Actpol_Scripts/Opsporing/Arrestanten/Serie nummer"), number)
+
+53
+00:01:58,216 --> 00:01:58,218
+127. delay(1)
+
+54
+00:01:59,224 --> 00:01:59,226
+131. setText(findTestObject("Actpol_Scripts/Opsporing/Arrestanten/Aantal"), number)
+
+55
+00:02:00,274 --> 00:02:00,278
+135. delay(1)
+
+56
+00:02:01,281 --> 00:02:01,282
+139. setText(findTestObject("Actpol_Scripts/Opsporing/Arrestanten/In bewaring genomen door"), "aa")
+
+57
+00:02:02,049 --> 00:02:02,050
+143. delay(2)
+
+58
+00:02:04,060 --> 00:02:04,061
+147. click(findTestObject("Actpol_Scripts/Opsporing/Arrestanten/In bewaring genomen door lb"))
+
+59
+00:02:04,798 --> 00:02:04,799
+151. delay(1)
+
+60
+00:02:05,805 --> 00:02:05,806
+155. setText(findTestObject("Actpol_Scripts/Opsporing/Arrestanten/Onder supervisie van goed"), "aa")
+
+61
+00:02:06,623 --> 00:02:06,624
+159. delay(2)
+
+62
+00:02:08,632 --> 00:02:08,633
+163. click(findTestObject("Actpol_Scripts/Opsporing/Arrestanten/Onder supervisie van goed lb"))
+
+63
+00:02:09,417 --> 00:02:09,419
+167. delay(1)
+
+64
+00:02:10,429 --> 00:02:10,431
+171. selectOptionByLabel(findTestObject("Actpol_Scripts/Opsporing/Arrestanten/Opberg plaats dropdown"), dropdown, false)
+
+65
+00:02:11,330 --> 00:02:11,332
+175. delay(1)
+
+66
+00:02:12,337 --> 00:02:12,338
+179. setText(findTestObject("Actpol_Scripts/Opsporing/Arrestanten/Bijzonderheden goed"), Testing)
+
+67
+00:02:13,284 --> 00:02:13,285
+183. delay(1)
+
+68
+00:02:14,290 --> 00:02:14,291
+187. click(findTestObject("Actpol_Scripts/Opsporing/Arrestanten/Goed save"))
+
+69
+00:02:15,234 --> 00:02:15,237
+191. delay(4)
+
+70
+00:02:19,247 --> 00:02:19,249
+195. if (findTestObject("Actpol_Scripts/Opsporing/Arrestanten/Copy goed") == findTestObject("Actpol_Scripts/Opsporing/Arrestanten/Copy goed"))
+
+71
+00:02:19,774 --> 00:02:19,774
+2. click(findTestObject("Actpol_Scripts/Opsporing/Arrestanten/Copy goed default"))
+
+72
+00:02:20,504 --> 00:02:20,506
+6. delay(1)
+
+73
+00:02:21,520 --> 00:02:21,522
+10. selectOptionByLabel(findTestObject("Actpol_Scripts/Opsporing/Arrestanten/Hoeveel keren kopieren"), "2", false)
+
+74
+00:02:22,052 --> 00:02:22,053
+14. delay(1)
+
+75
+00:02:23,085 --> 00:02:23,086
+18. click(findTestObject("Actpol_Scripts/Opsporing/Arrestanten/Hoeveel keren kopieren right mark"))
+
+76
+00:02:23,520 --> 00:02:23,521
+22. delay(4)
+
+77
+00:02:27,528 --> 00:02:27,529
+26. click(findTestObject("Actpol_Scripts/Opsporing/Arrestanten/Kopieren Goed grid 2 display"))
+
+78
+00:02:27,948 --> 00:02:27,949
+30. delay(1)
+
+79
+00:02:28,960 --> 00:02:28,963
+34. takeScreenshot()
+

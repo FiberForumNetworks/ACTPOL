@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Kenteken
+Step 2: Set text Kleur
+Step 3: Search results is an Kleur</description>
+   <name>Algemene Zoekopdracht - Select type Kenteken-Kleur(Kleur-1)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5a0cf0d7-c290-43e5-90d3-d3fc460ea6af</testCaseGuid>
+</TestCaseEntity>

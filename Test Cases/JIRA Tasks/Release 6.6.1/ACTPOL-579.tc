@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Go to Info organisatie - Info organisatie - Journaal
+Step 2: Add a new Journaal in menu option Journaal
+Step 4: Add a couple more Journaal record and save.
+Step 4: search on text in entered Journaal based on from and to date.
+Step 5: Entered matching Journaal records should be displayed.
+Info organisatie - Info organisatie - Menu option Journaal</description>
+   <name>ACTPOL-579</name>
+   <tag>ACTPOL-579</tag>
+   <comment></comment>
+   <testCaseGuid>b142d75b-c6d4-4122-99f6-1e2bb8b307bc</testCaseGuid>
+</TestCaseEntity>

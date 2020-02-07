@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Kenteken
+Step 2: Set text Merk
+Step 2: Set text Adres
+Step 3: Search results is an Merk and Adres</description>
+   <name>Algemene Zoekopdracht - Select type Kenteken-Merk(Adres-2)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0b643511-bbed-4912-97f7-0bbb34368faf</testCaseGuid>
+</TestCaseEntity>

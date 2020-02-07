@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Menu, Click on Opsporing
+Step 2: Click on Onderzoek
+Step 3: Click existing user
+Step 4: Goto entite tab and select new entite 
+Step 5: Select each and evary roll process</description>
+   <name>Navigation Opsporing - Onderzoek Select user goo entite taab select all type of roll process</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c1e7151e-442b-43cb-9e5f-9907ef8c6d51</testCaseGuid>
+</TestCaseEntity>

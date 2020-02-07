@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Onderzoek - Activiteiten</name>
+   <tag></tag>
+   <comment>Nieuw Eigen Waarneming start
+Nieuw Journaal start
+Journaal Document start</comment>
+   <testCaseGuid>8caddf49-d199-4ca4-bf37-435f127cc1dc</testCaseGuid>
+</TestCaseEntity>

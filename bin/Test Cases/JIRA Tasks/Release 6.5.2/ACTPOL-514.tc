@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>I am adding new officer. Unable to saving new officer 
+
+Test Plan::
+Step 1: Go to Noodhulp: Onderhoud van Patrouilles Select optional user
+Step 2: Go to Unit officier Naam select auto complete button 
+Step 3: save the officer</description>
+   <name>ACTPOL-514</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>380a64b6-acfe-487c-8f27-ded699f952be</testCaseGuid>
+</TestCaseEntity>

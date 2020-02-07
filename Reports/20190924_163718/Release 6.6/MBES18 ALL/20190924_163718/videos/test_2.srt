@@ -1,0 +1,576 @@
+1
+00:00:00,659 --> 00:00:00,673
+3. Login to the application
+
+2
+00:00:00,817 --> 00:00:00,819
+1. openBrowser("")
+
+3
+00:00:04,374 --> 00:00:04,375
+5. deleteAllCookies()
+
+4
+00:00:04,401 --> 00:00:04,403
+9. waitForPageLoad(60)
+
+5
+00:00:04,432 --> 00:00:04,434
+13. maximizeWindow()
+
+6
+00:00:05,575 --> 00:00:05,576
+17. ACTPOLTESTENV = 1
+
+7
+00:00:05,577 --> 00:00:05,578
+21. ACTPOLDEVENV = 2
+
+8
+00:00:05,580 --> 00:00:05,582
+25. ACTPOLKCENV = 3
+
+9
+00:00:05,584 --> 00:00:05,585
+29. ACTPOLKBKPCNENV = 4
+
+10
+00:00:05,590 --> 00:00:05,592
+33. ACTPOLKBKMARENV = 5
+
+11
+00:00:05,594 --> 00:00:05,596
+37. ACTPOLKMENV = 6
+
+12
+00:00:05,601 --> 00:00:05,602
+41. ACTPOLKWENV = 7
+
+13
+00:00:05,603 --> 00:00:05,604
+45. environment = ACTPOLTESTENV
+
+14
+00:00:05,607 --> 00:00:05,608
+49. Selectenv = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>
+
+15
+00:00:05,610 --> 00:00:05,611
+53. switch (environment)
+
+16
+00:00:05,613 --> 00:00:05,614
+2. println(Selectenv = "ACTPOL-TEST-ENV")
+
+17
+00:00:05,616 --> 00:00:05,618
+6. navigateToUrl(TESTURL)
+
+18
+00:00:12,191 --> 00:00:12,194
+10. setText(findTestObject("Actpol_Scripts/login/userid"), username)
+
+19
+00:00:12,594 --> 00:00:12,596
+14. setMaskedText(findTestObject("Actpol_Scripts/login/password"), password)
+
+20
+00:00:13,051 --> 00:00:13,052
+18. click(findTestObject("Actpol_Scripts/login/login"))
+
+21
+00:00:13,361 --> 00:00:13,362
+22. getWindowTitle()
+
+22
+00:00:13,382 --> 00:00:13,383
+26. delay(5)
+
+23
+00:00:18,390 --> 00:00:18,392
+30. break
+
+24
+00:00:18,400 --> 00:00:18,401
+7. log = new com.kms.katalon.core.logging.KeywordLogger()
+
+25
+00:00:18,406 --> 00:00:18,407
+11. delay(1)
+
+26
+00:00:19,434 --> 00:00:19,436
+17. Mouse over to Generic tab
+
+27
+00:00:19,817 --> 00:00:19,818
+21. log.logInfo("Successfully logged")
+
+28
+00:00:19,821 --> 00:00:19,822
+25. delay(3)
+
+29
+00:00:22,836 --> 00:00:22,838
+31. Click MBES tab
+
+30
+00:00:23,208 --> 00:00:23,210
+35. delay(2)
+
+31
+00:00:25,218 --> 00:00:25,219
+41. Click MBES tab
+
+32
+00:00:25,826 --> 00:00:25,828
+45. log.logInfo("Clicking MBES18 tab ")
+
+33
+00:00:25,832 --> 00:00:25,834
+49. delay(1)
+
+34
+00:00:26,858 --> 00:00:26,859
+53. delay(5)
+
+35
+00:00:31,866 --> 00:00:31,867
+59. Click new btn
+
+36
+00:00:32,481 --> 00:00:32,483
+63. log.logInfo("Clicking MBES18 new button ")
+
+37
+00:00:32,486 --> 00:00:32,487
+67. delay(1)
+
+38
+00:00:33,494 --> 00:00:33,495
+71. takeScreenshot()
+
+39
+00:00:33,979 --> 00:00:33,980
+75. delay(1)
+
+40
+00:00:34,987 --> 00:00:34,988
+79. comment("Checking This should contain tab registratie, Personalia, Inbewaringstellings c.q. Plaatsingegevens, Gedrag/Medisch, Incidenten, Overige gegevens, Bezittingen/Bagage, Documenten. ")
+
+41
+00:00:35,006 --> 00:00:35,008
+85. Registration tab is visible in in the grid.
+
+42
+00:00:35,438 --> 00:00:35,439
+89. log.logInfo("Grid is shown contains tabs mentioned ::" + reg)
+
+43
+00:00:35,441 --> 00:00:35,443
+93. delay(1)
+
+44
+00:00:36,446 --> 00:00:36,447
+99. Personalia tab is visible in in the grid.
+
+45
+00:00:36,812 --> 00:00:36,813
+103. log.logInfo("Grid is shown contains columns mentioned ::" + per)
+
+46
+00:00:36,816 --> 00:00:36,817
+107. delay(1)
+
+47
+00:00:37,821 --> 00:00:37,823
+113. INBEWARINGSTELLINGS C.Q. PLAATSINGSGEGEVENS tab is visible in in the grid.
+
+48
+00:00:38,214 --> 00:00:38,216
+117. log.logInfo("Grid is shown contains columns mentioned ::" + inb)
+
+49
+00:00:38,218 --> 00:00:38,219
+121. delay(1)
+
+50
+00:00:39,227 --> 00:00:39,229
+127. GEDRAG/MEDISCH tab is visible in in the grid.
+
+51
+00:00:39,648 --> 00:00:39,649
+131. log.logInfo("Grid is shown contains columns mentioned ::" + ged)
+
+52
+00:00:39,652 --> 00:00:39,653
+135. delay(1)
+
+53
+00:00:40,663 --> 00:00:40,664
+141. INCIDENTEN tab is visible in in the grid.
+
+54
+00:00:41,066 --> 00:00:41,067
+145. log.logInfo("Grid is shown contains columns mentioned ::" + inc)
+
+55
+00:00:41,070 --> 00:00:41,071
+149. delay(1)
+
+56
+00:00:42,078 --> 00:00:42,079
+155. OVERIGE GEGEVENS tab is visible in in the grid.
+
+57
+00:00:42,457 --> 00:00:42,459
+159. log.logInfo("Grid is shown contains columns mentioned ::" + over)
+
+58
+00:00:42,461 --> 00:00:42,462
+163. delay(1)
+
+59
+00:00:43,466 --> 00:00:43,467
+169. BEZITTINGEN/BAGAGE tab is visible in in the grid.
+
+60
+00:00:43,815 --> 00:00:43,816
+173. log.logInfo("Grid is shown contains columns mentioned ::" + begi)
+
+61
+00:00:43,819 --> 00:00:43,820
+177. delay(1)
+
+62
+00:00:44,828 --> 00:00:44,831
+181. comment("Data entering in Registratie tab")
+
+63
+00:00:44,842 --> 00:00:44,845
+185. delay(1)
+
+64
+00:00:45,853 --> 00:00:45,854
+191. Click new btn in Registratie
+
+65
+00:00:46,452 --> 00:00:46,453
+195. delay(1)
+
+66
+00:00:46,460 --> 00:00:46,461
+201. Click save btn
+
+67
+00:00:46,465 --> 00:00:46,466
+205. delay(1)
+
+68
+00:00:46,471 --> 00:00:46,473
+209. getAlertText()
+
+69
+00:00:46,476 --> 00:00:46,477
+213. delay(1)
+
+70
+00:00:46,479 --> 00:00:46,480
+217. acceptAlert()
+
+71
+00:00:46,483 --> 00:00:46,484
+221. delay(3)
+
+72
+00:00:46,487 --> 00:00:46,488
+225. takeScreenshot()
+
+73
+00:00:46,490 --> 00:00:46,492
+229. log.logInfo("without throwing error data is saved the grid...")
+
+74
+00:00:46,494 --> 00:00:46,495
+233. log.logInfo("not getting error message")
+
+75
+00:00:46,498 --> 00:00:46,499
+239. Click new btn in Registratie
+
+76
+00:00:46,504 --> 00:00:46,505
+243. delay(1)
+
+77
+00:00:47,511 --> 00:00:47,513
+247. selectOptionByValue(findTestObject("Object Repository/temp/Page_ACTPOL Test/select_KORPS POLITIE CURACAOOPENBARE MINISTERIEAMBULANCESKSBRANDWEER"), "1", true)
+
+78
+00:00:47,516 --> 00:00:47,517
+253. Select required dropdown fro the list
+
+79
+00:00:48,138 --> 00:00:48,141
+257. delay(1)
+
+80
+00:00:49,146 --> 00:00:49,147
+263. Select required dropdown fro the list
+
+81
+00:00:49,714 --> 00:00:49,715
+267. delay(1)
+
+82
+00:00:50,720 --> 00:00:50,721
+273. Select required dropdown fro the list
+
+83
+00:00:51,221 --> 00:00:51,222
+277. delay(1)
+
+84
+00:00:52,227 --> 00:00:52,228
+283. Select required dropdown fro the list
+
+85
+00:00:52,761 --> 00:00:52,762
+287. delay(1)
+
+86
+00:00:53,769 --> 00:00:53,771
+293. Enter the text from the feild
+
+87
+00:00:55,312 --> 00:00:55,313
+297. delay(1)
+
+88
+00:00:56,318 --> 00:00:56,320
+303. Enter the text from the feild
+
+89
+00:00:57,048 --> 00:00:57,049
+307. delay(1)
+
+90
+00:00:58,055 --> 00:00:58,056
+313. Enter the text from the feild
+
+91
+00:00:58,927 --> 00:00:58,928
+317. delay(1)
+
+92
+00:00:59,934 --> 00:00:59,935
+323. Enter the date
+
+93
+00:00:59,937 --> 00:00:59,938
+327. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/1 Registratie/Datum calendar icon"))
+
+94
+00:01:00,619 --> 00:01:00,620
+331. delay(2)
+
+95
+00:01:02,625 --> 00:01:02,626
+335. selectOptionByLabel(findTestObject("Actpol_Scripts/Monthyear/Rightmonth"), "sep", false)
+
+96
+00:01:03,037 --> 00:01:03,038
+339. delay(1)
+
+97
+00:01:04,045 --> 00:01:04,049
+343. selectOptionByLabel(findTestObject("Actpol_Scripts/Monthyear/Rightyear"), "2019", false)
+
+98
+00:01:04,451 --> 00:01:04,452
+347. delay(1)
+
+99
+00:01:05,458 --> 00:01:05,460
+351. click(findTestObject("Actpol_Scripts/Date/16th right frame"))
+
+100
+00:01:06,040 --> 00:01:06,041
+355. delay(1)
+
+101
+00:01:07,047 --> 00:01:07,049
+361. Click save btn
+
+102
+00:01:07,562 --> 00:01:07,563
+365. delay(1)
+
+103
+00:01:08,568 --> 00:01:08,569
+369. takeScreenshot()
+
+104
+00:01:08,942 --> 00:01:08,943
+373. delay(1)
+
+105
+00:01:09,949 --> 00:01:09,950
+377. comment("Editing existing record in Registratie")
+
+106
+00:01:09,955 --> 00:01:09,956
+383. Edit the existing record 
+
+107
+00:01:10,579 --> 00:01:10,580
+387. delay(2)
+
+108
+00:01:12,594 --> 00:01:12,595
+393. Select required dropdown fro the list
+
+109
+00:01:12,962 --> 00:01:12,963
+397. delay(1)
+
+110
+00:01:13,968 --> 00:01:13,969
+403. Select required dropdown fro the list
+
+111
+00:01:14,338 --> 00:01:14,339
+407. delay(1)
+
+112
+00:01:15,344 --> 00:01:15,345
+413. Select required dropdown fro the list
+
+113
+00:01:15,706 --> 00:01:15,708
+417. delay(1)
+
+114
+00:01:16,715 --> 00:01:16,717
+423. Select required dropdown fro the list
+
+115
+00:01:17,088 --> 00:01:17,091
+427. delay(1)
+
+116
+00:01:18,096 --> 00:01:18,099
+433. Select required dropdown fro the list
+
+117
+00:01:19,479 --> 00:01:19,480
+437. delay(1)
+
+118
+00:01:20,489 --> 00:01:20,490
+443. Enter the text from the feild
+
+119
+00:01:21,201 --> 00:01:21,202
+447. delay(1)
+
+120
+00:01:22,210 --> 00:01:22,211
+453. Enter the text from the feild
+
+121
+00:01:23,107 --> 00:01:23,108
+457. delay(1)
+
+122
+00:01:24,114 --> 00:01:24,115
+463. Enter the date
+
+123
+00:01:24,665 --> 00:01:24,667
+467. delay(1)
+
+124
+00:01:25,671 --> 00:01:25,672
+473. Click save btn
+
+125
+00:01:26,090 --> 00:01:26,091
+477. log.logInfo("edit mode working fine ")
+
+126
+00:01:26,093 --> 00:01:26,094
+481. delay(1)
+
+127
+00:01:27,102 --> 00:01:27,103
+485. comment("View existing record in Registratie")
+
+128
+00:01:27,108 --> 00:01:27,110
+489. delay(1)
+
+129
+00:01:28,119 --> 00:01:28,120
+495. Click view mode for existing saved record
+
+130
+00:01:28,632 --> 00:01:28,633
+499. log.logInfo("View mode is displaying new button ")
+
+131
+00:01:28,636 --> 00:01:28,637
+503. delay(1)
+
+132
+00:01:29,652 --> 00:01:29,653
+507. takeScreenshot()
+
+133
+00:01:30,012 --> 00:01:30,013
+511. delay(1)
+
+134
+00:01:31,018 --> 00:01:31,019
+517. Click the close btn
+
+135
+00:01:31,543 --> 00:01:31,545
+521. delay(1)
+
+136
+00:01:32,554 --> 00:01:32,555
+525. comment("View existing record in Registratie")
+
+137
+00:01:32,560 --> 00:01:32,561
+529. delay(1)
+
+138
+00:01:33,566 --> 00:01:33,568
+535. Click delete btn
+
+139
+00:01:34,097 --> 00:01:34,098
+539. delay(1)
+
+140
+00:01:35,104 --> 00:01:35,105
+545. Re conform the delete btn
+
+141
+00:01:35,670 --> 00:01:35,672
+549. delay(1)
+
+142
+00:01:36,679 --> 00:01:36,680
+553. takeScreenshot()
+
+143
+00:01:37,058 --> 00:01:37,059
+557. delay(1)
+
+144
+00:01:38,064 --> 00:01:38,065
+561. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/1 Registratie/registratie tab"))
+

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Kenteken
+Step 2: Set text Bouwjaar
+Step 3: Set text Chassisnummer
+Step 4: Search results is an Bouwjaar and Chassisnummer</description>
+   <name>Algemene Zoekopdracht - Select type Kenteken Bouwjaar(Chassisnummer-2)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>4e87690f-b730-4139-bc3f-c3dcef097e14</testCaseGuid>
+</TestCaseEntity>

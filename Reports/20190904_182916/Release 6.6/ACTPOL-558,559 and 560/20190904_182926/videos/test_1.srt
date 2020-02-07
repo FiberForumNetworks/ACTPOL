@@ -1,0 +1,252 @@
+1
+00:00:01,083 --> 00:00:01,095
+3. Login to the application
+
+2
+00:00:02,715 --> 00:00:02,735
+1. openBrowser("")
+
+3
+00:01:52,588 --> 00:01:52,589
+5. deleteAllCookies()
+
+4
+00:01:53,199 --> 00:01:53,202
+9. waitForPageLoad(30)
+
+5
+00:01:58,305 --> 00:01:58,307
+13. maximizeWindow()
+
+6
+00:02:00,010 --> 00:02:00,020
+17. ACTPOLTESTENV = 1
+
+7
+00:02:00,022 --> 00:02:00,024
+21. ACTPOLDEVENV = 2
+
+8
+00:02:00,103 --> 00:02:00,105
+25. ACTPOLKCENV = 3
+
+9
+00:02:00,107 --> 00:02:00,109
+29. ACTPOLKBKPCNENV = 4
+
+10
+00:02:00,111 --> 00:02:00,114
+33. ACTPOLKBKMARENV = 5
+
+11
+00:02:00,117 --> 00:02:00,124
+37. ACTPOLKMENV = 6
+
+12
+00:02:00,141 --> 00:02:00,142
+41. ACTPOLKWENV = 7
+
+13
+00:02:00,144 --> 00:02:00,145
+45. environment = ACTPOLDEVENV
+
+14
+00:02:00,147 --> 00:02:00,149
+49. Selectenv = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>
+
+15
+00:02:00,150 --> 00:02:00,152
+53. switch (environment)
+
+16
+00:02:02,117 --> 00:02:02,118
+2. println(Selectenv = "ACTPOL-DEV-ENV")
+
+17
+00:02:02,124 --> 00:02:02,125
+6. navigateToUrl(DEVURL)
+
+18
+00:02:27,914 --> 00:02:27,916
+10. setText(findTestObject("Actpol_Scripts/login/userid"), username)
+
+19
+00:02:39,179 --> 00:02:39,187
+14. setMaskedText(findTestObject("Actpol_Scripts/login/password"), password)
+
+20
+00:02:40,504 --> 00:02:40,509
+18. click(findTestObject("Actpol_Scripts/login/login"))
+
+21
+00:02:42,554 --> 00:02:42,557
+22. getWindowTitle()
+
+22
+00:02:42,647 --> 00:02:42,649
+26. break
+
+23
+00:02:42,679 --> 00:02:42,681
+7. log = new com.kms.katalon.core.logging.KeywordLogger()
+
+24
+00:02:42,709 --> 00:02:42,711
+13. Mouse over to opsporing
+
+25
+00:03:09,729 --> 00:03:09,731
+17. log.logInfo("Successfully logged")
+
+26
+00:03:09,737 --> 00:03:09,743
+21. delay(2)
+
+27
+00:03:11,758 --> 00:03:11,761
+27. Click MBES tab
+
+28
+00:03:16,987 --> 00:03:16,989
+31. log.logInfo("Clicking MBES18 tab ")
+
+29
+00:03:16,993 --> 00:03:16,995
+35. delay(1)
+
+30
+00:03:18,040 --> 00:03:18,043
+41. Mouse over to Generic tab
+
+31
+00:03:18,812 --> 00:03:18,814
+45. delay(3)
+
+32
+00:03:21,824 --> 00:03:21,827
+49. takeScreenshot()
+
+33
+00:03:25,130 --> 00:03:25,131
+53. log.logInfo("MBES18 module is displayed")
+
+34
+00:03:25,133 --> 00:03:25,135
+57. delay(1)
+
+35
+00:03:26,141 --> 00:03:26,143
+63. Get text from the feild
+
+36
+00:03:29,138 --> 00:03:29,146
+67. log.logInfo("Grid is shown contains columns mentioned ::" + optie)
+
+37
+00:03:29,148 --> 00:03:29,150
+71. delay(1)
+
+38
+00:03:30,154 --> 00:03:30,157
+77. Get text from the feild
+
+39
+00:03:30,958 --> 00:03:30,960
+81. log.logInfo("Grid is shown contains columns mentioned ::" + vlg)
+
+40
+00:03:30,962 --> 00:03:30,964
+85. delay(1)
+
+41
+00:03:31,970 --> 00:03:31,972
+91. Get text from the feild
+
+42
+00:03:33,096 --> 00:03:33,098
+95. log.logInfo("Grid is shown contains columns mentioned ::" + datam)
+
+43
+00:03:33,100 --> 00:03:33,101
+99. delay(1)
+
+44
+00:03:34,109 --> 00:03:34,111
+105. Get text from the feild
+
+45
+00:03:34,874 --> 00:03:34,876
+109. log.logInfo("Grid is shown contains columns mentioned ::" + bij)
+
+46
+00:03:34,879 --> 00:03:34,881
+113. delay(1)
+
+47
+00:03:35,888 --> 00:03:35,892
+119. Get text from the feild
+
+48
+00:03:36,928 --> 00:03:36,930
+123. log.logInfo("Grid is shown contains columns mentioned ::" + org)
+
+49
+00:03:36,933 --> 00:03:36,934
+127. delay(1)
+
+50
+00:03:37,943 --> 00:03:37,945
+133. Get text from the feild
+
+51
+00:03:38,723 --> 00:03:38,729
+137. log.logInfo("Grid is shown contains columns mentioned ::" + con)
+
+52
+00:03:38,732 --> 00:03:38,733
+141. delay(1)
+
+53
+00:03:39,775 --> 00:03:39,783
+147. Get text from the feild
+
+54
+00:03:40,974 --> 00:03:40,976
+151. log.logInfo("Grid is shown contains columns mentioned ::" + telefoon)
+
+55
+00:03:40,979 --> 00:03:40,980
+155. delay(1)
+
+56
+00:03:41,987 --> 00:03:41,991
+161. Get text from the feild
+
+57
+00:03:43,765 --> 00:03:43,767
+165. log.logInfo("Grid is shown contains columns mentioned ::" + voornaam)
+
+58
+00:03:43,770 --> 00:03:43,772
+169. delay(1)
+
+59
+00:03:44,779 --> 00:03:44,780
+175. Get text from the feild
+
+60
+00:03:46,156 --> 00:03:46,157
+179. log.logInfo("Grid is shown contains columns mentioned ::" + achternaam)
+
+61
+00:03:46,159 --> 00:03:46,160
+183. delay(1)
+
+62
+00:03:47,168 --> 00:03:47,170
+189. Get text from the feild
+
+63
+00:03:48,542 --> 00:03:48,544
+193. log.logInfo("Grid is shown contains columns mentioned ::" + geb)
+

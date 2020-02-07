@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Persoon
+Step 2: Set text Achternaam
+Step 3: Search results is an Achternaam</description>
+   <name>Algemene Zoekopdracht - Select type Persoon-Achternaam(Achternaam-1)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ed1d11a7-5f38-4f13-b3bf-05f818e8b53a</testCaseGuid>
+</TestCaseEntity>

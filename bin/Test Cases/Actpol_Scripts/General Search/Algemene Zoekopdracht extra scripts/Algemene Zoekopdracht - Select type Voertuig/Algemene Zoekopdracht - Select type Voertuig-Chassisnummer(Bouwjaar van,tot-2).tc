@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Voertuig
+Step 2: Set text Chassisnummer
+Step 3:Set text Bouwjaar van ,tot
+Step 4:Search results is an Chassisnummer and Bouwjaar van ,tot</description>
+   <name>Algemene Zoekopdracht - Select type Voertuig-Chassisnummer(Bouwjaar van,tot-2)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0e118204-f6aa-4bbb-b3ad-044bea4cfc0d</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Production environment KPC, Req 53933. 
+Prio 1 - Kustwacht
+
+a. Possibility to save names with ALT + Code characters everywhere in ACTPOL
+b. Possibility to search for these names successfully
+For example Nuñez etc. Currently characters like ñ are not recognized.
+
+ 
+
+Testing steps:
+
+Menu, 1-Generiek, Assistenties
+Select Assistentie 200601669 in edit mode
+Click on Rol/Proces</description>
+   <name>ACTPOL-93</name>
+   <tag>ACTPOL-93</tag>
+   <comment></comment>
+   <testCaseGuid>a0ee9de3-0aaf-46ff-8913-98d08f7dc380</testCaseGuid>
+</TestCaseEntity>

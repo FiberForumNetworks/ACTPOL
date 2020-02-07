@@ -1,0 +1,332 @@
+1
+00:00:00,720 --> 00:00:00,721
+1. callTestCase(findTestCase("main/Actpol_Login_testenv"), [:], STOP_ON_FAILURE)
+
+2
+00:00:00,820 --> 00:00:00,821
+1. openBrowser("")
+
+3
+00:00:04,678 --> 00:00:04,678
+5. deleteAllCookies()
+
+4
+00:00:04,703 --> 00:00:04,704
+9. waitForPageLoad(60)
+
+5
+00:00:04,728 --> 00:00:04,729
+13. maximizeWindow()
+
+6
+00:00:05,882 --> 00:00:05,883
+17. ACTPOLTESTENV = 1
+
+7
+00:00:05,885 --> 00:00:05,886
+21. ACTPOLDEVENV = 2
+
+8
+00:00:05,888 --> 00:00:05,888
+25. ACTPOLKCENV = 3
+
+9
+00:00:05,890 --> 00:00:05,890
+29. ACTPOLKBKPCNENV = 4
+
+10
+00:00:05,892 --> 00:00:05,893
+33. ACTPOLKBKMARENV = 5
+
+11
+00:00:05,894 --> 00:00:05,895
+37. ACTPOLKMENV = 6
+
+12
+00:00:05,896 --> 00:00:05,897
+41. ACTPOLKWENV = 7
+
+13
+00:00:05,898 --> 00:00:05,899
+45. environment = ACTPOLTESTENV
+
+14
+00:00:05,901 --> 00:00:05,902
+49. Selectenv = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>
+
+15
+00:00:05,903 --> 00:00:05,904
+53. switch (environment)
+
+16
+00:00:05,906 --> 00:00:05,906
+2. println(Selectenv = "ACTPOL-TEST-ENV")
+
+17
+00:00:05,908 --> 00:00:05,910
+6. navigateToUrl(TESTURL)
+
+18
+00:00:15,231 --> 00:00:15,232
+10. setText(findTestObject("Actpol_Scripts/login/userid"), username)
+
+19
+00:00:15,571 --> 00:00:15,572
+14. setMaskedText(findTestObject("Actpol_Scripts/login/password"), password)
+
+20
+00:00:16,057 --> 00:00:16,058
+18. click(findTestObject("Actpol_Scripts/login/login"))
+
+21
+00:00:16,460 --> 00:00:16,461
+22. getWindowTitle()
+
+22
+00:00:16,480 --> 00:00:16,481
+26. delay(5)
+
+23
+00:00:21,485 --> 00:00:21,486
+30. break
+
+24
+00:00:21,489 --> 00:00:21,490
+5. delay(6)
+
+25
+00:00:27,495 --> 00:00:27,495
+11. Mouse over to Generic tab
+
+26
+00:00:27,997 --> 00:00:27,997
+15. delay(4)
+
+27
+00:00:32,002 --> 00:00:32,003
+19. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/MBES18 TAB"))
+
+28
+00:00:32,381 --> 00:00:32,381
+23. delay(1)
+
+29
+00:00:33,387 --> 00:00:33,388
+29. Mouse over to Generic tab
+
+30
+00:00:33,759 --> 00:00:33,761
+33. comment("Adding all feilds of MBES18 ")
+
+31
+00:00:33,767 --> 00:00:33,768
+37. delay(2)
+
+32
+00:00:35,774 --> 00:00:35,775
+41. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Datum Incident Calender icon"))
+
+33
+00:00:36,576 --> 00:00:36,578
+45. delay(2)
+
+34
+00:00:38,588 --> 00:00:38,589
+49. selectOptionByLabel(findTestObject("Actpol_Scripts/Monthyear/Leftmonth"), "sep", false)
+
+35
+00:00:39,029 --> 00:00:39,029
+53. delay(1)
+
+36
+00:00:40,035 --> 00:00:40,037
+57. selectOptionByLabel(findTestObject("Actpol_Scripts/Monthyear/Leftyear"), "2019", false)
+
+37
+00:00:40,475 --> 00:00:40,476
+61. delay(1)
+
+38
+00:00:41,480 --> 00:00:41,482
+65. click(findTestObject("Actpol_Scripts/Date/14 th"))
+
+39
+00:00:42,016 --> 00:00:42,017
+69. delay(1)
+
+40
+00:00:43,023 --> 00:00:43,024
+73. selectOptionByLabel(findTestObject("Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Organisatie"), Bijzonderheden, false)
+
+41
+00:00:43,724 --> 00:00:43,725
+77. delay(1)
+
+42
+00:00:44,730 --> 00:00:44,732
+81. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Voornaam"), Voornaam)
+
+43
+00:00:45,346 --> 00:00:45,347
+85. delay(1)
+
+44
+00:00:46,353 --> 00:00:46,354
+89. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Achternaam"), Achternaam)
+
+45
+00:00:46,949 --> 00:00:46,950
+93. delay(1)
+
+46
+00:00:47,953 --> 00:00:47,955
+97. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Geboortedatum textbox"), Geboortedatum)
+
+47
+00:00:47,960 --> 00:00:47,962
+101. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Geboortedatum Calender icon"))
+
+48
+00:00:48,731 --> 00:00:48,732
+105. delay(2)
+
+49
+00:00:50,737 --> 00:00:50,738
+109. selectOptionByLabel(findTestObject("Actpol_Scripts/Monthyear/Leftmonth"), "jan", false)
+
+50
+00:00:51,295 --> 00:00:51,296
+113. delay(1)
+
+51
+00:00:51,297 --> 00:00:51,298
+117. selectOptionByLabel(findTestObject("Actpol_Scripts/Monthyear/Leftyear"), "2009", false)
+
+52
+00:00:51,301 --> 00:00:51,302
+121. delay(1)
+
+53
+00:00:51,304 --> 00:00:51,305
+125. selectOptionByLabel(findTestObject("Actpol_Scripts/Monthyear/Leftyear"), "1999", false)
+
+54
+00:00:51,306 --> 00:00:51,307
+129. delay(1)
+
+55
+00:00:51,309 --> 00:00:51,310
+133. selectOptionByLabel(findTestObject("Actpol_Scripts/Monthyear/Leftyear"), "1989", false)
+
+56
+00:00:51,313 --> 00:00:51,314
+137. delay(1)
+
+57
+00:00:51,316 --> 00:00:51,317
+141. selectOptionByLabel(findTestObject("Actpol_Scripts/Monthyear/Leftyear"), "1985", false)
+
+58
+00:00:51,319 --> 00:00:51,319
+145. delay(1)
+
+59
+00:00:52,323 --> 00:00:52,324
+149. click(findTestObject("Actpol_Scripts/Date/26th"))
+
+60
+00:00:52,936 --> 00:00:52,937
+153. delay(2)
+
+61
+00:00:54,941 --> 00:00:54,942
+157. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Filter"))
+
+62
+00:00:55,582 --> 00:00:55,583
+161. delay(1)
+
+63
+00:00:56,588 --> 00:00:56,589
+165. scrollToPosition(10, 7)
+
+64
+00:00:56,645 --> 00:00:56,646
+169. delay(1)
+
+65
+00:00:57,650 --> 00:00:57,651
+173. log = new com.kms.katalon.core.logging.KeywordLogger()
+
+66
+00:00:57,652 --> 00:00:57,653
+177. log.logInfo(getText(findTestObject("Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Datum Incident get text")))
+
+67
+00:00:58,103 --> 00:00:58,103
+181. delay(1)
+
+68
+00:00:59,107 --> 00:00:59,109
+185. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/10 MBES search module/resetform"))
+
+69
+00:00:59,759 --> 00:00:59,759
+189. delay(1)
+
+70
+00:01:00,764 --> 00:01:00,766
+193. comment("Checking combinations Search module")
+
+71
+00:01:00,771 --> 00:01:00,772
+197. delay(1)
+
+72
+00:01:01,777 --> 00:01:01,777
+201. comment("Checking Datum Incident  and Bijzonderheden")
+
+73
+00:01:01,781 --> 00:01:01,782
+205. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Datum Incident Calender icon"))
+
+74
+00:01:02,412 --> 00:01:02,414
+209. delay(2)
+
+75
+00:01:04,420 --> 00:01:04,421
+213. selectOptionByLabel(findTestObject("Actpol_Scripts/Monthyear/Leftmonth"), "sep", false)
+
+76
+00:01:04,859 --> 00:01:04,859
+217. delay(1)
+
+77
+00:01:05,865 --> 00:01:05,867
+221. selectOptionByLabel(findTestObject("Actpol_Scripts/Monthyear/Leftyear"), "2019", false)
+
+78
+00:01:06,332 --> 00:01:06,333
+225. delay(1)
+
+79
+00:01:07,338 --> 00:01:07,339
+229. click(findTestObject("Actpol_Scripts/Date/14 th"))
+
+80
+00:01:12,929 --> 00:01:12,930
+233. delay(1)
+
+81
+00:01:13,934 --> 00:01:13,935
+237. selectOptionByLabel(findTestObject("Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Organisatie"), Bijzonderheden, false)
+
+82
+00:01:14,437 --> 00:01:14,438
+241. delay(2)
+
+83
+00:01:16,442 --> 00:01:16,443
+245. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Filter"))
+

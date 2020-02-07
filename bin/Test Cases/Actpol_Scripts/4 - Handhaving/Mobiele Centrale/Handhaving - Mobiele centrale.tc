@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Enter a new mobiele centrale and fill all possible fields and tabs</description>
+   <name>Handhaving - Mobiele centrale</name>
+   <tag>Handhaving</tag>
+   <comment></comment>
+   <testCaseGuid>e7a76109-5079-408f-9381-0becc02f6113</testCaseGuid>
+</TestCaseEntity>

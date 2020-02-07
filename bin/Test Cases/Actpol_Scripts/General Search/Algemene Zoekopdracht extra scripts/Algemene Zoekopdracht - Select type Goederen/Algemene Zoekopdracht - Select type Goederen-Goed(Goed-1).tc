@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Goederen
+Step 2: Set text Goed
+Step 3: Search results is an Goed</description>
+   <name>Algemene Zoekopdracht - Select type Goederen-Goed(Goed-1)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>85a8c508-3b68-49c6-8545-eae32ae0c5e6</testCaseGuid>
+</TestCaseEntity>

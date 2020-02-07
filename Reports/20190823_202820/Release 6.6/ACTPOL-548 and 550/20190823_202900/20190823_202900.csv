@@ -1,0 +1,116 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ACTPOL-548 and 550,Chrome 76.0.3809.100,#Enhancements Vreemdelingen Module,,2019-08-23 20:29:40,2019-08-23 20:36:02,6m - 21.422s,INCOMPLETE
+,,,,,,,
+Test Cases/JIRA Tasks/Release 6.6/ACTPOL-548,Chrome 76.0.3809.100,"When registering an opvarende, if you don't specify 'yes' of 'no' at bemanninslid, the opvarende is saved, but it is NOT saved with the boat. 
+Testing Steps:
+
+Select an assistentie
+select any rol/proces
+Click on the Vaartuig accordeon
+Click on new vaartuig
+Register a Vaartuig
+Go to accordeon Opvarende
+Click on new opvarende
+Remember: leave the field bemanningslid empty
+Add a name, making sure NOT to select bemanningslid yes or no.
+add more names if you want, still not touching field bemanningslid
+Click save
+Save the vaartuig and the rol process.
+ 
+
+On the rol process screen you will see the names appear as opvarende, but if you open the rol/process and the vaartuig, the accordeon opvarende will be empty.
+
+ 
+
+If you repeat the steps and you select Nee at bemanningslid, the opvarende will save correctly. Just as if you select Ja, it will also save correctly as bemanning. Issue arises when you don't select anything.",ACPOL-548,2019-08-23 20:29:41,2019-08-23 20:34:40,4m - 59.179s,PASSED
+"callTestCase(findTestCase(""main/Actpol_Login_testenv""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-08-23 20:29:44,2019-08-23 20:32:38,2m - 54.126s,PASSED
+"selectOptionByValue(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie""), ""assist"", false)",Chrome 76.0.3809.100,,,2019-08-23 20:32:38,2019-08-23 20:33:00,21.678s,PASSED
+"setText(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie Set text""), Generiekassistenite_Module)",Chrome 76.0.3809.100,,,2019-08-23 20:33:00,2019-08-23 20:33:01,1.321s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-23 20:33:01,2019-08-23 20:33:03,2.016s,PASSED
+"click(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Zoeken new""))",Chrome 76.0.3809.100,,,2019-08-23 20:33:03,2019-08-23 20:33:10,6.661s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-23 20:33:10,2019-08-23 20:33:12,2.014s,PASSED
+AssistentiedynamicId = Generiekassistenite_Module,Chrome 76.0.3809.100,Remember first set default assistentieid after run the script,,2019-08-23 20:33:12,2019-08-23 20:33:12,0.002s,PASSED
+"Assistentiexpath = ""//*[text()="""" + AssistentiedynamicId + """"]/preceding-sibling::td/a[2]""",Chrome 76.0.3809.100,,,2019-08-23 20:33:12,2019-08-23 20:33:12,0.003s,PASSED
+"to = findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/View Assistentie"")",Chrome 76.0.3809.100,,,2019-08-23 20:33:12,2019-08-23 20:33:13,0.556s,PASSED
+"to.addProperty(""xpath"", EQUALS, Assistentiexpath)",Chrome 76.0.3809.100,,,2019-08-23 20:33:13,2019-08-23 20:33:13,0.032s,PASSED
+delay(5),Chrome 76.0.3809.100,,,2019-08-23 20:33:13,2019-08-23 20:33:18,5.010s,PASSED
+click(to),Chrome 76.0.3809.100,,,2019-08-23 20:33:18,2019-08-23 20:33:18,0.530s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-23 20:33:18,2019-08-23 20:33:20,2.008s,PASSED
+"click(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Confirmeren""))",Chrome 76.0.3809.100,,,2019-08-23 20:33:20,2019-08-23 20:33:34,13.331s,PASSED
+delay(5),Chrome 76.0.3809.100,,,2019-08-23 20:33:34,2019-08-23 20:33:39,5.009s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Click roll process""))",Chrome 76.0.3809.100,,,2019-08-23 20:33:39,2019-08-23 20:33:42,3.633s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-23 20:33:42,2019-08-23 20:33:44,2.004s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Click new process""))",Chrome 76.0.3809.100,,,2019-08-23 20:33:44,2019-08-23 20:33:45,1.041s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-23 20:33:45,2019-08-23 20:33:47,2.007s,PASSED
+"comment(""Select process ""BETROKKEN VAARTUIG"""")",Chrome 76.0.3809.100,,,2019-08-23 20:33:47,2019-08-23 20:33:47,0.031s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Rol Proces Type""), ""BETROKKEN VAARTUIG"", false)",Chrome 76.0.3809.100,Select required dropdown,,2019-08-23 20:33:47,2019-08-23 20:33:50,3.031s,PASSED
+delay(3),Chrome 76.0.3809.100,,,2019-08-23 20:33:50,2019-08-23 20:33:53,3.006s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-548/Contacten""))",Chrome 76.0.3809.100,Click Contacten tab,,2019-08-23 20:33:53,2019-08-23 20:33:54,0.924s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-23 20:33:54,2019-08-23 20:33:55,1.005s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-548/Vaartuig tab""))",Chrome 76.0.3809.100,Click Vaartuig tab,,2019-08-23 20:33:55,2019-08-23 20:33:56,1.122s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-23 20:33:56,2019-08-23 20:33:58,2.008s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-548/Vaartuig new""))",Chrome 76.0.3809.100,Click Vaartuig  new btn,,2019-08-23 20:33:58,2019-08-23 20:33:59,0.787s,PASSED
+delay(4),Chrome 76.0.3809.100,,,2019-08-23 20:33:59,2019-08-23 20:34:03,4.010s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-548/Nieuw Vaartuig -Vaartuig tab""))",Chrome 76.0.3809.100,Click new Vaartuig  tab,,2019-08-23 20:34:03,2019-08-23 20:34:04,0.492s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-23 20:34:04,2019-08-23 20:34:05,1.006s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-548/Opvarende tab""))",Chrome 76.0.3809.100,Click Opvarende tab,,2019-08-23 20:34:05,2019-08-23 20:34:05,0.547s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-23 20:34:05,2019-08-23 20:34:07,2.008s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-548/Opvarende new""))",Chrome 76.0.3809.100,Click Opvarende new,,2019-08-23 20:34:07,2019-08-23 20:34:08,0.494s,PASSED
+delay(4),Chrome 76.0.3809.100,,,2019-08-23 20:34:08,2019-08-23 20:34:12,4.010s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-548/toevoegen inzittende Naam""), ""a"")",Chrome 76.0.3809.100,enter text from the feild :: toevoegen inzittende,,2019-08-23 20:34:12,2019-08-23 20:34:12,0.605s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-23 20:34:12,2019-08-23 20:34:14,2.006s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-548/toevoegen inzittende Naam lb""))",Chrome 76.0.3809.100,Select required dropdown,,2019-08-23 20:34:14,2019-08-23 20:34:18,3.336s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-23 20:34:18,2019-08-23 20:34:19,1.011s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-548/toevoegen inzittende save""))",Chrome 76.0.3809.100,Click save btn,,2019-08-23 20:34:19,2019-08-23 20:34:20,0.977s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-23 20:34:20,2019-08-23 20:34:21,1.007s,PASSED
+takeScreenshot(),Chrome 76.0.3809.100,,,2019-08-23 20:34:21,2019-08-23 20:34:23,2.569s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-23 20:34:23,2019-08-23 20:34:24,1.010s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-548/Bemaningslid ja""), ""JA"", false)",Chrome 76.0.3809.100,Select required drop down :: Bemaningslid ja,,2019-08-23 20:34:24,2019-08-23 20:34:25,0.521s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-23 20:34:25,2019-08-23 20:34:27,2.010s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-548/Bemaningslid na""), ""NEE"", false)",Chrome 76.0.3809.100,Select required drop down :: Bemaningslid Nee,,2019-08-23 20:34:27,2019-08-23 20:34:29,2.364s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-23 20:34:29,2019-08-23 20:34:31,2.012s,PASSED
+"setText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-548/Naam 2""), ""aa"")",Chrome 76.0.3809.100,Enter text from the feild :: toevoegen inzittende Naam 2,,2019-08-23 20:34:31,2019-08-23 20:34:33,1.442s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-23 20:34:33,2019-08-23 20:34:35,2.006s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-548/Naam 2 lb""))",Chrome 76.0.3809.100,Select required dropdown,,2019-08-23 20:34:35,2019-08-23 20:34:35,0.578s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-23 20:34:35,2019-08-23 20:34:36,1.009s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-548/toevoegen inzittende save""))",Chrome 76.0.3809.100,Click save btn,,2019-08-23 20:34:36,2019-08-23 20:34:37,0.265s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-23 20:34:37,2019-08-23 20:34:38,1.006s,PASSED
+"scrollToPosition(10, 7)",Chrome 76.0.3809.100,,,2019-08-23 20:34:38,2019-08-23 20:34:38,0.082s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-23 20:34:38,2019-08-23 20:34:39,1.008s,PASSED
+takeScreenshot(),Chrome 76.0.3809.100,,,2019-08-23 20:34:39,2019-08-23 20:34:40,1.003s,PASSED
+,,,,,,,
+Test Cases/JIRA Tasks/Release 6.6/ACTPOL-550,Chrome 76.0.3809.100,"Fix doorsturen OPV to remove record from grid when sent. (production issue)
+
+Detailed Testing Instructions:
+
+ Testplan:
+Step 1: Go to Handhaving- Doorsturen OPV
+Step 2: Select a record and Click on the loop (view) icoon.
+Step 3: In the upper right corner click on the green (approve icon).
+Step 4: record should be send to Priem and should not be visible in this grid anymore.
+
+Navigation: 
+Handhaving- Doorsturen OPV",ACTPOL-550,2019-08-23 20:34:42,2019-08-23 20:36:02,1m - 19.374s,PASSED
+"callTestCase(findTestCase(""main/Actpol_Login_testenv""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-08-23 20:34:44,2019-08-23 20:35:17,32.732s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-23 20:35:17,2019-08-23 20:35:18,1.006s,PASSED
+"mouseOver(findTestObject(""Actpol_Scripts/Menu navigation/Handhaving/Handhaving""))",Chrome 76.0.3809.100,Click Handhaving menu,,2019-08-23 20:35:18,2019-08-23 20:35:34,16.032s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-23 20:35:34,2019-08-23 20:35:36,2.004s,PASSED
+"click(findTestObject(""Actpol_Scripts/Menu navigation/Handhaving/Doorsturen OPV""), OPTIONAL)",Chrome 76.0.3809.100,Click opv menu,,2019-08-23 20:35:36,2019-08-23 20:35:42,6.629s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-23 20:35:42,2019-08-23 20:35:44,2.006s,PASSED
+takeScreenshot(),Chrome 76.0.3809.100,,,2019-08-23 20:35:44,2019-08-23 20:35:45,0.741s,PASSED
+"Before = getText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-550/Before Proces Verbaal Nr text""))",Chrome 76.0.3809.100,Read before Proces Verbaal Nr  number ,,2019-08-23 20:35:45,2019-08-23 20:35:46,1.095s,PASSED
+log = new com.kms.katalon.core.logging.KeywordLogger(),Chrome 76.0.3809.100,,,2019-08-23 20:35:46,2019-08-23 20:35:46,0.026s,PASSED
+"log.logInfo(""Before Proces Verbaal Nr text is:"" + Before)",Chrome 76.0.3809.100,,,2019-08-23 20:35:46,2019-08-23 20:35:46,0.003s,PASSED
+"println(""Before Proces Verbaal Nr text is:"" + Before)",Chrome 76.0.3809.100,,,2019-08-23 20:35:46,2019-08-23 20:35:46,0.001s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-23 20:35:46,2019-08-23 20:35:48,2.004s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-550/Doorsturen OPV view""))",Chrome 76.0.3809.100,Click OPV View icon,,2019-08-23 20:35:48,2019-08-23 20:35:49,1.065s,PASSED
+delay(6),Chrome 76.0.3809.100,,,2019-08-23 20:35:49,2019-08-23 20:35:55,6.005s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-550/OPV approve btn""), OPTIONAL)",Chrome 76.0.3809.100,Click Green approve btn,,2019-08-23 20:35:55,2019-08-23 20:35:57,1.394s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-23 20:35:57,2019-08-23 20:35:59,2.003s,PASSED
+takeScreenshot(),Chrome 76.0.3809.100,,,2019-08-23 20:35:59,2019-08-23 20:36:00,1.206s,PASSED
+"After = getText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-550/After Proces Verbaal Nr text""))",Chrome 76.0.3809.100,Read After Proces Verbaal Nr  number ,,2019-08-23 20:36:00,2019-08-23 20:36:00,0.586s,PASSED
+"println(""Before Proces Verbaal Nr text is:"" + After)",Chrome 76.0.3809.100,,,2019-08-23 20:36:00,2019-08-23 20:36:00,0.001s,PASSED
+"log.logInfo(""Before Proces Verbaal Nr text is:"" + After)",Chrome 76.0.3809.100,,,2019-08-23 20:36:00,2019-08-23 20:36:00,0.002s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-23 20:36:00,2019-08-23 20:36:01,1.003s,PASSED
+if (Before == After),Chrome 76.0.3809.100,,,2019-08-23 20:36:01,2019-08-23 20:36:01,0.001s,PASSED
+else,Chrome 76.0.3809.100,,,2019-08-23 20:36:01,2019-08-23 20:36:01,0.001s,PASSED

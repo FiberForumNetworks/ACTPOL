@@ -18,7 +18,8 @@ WebUI.callTestCase(findTestCase('main/Actpol_Login'), [:], FailureHandling.STOP_
 WebUI.delay(2)
 
 'Adres'
-WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht/Assistentie'), 'address', false)
+WebUI.selectOptionByValue(findTestObject('Actpol_Scripts/General Search/Algemene Zoekopdracht/Assistentie'), 'address', 
+    false)
 
 WebUI.delay(2)
 

@@ -1,0 +1,209 @@
+1
+00:00:00,676 --> 00:00:00,677
+1. callTestCase(findTestCase("main/Actpol_Login_testenv"), [:], STOP_ON_FAILURE)
+
+2
+00:00:01,254 --> 00:00:01,257
+1. openBrowser("")
+
+3
+00:00:16,033 --> 00:00:16,035
+5. deleteAllCookies()
+
+4
+00:00:19,045 --> 00:00:19,046
+9. waitForPageLoad(30)
+
+5
+00:00:19,084 --> 00:00:19,085
+13. maximizeWindow()
+
+6
+00:00:20,420 --> 00:00:20,421
+17. ACTPOLTESTENV = 1
+
+7
+00:00:20,422 --> 00:00:20,425
+21. ACTPOLDEVENV = 2
+
+8
+00:00:20,427 --> 00:00:20,429
+25. ACTPOLKCENV = 3
+
+9
+00:00:20,431 --> 00:00:20,432
+29. ACTPOLKBKPCNENV = 4
+
+10
+00:00:20,434 --> 00:00:20,435
+33. ACTPOLKBKMARENV = 5
+
+11
+00:00:20,436 --> 00:00:20,437
+37. ACTPOLKMENV = 6
+
+12
+00:00:20,439 --> 00:00:20,440
+41. ACTPOLKWENV = 7
+
+13
+00:00:20,442 --> 00:00:20,446
+45. environment = ACTPOLTESTENV
+
+14
+00:00:20,450 --> 00:00:20,451
+49. Selectenv = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>
+
+15
+00:00:20,453 --> 00:00:20,454
+53. switch (environment)
+
+16
+00:00:20,456 --> 00:00:20,457
+2. println(Selectenv = "ACTPOL-TEST-ENV")
+
+17
+00:00:20,460 --> 00:00:20,461
+6. navigateToUrl(TESTURL)
+
+18
+00:00:30,677 --> 00:00:30,682
+10. setText(findTestObject("Actpol_Scripts/login/userid"), username)
+
+19
+00:00:31,318 --> 00:00:31,319
+14. setMaskedText(findTestObject("Actpol_Scripts/login/password"), password)
+
+20
+00:00:31,920 --> 00:00:31,921
+18. click(findTestObject("Actpol_Scripts/login/login"))
+
+21
+00:00:32,344 --> 00:00:32,346
+22. getWindowTitle()
+
+22
+00:00:32,370 --> 00:00:32,371
+26. break
+
+23
+00:00:32,376 --> 00:00:32,378
+5. selectOptionByValue(findTestObject("Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie"), "assist", false)
+
+24
+00:00:47,409 --> 00:00:47,410
+9. setText(findTestObject("Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie Set text"), Generiekassistenite_Module)
+
+25
+00:00:49,166 --> 00:00:49,168
+13. delay(2)
+
+26
+00:00:51,176 --> 00:00:51,185
+17. click(findTestObject("Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Zoeken new"))
+
+27
+00:00:58,074 --> 00:00:58,075
+21. delay(2)
+
+28
+00:01:00,086 --> 00:01:00,087
+27. Remember first set default assistentieid after run the script
+
+29
+00:01:00,089 --> 00:01:00,090
+31. Assistentiexpath = "//*[text()="" + AssistentiedynamicId + ""]/preceding-sibling::td/a[2]"
+
+30
+00:01:00,091 --> 00:01:00,092
+35. to = findTestObject("Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/View Assistentie")
+
+31
+00:01:00,963 --> 00:01:00,965
+39. to.addProperty("xpath", EQUALS, Assistentiexpath)
+
+32
+00:01:01,002 --> 00:01:01,004
+43. click(to)
+
+33
+00:01:01,514 --> 00:01:01,516
+47. click(findTestObject("Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Confirmeren"))
+
+34
+00:01:14,721 --> 00:01:14,723
+51. delay(5)
+
+35
+00:01:19,939 --> 00:01:19,942
+55. click(findTestObject("Actpol_Scripts/Generiek/Assistentie/Click roll process"))
+
+36
+00:01:23,911 --> 00:01:23,912
+59. delay(2)
+
+37
+00:01:26,062 --> 00:01:26,063
+63. click(findTestObject("Actpol_Scripts/Generiek/Assistentie/Click new process"))
+
+38
+00:01:28,308 --> 00:01:28,309
+67. delay(2)
+
+39
+00:01:30,317 --> 00:01:30,385
+73. Selecting BEKEURDE PERSOON
+
+
+40
+00:01:32,332 --> 00:01:32,333
+77. delay(3)
+
+41
+00:01:35,340 --> 00:01:35,941
+81. delay(2)
+
+42
+00:01:38,248 --> 00:01:38,260
+87. OPROEPINGSPROCES-VERBAAL
+
+43
+00:01:39,573 --> 00:01:39,574
+91. delay(2)
+
+44
+00:01:41,583 --> 00:01:41,585
+95. click(findTestObject("Actpol_Scripts/Extra script/Voertuig radio click"))
+
+45
+00:01:43,239 --> 00:01:43,241
+99. delay(2)
+
+46
+00:01:45,255 --> 00:01:45,256
+103. click(findTestObject("Actpol_Scripts/Extra script/Proces_Verbaal"))
+
+47
+00:01:46,625 --> 00:01:46,629
+107. delay(1)
+
+48
+00:01:47,636 --> 00:01:47,637
+111. click(findTestObject("Actpol_Scripts/Extra script/Strafbare_feit click"))
+
+49
+00:01:49,642 --> 00:01:49,643
+115. delay(1)
+
+50
+00:01:50,651 --> 00:01:50,654
+119. click(findTestObject("Actpol_Scripts/Extra script/Strafbare_feit click new"))
+
+51
+00:01:52,404 --> 00:01:52,405
+123. delay(2)
+
+52
+00:01:54,413 --> 00:01:54,415
+127. takeScreenshot()
+

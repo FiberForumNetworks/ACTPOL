@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Vaartuig
+Step 2: Set text Registratienummer
+Step 3: Set text Last Poc
+Step 4: Search results is an Registratienummer and Last Poc</description>
+   <name>Algemene Zoekopdracht - Select type Vaartuig-Registratienummer(Last Poc-2)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>105bf275-8063-4251-9d79-ea3448b781c9</testCaseGuid>
+</TestCaseEntity>

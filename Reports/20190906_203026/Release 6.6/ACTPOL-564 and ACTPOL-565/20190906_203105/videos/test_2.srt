@@ -1,0 +1,244 @@
+1
+00:00:00,951 --> 00:00:00,953
+3. Login to the application
+
+2
+00:00:04,362 --> 00:00:04,364
+1. openBrowser("")
+
+3
+00:00:31,491 --> 00:00:31,493
+5. deleteAllCookies()
+
+4
+00:00:33,702 --> 00:00:33,704
+9. waitForPageLoad(30)
+
+5
+00:00:33,735 --> 00:00:33,736
+13. maximizeWindow()
+
+6
+00:00:35,020 --> 00:00:35,022
+17. ACTPOLTESTENV = 1
+
+7
+00:00:35,024 --> 00:00:35,026
+21. ACTPOLDEVENV = 2
+
+8
+00:00:35,031 --> 00:00:35,034
+25. ACTPOLKCENV = 3
+
+9
+00:00:35,035 --> 00:00:35,036
+29. ACTPOLKBKPCNENV = 4
+
+10
+00:00:35,037 --> 00:00:35,039
+33. ACTPOLKBKMARENV = 5
+
+11
+00:00:35,040 --> 00:00:35,041
+37. ACTPOLKMENV = 6
+
+12
+00:00:35,042 --> 00:00:35,044
+41. ACTPOLKWENV = 7
+
+13
+00:00:35,045 --> 00:00:35,046
+45. environment = ACTPOLDEVENV
+
+14
+00:00:35,048 --> 00:00:35,049
+49. Selectenv = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>
+
+15
+00:00:35,050 --> 00:00:35,051
+53. switch (environment)
+
+16
+00:00:35,053 --> 00:00:35,054
+2. println(Selectenv = "ACTPOL-DEV-ENV")
+
+17
+00:00:35,055 --> 00:00:35,057
+6. navigateToUrl(DEVURL)
+
+18
+00:00:47,845 --> 00:00:47,850
+10. setText(findTestObject("Actpol_Scripts/login/userid"), username)
+
+19
+00:00:48,597 --> 00:00:48,598
+14. setMaskedText(findTestObject("Actpol_Scripts/login/password"), password)
+
+20
+00:00:49,355 --> 00:00:49,357
+18. click(findTestObject("Actpol_Scripts/login/login"))
+
+21
+00:00:49,925 --> 00:00:49,930
+22. getWindowTitle()
+
+22
+00:00:49,956 --> 00:00:49,957
+26. break
+
+23
+00:00:49,988 --> 00:00:49,991
+7. log = new com.kms.katalon.core.logging.KeywordLogger()
+
+24
+00:00:50,002 --> 00:00:50,004
+13. Mouse over to opsporing
+
+25
+00:01:02,650 --> 00:01:02,651
+17. log.logInfo("Successfully logged")
+
+26
+00:01:02,653 --> 00:01:02,655
+21. delay(2)
+
+27
+00:01:04,667 --> 00:01:04,668
+27. Click MBES tab
+
+28
+00:01:09,570 --> 00:01:09,571
+31. log.logInfo("Clicking MBES18 tab ")
+
+29
+00:01:09,580 --> 00:01:09,582
+35. delay(1)
+
+30
+00:01:10,593 --> 00:01:10,594
+41. Mouse over to Generic tab
+
+31
+00:01:10,990 --> 00:01:10,991
+45. delay(8)
+
+32
+00:01:18,998 --> 00:01:18,999
+51. Click new btn
+
+33
+00:01:20,255 --> 00:01:20,257
+55. log.logInfo("Clicking MBES18 new button ")
+
+34
+00:01:20,261 --> 00:01:20,262
+59. delay(6)
+
+35
+00:01:26,287 --> 00:01:26,289
+65. Click new btn in Registratie
+
+36
+00:01:27,028 --> 00:01:27,029
+69. delay(1)
+
+37
+00:01:28,043 --> 00:01:28,044
+75. Select required dropdown fro the list
+
+38
+00:01:29,435 --> 00:01:29,437
+79. delay(1)
+
+39
+00:01:30,443 --> 00:01:30,444
+85. Select required dropdown fro the list
+
+40
+00:01:31,220 --> 00:01:31,221
+89. delay(1)
+
+41
+00:01:32,230 --> 00:01:32,234
+95. Select required dropdown fro the list
+
+42
+00:01:32,953 --> 00:01:32,955
+99. delay(1)
+
+43
+00:01:33,968 --> 00:01:33,969
+105. Select required dropdown fro the list
+
+44
+00:01:34,783 --> 00:01:34,784
+109. delay(1)
+
+45
+00:01:35,789 --> 00:01:35,790
+115. Enter the text from the feild
+
+46
+00:01:37,642 --> 00:01:37,644
+119. delay(1)
+
+47
+00:01:38,649 --> 00:01:38,650
+125. Enter the text from the feild
+
+48
+00:01:39,986 --> 00:01:39,987
+129. delay(1)
+
+49
+00:01:40,993 --> 00:01:40,995
+135. Enter the text from the feild
+
+50
+00:01:42,286 --> 00:01:42,288
+139. delay(1)
+
+51
+00:01:43,294 --> 00:01:43,295
+145. Enter the date
+
+52
+00:01:44,047 --> 00:01:44,049
+149. delay(1)
+
+53
+00:01:45,055 --> 00:01:45,057
+155. Click save btn
+
+54
+00:01:45,860 --> 00:01:45,862
+159. delay(1)
+
+55
+00:01:46,869 --> 00:01:46,870
+165. Click on Registratie tab
+
+56
+00:01:48,395 --> 00:01:48,397
+169. delay(1)
+
+57
+00:01:49,407 --> 00:01:49,409
+175. Click on Personalia tab
+
+58
+00:01:50,786 --> 00:01:50,788
+179. delay(2)
+
+59
+00:01:52,795 --> 00:01:52,796
+183. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/2 Personalia/Achternaam text"), "aa")
+
+60
+00:01:53,557 --> 00:01:53,559
+187. delay(2)
+
+61
+00:01:55,569 --> 00:01:55,572
+191. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/2 Personalia/Achternaam text lb"))
+

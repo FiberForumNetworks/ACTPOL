@@ -1,0 +1,68 @@
+1
+00:00:00,777 --> 00:00:00,778
+3. Login to the application
+
+2
+00:00:00,921 --> 00:00:00,922
+1. openBrowser("")
+
+3
+00:00:04,657 --> 00:00:04,659
+5. deleteAllCookies()
+
+4
+00:00:04,780 --> 00:00:04,781
+9. waitForPageLoad(60)
+
+5
+00:00:04,822 --> 00:00:04,823
+13. maximizeWindow()
+
+6
+00:00:05,994 --> 00:00:05,995
+17. ACTPOLTESTENV = 1
+
+7
+00:00:05,998 --> 00:00:06,001
+21. ACTPOLDEVENV = 2
+
+8
+00:00:06,006 --> 00:00:06,007
+25. ACTPOLKCENV = 3
+
+9
+00:00:06,009 --> 00:00:06,010
+29. ACTPOLKBKPCNENV = 4
+
+10
+00:00:06,012 --> 00:00:06,014
+33. ACTPOLKBKMARENV = 5
+
+11
+00:00:06,016 --> 00:00:06,017
+37. ACTPOLKMENV = 6
+
+12
+00:00:06,020 --> 00:00:06,021
+41. ACTPOLKWENV = 7
+
+13
+00:00:06,023 --> 00:00:06,024
+45. environment = ACTPOLTESTENV
+
+14
+00:00:06,027 --> 00:00:06,028
+49. Selectenv = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>
+
+15
+00:00:06,029 --> 00:00:06,030
+53. switch (environment)
+
+16
+00:00:06,043 --> 00:00:06,044
+2. println(Selectenv = "ACTPOL-TEST-ENV")
+
+17
+00:00:06,049 --> 00:00:06,051
+6. navigateToUrl(TESTURL)
+

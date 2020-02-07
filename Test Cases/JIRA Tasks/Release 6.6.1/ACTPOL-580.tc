@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Go to Info organisatie - Request - tab Journaal
+Step 2: Add a couple of more records Journaal
+Step 3: Add a couple of objecten in Objecten tab and save.
+Step 4: also add in Tab Ambtsverslag and save.
+Step 5: check Journaal there should be records created for Journaal created and saved Objects and Ambtsverslag.
+Info organisatie - Info organisatie - Verzoek - tab Journaal</description>
+   <name>ACTPOL-580</name>
+   <tag>ACTPOL-580</tag>
+   <comment></comment>
+   <testCaseGuid>9c7fff7a-0ef1-4fbc-b76b-b2c3a6c2fb01</testCaseGuid>
+</TestCaseEntity>

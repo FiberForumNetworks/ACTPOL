@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Auto populated values are not being displayed in Voertuig  text box for given input values.
+
+Test plan::
+Step 1: Go to Generiek-Assistenties Select optional user
+Step 2: Click roll process, select nieuw process type “BEKEURDE PERSOON”
+Step 3: Select Soort Procesverbaal optional
+Step 4: Field Transportmiddel click Voertuig
+Step 5: Go to new Voertuig, Data Should be display in Voertuig.</description>
+   <name>ACTPOL-511</name>
+   <tag></tag>
+   <comment>BEKEURDE PERSOON   start</comment>
+   <testCaseGuid>c029e925-eb50-4317-b569-f61f23330596</testCaseGuid>
+</TestCaseEntity>

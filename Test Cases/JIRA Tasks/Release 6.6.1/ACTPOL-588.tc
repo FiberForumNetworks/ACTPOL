@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Create possibility of overview who is worked on and is working on a request.
+Step 1: Go to Info organisatie create a new record.edit existing request
+Step 2: Fill in mandatory fields and save
+Step 3: Assign request to your user and save
+Step 4: Check in medewerker tab if record is saved in the grid (also record should save in Journaal)
+Step 5: Edit request and assign Request to another medewerker.
+Step 6: Information of change should be visible in grid. (also check record in Journaal).
+
+Navigation
+Info organisatie - Info organisatie - Verzoek - tab Medewerker</description>
+   <name>ACTPOL-588</name>
+   <tag>ACTPOL-588</tag>
+   <comment></comment>
+   <testCaseGuid>feade464-ee1f-4608-9439-afd6b2fd36a6</testCaseGuid>
+</TestCaseEntity>

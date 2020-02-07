@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Goederen
+Step 2: Set text Telefoon
+Step 3: Set text IMEI
+Step 4: Set text Status
+Step 5: Set text Next Poc van,tot
+Step 6: Search results is an Telefoon,IMEI,Status and Next Poc van,tot</description>
+   <name>Algemene Zoekopdracht - Select type Goederen-Telefoon(Next Poc-4)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>affcbde1-80ca-4089-9ab5-1fcfc181d8b0</testCaseGuid>
+</TestCaseEntity>

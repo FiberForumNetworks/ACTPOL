@@ -1,0 +1,68 @@
+1
+00:00:01,373 --> 00:00:01,374
+1. callTestCase(findTestCase("main/Actpol_Login_testenv"), [:], STOP_ON_FAILURE)
+
+2
+00:00:02,947 --> 00:00:02,948
+1. openBrowser("")
+
+3
+00:00:27,382 --> 00:00:27,383
+5. deleteAllCookies()
+
+4
+00:00:29,407 --> 00:00:29,409
+9. waitForPageLoad(30)
+
+5
+00:00:29,530 --> 00:00:29,531
+13. maximizeWindow()
+
+6
+00:00:30,989 --> 00:00:30,990
+17. ACTPOLTESTENV = 1
+
+7
+00:00:30,992 --> 00:00:30,995
+21. ACTPOLDEVENV = 2
+
+8
+00:00:30,996 --> 00:00:30,997
+25. ACTPOLKCENV = 3
+
+9
+00:00:30,998 --> 00:00:30,999
+29. ACTPOLKBKPCNENV = 4
+
+10
+00:00:31,001 --> 00:00:31,002
+33. ACTPOLKBKMARENV = 5
+
+11
+00:00:31,003 --> 00:00:31,004
+37. ACTPOLKMENV = 6
+
+12
+00:00:31,005 --> 00:00:31,006
+41. ACTPOLKWENV = 7
+
+13
+00:00:31,007 --> 00:00:31,008
+45. environment = ACTPOLTESTENV
+
+14
+00:00:31,009 --> 00:00:31,010
+49. Selectenv = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>
+
+15
+00:00:31,136 --> 00:00:31,136
+53. switch (environment)
+
+16
+00:00:31,283 --> 00:00:31,283
+2. println(Selectenv = "ACTPOL-TEST-ENV")
+
+17
+00:00:31,284 --> 00:00:31,285
+6. navigateToUrl(TESTURL)
+

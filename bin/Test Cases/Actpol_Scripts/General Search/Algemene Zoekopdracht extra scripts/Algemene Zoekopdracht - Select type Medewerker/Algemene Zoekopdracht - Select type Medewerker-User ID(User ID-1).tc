@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Medewerker
+Step 2: Set text User ID
+Step 3: Search results is an User ID</description>
+   <name>Algemene Zoekopdracht - Select type Medewerker-User ID(User ID-1)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>83a40102-0a88-430f-a5db-6cec07f39273</testCaseGuid>
+</TestCaseEntity>

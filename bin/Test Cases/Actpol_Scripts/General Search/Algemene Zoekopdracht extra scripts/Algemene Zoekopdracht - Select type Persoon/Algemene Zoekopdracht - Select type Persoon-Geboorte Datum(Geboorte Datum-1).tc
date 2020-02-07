@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Persoon
+Step 2: Set text Geboorte Datum
+Step 3: Search results is an Geboorte Datum</description>
+   <name>Algemene Zoekopdracht - Select type Persoon-Geboorte Datum(Geboorte Datum-1)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3424c6e4-97e2-427c-a4ce-05880bc29023</testCaseGuid>
+</TestCaseEntity>

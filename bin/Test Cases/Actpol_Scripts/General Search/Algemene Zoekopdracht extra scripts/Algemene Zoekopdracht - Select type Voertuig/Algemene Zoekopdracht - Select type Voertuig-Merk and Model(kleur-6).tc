@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Voertuig
+Setp 2: Select Merk and Model
+Step 3: Set text Motornummer
+Step 4: Set text Chassisnummer
+Step 5: Set text Bouwjaar van,tot
+Step 6: Select Status
+Step 7: Select kleur
+Step 8: Search results is an Merk and Model,Motornummer,Chassisnummer,Bouwjaar van,tot,Staus and kleur</description>
+   <name>Algemene Zoekopdracht - Select type Voertuig-Merk and Model(kleur-6)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f801c7dd-176b-498a-858d-c3bed455b58a</testCaseGuid>
+</TestCaseEntity>

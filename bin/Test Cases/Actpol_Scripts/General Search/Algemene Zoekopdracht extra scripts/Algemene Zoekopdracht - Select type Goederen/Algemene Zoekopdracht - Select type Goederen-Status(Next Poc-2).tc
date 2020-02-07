@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Goederen
+Step 2: Set text Status
+Step 3: Set text Next Poc van,tot
+Step 4: Search results is an Status and Next Poc van,tot</description>
+   <name>Algemene Zoekopdracht - Select type Goederen-Status(Next Poc-2)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d28d168e-7203-4ac3-9093-a82beb002661</testCaseGuid>
+</TestCaseEntity>

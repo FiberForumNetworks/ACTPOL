@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Assistentie
+Step 2: Set text Assistentie
+Step 3: Select Adres
+Step 4: Select Klasse
+Step 5: Select Status
+Step 6: Click Poging andRelationeel geweld
+Step 7: Select Aangewezen aan
+Step 8: Set text Titel
+Step 9:Search results is an Set text Assistentie,Select Adres,Select Klasse,Select status ,select Aangewezen aan, titel ,Click Poging and Relationeel geweld</description>
+   <name>Algemene Zoekopdracht - Select type Assistentie-Select Adres(Titel-7)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>99fd4e76-fb49-4c29-a8b8-28bb3f61b0c6</testCaseGuid>
+</TestCaseEntity>

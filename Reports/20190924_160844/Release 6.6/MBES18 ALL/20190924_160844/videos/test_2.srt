@@ -1,0 +1,152 @@
+1
+00:00:00,691 --> 00:00:00,692
+3. Login to the application
+
+2
+00:00:00,827 --> 00:00:00,829
+1. openBrowser("")
+
+3
+00:00:04,290 --> 00:00:04,291
+5. deleteAllCookies()
+
+4
+00:00:04,919 --> 00:00:04,920
+9. waitForPageLoad(60)
+
+5
+00:00:04,946 --> 00:00:04,947
+13. maximizeWindow()
+
+6
+00:00:06,142 --> 00:00:06,144
+17. ACTPOLTESTENV = 1
+
+7
+00:00:06,147 --> 00:00:06,149
+21. ACTPOLDEVENV = 2
+
+8
+00:00:06,150 --> 00:00:06,152
+25. ACTPOLKCENV = 3
+
+9
+00:00:06,154 --> 00:00:06,155
+29. ACTPOLKBKPCNENV = 4
+
+10
+00:00:06,156 --> 00:00:06,158
+33. ACTPOLKBKMARENV = 5
+
+11
+00:00:06,159 --> 00:00:06,160
+37. ACTPOLKMENV = 6
+
+12
+00:00:06,162 --> 00:00:06,163
+41. ACTPOLKWENV = 7
+
+13
+00:00:06,165 --> 00:00:06,167
+45. environment = ACTPOLTESTENV
+
+14
+00:00:06,168 --> 00:00:06,170
+49. Selectenv = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>
+
+15
+00:00:06,173 --> 00:00:06,175
+53. switch (environment)
+
+16
+00:00:06,178 --> 00:00:06,179
+2. println(Selectenv = "ACTPOL-TEST-ENV")
+
+17
+00:00:06,182 --> 00:00:06,184
+6. navigateToUrl(TESTURL)
+
+18
+00:00:12,691 --> 00:00:12,693
+10. setText(findTestObject("Actpol_Scripts/login/userid"), username)
+
+19
+00:00:13,119 --> 00:00:13,120
+14. setMaskedText(findTestObject("Actpol_Scripts/login/password"), password)
+
+20
+00:00:13,621 --> 00:00:13,624
+18. click(findTestObject("Actpol_Scripts/login/login"))
+
+21
+00:00:13,959 --> 00:00:13,960
+22. getWindowTitle()
+
+22
+00:00:13,982 --> 00:00:13,983
+26. delay(5)
+
+23
+00:00:18,988 --> 00:00:18,990
+30. break
+
+24
+00:00:18,995 --> 00:00:18,996
+7. log = new com.kms.katalon.core.logging.KeywordLogger()
+
+25
+00:00:18,998 --> 00:00:19,001
+11. delay(1)
+
+26
+00:00:20,008 --> 00:00:20,041
+17. Mouse over to Generic tab
+
+27
+00:00:20,891 --> 00:00:20,893
+21. log.logInfo("Successfully logged")
+
+28
+00:00:20,897 --> 00:00:20,898
+25. delay(3)
+
+29
+00:00:23,906 --> 00:00:23,906
+31. Click MBES tab
+
+30
+00:00:24,224 --> 00:00:24,225
+35. delay(2)
+
+31
+00:00:26,232 --> 00:00:26,233
+41. Click MBES tab
+
+32
+00:00:26,492 --> 00:00:26,493
+45. log.logInfo("Clicking MBES18 tab ")
+
+33
+00:00:26,496 --> 00:00:26,497
+49. delay(1)
+
+34
+00:00:27,505 --> 00:00:27,506
+53. delay(5)
+
+35
+00:00:32,513 --> 00:00:32,514
+59. Click new btn
+
+36
+00:00:33,206 --> 00:00:33,207
+63. log.logInfo("Clicking MBES18 new button ")
+
+37
+00:00:33,210 --> 00:00:33,211
+67. delay(1)
+
+38
+00:00:34,222 --> 00:00:34,223
+71. takeScreenshot()
+

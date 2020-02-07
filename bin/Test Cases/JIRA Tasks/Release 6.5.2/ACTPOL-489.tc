@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Navigation: 
+Opsporing - Onderzoek - Entiteiten - Persoon - bekende aangehouden verdachte
+
+Test plan:
+Go to an onderzoek
+Add a new entiteit persoon and give this person the rol/process of aangehouden persoon
+Submit this aanhouding
+Go back to entiteiten
+Add a new entiteit persoon and give this 2^nd^ person also the rol/process of aangehouden persoon
+You will see that the strafbare feiten comes filled in (with the data from the previous submission)</description>
+   <name>ACTPOL-489</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>fcf55c84-2d73-4105-8929-249f294e87d7</testCaseGuid>
+</TestCaseEntity>

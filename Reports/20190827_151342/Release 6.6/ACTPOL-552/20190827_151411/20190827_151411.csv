@@ -1,0 +1,223 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ACTPOL-552,Chrome 76.0.3809.100,#Enhancements Vreemdelingen Module,,2019-08-27 15:14:24,2019-08-27 15:18:36,4m - 12.483s,INCOMPLETE
+,,,,,,,
+Test Cases/JIRA Tasks/Release 6.6/ACTPOL-552,Chrome 76.0.3809.100,"Description
+Possibility to Kopie Assistentie into Melding Mensenhandel.
+
+Solution
+Add in Assistentie Melding a button called 'Mensenhandel/Mensensmokkel'.
+When this information is selected the following information should be copied:
+
+Incident (number) - Assistentie number-Eventnumber
+Adres van incident
+Adres # van incident
+Incident
+Datum Melding
+Tijd Melding
+Aangewezen aan
+Mutatie
+(assistentie should be saved and everything should remain the same).
+This information copied should create automatically a new record in Generiek - Melding.
+Type Melding should be Assistentie
+Naam Melder should be the user that created the Assistentie
+Wekzaam bij should be organisation of this user
+Datum should be same as when button Mensenhandel/Mensensmokkel is selected
+Status is automatically in Behandeling.
+The copied information should be added in the Omschrijving field.
+
+Testplan
+Step 1: Generiek - Assistentie - add a new assistentie
+Step 2: Fill in mandatory fields and save.
+Step 3: Edit existing record and select button Mensenhandel/Mensensmokkel and click save
+Step 4: Go to Melding Mensenhandel - the information entered in the assistentie should be visible here.
+
+Navigation
+Generiek - Assistentie - Nieuw assistentie
+Intake - Calltaker
+Also Generiek Melding Mensenhandel",ACTPOL-552,2019-08-27 15:14:24,2019-08-27 15:18:36,4m - 11.884s,PASSED
+"callTestCase(findTestCase(""main/Actpol_Login_testenv""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.100,,,2019-08-27 15:14:26,2019-08-27 15:14:54,27.502s,PASSED
+"mouseOver(findTestObject(""Actpol_Scripts/Menu navigation/Generiek/Generiek""))",Chrome 76.0.3809.100,,,2019-08-27 15:14:54,2019-08-27 15:15:07,12.960s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 15:15:07,2019-08-27 15:15:09,2.030s,PASSED
+"click(findTestObject(""Actpol_Scripts/Menu navigation/Generiek/Assistenties""))",Chrome 76.0.3809.100,,,2019-08-27 15:15:09,2019-08-27 15:15:14,4.982s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 15:15:14,2019-08-27 15:15:16,2.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Assistentie New""))",Chrome 76.0.3809.100,"Creating New Incident
+",,2019-08-27 15:15:16,2019-08-27 15:15:26,9.997s,PASSED
+delay(5),Chrome 76.0.3809.100,,,2019-08-27 15:15:26,2019-08-27 15:15:31,5.005s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Bron""), ""k"")",Chrome 76.0.3809.100,,,2019-08-27 15:15:31,2019-08-27 15:15:31,0.605s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 15:15:31,2019-08-27 15:15:33,2.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Born lb""))",Chrome 76.0.3809.100,,,2019-08-27 15:15:33,2019-08-27 15:15:34,0.677s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Telefoon nummer""), ""9999999999"", OPTIONAL)",Chrome 76.0.3809.100,,,2019-08-27 15:15:34,2019-08-27 15:15:35,0.731s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Titel""), ""Testing test"")",Chrome 76.0.3809.100,,,2019-08-27 15:15:35,2019-08-27 15:15:35,0.721s,PASSED
+"selectOptionByValue(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Lokatie type""), ""1"", false)",Chrome 76.0.3809.100,Select drop down from the list :: COMERCIELE INSTELLING,,2019-08-27 15:15:35,2019-08-27 15:15:36,0.744s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 15:15:36,2019-08-27 15:15:38,2.007s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Incident Adres""))",Chrome 76.0.3809.100,,,2019-08-27 15:15:38,2019-08-27 15:15:39,0.582s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 15:15:39,2019-08-27 15:15:41,2.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Incident Adres lb""))",Chrome 76.0.3809.100,ANDRES BELLO WEG,,2019-08-27 15:15:41,2019-08-27 15:15:41,0.726s,PASSED
+delay(5),Chrome 76.0.3809.100,,,2019-08-27 15:15:41,2019-08-27 15:15:46,5.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/ter hoogte van""), OPTIONAL)",Chrome 76.0.3809.100,,,2019-08-27 15:15:46,2019-08-27 15:15:47,0.602s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Nadere Aanduiding""), ""Testing"")",Chrome 76.0.3809.100,,,2019-08-27 15:15:47,2019-08-27 15:15:48,0.698s,PASSED
+delay(5),Chrome 76.0.3809.100,,,2019-08-27 15:15:48,2019-08-27 15:15:53,5.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Bekende plaats""))",Chrome 76.0.3809.100,,,2019-08-27 15:15:53,2019-08-27 15:15:53,0.003s,NOT_RUN
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 15:15:53,2019-08-27 15:15:53,0.001s,NOT_RUN
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Bekende plaats Lb""))",Chrome 76.0.3809.100,,,2019-08-27 15:15:53,2019-08-27 15:15:53,0.002s,NOT_RUN
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 15:15:53,2019-08-27 15:15:53,0.001s,NOT_RUN
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Incident""))",Chrome 76.0.3809.100,,,2019-08-27 15:15:53,2019-08-27 15:15:53,0.651s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 15:15:53,2019-08-27 15:15:55,2.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Incident Lb""))",Chrome 76.0.3809.100,,,2019-08-27 15:15:55,2019-08-27 15:15:56,0.641s,PASSED
+delay(5),Chrome 76.0.3809.100,,,2019-08-27 15:15:56,2019-08-27 15:16:01,5.003s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Relationeel Geweld""))",Chrome 76.0.3809.100,,,2019-08-27 15:16:01,2019-08-27 15:16:02,0.530s,PASSED
+delay(5),Chrome 76.0.3809.100,,,2019-08-27 15:16:02,2019-08-27 15:16:07,5.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Poging""))",Chrome 76.0.3809.100,,,2019-08-27 15:16:07,2019-08-27 15:16:07,0.671s,PASSED
+"selectOptionByValue(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Melding Prioriteit""), ""3"", false)",Chrome 76.0.3809.100,"Select ZELF CONSTATERING
+",,2019-08-27 15:16:07,2019-08-27 15:16:08,0.600s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Dispatch ja""), OPTIONAL)",Chrome 76.0.3809.100,,,2019-08-27 15:16:08,2019-08-27 15:16:08,0.002s,NOT_RUN
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Contact verzoek ja""), OPTIONAL)",Chrome 76.0.3809.100,,,2019-08-27 15:16:08,2019-08-27 15:16:08,0.002s,NOT_RUN
+delay(1),Chrome 76.0.3809.100,,,2019-08-27 15:16:08,2019-08-27 15:16:09,1.007s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Aangewezen aan""))",Chrome 76.0.3809.100,Click on Aangewezen aan auto search titles,,2019-08-27 15:16:09,2019-08-27 15:16:09,0.002s,NOT_RUN
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 15:16:09,2019-08-27 15:16:09,0.003s,NOT_RUN
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Aangewezen aan lb""))",Chrome 76.0.3809.100,Select required dropdown,,2019-08-27 15:16:09,2019-08-27 15:16:09,0.003s,NOT_RUN
+delay(1),Chrome 76.0.3809.100,,,2019-08-27 15:16:09,2019-08-27 15:16:10,1.006s,PASSED
+"selectOptionByValue(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Eiland""), ""SXM"", false)",Chrome 76.0.3809.100,"Select ST Maarten
+",,2019-08-27 15:16:10,2019-08-27 15:16:10,0.501s,PASSED
+"scrollToPosition(29, 7)",Chrome 76.0.3809.100,,,2019-08-27 15:16:10,2019-08-27 15:16:10,0.052s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 15:16:10,2019-08-27 15:16:12,2.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Melding""))",Chrome 76.0.3809.100,,,2019-08-27 15:16:12,2019-08-27 15:16:13,0.595s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-27 15:16:13,2019-08-27 15:16:14,1.008s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Melder""))",Chrome 76.0.3809.100,,,2019-08-27 15:16:14,2019-08-27 15:16:15,0.583s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-27 15:16:15,2019-08-27 15:16:16,1.008s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Rol-Proces""), ""AANGEVER"", false)",Chrome 76.0.3809.100,"Select required dropdown
+",,2019-08-27 15:16:16,2019-08-27 15:16:16,0.653s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Achternaam""))",Chrome 76.0.3809.100,"Clicking new person
+",,2019-08-27 15:16:16,2019-08-27 15:16:22,5.235s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 15:16:22,2019-08-27 15:16:24,2.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Resultaat Personen bestand person selection""))",Chrome 76.0.3809.100,,,2019-08-27 15:16:24,2019-08-27 15:16:24,0.770s,PASSED
+"scrollToPosition(0, 21)",Chrome 76.0.3809.100,,,2019-08-27 15:16:24,2019-08-27 15:16:24,0.044s,PASSED
+delay(3),Chrome 76.0.3809.100,,,2019-08-27 15:16:24,2019-08-27 15:16:27,3.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Melder""))",Chrome 76.0.3809.100,,,2019-08-27 15:16:27,2019-08-27 15:16:28,0.465s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-27 15:16:28,2019-08-27 15:16:29,1.004s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Save melding""))",Chrome 76.0.3809.100,,,2019-08-27 15:16:29,2019-08-27 15:16:29,0.581s,PASSED
+delay(8),Chrome 76.0.3809.100,,,2019-08-27 15:16:29,2019-08-27 15:16:37,8.005s,PASSED
+takeScreenshot(),Chrome 76.0.3809.100,,,2019-08-27 15:16:37,2019-08-27 15:16:47,9.461s,PASSED
+delay(3),Chrome 76.0.3809.100,,,2019-08-27 15:16:47,2019-08-27 15:16:50,3.006s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-552/Melding TAB""))",Chrome 76.0.3809.100,Click Melding tab,,2019-08-27 15:16:50,2019-08-27 15:16:53,3.364s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 15:16:53,2019-08-27 15:16:55,2.006s,PASSED
+"Assistentienumber = getText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-552/Assistentie number""))",Chrome 76.0.3809.100,Get text from the feild:: Assistentie number,,2019-08-27 15:16:55,2019-08-27 15:16:56,0.384s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-27 15:16:56,2019-08-27 15:16:57,1.006s,PASSED
+"IncidentAdres = getText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-552/Incident Adres""))",Chrome 76.0.3809.100,Get text from the feild:: Incident Adres,,2019-08-27 15:16:57,2019-08-27 15:16:57,0.397s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-27 15:16:57,2019-08-27 15:16:58,1.007s,PASSED
+"Aangewezenaan = getText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-552/Aangewezen aan""))",Chrome 76.0.3809.100,Get text from the feild:: Aangewezen aan,,2019-08-27 15:16:58,2019-08-27 15:16:58,0.367s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-27 15:16:58,2019-08-27 15:16:59,1.003s,PASSED
+"Incident = getText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-552/Incident""))",Chrome 76.0.3809.100,Get text from the feild:: Incident,,2019-08-27 15:16:59,2019-08-27 15:17:00,0.414s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-27 15:17:00,2019-08-27 15:17:01,1.017s,PASSED
+"DatumMelding = getText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-552/Datum Melding""))",Chrome 76.0.3809.100,Get text from the feild:: Datum Melding,,2019-08-27 15:17:01,2019-08-27 15:17:01,0.409s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-27 15:17:01,2019-08-27 15:17:02,1.004s,PASSED
+"TijdMelding = getText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-552/Datum Melding""))",Chrome 76.0.3809.100,Get text from the feild:: Tijd Melding,,2019-08-27 15:17:02,2019-08-27 15:17:03,0.316s,PASSED
+log = new com.kms.katalon.core.logging.KeywordLogger(),Chrome 76.0.3809.100,,,2019-08-27 15:17:03,2019-08-27 15:17:03,0.001s,PASSED
+"log.logInfo(""Assistentie number is : "" + Assistentienumber)",Chrome 76.0.3809.100,,,2019-08-27 15:17:03,2019-08-27 15:17:03,0.002s,PASSED
+"log.logInfo(""Incident Adres is : "" + IncidentAdres)",Chrome 76.0.3809.100,,,2019-08-27 15:17:03,2019-08-27 15:17:03,0.001s,PASSED
+"log.logInfo(""Aangewezen aan is : "" + Aangewezenaan)",Chrome 76.0.3809.100,,,2019-08-27 15:17:03,2019-08-27 15:17:03,0.001s,PASSED
+"log.logInfo(""Incident is: "" + Incident)",Chrome 76.0.3809.100,,,2019-08-27 15:17:03,2019-08-27 15:17:03,0.001s,PASSED
+"log.logInfo(""Datum Melding is : "" + DatumMelding)",Chrome 76.0.3809.100,,,2019-08-27 15:17:03,2019-08-27 15:17:03,0.001s,PASSED
+"log.logInfo(""Tijd Melding is : "" + TijdMelding)",Chrome 76.0.3809.100,,,2019-08-27 15:17:03,2019-08-27 15:17:03,0.000s,PASSED
+"test = concatenate(""
+"", ""Assistentie number is : "" + Assistentienumber, ""
+"", ""Incident Adres is : "" + IncidentAdres, ""
+"", ""Incident is: "" + Incident, ""
+"", ""Datum Melding is : "" + DatumMelding, ""
+"", ""Tijd Melding is : "" + TijdMelding)",Chrome 76.0.3809.100,,,2019-08-27 15:17:03,2019-08-27 15:17:03,0.011s,PASSED
+log.logInfo(test),Chrome 76.0.3809.100,,,2019-08-27 15:17:03,2019-08-27 15:17:03,0.001s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 15:17:03,2019-08-27 15:17:05,2.006s,PASSED
+"mouseOver(findTestObject(""Actpol_Scripts/Menu navigation/Generiek/Generiek""))",Chrome 76.0.3809.100,,,2019-08-27 15:17:05,2019-08-27 15:17:05,0.300s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 15:17:05,2019-08-27 15:17:07,2.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Menu navigation/Generiek/Melding""))",Chrome 76.0.3809.100,,,2019-08-27 15:17:07,2019-08-27 15:17:12,4.850s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 15:17:12,2019-08-27 15:17:14,2.007s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-552/medlding view default first selected""))",Chrome 76.0.3809.100,Melding view select,,2019-08-27 15:17:14,2019-08-27 15:17:14,0.500s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 15:17:14,2019-08-27 15:17:16,2.003s,PASSED
+"Omschrijving = getText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-552/Omschrijving""))",Chrome 76.0.3809.100,,,2019-08-27 15:17:16,2019-08-27 15:17:17,0.348s,PASSED
+log.logInfo(Omschrijving),Chrome 76.0.3809.100,,,2019-08-27 15:17:17,2019-08-27 15:17:17,0.002s,PASSED
+"comment(""intake mode"")",Chrome 76.0.3809.100,,,2019-08-27 15:17:17,2019-08-27 15:17:17,0.012s,PASSED
+"mouseOver(findTestObject(""Actpol_Scripts/Menu navigation/Intake/Intake""))",Chrome 76.0.3809.100,,,2019-08-27 15:17:17,2019-08-27 15:17:17,0.260s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 15:17:17,2019-08-27 15:17:19,2.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Menu navigation/Intake/Calltaker""))",Chrome 76.0.3809.100,,,2019-08-27 15:17:19,2019-08-27 15:17:25,6.090s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 15:17:25,2019-08-27 15:17:27,2.006s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Intake/Calltaker/Bron""), ""t"")",Chrome 76.0.3809.100,,,2019-08-27 15:17:27,2019-08-27 15:17:28,0.834s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 15:17:28,2019-08-27 15:17:30,2.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Intake/Calltaker/Bron lb""))",Chrome 76.0.3809.100,Default first one is selected,,2019-08-27 15:17:30,2019-08-27 15:17:30,0.598s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Intake/Calltaker/Telefoon nummer""), ""4754"")",Chrome 76.0.3809.100,,,2019-08-27 15:17:30,2019-08-27 15:17:31,0.549s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Intake/Calltaker/Adres van Incident""), ""aa"")",Chrome 76.0.3809.100,,,2019-08-27 15:17:31,2019-08-27 15:17:31,0.476s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 15:17:31,2019-08-27 15:17:33,2.004s,PASSED
+"click(findTestObject(""Actpol_Scripts/Intake/Calltaker/Adres van Incident lb""))",Chrome 76.0.3809.100,,,2019-08-27 15:17:33,2019-08-27 15:17:34,0.569s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Intake/Calltaker/Latitude""), ""GG"", OPTIONAL)",Chrome 76.0.3809.100,,,2019-08-27 15:17:34,2019-08-27 15:17:35,0.866s,PASSED
+"click(findTestObject(""Actpol_Scripts/Intake/Calltaker/ter hoogte van""), OPTIONAL)",Chrome 76.0.3809.100,,,2019-08-27 15:17:35,2019-08-27 15:17:36,0.681s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Intake/Calltaker/Nadere aanduiding""), ""Testing"")",Chrome 76.0.3809.100,,,2019-08-27 15:17:36,2019-08-27 15:17:36,0.471s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Intake/Calltaker/Bekende plaats""), ""a"")",Chrome 76.0.3809.100,,,2019-08-27 15:17:36,2019-08-27 15:17:36,0.439s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 15:17:36,2019-08-27 15:17:38,2.003s,PASSED
+"click(findTestObject(""Actpol_Scripts/Intake/Calltaker/Bekende plaats lb""), OPTIONAL)",Chrome 76.0.3809.100,,,2019-08-27 15:17:38,2019-08-27 15:17:39,0.636s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Intake/Calltaker/Incident""), ""a"")",Chrome 76.0.3809.100,,,2019-08-27 15:17:39,2019-08-27 15:17:40,0.516s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 15:17:40,2019-08-27 15:17:42,2.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Intake/Calltaker/Incident lb""))",Chrome 76.0.3809.100,,,2019-08-27 15:17:42,2019-08-27 15:17:42,0.640s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-27 15:17:42,2019-08-27 15:17:43,1.007s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-552/Mensenhandel Mensensmokkel""))",Chrome 76.0.3809.100,,,2019-08-27 15:17:43,2019-08-27 15:17:44,0.637s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-27 15:17:44,2019-08-27 15:17:45,1.003s,PASSED
+"click(findTestObject(""Actpol_Scripts/Intake/Calltaker/Poging""))",Chrome 76.0.3809.100,,,2019-08-27 15:17:45,2019-08-27 15:17:46,1.297s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-27 15:17:46,2019-08-27 15:17:47,1.006s,PASSED
+"selectOptionByValue(findTestObject(""Actpol_Scripts/Intake/Calltaker/Melding Prioriteit""), ""3"", false)",Chrome 76.0.3809.100,Select based on environment,,2019-08-27 15:17:47,2019-08-27 15:17:48,0.917s,PASSED
+"delay(1, OPTIONAL)",Chrome 76.0.3809.100,,,2019-08-27 15:17:48,2019-08-27 15:17:49,1.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Intake/Calltaker/Politie""), OPTIONAL)",Chrome 76.0.3809.100,,,2019-08-27 15:17:49,2019-08-27 15:17:50,0.875s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-27 15:17:50,2019-08-27 15:17:51,1.007s,PASSED
+"click(findTestObject(""Actpol_Scripts/Intake/Calltaker/Achternaam""))",Chrome 76.0.3809.100,,,2019-08-27 15:17:51,2019-08-27 15:17:54,2.742s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 15:17:54,2019-08-27 15:17:56,2.003s,PASSED
+"click(findTestObject(""Actpol_Scripts/Intake/Calltaker/Resultaat Personen bestand""))",Chrome 76.0.3809.100,,,2019-08-27 15:17:56,2019-08-27 15:17:56,0.627s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Intake/Calltaker/Mutatie""), ""Testing"")",Chrome 76.0.3809.100,,,2019-08-27 15:17:56,2019-08-27 15:17:57,0.769s,PASSED
+"click(findTestObject(""Actpol_Scripts/Intake/Calltaker/Intake Save""))",Chrome 76.0.3809.100,,,2019-08-27 15:17:57,2019-08-27 15:17:58,0.490s,PASSED
+delay(5),Chrome 76.0.3809.100,,,2019-08-27 15:17:58,2019-08-27 15:18:03,5.004s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-552/Actieve Assistentie""))",Chrome 76.0.3809.100,,,2019-08-27 15:18:03,2019-08-27 15:18:07,4.661s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 15:18:07,2019-08-27 15:18:09,2.003s,PASSED
+"Incidentnumber = getText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-552/Incident number""))",Chrome 76.0.3809.100,Get text from the feild:: Incident number,,2019-08-27 15:18:09,2019-08-27 15:18:10,0.434s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-27 15:18:10,2019-08-27 15:18:11,1.004s,PASSED
+"avi = getAttribute(findTestObject(""JIRA/A Relese 6.6/ACTPOL-552/Adres van incident""), ""value"")",Chrome 76.0.3809.100,Get text from the feild:: Adres van incident.,,2019-08-27 15:18:11,2019-08-27 15:18:11,0.467s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-27 15:18:11,2019-08-27 15:18:12,1.003s,PASSED
+"avi1 = getAttribute(findTestObject(""JIRA/A Relese 6.6/ACTPOL-552/Adres van Incident 1""), ""value"")",Chrome 76.0.3809.100,Get text from the feild::Adres # van incident,,2019-08-27 15:18:12,2019-08-27 15:18:13,0.634s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-27 15:18:13,2019-08-27 15:18:14,1.005s,PASSED
+"Incidentca = getText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-552/Incident calltaker""))",Chrome 76.0.3809.100,Get text from the feild:: Incident,,2019-08-27 15:18:14,2019-08-27 15:18:15,1.227s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-27 15:18:15,2019-08-27 15:18:16,1.002s,PASSED
+"DatumMeldingca = getText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-552/Datum Meldingca""))",Chrome 76.0.3809.100,Get text from the feild:: Datum Melding,,2019-08-27 15:18:16,2019-08-27 15:18:17,0.653s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-27 15:18:17,2019-08-27 15:18:18,1.004s,PASSED
+"TijdMeldingca = getText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-552/Tijd Melding ca""))",Chrome 76.0.3809.100,Get text from the feild:: Tijd Melding,,2019-08-27 15:18:18,2019-08-27 15:18:19,0.719s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-27 15:18:19,2019-08-27 15:18:20,1.003s,PASSED
+"Aangewezenaan1 = getText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-552/Aangewezen aanca""))",Chrome 76.0.3809.100,Get text from the feild:: Aangewezen aan,,2019-08-27 15:18:20,2019-08-27 15:18:20,0.372s,PASSED
+delay(1),Chrome 76.0.3809.100,,,2019-08-27 15:18:20,2019-08-27 15:18:21,1.003s,PASSED
+log1 = new com.kms.katalon.core.logging.KeywordLogger(),Chrome 76.0.3809.100,,,2019-08-27 15:18:21,2019-08-27 15:18:21,0.001s,PASSED
+"log1.logInfo(""Assistentie number is : "" + Incidentnumber)",Chrome 76.0.3809.100,,,2019-08-27 15:18:21,2019-08-27 15:18:21,0.002s,PASSED
+"log1.logInfo(""Adres van incident : "" + avi)",Chrome 76.0.3809.100,,,2019-08-27 15:18:21,2019-08-27 15:18:21,0.003s,PASSED
+"log1.logInfo(""Adres #van incident : "" + avi1)",Chrome 76.0.3809.100,,,2019-08-27 15:18:21,2019-08-27 15:18:21,0.003s,PASSED
+"log1.logInfo(""Incident is: "" + Incidentca)",Chrome 76.0.3809.100,,,2019-08-27 15:18:21,2019-08-27 15:18:21,0.002s,PASSED
+"log1.logInfo(""Datum Melding is : "" + DatumMeldingca)",Chrome 76.0.3809.100,,,2019-08-27 15:18:21,2019-08-27 15:18:21,0.003s,PASSED
+"log1.logInfo(""Tijd Melding is : "" + TijdMeldingca)",Chrome 76.0.3809.100,,,2019-08-27 15:18:21,2019-08-27 15:18:21,0.002s,PASSED
+"log1.logInfo(""Tijd Melding is : "" + Aangewezenaan1)",Chrome 76.0.3809.100,,,2019-08-27 15:18:21,2019-08-27 15:18:21,0.003s,PASSED
+"test1 = concatenate(""
+"", ""Incident number:"" + Incidentnumber, ""
+"", ""Adres van incident:"" + avi, ""
+"", ""Adres # van incident:"" + avi1, ""
+"", ""Incident:"" + Incidentca, ""
+"", ""Datum Melding:"" + DatumMeldingca, ""
+"", ""Tijd Melding:"" + TijdMeldingca, ""
+"", ""Aangewezen aan:"" + Aangewezenaan1)",Chrome 76.0.3809.100,,,2019-08-27 15:18:21,2019-08-27 15:18:21,0.008s,PASSED
+println(test1),Chrome 76.0.3809.100,,,2019-08-27 15:18:21,2019-08-27 15:18:23,2.367s,PASSED
+log1.logInfo(test1),Chrome 76.0.3809.100,,,2019-08-27 15:18:23,2019-08-27 15:18:23,0.003s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 15:18:23,2019-08-27 15:18:25,2.004s,PASSED
+"mouseOver(findTestObject(""Actpol_Scripts/Menu navigation/Generiek/Generiek""))",Chrome 76.0.3809.100,,,2019-08-27 15:18:25,2019-08-27 15:18:26,0.297s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 15:18:26,2019-08-27 15:18:28,2.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Menu navigation/Generiek/Melding""))",Chrome 76.0.3809.100,,,2019-08-27 15:18:28,2019-08-27 15:18:30,2.560s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 15:18:30,2019-08-27 15:18:32,2.006s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-552/medlding view default first selected""))",Chrome 76.0.3809.100,Melding view select,,2019-08-27 15:18:32,2019-08-27 15:18:33,0.599s,PASSED
+delay(2),Chrome 76.0.3809.100,,,2019-08-27 15:18:33,2019-08-27 15:18:35,2.005s,PASSED
+"Omschrijving = getText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-552/Omschrijving""))",Chrome 76.0.3809.100,,,2019-08-27 15:18:35,2019-08-27 15:18:36,0.936s,PASSED
+println(Omschrijving),Chrome 76.0.3809.100,,,2019-08-27 15:18:36,2019-08-27 15:18:36,0.001s,PASSED
+if (test1 == Omschrijving),Chrome 76.0.3809.100,,,2019-08-27 15:18:36,2019-08-27 15:18:36,0.001s,PASSED
+else,Chrome 76.0.3809.100,,,2019-08-27 15:18:36,2019-08-27 15:18:36,0.003s,PASSED
+s = DatumMeldingca,Chrome 76.0.3809.100,,,2019-08-27 15:18:36,2019-08-27 15:18:36,0.001s,PASSED
+len = s.length(),Chrome 76.0.3809.100,,,2019-08-27 15:18:36,2019-08-27 15:18:36,0.000s,PASSED
+"rev = """"",Chrome 76.0.3809.100,,,2019-08-27 15:18:36,2019-08-27 15:18:36,0.001s,PASSED
+"for ([i = len - 1, i >= 0, (i--)])",Chrome 76.0.3809.100,,,2019-08-27 15:18:36,2019-08-27 15:18:36,0.009s,PASSED
+println(rev),Chrome 76.0.3809.100,,,2019-08-27 15:18:36,2019-08-27 15:18:36,0.001s,PASSED

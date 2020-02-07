@@ -1,0 +1,172 @@
+1
+00:00:00,925 --> 00:00:00,936
+1. callTestCase(findTestCase("main/Actpol_Login_testenv"), [:], STOP_ON_FAILURE)
+
+2
+00:00:02,348 --> 00:00:02,352
+1. openBrowser("")
+
+3
+00:00:32,627 --> 00:00:32,629
+5. deleteAllCookies()
+
+4
+00:00:32,912 --> 00:00:32,914
+9. waitForPageLoad(30)
+
+5
+00:00:44,968 --> 00:00:44,969
+13. maximizeWindow()
+
+6
+00:00:46,169 --> 00:00:46,171
+17. ACTPOLTESTENV = 1
+
+7
+00:00:46,173 --> 00:00:46,175
+21. ACTPOLDEVENV = 2
+
+8
+00:00:46,177 --> 00:00:46,179
+25. ACTPOLKCENV = 3
+
+9
+00:00:46,181 --> 00:00:46,183
+29. ACTPOLKBKPCNENV = 4
+
+10
+00:00:46,185 --> 00:00:46,188
+33. ACTPOLKBKMARENV = 5
+
+11
+00:00:46,190 --> 00:00:46,192
+37. ACTPOLKMENV = 6
+
+12
+00:00:46,194 --> 00:00:46,196
+41. ACTPOLKWENV = 7
+
+13
+00:00:46,198 --> 00:00:46,199
+45. environment = ACTPOLTESTENV
+
+14
+00:00:46,201 --> 00:00:46,204
+49. Selectenv = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>
+
+15
+00:00:46,206 --> 00:00:46,208
+53. switch (environment)
+
+16
+00:00:46,290 --> 00:00:46,292
+2. println(Selectenv = "ACTPOL-TEST-ENV")
+
+17
+00:00:46,299 --> 00:00:46,300
+6. navigateToUrl(TESTURL)
+
+18
+00:01:12,588 --> 00:01:12,590
+10. setText(findTestObject("Actpol_Scripts/login/userid"), username)
+
+19
+00:01:25,108 --> 00:01:25,110
+14. setMaskedText(findTestObject("Actpol_Scripts/login/password"), password)
+
+20
+00:01:25,936 --> 00:01:25,938
+18. click(findTestObject("Actpol_Scripts/login/login"))
+
+21
+00:01:29,083 --> 00:01:29,084
+22. getWindowTitle()
+
+22
+00:01:29,119 --> 00:01:29,120
+26. break
+
+23
+00:01:29,197 --> 00:01:29,198
+5. delay(1)
+
+24
+00:01:30,221 --> 00:01:30,224
+9. mouseOver(findTestObject("Actpol_Scripts/Menu navigation/Dashboard/Dashboard"))
+
+25
+00:01:51,345 --> 00:01:51,348
+13. delay(2)
+
+26
+00:01:53,355 --> 00:01:53,358
+17. click(findTestObject("Actpol_Scripts/Menu navigation/Dashboard/Rapportage Assistentie"), OPTIONAL)
+
+27
+00:02:10,705 --> 00:02:10,706
+21. delay(2)
+
+28
+00:02:12,717 --> 00:02:12,719
+25. click(findTestObject("JIRA/A Relese 6.6/ACTPOL-547/Edit report Assistentie"), OPTIONAL)
+
+29
+00:02:17,757 --> 00:02:17,760
+29. delay(2)
+
+30
+00:02:19,771 --> 00:02:19,774
+33. click(findTestObject("JIRA/A Relese 6.6/ACTPOL-547/periode"), OPTIONAL)
+
+31
+00:02:20,700 --> 00:02:20,703
+37. delay(2)
+
+32
+00:02:22,711 --> 00:02:22,714
+41. click(findTestObject("JIRA/A Relese 6.6/ACTPOL-547/Filter"), OPTIONAL)
+
+33
+00:02:23,781 --> 00:02:23,783
+45. delay(2)
+
+34
+00:02:25,792 --> 00:02:25,795
+49. selectOptionByLabel(findTestObject("JIRA/A Relese 6.6/ACTPOL-547/Filter dropdown"), " Afdeling ", false)
+
+35
+00:02:28,426 --> 00:02:28,428
+53. delay(2)
+
+36
+00:02:30,437 --> 00:02:30,439
+57. log = new com.kms.katalon.core.logging.KeywordLogger()
+
+37
+00:02:30,440 --> 00:02:30,442
+61. get = getAttribute(findTestObject("JIRA/A Relese 6.6/ACTPOL-547/get text from dorp down"), "value")
+
+38
+00:02:31,397 --> 00:02:31,399
+65. check = getText(findTestObject("JIRA/A Relese 6.6/ACTPOL-547/get text from dorp down"))
+
+39
+00:02:32,156 --> 00:02:32,157
+69. log.logInfo(get)
+
+40
+00:02:32,160 --> 00:02:32,163
+73. log.logInfo(check)
+
+41
+00:02:32,166 --> 00:02:32,168
+77. get2 = " Afdeling "
+
+42
+00:02:32,169 --> 00:02:32,171
+81. if (get2 == check)
+
+43
+00:02:32,173 --> 00:02:32,174
+1. log.logInfo("Dropdown value match")
+

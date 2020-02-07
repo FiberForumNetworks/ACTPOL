@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Tab Bijlage
+Step 1: Go to Info organisatie edit existing request
+Step 2: Go to the Bijlage tab
+Step 3: Select an document or a picture from your PC and add
+Step 4: Save added bijlage
+Step 5: Check gird created in Bijlage tab.
+Info organisatie - Info organisatie - Verzoek - tab Bijlage</description>
+   <name>ACTPOL-587</name>
+   <tag>ACTPOL-587</tag>
+   <comment></comment>
+   <testCaseGuid>40bc6ad7-a586-4a87-8591-dafb25328b29</testCaseGuid>
+</TestCaseEntity>

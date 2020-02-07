@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Go to generiek - assistentie,
+Step 2: In an existing assistentie add a rol/procesAangever,
+Step 3: In this rol/proces go to tab Bekendeaangehoudenverdachte,
+Step 4: Add a Bekendeaangehoudenverdachte,
+Step 5: Click on new icon in tab bekendeaangehoudenverdachte,
+Step 6: The bekendeaangehoudenverdachte selected should not be avauilable again to select</description>
+   <name>Navigation Generiek - assistentie - rol proces aangever. Also Opsporing - entiteiten - Persoon - aangever</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>d1023da2-e3ba-4966-81d7-741916a0829b</testCaseGuid>
+</TestCaseEntity>

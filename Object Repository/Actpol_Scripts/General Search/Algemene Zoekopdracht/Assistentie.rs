@@ -6,15 +6,23 @@
    <elementGuidId>acf71e9b-d732-43fd-a2fe-77bda37fa851</elementGuidId>
    <selectorCollection>
       <entry>
+         <key>BASIC</key>
+         <value>//tr[@class='uneven']//select[@name='sType']</value>
+      </entry>
+      <entry>
          <key>XPATH</key>
          <value>//*[@id=&quot;general-search&quot;]/table/tbody/tr/td/select[@name=&quot;sType&quot;]</value>
       </entry>
-      <entry>
-         <key>BASIC</key>
-      </entry>
    </selectorCollection>
-   <selectorMethod>XPATH</selectorMethod>
+   <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>//tr[@class='uneven']//select[@name='sType']</value>
+   </webElementProperties>
    <webElementProperties>
       <isSelected>true</isSelected>
       <matchCondition>equals</matchCondition>

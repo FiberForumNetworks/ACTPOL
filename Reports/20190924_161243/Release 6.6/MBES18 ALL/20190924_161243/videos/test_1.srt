@@ -1,0 +1,228 @@
+1
+00:00:00,606 --> 00:00:00,609
+3. Login to the application
+
+2
+00:00:01,822 --> 00:00:01,831
+1. openBrowser("")
+
+3
+00:00:07,159 --> 00:00:07,161
+5. deleteAllCookies()
+
+4
+00:00:07,239 --> 00:00:07,242
+9. waitForPageLoad(60)
+
+5
+00:00:07,719 --> 00:00:07,724
+13. maximizeWindow()
+
+6
+00:00:08,900 --> 00:00:08,902
+17. ACTPOLTESTENV = 1
+
+7
+00:00:08,907 --> 00:00:08,909
+21. ACTPOLDEVENV = 2
+
+8
+00:00:08,912 --> 00:00:08,914
+25. ACTPOLKCENV = 3
+
+9
+00:00:08,916 --> 00:00:08,918
+29. ACTPOLKBKPCNENV = 4
+
+10
+00:00:08,921 --> 00:00:08,923
+33. ACTPOLKBKMARENV = 5
+
+11
+00:00:08,925 --> 00:00:08,931
+37. ACTPOLKMENV = 6
+
+12
+00:00:08,935 --> 00:00:08,937
+41. ACTPOLKWENV = 7
+
+13
+00:00:08,938 --> 00:00:08,940
+45. environment = ACTPOLTESTENV
+
+14
+00:00:08,942 --> 00:00:08,944
+49. Selectenv = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>
+
+15
+00:00:08,946 --> 00:00:08,948
+53. switch (environment)
+
+16
+00:00:08,956 --> 00:00:08,959
+2. println(Selectenv = "ACTPOL-TEST-ENV")
+
+17
+00:00:08,965 --> 00:00:08,967
+6. navigateToUrl(TESTURL)
+
+18
+00:00:17,635 --> 00:00:17,637
+10. setText(findTestObject("Actpol_Scripts/login/userid"), username)
+
+19
+00:00:18,410 --> 00:00:18,412
+14. setMaskedText(findTestObject("Actpol_Scripts/login/password"), password)
+
+20
+00:00:19,111 --> 00:00:19,114
+18. click(findTestObject("Actpol_Scripts/login/login"))
+
+21
+00:00:19,550 --> 00:00:19,552
+22. getWindowTitle()
+
+22
+00:00:19,591 --> 00:00:19,593
+26. delay(5)
+
+23
+00:00:24,623 --> 00:00:24,671
+30. break
+
+24
+00:00:24,698 --> 00:00:24,700
+7. log = new com.kms.katalon.core.logging.KeywordLogger()
+
+25
+00:00:24,705 --> 00:00:24,708
+11. delay(1)
+
+26
+00:00:25,724 --> 00:00:25,753
+17. Mouse over to Generic tab
+
+27
+00:00:26,522 --> 00:00:26,524
+21. log.logInfo("Successfully logged")
+
+28
+00:00:26,534 --> 00:00:26,536
+25. delay(2)
+
+29
+00:00:28,564 --> 00:00:28,567
+31. Click MBES tab
+
+30
+00:00:28,951 --> 00:00:28,952
+35. delay(2)
+
+31
+00:00:30,963 --> 00:00:30,965
+41. Click MBES tab
+
+32
+00:00:31,263 --> 00:00:31,265
+45. log.logInfo("Clicking MBES18 tab ")
+
+33
+00:00:31,269 --> 00:00:31,271
+49. delay(3)
+
+34
+00:00:34,324 --> 00:00:34,326
+53. takeScreenshot()
+
+35
+00:00:34,783 --> 00:00:34,784
+57. log.logInfo("MBES18 module is displayed")
+
+36
+00:00:34,790 --> 00:00:34,793
+61. delay(1)
+
+37
+00:00:35,805 --> 00:00:35,806
+67. Get text from the feild
+
+38
+00:00:36,287 --> 00:00:36,289
+71. log.logInfo("Grid is shown contains columns mentioned ::" + optie)
+
+39
+00:00:36,292 --> 00:00:36,295
+75. delay(1)
+
+40
+00:00:37,302 --> 00:00:37,306
+81. Get text from the feild
+
+41
+00:00:37,694 --> 00:00:37,696
+85. log.logInfo("Grid is shown contains columns mentioned ::" + vlg)
+
+42
+00:00:37,700 --> 00:00:37,702
+89. delay(1)
+
+43
+00:00:38,718 --> 00:00:38,720
+95. Get text from the feild
+
+44
+00:00:39,156 --> 00:00:39,158
+99. log.logInfo("Grid is shown contains columns mentioned ::" + datam)
+
+45
+00:00:39,161 --> 00:00:39,162
+103. delay(1)
+
+46
+00:00:40,166 --> 00:00:40,168
+109. Get text from the feild
+
+47
+00:00:40,524 --> 00:00:40,525
+113. log.logInfo("Grid is shown contains columns mentioned ::" + org)
+
+48
+00:00:40,529 --> 00:00:40,530
+117. delay(1)
+
+49
+00:00:41,535 --> 00:00:41,537
+123. Get text from the feild
+
+50
+00:00:42,165 --> 00:00:42,167
+127. log.logInfo("Grid is shown contains columns mentioned ::" + voornaam)
+
+51
+00:00:42,170 --> 00:00:42,171
+131. delay(1)
+
+52
+00:00:43,184 --> 00:00:43,186
+137. Get text from the feild
+
+53
+00:00:43,657 --> 00:00:43,659
+141. log.logInfo("Grid is shown contains columns mentioned ::" + achternaam)
+
+54
+00:00:43,662 --> 00:00:43,663
+145. delay(1)
+
+55
+00:00:44,668 --> 00:00:44,671
+151. Get text from the feild
+
+56
+00:00:45,084 --> 00:00:45,086
+155. log.logInfo("Grid is shown contains columns mentioned ::" + geb)
+
+57
+00:00:45,090 --> 00:00:45,091
+159. log.logInfo("MBES18 module a grid will shown in Arrestanten, with the Options Vrnummer, Datum incident, Organisatie,Voornaam, Achternaam and  Geboortedatum.")
+

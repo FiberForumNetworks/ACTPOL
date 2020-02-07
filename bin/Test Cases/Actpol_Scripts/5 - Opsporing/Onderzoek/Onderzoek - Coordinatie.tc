@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Add Nieuw Coordinatie,Nieuw Werkopdracht,Teamleden,Nieuw_Journaal and Journaal Document fill in all fields</description>
+   <name>Onderzoek - Coordinatie</name>
+   <tag></tag>
+   <comment>ACTPOL login userid and password
+Opsporing module opening
+Selecting existing user
+Selecting Coordinatie tab
+Selecting Nieuw Coordinatie
+Selecting Nieuw Werkopdracht
+Selecting Teamleden
+Nieuw Journaal start
+Journaal Document start</comment>
+   <testCaseGuid>1a278072-7ee4-4e24-8543-adef4a74f857</testCaseGuid>
+</TestCaseEntity>

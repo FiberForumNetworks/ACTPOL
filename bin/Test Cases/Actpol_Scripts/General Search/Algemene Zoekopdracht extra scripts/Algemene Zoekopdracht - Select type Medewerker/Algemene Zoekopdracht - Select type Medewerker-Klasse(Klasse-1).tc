@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Medewerker
+Step 2: Set text Klasse
+Step 3: Search results is an Klasse</description>
+   <name>Algemene Zoekopdracht - Select type Medewerker-Klasse(Klasse-1)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f151dcc8-0827-4ff5-a07f-ad9ca0b8d5f8</testCaseGuid>
+</TestCaseEntity>

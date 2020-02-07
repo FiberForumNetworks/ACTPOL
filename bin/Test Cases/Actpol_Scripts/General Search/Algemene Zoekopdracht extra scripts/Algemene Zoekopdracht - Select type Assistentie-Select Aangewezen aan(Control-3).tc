@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Assistentie
+Step 2: Select Aangewezen aan
+Step 3: Set text Titel
+Step 4:Search results is an Aangewezen aan,Titel and control</description>
+   <name>Algemene Zoekopdracht - Select type Assistentie-Select Aangewezen aan(Control-3)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>df9ef717-f664-4c42-8989-db5b4736f0cb</testCaseGuid>
+</TestCaseEntity>

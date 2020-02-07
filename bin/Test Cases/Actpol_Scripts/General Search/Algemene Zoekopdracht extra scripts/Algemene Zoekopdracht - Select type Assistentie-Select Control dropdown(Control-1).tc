@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Assistentie
+Step 2: Select drop down Control 
+Step 3: All drop down values
+Step 4: Search results is an Control</description>
+   <name>Algemene Zoekopdracht - Select type Assistentie-Select Control dropdown(Control-1)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8e726e24-6b47-47d1-8acf-61384a9a1d31</testCaseGuid>
+</TestCaseEntity>

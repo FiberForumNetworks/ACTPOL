@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Adjust search module (Label)
+Step 1: Go to left column algemene zoekopdracht as a general user (Medewerker BPZ)
+Step 2: there should be no option Label.
+Step 3: login as a admin user in ACTPOL.
+Step 4: Go to left column Algemene zoekopdracht.
+Step 5: Open option Label.
+Step 6: search on previously enter label.
+Step 7: User should see all Onderzoek and entiteit records where label is filled in.
+Left column - Algemene Zoekopdracht option Label.</description>
+   <name>ACTPOL-584</name>
+   <tag>ACTPOL-584</tag>
+   <comment></comment>
+   <testCaseGuid>2c2db7ff-1914-463b-9537-966b5bf60e49</testCaseGuid>
+</TestCaseEntity>

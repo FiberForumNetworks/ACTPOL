@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Kenteken
+Step 2: Set text Chassisnummer
+Step 3: Set text Kleur
+Step 4: Search results is an Kleur</description>
+   <name>Algemene Zoekopdracht - Select type Kenteken-Chassisnummer(Kleur-2)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ffb88e80-2102-4e66-a6f8-4748cb6c9923</testCaseGuid>
+</TestCaseEntity>

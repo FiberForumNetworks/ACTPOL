@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Chain process :: 
+Step 1: go to Intake: Calltaker than Dispatch
+Step 2: go to Generiek: Assistenties than create some roll process
+Step 3: go to Opsporing: Case Screening select based on user and edit select iten 2- nader onderzoek in field dader indicatie            
+Step 4: go to Opsporing: Taktiek check the user added or not
+Step 5: based on this record you create a new onderzoek in opsporing onderzoek and import this assistentie number
+Step 6: and add some entiteiten in tab entiteiten</description>
+   <name>Chain flow navigation</name>
+   <tag></tag>
+   <comment>Dispath module start
+creating Assistenties module
+roll process start
+then go into opsporing case screening and fetch this record and select iten 2- nader onderzoek in field dader indicatie
+based on this record you create a new onderzoek in opsporing onderzoek and import this assistentie number and add some entiteiten in tab entiteiten </comment>
+   <testCaseGuid>e518d69e-50f0-4e0a-913c-ca4b5e7e7c23</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Assistentie
+Step 2: Set text Assistentie
+Step 3: Click poging and Relationeel geweld and search
+Step 4: Search results is an poging and Relationeel geweld</description>
+   <name>Algemene Zoekopdracht - Select type Assistentie-Set text Assistentie , click poging and Relationeel geweld</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a6f0de22-d0c7-42c0-bdd7-91194a6470b5</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Possibility to create PDF and XLS in search results for Strafbare feit.
+When search results are displayed add possibility to create a PDF or XLS dump of result.
+
+Testplan:
+1. Go to Opsporing - Case screening and after that also Tactiek.
+2. In the left search column, search for a Strafbare feit.(Grid Invoer case screening, werkvoorraad and in tactiek Case screening uitgedeeld en gesloten).
+3. Click on Filter.
+4. Search results are displayed.
+5. There should be an icon for PDF and one for XLS.
+6. Click on the PDF icon and a PDF should be downloaded with the same information as in the search results.
+7. Click on the XLS icon and a XLS should be downloaded with the same information as in the search results.
+
+Navigation:
+Opsporing - Case screening and Tactiek - left columnen search</description>
+   <name>ACTPOL-411</name>
+   <tag>ACTPOL-411</tag>
+   <comment></comment>
+   <testCaseGuid>8d2ebfa4-3b55-4c13-acfa-5d2f5568965f</testCaseGuid>
+</TestCaseEntity>

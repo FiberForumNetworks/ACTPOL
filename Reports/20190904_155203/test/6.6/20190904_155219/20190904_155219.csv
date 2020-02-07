@@ -1,0 +1,36 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+6.6,Chrome 76.0.3809.132,,,2019-09-04 15:52:29,2019-09-04 15:53:34,1m - 4.462s,INCOMPLETE
+,,,,,,,
+Test Cases/JIRA Tasks/Release 6.6/ACTPOL-558,Chrome 76.0.3809.132,"Description:
+For the purpose of careful and efficient provision of information to all parties involved in the forced departure (expulsion) of a foreign national(Vreemdeling), the registration form, model MBES18, is required.
+
+Solution:
+Create a new module in Tab Opsporing called MBES18.
+When opening this module a grid wil show as in Arrestanten, with the Options volgnummer, Datum incident, Bijzonderheden, Organisatie, Contact persoon, telefoon numer, Voornaam, Achternaam en Geboortedatum.
+
+Testplan:
+Step 1: Go to Opsporing and choose tab MBES18
+Step 2: Grid as attachment should pop up
+Step 3: Grid should contain columns mentioned.
+
+Navigation:
+Opsporing - MBES18",ACTPOL-558,2019-09-04 15:52:30,2019-09-04 15:52:31,0.850s,ERROR
+,,,,,,,
+Test Cases/JIRA Tasks/Release 6.6/ACTPOL-559,Chrome 76.0.3809.132,"Description:
+Per incident a new record should be created.
+This should contain tab registratie, Personalia, Inbewaringstellings c.q. Plaatsingegevens, Gedrag/Medisch, Incidenten, Overige gegevens, Bezittingen/Bagage, Documenten.
+In other task we will cover the various tabs. This task contains the registratie tab.
+
+Solution:
+Create the record for MBES18 records.
+This should contain tab registratie, Personalia, Inbewaringstellings c.q. Plaatsingegevens, Gedrag/Medisch, Incidenten, Overige gegevens, Bezittingen/Bagage, Documenten.
+In other task we will cover the various tabs. This task contains the registratie tab.
+
+Testplan:
+Step 1: Go to Opsporing - MBES18
+Step 2: Enter all field in tab Registratie
+Step 3: Save record
+
+Navigation:
+Opsporing - MBES18",ACTPOL-559,2019-09-04 15:52:31,2019-09-04 15:53:34,1m - 3.022s,FAILED
+"callTestCase(findTestCase(""main/Actpol_Login_testenv""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.132,Login to the application,,2019-09-04 15:52:32,2019-09-04 15:53:33,1m - 1.006s,FAILED

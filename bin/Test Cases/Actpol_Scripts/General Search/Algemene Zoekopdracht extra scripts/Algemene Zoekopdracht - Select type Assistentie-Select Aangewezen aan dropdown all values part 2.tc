@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Assistentie
+Step 2: Select Aangewezen aan 
+Step 3: All drop down values
+Step 4: Search results is an Aangewezen aan</description>
+   <name>Algemene Zoekopdracht - Select type Assistentie-Select Aangewezen aan dropdown all values part 2</name>
+   <tag></tag>
+   <comment>31th drop down
+32 drop down
+33 drop down
+34 drop down
+35 drop down
+36 drop down
+37 drop down
+38 drop down
+39 drop down
+40 drop down
+41 drop down
+42 drop down
+43 drop down
+44 drop down
+45 drop down
+46 drop down
+47 drop down
+48 drop down
+49 drop down
+50 drop down
+51 drop down
+52 drop down
+53 drop down
+54 drop down
+55 drop down
+56 drop down
+57 drop down
+58 drop down
+59 drop down
+60 drop down
+61 drop down
+62 drop down
+63 drop down
+64 drop down
+65 drop down
+66 drop down
+67 drop down</comment>
+   <testCaseGuid>9114de3b-98b8-48d6-81d4-601edbc2e6ff</testCaseGuid>
+</TestCaseEntity>

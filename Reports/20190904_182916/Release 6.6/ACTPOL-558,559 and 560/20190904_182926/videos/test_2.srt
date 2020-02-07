@@ -1,0 +1,516 @@
+1
+00:00:00,719 --> 00:00:00,725
+3. Login to the application
+
+2
+00:00:01,133 --> 00:00:01,134
+1. openBrowser("")
+
+3
+00:00:23,267 --> 00:00:23,268
+5. deleteAllCookies()
+
+4
+00:00:23,727 --> 00:00:23,730
+9. waitForPageLoad(30)
+
+5
+00:00:23,756 --> 00:00:23,757
+13. maximizeWindow()
+
+6
+00:00:24,898 --> 00:00:24,899
+17. ACTPOLTESTENV = 1
+
+7
+00:00:24,902 --> 00:00:24,904
+21. ACTPOLDEVENV = 2
+
+8
+00:00:25,121 --> 00:00:25,126
+25. ACTPOLKCENV = 3
+
+9
+00:00:25,135 --> 00:00:25,138
+29. ACTPOLKBKPCNENV = 4
+
+10
+00:00:25,140 --> 00:00:25,141
+33. ACTPOLKBKMARENV = 5
+
+11
+00:00:25,142 --> 00:00:25,143
+37. ACTPOLKMENV = 6
+
+12
+00:00:25,145 --> 00:00:25,146
+41. ACTPOLKWENV = 7
+
+13
+00:00:25,149 --> 00:00:25,149
+45. environment = ACTPOLDEVENV
+
+14
+00:00:25,155 --> 00:00:25,156
+49. Selectenv = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>
+
+15
+00:00:25,159 --> 00:00:25,160
+53. switch (environment)
+
+16
+00:00:25,163 --> 00:00:25,163
+2. println(Selectenv = "ACTPOL-DEV-ENV")
+
+17
+00:00:25,165 --> 00:00:25,167
+6. navigateToUrl(DEVURL)
+
+18
+00:00:34,245 --> 00:00:34,247
+10. setText(findTestObject("Actpol_Scripts/login/userid"), username)
+
+19
+00:00:34,712 --> 00:00:34,714
+14. setMaskedText(findTestObject("Actpol_Scripts/login/password"), password)
+
+20
+00:00:35,199 --> 00:00:35,200
+18. click(findTestObject("Actpol_Scripts/login/login"))
+
+21
+00:00:35,545 --> 00:00:35,549
+22. getWindowTitle()
+
+22
+00:00:35,571 --> 00:00:35,572
+26. break
+
+23
+00:00:35,582 --> 00:00:35,583
+7. log = new com.kms.katalon.core.logging.KeywordLogger()
+
+24
+00:00:35,585 --> 00:00:35,586
+13. Mouse over to opsporing
+
+25
+00:00:49,693 --> 00:00:49,694
+17. log.logInfo("Successfully logged")
+
+26
+00:00:49,698 --> 00:00:49,699
+21. delay(2)
+
+27
+00:00:51,706 --> 00:00:51,708
+27. Click MBES tab
+
+28
+00:00:56,628 --> 00:00:56,630
+31. log.logInfo("Clicking MBES18 tab ")
+
+29
+00:00:56,632 --> 00:00:56,633
+35. delay(1)
+
+30
+00:00:57,644 --> 00:00:57,646
+41. Mouse over to Generic tab
+
+31
+00:00:58,086 --> 00:00:58,087
+45. delay(5)
+
+32
+00:01:03,092 --> 00:01:03,093
+51. Click new btn
+
+33
+00:01:04,193 --> 00:01:04,194
+55. log.logInfo("Clicking MBES18 new button ")
+
+34
+00:01:04,198 --> 00:01:04,199
+59. delay(1)
+
+35
+00:01:05,209 --> 00:01:05,211
+63. takeScreenshot()
+
+36
+00:01:05,904 --> 00:01:05,908
+67. delay(1)
+
+37
+00:01:06,925 --> 00:01:06,926
+71. comment("Checking This should contain tab registratie, Personalia, Inbewaringstellings c.q. Plaatsingegevens, Gedrag/Medisch, Incidenten, Overige gegevens, Bezittingen/Bagage, Documenten. ")
+
+38
+00:01:06,942 --> 00:01:06,942
+77. Registration tab is visible in in the grid.
+
+39
+00:01:07,706 --> 00:01:07,707
+81. log.logInfo("Grid is shown contains tabs mentioned ::" + reg)
+
+40
+00:01:07,710 --> 00:01:07,711
+85. delay(1)
+
+41
+00:01:08,742 --> 00:01:08,745
+91. Personalia tab is visible in in the grid.
+
+42
+00:01:09,589 --> 00:01:09,590
+95. log.logInfo("Grid is shown contains columns mentioned ::" + per)
+
+43
+00:01:09,593 --> 00:01:09,594
+99. delay(1)
+
+44
+00:01:10,601 --> 00:01:10,603
+105. INBEWARINGSTELLINGS C.Q. PLAATSINGSGEGEVENS tab is visible in in the grid.
+
+45
+00:01:11,370 --> 00:01:11,372
+109. log.logInfo("Grid is shown contains columns mentioned ::" + inb)
+
+46
+00:01:11,374 --> 00:01:11,375
+113. delay(1)
+
+47
+00:01:12,383 --> 00:01:12,384
+119. GEDRAG/MEDISCH tab is visible in in the grid.
+
+48
+00:01:13,099 --> 00:01:13,100
+123. log.logInfo("Grid is shown contains columns mentioned ::" + ged)
+
+49
+00:01:13,105 --> 00:01:13,112
+127. delay(1)
+
+50
+00:01:14,122 --> 00:01:14,126
+133. INCIDENTEN tab is visible in in the grid.
+
+51
+00:01:14,846 --> 00:01:14,850
+137. log.logInfo("Grid is shown contains columns mentioned ::" + inc)
+
+52
+00:01:14,853 --> 00:01:14,854
+141. delay(1)
+
+53
+00:01:15,860 --> 00:01:15,862
+147. OVERIGE GEGEVENS tab is visible in in the grid.
+
+54
+00:01:16,469 --> 00:01:16,470
+151. log.logInfo("Grid is shown contains columns mentioned ::" + over)
+
+55
+00:01:16,472 --> 00:01:16,474
+155. delay(1)
+
+56
+00:01:17,484 --> 00:01:17,485
+161. BEZITTINGEN/BAGAGE tab is visible in in the grid.
+
+57
+00:01:18,147 --> 00:01:18,148
+165. log.logInfo("Grid is shown contains columns mentioned ::" + begi)
+
+58
+00:01:18,150 --> 00:01:18,152
+169. delay(1)
+
+59
+00:01:19,158 --> 00:01:19,159
+173. comment("Data entering in Registratie tab")
+
+60
+00:01:19,166 --> 00:01:19,166
+177. delay(1)
+
+61
+00:01:20,174 --> 00:01:20,178
+183. Click new btn in Registratie
+
+62
+00:01:21,255 --> 00:01:21,256
+187. delay(1)
+
+63
+00:01:22,261 --> 00:01:22,262
+193. Click save btn
+
+64
+00:01:23,028 --> 00:01:23,028
+197. delay(3)
+
+65
+00:01:26,034 --> 00:01:26,035
+201. takeScreenshot()
+
+66
+00:01:27,082 --> 00:01:27,084
+205. log.logInfo("without throwing error data is saved the grid...")
+
+67
+00:01:27,086 --> 00:01:27,087
+209. log.logInfo("not getting error message")
+
+68
+00:01:27,089 --> 00:01:27,091
+215. Click new btn in Registratie
+
+69
+00:01:27,656 --> 00:01:27,657
+219. delay(1)
+
+70
+00:01:28,668 --> 00:01:28,670
+225. Select required dropdown fro the list
+
+71
+00:01:31,306 --> 00:01:31,308
+229. delay(1)
+
+72
+00:01:32,313 --> 00:01:32,318
+235. Select required dropdown fro the list
+
+73
+00:01:33,076 --> 00:01:33,078
+239. delay(1)
+
+74
+00:01:34,087 --> 00:01:34,089
+245. Select required dropdown fro the list
+
+75
+00:01:34,971 --> 00:01:34,972
+249. delay(1)
+
+76
+00:01:35,979 --> 00:01:35,980
+255. Select required dropdown fro the list
+
+77
+00:01:36,765 --> 00:01:36,766
+259. delay(1)
+
+78
+00:01:37,771 --> 00:01:37,773
+265. Enter the text from the feild
+
+79
+00:01:40,735 --> 00:01:40,740
+269. delay(1)
+
+80
+00:01:41,750 --> 00:01:41,751
+275. Enter the text from the feild
+
+81
+00:01:43,119 --> 00:01:43,121
+279. delay(1)
+
+82
+00:01:44,129 --> 00:01:44,131
+285. Enter the text from the feild
+
+83
+00:01:45,544 --> 00:01:45,545
+289. delay(1)
+
+84
+00:01:46,551 --> 00:01:46,552
+295. Enter the date
+
+85
+00:01:47,561 --> 00:01:47,562
+299. delay(1)
+
+86
+00:01:48,568 --> 00:01:48,569
+305. Click save btn
+
+87
+00:01:49,182 --> 00:01:49,184
+309. delay(1)
+
+88
+00:01:50,198 --> 00:01:50,200
+313. takeScreenshot()
+
+89
+00:01:50,698 --> 00:01:50,700
+317. delay(1)
+
+90
+00:01:51,711 --> 00:01:51,715
+321. comment("Editing existing record in Registratie")
+
+91
+00:01:51,723 --> 00:01:51,724
+327. Edit the existing record 
+
+92
+00:01:52,644 --> 00:01:52,645
+331. delay(2)
+
+93
+00:01:54,653 --> 00:01:54,654
+337. Select required dropdown fro the list
+
+94
+00:01:55,355 --> 00:01:55,356
+341. delay(1)
+
+95
+00:01:56,362 --> 00:01:56,364
+347. Select required dropdown fro the list
+
+96
+00:01:56,953 --> 00:01:56,954
+351. delay(1)
+
+97
+00:01:57,961 --> 00:01:57,963
+357. Select required dropdown fro the list
+
+98
+00:01:58,508 --> 00:01:58,510
+361. delay(1)
+
+99
+00:01:59,517 --> 00:01:59,518
+367. Select required dropdown fro the list
+
+100
+00:02:00,147 --> 00:02:00,149
+371. delay(1)
+
+101
+00:02:01,157 --> 00:02:01,158
+377. Select required dropdown fro the list
+
+102
+00:02:03,209 --> 00:02:03,210
+381. delay(1)
+
+103
+00:02:04,216 --> 00:02:04,217
+387. Enter the text from the feild
+
+104
+00:02:05,118 --> 00:02:05,123
+391. delay(1)
+
+105
+00:02:06,129 --> 00:02:06,131
+397. Enter the text from the feild
+
+106
+00:02:07,332 --> 00:02:07,333
+401. delay(1)
+
+107
+00:02:08,338 --> 00:02:08,339
+407. Enter the date
+
+108
+00:02:08,945 --> 00:02:08,946
+411. delay(1)
+
+109
+00:02:09,950 --> 00:02:09,952
+417. Click save btn
+
+110
+00:02:10,494 --> 00:02:10,496
+421. log.logInfo("edit mode working fine ")
+
+111
+00:02:10,501 --> 00:02:10,506
+425. delay(1)
+
+112
+00:02:11,770 --> 00:02:11,772
+429. comment("View existing record in Registratie")
+
+113
+00:02:11,780 --> 00:02:11,781
+433. delay(1)
+
+114
+00:02:12,789 --> 00:02:12,792
+439. Click view mode for existing saved record
+
+115
+00:02:14,818 --> 00:02:14,819
+443. log.logInfo("View mode is displaying new button ")
+
+116
+00:02:14,826 --> 00:02:14,832
+447. delay(1)
+
+117
+00:02:16,046 --> 00:02:16,049
+451. takeScreenshot()
+
+118
+00:02:16,813 --> 00:02:16,814
+455. delay(1)
+
+119
+00:02:17,819 --> 00:02:17,820
+461. Click the close btn
+
+120
+00:02:18,947 --> 00:02:18,948
+465. delay(1)
+
+121
+00:02:19,953 --> 00:02:19,954
+469. comment("View existing record in Registratie")
+
+122
+00:02:19,959 --> 00:02:19,960
+473. delay(1)
+
+123
+00:02:20,969 --> 00:02:20,975
+479. Click delete btn
+
+124
+00:02:21,834 --> 00:02:21,835
+483. delay(1)
+
+125
+00:02:22,841 --> 00:02:22,844
+489. Re conform the delete btn
+
+126
+00:02:24,170 --> 00:02:24,172
+493. delay(1)
+
+127
+00:02:25,186 --> 00:02:25,188
+497. takeScreenshot()
+
+128
+00:02:25,983 --> 00:02:25,984
+501. delay(1)
+
+129
+00:02:26,992 --> 00:02:26,994
+505. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/1 Registratie/registratie tab"))
+

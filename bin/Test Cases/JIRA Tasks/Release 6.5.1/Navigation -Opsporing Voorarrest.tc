@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>• Menu - Opsporing - Voorarrest
+• Select any record with the Edit option. You will be taken to the Bekende/Aangehouden Persoon Process.
+• Go to accordeonAmbtsverslag and add a new ambtsverslag
+When you click on save you will see that  the ambtsverslag will not save, and states on top that this field is mandatory, as if no data has been entered.</description>
+   <name>Navigation -Opsporing Voorarrest</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>e6871106-f21f-47db-a37e-a699c8fb517d</testCaseGuid>
+</TestCaseEntity>

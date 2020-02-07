@@ -1,0 +1,236 @@
+1
+00:00:00,725 --> 00:00:00,740
+3. Login to the application
+
+2
+00:00:01,820 --> 00:00:01,822
+1. openBrowser("")
+
+3
+00:00:07,238 --> 00:00:07,241
+5. deleteAllCookies()
+
+4
+00:00:07,339 --> 00:00:07,344
+9. waitForPageLoad(60)
+
+5
+00:00:07,806 --> 00:00:07,808
+13. maximizeWindow()
+
+6
+00:00:09,047 --> 00:00:09,049
+17. ACTPOLTESTENV = 1
+
+7
+00:00:09,052 --> 00:00:09,055
+21. ACTPOLDEVENV = 2
+
+8
+00:00:09,057 --> 00:00:09,060
+25. ACTPOLKCENV = 3
+
+9
+00:00:09,065 --> 00:00:09,067
+29. ACTPOLKBKPCNENV = 4
+
+10
+00:00:09,069 --> 00:00:09,074
+33. ACTPOLKBKMARENV = 5
+
+11
+00:00:09,078 --> 00:00:09,080
+37. ACTPOLKMENV = 6
+
+12
+00:00:09,082 --> 00:00:09,084
+41. ACTPOLKWENV = 7
+
+13
+00:00:09,089 --> 00:00:09,093
+45. environment = ACTPOLTESTENV
+
+14
+00:00:09,095 --> 00:00:09,098
+49. Selectenv = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>
+
+15
+00:00:09,099 --> 00:00:09,102
+53. switch (environment)
+
+16
+00:00:09,111 --> 00:00:09,113
+2. println(Selectenv = "ACTPOL-TEST-ENV")
+
+17
+00:00:09,124 --> 00:00:09,127
+6. navigateToUrl(TESTURL)
+
+18
+00:00:23,379 --> 00:00:23,381
+10. setText(findTestObject("Actpol_Scripts/login/userid"), username)
+
+19
+00:00:24,003 --> 00:00:24,005
+14. setMaskedText(findTestObject("Actpol_Scripts/login/password"), password)
+
+20
+00:00:24,633 --> 00:00:24,636
+18. click(findTestObject("Actpol_Scripts/login/login"))
+
+21
+00:00:25,032 --> 00:00:25,034
+22. getWindowTitle()
+
+22
+00:00:25,071 --> 00:00:25,073
+26. delay(5)
+
+23
+00:00:30,107 --> 00:00:30,109
+30. break
+
+24
+00:00:30,132 --> 00:00:30,142
+7. log = new com.kms.katalon.core.logging.KeywordLogger()
+
+25
+00:00:30,152 --> 00:00:30,158
+11. delay(4)
+
+26
+00:00:34,169 --> 00:00:34,172
+17. Mouse over to Generic tab
+
+27
+00:00:34,841 --> 00:00:34,843
+21. log.logInfo("Successfully logged")
+
+28
+00:00:34,846 --> 00:00:34,848
+25. delay(2)
+
+29
+00:00:36,866 --> 00:00:36,868
+31. Click MBES tab
+
+30
+00:00:37,242 --> 00:00:37,243
+35. delay(2)
+
+31
+00:00:39,250 --> 00:00:39,252
+41. Click MBES tab
+
+32
+00:00:39,548 --> 00:00:39,552
+45. delay(2)
+
+33
+00:00:41,561 --> 00:00:41,562
+51. Click MBES tab
+
+34
+00:00:41,775 --> 00:00:41,776
+55. log.logInfo("Clicking MBES18 tab ")
+
+35
+00:00:41,779 --> 00:00:41,780
+59. delay(3)
+
+36
+00:00:44,786 --> 00:00:44,789
+63. takeScreenshot()
+
+37
+00:00:45,267 --> 00:00:45,269
+67. log.logInfo("MBES18 module is displayed")
+
+38
+00:00:45,274 --> 00:00:45,276
+71. delay(1)
+
+39
+00:00:46,282 --> 00:00:46,285
+77. Get text from the feild
+
+40
+00:00:46,745 --> 00:00:46,747
+81. log.logInfo("Grid is shown contains columns mentioned ::" + optie)
+
+41
+00:00:46,750 --> 00:00:46,751
+85. delay(1)
+
+42
+00:00:47,757 --> 00:00:47,769
+91. Get text from the feild
+
+43
+00:00:48,145 --> 00:00:48,146
+95. log.logInfo("Grid is shown contains columns mentioned ::" + vlg)
+
+44
+00:00:48,150 --> 00:00:48,151
+99. delay(1)
+
+45
+00:00:49,159 --> 00:00:49,161
+105. Get text from the feild
+
+46
+00:00:49,596 --> 00:00:49,598
+109. log.logInfo("Grid is shown contains columns mentioned ::" + datam)
+
+47
+00:00:49,600 --> 00:00:49,602
+113. delay(1)
+
+48
+00:00:50,831 --> 00:00:50,833
+119. Get text from the feild
+
+49
+00:00:51,369 --> 00:00:51,370
+123. log.logInfo("Grid is shown contains columns mentioned ::" + org)
+
+50
+00:00:51,375 --> 00:00:51,377
+127. delay(1)
+
+51
+00:00:52,388 --> 00:00:52,389
+133. Get text from the feild
+
+52
+00:00:52,840 --> 00:00:52,841
+137. log.logInfo("Grid is shown contains columns mentioned ::" + voornaam)
+
+53
+00:00:52,843 --> 00:00:52,844
+141. delay(1)
+
+54
+00:00:53,850 --> 00:00:53,851
+147. Get text from the feild
+
+55
+00:00:54,231 --> 00:00:54,232
+151. log.logInfo("Grid is shown contains columns mentioned ::" + achternaam)
+
+56
+00:00:54,234 --> 00:00:54,235
+155. delay(1)
+
+57
+00:00:55,244 --> 00:00:55,246
+161. Get text from the feild
+
+58
+00:00:55,664 --> 00:00:55,666
+165. log.logInfo("Grid is shown contains columns mentioned ::" + geb)
+
+59
+00:00:55,668 --> 00:00:55,670
+169. log.logInfo("MBES18 module a grid will shown in Arrestanten, with the Options Vrnummer, Datum incident, Organisatie,Voornaam, Achternaam and  Geboortedatum.")
+

@@ -1,0 +1,48 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ACTPOL-320,Chrome 77.0.3865.120,,,2019-10-28 19:14:18,2019-10-28 19:15:51,1m - 33.192s,INCOMPLETE
+,,,,,,,
+Test Cases/JIRA Tasks/Release 6.6/ACTPOL-320,Chrome 77.0.3865.120,"Description
+For the Vremdeling module phase 2 there are some changes required.
+To send out an email when ""Toegang onder Voorwaarde"" (TOV) is selected and saved. (Access with a condition)
+
+Solution
+When creating an Toegang Onder Voorwaarde (TOV) in tab Toegang, that automatically an email to a pre-authorized email adres. 
+For example Vreemdelingen Toezicht (VT) or KPCN automatically receives an email at the moment that a TOV has been issued by KMAR. (Vreemdelingen Toezicht (VT) email: Vreemdelingen.Toezicht@politiecn.com - this should be configurable)
+This e-mail contains: - name of verbalisant who has issued TOV,
+
+name vreemdeling,
+date (datum) and
+which (voorwaarde) condition Toegang has been granted.(dropdown value selected in voorwaarde field).
+Testplan
+Step 1: Go to Generiek - Assistentie.
+Step 2: Go to Rol/proces tab and add a new Vreemdeling proces
+Step 3: Fill in mandatory fields and save
+Step 4: Go to tab Toegang and fill in the mandatory fields.
+Step 5: add any voorwaarde for example ""Overleggen garantie verklaring, ondertekend door"" or ""oplegging van de plicht van 72 uren"".
+Step 6: Save record.
+Step 7: Email is send to ""Testemail"". (Instead of Vreemdelingen.Toezicht@politiecn.com configure a test email)
+
+Navigation
+Generiek - Asstentie - rol/proces - Vreemdeling - tab Toegang",ACTPOL-320,2019-10-28 19:14:19,2019-10-28 19:15:51,1m - 32.542s,PASSED
+"callTestCase(findTestCase(""main/Actpol_Login_testenv""), [:], STOP_ON_FAILURE)",Chrome 77.0.3865.120,,,2019-10-28 19:14:21,2019-10-28 19:14:49,27.745s,PASSED
+"markPassed(""PASS::Actpol web application login successfully"")",Chrome 77.0.3865.120,,,2019-10-28 19:14:49,2019-10-28 19:14:49,0.019s,PASSED
+log = new com.kms.katalon.core.logging.KeywordLogger(),Chrome 77.0.3865.120,,,2019-10-28 19:14:49,2019-10-28 19:14:49,0.004s,PASSED
+"selectOptionByValue(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie""), ""assist"", false)",Chrome 77.0.3865.120,,,2019-10-28 19:14:49,2019-10-28 19:14:54,4.873s,PASSED
+"setText(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie Set text""), Generiekassistenite_Module)",Chrome 77.0.3865.120,,,2019-10-28 19:14:54,2019-10-28 19:14:55,1.273s,PASSED
+delay(2),Chrome 77.0.3865.120,,,2019-10-28 19:14:55,2019-10-28 19:14:57,2.008s,PASSED
+"click(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Zoeken new""))",Chrome 77.0.3865.120,,,2019-10-28 19:14:57,2019-10-28 19:14:58,1.053s,PASSED
+delay(8),Chrome 77.0.3865.120,,,2019-10-28 19:14:58,2019-10-28 19:15:06,8.008s,PASSED
+AssistentiedynamicId = Generiekassistenite_Module,Chrome 77.0.3865.120,Remember first set default assistentieid after run the script,,2019-10-28 19:15:06,2019-10-28 19:15:06,0.004s,PASSED
+"Assistentiexpath = ""//*[text()="""" + AssistentiedynamicId + """"]/preceding-sibling::td/a[2]""",Chrome 77.0.3865.120,,,2019-10-28 19:15:06,2019-10-28 19:15:06,0.005s,PASSED
+"to = findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/View Assistentie"")",Chrome 77.0.3865.120,,,2019-10-28 19:15:06,2019-10-28 19:15:07,0.571s,PASSED
+"to.addProperty(""xpath"", EQUALS, Assistentiexpath)",Chrome 77.0.3865.120,,,2019-10-28 19:15:07,2019-10-28 19:15:07,0.032s,PASSED
+println(to),Chrome 77.0.3865.120,,,2019-10-28 19:15:07,2019-10-28 19:15:07,0.018s,PASSED
+click(to),Chrome 77.0.3865.120,,,2019-10-28 19:15:07,2019-10-28 19:15:07,0.672s,PASSED
+"click(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Confirmeren""))",Chrome 77.0.3865.120,,,2019-10-28 19:15:07,2019-10-28 19:15:08,1.001s,PASSED
+delay(12),Chrome 77.0.3865.120,,,2019-10-28 19:15:08,2019-10-28 19:15:20,12.010s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Click roll process""))",Chrome 77.0.3865.120,,,2019-10-28 19:15:20,2019-10-28 19:15:23,2.760s,PASSED
+delay(2),Chrome 77.0.3865.120,,,2019-10-28 19:15:23,2019-10-28 19:15:25,2.009s,PASSED
+"Vreemdelingverify = verifyElementVisible(findTestObject(""Object Repository/JIRA/A Relese 6.6/ACTPOL-317/Vreemdeling verify""), OPTIONAL)",Chrome 77.0.3865.120,,,2019-10-28 19:15:25,2019-10-28 19:15:26,0.458s,PASSED
+log.logInfo(Vreemdelingverify),Chrome 77.0.3865.120,,,2019-10-28 19:15:26,2019-10-28 19:15:26,0.005s,PASSED
+"verify2 = ""true""",Chrome 77.0.3865.120,,,2019-10-28 19:15:26,2019-10-28 19:15:26,0.004s,PASSED
+if (Vreemdelingverify == verify2),Chrome 77.0.3865.120,,,2019-10-28 19:15:26,2019-10-28 19:15:49,23.574s,PASSED

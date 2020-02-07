@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>I am trying deleting the user, it is showing Web smart error.
+
+Test Plan::
+Step 1: Go to Generiek: Geweld / Disciplinaire Rapport Select optional user
+Step 2: Press the delete option it’s unable to delete
+Step 3: Generiek: Geweld / Disciplinaire Rapport</description>
+   <name>ACTPOL-517</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>ccf35414-bae1-4ee3-a3fc-7ac82b936ff4</testCaseGuid>
+</TestCaseEntity>

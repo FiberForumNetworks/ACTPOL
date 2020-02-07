@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Kenteken
+Step 2: Set text Kleur
+Step 3: Set text Merk
+Step 4: Set text Adres
+Step 5: Search results is an Kleur,Merk and Adres</description>
+   <name>Algemene Zoekopdracht - Select type Kenteken-Kleur(Adres-3)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>3eb357d6-e130-4d99-9a38-18b1a3bf4a5a</testCaseGuid>
+</TestCaseEntity>

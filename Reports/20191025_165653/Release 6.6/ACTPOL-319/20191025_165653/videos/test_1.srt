@@ -1,0 +1,268 @@
+1
+00:00:00,973 --> 00:00:00,981
+1. callTestCase(findTestCase("main/Actpol_Login_testenv"), [:], STOP_ON_FAILURE)
+
+2
+00:00:02,252 --> 00:00:02,256
+1. openBrowser("")
+
+3
+00:00:07,737 --> 00:00:07,746
+5. deleteAllCookies()
+
+4
+00:00:08,277 --> 00:00:08,279
+9. waitForPageLoad(60)
+
+5
+00:00:08,831 --> 00:00:08,833
+13. maximizeWindow()
+
+6
+00:00:10,023 --> 00:00:10,024
+17. ACTPOLTESTENV = 1
+
+7
+00:00:10,026 --> 00:00:10,028
+21. ACTPOLDEVENV = 2
+
+8
+00:00:10,029 --> 00:00:10,031
+25. ACTPOLKCENV = 3
+
+9
+00:00:10,032 --> 00:00:10,033
+29. ACTPOLKBKPCNENV = 4
+
+10
+00:00:10,034 --> 00:00:10,037
+33. ACTPOLKBKMARENV = 5
+
+11
+00:00:10,038 --> 00:00:10,043
+37. ACTPOLKMENV = 6
+
+12
+00:00:10,045 --> 00:00:10,048
+41. ACTPOLKWENV = 7
+
+13
+00:00:10,053 --> 00:00:10,055
+45. ACTPOLFATKPCNENV = 8
+
+14
+00:00:10,056 --> 00:00:10,058
+49. ACTPOLFATKMARENV = 9
+
+15
+00:00:10,059 --> 00:00:10,061
+53. environment = ACTPOLTESTENV
+
+16
+00:00:10,064 --> 00:00:10,069
+57. Selectenv = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>
+
+17
+00:00:10,071 --> 00:00:10,073
+61. switch (environment)
+
+18
+00:00:10,083 --> 00:00:10,086
+2. println(Selectenv = "ACTPOL-TEST-ENV")
+
+19
+00:00:10,102 --> 00:00:10,104
+6. navigateToUrl(TESTURL)
+
+20
+00:00:20,641 --> 00:00:20,643
+10. setText(findTestObject("Actpol_Scripts/login/userid"), username)
+
+21
+00:00:21,459 --> 00:00:21,463
+14. setMaskedText(findTestObject("Actpol_Scripts/login/password"), password)
+
+22
+00:00:22,131 --> 00:00:22,136
+18. click(findTestObject("Actpol_Scripts/login/login"))
+
+23
+00:00:22,621 --> 00:00:22,623
+22. getWindowTitle()
+
+24
+00:00:22,733 --> 00:00:22,735
+26. delay(5)
+
+25
+00:00:27,760 --> 00:00:27,763
+30. break
+
+26
+00:00:27,792 --> 00:00:27,794
+5. markPassed("PASS::Actpol web application login successfully")
+
+27
+00:00:27,823 --> 00:00:27,825
+9. log = new com.kms.katalon.core.logging.KeywordLogger()
+
+28
+00:00:27,828 --> 00:00:27,830
+13. selectOptionByValue(findTestObject("Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie"), "assist", false)
+
+29
+00:00:30,861 --> 00:00:30,863
+17. setText(findTestObject("Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie Set text"), Generiekassistenite_Module)
+
+30
+00:00:32,149 --> 00:00:32,151
+21. delay(2)
+
+31
+00:00:34,157 --> 00:00:34,159
+25. click(findTestObject("Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Zoeken new"))
+
+32
+00:00:35,034 --> 00:00:35,035
+29. delay(8)
+
+33
+00:00:43,042 --> 00:00:43,044
+35. Remember first set default assistentieid after run the script
+
+34
+00:00:43,045 --> 00:00:43,047
+39. Assistentiexpath = "//*[text()="" + AssistentiedynamicId + ""]/preceding-sibling::td/a[2]"
+
+35
+00:00:43,052 --> 00:00:43,054
+43. to = findTestObject("Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/View Assistentie")
+
+36
+00:00:43,685 --> 00:00:43,688
+47. to.addProperty("xpath", EQUALS, Assistentiexpath)
+
+37
+00:00:43,737 --> 00:00:43,739
+51. println(to)
+
+38
+00:00:43,829 --> 00:00:43,830
+55. click(to)
+
+39
+00:00:44,680 --> 00:00:44,682
+59. click(findTestObject("Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Confirmeren"))
+
+40
+00:00:45,788 --> 00:00:45,789
+63. delay(12)
+
+41
+00:00:57,798 --> 00:00:57,802
+67. click(findTestObject("Actpol_Scripts/Generiek/Assistentie/Click roll process"))
+
+42
+00:01:01,140 --> 00:01:01,142
+71. delay(2)
+
+43
+00:01:03,150 --> 00:01:03,152
+75. Vreemdelingverify = verifyElementVisible(findTestObject("Object Repository/JIRA/A Relese 6.6/ACTPOL-317/Vreemdeling verify"), OPTIONAL)
+
+44
+00:01:03,697 --> 00:01:03,698
+79. log.logInfo(Vreemdelingverify)
+
+45
+00:01:03,702 --> 00:01:03,703
+83. verify2 = "true"
+
+46
+00:01:03,711 --> 00:01:03,712
+87. if (Vreemdelingverify == verify2)
+
+47
+00:01:03,715 --> 00:01:03,717
+1. click(findTestObject("JIRA/A Relese 6.6/ACTPOL-317/Vreemdeling verify"))
+
+48
+00:01:04,786 --> 00:01:04,788
+5. delay(5)
+
+49
+00:01:09,792 --> 00:01:09,793
+9. click(findTestObject("Object Repository/JIRA/A Relese 6.6/ACTPOL-317/Vreemdeling tab"))
+
+50
+00:01:10,635 --> 00:01:10,636
+13. delay(2)
+
+51
+00:01:12,644 --> 00:01:12,646
+17. click(findTestObject("Object Repository/JIRA/A Relese 6.6/ACTPOL-317/Toegang"))
+
+52
+00:01:13,480 --> 00:01:13,482
+21. scrollToElement(findTestObject("Object Repository/JIRA/A Relese 6.6/ACTPOL-317/Voorwaarde toegang new"), 1)
+
+53
+00:01:14,102 --> 00:01:14,103
+25. delay(2)
+
+54
+00:01:16,109 --> 00:01:16,111
+29. click(findTestObject("Object Repository/JIRA/A Relese 6.6/ACTPOL-317/Voorwaarde toegang new"))
+
+55
+00:01:17,171 --> 00:01:17,173
+33. delay(2)
+
+56
+00:01:19,178 --> 00:01:19,180
+37. selectOptionByLabel(findTestObject("Object Repository/JIRA/A Relese 6.6/ACTPOL-317/Voorwaarde toegang type"), "Oplegging van de plicht om zich binnen 72 uur bij u te melden", false)
+
+57
+00:01:19,789 --> 00:01:19,791
+41. delay(2)
+
+58
+00:01:21,794 --> 00:01:21,797
+45. click(findTestObject("Object Repository/JIRA/A Relese 6.6/ACTPOL-317/Voorwaarde Toegang save"))
+
+59
+00:01:22,470 --> 00:01:22,471
+49. markPassed("PASS::dropdown selected to oplegging van de plicht van 72 uren")
+
+60
+00:01:22,474 --> 00:01:22,476
+53. delay(5)
+
+61
+00:01:27,488 --> 00:01:27,490
+57. check = verifyElementVisible(findTestObject("JIRA/A Relese 6.6/ACTPOL-317/ver verify text"))
+
+62
+00:01:27,959 --> 00:01:27,960
+61. log.logInfo(check)
+
+63
+00:01:27,969 --> 00:01:27,971
+65. verify3 = "true"
+
+64
+00:01:27,983 --> 00:01:27,984
+69. if (check == verify3)
+
+65
+00:01:27,985 --> 00:01:27,986
+1. markPassed("PASS::oplegging van de plicht van 72 uren is visible")
+
+66
+00:01:27,988 --> 00:01:27,989
+5. delay(2)
+
+67
+00:01:29,992 --> 00:01:29,994
+9. click(findTestObject("Object Repository/JIRA/A Relese 6.6/ACTPOL-317/ver save"))
+

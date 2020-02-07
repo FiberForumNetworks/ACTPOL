@@ -1,0 +1,272 @@
+1
+00:00:00,593 --> 00:00:00,594
+1. callTestCase(findTestCase("main/Actpol_Login_testenv"), [:], STOP_ON_FAILURE)
+
+2
+00:00:00,733 --> 00:00:00,736
+1. openBrowser("")
+
+3
+00:00:04,629 --> 00:00:04,630
+5. deleteAllCookies()
+
+4
+00:00:04,645 --> 00:00:04,646
+9. waitForPageLoad(60)
+
+5
+00:00:04,670 --> 00:00:04,671
+13. maximizeWindow()
+
+6
+00:00:05,823 --> 00:00:05,824
+17. ACTPOLTESTENV = 1
+
+7
+00:00:05,825 --> 00:00:05,826
+21. ACTPOLDEVENV = 2
+
+8
+00:00:05,829 --> 00:00:05,831
+25. ACTPOLKCENV = 3
+
+9
+00:00:05,832 --> 00:00:05,833
+29. ACTPOLKBKPCNENV = 4
+
+10
+00:00:05,835 --> 00:00:05,836
+33. ACTPOLKBKMARENV = 5
+
+11
+00:00:05,837 --> 00:00:05,838
+37. ACTPOLKMENV = 6
+
+12
+00:00:05,839 --> 00:00:05,840
+41. ACTPOLKWENV = 7
+
+13
+00:00:05,842 --> 00:00:05,842
+45. environment = ACTPOLTESTENV
+
+14
+00:00:05,845 --> 00:00:05,846
+49. Selectenv = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>
+
+15
+00:00:05,848 --> 00:00:05,849
+53. switch (environment)
+
+16
+00:00:05,856 --> 00:00:05,857
+2. println(Selectenv = "ACTPOL-TEST-ENV")
+
+17
+00:00:05,859 --> 00:00:05,860
+6. navigateToUrl(TESTURL)
+
+18
+00:00:12,770 --> 00:00:12,771
+10. setText(findTestObject("Actpol_Scripts/login/userid"), username)
+
+19
+00:00:13,402 --> 00:00:13,403
+14. setMaskedText(findTestObject("Actpol_Scripts/login/password"), password)
+
+20
+00:00:13,977 --> 00:00:13,977
+18. click(findTestObject("Actpol_Scripts/login/login"))
+
+21
+00:00:14,312 --> 00:00:14,313
+22. getWindowTitle()
+
+22
+00:00:14,340 --> 00:00:14,341
+26. delay(5)
+
+23
+00:00:19,345 --> 00:00:19,346
+30. break
+
+24
+00:00:19,351 --> 00:00:19,353
+5. delay(1)
+
+25
+00:00:20,358 --> 00:00:20,359
+11. Mouse over to Generic tab
+
+26
+00:00:21,152 --> 00:00:21,152
+15. log = new com.kms.katalon.core.logging.KeywordLogger()
+
+27
+00:00:21,154 --> 00:00:21,155
+19. delay(2)
+
+28
+00:00:23,160 --> 00:00:23,161
+23. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/MBES18 TAB"))
+
+29
+00:00:23,489 --> 00:00:23,490
+27. delay(2)
+
+30
+00:00:25,496 --> 00:00:25,497
+31. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/MBES18 TAB"), OPTIONAL)
+
+31
+00:00:25,705 --> 00:00:25,706
+35. delay(1)
+
+32
+00:00:26,711 --> 00:00:26,712
+39. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/mbes new"))
+
+33
+00:00:27,879 --> 00:00:27,881
+43. delay(8)
+
+34
+00:00:35,884 --> 00:00:35,885
+47. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/Registratie tab"))
+
+35
+00:00:36,479 --> 00:00:36,480
+51. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/INCIDENTEN tab"), OPTIONAL)
+
+36
+00:00:37,327 --> 00:00:37,328
+55. delay(2)
+
+37
+00:00:39,358 --> 00:00:39,359
+59. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/INCIDENTEN new"))
+
+38
+00:00:40,005 --> 00:00:40,006
+63. delay(1)
+
+39
+00:00:40,011 --> 00:00:40,012
+67. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/INCIDENTEN save"))
+
+40
+00:00:40,020 --> 00:00:40,021
+71. delay(2)
+
+41
+00:00:40,023 --> 00:00:40,024
+75. incidentalerttext = getAlertText(OPTIONAL)
+
+42
+00:00:40,025 --> 00:00:40,026
+79. log.logInfo(incidentalerttext)
+
+43
+00:00:40,030 --> 00:00:40,032
+83. delay(1, OPTIONAL)
+
+44
+00:00:40,034 --> 00:00:40,034
+87. acceptAlert(OPTIONAL)
+
+45
+00:00:40,037 --> 00:00:40,038
+91. delay(1)
+
+46
+00:00:40,040 --> 00:00:40,040
+95. takeScreenshot()
+
+47
+00:00:40,042 --> 00:00:40,043
+99. log.logInfo("successfully saved data without entering any details")
+
+48
+00:00:40,044 --> 00:00:40,045
+103. delay(1)
+
+49
+00:00:40,051 --> 00:00:40,053
+109. Mouse over to Generic tab
+
+50
+00:00:40,057 --> 00:00:40,058
+113. delay(1)
+
+51
+00:00:40,060 --> 00:00:40,061
+117. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/Registratie tab"))
+
+52
+00:00:40,064 --> 00:00:40,065
+121. delay(1)
+
+53
+00:00:40,067 --> 00:00:40,068
+125. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/INCIDENTEN new"))
+
+54
+00:00:40,070 --> 00:00:40,071
+129. delay(1)
+
+55
+00:00:41,073 --> 00:00:41,076
+133. selectOptionByLabel(findTestObject("Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/Organisatie"), "SKS", false)
+
+56
+00:00:41,843 --> 00:00:41,844
+137. delay(1)
+
+57
+00:00:42,849 --> 00:00:42,850
+141. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/Datum Incident"), "29/09/2019")
+
+58
+00:00:43,519 --> 00:00:43,520
+145. delay(1)
+
+59
+00:00:44,525 --> 00:00:44,527
+149. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/Bejzonderheden"), "testing : Bejzonderheden")
+
+60
+00:00:46,033 --> 00:00:46,035
+153. delay(1)
+
+61
+00:00:47,039 --> 00:00:47,042
+157. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/Contactperson"), "testing : Contactperson")
+
+62
+00:00:48,556 --> 00:00:48,557
+161. delay(1)
+
+63
+00:00:49,561 --> 00:00:49,562
+165. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/Telefoonnummer"), "987512364")
+
+64
+00:00:50,395 --> 00:00:50,397
+169. delay(1)
+
+65
+00:00:51,404 --> 00:00:51,405
+173. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/INCIDENTEN save"))
+
+66
+00:00:52,049 --> 00:00:52,050
+177. delay(1)
+
+67
+00:00:53,055 --> 00:00:53,056
+181. takeScreenshot()
+
+68
+00:00:53,469 --> 00:00:53,470
+185. log.logInfo("successfully saved data")
+

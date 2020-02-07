@@ -1,0 +1,596 @@
+1
+00:00:00,975 --> 00:00:00,976
+3. Login to the application
+
+2
+00:00:01,073 --> 00:00:01,074
+1. openBrowser("")
+
+3
+00:00:04,482 --> 00:00:04,483
+5. deleteAllCookies()
+
+4
+00:00:04,531 --> 00:00:04,532
+9. waitForPageLoad(60)
+
+5
+00:00:04,559 --> 00:00:04,560
+13. maximizeWindow()
+
+6
+00:00:05,710 --> 00:00:05,711
+17. ACTPOLTESTENV = 1
+
+7
+00:00:05,712 --> 00:00:05,714
+21. ACTPOLDEVENV = 2
+
+8
+00:00:05,717 --> 00:00:05,718
+25. ACTPOLKCENV = 3
+
+9
+00:00:05,719 --> 00:00:05,720
+29. ACTPOLKBKPCNENV = 4
+
+10
+00:00:05,721 --> 00:00:05,722
+33. ACTPOLKBKMARENV = 5
+
+11
+00:00:05,723 --> 00:00:05,724
+37. ACTPOLKMENV = 6
+
+12
+00:00:05,726 --> 00:00:05,727
+41. ACTPOLKWENV = 7
+
+13
+00:00:05,728 --> 00:00:05,730
+45. environment = ACTPOLTESTENV
+
+14
+00:00:05,731 --> 00:00:05,732
+49. Selectenv = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>
+
+15
+00:00:05,733 --> 00:00:05,735
+53. switch (environment)
+
+16
+00:00:05,741 --> 00:00:05,741
+2. println(Selectenv = "ACTPOL-TEST-ENV")
+
+17
+00:00:05,743 --> 00:00:05,744
+6. navigateToUrl(TESTURL)
+
+18
+00:00:12,569 --> 00:00:12,571
+10. setText(findTestObject("Actpol_Scripts/login/userid"), username)
+
+19
+00:00:13,012 --> 00:00:13,013
+14. setMaskedText(findTestObject("Actpol_Scripts/login/password"), password)
+
+20
+00:00:13,533 --> 00:00:13,534
+18. click(findTestObject("Actpol_Scripts/login/login"))
+
+21
+00:00:13,900 --> 00:00:13,900
+22. getWindowTitle()
+
+22
+00:00:13,920 --> 00:00:13,921
+26. delay(5)
+
+23
+00:00:18,924 --> 00:00:18,925
+30. break
+
+24
+00:00:18,929 --> 00:00:18,930
+7. log = new com.kms.katalon.core.logging.KeywordLogger()
+
+25
+00:00:18,932 --> 00:00:18,933
+11. delay(5)
+
+26
+00:00:23,938 --> 00:00:23,939
+17. Mouse over to Generic tab
+
+27
+00:00:24,324 --> 00:00:24,325
+21. log.logInfo("Successfully logged")
+
+28
+00:00:24,326 --> 00:00:24,327
+25. delay(2)
+
+29
+00:00:26,332 --> 00:00:26,333
+31. Click MBES tab
+
+30
+00:00:26,751 --> 00:00:26,752
+35. delay(2)
+
+31
+00:00:28,759 --> 00:00:28,763
+41. Click MBES tab
+
+32
+00:00:29,104 --> 00:00:29,105
+45. log.logInfo("Clicking MBES18 tab ")
+
+33
+00:00:29,107 --> 00:00:29,107
+49. delay(1)
+
+34
+00:00:30,113 --> 00:00:30,114
+53. delay(8)
+
+35
+00:00:38,118 --> 00:00:38,119
+59. Click new btn
+
+36
+00:00:38,749 --> 00:00:38,750
+63. log.logInfo("Clicking MBES18 new button ")
+
+37
+00:00:38,754 --> 00:00:38,756
+67. delay(6)
+
+38
+00:00:44,760 --> 00:00:44,761
+73. Click new btn in Registratie
+
+39
+00:00:45,356 --> 00:00:45,356
+77. delay(1)
+
+40
+00:00:46,376 --> 00:00:46,377
+83. Select required dropdown fro the list
+
+41
+00:00:46,932 --> 00:00:46,933
+87. delay(1)
+
+42
+00:00:47,936 --> 00:00:47,937
+93. Select required dropdown fro the list
+
+43
+00:00:48,630 --> 00:00:48,631
+97. delay(1)
+
+44
+00:00:49,637 --> 00:00:49,638
+103. Select required dropdown fro the list
+
+45
+00:00:50,134 --> 00:00:50,135
+107. delay(1)
+
+46
+00:00:51,140 --> 00:00:51,141
+113. Select required dropdown fro the list
+
+47
+00:00:51,651 --> 00:00:51,652
+117. delay(1)
+
+48
+00:00:52,657 --> 00:00:52,658
+123. Enter the text from the feild
+
+49
+00:00:54,341 --> 00:00:54,342
+127. delay(1)
+
+50
+00:00:55,349 --> 00:00:55,350
+133. Enter the text from the feild
+
+51
+00:00:56,150 --> 00:00:56,151
+137. delay(1)
+
+52
+00:00:57,155 --> 00:00:57,156
+143. Enter the text from the feild
+
+53
+00:00:58,014 --> 00:00:58,015
+147. delay(1)
+
+54
+00:00:59,019 --> 00:00:59,020
+153. Enter the date
+
+55
+00:00:59,022 --> 00:00:59,023
+157. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/1 Registratie/Datum calendar icon"))
+
+56
+00:00:59,723 --> 00:00:59,724
+161. delay(2)
+
+57
+00:01:01,728 --> 00:01:01,729
+165. selectOptionByLabel(findTestObject("Actpol_Scripts/Monthyear/Rightmonth"), "sep", false)
+
+58
+00:01:02,242 --> 00:01:02,243
+169. delay(1)
+
+59
+00:01:03,248 --> 00:01:03,249
+173. selectOptionByLabel(findTestObject("Actpol_Scripts/Monthyear/Rightyear"), "2019", false)
+
+60
+00:01:03,680 --> 00:01:03,681
+177. delay(1)
+
+61
+00:01:04,685 --> 00:01:04,686
+181. click(findTestObject("Actpol_Scripts/Date/16th right frame"))
+
+62
+00:01:05,261 --> 00:01:05,262
+185. delay(1)
+
+63
+00:01:06,265 --> 00:01:06,267
+191. Click save btn
+
+64
+00:01:06,887 --> 00:01:06,888
+195. delay(1)
+
+65
+00:01:07,894 --> 00:01:07,895
+201. Click on Registratie tab
+
+66
+00:01:08,512 --> 00:01:08,514
+205. delay(1)
+
+67
+00:01:09,519 --> 00:01:09,520
+211. Click on Personalia tab
+
+68
+00:01:10,147 --> 00:01:10,148
+215. delay(2)
+
+69
+00:01:12,152 --> 00:01:12,153
+221. Click Save tab
+
+70
+00:01:12,754 --> 00:01:12,755
+225. comment("Chcking validation")
+
+71
+00:01:12,764 --> 00:01:12,766
+229. delay(1)
+
+72
+00:01:13,771 --> 00:01:13,772
+235. Error message
+
+73
+00:01:14,198 --> 00:01:14,199
+239. achternaamverify = "Dit is een vereiste veld"
+
+74
+00:01:14,201 --> 00:01:14,202
+243. log.logInfo(Achternaam)
+
+75
+00:01:14,208 --> 00:01:14,209
+247. if (Achternaam == achternaamverify)
+
+76
+00:01:14,210 --> 00:01:14,213
+1. log.logInfo("success and error message in Achternaam")
+
+77
+00:01:14,215 --> 00:01:14,216
+251. delay(2)
+
+78
+00:01:16,221 --> 00:01:16,222
+255. Garantsteller = getText(findTestObject("Actpol_Scripts/Opsporing/MBES18/2 Personalia/Garantsteller error message"))
+
+79
+00:01:16,598 --> 00:01:16,599
+259. Garantstellerverify = "Dit is een vereiste veld"
+
+80
+00:01:16,602 --> 00:01:16,603
+263. log.logInfo(Garantsteller)
+
+81
+00:01:16,609 --> 00:01:16,610
+267. if (Garantsteller == Garantstellerverify)
+
+82
+00:01:16,611 --> 00:01:16,612
+1. log.logInfo("success and error message in Garantsteller/referent")
+
+83
+00:01:16,615 --> 00:01:16,617
+271. delay(2)
+
+84
+00:01:16,619 --> 00:01:16,620
+275. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/2 Personalia/Personalia Achternaam new"))
+
+85
+00:01:16,623 --> 00:01:16,624
+279. delay(4)
+
+86
+00:01:16,629 --> 00:01:16,630
+283. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/2 Personalia/Select default persoon"), OPTIONAL)
+
+87
+00:01:16,632 --> 00:01:16,633
+287. delay(2)
+
+88
+00:01:16,635 --> 00:01:16,636
+291. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/2 Personalia/new persoon close btn"), OPTIONAL)
+
+89
+00:01:16,637 --> 00:01:16,638
+295. delay(2)
+
+90
+00:01:18,644 --> 00:01:18,645
+299. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/2 Personalia/Achternaam text"), "aa")
+
+91
+00:01:19,658 --> 00:01:19,659
+303. delay(2)
+
+92
+00:01:21,664 --> 00:01:21,665
+307. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/2 Personalia/Achternaam text lb"))
+
+93
+00:01:22,608 --> 00:01:22,608
+311. delay(1)
+
+94
+00:01:23,613 --> 00:01:23,614
+315. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/2 Personalia/Garantsteller new"), "aa")
+
+95
+00:01:24,287 --> 00:01:24,288
+319. delay(2)
+
+96
+00:01:26,579 --> 00:01:26,580
+323. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/2 Personalia/Garantsteller new lb"))
+
+97
+00:01:27,157 --> 00:01:27,158
+327. delay(1)
+
+98
+00:01:28,166 --> 00:01:28,167
+331. scrollToPosition(10, 7)
+
+99
+00:01:28,234 --> 00:01:28,236
+335. delay(1)
+
+100
+00:01:29,241 --> 00:01:29,242
+339. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/2 Personalia/Personalia tab"))
+
+101
+00:01:29,795 --> 00:01:29,796
+343. delay(1)
+
+102
+00:01:30,801 --> 00:01:30,802
+347. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/INBEWARINGSTELLINGS C.Q. PLAATSINGSGEGEVENS tab"))
+
+103
+00:01:31,450 --> 00:01:31,452
+351. delay(2)
+
+104
+00:01:33,458 --> 00:01:33,459
+355. comment("INBEWARINGSTELLINGS C.Q. PLAATSINGSGEGEVENS  error messages")
+
+105
+00:01:33,463 --> 00:01:33,464
+359. delay(1)
+
+106
+00:01:34,470 --> 00:01:34,471
+363. Inbewaringstellingsinds = getText(findTestObject("Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Inbewaringstelling sinds error message"), OPTIONAL)
+
+107
+00:01:34,968 --> 00:01:34,969
+367. if (Inbewaringstellingsinds == Garantstellerverify)
+
+108
+00:01:34,970 --> 00:01:34,971
+1. log.logInfo("success and error message in Inbewaringstelling sinds")
+
+109
+00:01:34,973 --> 00:01:34,974
+371. delay(1)
+
+110
+00:01:35,984 --> 00:01:35,985
+375. OpgrondvanartikelWTUBES = getText(findTestObject("Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Op grond van artikel WTU_BES error message"), OPTIONAL)
+
+111
+00:01:36,373 --> 00:01:36,374
+379. if (OpgrondvanartikelWTUBES == Garantstellerverify)
+
+112
+00:01:36,375 --> 00:01:36,375
+1. log.logInfo("success and error message in Op grond van artikel WTU-BES")
+
+113
+00:01:36,378 --> 00:01:36,380
+383. delay(1)
+
+114
+00:01:37,385 --> 00:01:37,386
+387. staandehoudingDatumgrensweigering = getText(findTestObject("Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Datum aan_staandehouding Datum grensweigering error message"), OPTIONAL)
+
+115
+00:01:37,778 --> 00:01:37,779
+391. if (staandehoudingDatumgrensweigering == Garantstellerverify)
+
+116
+00:01:37,780 --> 00:01:37,780
+1. log.logInfo("success and error message in Datum aan-/staandehouding Datum grensweigering")
+
+117
+00:01:37,784 --> 00:01:37,785
+395. delay(1)
+
+118
+00:01:38,789 --> 00:01:38,790
+399. scrollToElement(findTestObject("Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Reden aan_staandehouding Reden grensweigering error message"), 2)
+
+119
+00:01:39,188 --> 00:01:39,189
+403. delay(1)
+
+120
+00:01:40,193 --> 00:01:40,194
+407. Redenaanstaandehouding = getText(findTestObject("Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Reden aan_staandehouding Reden grensweigering error message"), OPTIONAL)
+
+121
+00:01:40,552 --> 00:01:40,553
+411. if (Redenaanstaandehouding == Garantstellerverify)
+
+122
+00:01:40,554 --> 00:01:40,555
+1. log.logInfo("success and error message in Reden aan-/staandehouding Reden grensweigering")
+
+123
+00:01:40,562 --> 00:01:40,564
+415. delay(1)
+
+124
+00:01:41,576 --> 00:01:41,577
+419. Inbewaringstellingslocatie = getText(findTestObject("Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Inbewaringstellings-locatie error message"), OPTIONAL)
+
+125
+00:01:42,003 --> 00:01:42,004
+423. if (Inbewaringstellingslocatie == Garantstellerverify)
+
+126
+00:01:42,006 --> 00:01:42,006
+1. log.logInfo("success and error message in Inbewaringstellings locatie")
+
+127
+00:01:42,010 --> 00:01:42,012
+427. delay(1)
+
+128
+00:01:43,018 --> 00:01:43,019
+431. INDCN = getText(findTestObject("Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Bekend bij IND-CN in het kader van toelating_bescherming error messaage"), OPTIONAL)
+
+129
+00:01:43,432 --> 00:01:43,434
+435. if (INDCN == Garantstellerverify)
+
+130
+00:01:43,435 --> 00:01:43,435
+1. log.logInfo("success and error message in Bekend bij IND-CN in het kader van toelating/bescherming")
+
+131
+00:01:43,438 --> 00:01:43,439
+439. delay(1)
+
+132
+00:01:44,444 --> 00:01:44,445
+443. Datumbeeindigingrechtmatigverblijf = getText(findTestObject("Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Datum beeindiging rechtmatig verblijf error message"), OPTIONAL)
+
+133
+00:01:44,820 --> 00:01:44,822
+447. if (Datumbeeindigingrechtmatigverblijf == Garantstellerverify)
+
+134
+00:01:44,823 --> 00:01:44,824
+1. log.logInfo("success and error message in Datum beeindiging rechtmatig verblijf")
+
+135
+00:01:44,827 --> 00:01:44,828
+451. delay(1)
+
+136
+00:01:45,833 --> 00:01:45,834
+455. delay(1)
+
+137
+00:01:46,837 --> 00:01:46,838
+459. scrollToPosition(10, 7)
+
+138
+00:01:46,876 --> 00:01:46,877
+463. comment("INBEWARINGSTELLINGS C.Q. PLAATSINGSGEGEVENS tab data filling")
+
+139
+00:01:46,881 --> 00:01:46,882
+467. delay(1)
+
+140
+00:01:47,899 --> 00:01:47,900
+471. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Inbewaringstelling sinds"), "02/09/2019")
+
+141
+00:01:47,902 --> 00:01:47,903
+475. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Inbewaringstelling sinds calender icon"))
+
+142
+00:01:48,610 --> 00:01:48,611
+479. delay(2)
+
+143
+00:01:50,619 --> 00:01:50,620
+483. selectOptionByLabel(findTestObject("Actpol_Scripts/Monthyear/Rightmonth"), "sep", false)
+
+144
+00:01:51,065 --> 00:01:51,066
+487. delay(1)
+
+145
+00:01:52,071 --> 00:01:52,072
+491. selectOptionByLabel(findTestObject("Actpol_Scripts/Monthyear/Rightyear"), "2019", false)
+
+146
+00:01:52,488 --> 00:01:52,490
+495. delay(1)
+
+147
+00:01:53,495 --> 00:01:53,496
+499. click(findTestObject("Actpol_Scripts/Date/16th right frame"))
+
+148
+00:01:54,083 --> 00:01:54,084
+503. delay(1)
+
+149
+00:01:55,087 --> 00:01:55,088
+507. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Plaatsing sinds"), "testing :: Plaatsing sinds")
+

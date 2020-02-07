@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Goederen
+Step 2: Select all drop downs Status 
+Step 3: Search results is an Status</description>
+   <name>Algemene Zoekopdracht - Select type Goederen-Status(Status-1)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>2de22c21-86aa-4cb8-8e3a-982f0fd2bb26</testCaseGuid>
+</TestCaseEntity>

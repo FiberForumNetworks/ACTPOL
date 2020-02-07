@@ -1,0 +1,116 @@
+1
+00:00:00,471 --> 00:00:00,472
+1. callTestCase(findTestCase("main/Actpol_Login_testenv"), [:], STOP_ON_FAILURE)
+
+2
+00:00:00,576 --> 00:00:00,577
+1. openBrowser("")
+
+3
+00:00:04,025 --> 00:00:04,026
+5. deleteAllCookies()
+
+4
+00:00:04,273 --> 00:00:04,274
+9. waitForPageLoad(60)
+
+5
+00:00:04,306 --> 00:00:04,307
+13. maximizeWindow()
+
+6
+00:00:05,438 --> 00:00:05,439
+17. ACTPOLTESTENV = 1
+
+7
+00:00:05,440 --> 00:00:05,441
+21. ACTPOLDEVENV = 2
+
+8
+00:00:05,443 --> 00:00:05,444
+25. ACTPOLKCENV = 3
+
+9
+00:00:05,446 --> 00:00:05,447
+29. ACTPOLKBKPCNENV = 4
+
+10
+00:00:05,448 --> 00:00:05,449
+33. ACTPOLKBKMARENV = 5
+
+11
+00:00:05,450 --> 00:00:05,451
+37. ACTPOLKMENV = 6
+
+12
+00:00:05,453 --> 00:00:05,454
+41. ACTPOLKWENV = 7
+
+13
+00:00:05,456 --> 00:00:05,457
+45. environment = ACTPOLTESTENV
+
+14
+00:00:05,458 --> 00:00:05,459
+49. Selectenv = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>
+
+15
+00:00:05,461 --> 00:00:05,462
+53. switch (environment)
+
+16
+00:00:05,464 --> 00:00:05,464
+2. println(Selectenv = "ACTPOL-TEST-ENV")
+
+17
+00:00:05,466 --> 00:00:05,467
+6. navigateToUrl(TESTURL)
+
+18
+00:00:17,709 --> 00:00:17,710
+10. setText(findTestObject("Actpol_Scripts/login/userid"), username)
+
+19
+00:00:18,153 --> 00:00:18,154
+14. setMaskedText(findTestObject("Actpol_Scripts/login/password"), password)
+
+20
+00:00:18,594 --> 00:00:18,595
+18. click(findTestObject("Actpol_Scripts/login/login"))
+
+21
+00:00:18,922 --> 00:00:18,924
+22. getWindowTitle()
+
+22
+00:00:18,946 --> 00:00:18,947
+26. delay(5)
+
+23
+00:00:23,951 --> 00:00:23,952
+30. break
+
+24
+00:00:23,956 --> 00:00:23,957
+5. delay(6)
+
+25
+00:00:29,962 --> 00:00:29,963
+11. Mouse over to Generic tab
+
+26
+00:00:30,313 --> 00:00:30,314
+15. delay(4)
+
+27
+00:00:34,324 --> 00:00:34,326
+19. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/MBES18 TAB"))
+
+28
+00:00:34,767 --> 00:00:34,767
+23. delay(1)
+
+29
+00:00:35,772 --> 00:00:35,773
+27. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/8 Documenten/edit default mbes 18"))
+

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Medewerker
+Step 2: Select all Rol/Proces Type
+Step 3: Search results is an Rol/Proces Type</description>
+   <name>Algemene Zoekopdracht - Select type Medewerker-Rol Proces Type(Rol Proces Type-1)</name>
+   <tag></tag>
+   <comment>Select 1st &quot;BEKENDE/AANGEHOUDEN VERDACHTE&quot;
+Select 2nd &quot;AANGEVER&quot;
+Select 3rd &quot;BEKEURDE PERSOON&quot;
+Select 5th &quot;BETROKKENE&quot;
+Select 7th &quot;GETUIGE&quot;
+Select 10th &quot;KENNISGEVER&quot;
+Select 11th &quot;MENS IN NOOD&quot;
+Select 12th &quot;NIET BEKEND&quot;
+Select 15th &quot;SLACHTOFFER&quot;
+Select 16th &quot;VERDACHTE SIGNALEMENTEN&quot;
+Select 17th &quot;VERMIST PERSOON&quot;
+Select 18th &quot;VERZOEKER&quot;
+Select 25th &quot;BERISPTE PERSOON&quot;
+Select 26th &quot;ILLEGAAL PERSOON&quot;
+Select 50th &quot;GEVAARLIJKE HONDEN&quot;
+Select 51st &quot;EIGEN WAARNEMING&quot;
+Select 52nd &quot;ONBEKEND&quot;
+Select 57th &quot;VREEMDELING&quot;
+Select 58th &quot;BETROKKEN VAARTUIG&quot;</comment>
+   <testCaseGuid>722d25e3-2f76-4632-a6c5-76f197fcc16c</testCaseGuid>
+</TestCaseEntity>

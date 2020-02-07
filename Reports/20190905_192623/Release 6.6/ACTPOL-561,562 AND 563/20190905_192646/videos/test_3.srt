@@ -1,0 +1,220 @@
+1
+00:00:02,455 --> 00:00:02,457
+1. callTestCase(findTestCase("main/Actpol_Login_testenv"), [:], STOP_ON_FAILURE)
+
+2
+00:00:03,670 --> 00:00:03,696
+1. openBrowser("")
+
+3
+00:00:40,827 --> 00:00:40,829
+5. deleteAllCookies()
+
+4
+00:00:41,738 --> 00:00:41,739
+9. waitForPageLoad(30)
+
+5
+00:00:46,110 --> 00:00:46,111
+13. maximizeWindow()
+
+6
+00:00:51,303 --> 00:00:51,304
+17. ACTPOLTESTENV = 1
+
+7
+00:00:51,306 --> 00:00:51,307
+21. ACTPOLDEVENV = 2
+
+8
+00:00:52,290 --> 00:00:52,291
+25. ACTPOLKCENV = 3
+
+9
+00:00:52,292 --> 00:00:52,293
+29. ACTPOLKBKPCNENV = 4
+
+10
+00:00:52,937 --> 00:00:52,939
+33. ACTPOLKBKMARENV = 5
+
+11
+00:00:53,406 --> 00:00:53,407
+37. ACTPOLKMENV = 6
+
+12
+00:00:53,408 --> 00:00:53,409
+41. ACTPOLKWENV = 7
+
+13
+00:00:53,708 --> 00:00:53,710
+45. environment = ACTPOLDEVENV
+
+14
+00:00:53,756 --> 00:00:53,758
+49. Selectenv = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>
+
+15
+00:00:53,760 --> 00:00:53,761
+53. switch (environment)
+
+16
+00:00:54,212 --> 00:00:54,212
+2. println(Selectenv = "ACTPOL-DEV-ENV")
+
+17
+00:00:54,946 --> 00:00:54,946
+6. navigateToUrl(DEVURL)
+
+18
+00:01:18,909 --> 00:01:18,909
+10. setText(findTestObject("Actpol_Scripts/login/userid"), username)
+
+19
+00:01:26,583 --> 00:01:26,583
+14. setMaskedText(findTestObject("Actpol_Scripts/login/password"), password)
+
+20
+00:01:28,154 --> 00:01:28,155
+18. click(findTestObject("Actpol_Scripts/login/login"))
+
+21
+00:01:29,497 --> 00:01:29,498
+22. getWindowTitle()
+
+22
+00:01:29,660 --> 00:01:29,660
+26. break
+
+23
+00:01:29,663 --> 00:01:29,664
+5. mouseOver(findTestObject("Actpol_Scripts/Menu navigation/Opsporing/Opsporing"))
+
+24
+00:01:49,276 --> 00:01:49,277
+9. delay(2)
+
+25
+00:01:51,282 --> 00:01:51,284
+13. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/MBES18 TAB"))
+
+26
+00:01:57,953 --> 00:01:57,957
+17. delay(1)
+
+27
+00:01:58,973 --> 00:01:58,976
+21. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/mbes new"))
+
+28
+00:02:00,247 --> 00:02:00,248
+25. delay(8)
+
+29
+00:02:08,254 --> 00:02:08,255
+29. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/Registratie tab"))
+
+30
+00:02:09,781 --> 00:02:09,782
+33. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/INCIDENTEN tab"), OPTIONAL)
+
+31
+00:02:10,858 --> 00:02:10,859
+37. delay(2)
+
+32
+00:02:12,863 --> 00:02:12,864
+41. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/INCIDENTEN new"))
+
+33
+00:02:14,015 --> 00:02:14,016
+45. delay(1)
+
+34
+00:02:15,021 --> 00:02:15,022
+49. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/INCIDENTEN save"))
+
+35
+00:02:16,333 --> 00:02:16,334
+53. delay(2)
+
+36
+00:02:18,338 --> 00:02:18,340
+57. takeScreenshot()
+
+37
+00:02:20,217 --> 00:02:20,218
+61. log = new com.kms.katalon.core.logging.KeywordLogger()
+
+38
+00:02:20,220 --> 00:02:20,221
+65. log.logInfo("successfully saved data without entering any details")
+
+39
+00:02:20,224 --> 00:02:20,225
+69. delay(1)
+
+40
+00:02:21,228 --> 00:02:21,229
+73. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/INCIDENTEN new"))
+
+41
+00:02:22,504 --> 00:02:22,505
+77. delay(1)
+
+42
+00:02:23,510 --> 00:02:23,511
+81. selectOptionByLabel(findTestObject("Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/Organisatie"), "SKS", false)
+
+43
+00:02:25,289 --> 00:02:25,290
+85. delay(1)
+
+44
+00:02:26,294 --> 00:02:26,296
+89. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/Datum Incident"), "29/09/2019")
+
+45
+00:02:27,991 --> 00:02:27,992
+93. delay(1)
+
+46
+00:02:29,010 --> 00:02:29,011
+97. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/Bejzonderheden"), "testing : Bejzonderheden")
+
+47
+00:02:33,040 --> 00:02:33,041
+101. delay(1)
+
+48
+00:02:34,045 --> 00:02:34,046
+105. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/Contactperson"), "testing : Contactperson")
+
+49
+00:02:35,957 --> 00:02:35,958
+109. delay(1)
+
+50
+00:02:36,964 --> 00:02:36,965
+113. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/Telefoonnummer"), "987512364")
+
+51
+00:02:38,248 --> 00:02:38,248
+117. delay(1)
+
+52
+00:02:39,256 --> 00:02:39,257
+121. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/INCIDENTEN save"))
+
+53
+00:02:40,038 --> 00:02:40,039
+125. delay(1)
+
+54
+00:02:41,043 --> 00:02:41,044
+129. takeScreenshot()
+
+55
+00:02:42,164 --> 00:02:42,165
+133. log.logInfo("successfully saved data")
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Testplan Contact:
+Step 1: Go to Generiek - Assistentie tab Contacten
+Step 2: Enter a new contact (brand new person)
+Step 3: Click save
+Step 4: Go to AlgemeneZoekopdracht and search on this new entered person
+Step 5: Person should show in search results without being in any assistentie or onderzoek</description>
+   <name>Navigation Algemene Zoekopdracht - select Type Persoon</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>74774ad5-04d3-4fb9-96d3-bd910db2b2e9</testCaseGuid>
+</TestCaseEntity>

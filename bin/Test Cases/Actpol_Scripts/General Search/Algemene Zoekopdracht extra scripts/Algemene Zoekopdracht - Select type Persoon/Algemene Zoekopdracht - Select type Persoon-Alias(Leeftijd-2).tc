@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Persoon
+Step 2: Set text Leeftijd
+Step 3: Set text Alias
+Step 4: Search results is an Alias and Leeftijd</description>
+   <name>Algemene Zoekopdracht - Select type Persoon-Alias(Leeftijd-2)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>15f272d2-13b2-49b0-bc7c-8ea17c8c1bfb</testCaseGuid>
+</TestCaseEntity>

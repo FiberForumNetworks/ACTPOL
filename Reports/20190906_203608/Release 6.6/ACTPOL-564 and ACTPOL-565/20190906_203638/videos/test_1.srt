@@ -1,0 +1,1520 @@
+1
+00:00:00,894 --> 00:00:00,900
+3. Login to the application
+
+2
+00:00:01,985 --> 00:00:01,988
+1. openBrowser("")
+
+3
+00:00:11,762 --> 00:00:11,766
+5. deleteAllCookies()
+
+4
+00:00:11,978 --> 00:00:11,980
+9. waitForPageLoad(30)
+
+5
+00:00:12,935 --> 00:00:12,937
+13. maximizeWindow()
+
+6
+00:00:14,110 --> 00:00:14,112
+17. ACTPOLTESTENV = 1
+
+7
+00:00:14,114 --> 00:00:14,116
+21. ACTPOLDEVENV = 2
+
+8
+00:00:14,118 --> 00:00:14,120
+25. ACTPOLKCENV = 3
+
+9
+00:00:14,122 --> 00:00:14,124
+29. ACTPOLKBKPCNENV = 4
+
+10
+00:00:14,126 --> 00:00:14,129
+33. ACTPOLKBKMARENV = 5
+
+11
+00:00:14,304 --> 00:00:14,310
+37. ACTPOLKMENV = 6
+
+12
+00:00:14,315 --> 00:00:14,316
+41. ACTPOLKWENV = 7
+
+13
+00:00:14,318 --> 00:00:14,319
+45. environment = ACTPOLDEVENV
+
+14
+00:00:14,321 --> 00:00:14,322
+49. Selectenv = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>
+
+15
+00:00:14,324 --> 00:00:14,325
+53. switch (environment)
+
+16
+00:00:14,335 --> 00:00:14,341
+2. println(Selectenv = "ACTPOL-DEV-ENV")
+
+17
+00:00:14,349 --> 00:00:14,351
+6. navigateToUrl(DEVURL)
+
+18
+00:00:28,091 --> 00:00:28,094
+10. setText(findTestObject("Actpol_Scripts/login/userid"), username)
+
+19
+00:00:30,984 --> 00:00:30,986
+14. setMaskedText(findTestObject("Actpol_Scripts/login/password"), password)
+
+20
+00:00:32,043 --> 00:00:32,044
+18. click(findTestObject("Actpol_Scripts/login/login"))
+
+21
+00:00:32,656 --> 00:00:32,659
+22. getWindowTitle()
+
+22
+00:00:32,705 --> 00:00:32,712
+26. break
+
+23
+00:00:32,734 --> 00:00:32,736
+7. log = new com.kms.katalon.core.logging.KeywordLogger()
+
+24
+00:00:32,776 --> 00:00:32,780
+13. Mouse over to opsporing
+
+25
+00:00:52,186 --> 00:00:52,193
+17. log.logInfo("Successfully logged")
+
+26
+00:00:52,197 --> 00:00:52,199
+21. delay(2)
+
+27
+00:00:54,223 --> 00:00:54,226
+27. Click MBES tab
+
+28
+00:00:59,204 --> 00:00:59,208
+31. log.logInfo("Clicking MBES18 tab ")
+
+29
+00:00:59,211 --> 00:00:59,212
+35. delay(1)
+
+30
+00:01:00,429 --> 00:01:00,431
+41. Mouse over to Generic tab
+
+31
+00:01:00,954 --> 00:01:00,956
+45. delay(8)
+
+32
+00:01:08,962 --> 00:01:08,964
+51. Click new btn
+
+33
+00:01:10,892 --> 00:01:10,893
+55. log.logInfo("Clicking MBES18 new button ")
+
+34
+00:01:10,898 --> 00:01:10,904
+59. delay(6)
+
+35
+00:01:16,911 --> 00:01:16,913
+65. Click new btn in Registratie
+
+36
+00:01:17,773 --> 00:01:17,778
+69. delay(1)
+
+37
+00:01:18,785 --> 00:01:18,786
+75. Select required dropdown fro the list
+
+38
+00:01:19,725 --> 00:01:19,727
+79. delay(1)
+
+39
+00:01:20,737 --> 00:01:20,739
+85. Select required dropdown fro the list
+
+40
+00:01:21,641 --> 00:01:21,643
+89. delay(1)
+
+41
+00:01:22,649 --> 00:01:22,651
+95. Select required dropdown fro the list
+
+42
+00:01:23,726 --> 00:01:23,728
+99. delay(1)
+
+43
+00:01:24,736 --> 00:01:24,738
+105. Select required dropdown fro the list
+
+44
+00:01:25,643 --> 00:01:25,645
+109. delay(1)
+
+45
+00:01:26,657 --> 00:01:26,658
+115. Enter the text from the feild
+
+46
+00:01:28,893 --> 00:01:28,894
+119. delay(1)
+
+47
+00:01:29,901 --> 00:01:29,908
+125. Enter the text from the feild
+
+48
+00:01:30,987 --> 00:01:30,988
+129. delay(1)
+
+49
+00:01:31,994 --> 00:01:31,996
+135. Enter the text from the feild
+
+50
+00:01:33,214 --> 00:01:33,216
+139. delay(1)
+
+51
+00:01:34,225 --> 00:01:34,226
+145. Enter the date
+
+52
+00:01:34,996 --> 00:01:34,997
+149. delay(1)
+
+53
+00:01:36,004 --> 00:01:36,005
+155. Click save btn
+
+54
+00:01:36,727 --> 00:01:36,730
+159. delay(1)
+
+55
+00:01:37,740 --> 00:01:37,741
+165. Click on Registratie tab
+
+56
+00:01:38,500 --> 00:01:38,501
+169. delay(1)
+
+57
+00:01:39,511 --> 00:01:39,512
+175. Click on Personalia tab
+
+58
+00:01:41,015 --> 00:01:41,019
+179. delay(2)
+
+59
+00:01:43,026 --> 00:01:43,028
+183. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/2 Personalia/Achternaam text"), "aa")
+
+60
+00:01:43,777 --> 00:01:43,778
+187. delay(2)
+
+61
+00:01:45,783 --> 00:01:45,785
+191. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/2 Personalia/Achternaam text lb"))
+
+62
+00:01:48,181 --> 00:01:48,182
+195. delay(1)
+
+63
+00:01:49,223 --> 00:01:49,225
+199. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/2 Personalia/Garantsteller new"), "aa")
+
+64
+00:01:50,060 --> 00:01:50,061
+203. delay(2)
+
+65
+00:01:52,068 --> 00:01:52,075
+207. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/2 Personalia/Garantsteller new lb"))
+
+66
+00:01:52,976 --> 00:01:52,977
+211. delay(1)
+
+67
+00:01:53,989 --> 00:01:53,990
+215. scrollToPosition(10, 7)
+
+68
+00:01:54,426 --> 00:01:54,428
+219. delay(1)
+
+69
+00:01:55,433 --> 00:01:55,440
+223. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/2 Personalia/Personalia tab"))
+
+70
+00:01:56,004 --> 00:01:56,011
+227. delay(1)
+
+71
+00:01:57,028 --> 00:01:57,033
+231. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/INBEWARINGSTELLINGS C.Q. PLAATSINGSGEGEVENS tab"))
+
+72
+00:01:57,797 --> 00:01:57,798
+235. delay(2)
+
+73
+00:01:59,804 --> 00:01:59,805
+239. comment("INBEWARINGSTELLINGS C.Q. PLAATSINGSGEGEVENS tab data filling")
+
+74
+00:01:59,823 --> 00:01:59,824
+243. delay(1)
+
+75
+00:02:00,901 --> 00:02:00,904
+247. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Inbewaringstelling sinds"), "02/09/2019")
+
+76
+00:02:01,705 --> 00:02:01,710
+251. delay(1)
+
+77
+00:02:02,722 --> 00:02:02,724
+255. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Plaatsing sinds"), "testing :: Plaatsing sinds")
+
+78
+00:02:04,323 --> 00:02:04,325
+259. comment("Checking dropdown")
+
+79
+00:02:04,337 --> 00:02:04,338
+263. delay(1)
+
+80
+00:02:05,343 --> 00:02:05,348
+267. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Op grond van artikel WTU-BES"), "a")
+
+81
+00:02:06,146 --> 00:02:06,148
+271. delay(2)
+
+82
+00:02:08,159 --> 00:02:08,159
+275. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Op grond van artikel WTU-BES lb"))
+
+83
+00:02:09,199 --> 00:02:09,200
+279. delay(2)
+
+84
+00:02:11,205 --> 00:02:11,206
+283. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Datum aan_staandehouding Datum grensweigering"), "02/09/2019")
+
+85
+00:02:12,299 --> 00:02:12,300
+287. delay(1)
+
+86
+00:02:13,305 --> 00:02:13,306
+291. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Reden aan_staandehouding Reden grensweigering"), "testing :: Reden aan_staandehouding Reden grensweigering")
+
+87
+00:02:16,074 --> 00:02:16,075
+295. delay(1)
+
+88
+00:02:17,081 --> 00:02:17,082
+299. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Inbewaringstellings-locatie"), "a")
+
+89
+00:02:17,821 --> 00:02:17,822
+303. delay(2)
+
+90
+00:02:19,828 --> 00:02:19,829
+307. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Inbewaringstellings-locatie lb"))
+
+91
+00:02:20,685 --> 00:02:20,686
+311. delay(2)
+
+92
+00:02:22,690 --> 00:02:22,691
+315. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Naam advocaat"), "testing :: Naam advocaat")
+
+93
+00:02:24,341 --> 00:02:24,342
+319. delay(1)
+
+94
+00:02:25,509 --> 00:02:25,510
+323. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/advocaat telefoonnummer"), "985213647")
+
+95
+00:02:26,940 --> 00:02:26,942
+327. delay(1)
+
+96
+00:02:27,952 --> 00:02:27,956
+331. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Naam ambtenaar KPCN _KmarCarib"), "testing :: Naam ambtenaar KPCN /KmarCarib")
+
+97
+00:02:30,369 --> 00:02:30,370
+335. delay(1)
+
+98
+00:02:31,375 --> 00:02:31,377
+339. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Bekend bij IND-CN in het kader van"), "testing :: Bekend bij IND-CN in het kader van toelating/bescherming")
+
+99
+00:02:34,817 --> 00:02:34,818
+343. delay(2)
+
+100
+00:02:36,824 --> 00:02:36,826
+347. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Datum beeindiging rechtmatig verblijf"), "02/09/2019")
+
+101
+00:02:37,599 --> 00:02:37,600
+351. delay(2)
+
+102
+00:02:39,604 --> 00:02:39,605
+355. scrollToPosition(10, 7)
+
+103
+00:02:39,646 --> 00:02:39,648
+359. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/INBEWARINGSTELLINGS C.Q. PLAATSINGSGEGEVENS tab"))
+
+104
+00:02:40,372 --> 00:02:40,373
+363. delay(1)
+
+105
+00:02:41,377 --> 00:02:41,378
+367. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/4 GEDRAG_MEDISCH/GEDRAG MEDISCH tab"), OPTIONAL)
+
+106
+00:02:42,636 --> 00:02:42,640
+371. delay(2)
+
+107
+00:02:44,790 --> 00:02:44,792
+375. comment("Checking jaa validation")
+
+108
+00:02:44,796 --> 00:02:44,797
+381. checking ja radio button
+
+109
+00:02:44,976 --> 00:02:44,977
+1. AssistentiedynamicId = i
+
+110
+00:02:44,978 --> 00:02:44,979
+5. Assistentiexpath = "//*[@id="MiddelenAUform"]/table/tbody/tr[" + AssistentiedynamicId + "]/td[2]/input[1]"
+
+111
+00:02:44,980 --> 00:02:44,981
+9. println(Assistentiexpath)
+
+112
+00:02:45,198 --> 00:02:45,200
+13. to = findTestObject("Actpol_Scripts/Opsporing/MBES18/test")
+
+113
+00:02:46,378 --> 00:02:46,379
+17. to.addProperty("xpath", EQUALS, Assistentiexpath)
+
+114
+00:02:46,397 --> 00:02:46,399
+23. get text from the data
+
+115
+00:02:46,627 --> 00:02:46,629
+27. println(value1)
+
+116
+00:02:46,633 --> 00:02:46,634
+31. value2 = "J"
+
+117
+00:02:46,635 --> 00:02:46,637
+35. if (value1 == value2)
+
+118
+00:02:46,897 --> 00:02:46,898
+1. click(to)
+
+119
+00:02:47,331 --> 00:02:47,332
+1. AssistentiedynamicId = i
+
+120
+00:02:47,334 --> 00:02:47,336
+5. Assistentiexpath = "//*[@id="MiddelenAUform"]/table/tbody/tr[" + AssistentiedynamicId + "]/td[2]/input[1]"
+
+121
+00:02:47,340 --> 00:02:47,342
+9. println(Assistentiexpath)
+
+122
+00:02:47,345 --> 00:02:47,347
+13. to = findTestObject("Actpol_Scripts/Opsporing/MBES18/test")
+
+123
+00:02:47,635 --> 00:02:47,636
+17. to.addProperty("xpath", EQUALS, Assistentiexpath)
+
+124
+00:02:47,637 --> 00:02:47,639
+23. get text from the data
+
+125
+00:02:47,905 --> 00:02:47,906
+27. println(value1)
+
+126
+00:02:47,907 --> 00:02:47,908
+31. value2 = "J"
+
+127
+00:02:47,910 --> 00:02:47,911
+35. if (value1 == value2)
+
+128
+00:02:47,913 --> 00:02:47,914
+2. setText(to, "katalon testing")
+
+129
+00:02:48,757 --> 00:02:48,759
+1. AssistentiedynamicId = i
+
+130
+00:02:48,761 --> 00:02:48,762
+5. Assistentiexpath = "//*[@id="MiddelenAUform"]/table/tbody/tr[" + AssistentiedynamicId + "]/td[2]/input[1]"
+
+131
+00:02:48,884 --> 00:02:48,885
+9. println(Assistentiexpath)
+
+132
+00:02:49,286 --> 00:02:49,287
+13. to = findTestObject("Actpol_Scripts/Opsporing/MBES18/test")
+
+133
+00:02:49,543 --> 00:02:49,544
+17. to.addProperty("xpath", EQUALS, Assistentiexpath)
+
+134
+00:02:49,545 --> 00:02:49,554
+23. get text from the data
+
+135
+00:02:49,918 --> 00:02:49,919
+27. println(value1)
+
+136
+00:02:49,920 --> 00:02:49,921
+31. value2 = "J"
+
+137
+00:02:49,923 --> 00:02:49,924
+35. if (value1 == value2)
+
+138
+00:02:50,365 --> 00:02:50,366
+1. click(to)
+
+139
+00:02:50,702 --> 00:02:50,704
+1. AssistentiedynamicId = i
+
+140
+00:02:50,705 --> 00:02:50,707
+5. Assistentiexpath = "//*[@id="MiddelenAUform"]/table/tbody/tr[" + AssistentiedynamicId + "]/td[2]/input[1]"
+
+141
+00:02:50,710 --> 00:02:50,712
+9. println(Assistentiexpath)
+
+142
+00:02:50,715 --> 00:02:50,720
+13. to = findTestObject("Actpol_Scripts/Opsporing/MBES18/test")
+
+143
+00:02:50,929 --> 00:02:50,931
+17. to.addProperty("xpath", EQUALS, Assistentiexpath)
+
+144
+00:02:50,932 --> 00:02:50,933
+23. get text from the data
+
+145
+00:02:51,324 --> 00:02:51,326
+27. println(value1)
+
+146
+00:02:51,330 --> 00:02:51,334
+31. value2 = "J"
+
+147
+00:02:51,336 --> 00:02:51,337
+35. if (value1 == value2)
+
+148
+00:02:51,339 --> 00:02:51,339
+2. setText(to, "katalon testing")
+
+149
+00:02:52,195 --> 00:02:52,196
+1. AssistentiedynamicId = i
+
+150
+00:02:52,198 --> 00:02:52,199
+5. Assistentiexpath = "//*[@id="MiddelenAUform"]/table/tbody/tr[" + AssistentiedynamicId + "]/td[2]/input[1]"
+
+151
+00:02:52,556 --> 00:02:52,557
+9. println(Assistentiexpath)
+
+152
+00:02:52,649 --> 00:02:52,650
+13. to = findTestObject("Actpol_Scripts/Opsporing/MBES18/test")
+
+153
+00:02:52,863 --> 00:02:52,867
+17. to.addProperty("xpath", EQUALS, Assistentiexpath)
+
+154
+00:02:52,869 --> 00:02:52,870
+23. get text from the data
+
+155
+00:02:53,048 --> 00:02:53,049
+27. println(value1)
+
+156
+00:02:53,051 --> 00:02:53,051
+31. value2 = "J"
+
+157
+00:02:53,220 --> 00:02:53,221
+35. if (value1 == value2)
+
+158
+00:02:53,336 --> 00:02:53,337
+1. click(to)
+
+159
+00:02:53,798 --> 00:02:53,800
+1. AssistentiedynamicId = i
+
+160
+00:02:53,801 --> 00:02:53,802
+5. Assistentiexpath = "//*[@id="MiddelenAUform"]/table/tbody/tr[" + AssistentiedynamicId + "]/td[2]/input[1]"
+
+161
+00:02:53,805 --> 00:02:53,807
+9. println(Assistentiexpath)
+
+162
+00:02:53,813 --> 00:02:53,814
+13. to = findTestObject("Actpol_Scripts/Opsporing/MBES18/test")
+
+163
+00:02:54,037 --> 00:02:54,038
+17. to.addProperty("xpath", EQUALS, Assistentiexpath)
+
+164
+00:02:54,040 --> 00:02:54,041
+23. get text from the data
+
+165
+00:02:54,447 --> 00:02:54,448
+27. println(value1)
+
+166
+00:02:54,450 --> 00:02:54,451
+31. value2 = "J"
+
+167
+00:02:54,455 --> 00:02:54,456
+35. if (value1 == value2)
+
+168
+00:02:54,458 --> 00:02:54,459
+1. click(to)
+
+169
+00:02:55,002 --> 00:02:55,003
+1. AssistentiedynamicId = i
+
+170
+00:02:55,005 --> 00:02:55,006
+5. Assistentiexpath = "//*[@id="MiddelenAUform"]/table/tbody/tr[" + AssistentiedynamicId + "]/td[2]/input[1]"
+
+171
+00:02:55,035 --> 00:02:55,036
+9. println(Assistentiexpath)
+
+172
+00:02:55,125 --> 00:02:55,126
+13. to = findTestObject("Actpol_Scripts/Opsporing/MBES18/test")
+
+173
+00:02:55,407 --> 00:02:55,408
+17. to.addProperty("xpath", EQUALS, Assistentiexpath)
+
+174
+00:02:55,409 --> 00:02:55,410
+23. get text from the data
+
+175
+00:02:55,552 --> 00:02:55,553
+27. println(value1)
+
+176
+00:02:55,555 --> 00:02:55,556
+31. value2 = "J"
+
+177
+00:02:55,721 --> 00:02:55,722
+35. if (value1 == value2)
+
+178
+00:02:55,724 --> 00:02:55,727
+1. click(to)
+
+179
+00:02:56,139 --> 00:02:56,140
+1. AssistentiedynamicId = i
+
+180
+00:02:56,142 --> 00:02:56,143
+5. Assistentiexpath = "//*[@id="MiddelenAUform"]/table/tbody/tr[" + AssistentiedynamicId + "]/td[2]/input[1]"
+
+181
+00:02:56,147 --> 00:02:56,148
+9. println(Assistentiexpath)
+
+182
+00:02:56,150 --> 00:02:56,151
+13. to = findTestObject("Actpol_Scripts/Opsporing/MBES18/test")
+
+183
+00:02:56,560 --> 00:02:56,561
+17. to.addProperty("xpath", EQUALS, Assistentiexpath)
+
+184
+00:02:56,562 --> 00:02:56,563
+23. get text from the data
+
+185
+00:02:57,211 --> 00:02:57,212
+27. println(value1)
+
+186
+00:02:57,213 --> 00:02:57,214
+31. value2 = "J"
+
+187
+00:02:57,216 --> 00:02:57,217
+35. if (value1 == value2)
+
+188
+00:02:57,462 --> 00:02:57,463
+1. click(to)
+
+189
+00:02:58,041 --> 00:02:58,043
+1. AssistentiedynamicId = i
+
+190
+00:02:58,044 --> 00:02:58,045
+5. Assistentiexpath = "//*[@id="MiddelenAUform"]/table/tbody/tr[" + AssistentiedynamicId + "]/td[2]/input[1]"
+
+191
+00:02:58,112 --> 00:02:58,113
+9. println(Assistentiexpath)
+
+192
+00:02:58,116 --> 00:02:58,117
+13. to = findTestObject("Actpol_Scripts/Opsporing/MBES18/test")
+
+193
+00:02:58,440 --> 00:02:58,441
+17. to.addProperty("xpath", EQUALS, Assistentiexpath)
+
+194
+00:02:58,442 --> 00:02:58,443
+23. get text from the data
+
+195
+00:02:58,604 --> 00:02:58,605
+27. println(value1)
+
+196
+00:02:58,607 --> 00:02:58,608
+31. value2 = "J"
+
+197
+00:02:58,616 --> 00:02:58,617
+35. if (value1 == value2)
+
+198
+00:02:58,618 --> 00:02:58,619
+1. click(to)
+
+199
+00:02:58,988 --> 00:02:58,989
+1. AssistentiedynamicId = i
+
+200
+00:02:58,992 --> 00:02:58,993
+5. Assistentiexpath = "//*[@id="MiddelenAUform"]/table/tbody/tr[" + AssistentiedynamicId + "]/td[2]/input[1]"
+
+201
+00:02:59,370 --> 00:02:59,371
+9. println(Assistentiexpath)
+
+202
+00:02:59,376 --> 00:02:59,377
+13. to = findTestObject("Actpol_Scripts/Opsporing/MBES18/test")
+
+203
+00:02:59,775 --> 00:02:59,775
+17. to.addProperty("xpath", EQUALS, Assistentiexpath)
+
+204
+00:02:59,777 --> 00:02:59,777
+23. get text from the data
+
+205
+00:02:59,969 --> 00:02:59,970
+27. println(value1)
+
+206
+00:02:59,971 --> 00:02:59,972
+31. value2 = "J"
+
+207
+00:02:59,988 --> 00:02:59,989
+35. if (value1 == value2)
+
+208
+00:02:59,994 --> 00:02:59,995
+1. click(to)
+
+209
+00:03:00,409 --> 00:03:00,410
+1. AssistentiedynamicId = i
+
+210
+00:03:00,412 --> 00:03:00,413
+5. Assistentiexpath = "//*[@id="MiddelenAUform"]/table/tbody/tr[" + AssistentiedynamicId + "]/td[2]/input[1]"
+
+211
+00:03:00,422 --> 00:03:00,423
+9. println(Assistentiexpath)
+
+212
+00:03:00,424 --> 00:03:00,425
+13. to = findTestObject("Actpol_Scripts/Opsporing/MBES18/test")
+
+213
+00:03:00,689 --> 00:03:00,690
+17. to.addProperty("xpath", EQUALS, Assistentiexpath)
+
+214
+00:03:00,692 --> 00:03:00,693
+23. get text from the data
+
+215
+00:03:00,838 --> 00:03:00,839
+27. println(value1)
+
+216
+00:03:00,841 --> 00:03:00,842
+31. value2 = "J"
+
+217
+00:03:00,846 --> 00:03:00,848
+35. if (value1 == value2)
+
+218
+00:03:00,851 --> 00:03:00,852
+1. click(to)
+
+219
+00:03:01,308 --> 00:03:01,310
+1. AssistentiedynamicId = i
+
+220
+00:03:01,312 --> 00:03:01,313
+5. Assistentiexpath = "//*[@id="MiddelenAUform"]/table/tbody/tr[" + AssistentiedynamicId + "]/td[2]/input[1]"
+
+221
+00:03:01,318 --> 00:03:01,320
+9. println(Assistentiexpath)
+
+222
+00:03:01,322 --> 00:03:01,322
+13. to = findTestObject("Actpol_Scripts/Opsporing/MBES18/test")
+
+223
+00:03:01,632 --> 00:03:01,634
+17. to.addProperty("xpath", EQUALS, Assistentiexpath)
+
+224
+00:03:01,635 --> 00:03:01,636
+23. get text from the data
+
+225
+00:03:01,775 --> 00:03:01,777
+27. println(value1)
+
+226
+00:03:01,778 --> 00:03:01,779
+31. value2 = "J"
+
+227
+00:03:01,783 --> 00:03:01,784
+35. if (value1 == value2)
+
+228
+00:03:01,787 --> 00:03:01,788
+1. click(to)
+
+229
+00:03:02,225 --> 00:03:02,227
+1. AssistentiedynamicId = i
+
+230
+00:03:02,231 --> 00:03:02,236
+5. Assistentiexpath = "//*[@id="MiddelenAUform"]/table/tbody/tr[" + AssistentiedynamicId + "]/td[2]/input[1]"
+
+231
+00:03:02,239 --> 00:03:02,240
+9. println(Assistentiexpath)
+
+232
+00:03:02,242 --> 00:03:02,243
+13. to = findTestObject("Actpol_Scripts/Opsporing/MBES18/test")
+
+233
+00:03:02,573 --> 00:03:02,575
+17. to.addProperty("xpath", EQUALS, Assistentiexpath)
+
+234
+00:03:02,577 --> 00:03:02,578
+23. get text from the data
+
+235
+00:03:03,402 --> 00:03:03,403
+27. println(value1)
+
+236
+00:03:03,405 --> 00:03:03,406
+31. value2 = "J"
+
+237
+00:03:03,543 --> 00:03:03,544
+35. if (value1 == value2)
+
+238
+00:03:03,545 --> 00:03:03,546
+1. click(to)
+
+239
+00:03:03,939 --> 00:03:03,941
+1. AssistentiedynamicId = i
+
+240
+00:03:03,942 --> 00:03:03,943
+5. Assistentiexpath = "//*[@id="MiddelenAUform"]/table/tbody/tr[" + AssistentiedynamicId + "]/td[2]/input[1]"
+
+241
+00:03:03,946 --> 00:03:03,947
+9. println(Assistentiexpath)
+
+242
+00:03:03,952 --> 00:03:03,953
+13. to = findTestObject("Actpol_Scripts/Opsporing/MBES18/test")
+
+243
+00:03:04,200 --> 00:03:04,201
+17. to.addProperty("xpath", EQUALS, Assistentiexpath)
+
+244
+00:03:04,202 --> 00:03:04,203
+23. get text from the data
+
+245
+00:03:04,352 --> 00:03:04,353
+27. println(value1)
+
+246
+00:03:04,355 --> 00:03:04,355
+31. value2 = "J"
+
+247
+00:03:04,521 --> 00:03:04,522
+35. if (value1 == value2)
+
+248
+00:03:04,526 --> 00:03:04,526
+1. click(to)
+
+249
+00:03:05,030 --> 00:03:05,033
+1. AssistentiedynamicId = i
+
+250
+00:03:05,034 --> 00:03:05,035
+5. Assistentiexpath = "//*[@id="MiddelenAUform"]/table/tbody/tr[" + AssistentiedynamicId + "]/td[2]/input[1]"
+
+251
+00:03:05,039 --> 00:03:05,040
+9. println(Assistentiexpath)
+
+252
+00:03:05,045 --> 00:03:05,046
+13. to = findTestObject("Actpol_Scripts/Opsporing/MBES18/test")
+
+253
+00:03:05,314 --> 00:03:05,315
+17. to.addProperty("xpath", EQUALS, Assistentiexpath)
+
+254
+00:03:05,317 --> 00:03:05,318
+23. get text from the data
+
+255
+00:03:05,772 --> 00:03:05,773
+27. println(value1)
+
+256
+00:03:05,775 --> 00:03:05,776
+31. value2 = "J"
+
+257
+00:03:05,790 --> 00:03:05,791
+35. if (value1 == value2)
+
+258
+00:03:05,795 --> 00:03:05,796
+1. click(to)
+
+259
+00:03:06,181 --> 00:03:06,183
+1. AssistentiedynamicId = i
+
+260
+00:03:06,190 --> 00:03:06,191
+5. Assistentiexpath = "//*[@id="MiddelenAUform"]/table/tbody/tr[" + AssistentiedynamicId + "]/td[2]/input[1]"
+
+261
+00:03:06,203 --> 00:03:06,204
+9. println(Assistentiexpath)
+
+262
+00:03:06,207 --> 00:03:06,209
+13. to = findTestObject("Actpol_Scripts/Opsporing/MBES18/test")
+
+263
+00:03:06,546 --> 00:03:06,556
+17. to.addProperty("xpath", EQUALS, Assistentiexpath)
+
+264
+00:03:06,572 --> 00:03:06,573
+23. get text from the data
+
+265
+00:03:06,791 --> 00:03:06,792
+27. println(value1)
+
+266
+00:03:06,794 --> 00:03:06,795
+31. value2 = "J"
+
+267
+00:03:06,798 --> 00:03:06,799
+35. if (value1 == value2)
+
+268
+00:03:06,800 --> 00:03:06,801
+1. click(to)
+
+269
+00:03:07,310 --> 00:03:07,311
+1. AssistentiedynamicId = i
+
+270
+00:03:07,312 --> 00:03:07,313
+5. Assistentiexpath = "//*[@id="MiddelenAUform"]/table/tbody/tr[" + AssistentiedynamicId + "]/td[2]/input[1]"
+
+271
+00:03:07,332 --> 00:03:07,333
+9. println(Assistentiexpath)
+
+272
+00:03:07,389 --> 00:03:07,390
+13. to = findTestObject("Actpol_Scripts/Opsporing/MBES18/test")
+
+273
+00:03:07,770 --> 00:03:07,773
+17. to.addProperty("xpath", EQUALS, Assistentiexpath)
+
+274
+00:03:07,774 --> 00:03:07,775
+23. get text from the data
+
+275
+00:03:08,007 --> 00:03:08,008
+27. println(value1)
+
+276
+00:03:08,009 --> 00:03:08,010
+31. value2 = "J"
+
+277
+00:03:08,015 --> 00:03:08,016
+35. if (value1 == value2)
+
+278
+00:03:08,017 --> 00:03:08,018
+1. click(to)
+
+279
+00:03:08,402 --> 00:03:08,403
+1. AssistentiedynamicId = i
+
+280
+00:03:08,404 --> 00:03:08,405
+5. Assistentiexpath = "//*[@id="MiddelenAUform"]/table/tbody/tr[" + AssistentiedynamicId + "]/td[2]/input[1]"
+
+281
+00:03:08,408 --> 00:03:08,409
+9. println(Assistentiexpath)
+
+282
+00:03:08,427 --> 00:03:08,429
+13. to = findTestObject("Actpol_Scripts/Opsporing/MBES18/test")
+
+283
+00:03:08,738 --> 00:03:08,739
+17. to.addProperty("xpath", EQUALS, Assistentiexpath)
+
+284
+00:03:08,741 --> 00:03:08,742
+23. get text from the data
+
+285
+00:03:08,899 --> 00:03:08,900
+27. println(value1)
+
+286
+00:03:08,902 --> 00:03:08,904
+31. value2 = "J"
+
+287
+00:03:08,911 --> 00:03:08,914
+35. if (value1 == value2)
+
+288
+00:03:08,916 --> 00:03:08,917
+1. click(to)
+
+289
+00:03:09,248 --> 00:03:09,250
+1. AssistentiedynamicId = i
+
+290
+00:03:09,251 --> 00:03:09,253
+5. Assistentiexpath = "//*[@id="MiddelenAUform"]/table/tbody/tr[" + AssistentiedynamicId + "]/td[2]/input[1]"
+
+291
+00:03:09,257 --> 00:03:09,258
+9. println(Assistentiexpath)
+
+292
+00:03:09,380 --> 00:03:09,383
+13. to = findTestObject("Actpol_Scripts/Opsporing/MBES18/test")
+
+293
+00:03:09,751 --> 00:03:09,752
+17. to.addProperty("xpath", EQUALS, Assistentiexpath)
+
+294
+00:03:09,753 --> 00:03:09,754
+23. get text from the data
+
+295
+00:03:09,961 --> 00:03:09,962
+27. println(value1)
+
+296
+00:03:09,965 --> 00:03:09,966
+31. value2 = "J"
+
+297
+00:03:09,973 --> 00:03:09,974
+35. if (value1 == value2)
+
+298
+00:03:09,983 --> 00:03:09,984
+2. setText(to, "katalon testing")
+
+299
+00:03:11,079 --> 00:03:11,086
+1. AssistentiedynamicId = i
+
+300
+00:03:11,087 --> 00:03:11,088
+5. Assistentiexpath = "//*[@id="MiddelenAUform"]/table/tbody/tr[" + AssistentiedynamicId + "]/td[2]/input[1]"
+
+301
+00:03:11,092 --> 00:03:11,093
+9. println(Assistentiexpath)
+
+302
+00:03:11,096 --> 00:03:11,097
+13. to = findTestObject("Actpol_Scripts/Opsporing/MBES18/test")
+
+303
+00:03:11,384 --> 00:03:11,385
+17. to.addProperty("xpath", EQUALS, Assistentiexpath)
+
+304
+00:03:11,387 --> 00:03:11,388
+23. get text from the data
+
+305
+00:03:11,522 --> 00:03:11,523
+27. println(value1)
+
+306
+00:03:11,524 --> 00:03:11,525
+31. value2 = "J"
+
+307
+00:03:11,527 --> 00:03:11,528
+35. if (value1 == value2)
+
+308
+00:03:11,540 --> 00:03:11,541
+1. click(to)
+
+309
+00:03:11,963 --> 00:03:11,966
+1. AssistentiedynamicId = i
+
+310
+00:03:11,968 --> 00:03:11,969
+5. Assistentiexpath = "//*[@id="MiddelenAUform"]/table/tbody/tr[" + AssistentiedynamicId + "]/td[2]/input[1]"
+
+311
+00:03:11,974 --> 00:03:11,975
+9. println(Assistentiexpath)
+
+312
+00:03:11,976 --> 00:03:11,977
+13. to = findTestObject("Actpol_Scripts/Opsporing/MBES18/test")
+
+313
+00:03:12,252 --> 00:03:12,253
+17. to.addProperty("xpath", EQUALS, Assistentiexpath)
+
+314
+00:03:12,254 --> 00:03:12,256
+23. get text from the data
+
+315
+00:03:12,446 --> 00:03:12,447
+27. println(value1)
+
+316
+00:03:12,448 --> 00:03:12,449
+31. value2 = "J"
+
+317
+00:03:12,452 --> 00:03:12,452
+35. if (value1 == value2)
+
+318
+00:03:12,455 --> 00:03:12,455
+1. click(to)
+
+319
+00:03:12,864 --> 00:03:12,866
+385. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/MBSC SAVE"), OPTIONAL)
+
+320
+00:03:14,646 --> 00:03:14,647
+389. delay(1)
+
+321
+00:03:15,652 --> 00:03:15,653
+393. scrollToPosition(10, 7)
+
+322
+00:03:15,679 --> 00:03:15,680
+397. delay(1)
+
+323
+00:03:16,685 --> 00:03:16,686
+401. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/4 GEDRAG_MEDISCH/GEDRAG MEDISCH tab"))
+
+324
+00:03:17,271 --> 00:03:17,272
+405. delay(1)
+
+325
+00:03:18,278 --> 00:03:18,279
+409. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/INCIDENTEN tab"))
+
+326
+00:03:19,081 --> 00:03:19,082
+413. delay(2)
+
+327
+00:03:21,089 --> 00:03:21,090
+417. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/INCIDENTEN new"))
+
+328
+00:03:22,158 --> 00:03:22,160
+421. delay(1)
+
+329
+00:03:23,170 --> 00:03:23,171
+425. selectOptionByLabel(findTestObject("Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/Organisatie"), "SKS", false)
+
+330
+00:03:23,820 --> 00:03:23,821
+429. delay(1)
+
+331
+00:03:24,825 --> 00:03:24,826
+433. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/Datum Incident"), "29/09/2019")
+
+332
+00:03:25,831 --> 00:03:25,832
+437. delay(1)
+
+333
+00:03:27,204 --> 00:03:27,205
+441. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/Bejzonderheden"), "testing : Bejzonderheden")
+
+334
+00:03:29,167 --> 00:03:29,168
+445. delay(1)
+
+335
+00:03:30,174 --> 00:03:30,175
+449. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/Contactperson"), "testing : Contactperson")
+
+336
+00:03:32,455 --> 00:03:32,457
+453. delay(1)
+
+337
+00:03:33,462 --> 00:03:33,463
+457. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/Telefoonnummer"), "987512364")
+
+338
+00:03:43,905 --> 00:03:43,906
+461. delay(1)
+
+339
+00:03:44,915 --> 00:03:44,916
+465. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/INCIDENTEN save"))
+
+340
+00:03:45,679 --> 00:03:45,680
+469. delay(1)
+
+341
+00:03:46,684 --> 00:03:46,685
+473. takeScreenshot()
+
+342
+00:03:57,065 --> 00:03:57,066
+477. log.logInfo("successfully saved data")
+
+343
+00:03:57,067 --> 00:03:57,068
+481. delay(1)
+
+344
+00:03:58,075 --> 00:03:58,076
+485. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/INCIDENTEN tab"))
+
+345
+00:03:58,676 --> 00:03:58,677
+489. delay(2)
+
+346
+00:04:00,683 --> 00:04:00,685
+493. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/OVERIGE GEGEVENS tab"), OPTIONAL)
+
+347
+00:04:02,250 --> 00:04:02,251
+497. delay(2)
+
+348
+00:04:04,254 --> 00:04:04,256
+501. selectOptionByLabel(findTestObject("Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Uitzetting"), "OPENBARE MINISTERIE", false)
+
+349
+00:04:05,684 --> 00:04:05,685
+505. delay(1)
+
+350
+00:04:06,695 --> 00:04:06,696
+509. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Datum vlucht"), "21/09/2019")
+
+351
+00:04:07,816 --> 00:04:07,817
+513. delay(1)
+
+352
+00:04:08,829 --> 00:04:08,831
+517. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Tijdstip vlucht"), "010101")
+
+353
+00:04:09,744 --> 00:04:09,745
+521. delay(1)
+
+354
+00:04:10,752 --> 00:04:10,753
+525. selectOptionByLabel(findTestObject("Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Arrival location"), "Haven", false)
+
+355
+00:04:13,718 --> 00:04:13,719
+529. delay(1)
+
+356
+00:04:14,727 --> 00:04:14,731
+533. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Datum"), "21/09/2019")
+
+357
+00:04:15,758 --> 00:04:15,760
+537. delay(1)
+
+358
+00:04:16,765 --> 00:04:16,766
+541. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Claim vervoerder ja"))
+
+359
+00:04:17,999 --> 00:04:18,000
+545. delay(2)
+
+360
+00:04:20,004 --> 00:04:20,004
+549. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Claim vervoerder ja"))
+
+361
+00:04:21,198 --> 00:04:21,199
+553. delay(1)
+
+362
+00:04:22,206 --> 00:04:22,207
+557. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Removal orde ja"))
+
+363
+00:04:22,869 --> 00:04:22,870
+561. delay(1)
+
+364
+00:04:23,873 --> 00:04:23,874
+565. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Contact diplomatieke"), "testing :: Contact diplomatieke vertegenwooediging ter verkrijging van een vervangend reisdocument")
+
+365
+00:04:29,035 --> 00:04:29,037
+569. delay(1)
+
+366
+00:04:30,058 --> 00:04:30,062
+573. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Wanner"), "21/09/2019")
+
+367
+00:04:31,173 --> 00:04:31,309
+577. delay(1)
+
+368
+00:04:32,316 --> 00:04:32,317
+581. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Welke diplomatieke"), "testing :: Welke diplomatieke vertegenwooedliging")
+
+369
+00:04:35,649 --> 00:04:35,650
+585. delay(1)
+
+370
+00:04:36,667 --> 00:04:36,668
+589. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Reisdocument ja"))
+
+371
+00:04:37,636 --> 00:04:37,638
+593. delay(1)
+
+372
+00:04:38,644 --> 00:04:38,645
+597. selectOptionByLabel(findTestObject("Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Soort"), "REISDOCUMENT", false)
+
+373
+00:04:39,471 --> 00:04:39,473
+601. delay(1)
+
+374
+00:04:40,478 --> 00:04:40,479
+605. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Nummer"), "testing :: Contact diplomatieke vertegenwooediging ter verkrijging van een vervangend reisdocument")
+
+375
+00:04:45,565 --> 00:04:45,566
+609. delay(1)
+
+376
+00:04:46,569 --> 00:04:46,570
+613. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Geldig tot"), "21/09/2019")
+
+377
+00:04:47,721 --> 00:04:47,722
+617. delay(1)
+
+378
+00:04:48,761 --> 00:04:48,762
+621. setText(findTestObject("Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Aanvullende identiteitsdocumenten"), "testing :: Welke diplomatieke vertegenwooedliging")
+
+379
+00:04:52,093 --> 00:04:52,093
+625. delay(1)
+
+380
+00:04:53,099 --> 00:04:53,100
+629. click(findTestObject("Actpol_Scripts/Opsporing/MBES18/MBSC SAVE"))
+

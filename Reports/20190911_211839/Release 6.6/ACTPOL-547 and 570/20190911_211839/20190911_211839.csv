@@ -1,0 +1,90 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ACTPOL-547 and 570,Chrome 76.0.3809.132,MBES18 module,,2019-09-11 21:18:54,2019-09-11 21:23:36,4m - 42.002s,INCOMPLETE
+,,,,,,,
+Test Cases/JIRA Tasks/Release 6.6/ACTPOL-547,Chrome 76.0.3809.132,"Change the dropdown item Wijkteam to Bureau/Afdeling in POLRAP0002
+Navigation:
+Display dropdown name ::  Bureau/Afdeling
+
+Navigation:
+Dashboard: Rapportage Assistentie
+Click edit
+Click Filter
+Check Filter Change the dropdown item Wijkteam to Bureau/Afdeling",ACTPOL-547,2019-09-11 21:18:55,2019-09-11 21:21:31,2m - 36.468s,PASSED
+"callTestCase(findTestCase(""main/Actpol_Login_testenv""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.132,,,2019-09-11 21:18:57,2019-09-11 21:20:25,1m - 28.265s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-11 21:20:25,2019-09-11 21:20:26,1.025s,PASSED
+"mouseOver(findTestObject(""Actpol_Scripts/Menu navigation/Dashboard/Dashboard""))",Chrome 76.0.3809.132,,,2019-09-11 21:20:26,2019-09-11 21:20:47,21.122s,PASSED
+delay(2),Chrome 76.0.3809.132,,,2019-09-11 21:20:47,2019-09-11 21:20:49,2.009s,PASSED
+"click(findTestObject(""Actpol_Scripts/Menu navigation/Dashboard/Rapportage Assistentie""), OPTIONAL)",Chrome 76.0.3809.132,,,2019-09-11 21:20:49,2019-09-11 21:21:07,17.349s,PASSED
+delay(2),Chrome 76.0.3809.132,,,2019-09-11 21:21:07,2019-09-11 21:21:09,2.011s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-547/Edit report Assistentie""), OPTIONAL)",Chrome 76.0.3809.132,,,2019-09-11 21:21:09,2019-09-11 21:21:14,5.040s,PASSED
+delay(2),Chrome 76.0.3809.132,,,2019-09-11 21:21:14,2019-09-11 21:21:16,2.012s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-547/periode""), OPTIONAL)",Chrome 76.0.3809.132,,,2019-09-11 21:21:16,2019-09-11 21:21:17,0.929s,PASSED
+delay(2),Chrome 76.0.3809.132,,,2019-09-11 21:21:17,2019-09-11 21:21:19,2.010s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-547/Filter""), OPTIONAL)",Chrome 76.0.3809.132,,,2019-09-11 21:21:19,2019-09-11 21:21:20,1.068s,PASSED
+delay(2),Chrome 76.0.3809.132,,,2019-09-11 21:21:20,2019-09-11 21:21:22,2.011s,PASSED
+"selectOptionByLabel(findTestObject(""JIRA/A Relese 6.6/ACTPOL-547/Filter dropdown""), "" Afdeling "", false)",Chrome 76.0.3809.132,,,2019-09-11 21:21:22,2019-09-11 21:21:24,2.632s,PASSED
+delay(2),Chrome 76.0.3809.132,,,2019-09-11 21:21:24,2019-09-11 21:21:26,2.010s,PASSED
+log = new com.kms.katalon.core.logging.KeywordLogger(),Chrome 76.0.3809.132,,,2019-09-11 21:21:26,2019-09-11 21:21:26,0.002s,PASSED
+"get = getAttribute(findTestObject(""JIRA/A Relese 6.6/ACTPOL-547/get text from dorp down""), ""value"")",Chrome 76.0.3809.132,,,2019-09-11 21:21:26,2019-09-11 21:21:27,0.957s,PASSED
+"check = getText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-547/get text from dorp down""))",Chrome 76.0.3809.132,,,2019-09-11 21:21:27,2019-09-11 21:21:28,0.758s,PASSED
+log.logInfo(get),Chrome 76.0.3809.132,,,2019-09-11 21:21:28,2019-09-11 21:21:28,0.004s,PASSED
+log.logInfo(check),Chrome 76.0.3809.132,,,2019-09-11 21:21:28,2019-09-11 21:21:28,0.004s,PASSED
+"get2 = "" Afdeling """,Chrome 76.0.3809.132,,,2019-09-11 21:21:28,2019-09-11 21:21:28,0.003s,PASSED
+if (get2 == check),Chrome 76.0.3809.132,,,2019-09-11 21:21:28,2019-09-11 21:21:28,0.023s,PASSED
+,,,,,,,
+Test Cases/JIRA Tasks/Release 6.6/ACTPOL-570,Chrome 76.0.3809.132,"In file KPSLPF0044, a new set of OPV codes are being used, so we need to be able to hide the old ones. As we cannot just delete them, because they have been used previously and still need to be displayed in 'old' fines, we have defined field OBVFLG2 as the field to determine whether the opv should be shown or not. 
+
+ 
+
+J  = active, show when displaying the select OPV code screen
+
+N = inactive, do not show when displaying the select OPV code screen
+
+ 
+
+Related to this, the following program should be adjusted: POL10001
+
+Please check if something must be done for POL10003 also, not sure.
+
+ 
+
+Testing Steps:
+
+Open any assistentie and go to tab Proces
+Select rol/proces 'Bekeurde Persoon'
+Soort procesverbaal = Oproepingsproces-verbaal
+Transportmiddel = Voertuig
+Go to accordeon Strafbaar feit and click on NEW
+ONLY records were OBVFLG2 = 'J' should be displayed",ACTPOL-570,2019-09-11 21:21:32,2019-09-11 21:23:36,2m - 3.462s,PASSED
+"callTestCase(findTestCase(""main/Actpol_Login_testenv""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.132,,,2019-09-11 21:21:33,2019-09-11 21:22:05,31.701s,PASSED
+"selectOptionByValue(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie""), ""assist"", false)",Chrome 76.0.3809.132,,,2019-09-11 21:22:05,2019-09-11 21:22:20,15.033s,PASSED
+"setText(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie Set text""), Generiekassistenite_Module)",Chrome 76.0.3809.132,,,2019-09-11 21:22:20,2019-09-11 21:22:22,1.757s,PASSED
+delay(2),Chrome 76.0.3809.132,,,2019-09-11 21:22:22,2019-09-11 21:22:24,2.012s,PASSED
+"click(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Zoeken new""))",Chrome 76.0.3809.132,,,2019-09-11 21:22:24,2019-09-11 21:22:31,6.893s,PASSED
+delay(2),Chrome 76.0.3809.132,,,2019-09-11 21:22:31,2019-09-11 21:22:33,2.011s,PASSED
+AssistentiedynamicId = Generiekassistenite_Module,Chrome 76.0.3809.132,Remember first set default assistentieid after run the script,,2019-09-11 21:22:33,2019-09-11 21:22:33,0.002s,PASSED
+"Assistentiexpath = ""//*[text()="""" + AssistentiedynamicId + """"]/preceding-sibling::td/a[2]""",Chrome 76.0.3809.132,,,2019-09-11 21:22:33,2019-09-11 21:22:33,0.002s,PASSED
+"to = findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/View Assistentie"")",Chrome 76.0.3809.132,,,2019-09-11 21:22:33,2019-09-11 21:22:33,0.872s,PASSED
+"to.addProperty(""xpath"", EQUALS, Assistentiexpath)",Chrome 76.0.3809.132,,,2019-09-11 21:22:33,2019-09-11 21:22:34,0.038s,PASSED
+click(to),Chrome 76.0.3809.132,,,2019-09-11 21:22:34,2019-09-11 21:22:34,0.511s,PASSED
+"click(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Confirmeren""))",Chrome 76.0.3809.132,,,2019-09-11 21:22:34,2019-09-11 21:22:47,13.206s,PASSED
+delay(5),Chrome 76.0.3809.132,,,2019-09-11 21:22:47,2019-09-11 21:22:52,5.218s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Click roll process""))",Chrome 76.0.3809.132,,,2019-09-11 21:22:52,2019-09-11 21:22:56,3.970s,PASSED
+delay(2),Chrome 76.0.3809.132,,,2019-09-11 21:22:56,2019-09-11 21:22:59,2.150s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Click new process""))",Chrome 76.0.3809.132,,,2019-09-11 21:22:59,2019-09-11 21:23:01,2.246s,PASSED
+delay(2),Chrome 76.0.3809.132,,,2019-09-11 21:23:01,2019-09-11 21:23:03,2.075s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Rol Proces Type""), ""BEKEURDE PERSOON"", false)",Chrome 76.0.3809.132,"Selecting BEKEURDE PERSOON
+",,2019-09-11 21:23:03,2019-09-11 21:23:05,1.948s,PASSED
+delay(3),Chrome 76.0.3809.132,,,2019-09-11 21:23:05,2019-09-11 21:23:08,3.517s,PASSED
+delay(2),Chrome 76.0.3809.132,,,2019-09-11 21:23:08,2019-09-11 21:23:11,2.311s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Extra script/Soort Procesverbaal""), ""OPROEPINGSPROCES-VERBAAL"", false)",Chrome 76.0.3809.132,OPROEPINGSPROCES-VERBAAL,,2019-09-11 21:23:11,2019-09-11 21:23:12,1.325s,PASSED
+delay(2),Chrome 76.0.3809.132,,,2019-09-11 21:23:12,2019-09-11 21:23:14,2.010s,PASSED
+"click(findTestObject(""Actpol_Scripts/Extra script/Voertuig radio click""))",Chrome 76.0.3809.132,,,2019-09-11 21:23:14,2019-09-11 21:23:16,1.656s,PASSED
+delay(2),Chrome 76.0.3809.132,,,2019-09-11 21:23:16,2019-09-11 21:23:18,2.015s,PASSED
+"click(findTestObject(""Actpol_Scripts/Extra script/Proces_Verbaal""))",Chrome 76.0.3809.132,,,2019-09-11 21:23:18,2019-09-11 21:23:19,1.370s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-11 21:23:19,2019-09-11 21:23:20,1.009s,PASSED
+"click(findTestObject(""Actpol_Scripts/Extra script/Strafbare_feit click""))",Chrome 76.0.3809.132,,,2019-09-11 21:23:20,2019-09-11 21:23:22,2.005s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-11 21:23:22,2019-09-11 21:23:23,1.008s,PASSED
+"click(findTestObject(""Actpol_Scripts/Extra script/Strafbare_feit click new""))",Chrome 76.0.3809.132,,,2019-09-11 21:23:23,2019-09-11 21:23:25,1.752s,PASSED
+delay(2),Chrome 76.0.3809.132,,,2019-09-11 21:23:25,2019-09-11 21:23:27,2.009s,PASSED
+takeScreenshot(),Chrome 76.0.3809.132,,,2019-09-11 21:23:27,2019-09-11 21:23:33,6.077s,PASSED

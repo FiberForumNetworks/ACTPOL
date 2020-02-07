@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Navigation :
+Generiek - Assistentie - rol/proces - aangever - new or edit person
+Testplan :
+Step 1: Go to Generiek - Assistentie - rol/proces
+Step 2: Select a rol/proces for example Aangever and select an existing persoon.
+Step 3: Click on edit icon for this person.
+Step 4: in tab Bijnaam add a alias(nickname) and save
+Step 5: Go to Algemene zoekopdracht select Persoon
+Step 6: in field Bijnaam enter alias(nickname) entered in bijnaam
+Step 7: The entered data should show in search results</description>
+   <name>ACTPOL-488</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f1829e7d-4884-41f3-8003-98b8760df6be</testCaseGuid>
+</TestCaseEntity>

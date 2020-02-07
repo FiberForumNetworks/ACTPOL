@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Persoon
+Step 2: Set text Voornaam
+Step 3: Set text Alias
+Step 3: Search results is an Voornaam and Alias(taken bijnaam base search because alias as bijnaam)</description>
+   <name>Algemene Zoekopdracht - Select type Persoon-Voornaam((Alias-2)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>04177a93-64e7-41f6-9e74-71f75d701261</testCaseGuid>
+</TestCaseEntity>

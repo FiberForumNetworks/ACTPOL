@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Tab Ambtsverslag
+Step 1: Go to Info organisatie edit existing request
+Step 2: Add a couple of Ambtsverslag records and save
+Step 3: Check gird created in Ambtsverlag grid.
+Info organisatie - Info organisatie - Verzoek - tab Ambtsverslag</description>
+   <name>ACTPOL-585</name>
+   <tag>ACTPOL-585</tag>
+   <comment></comment>
+   <testCaseGuid>e6d64282-fd08-4cc4-9b2a-6c488b5e6a9c</testCaseGuid>
+</TestCaseEntity>

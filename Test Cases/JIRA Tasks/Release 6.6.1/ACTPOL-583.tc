@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>In order to gain a better understanding of the link between the various entities during a research, the client would like to be able to register the link between the 
+Step 1: Go to Opsporing onderzoek
+Step 2: Open an existing record Onderzoek and open a new entitiet and fill all mandatory fields.
+Step 3: Go to the Relatie tab and create a relatie.
+Step 4: Check of all above mentioned fields are available.
+Go to Opsporing onderzoek - tab Entiteiten.</description>
+   <name>ACTPOL-583</name>
+   <tag>ACTPOL-582</tag>
+   <comment></comment>
+   <testCaseGuid>90294fa9-5887-4ac3-9bc7-4151a64f973c</testCaseGuid>
+</TestCaseEntity>

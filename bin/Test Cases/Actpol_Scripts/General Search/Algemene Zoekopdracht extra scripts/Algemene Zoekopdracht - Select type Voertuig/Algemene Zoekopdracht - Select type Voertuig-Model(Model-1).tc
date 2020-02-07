@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Voertuig
+Step 2:Set text Model
+Step 3:Search results is an Model</description>
+   <name>Algemene Zoekopdracht - Select type Voertuig-Model(Model-1)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>48dd2d47-10d2-44e0-ad92-72bdda9cd268</testCaseGuid>
+</TestCaseEntity>

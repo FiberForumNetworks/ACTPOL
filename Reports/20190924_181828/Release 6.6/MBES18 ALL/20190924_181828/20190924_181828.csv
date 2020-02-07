@@ -1,0 +1,1080 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+MBES18 ALL,Chrome 77.0.3865.90,ACTPOL-558 to ACTPOL-665,,2019-09-24 18:18:37,2019-09-24 18:41:11,22m - 33.979s,INCOMPLETE
+,,,,,,,
+Test Cases/JIRA Tasks/Release 6.6/ACTPOL-558,Chrome 77.0.3865.90,"Description:
+For the purpose of careful and efficient provision of information to all parties involved in the forced departure (expulsion) of a foreign national(Vreemdeling), the registration form, model MBES18, is required.
+
+Solution:
+Create a new module in Tab Opsporing called MBES18.
+When opening this module a grid wil show as in Arrestanten, with the Options volgnummer, Datum incident, Bijzonderheden, Organisatie, Contact persoon, telefoon numer, Voornaam, Achternaam en Geboortedatum.
+
+Testplan:
+Step 1: Go to Opsporing and choose tab MBES18
+Step 2: Grid as attachment should pop up
+Step 3: Grid should contain columns mentioned.
+
+Navigation:
+Opsporing - MBES18",ACTPOL-558,2019-09-24 18:18:38,2019-09-24 18:20:06,1m - 27.784s,PASSED
+"callTestCase(findTestCase(""main/Actpol_Login_testenv""), [:], STOP_ON_FAILURE)",Chrome 77.0.3865.90,Login to the application,,2019-09-24 18:18:39,2019-09-24 18:19:05,26.361s,PASSED
+log = new com.kms.katalon.core.logging.KeywordLogger(),Chrome 77.0.3865.90,,,2019-09-24 18:19:05,2019-09-24 18:19:05,0.015s,PASSED
+delay(4),Chrome 77.0.3865.90,,,2019-09-24 18:19:05,2019-09-24 18:19:09,4.008s,PASSED
+"mouseOver(findTestObject(""Actpol_Scripts/Menu navigation/Generiek/Generiek""))",Chrome 77.0.3865.90,Mouse over to Generic tab,,2019-09-24 18:19:09,2019-09-24 18:19:10,0.492s,PASSED
+"log.logInfo(""Successfully logged"")",Chrome 77.0.3865.90,,,2019-09-24 18:19:10,2019-09-24 18:19:10,0.005s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:19:10,2019-09-24 18:19:12,2.010s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/MBES18 TAB""))",Chrome 77.0.3865.90,Click MBES tab,,2019-09-24 18:19:12,2019-09-24 18:19:12,0.454s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:19:12,2019-09-24 18:19:14,2.008s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/MBES18 TAB""))",Chrome 77.0.3865.90,Click MBES tab,,2019-09-24 18:19:14,2019-09-24 18:19:15,0.313s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:19:15,2019-09-24 18:19:17,2.009s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/MBES18 TAB""))",Chrome 77.0.3865.90,Click MBES tab,,2019-09-24 18:19:17,2019-09-24 18:19:17,0.252s,PASSED
+"log.logInfo(""Clicking MBES18 tab "")",Chrome 77.0.3865.90,,,2019-09-24 18:19:17,2019-09-24 18:19:17,0.003s,PASSED
+delay(3),Chrome 77.0.3865.90,,,2019-09-24 18:19:17,2019-09-24 18:19:20,3.009s,PASSED
+takeScreenshot(),Chrome 77.0.3865.90,,,2019-09-24 18:19:20,2019-09-24 18:19:21,0.567s,PASSED
+"log.logInfo(""MBES18 module is displayed"")",Chrome 77.0.3865.90,,,2019-09-24 18:19:21,2019-09-24 18:19:21,0.012s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:19:21,2019-09-24 18:19:22,1.008s,PASSED
+"optie = getText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-558/optie""))",Chrome 77.0.3865.90,Get text from the feild,,2019-09-24 18:19:22,2019-09-24 18:19:55,32.996s,PASSED
+"log.logInfo(""Grid is shown contains columns mentioned ::"" + optie)",Chrome 77.0.3865.90,,,2019-09-24 18:19:55,2019-09-24 18:19:55,0.004s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:19:55,2019-09-24 18:19:56,1.009s,PASSED
+"vlg = getText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-558/Vlg. Nummer""))",Chrome 77.0.3865.90,Get text from the feild,,2019-09-24 18:19:56,2019-09-24 18:19:56,0.601s,PASSED
+"log.logInfo(""Grid is shown contains columns mentioned ::"" + vlg)",Chrome 77.0.3865.90,,,2019-09-24 18:19:56,2019-09-24 18:19:56,0.006s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:19:56,2019-09-24 18:19:57,1.008s,PASSED
+"datam = getText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-558/Datum Incident""))",Chrome 77.0.3865.90,Get text from the feild,,2019-09-24 18:19:57,2019-09-24 18:19:58,0.463s,PASSED
+"log.logInfo(""Grid is shown contains columns mentioned ::"" + datam)",Chrome 77.0.3865.90,,,2019-09-24 18:19:58,2019-09-24 18:19:58,0.005s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:19:58,2019-09-24 18:19:59,1.008s,PASSED
+"org = getText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-558/Organisatie""))",Chrome 77.0.3865.90,Get text from the feild,,2019-09-24 18:19:59,2019-09-24 18:19:59,0.386s,PASSED
+"log.logInfo(""Grid is shown contains columns mentioned ::"" + org)",Chrome 77.0.3865.90,,,2019-09-24 18:19:59,2019-09-24 18:19:59,0.013s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:19:59,2019-09-24 18:20:00,1.012s,PASSED
+"voornaam = getText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-558/Voornaam""))",Chrome 77.0.3865.90,Get text from the feild,,2019-09-24 18:20:00,2019-09-24 18:20:01,0.452s,PASSED
+"log.logInfo(""Grid is shown contains columns mentioned ::"" + voornaam)",Chrome 77.0.3865.90,,,2019-09-24 18:20:01,2019-09-24 18:20:01,0.006s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:20:01,2019-09-24 18:20:02,1.006s,PASSED
+"achternaam = getText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-558/Achternaam""))",Chrome 77.0.3865.90,Get text from the feild,,2019-09-24 18:20:02,2019-09-24 18:20:02,0.394s,PASSED
+"log.logInfo(""Grid is shown contains columns mentioned ::"" + achternaam)",Chrome 77.0.3865.90,,,2019-09-24 18:20:02,2019-09-24 18:20:02,0.003s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:20:02,2019-09-24 18:20:03,1.007s,PASSED
+"geb = getText(findTestObject(""JIRA/A Relese 6.6/ACTPOL-558/Geboortedatum""))",Chrome 77.0.3865.90,Get text from the feild,,2019-09-24 18:20:03,2019-09-24 18:20:03,0.451s,PASSED
+"log.logInfo(""Grid is shown contains columns mentioned ::"" + geb)",Chrome 77.0.3865.90,,,2019-09-24 18:20:03,2019-09-24 18:20:03,0.003s,PASSED
+"log.logInfo(""MBES18 module a grid will shown in Arrestanten, with the Options Vrnummer, Datum incident, Organisatie,Voornaam, Achternaam and  Geboortedatum."")",Chrome 77.0.3865.90,,,2019-09-24 18:20:03,2019-09-24 18:20:03,0.003s,PASSED
+,,,,,,,
+Test Cases/JIRA Tasks/Release 6.6/ACTPOL-559,Chrome 77.0.3865.90,"Description:
+Per incident a new record should be created.
+This should contain tab registratie, Personalia, Inbewaringstellings c.q. Plaatsingegevens, Gedrag/Medisch, Incidenten, Overige gegevens, Bezittingen/Bagage, Documenten.
+In other task we will cover the various tabs. This task contains the registratie tab.
+
+Solution:
+Create the record for MBES18 records.
+This should contain tab registratie, Personalia, Inbewaringstellings c.q. Plaatsingegevens, Gedrag/Medisch, Incidenten, Overige gegevens, Bezittingen/Bagage, Documenten.
+In other task we will cover the various tabs. This task contains the registratie tab.
+
+Testplan:
+Step 1: Go to Opsporing - MBES18
+Step 2: Enter all field in tab Registratie
+Step 3: Save record
+
+Navigation:
+Opsporing - MBES18",ACTPOL-559,2019-09-24 18:20:06,2019-09-24 18:21:59,1m - 53.227s,PASSED
+"callTestCase(findTestCase(""main/Actpol_Login_testenv""), [:], STOP_ON_FAILURE)",Chrome 77.0.3865.90,Login to the application,,2019-09-24 18:20:07,2019-09-24 18:20:29,22.755s,PASSED
+log = new com.kms.katalon.core.logging.KeywordLogger(),Chrome 77.0.3865.90,,,2019-09-24 18:20:29,2019-09-24 18:20:29,0.007s,PASSED
+delay(6),Chrome 77.0.3865.90,,,2019-09-24 18:20:29,2019-09-24 18:20:35,6.021s,PASSED
+"mouseOver(findTestObject(""Actpol_Scripts/Menu navigation/Generiek/Generiek""))",Chrome 77.0.3865.90,Mouse over to Generic tab,,2019-09-24 18:20:35,2019-09-24 18:20:36,0.345s,PASSED
+"log.logInfo(""Successfully logged"")",Chrome 77.0.3865.90,,,2019-09-24 18:20:36,2019-09-24 18:20:36,0.003s,PASSED
+delay(4),Chrome 77.0.3865.90,,,2019-09-24 18:20:36,2019-09-24 18:20:40,4.010s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/MBES18 TAB""))",Chrome 77.0.3865.90,Click MBES tab,,2019-09-24 18:20:40,2019-09-24 18:20:40,0.395s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:20:40,2019-09-24 18:20:42,2.011s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/MBES18 TAB""), OPTIONAL)",Chrome 77.0.3865.90,Click MBES tab,,2019-09-24 18:20:42,2019-09-24 18:20:42,0.288s,PASSED
+"log.logInfo(""Clicking MBES18 tab "")",Chrome 77.0.3865.90,,,2019-09-24 18:20:42,2019-09-24 18:20:42,0.003s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:20:42,2019-09-24 18:20:43,1.010s,PASSED
+delay(5),Chrome 77.0.3865.90,,,2019-09-24 18:20:43,2019-09-24 18:20:48,5.011s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/mbes new""))",Chrome 77.0.3865.90,Click new btn,,2019-09-24 18:20:48,2019-09-24 18:20:49,0.646s,PASSED
+"log.logInfo(""Clicking MBES18 new button "")",Chrome 77.0.3865.90,,,2019-09-24 18:20:49,2019-09-24 18:20:49,0.003s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:20:49,2019-09-24 18:20:50,1.011s,PASSED
+takeScreenshot(),Chrome 77.0.3865.90,,,2019-09-24 18:20:50,2019-09-24 18:20:51,0.504s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:20:51,2019-09-24 18:20:52,1.006s,PASSED
+"comment(""Checking This should contain tab registratie, Personalia, Inbewaringstellings c.q. Plaatsingegevens, Gedrag/Medisch, Incidenten, Overige gegevens, Bezittingen/Bagage, Documenten. "")",Chrome 77.0.3865.90,,,2019-09-24 18:20:52,2019-09-24 18:20:52,0.037s,PASSED
+"reg = getText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/Registratie tab""))",Chrome 77.0.3865.90,Registration tab is visible in in the grid.,,2019-09-24 18:20:52,2019-09-24 18:20:52,0.462s,PASSED
+"log.logInfo(""Grid is shown contains tabs mentioned ::"" + reg)",Chrome 77.0.3865.90,,,2019-09-24 18:20:52,2019-09-24 18:20:52,0.003s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:20:52,2019-09-24 18:20:53,1.006s,PASSED
+"per = getText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/Personalia tab""))",Chrome 77.0.3865.90,Personalia tab is visible in in the grid.,,2019-09-24 18:20:53,2019-09-24 18:20:54,0.406s,PASSED
+"log.logInfo(""Grid is shown contains columns mentioned ::"" + per)",Chrome 77.0.3865.90,,,2019-09-24 18:20:54,2019-09-24 18:20:54,0.004s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:20:54,2019-09-24 18:20:55,1.007s,PASSED
+"inb = getText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/INBEWARINGSTELLINGS C.Q. PLAATSINGSGEGEVENS tab""))",Chrome 77.0.3865.90,INBEWARINGSTELLINGS C.Q. PLAATSINGSGEGEVENS tab is visible in in the grid.,,2019-09-24 18:20:55,2019-09-24 18:20:55,0.402s,PASSED
+"log.logInfo(""Grid is shown contains columns mentioned ::"" + inb)",Chrome 77.0.3865.90,,,2019-09-24 18:20:55,2019-09-24 18:20:55,0.002s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:20:55,2019-09-24 18:20:56,1.007s,PASSED
+"ged = getText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/4 GEDRAG_MEDISCH/GEDRAG MEDISCH tab""))",Chrome 77.0.3865.90,GEDRAG/MEDISCH tab is visible in in the grid.,,2019-09-24 18:20:56,2019-09-24 18:20:56,0.409s,PASSED
+"log.logInfo(""Grid is shown contains columns mentioned ::"" + ged)",Chrome 77.0.3865.90,,,2019-09-24 18:20:56,2019-09-24 18:20:56,0.003s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:20:56,2019-09-24 18:20:57,1.009s,PASSED
+"inc = getText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/INCIDENTEN tab""))",Chrome 77.0.3865.90,INCIDENTEN tab is visible in in the grid.,,2019-09-24 18:20:57,2019-09-24 18:20:58,0.370s,PASSED
+"log.logInfo(""Grid is shown contains columns mentioned ::"" + inc)",Chrome 77.0.3865.90,,,2019-09-24 18:20:58,2019-09-24 18:20:58,0.003s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:20:58,2019-09-24 18:20:59,1.007s,PASSED
+"over = getText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/OVERIGE GEGEVENS tab""))",Chrome 77.0.3865.90,OVERIGE GEGEVENS tab is visible in in the grid.,,2019-09-24 18:20:59,2019-09-24 18:20:59,0.427s,PASSED
+"log.logInfo(""Grid is shown contains columns mentioned ::"" + over)",Chrome 77.0.3865.90,,,2019-09-24 18:20:59,2019-09-24 18:20:59,0.003s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:20:59,2019-09-24 18:21:00,1.009s,PASSED
+"begi = getText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/7 BEZITTINGEN_BAGAGE/BEZITTINGEN_BAGAGE tab""))",Chrome 77.0.3865.90,BEZITTINGEN/BAGAGE tab is visible in in the grid.,,2019-09-24 18:21:00,2019-09-24 18:21:01,0.417s,PASSED
+"log.logInfo(""Grid is shown contains columns mentioned ::"" + begi)",Chrome 77.0.3865.90,,,2019-09-24 18:21:01,2019-09-24 18:21:01,0.002s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:01,2019-09-24 18:21:02,1.005s,PASSED
+"comment(""Data entering in Registratie tab"")",Chrome 77.0.3865.90,,,2019-09-24 18:21:02,2019-09-24 18:21:02,0.005s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:02,2019-09-24 18:21:03,1.007s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/Registratie new""))",Chrome 77.0.3865.90,Click new btn in Registratie,,2019-09-24 18:21:03,2019-09-24 18:21:03,0.578s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:03,2019-09-24 18:21:03,0.005s,NOT_RUN
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie save""))",Chrome 77.0.3865.90,Click save btn,,2019-09-24 18:21:03,2019-09-24 18:21:03,0.006s,NOT_RUN
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:03,2019-09-24 18:21:03,0.009s,NOT_RUN
+getAlertText(),Chrome 77.0.3865.90,,,2019-09-24 18:21:03,2019-09-24 18:21:03,0.004s,NOT_RUN
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:03,2019-09-24 18:21:03,0.003s,NOT_RUN
+acceptAlert(),Chrome 77.0.3865.90,,,2019-09-24 18:21:03,2019-09-24 18:21:03,0.003s,NOT_RUN
+delay(3),Chrome 77.0.3865.90,,,2019-09-24 18:21:03,2019-09-24 18:21:03,0.004s,NOT_RUN
+takeScreenshot(),Chrome 77.0.3865.90,,,2019-09-24 18:21:03,2019-09-24 18:21:03,0.004s,NOT_RUN
+"log.logInfo(""without throwing error data is saved the grid..."")",Chrome 77.0.3865.90,,,2019-09-24 18:21:03,2019-09-24 18:21:03,0.003s,NOT_RUN
+"log.logInfo(""not getting error message"")",Chrome 77.0.3865.90,,,2019-09-24 18:21:03,2019-09-24 18:21:03,0.003s,NOT_RUN
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/Registratie new""))",Chrome 77.0.3865.90,Click new btn in Registratie,,2019-09-24 18:21:03,2019-09-24 18:21:03,0.006s,NOT_RUN
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:03,2019-09-24 18:21:04,1.008s,PASSED
+"selectOptionByValue(findTestObject(""Object Repository/temp/Page_ACTPOL Test/select_KORPS POLITIE CURACAOOPENBARE MINISTERIEAMBULANCESKSBRANDWEER""), ""1"", true)",Chrome 77.0.3865.90,,,2019-09-24 18:21:04,2019-09-24 18:21:04,0.003s,NOT_RUN
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie van 1""), ""KORPS POLITIE CURACAO"", false)",Chrome 77.0.3865.90,Select required dropdown fro the list,,2019-09-24 18:21:04,2019-09-24 18:21:05,0.574s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:05,2019-09-24 18:21:06,1.006s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie Naar 1""), ""OPENBARE MINISTERIE"", false)",Chrome 77.0.3865.90,Select required dropdown fro the list,,2019-09-24 18:21:06,2019-09-24 18:21:06,0.550s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:06,2019-09-24 18:21:07,1.007s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie van 2""), ""AMBULANCE"", false)",Chrome 77.0.3865.90,Select required dropdown fro the list,,2019-09-24 18:21:07,2019-09-24 18:21:08,0.552s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:08,2019-09-24 18:21:09,1.006s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie Naar 2""), ""SKS"", false)",Chrome 77.0.3865.90,Select required dropdown fro the list,,2019-09-24 18:21:09,2019-09-24 18:21:10,0.578s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:10,2019-09-24 18:21:11,1.009s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Behandeld door""), ""Katalon testing :: Behandeld door"")",Chrome 77.0.3865.90,Enter the text from the feild,,2019-09-24 18:21:11,2019-09-24 18:21:12,1.615s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:12,2019-09-24 18:21:13,1.008s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Telefoon""), ""123456789"")",Chrome 77.0.3865.90,Enter the text from the feild,,2019-09-24 18:21:13,2019-09-24 18:21:14,0.777s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:14,2019-09-24 18:21:15,1.003s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/E-Mail""), ""test@gmail.com"")",Chrome 77.0.3865.90,Enter the text from the feild,,2019-09-24 18:21:15,2019-09-24 18:21:16,0.847s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:16,2019-09-24 18:21:17,1.008s,PASSED
+"setMaskedText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Datum""), ""23"")",Chrome 77.0.3865.90,Enter the date,,2019-09-24 18:21:17,2019-09-24 18:21:17,0.006s,NOT_RUN
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Datum calendar icon""))",Chrome 77.0.3865.90,,,2019-09-24 18:21:17,2019-09-24 18:21:17,0.666s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:21:17,2019-09-24 18:21:19,2.005s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Rightmonth""), ""sep"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:21:19,2019-09-24 18:21:20,0.401s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:20,2019-09-24 18:21:21,1.006s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Rightyear""), ""2019"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:21:21,2019-09-24 18:21:21,0.435s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:21,2019-09-24 18:21:22,1.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Date/16th right frame""))",Chrome 77.0.3865.90,,,2019-09-24 18:21:22,2019-09-24 18:21:23,0.562s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:23,2019-09-24 18:21:24,1.008s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie save""))",Chrome 77.0.3865.90,Click save btn,,2019-09-24 18:21:24,2019-09-24 18:21:24,0.525s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:24,2019-09-24 18:21:25,1.035s,PASSED
+takeScreenshot(),Chrome 77.0.3865.90,,,2019-09-24 18:21:25,2019-09-24 18:21:26,0.526s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:26,2019-09-24 18:21:27,1.008s,PASSED
+"comment(""Editing existing record in Registratie"")",Chrome 77.0.3865.90,,,2019-09-24 18:21:27,2019-09-24 18:21:27,0.014s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-559/edit existing record in registratie""))",Chrome 77.0.3865.90,Edit the existing record ,,2019-09-24 18:21:27,2019-09-24 18:21:28,0.661s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:21:28,2019-09-24 18:21:30,2.010s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie van 1""), ""KORPS POLITIE CURACAO"", false)",Chrome 77.0.3865.90,Select required dropdown fro the list,,2019-09-24 18:21:30,2019-09-24 18:21:30,0.396s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:30,2019-09-24 18:21:31,1.006s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie Naar 1""), ""OPENBARE MINISTERIE"", false)",Chrome 77.0.3865.90,Select required dropdown fro the list,,2019-09-24 18:21:31,2019-09-24 18:21:32,0.413s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:32,2019-09-24 18:21:33,1.006s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie van 2""), ""AMBULANCE"", false)",Chrome 77.0.3865.90,Select required dropdown fro the list,,2019-09-24 18:21:33,2019-09-24 18:21:33,0.394s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:33,2019-09-24 18:21:34,1.007s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie Naar 2""), ""SKS"", false)",Chrome 77.0.3865.90,Select required dropdown fro the list,,2019-09-24 18:21:34,2019-09-24 18:21:34,0.410s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:34,2019-09-24 18:21:35,1.010s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Behandeld door""), ""Katalon testing :: Behandeld door"")",Chrome 77.0.3865.90,Select required dropdown fro the list,,2019-09-24 18:21:35,2019-09-24 18:21:37,1.487s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:37,2019-09-24 18:21:38,1.008s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Telefoon""), ""123456789"")",Chrome 77.0.3865.90,Enter the text from the feild,,2019-09-24 18:21:38,2019-09-24 18:21:39,0.874s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:39,2019-09-24 18:21:40,1.007s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/E-Mail""), ""test@gmail.com"")",Chrome 77.0.3865.90,Enter the text from the feild,,2019-09-24 18:21:40,2019-09-24 18:21:41,0.865s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:41,2019-09-24 18:21:42,1.007s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Datum""), ""25/10/2019"")",Chrome 77.0.3865.90,Enter the date,,2019-09-24 18:21:42,2019-09-24 18:21:42,0.598s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:42,2019-09-24 18:21:43,1.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie save""))",Chrome 77.0.3865.90,Click save btn,,2019-09-24 18:21:43,2019-09-24 18:21:44,0.495s,PASSED
+"log.logInfo(""edit mode working fine "")",Chrome 77.0.3865.90,,,2019-09-24 18:21:44,2019-09-24 18:21:44,0.003s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:44,2019-09-24 18:21:45,1.010s,PASSED
+"comment(""View existing record in Registratie"")",Chrome 77.0.3865.90,,,2019-09-24 18:21:45,2019-09-24 18:21:45,0.005s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:45,2019-09-24 18:21:46,1.009s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-559/View existing record""))",Chrome 77.0.3865.90,Click view mode for existing saved record,,2019-09-24 18:21:46,2019-09-24 18:21:46,0.619s,PASSED
+"log.logInfo(""View mode is displaying new button "")",Chrome 77.0.3865.90,,,2019-09-24 18:21:46,2019-09-24 18:21:46,0.007s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:46,2019-09-24 18:21:47,1.014s,PASSED
+takeScreenshot(),Chrome 77.0.3865.90,,,2019-09-24 18:21:47,2019-09-24 18:21:48,0.386s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:48,2019-09-24 18:21:49,1.005s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-559/View mode close btn""))",Chrome 77.0.3865.90,Click the close btn,,2019-09-24 18:21:49,2019-09-24 18:21:49,0.561s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:49,2019-09-24 18:21:50,1.010s,PASSED
+"comment(""View existing record in Registratie"")",Chrome 77.0.3865.90,,,2019-09-24 18:21:50,2019-09-24 18:21:50,0.013s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:50,2019-09-24 18:21:51,1.011s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-559/Delete existing""))",Chrome 77.0.3865.90,Click delete btn,,2019-09-24 18:21:51,2019-09-24 18:21:52,0.584s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:52,2019-09-24 18:21:53,1.007s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-559/Conform delete""))",Chrome 77.0.3865.90,Re conform the delete btn,,2019-09-24 18:21:53,2019-09-24 18:21:54,0.619s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:54,2019-09-24 18:21:55,1.005s,PASSED
+takeScreenshot(),Chrome 77.0.3865.90,,,2019-09-24 18:21:55,2019-09-24 18:21:55,0.427s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:21:55,2019-09-24 18:21:56,1.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/registratie tab""))",Chrome 77.0.3865.90,,,2019-09-24 18:21:56,2019-09-24 18:21:57,0.562s,PASSED
+,,,,,,,
+Test Cases/JIRA Tasks/Release 6.6/ACTPOL-560,Chrome 77.0.3865.90,"Description:
+Possibility to register an Vreemdeling and Caretaker/husband etc
+
+Solution:
+Create a tab Called Personalia in the MBES18 module to register a Persoon as in rol/proces and in addition to this fields for registering an additional person as in Vreemdeling tab Toegang.
+
+Testplan:
+Step 1: Go to Opsporing - MBES18
+Step 2: Enter mandatory fields and save
+Step 2: Go to Tab personalia and enter a new person, also enter a person in field Garantsteller and save record.
+Step 4: record is saved with bot Person information displayed.
+
+Navigation:
+Opsporing - MBES18 -Tab Personalia",ACTPOL-560,2019-09-24 18:21:59,2019-09-24 18:24:12,2m - 12.956s,PASSED
+"callTestCase(findTestCase(""main/Actpol_Login_testenv""), [:], STOP_ON_FAILURE)",Chrome 77.0.3865.90,Login to the application,,2019-09-24 18:22:00,2019-09-24 18:22:20,19.960s,PASSED
+log = new com.kms.katalon.core.logging.KeywordLogger(),Chrome 77.0.3865.90,,,2019-09-24 18:22:20,2019-09-24 18:22:20,0.004s,PASSED
+delay(6),Chrome 77.0.3865.90,,,2019-09-24 18:22:20,2019-09-24 18:22:26,6.011s,PASSED
+"mouseOver(findTestObject(""Actpol_Scripts/Menu navigation/Generiek/Generiek""))",Chrome 77.0.3865.90,Mouse over to Generic tab,,2019-09-24 18:22:26,2019-09-24 18:22:26,0.312s,PASSED
+"log.logInfo(""Successfully logged"")",Chrome 77.0.3865.90,,,2019-09-24 18:22:26,2019-09-24 18:22:26,0.003s,PASSED
+delay(4),Chrome 77.0.3865.90,,,2019-09-24 18:22:26,2019-09-24 18:22:30,4.009s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/MBES18 TAB""))",Chrome 77.0.3865.90,Click MBES tab,,2019-09-24 18:22:30,2019-09-24 18:22:30,0.290s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:22:30,2019-09-24 18:22:32,2.008s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/MBES18 TAB""), OPTIONAL)",Chrome 77.0.3865.90,Click MBES tab,,2019-09-24 18:22:32,2019-09-24 18:22:33,0.230s,PASSED
+"log.logInfo(""Clicking MBES18 tab "")",Chrome 77.0.3865.90,,,2019-09-24 18:22:33,2019-09-24 18:22:33,0.004s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:22:33,2019-09-24 18:22:34,1.007s,PASSED
+delay(8),Chrome 77.0.3865.90,,,2019-09-24 18:22:34,2019-09-24 18:22:42,8.007s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/mbes new""))",Chrome 77.0.3865.90,Click new btn,,2019-09-24 18:22:42,2019-09-24 18:22:42,0.624s,PASSED
+"log.logInfo(""Clicking MBES18 new button "")",Chrome 77.0.3865.90,,,2019-09-24 18:22:42,2019-09-24 18:22:42,0.003s,PASSED
+delay(6),Chrome 77.0.3865.90,,,2019-09-24 18:22:42,2019-09-24 18:22:48,6.010s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/Registratie new""))",Chrome 77.0.3865.90,Click new btn in Registratie,,2019-09-24 18:22:48,2019-09-24 18:22:49,0.586s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:22:49,2019-09-24 18:22:50,1.007s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie van 1""), ""KORPS POLITIE CURACAO"", false)",Chrome 77.0.3865.90,Select required dropdown fro the list,,2019-09-24 18:22:50,2019-09-24 18:22:50,0.498s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:22:50,2019-09-24 18:22:51,1.010s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie Naar 1""), ""OPENBARE MINISTERIE"", false)",Chrome 77.0.3865.90,Select required dropdown fro the list,,2019-09-24 18:22:51,2019-09-24 18:22:52,0.491s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:22:52,2019-09-24 18:22:53,1.005s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie van 2""), ""AMBULANCE"", false)",Chrome 77.0.3865.90,Select required dropdown fro the list,,2019-09-24 18:22:53,2019-09-24 18:22:53,0.586s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:22:53,2019-09-24 18:22:54,1.006s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie Naar 2""), ""SKS"", false)",Chrome 77.0.3865.90,Select required dropdown fro the list,,2019-09-24 18:22:54,2019-09-24 18:22:55,0.506s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:22:55,2019-09-24 18:22:56,1.006s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Behandeld door""), ""Katalon testing :: Behandeld door"")",Chrome 77.0.3865.90,Enter the text from the feild,,2019-09-24 18:22:56,2019-09-24 18:22:58,1.605s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:22:58,2019-09-24 18:22:59,1.006s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Telefoon""), ""123456789"")",Chrome 77.0.3865.90,Enter the text from the feild,,2019-09-24 18:22:59,2019-09-24 18:22:59,0.770s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:22:59,2019-09-24 18:23:00,1.009s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/E-Mail""), ""test@gmail.com"")",Chrome 77.0.3865.90,Enter the text from the feild,,2019-09-24 18:23:00,2019-09-24 18:23:01,0.864s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:23:01,2019-09-24 18:23:02,1.033s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Datum""), ""23/08/2019"")",Chrome 77.0.3865.90,Enter the date,,2019-09-24 18:23:02,2019-09-24 18:23:02,0.007s,NOT_RUN
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Datum calendar icon""))",Chrome 77.0.3865.90,,,2019-09-24 18:23:02,2019-09-24 18:23:03,0.651s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:23:03,2019-09-24 18:23:05,2.004s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Rightmonth""), ""sep"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:23:05,2019-09-24 18:23:05,0.397s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:23:05,2019-09-24 18:23:06,1.005s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Rightyear""), ""2019"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:23:06,2019-09-24 18:23:07,0.437s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:23:07,2019-09-24 18:23:08,1.004s,PASSED
+"click(findTestObject(""Actpol_Scripts/Date/16th right frame""))",Chrome 77.0.3865.90,,,2019-09-24 18:23:08,2019-09-24 18:23:08,0.543s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:23:08,2019-09-24 18:23:09,1.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie save""))",Chrome 77.0.3865.90,Click save btn,,2019-09-24 18:23:09,2019-09-24 18:23:10,0.627s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:23:10,2019-09-24 18:23:11,1.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/registratie tab""))",Chrome 77.0.3865.90,Click on Registratie tab,,2019-09-24 18:23:11,2019-09-24 18:23:11,0.532s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:23:11,2019-09-24 18:23:12,1.009s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/2 Personalia/Personalia tab""))",Chrome 77.0.3865.90,Click on Personalia tab,,2019-09-24 18:23:12,2019-09-24 18:23:13,0.576s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:23:13,2019-09-24 18:23:15,2.009s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/MBSC SAVE""))",Chrome 77.0.3865.90,Click Save tab,,2019-09-24 18:23:15,2019-09-24 18:23:16,0.560s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:23:16,2019-09-24 18:23:17,1.005s,PASSED
+"Achternaam = getText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/2 Personalia/Achternaam error messgae""))",Chrome 77.0.3865.90,Checking Error message personalia tab,,2019-09-24 18:23:17,2019-09-24 18:23:17,0.415s,PASSED
+"achternaamverify = ""Dit is een vereiste veld""",Chrome 77.0.3865.90,,,2019-09-24 18:23:17,2019-09-24 18:23:17,0.002s,PASSED
+log.logInfo(Achternaam),Chrome 77.0.3865.90,,,2019-09-24 18:23:17,2019-09-24 18:23:17,0.002s,PASSED
+if (Achternaam == achternaamverify),Chrome 77.0.3865.90,,,2019-09-24 18:23:17,2019-09-24 18:23:17,0.007s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:23:17,2019-09-24 18:23:19,2.007s,PASSED
+"Garantsteller = getText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/2 Personalia/Garantsteller error message""))",Chrome 77.0.3865.90,Checking Error message personalia tab,,2019-09-24 18:23:19,2019-09-24 18:23:19,0.376s,PASSED
+"Garantstellerverify = ""Dit is een vereiste veld""",Chrome 77.0.3865.90,,,2019-09-24 18:23:19,2019-09-24 18:23:19,0.001s,PASSED
+log.logInfo(Garantsteller),Chrome 77.0.3865.90,,,2019-09-24 18:23:19,2019-09-24 18:23:19,0.004s,PASSED
+if (Garantsteller == Garantstellerverify),Chrome 77.0.3865.90,,,2019-09-24 18:23:19,2019-09-24 18:23:19,0.005s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:23:19,2019-09-24 18:23:21,2.006s,PASSED
+"comment(""Checking button how it is working"")",Chrome 77.0.3865.90,,,2019-09-24 18:23:21,2019-09-24 18:23:21,0.009s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/2 Personalia/Personalia Achternaam new""))",Chrome 77.0.3865.90,Click Achternaam new btn,,2019-09-24 18:23:21,2019-09-24 18:23:22,0.692s,PASSED
+delay(4),Chrome 77.0.3865.90,,,2019-09-24 18:23:22,2019-09-24 18:23:26,4.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/2 Personalia/Select default persoon""), OPTIONAL)",Chrome 77.0.3865.90,Select default persoon,,2019-09-24 18:23:26,2019-09-24 18:23:29,2.948s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:23:29,2019-09-24 18:23:31,2.009s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/2 Personalia/new persoon close btn""), OPTIONAL)",Chrome 77.0.3865.90,Click close btn,,2019-09-24 18:23:31,2019-09-24 18:23:32,0.674s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:23:32,2019-09-24 18:23:34,2.012s,PASSED
+"comment(""Checking text box how it is working"")",Chrome 77.0.3865.90,,,2019-09-24 18:23:34,2019-09-24 18:23:34,0.010s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/2 Personalia/Achternaam text""), ""aa"")",Chrome 77.0.3865.90,Enter text from the feild,,2019-09-24 18:23:34,2019-09-24 18:23:35,0.726s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:23:35,2019-09-24 18:23:37,2.011s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/2 Personalia/Achternaam text lb""))",Chrome 77.0.3865.90,Select required dropdown,,2019-09-24 18:23:37,2019-09-24 18:23:37,0.583s,PASSED
+"comment(""Checking edit btn how it is working"")",Chrome 77.0.3865.90,,,2019-09-24 18:23:37,2019-09-24 18:23:37,0.007s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:23:37,2019-09-24 18:23:38,1.007s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-560/Edit btn check in personaila btn""))",Chrome 77.0.3865.90,Click edit btn,,2019-09-24 18:23:38,2019-09-24 18:23:39,0.668s,PASSED
+delay(6),Chrome 77.0.3865.90,,,2019-09-24 18:23:39,2019-09-24 18:23:45,6.006s,PASSED
+"sendKeys(findTestObject(""JIRA/A Relese 6.6/ACTPOL-560/Edit btn check in personaila btn""), ""124"")",Chrome 77.0.3865.90,Enter text from the feild,,2019-09-24 18:23:45,2019-09-24 18:23:45,0.420s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:23:45,2019-09-24 18:23:46,1.005s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-560/Click new persoon save popup""))",Chrome 77.0.3865.90,Click save btn,,2019-09-24 18:23:46,2019-09-24 18:23:47,0.679s,PASSED
+delay(4),Chrome 77.0.3865.90,,,2019-09-24 18:23:47,2019-09-24 18:23:51,4.007s,PASSED
+"comment(""Checking Search btn how it is working"")",Chrome 77.0.3865.90,,,2019-09-24 18:23:51,2019-09-24 18:23:51,0.010s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-560/Achternaam search btn click""))",Chrome 77.0.3865.90,Click Search btn,,2019-09-24 18:23:51,2019-09-24 18:23:51,0.539s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:23:51,2019-09-24 18:23:52,1.006s,PASSED
+"scrollToPosition(10, 7)",Chrome 77.0.3865.90,Move to position,,2019-09-24 18:23:52,2019-09-24 18:23:53,0.044s,PASSED
+delay(4),Chrome 77.0.3865.90,,,2019-09-24 18:23:53,2019-09-24 18:23:57,4.011s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-560/Search close btn""))",Chrome 77.0.3865.90,Click on close btn,,2019-09-24 18:23:57,2019-09-24 18:23:57,0.706s,PASSED
+delay(6),Chrome 77.0.3865.90,,,2019-09-24 18:23:57,2019-09-24 18:24:03,6.011s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/2 Personalia/Garantsteller new""), ""aa"")",Chrome 77.0.3865.90,Enter text from the feild,,2019-09-24 18:24:03,2019-09-24 18:24:04,0.614s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:24:04,2019-09-24 18:24:06,2.007s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/2 Personalia/Garantsteller new lb""))",Chrome 77.0.3865.90,Select required dropdown,,2019-09-24 18:24:06,2019-09-24 18:24:06,0.547s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:24:06,2019-09-24 18:24:07,1.007s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/2 Personalia/Personalia tab""))",Chrome 77.0.3865.90,Click on Personalia tab,,2019-09-24 18:24:07,2019-09-24 18:24:08,0.519s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:24:08,2019-09-24 18:24:09,1.008s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/MBSC SAVE""))",Chrome 77.0.3865.90,Click save btn,,2019-09-24 18:24:09,2019-09-24 18:24:10,0.552s,PASSED
+,,,,,,,
+Test Cases/JIRA Tasks/Release 6.6/ACTPOL-561,Chrome 77.0.3865.90,"Description:
+In this MBES18 module there should be possibility to enter Bewaringstelling (detainment information) and plaatsingsgegevens (location information).
+
+Solution:
+Create a tab called Bewaringstellings c.q. Plaatsingsgegevens.
+This tab should contain the field in added screenshot.
+
+Testplan:
+Step 1: Go to Opsporing - MBES18 fill in required fields and click save
+Step 2: Go to Tab Bewaringstellings c.q. Plaatsingsgegevens fill in all fields
+Step 3: save record.
+
+Navigation:
+Opsporing - MBES18 - Tab Bewaringstellings c.q. Plaatsingsgegevens",ACTPOL-561,2019-09-24 18:24:12,2019-09-24 18:27:04,2m - 52.155s,PASSED
+"callTestCase(findTestCase(""main/Actpol_Login_testenv""), [:], STOP_ON_FAILURE)",Chrome 77.0.3865.90,Login to the application,,2019-09-24 18:24:13,2019-09-24 18:24:34,21.058s,PASSED
+log = new com.kms.katalon.core.logging.KeywordLogger(),Chrome 77.0.3865.90,,,2019-09-24 18:24:34,2019-09-24 18:24:34,0.003s,PASSED
+delay(6),Chrome 77.0.3865.90,,,2019-09-24 18:24:34,2019-09-24 18:24:40,6.007s,PASSED
+"mouseOver(findTestObject(""Actpol_Scripts/Menu navigation/Generiek/Generiek""))",Chrome 77.0.3865.90,Mouse over to Generic tab,,2019-09-24 18:24:40,2019-09-24 18:24:40,0.279s,PASSED
+"log.logInfo(""Successfully logged"")",Chrome 77.0.3865.90,,,2019-09-24 18:24:40,2019-09-24 18:24:40,0.004s,PASSED
+delay(4),Chrome 77.0.3865.90,,,2019-09-24 18:24:40,2019-09-24 18:24:44,4.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/MBES18 TAB""))",Chrome 77.0.3865.90,Click MBES tab,,2019-09-24 18:24:44,2019-09-24 18:24:45,0.327s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:24:45,2019-09-24 18:24:47,2.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/MBES18 TAB""), OPTIONAL)",Chrome 77.0.3865.90,Click MBES tab,,2019-09-24 18:24:47,2019-09-24 18:24:47,0.284s,PASSED
+"log.logInfo(""Clicking MBES18 tab "")",Chrome 77.0.3865.90,,,2019-09-24 18:24:47,2019-09-24 18:24:47,0.003s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:24:47,2019-09-24 18:24:48,1.011s,PASSED
+delay(8),Chrome 77.0.3865.90,,,2019-09-24 18:24:48,2019-09-24 18:24:56,8.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/mbes new""))",Chrome 77.0.3865.90,Click new btn,,2019-09-24 18:24:56,2019-09-24 18:24:57,0.748s,PASSED
+"log.logInfo(""Clicking MBES18 new button "")",Chrome 77.0.3865.90,,,2019-09-24 18:24:57,2019-09-24 18:24:57,0.004s,PASSED
+delay(9),Chrome 77.0.3865.90,,,2019-09-24 18:24:57,2019-09-24 18:25:06,9.026s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/Registratie new""))",Chrome 77.0.3865.90,Click new btn in Registratie,,2019-09-24 18:25:06,2019-09-24 18:25:06,0.602s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:25:06,2019-09-24 18:25:07,1.007s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie van 1""), ""KORPS POLITIE CURACAO"", false)",Chrome 77.0.3865.90,Select required dropdown fro the list,,2019-09-24 18:25:07,2019-09-24 18:25:08,0.536s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:25:08,2019-09-24 18:25:09,1.005s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie Naar 1""), ""OPENBARE MINISTERIE"", false)",Chrome 77.0.3865.90,Select required dropdown fro the list,,2019-09-24 18:25:09,2019-09-24 18:25:09,0.575s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:25:09,2019-09-24 18:25:10,1.006s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie van 2""), ""AMBULANCE"", false)",Chrome 77.0.3865.90,Select required dropdown fro the list,,2019-09-24 18:25:10,2019-09-24 18:25:11,0.569s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:25:11,2019-09-24 18:25:12,1.006s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie Naar 2""), ""SKS"", false)",Chrome 77.0.3865.90,Select required dropdown fro the list,,2019-09-24 18:25:12,2019-09-24 18:25:13,0.703s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:25:13,2019-09-24 18:25:14,1.018s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Behandeld door""), ""Katalon testing :: Behandeld door"")",Chrome 77.0.3865.90,Enter the text from the feild,,2019-09-24 18:25:14,2019-09-24 18:25:15,1.546s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:25:15,2019-09-24 18:25:16,1.007s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Telefoon""), ""123456789"")",Chrome 77.0.3865.90,Enter the text from the feild,,2019-09-24 18:25:16,2019-09-24 18:25:17,0.724s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:25:17,2019-09-24 18:25:18,1.006s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/E-Mail""), ""test@gmail.com"")",Chrome 77.0.3865.90,Enter the text from the feild,,2019-09-24 18:25:18,2019-09-24 18:25:19,0.828s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:25:19,2019-09-24 18:25:20,1.006s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Datum""), ""23/08/2019"")",Chrome 77.0.3865.90,Enter the date,,2019-09-24 18:25:20,2019-09-24 18:25:20,0.006s,NOT_RUN
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Datum calendar icon""))",Chrome 77.0.3865.90,,,2019-09-24 18:25:20,2019-09-24 18:25:21,0.599s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:25:21,2019-09-24 18:25:23,2.010s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Rightmonth""), ""sep"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:25:23,2019-09-24 18:25:23,0.443s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:25:23,2019-09-24 18:25:24,1.006s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Rightyear""), ""2019"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:25:24,2019-09-24 18:25:24,0.409s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:25:24,2019-09-24 18:25:25,1.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Date/16th right frame""))",Chrome 77.0.3865.90,,,2019-09-24 18:25:25,2019-09-24 18:25:26,0.540s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:25:26,2019-09-24 18:25:27,1.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie save""))",Chrome 77.0.3865.90,Click save btn,,2019-09-24 18:25:27,2019-09-24 18:25:27,0.535s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:25:27,2019-09-24 18:25:28,1.008s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/registratie tab""))",Chrome 77.0.3865.90,Click on Registratie tab,,2019-09-24 18:25:28,2019-09-24 18:25:29,0.546s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:25:29,2019-09-24 18:25:30,1.008s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/2 Personalia/Personalia tab""))",Chrome 77.0.3865.90,Click on Personalia tab,,2019-09-24 18:25:30,2019-09-24 18:25:31,0.583s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:25:31,2019-09-24 18:25:33,2.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/MBSC SAVE""))",Chrome 77.0.3865.90,Click Save tab,,2019-09-24 18:25:33,2019-09-24 18:25:33,0.601s,PASSED
+"comment(""Chcking validation"")",Chrome 77.0.3865.90,,,2019-09-24 18:25:33,2019-09-24 18:25:33,0.006s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:25:33,2019-09-24 18:25:34,1.012s,PASSED
+"Achternaam = getText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/2 Personalia/Achternaam error messgae""))",Chrome 77.0.3865.90,Error message,,2019-09-24 18:25:34,2019-09-24 18:25:35,0.509s,PASSED
+"achternaamverify = ""Dit is een vereiste veld""",Chrome 77.0.3865.90,,,2019-09-24 18:25:35,2019-09-24 18:25:35,0.002s,PASSED
+log.logInfo(Achternaam),Chrome 77.0.3865.90,,,2019-09-24 18:25:35,2019-09-24 18:25:35,0.005s,PASSED
+if (Achternaam == achternaamverify),Chrome 77.0.3865.90,,,2019-09-24 18:25:35,2019-09-24 18:25:35,0.007s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:25:35,2019-09-24 18:25:37,2.007s,PASSED
+"Garantsteller = getText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/2 Personalia/Garantsteller error message""))",Chrome 77.0.3865.90,,,2019-09-24 18:25:37,2019-09-24 18:25:37,0.358s,PASSED
+"Garantstellerverify = ""Dit is een vereiste veld""",Chrome 77.0.3865.90,,,2019-09-24 18:25:37,2019-09-24 18:25:37,0.002s,PASSED
+log.logInfo(Garantsteller),Chrome 77.0.3865.90,,,2019-09-24 18:25:37,2019-09-24 18:25:37,0.002s,PASSED
+if (Garantsteller == Garantstellerverify),Chrome 77.0.3865.90,,,2019-09-24 18:25:37,2019-09-24 18:25:37,0.005s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:25:37,2019-09-24 18:25:37,0.003s,NOT_RUN
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/2 Personalia/Personalia Achternaam new""))",Chrome 77.0.3865.90,,,2019-09-24 18:25:37,2019-09-24 18:25:37,0.003s,NOT_RUN
+delay(4),Chrome 77.0.3865.90,,,2019-09-24 18:25:37,2019-09-24 18:25:37,0.003s,NOT_RUN
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/2 Personalia/Select default persoon""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-09-24 18:25:37,2019-09-24 18:25:37,0.003s,NOT_RUN
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:25:37,2019-09-24 18:25:37,0.003s,NOT_RUN
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/2 Personalia/new persoon close btn""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-09-24 18:25:37,2019-09-24 18:25:37,0.005s,NOT_RUN
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:25:37,2019-09-24 18:25:39,2.003s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/2 Personalia/Achternaam text""), ""aa"")",Chrome 77.0.3865.90,,,2019-09-24 18:25:39,2019-09-24 18:25:40,0.690s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:25:40,2019-09-24 18:25:42,2.003s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/2 Personalia/Achternaam text lb""))",Chrome 77.0.3865.90,,,2019-09-24 18:25:42,2019-09-24 18:25:42,0.582s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:25:42,2019-09-24 18:25:43,1.003s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/2 Personalia/Garantsteller new""), ""aa"")",Chrome 77.0.3865.90,,,2019-09-24 18:25:43,2019-09-24 18:25:44,0.645s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:25:44,2019-09-24 18:25:46,2.007s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/2 Personalia/Garantsteller new lb""))",Chrome 77.0.3865.90,,,2019-09-24 18:25:46,2019-09-24 18:25:47,0.720s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:25:47,2019-09-24 18:25:48,1.006s,PASSED
+"scrollToPosition(10, 7)",Chrome 77.0.3865.90,,,2019-09-24 18:25:48,2019-09-24 18:25:48,0.090s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:25:48,2019-09-24 18:25:49,1.004s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/2 Personalia/Personalia tab""))",Chrome 77.0.3865.90,,,2019-09-24 18:25:49,2019-09-24 18:25:49,0.405s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:25:49,2019-09-24 18:25:50,1.008s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/INBEWARINGSTELLINGS C.Q. PLAATSINGSGEGEVENS tab""))",Chrome 77.0.3865.90,,,2019-09-24 18:25:50,2019-09-24 18:25:51,0.637s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:25:51,2019-09-24 18:25:53,2.012s,PASSED
+"comment(""INBEWARINGSTELLINGS C.Q. PLAATSINGSGEGEVENS  error messages"")",Chrome 77.0.3865.90,,,2019-09-24 18:25:53,2019-09-24 18:25:53,0.010s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:25:53,2019-09-24 18:25:54,1.008s,PASSED
+"Inbewaringstellingsinds = getText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Inbewaringstelling sinds error message""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-09-24 18:25:54,2019-09-24 18:25:54,0.378s,PASSED
+if (Inbewaringstellingsinds == Garantstellerverify),Chrome 77.0.3865.90,,,2019-09-24 18:25:54,2019-09-24 18:25:54,0.008s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:25:54,2019-09-24 18:25:55,1.004s,PASSED
+"OpgrondvanartikelWTUBES = getText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Op grond van artikel WTU_BES error message""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-09-24 18:25:55,2019-09-24 18:25:56,0.362s,PASSED
+if (OpgrondvanartikelWTUBES == Garantstellerverify),Chrome 77.0.3865.90,,,2019-09-24 18:25:56,2019-09-24 18:25:56,0.006s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:25:56,2019-09-24 18:25:57,1.005s,PASSED
+"staandehoudingDatumgrensweigering = getText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Datum aan_staandehouding Datum grensweigering error message""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-09-24 18:25:57,2019-09-24 18:25:57,0.377s,PASSED
+if (staandehoudingDatumgrensweigering == Garantstellerverify),Chrome 77.0.3865.90,,,2019-09-24 18:25:57,2019-09-24 18:25:57,0.005s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:25:57,2019-09-24 18:25:58,1.005s,PASSED
+"scrollToElement(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Reden aan_staandehouding Reden grensweigering error message""), 2)",Chrome 77.0.3865.90,,,2019-09-24 18:25:58,2019-09-24 18:25:59,0.383s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:25:59,2019-09-24 18:26:00,1.007s,PASSED
+"Redenaanstaandehouding = getText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Reden aan_staandehouding Reden grensweigering error message""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-09-24 18:26:00,2019-09-24 18:26:00,0.346s,PASSED
+if (Redenaanstaandehouding == Garantstellerverify),Chrome 77.0.3865.90,,,2019-09-24 18:26:00,2019-09-24 18:26:00,0.008s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:26:00,2019-09-24 18:26:01,1.006s,PASSED
+"Inbewaringstellingslocatie = getText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Inbewaringstellings-locatie error message""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-09-24 18:26:01,2019-09-24 18:26:01,0.390s,PASSED
+if (Inbewaringstellingslocatie == Garantstellerverify),Chrome 77.0.3865.90,,,2019-09-24 18:26:01,2019-09-24 18:26:01,0.010s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:26:01,2019-09-24 18:26:02,1.007s,PASSED
+"INDCN = getText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Bekend bij IND-CN in het kader van toelating_bescherming error messaage""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-09-24 18:26:02,2019-09-24 18:26:03,0.351s,PASSED
+if (INDCN == Garantstellerverify),Chrome 77.0.3865.90,,,2019-09-24 18:26:03,2019-09-24 18:26:03,0.010s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:26:03,2019-09-24 18:26:04,1.007s,PASSED
+"Datumbeeindigingrechtmatigverblijf = getText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Datum beeindiging rechtmatig verblijf error message""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-09-24 18:26:04,2019-09-24 18:26:04,0.364s,PASSED
+if (Datumbeeindigingrechtmatigverblijf == Garantstellerverify),Chrome 77.0.3865.90,,,2019-09-24 18:26:04,2019-09-24 18:26:04,0.005s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:26:04,2019-09-24 18:26:05,1.005s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:26:05,2019-09-24 18:26:06,1.005s,PASSED
+"scrollToPosition(10, 7)",Chrome 77.0.3865.90,,,2019-09-24 18:26:06,2019-09-24 18:26:06,0.046s,PASSED
+"comment(""INBEWARINGSTELLINGS C.Q. PLAATSINGSGEGEVENS tab data filling"")",Chrome 77.0.3865.90,,,2019-09-24 18:26:06,2019-09-24 18:26:06,0.004s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:26:06,2019-09-24 18:26:07,1.014s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Inbewaringstelling sinds""), ""02/09/2019"")",Chrome 77.0.3865.90,,,2019-09-24 18:26:07,2019-09-24 18:26:07,0.003s,NOT_RUN
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Inbewaringstelling sinds calender icon""))",Chrome 77.0.3865.90,,,2019-09-24 18:26:07,2019-09-24 18:26:08,0.610s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:26:08,2019-09-24 18:26:10,2.008s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Rightmonth""), ""sep"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:26:10,2019-09-24 18:26:10,0.432s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:26:10,2019-09-24 18:26:11,1.008s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Rightyear""), ""2019"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:26:11,2019-09-24 18:26:12,0.467s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:26:12,2019-09-24 18:26:13,1.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Date/16th right frame""))",Chrome 77.0.3865.90,,,2019-09-24 18:26:13,2019-09-24 18:26:13,0.540s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:26:13,2019-09-24 18:26:14,1.005s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Plaatsing sinds""), ""01012019"")",Chrome 77.0.3865.90,,,2019-09-24 18:26:14,2019-09-24 18:26:15,0.581s,PASSED
+"comment(""Checking dropdown"")",Chrome 77.0.3865.90,,,2019-09-24 18:26:15,2019-09-24 18:26:15,0.005s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:26:15,2019-09-24 18:26:16,1.005s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Op grond van artikel WTU-BES""), ""a"")",Chrome 77.0.3865.90,,,2019-09-24 18:26:16,2019-09-24 18:26:16,0.558s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:26:16,2019-09-24 18:26:18,2.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Op grond van artikel WTU-BES lb""))",Chrome 77.0.3865.90,,,2019-09-24 18:26:18,2019-09-24 18:26:19,0.591s,PASSED
+"comment(""checking auto search"")",Chrome 77.0.3865.90,,,2019-09-24 18:26:19,2019-09-24 18:26:19,0.007s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:26:19,2019-09-24 18:26:20,1.005s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-561/Op grond van artikel WTU-BES Auto search click""))",Chrome 77.0.3865.90,,,2019-09-24 18:26:20,2019-09-24 18:26:21,0.557s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:26:21,2019-09-24 18:26:23,2.005s,PASSED
+"click(findTestObject(""JIRA/A Relese 6.6/ACTPOL-561/Op grond van artikel WTU-BES Auto search click lb""))",Chrome 77.0.3865.90,,,2019-09-24 18:26:23,2019-09-24 18:26:23,0.544s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:26:23,2019-09-24 18:26:25,2.006s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Datum aan_staandehouding Datum grensweigering""), ""02/09/2019"")",Chrome 77.0.3865.90,,,2019-09-24 18:26:25,2019-09-24 18:26:25,0.006s,NOT_RUN
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/staandehouding Datum grensweigering calender icon""))",Chrome 77.0.3865.90,,,2019-09-24 18:26:25,2019-09-24 18:26:26,0.618s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:26:26,2019-09-24 18:26:28,2.006s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Rightmonth""), ""sep"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:26:28,2019-09-24 18:26:28,0.514s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:26:28,2019-09-24 18:26:29,1.004s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Rightyear""), ""2019"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:26:29,2019-09-24 18:26:30,0.419s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:26:30,2019-09-24 18:26:31,1.007s,PASSED
+"click(findTestObject(""Actpol_Scripts/Date/16th right frame""))",Chrome 77.0.3865.90,,,2019-09-24 18:26:31,2019-09-24 18:26:31,0.700s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:26:31,2019-09-24 18:26:32,1.006s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Reden aan_staandehouding Reden grensweigering""), ""testing :: Reden aan_staandehouding Reden grensweigering"")",Chrome 77.0.3865.90,,,2019-09-24 18:26:32,2019-09-24 18:26:35,2.180s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:26:35,2019-09-24 18:26:36,1.004s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Inbewaringstellings-locatie""), ""a"")",Chrome 77.0.3865.90,,,2019-09-24 18:26:36,2019-09-24 18:26:36,0.595s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:26:36,2019-09-24 18:26:38,2.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Inbewaringstellings-locatie lb""))",Chrome 77.0.3865.90,,,2019-09-24 18:26:38,2019-09-24 18:26:39,0.586s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:26:39,2019-09-24 18:26:41,2.004s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Naam advocaat""), ""testing :: Naam advocaat"")",Chrome 77.0.3865.90,,,2019-09-24 18:26:41,2019-09-24 18:26:42,1.196s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:26:42,2019-09-24 18:26:43,1.006s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/advocaat telefoonnummer""), ""985213647"")",Chrome 77.0.3865.90,,,2019-09-24 18:26:43,2019-09-24 18:26:44,0.788s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:26:44,2019-09-24 18:26:45,1.008s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Naam ambtenaar KPCN _KmarCarib""), ""testing :: Naam ambtenaar KPCN /KmarCarib"")",Chrome 77.0.3865.90,,,2019-09-24 18:26:45,2019-09-24 18:26:47,1.839s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:26:47,2019-09-24 18:26:48,1.007s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Bekend bij IND-CN in het kader van""), ""testing :: Bekend bij IND-CN in het kader van toelating/bescherming"")",Chrome 77.0.3865.90,,,2019-09-24 18:26:48,2019-09-24 18:26:51,3.005s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:26:51,2019-09-24 18:26:53,2.005s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Datum beeindiging rechtmatig verblijf""), ""02/09/2019"")",Chrome 77.0.3865.90,,,2019-09-24 18:26:53,2019-09-24 18:26:53,0.003s,NOT_RUN
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Datum beeindiging rechtmatig verblijf calendar icon""))",Chrome 77.0.3865.90,,,2019-09-24 18:26:53,2019-09-24 18:26:53,0.660s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:26:53,2019-09-24 18:26:55,2.005s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Rightmonth""), ""sep"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:26:55,2019-09-24 18:26:56,0.420s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:26:56,2019-09-24 18:26:57,1.005s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Rightyear""), ""2019"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:26:57,2019-09-24 18:26:57,0.432s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:26:57,2019-09-24 18:26:58,1.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Date/16th right frame""))",Chrome 77.0.3865.90,,,2019-09-24 18:26:58,2019-09-24 18:26:59,0.621s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:26:59,2019-09-24 18:27:01,2.003s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/MBSC SAVE""))",Chrome 77.0.3865.90,,,2019-09-24 18:27:01,2019-09-24 18:27:01,0.593s,PASSED
+,,,,,,,
+Test Cases/JIRA Tasks/Release 6.6/ACTPOL-562,Chrome 77.0.3865.90,"Description:
+Add in the MBES18 module a possibility to enter medisch gedrag.
+
+Solution:
+Create a tab called Gedrag medisch to register fields in the fields in the attachment.
+
+Testplan:
+Step 1: Go to Opsporing - MBES18 fill in required fields and click save
+Step 2: Go to Tab Gedrag medisch fill in all fields
+Step 3: save record.
+
+Navigation:
+Opsporing - MBES18 - Tab Gedrag medisch",ACTPOL-562,2019-09-24 18:27:04,2019-09-24 18:31:31,4m - 27.248s,PASSED
+"callTestCase(findTestCase(""main/Actpol_Login_testenv""), [:], STOP_ON_FAILURE)",Chrome 77.0.3865.90,Login to the application,,2019-09-24 18:27:05,2019-09-24 18:27:25,20.011s,PASSED
+delay(6),Chrome 77.0.3865.90,,,2019-09-24 18:27:25,2019-09-24 18:27:31,6.009s,PASSED
+log = new com.kms.katalon.core.logging.KeywordLogger(),Chrome 77.0.3865.90,,,2019-09-24 18:27:31,2019-09-24 18:27:31,0.005s,PASSED
+"mouseOver(findTestObject(""Actpol_Scripts/Menu navigation/Generiek/Generiek""))",Chrome 77.0.3865.90,Mouse over to Generic tab,,2019-09-24 18:27:31,2019-09-24 18:27:31,0.384s,PASSED
+"log.logInfo(""Successfully logged"")",Chrome 77.0.3865.90,,,2019-09-24 18:27:31,2019-09-24 18:27:31,0.004s,PASSED
+delay(4),Chrome 77.0.3865.90,,,2019-09-24 18:27:31,2019-09-24 18:27:35,4.007s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/MBES18 TAB""))",Chrome 77.0.3865.90,Click MBES tab,,2019-09-24 18:27:35,2019-09-24 18:27:36,0.349s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:27:36,2019-09-24 18:27:38,2.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/MBES18 TAB""), OPTIONAL)",Chrome 77.0.3865.90,Click MBES tab,,2019-09-24 18:27:38,2019-09-24 18:27:38,0.239s,PASSED
+"log.logInfo(""Clicking MBES18 tab "")",Chrome 77.0.3865.90,,,2019-09-24 18:27:38,2019-09-24 18:27:38,0.004s,PASSED
+delay(8),Chrome 77.0.3865.90,,,2019-09-24 18:27:38,2019-09-24 18:27:46,8.011s,PASSED
+"mouseOver(findTestObject(""Actpol_Scripts/Menu navigation/Autorisatie/Autorisatie""))",Chrome 77.0.3865.90,Mouse over to Generic tab,,2019-09-24 18:27:46,2019-09-24 18:27:46,0.299s,PASSED
+delay(6),Chrome 77.0.3865.90,,,2019-09-24 18:27:46,2019-09-24 18:27:52,6.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/mbes new""))",Chrome 77.0.3865.90,Click new btn,,2019-09-24 18:27:52,2019-09-24 18:27:53,0.825s,PASSED
+"log.logInfo(""Clicking MBES18 new button "")",Chrome 77.0.3865.90,,,2019-09-24 18:27:53,2019-09-24 18:27:53,0.003s,PASSED
+delay(8),Chrome 77.0.3865.90,,,2019-09-24 18:27:53,2019-09-24 18:28:01,8.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/Registratie new""))",Chrome 77.0.3865.90,Click new btn in Registratie,,2019-09-24 18:28:01,2019-09-24 18:28:02,0.571s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:28:02,2019-09-24 18:28:03,1.005s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie van 1""), ""KORPS POLITIE CURACAO"", false)",Chrome 77.0.3865.90,Select required dropdown fro the list,,2019-09-24 18:28:03,2019-09-24 18:28:03,0.547s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:28:03,2019-09-24 18:28:04,1.008s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie Naar 1""), ""OPENBARE MINISTERIE"", false)",Chrome 77.0.3865.90,Select required dropdown fro the list,,2019-09-24 18:28:04,2019-09-24 18:28:05,0.517s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:28:05,2019-09-24 18:28:06,1.006s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie van 2""), ""AMBULANCE"", false)",Chrome 77.0.3865.90,Select required dropdown fro the list,,2019-09-24 18:28:06,2019-09-24 18:28:06,0.523s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:28:06,2019-09-24 18:28:07,1.004s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie Naar 2""), ""SKS"", false)",Chrome 77.0.3865.90,Select required dropdown fro the list,,2019-09-24 18:28:07,2019-09-24 18:28:08,0.510s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:28:08,2019-09-24 18:28:09,1.005s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Behandeld door""), ""Katalon testing :: Behandeld door"")",Chrome 77.0.3865.90,Enter the text from the feild,,2019-09-24 18:28:09,2019-09-24 18:28:10,1.511s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:28:10,2019-09-24 18:28:11,1.006s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Telefoon""), ""123456789"")",Chrome 77.0.3865.90,Enter the text from the feild,,2019-09-24 18:28:11,2019-09-24 18:28:12,0.728s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:28:12,2019-09-24 18:28:13,1.006s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/E-Mail""), ""test@gmail.com"")",Chrome 77.0.3865.90,Enter the text from the feild,,2019-09-24 18:28:13,2019-09-24 18:28:14,1.032s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:28:14,2019-09-24 18:28:15,1.007s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Datum""), ""23/08/2019"")",Chrome 77.0.3865.90,Enter the date,,2019-09-24 18:28:15,2019-09-24 18:28:15,0.005s,NOT_RUN
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Datum calendar icon""))",Chrome 77.0.3865.90,,,2019-09-24 18:28:15,2019-09-24 18:28:16,0.596s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:28:16,2019-09-24 18:28:18,2.006s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Rightmonth""), ""sep"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:28:18,2019-09-24 18:28:18,0.419s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:28:18,2019-09-24 18:28:19,1.005s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Rightyear""), ""2019"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:28:19,2019-09-24 18:28:20,0.398s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:28:20,2019-09-24 18:28:21,1.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Date/16th right frame""))",Chrome 77.0.3865.90,,,2019-09-24 18:28:21,2019-09-24 18:28:21,0.572s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:28:21,2019-09-24 18:28:22,1.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie save""))",Chrome 77.0.3865.90,Click save btn,,2019-09-24 18:28:22,2019-09-24 18:28:23,0.532s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:28:23,2019-09-24 18:28:24,1.008s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/registratie tab""))",Chrome 77.0.3865.90,Click on Registratie tab,,2019-09-24 18:28:24,2019-09-24 18:28:24,0.513s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:28:24,2019-09-24 18:28:25,1.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/2 Personalia/Personalia tab""))",Chrome 77.0.3865.90,Click on Personalia tab,,2019-09-24 18:28:25,2019-09-24 18:28:26,0.547s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:28:26,2019-09-24 18:28:28,2.008s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/2 Personalia/Achternaam text""), ""aa"")",Chrome 77.0.3865.90,,,2019-09-24 18:28:28,2019-09-24 18:28:28,0.582s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:28:28,2019-09-24 18:28:30,2.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/2 Personalia/Achternaam text lb""))",Chrome 77.0.3865.90,,,2019-09-24 18:28:30,2019-09-24 18:28:31,0.557s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:28:31,2019-09-24 18:28:32,1.008s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/2 Personalia/Garantsteller new""), ""aa"")",Chrome 77.0.3865.90,,,2019-09-24 18:28:32,2019-09-24 18:28:33,0.592s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:28:33,2019-09-24 18:28:35,2.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/2 Personalia/Garantsteller new lb""))",Chrome 77.0.3865.90,,,2019-09-24 18:28:35,2019-09-24 18:28:35,0.507s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:28:35,2019-09-24 18:28:36,1.007s,PASSED
+"scrollToPosition(10, 7)",Chrome 77.0.3865.90,,,2019-09-24 18:28:36,2019-09-24 18:28:36,0.030s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:28:36,2019-09-24 18:28:37,1.008s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/2 Personalia/Personalia tab""))",Chrome 77.0.3865.90,,,2019-09-24 18:28:37,2019-09-24 18:28:38,0.436s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:28:38,2019-09-24 18:28:39,1.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/INBEWARINGSTELLINGS C.Q. PLAATSINGSGEGEVENS tab""))",Chrome 77.0.3865.90,,,2019-09-24 18:28:39,2019-09-24 18:28:39,0.527s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:28:39,2019-09-24 18:28:41,2.009s,PASSED
+"comment(""INBEWARINGSTELLINGS C.Q. PLAATSINGSGEGEVENS tab data filling"")",Chrome 77.0.3865.90,,,2019-09-24 18:28:41,2019-09-24 18:28:41,0.004s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:28:41,2019-09-24 18:28:42,1.004s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Inbewaringstelling sinds""), ""02/09/2019"")",Chrome 77.0.3865.90,,,2019-09-24 18:28:42,2019-09-24 18:28:42,0.002s,NOT_RUN
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Inbewaringstelling sinds calender icon""))",Chrome 77.0.3865.90,,,2019-09-24 18:28:42,2019-09-24 18:28:43,0.627s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:28:43,2019-09-24 18:28:45,2.003s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Rightmonth""), ""sep"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:28:45,2019-09-24 18:28:45,0.419s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:28:45,2019-09-24 18:28:46,1.005s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Rightyear""), ""2019"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:28:46,2019-09-24 18:28:47,0.403s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:28:47,2019-09-24 18:28:48,1.004s,PASSED
+"click(findTestObject(""Actpol_Scripts/Date/16th right frame""))",Chrome 77.0.3865.90,,,2019-09-24 18:28:48,2019-09-24 18:28:48,0.708s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:28:48,2019-09-24 18:28:49,1.005s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Plaatsing sinds""), ""01012019"")",Chrome 77.0.3865.90,,,2019-09-24 18:28:49,2019-09-24 18:28:50,0.540s,PASSED
+"comment(""Checking dropdown"")",Chrome 77.0.3865.90,,,2019-09-24 18:28:50,2019-09-24 18:28:50,0.006s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:28:50,2019-09-24 18:28:51,1.004s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Op grond van artikel WTU-BES""), ""a"")",Chrome 77.0.3865.90,,,2019-09-24 18:28:51,2019-09-24 18:28:51,0.581s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:28:51,2019-09-24 18:28:53,2.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Op grond van artikel WTU-BES lb""))",Chrome 77.0.3865.90,,,2019-09-24 18:28:53,2019-09-24 18:28:54,0.507s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:28:54,2019-09-24 18:28:56,2.005s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Datum aan_staandehouding Datum grensweigering""), ""02/09/2019"")",Chrome 77.0.3865.90,,,2019-09-24 18:28:56,2019-09-24 18:28:56,0.002s,NOT_RUN
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/staandehouding Datum grensweigering calender icon""))",Chrome 77.0.3865.90,,,2019-09-24 18:28:56,2019-09-24 18:28:57,0.612s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:28:57,2019-09-24 18:28:59,2.010s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Rightmonth""), ""sep"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:28:59,2019-09-24 18:28:59,0.405s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:28:59,2019-09-24 18:29:00,1.006s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Rightyear""), ""2019"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:29:00,2019-09-24 18:29:00,0.394s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:29:00,2019-09-24 18:29:01,1.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Date/16th right frame""))",Chrome 77.0.3865.90,,,2019-09-24 18:29:01,2019-09-24 18:29:02,0.526s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:29:02,2019-09-24 18:29:03,1.005s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Reden aan_staandehouding Reden grensweigering""), ""testing :: Reden aan_staandehouding Reden grensweigering"")",Chrome 77.0.3865.90,,,2019-09-24 18:29:03,2019-09-24 18:29:05,2.309s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:29:05,2019-09-24 18:29:06,1.007s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Inbewaringstellings-locatie""), ""a"")",Chrome 77.0.3865.90,,,2019-09-24 18:29:06,2019-09-24 18:29:07,0.500s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:29:07,2019-09-24 18:29:09,2.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Inbewaringstellings-locatie lb""))",Chrome 77.0.3865.90,,,2019-09-24 18:29:09,2019-09-24 18:29:09,0.531s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:29:09,2019-09-24 18:29:11,2.007s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Naam advocaat""), ""testing :: Naam advocaat"")",Chrome 77.0.3865.90,,,2019-09-24 18:29:11,2019-09-24 18:29:12,1.161s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:29:12,2019-09-24 18:29:13,1.007s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/advocaat telefoonnummer""), ""985213647"")",Chrome 77.0.3865.90,,,2019-09-24 18:29:13,2019-09-24 18:29:14,0.722s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:29:14,2019-09-24 18:29:15,1.005s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Naam ambtenaar KPCN _KmarCarib""), ""testing :: Naam ambtenaar KPCN /KmarCarib"")",Chrome 77.0.3865.90,,,2019-09-24 18:29:15,2019-09-24 18:29:17,1.734s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:29:17,2019-09-24 18:29:18,1.004s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Bekend bij IND-CN in het kader van""), ""testing :: Bekend bij IND-CN in het kader van toelating/bescherming"")",Chrome 77.0.3865.90,,,2019-09-24 18:29:18,2019-09-24 18:29:20,2.422s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:29:20,2019-09-24 18:29:22,2.010s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Datum beeindiging rechtmatig verblijf""), ""02/09/2019"")",Chrome 77.0.3865.90,,,2019-09-24 18:29:22,2019-09-24 18:29:22,0.005s,NOT_RUN
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Datum beeindiging rechtmatig verblijf calendar icon""))",Chrome 77.0.3865.90,,,2019-09-24 18:29:22,2019-09-24 18:29:23,0.585s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:29:23,2019-09-24 18:29:25,2.006s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Rightmonth""), ""sep"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:29:25,2019-09-24 18:29:25,0.476s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:29:25,2019-09-24 18:29:26,1.004s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Rightyear""), ""2019"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:29:26,2019-09-24 18:29:27,0.394s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:29:27,2019-09-24 18:29:28,1.009s,PASSED
+"click(findTestObject(""Actpol_Scripts/Date/16th right frame""))",Chrome 77.0.3865.90,,,2019-09-24 18:29:28,2019-09-24 18:29:28,0.549s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:29:28,2019-09-24 18:29:30,2.003s,PASSED
+"scrollToPosition(10, 7)",Chrome 77.0.3865.90,,,2019-09-24 18:29:30,2019-09-24 18:29:30,0.033s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/INBEWARINGSTELLINGS C.Q. PLAATSINGSGEGEVENS tab""))",Chrome 77.0.3865.90,,,2019-09-24 18:29:30,2019-09-24 18:29:31,0.494s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:29:31,2019-09-24 18:29:32,1.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/4 GEDRAG_MEDISCH/GEDRAG MEDISCH tab""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-09-24 18:29:32,2019-09-24 18:29:33,0.690s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:29:33,2019-09-24 18:29:35,2.007s,PASSED
+"comment(""Checking jaa validation"")",Chrome 77.0.3865.90,,,2019-09-24 18:29:35,2019-09-24 18:29:35,0.010s,PASSED
+"for ([i = 1, i <= 19, (i++)])",Chrome 77.0.3865.90,checking ja radio button,,2019-09-24 18:29:35,2019-09-24 18:29:51,16.790s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/MBSC SAVE""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-09-24 18:29:51,2019-09-24 18:29:52,0.725s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:29:52,2019-09-24 18:29:53,1.004s,PASSED
+"scrollToPosition(10, 7)",Chrome 77.0.3865.90,,,2019-09-24 18:29:53,2019-09-24 18:29:53,0.056s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:29:53,2019-09-24 18:29:54,1.005s,PASSED
+"comment(""Checking nee validation"")",Chrome 77.0.3865.90,,,2019-09-24 18:29:54,2019-09-24 18:29:54,0.004s,PASSED
+"s1 = ""//*[@id=""MiddelenAUform""]/table/tbody/tr[1]/td[2]/input[2]""",Chrome 77.0.3865.90,checking naa radio button,,2019-09-24 18:29:54,2019-09-24 18:29:54,0.003s,PASSED
+"s2 = ""//*[@id=""MiddelenAUform""]/table/tbody/tr[3]/td[2]/input[2]""",Chrome 77.0.3865.90,,,2019-09-24 18:29:54,2019-09-24 18:29:54,0.006s,PASSED
+"s20 = ""//*[@id=""MiddelenAUform""]/table/tbody/tr[20]/td[2]/input[2]""",Chrome 77.0.3865.90,,,2019-09-24 18:29:54,2019-09-24 18:29:54,0.003s,PASSED
+"s21 = ""//*[@id=""MiddelenAUform""]/table/tbody/tr[21]/td[2]/input[2]""",Chrome 77.0.3865.90,,,2019-09-24 18:29:54,2019-09-24 18:29:54,0.004s,PASSED
+"for ([i = 1, i <= 16, (i++)])",Chrome 77.0.3865.90,checking naa radio button,,2019-09-24 18:29:54,2019-09-24 18:30:07,13.104s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:30:07,2019-09-24 18:30:08,1.017s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/MBSC SAVE""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-09-24 18:30:08,2019-09-24 18:30:09,0.560s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:30:09,2019-09-24 18:30:10,1.005s,PASSED
+"scrollToPosition(10, 7)",Chrome 77.0.3865.90,,,2019-09-24 18:30:10,2019-09-24 18:30:10,0.068s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:30:10,2019-09-24 18:30:11,1.004s,PASSED
+"comment(""Checking onbekend validation"")",Chrome 77.0.3865.90,,,2019-09-24 18:30:11,2019-09-24 18:30:11,0.004s,PASSED
+"for ([i = 1, i <= 15, (i++)])",Chrome 77.0.3865.90,checking onbekend radio button,,2019-09-24 18:30:11,2019-09-24 18:31:24,1m - 13.461s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:31:24,2019-09-24 18:31:25,1.004s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/MBSC SAVE""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-09-24 18:31:25,2019-09-24 18:31:26,0.604s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:31:26,2019-09-24 18:31:27,1.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/MBSC SAVE""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-09-24 18:31:27,2019-09-24 18:31:28,0.557s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:31:28,2019-09-24 18:31:29,1.007s,PASSED
+,,,,,,,
+Test Cases/JIRA Tasks/Release 6.6/ACTPOL-563,Chrome 77.0.3865.90,"Description:
+Add in the MBES18 module a possibility to enter Incident.
+
+Solution:
+Create a tab called Incident to register fields in the fields in the attachment.
+
+Testplan:
+Step 1: Go to Opsporing - MBES18 fill in required fields and click save
+Step 2: Go to Tab Incident fill in all fields
+Step 3: save record.
+
+Navigation:
+Opsporing - MBES18 - Tab Incident",ACTPOL-563,2019-09-24 18:31:31,2019-09-24 18:32:33,1m - 1.883s,PASSED
+"callTestCase(findTestCase(""main/Actpol_Login_testenv""), [:], STOP_ON_FAILURE)",Chrome 77.0.3865.90,,,2019-09-24 18:31:32,2019-09-24 18:31:52,19.773s,PASSED
+delay(6),Chrome 77.0.3865.90,,,2019-09-24 18:31:52,2019-09-24 18:31:58,6.004s,PASSED
+"mouseOver(findTestObject(""Actpol_Scripts/Menu navigation/Generiek/Generiek""))",Chrome 77.0.3865.90,Mouse over to Generic tab,,2019-09-24 18:31:58,2019-09-24 18:31:58,0.275s,PASSED
+log = new com.kms.katalon.core.logging.KeywordLogger(),Chrome 77.0.3865.90,,,2019-09-24 18:31:58,2019-09-24 18:31:58,0.001s,PASSED
+delay(4),Chrome 77.0.3865.90,,,2019-09-24 18:31:58,2019-09-24 18:32:02,4.004s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/MBES18 TAB""))",Chrome 77.0.3865.90,,,2019-09-24 18:32:02,2019-09-24 18:32:02,0.309s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:32:02,2019-09-24 18:32:04,2.007s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/MBES18 TAB""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-09-24 18:32:04,2019-09-24 18:32:04,0.225s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:32:04,2019-09-24 18:32:05,1.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/mbes new""))",Chrome 77.0.3865.90,,,2019-09-24 18:32:05,2019-09-24 18:32:06,0.742s,PASSED
+delay(8),Chrome 77.0.3865.90,,,2019-09-24 18:32:06,2019-09-24 18:32:14,8.007s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/Registratie tab""))",Chrome 77.0.3865.90,,,2019-09-24 18:32:14,2019-09-24 18:32:15,0.564s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/INCIDENTEN tab""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-09-24 18:32:15,2019-09-24 18:32:15,0.680s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:32:15,2019-09-24 18:32:17,2.004s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/INCIDENTEN new""))",Chrome 77.0.3865.90,,,2019-09-24 18:32:17,2019-09-24 18:32:18,0.576s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:32:18,2019-09-24 18:32:18,0.004s,NOT_RUN
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/INCIDENTEN save""))",Chrome 77.0.3865.90,,,2019-09-24 18:32:18,2019-09-24 18:32:18,0.004s,NOT_RUN
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:32:18,2019-09-24 18:32:18,0.002s,NOT_RUN
+incidentalerttext = getAlertText(OPTIONAL),Chrome 77.0.3865.90,,,2019-09-24 18:32:18,2019-09-24 18:32:18,0.002s,NOT_RUN
+log.logInfo(incidentalerttext),Chrome 77.0.3865.90,,,2019-09-24 18:32:18,2019-09-24 18:32:18,0.003s,NOT_RUN
+"delay(1, OPTIONAL)",Chrome 77.0.3865.90,,,2019-09-24 18:32:18,2019-09-24 18:32:18,0.002s,NOT_RUN
+acceptAlert(OPTIONAL),Chrome 77.0.3865.90,,,2019-09-24 18:32:18,2019-09-24 18:32:18,0.003s,NOT_RUN
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:32:18,2019-09-24 18:32:18,0.004s,NOT_RUN
+takeScreenshot(),Chrome 77.0.3865.90,,,2019-09-24 18:32:18,2019-09-24 18:32:18,0.003s,NOT_RUN
+"log.logInfo(""successfully saved data without entering any details"")",Chrome 77.0.3865.90,,,2019-09-24 18:32:18,2019-09-24 18:32:18,0.003s,NOT_RUN
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:32:18,2019-09-24 18:32:18,0.002s,NOT_RUN
+"mouseOver(findTestObject(""Actpol_Scripts/Menu navigation/Generiek/Generiek""))",Chrome 77.0.3865.90,Mouse over to Generic tab,,2019-09-24 18:32:18,2019-09-24 18:32:18,0.003s,NOT_RUN
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:32:18,2019-09-24 18:32:18,0.003s,NOT_RUN
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/Registratie tab""))",Chrome 77.0.3865.90,,,2019-09-24 18:32:18,2019-09-24 18:32:18,0.005s,NOT_RUN
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:32:18,2019-09-24 18:32:18,0.003s,NOT_RUN
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/INCIDENTEN new""))",Chrome 77.0.3865.90,,,2019-09-24 18:32:18,2019-09-24 18:32:18,0.004s,NOT_RUN
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:32:18,2019-09-24 18:32:19,1.009s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/Organisatie""), ""SKS"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:32:19,2019-09-24 18:32:20,0.861s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:32:20,2019-09-24 18:32:21,1.009s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/Datum Incident""), ""29/09/2019"")",Chrome 77.0.3865.90,,,2019-09-24 18:32:21,2019-09-24 18:32:22,0.616s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:32:22,2019-09-24 18:32:23,1.005s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/Bejzonderheden""), ""testing : Bejzonderheden"")",Chrome 77.0.3865.90,,,2019-09-24 18:32:23,2019-09-24 18:32:24,1.181s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:32:24,2019-09-24 18:32:25,1.005s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/Contactperson""), ""testing : Contactperson"")",Chrome 77.0.3865.90,,,2019-09-24 18:32:25,2019-09-24 18:32:26,1.255s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:32:26,2019-09-24 18:32:27,1.006s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/Telefoonnummer""), ""987512364"")",Chrome 77.0.3865.90,,,2019-09-24 18:32:27,2019-09-24 18:32:28,0.885s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:32:28,2019-09-24 18:32:29,1.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/INCIDENTEN save""))",Chrome 77.0.3865.90,,,2019-09-24 18:32:29,2019-09-24 18:32:30,0.597s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:32:30,2019-09-24 18:32:31,1.006s,PASSED
+takeScreenshot(),Chrome 77.0.3865.90,,,2019-09-24 18:32:31,2019-09-24 18:32:31,0.521s,PASSED
+"log.logInfo(""successfully saved data"")",Chrome 77.0.3865.90,,,2019-09-24 18:32:31,2019-09-24 18:32:31,0.002s,PASSED
+,,,,,,,
+Test Cases/JIRA Tasks/Release 6.6/ACTPOL-564,Chrome 77.0.3865.90,"Description:
+Add in the MBES18 module a possibility to enter Overige gegevens (additional information).
+
+Solution:
+Create a tab called Overige gegevenst to register fields in the fields in the attachment.
+
+Testplan:
+Step 1: Go to Opsporing - MBES18 fill in required fields and click save
+Step 2: Go to Tab Overige gegevens fill in all fields
+Step 3: save record.
+
+Navigation:
+Opsporing - MBES18 - Tab Overige gegevens",ACTPOL-564,2019-09-24 18:32:33,2019-09-24 18:34:22,1m - 48.513s,FAILED
+"callTestCase(findTestCase(""main/Actpol_Login_testenv""), [:], STOP_ON_FAILURE)",Chrome 77.0.3865.90,Login to the application,,2019-09-24 18:32:34,2019-09-24 18:32:52,18.321s,PASSED
+delay(6),Chrome 77.0.3865.90,,,2019-09-24 18:32:52,2019-09-24 18:32:58,6.006s,PASSED
+log = new com.kms.katalon.core.logging.KeywordLogger(),Chrome 77.0.3865.90,,,2019-09-24 18:32:58,2019-09-24 18:32:58,0.003s,PASSED
+"mouseOver(findTestObject(""Actpol_Scripts/Menu navigation/Generiek/Generiek""))",Chrome 77.0.3865.90,Mouse over to Generic tab,,2019-09-24 18:32:58,2019-09-24 18:32:59,0.351s,PASSED
+"log.logInfo(""Successfully logged"")",Chrome 77.0.3865.90,,,2019-09-24 18:32:59,2019-09-24 18:32:59,0.004s,PASSED
+delay(4),Chrome 77.0.3865.90,,,2019-09-24 18:32:59,2019-09-24 18:33:03,4.018s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/MBES18 TAB""))",Chrome 77.0.3865.90,Click MBES tab,,2019-09-24 18:33:03,2019-09-24 18:33:03,0.330s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:33:03,2019-09-24 18:33:05,2.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/MBES18 TAB""))",Chrome 77.0.3865.90,Click MBES tab,,2019-09-24 18:33:05,2019-09-24 18:33:05,0.228s,PASSED
+"log.logInfo(""Clicking MBES18 tab "")",Chrome 77.0.3865.90,,,2019-09-24 18:33:05,2019-09-24 18:33:05,0.002s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:33:05,2019-09-24 18:33:06,1.006s,PASSED
+delay(9),Chrome 77.0.3865.90,,,2019-09-24 18:33:06,2019-09-24 18:33:15,9.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/mbes new""))",Chrome 77.0.3865.90,Click new btn,,2019-09-24 18:33:15,2019-09-24 18:34:19,1m - 4.127s,FAILED
+,,,,,,,
+Test Cases/JIRA Tasks/Release 6.6/ACTPOL-565,Chrome 77.0.3865.90,"Description:
+Add in the MBES18 module a possibility to enter Bezitting/Bagage (personal items and lugage).
+
+Solution:
+Create a tab called Bezitting/Bagage to register fields in the fields in the attachment.
+
+Testplan:
+Step 1: Go to Opsporing - MBES18 fill in required fields and click save
+Step 2: Go to Tab Bezitting/Bagage fill in all fields
+Step 3: save record.
+
+Navigation:
+Opsporing - MBES18 - Tab Bezitting/Bagage",ACTPOL-565,2019-09-24 18:34:22,2019-09-24 18:39:12,4m - 49.882s,PASSED
+"callTestCase(findTestCase(""main/Actpol_Login_testenv""), [:], STOP_ON_FAILURE)",Chrome 77.0.3865.90,Login to the application,,2019-09-24 18:34:22,2019-09-24 18:34:42,19.101s,PASSED
+delay(6),Chrome 77.0.3865.90,,,2019-09-24 18:34:42,2019-09-24 18:34:48,6.004s,PASSED
+log = new com.kms.katalon.core.logging.KeywordLogger(),Chrome 77.0.3865.90,,,2019-09-24 18:34:48,2019-09-24 18:34:48,0.003s,PASSED
+"mouseOver(findTestObject(""Actpol_Scripts/Menu navigation/Generiek/Generiek""))",Chrome 77.0.3865.90,Mouse over to Generic tab,,2019-09-24 18:34:48,2019-09-24 18:34:48,0.307s,PASSED
+"log.logInfo(""Successfully logged"")",Chrome 77.0.3865.90,,,2019-09-24 18:34:48,2019-09-24 18:34:48,0.002s,PASSED
+delay(5),Chrome 77.0.3865.90,,,2019-09-24 18:34:48,2019-09-24 18:34:53,5.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/MBES18 TAB""))",Chrome 77.0.3865.90,Click MBES tab,,2019-09-24 18:34:53,2019-09-24 18:34:53,0.283s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:34:53,2019-09-24 18:34:55,2.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/MBES18 TAB""))",Chrome 77.0.3865.90,Click MBES tab,,2019-09-24 18:34:55,2019-09-24 18:34:55,0.232s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:34:55,2019-09-24 18:34:57,2.007s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/MBES18 TAB""))",Chrome 77.0.3865.90,Click MBES tab,,2019-09-24 18:34:57,2019-09-24 18:34:58,0.332s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:34:58,2019-09-24 18:34:59,1.007s,PASSED
+"log.logInfo(""Clicking MBES18 tab "")",Chrome 77.0.3865.90,,,2019-09-24 18:34:59,2019-09-24 18:34:59,0.002s,PASSED
+delay(8),Chrome 77.0.3865.90,,,2019-09-24 18:34:59,2019-09-24 18:35:07,8.011s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/mbes new""))",Chrome 77.0.3865.90,Click new btn,,2019-09-24 18:35:07,2019-09-24 18:35:07,0.626s,PASSED
+"log.logInfo(""Clicking MBES18 new button "")",Chrome 77.0.3865.90,,,2019-09-24 18:35:07,2019-09-24 18:35:07,0.005s,PASSED
+delay(6),Chrome 77.0.3865.90,,,2019-09-24 18:35:07,2019-09-24 18:35:13,6.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/Registratie new""))",Chrome 77.0.3865.90,Click new btn in Registratie,,2019-09-24 18:35:13,2019-09-24 18:35:14,0.600s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:35:14,2019-09-24 18:35:15,1.005s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie van 1""), ""KORPS POLITIE CURACAO"", false)",Chrome 77.0.3865.90,Select required dropdown fro the list,,2019-09-24 18:35:15,2019-09-24 18:35:16,0.624s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:35:16,2019-09-24 18:35:17,1.006s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie Naar 1""), ""OPENBARE MINISTERIE"", false)",Chrome 77.0.3865.90,Select required dropdown fro the list,,2019-09-24 18:35:17,2019-09-24 18:35:17,0.516s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:35:17,2019-09-24 18:35:18,1.004s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie van 2""), ""AMBULANCE"", false)",Chrome 77.0.3865.90,Select required dropdown fro the list,,2019-09-24 18:35:18,2019-09-24 18:35:19,0.573s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:35:19,2019-09-24 18:35:20,1.007s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie Naar 2""), ""SKS"", false)",Chrome 77.0.3865.90,Select required dropdown fro the list,,2019-09-24 18:35:20,2019-09-24 18:35:20,0.540s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:35:20,2019-09-24 18:35:21,1.006s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Behandeld door""), ""Katalon testing :: Behandeld door"")",Chrome 77.0.3865.90,Enter the text from the feild,,2019-09-24 18:35:21,2019-09-24 18:35:23,1.563s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:35:23,2019-09-24 18:35:24,1.006s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Telefoon""), ""123456789"")",Chrome 77.0.3865.90,Enter the text from the feild,,2019-09-24 18:35:24,2019-09-24 18:35:25,0.774s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:35:25,2019-09-24 18:35:26,1.006s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/E-Mail""), ""test@gmail.com"")",Chrome 77.0.3865.90,Enter the text from the feild,,2019-09-24 18:35:26,2019-09-24 18:35:27,0.902s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:35:27,2019-09-24 18:35:28,1.006s,PASSED
+"sendKeys(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Datum""), ""01012019"")",Chrome 77.0.3865.90,Enter the date,,2019-09-24 18:35:28,2019-09-24 18:35:28,0.564s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Datum calendar icon""))",Chrome 77.0.3865.90,,,2019-09-24 18:35:28,2019-09-24 18:35:29,0.533s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:35:29,2019-09-24 18:35:31,2.007s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Rightmonth""), ""sep"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:35:31,2019-09-24 18:35:31,0.492s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:35:31,2019-09-24 18:35:32,1.007s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Rightyear""), ""2019"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:35:32,2019-09-24 18:35:33,0.452s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:35:33,2019-09-24 18:35:34,1.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Date/16th right frame""))",Chrome 77.0.3865.90,,,2019-09-24 18:35:34,2019-09-24 18:35:34,0.530s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:35:34,2019-09-24 18:35:35,1.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/Registratie save""))",Chrome 77.0.3865.90,Click save btn,,2019-09-24 18:35:35,2019-09-24 18:35:36,0.535s,PASSED
+delay(3),Chrome 77.0.3865.90,,,2019-09-24 18:35:36,2019-09-24 18:35:39,3.008s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/1 Registratie/registratie tab""))",Chrome 77.0.3865.90,Click on Registratie tab,,2019-09-24 18:35:39,2019-09-24 18:35:39,0.537s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:35:39,2019-09-24 18:35:40,1.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/2 Personalia/Personalia tab""))",Chrome 77.0.3865.90,Click on Personalia tab,,2019-09-24 18:35:40,2019-09-24 18:35:41,0.645s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:35:41,2019-09-24 18:35:43,2.006s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/2 Personalia/Achternaam text""), ""aa"")",Chrome 77.0.3865.90,,,2019-09-24 18:35:43,2019-09-24 18:35:44,0.708s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:35:44,2019-09-24 18:35:46,2.003s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/2 Personalia/Achternaam text lb""))",Chrome 77.0.3865.90,,,2019-09-24 18:35:46,2019-09-24 18:35:46,0.600s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:35:46,2019-09-24 18:35:47,1.006s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/2 Personalia/Garantsteller new""), ""aa"")",Chrome 77.0.3865.90,,,2019-09-24 18:35:47,2019-09-24 18:35:48,0.659s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:35:48,2019-09-24 18:35:50,2.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/2 Personalia/Garantsteller new lb""))",Chrome 77.0.3865.90,,,2019-09-24 18:35:50,2019-09-24 18:35:50,0.615s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:35:50,2019-09-24 18:35:51,1.004s,PASSED
+"scrollToPosition(10, 7)",Chrome 77.0.3865.90,,,2019-09-24 18:35:51,2019-09-24 18:35:52,0.064s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:35:52,2019-09-24 18:35:53,1.009s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/2 Personalia/Personalia tab""))",Chrome 77.0.3865.90,,,2019-09-24 18:35:53,2019-09-24 18:35:53,0.506s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:35:53,2019-09-24 18:35:54,1.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/INBEWARINGSTELLINGS C.Q. PLAATSINGSGEGEVENS tab""))",Chrome 77.0.3865.90,,,2019-09-24 18:35:54,2019-09-24 18:35:55,0.556s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:35:55,2019-09-24 18:35:57,2.008s,PASSED
+"comment(""INBEWARINGSTELLINGS C.Q. PLAATSINGSGEGEVENS tab data filling"")",Chrome 77.0.3865.90,,,2019-09-24 18:35:57,2019-09-24 18:35:57,0.007s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:35:57,2019-09-24 18:35:58,1.006s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Inbewaringstelling sinds""), ""02/09/2019"")",Chrome 77.0.3865.90,,,2019-09-24 18:35:58,2019-09-24 18:35:58,0.003s,NOT_RUN
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Inbewaringstelling sinds calender icon""))",Chrome 77.0.3865.90,,,2019-09-24 18:35:58,2019-09-24 18:35:58,0.625s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:35:58,2019-09-24 18:36:00,2.004s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Rightmonth""), ""sep"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:36:00,2019-09-24 18:36:01,0.432s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:36:01,2019-09-24 18:36:02,1.005s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Rightyear""), ""2019"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:36:02,2019-09-24 18:36:02,0.490s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:36:02,2019-09-24 18:36:03,1.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Date/16th right frame""))",Chrome 77.0.3865.90,,,2019-09-24 18:36:03,2019-09-24 18:36:04,0.674s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:36:04,2019-09-24 18:36:05,1.006s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Plaatsing sinds""), ""01012019"")",Chrome 77.0.3865.90,,,2019-09-24 18:36:05,2019-09-24 18:36:05,0.551s,PASSED
+"comment(""Checking dropdown"")",Chrome 77.0.3865.90,,,2019-09-24 18:36:05,2019-09-24 18:36:05,0.005s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:36:05,2019-09-24 18:36:06,1.007s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Op grond van artikel WTU-BES""), ""a"")",Chrome 77.0.3865.90,,,2019-09-24 18:36:06,2019-09-24 18:36:07,0.557s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:36:07,2019-09-24 18:36:09,2.004s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Op grond van artikel WTU-BES lb""))",Chrome 77.0.3865.90,,,2019-09-24 18:36:09,2019-09-24 18:36:10,0.650s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:36:10,2019-09-24 18:36:12,2.005s,PASSED
+"sendKeys(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Datum aan_staandehouding Datum grensweigering""), ""02/09/2019"")",Chrome 77.0.3865.90,,,2019-09-24 18:36:12,2019-09-24 18:36:12,0.519s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/staandehouding Datum grensweigering calender icon""))",Chrome 77.0.3865.90,,,2019-09-24 18:36:12,2019-09-24 18:36:13,0.594s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:36:13,2019-09-24 18:36:15,2.006s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Rightmonth""), ""sep"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:36:15,2019-09-24 18:36:15,0.503s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:36:15,2019-09-24 18:36:16,1.008s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Rightyear""), ""2019"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:36:16,2019-09-24 18:36:17,0.495s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:36:17,2019-09-24 18:36:18,1.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Date/16th right frame""))",Chrome 77.0.3865.90,,,2019-09-24 18:36:18,2019-09-24 18:36:18,0.567s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:36:18,2019-09-24 18:36:19,1.005s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Reden aan_staandehouding Reden grensweigering""), ""testing :: Reden aan_staandehouding Reden grensweigering"")",Chrome 77.0.3865.90,,,2019-09-24 18:36:19,2019-09-24 18:36:22,2.791s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:36:22,2019-09-24 18:36:23,1.004s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Inbewaringstellings-locatie""), ""a"")",Chrome 77.0.3865.90,,,2019-09-24 18:36:23,2019-09-24 18:36:24,0.840s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:36:24,2019-09-24 18:36:26,2.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Inbewaringstellings-locatie lb""))",Chrome 77.0.3865.90,,,2019-09-24 18:36:26,2019-09-24 18:36:27,0.557s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:36:27,2019-09-24 18:36:29,2.005s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Naam advocaat""), ""testing :: Naam advocaat"")",Chrome 77.0.3865.90,,,2019-09-24 18:36:29,2019-09-24 18:36:30,1.322s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:36:30,2019-09-24 18:36:31,1.005s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/advocaat telefoonnummer""), ""985213647"")",Chrome 77.0.3865.90,,,2019-09-24 18:36:31,2019-09-24 18:36:32,0.847s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:36:32,2019-09-24 18:36:33,1.007s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Naam ambtenaar KPCN _KmarCarib""), ""testing :: Naam ambtenaar KPCN /KmarCarib"")",Chrome 77.0.3865.90,,,2019-09-24 18:36:33,2019-09-24 18:36:35,1.805s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:36:35,2019-09-24 18:36:36,1.006s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Bekend bij IND-CN in het kader van""), ""testing :: Bekend bij IND-CN in het kader van toelating/bescherming"")",Chrome 77.0.3865.90,,,2019-09-24 18:36:36,2019-09-24 18:36:38,2.523s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:36:38,2019-09-24 18:36:40,2.005s,PASSED
+"sendKeys(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Datum beeindiging rechtmatig verblijf""), ""02/09/2019"")",Chrome 77.0.3865.90,,,2019-09-24 18:36:40,2019-09-24 18:36:41,0.543s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/Datum beeindiging rechtmatig verblijf calendar icon""))",Chrome 77.0.3865.90,,,2019-09-24 18:36:41,2019-09-24 18:36:41,0.623s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:36:41,2019-09-24 18:36:43,2.007s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Rightmonth""), ""sep"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:36:43,2019-09-24 18:36:44,0.455s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:36:44,2019-09-24 18:36:45,1.004s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Rightyear""), ""2019"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:36:45,2019-09-24 18:36:45,0.602s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:36:45,2019-09-24 18:36:46,1.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Date/16th right frame""))",Chrome 77.0.3865.90,,,2019-09-24 18:36:46,2019-09-24 18:36:47,0.631s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:36:47,2019-09-24 18:36:49,2.004s,PASSED
+"scrollToPosition(10, 7)",Chrome 77.0.3865.90,,,2019-09-24 18:36:49,2019-09-24 18:36:49,0.056s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/3 INBEWARINGSTELLINGS_C.Q._PLAATSINGSGEGEVENS/INBEWARINGSTELLINGS C.Q. PLAATSINGSGEGEVENS tab""))",Chrome 77.0.3865.90,,,2019-09-24 18:36:49,2019-09-24 18:36:50,0.592s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:36:50,2019-09-24 18:36:51,1.007s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/4 GEDRAG_MEDISCH/GEDRAG MEDISCH tab""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-09-24 18:36:51,2019-09-24 18:36:51,0.708s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:36:51,2019-09-24 18:36:53,2.006s,PASSED
+"comment(""Checking jaa validation"")",Chrome 77.0.3865.90,,,2019-09-24 18:36:53,2019-09-24 18:36:53,0.006s,PASSED
+"for ([i = 1, i <= 19, (i++)])",Chrome 77.0.3865.90,checking ja radio button,,2019-09-24 18:36:53,2019-09-24 18:37:09,15.482s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/MBSC SAVE""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-09-24 18:37:09,2019-09-24 18:37:09,0.002s,NOT_RUN
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:37:09,2019-09-24 18:37:10,1.008s,PASSED
+"scrollToPosition(10, 7)",Chrome 77.0.3865.90,,,2019-09-24 18:37:10,2019-09-24 18:37:10,0.043s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:37:10,2019-09-24 18:37:11,1.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/4 GEDRAG_MEDISCH/GEDRAG MEDISCH tab""))",Chrome 77.0.3865.90,,,2019-09-24 18:37:11,2019-09-24 18:37:12,0.621s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:37:12,2019-09-24 18:37:13,1.004s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/INCIDENTEN tab""))",Chrome 77.0.3865.90,,,2019-09-24 18:37:13,2019-09-24 18:37:13,0.715s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:37:13,2019-09-24 18:37:15,2.007s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/INCIDENTEN new""))",Chrome 77.0.3865.90,,,2019-09-24 18:37:15,2019-09-24 18:37:16,0.639s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:37:16,2019-09-24 18:37:17,1.005s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/Organisatie""), ""SKS"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:37:17,2019-09-24 18:37:18,0.625s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:37:18,2019-09-24 18:37:19,1.005s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/Datum Incident""), ""29012019"")",Chrome 77.0.3865.90,,,2019-09-24 18:37:19,2019-09-24 18:37:19,0.630s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:37:19,2019-09-24 18:37:20,1.005s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/Bejzonderheden""), ""testing : Bejzonderheden"")",Chrome 77.0.3865.90,,,2019-09-24 18:37:20,2019-09-24 18:37:22,1.634s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:37:22,2019-09-24 18:37:23,1.006s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/Contactperson""), ""testing : Contactperson"")",Chrome 77.0.3865.90,,,2019-09-24 18:37:23,2019-09-24 18:37:24,1.524s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:37:24,2019-09-24 18:37:25,1.006s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/Telefoonnummer""), ""987512364"")",Chrome 77.0.3865.90,,,2019-09-24 18:37:25,2019-09-24 18:37:26,0.865s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:37:26,2019-09-24 18:37:27,1.004s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/INCIDENTEN save""))",Chrome 77.0.3865.90,,,2019-09-24 18:37:27,2019-09-24 18:37:28,0.766s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:37:28,2019-09-24 18:37:29,1.006s,PASSED
+takeScreenshot(),Chrome 77.0.3865.90,,,2019-09-24 18:37:29,2019-09-24 18:37:29,0.442s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:37:29,2019-09-24 18:37:30,1.005s,PASSED
+"scrollToPosition(10, 7)",Chrome 77.0.3865.90,,,2019-09-24 18:37:30,2019-09-24 18:37:30,0.024s,PASSED
+"log.logInfo(""successfully saved data"")",Chrome 77.0.3865.90,,,2019-09-24 18:37:30,2019-09-24 18:37:30,0.002s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:37:30,2019-09-24 18:37:31,1.010s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/5 INCIDENTEN/INCIDENTEN tab""))",Chrome 77.0.3865.90,,,2019-09-24 18:37:31,2019-09-24 18:37:32,0.642s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:37:32,2019-09-24 18:37:34,2.007s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/OVERIGE GEGEVENS tab""), OPTIONAL)",Chrome 77.0.3865.90,,,2019-09-24 18:37:34,2019-09-24 18:37:35,0.844s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:37:35,2019-09-24 18:37:37,2.005s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Uitzetting""), ""aa"", STOP_ON_FAILURE)",Chrome 77.0.3865.90,,,2019-09-24 18:37:37,2019-09-24 18:37:38,0.738s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:37:38,2019-09-24 18:37:40,2.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Uitzetting lb""))",Chrome 77.0.3865.90,,,2019-09-24 18:37:40,2019-09-24 18:37:40,0.638s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:37:40,2019-09-24 18:37:41,1.006s,PASSED
+"sendKeys(findTestObject(""Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Datum vlucht""), ""22082019"")",Chrome 77.0.3865.90,,,2019-09-24 18:37:41,2019-09-24 18:37:42,0.546s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:37:42,2019-09-24 18:37:43,1.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Datum vlucht Calendar icon""))",Chrome 77.0.3865.90,,,2019-09-24 18:37:43,2019-09-24 18:37:44,0.756s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:37:44,2019-09-24 18:37:45,1.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Date/16th right frame""))",Chrome 77.0.3865.90,,,2019-09-24 18:37:45,2019-09-24 18:37:45,0.592s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:37:45,2019-09-24 18:37:46,1.006s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Tijdstip vlucht""), ""010101"")",Chrome 77.0.3865.90,,,2019-09-24 18:37:46,2019-09-24 18:37:47,0.607s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:37:47,2019-09-24 18:37:48,1.006s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Arrival location""), ""Luchthaven"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:37:48,2019-09-24 18:37:48,0.599s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:37:48,2019-09-24 18:37:49,1.007s,PASSED
+"sendKeys(findTestObject(""Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Datum""), ""22082019"")",Chrome 77.0.3865.90,,,2019-09-24 18:37:49,2019-09-24 18:37:50,0.579s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:37:50,2019-09-24 18:37:51,1.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Datum calendar icon""))",Chrome 77.0.3865.90,,,2019-09-24 18:37:51,2019-09-24 18:37:52,0.659s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:37:52,2019-09-24 18:37:53,1.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Date/16th right frame""))",Chrome 77.0.3865.90,,,2019-09-24 18:37:53,2019-09-24 18:37:53,0.599s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:37:53,2019-09-24 18:37:54,1.003s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Claim vervoerder ja""))",Chrome 77.0.3865.90,,,2019-09-24 18:37:54,2019-09-24 18:37:55,0.666s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:37:55,2019-09-24 18:37:57,2.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Claim vervoerder ja""))",Chrome 77.0.3865.90,,,2019-09-24 18:37:57,2019-09-24 18:37:57,0.454s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:37:57,2019-09-24 18:37:58,1.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Removal orde ja""))",Chrome 77.0.3865.90,,,2019-09-24 18:37:58,2019-09-24 18:37:59,0.606s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:37:59,2019-09-24 18:38:00,1.004s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Contact diplomatieke""), ""testing :: Contact diplomatieke vertegenwooediging ter verkrijging van een vervangend reisdocument"")",Chrome 77.0.3865.90,,,2019-09-24 18:38:00,2019-09-24 18:38:05,4.842s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:38:05,2019-09-24 18:38:06,1.003s,PASSED
+"sendKeys(findTestObject(""Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Wanner""), ""21/09/2019"")",Chrome 77.0.3865.90,,,2019-09-24 18:38:06,2019-09-24 18:38:07,0.592s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:38:07,2019-09-24 18:38:08,1.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Wanner calender""))",Chrome 77.0.3865.90,,,2019-09-24 18:38:08,2019-09-24 18:38:08,0.720s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:38:08,2019-09-24 18:38:09,1.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Date/16th right frame""))",Chrome 77.0.3865.90,,,2019-09-24 18:38:09,2019-09-24 18:38:10,0.796s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:38:10,2019-09-24 18:38:11,1.005s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Welke diplomatieke""), ""testing :: Welke diplomatieke vertegenwooedliging"")",Chrome 77.0.3865.90,,,2019-09-24 18:38:11,2019-09-24 18:38:14,2.679s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:38:14,2019-09-24 18:38:15,1.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Reisdocument ja""))",Chrome 77.0.3865.90,,,2019-09-24 18:38:15,2019-09-24 18:38:15,0.640s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:38:15,2019-09-24 18:38:16,1.006s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Soort""), ""REISDOCUMENT"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:38:16,2019-09-24 18:38:17,0.704s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:38:17,2019-09-24 18:38:18,1.008s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Nummer""), ""testing :: Nummer"")",Chrome 77.0.3865.90,,,2019-09-24 18:38:18,2019-09-24 18:38:19,1.377s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:38:19,2019-09-24 18:38:20,1.003s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Geldig tot""), ""21/09/2019"")",Chrome 77.0.3865.90,,,2019-09-24 18:38:20,2019-09-24 18:38:21,0.619s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:38:21,2019-09-24 18:38:22,1.007s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Geldig tot Calendar icon""))",Chrome 77.0.3865.90,,,2019-09-24 18:38:22,2019-09-24 18:38:23,0.733s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:38:23,2019-09-24 18:38:24,1.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Date/16th right frame""))",Chrome 77.0.3865.90,,,2019-09-24 18:38:24,2019-09-24 18:38:24,0.657s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:38:24,2019-09-24 18:38:26,1.004s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/Aanvullende identiteitsdocumenten""), ""testing :: Aanvullende identiteitsdocumenten"")",Chrome 77.0.3865.90,,,2019-09-24 18:38:26,2019-09-24 18:38:27,1.988s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:38:27,2019-09-24 18:38:28,1.006s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:38:28,2019-09-24 18:38:30,1.005s,PASSED
+"scrollToPosition(10, 7)",Chrome 77.0.3865.90,,,2019-09-24 18:38:30,2019-09-24 18:38:30,0.078s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:38:30,2019-09-24 18:38:31,1.004s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/6 Overige gegevens/OVERIGE GEGEVENS tab""))",Chrome 77.0.3865.90,,,2019-09-24 18:38:31,2019-09-24 18:38:31,0.483s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:38:31,2019-09-24 18:38:32,1.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/7 BEZITTINGEN_BAGAGE/BEZITTINGEN_BAGAGE tab""))",Chrome 77.0.3865.90,,,2019-09-24 18:38:32,2019-09-24 18:38:33,0.707s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:38:33,2019-09-24 18:38:34,1.007s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/7 BEZITTINGEN_BAGAGE/Geld ja""))",Chrome 77.0.3865.90,,,2019-09-24 18:38:34,2019-09-24 18:38:34,0.613s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:38:34,2019-09-24 18:38:35,1.008s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/7 BEZITTINGEN_BAGAGE/Bedrag en valuta text box""), ""Testing : Bedrag en valuta"")",Chrome 77.0.3865.90,,,2019-09-24 18:38:35,2019-09-24 18:38:37,1.345s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:38:37,2019-09-24 18:38:38,1.006s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/7 BEZITTINGEN_BAGAGE/Bedrag en valuta auto text box""), ""a"")",Chrome 77.0.3865.90,,,2019-09-24 18:38:38,2019-09-24 18:38:38,0.601s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:38:38,2019-09-24 18:38:40,2.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/7 BEZITTINGEN_BAGAGE/Bedrag en valuta lb""))",Chrome 77.0.3865.90,,,2019-09-24 18:38:40,2019-09-24 18:38:41,0.649s,PASSED
+delay(4),Chrome 77.0.3865.90,,,2019-09-24 18:38:41,2019-09-24 18:38:45,4.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/7 BEZITTINGEN_BAGAGE/Pinpas_credict card ja""))",Chrome 77.0.3865.90,,,2019-09-24 18:38:45,2019-09-24 18:38:46,0.621s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:38:46,2019-09-24 18:38:47,1.005s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/7 BEZITTINGEN_BAGAGE/Bedrag maximale opname""), ""Testing : Bedrag en valuta"")",Chrome 77.0.3865.90,,,2019-09-24 18:38:47,2019-09-24 18:38:48,1.346s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:38:48,2019-09-24 18:38:49,1.003s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Opsporing/MBES18/7 BEZITTINGEN_BAGAGE/Arrival location""), ""Luchthaven"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:38:49,2019-09-24 18:38:49,0.002s,NOT_RUN
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:38:49,2019-09-24 18:38:50,1.007s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/7 BEZITTINGEN_BAGAGE/Datum""), ""04/02/2019"")",Chrome 77.0.3865.90,,,2019-09-24 18:38:50,2019-09-24 18:38:50,0.003s,NOT_RUN
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/7 BEZITTINGEN_BAGAGE/Datum img icon""))",Chrome 77.0.3865.90,,,2019-09-24 18:38:50,2019-09-24 18:38:50,0.009s,NOT_RUN
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:38:50,2019-09-24 18:38:50,0.008s,NOT_RUN
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Rightmonth""), ""aug"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:38:50,2019-09-24 18:38:50,0.006s,NOT_RUN
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:38:50,2019-09-24 18:38:50,0.005s,NOT_RUN
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Rightyear""), ""2019"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:38:50,2019-09-24 18:38:50,0.005s,NOT_RUN
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:38:50,2019-09-24 18:38:50,0.002s,NOT_RUN
+"click(findTestObject(""Actpol_Scripts/Date/Right side/4th""))",Chrome 77.0.3865.90,,,2019-09-24 18:38:50,2019-09-24 18:38:50,0.008s,NOT_RUN
+delay(3),Chrome 77.0.3865.90,,,2019-09-24 18:38:50,2019-09-24 18:38:50,0.005s,NOT_RUN
+"selectOptionByIndex(findTestObject(""Actpol_Scripts/Opsporing/MBES18/7 BEZITTINGEN_BAGAGE/Vlucht""), ""1"")",Chrome 77.0.3865.90,,,2019-09-24 18:38:50,2019-09-24 18:38:50,0.004s,NOT_RUN
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:38:50,2019-09-24 18:38:51,1.007s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/7 BEZITTINGEN_BAGAGE/Bestemming""), ""a"")",Chrome 77.0.3865.90,,,2019-09-24 18:38:51,2019-09-24 18:38:52,0.666s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:38:52,2019-09-24 18:38:54,2.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/7 BEZITTINGEN_BAGAGE/Bestemming lb""))",Chrome 77.0.3865.90,,,2019-09-24 18:38:54,2019-09-24 18:38:54,0.700s,PASSED
+delay(4),Chrome 77.0.3865.90,,,2019-09-24 18:38:54,2019-09-24 18:38:58,4.007s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/7 BEZITTINGEN_BAGAGE/Ingenomen n goederen ja""))",Chrome 77.0.3865.90,,,2019-09-24 18:38:58,2019-09-24 18:38:59,0.600s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:38:59,2019-09-24 18:39:00,1.006s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/7 BEZITTINGEN_BAGAGE/Toelichting(preciosa)""), ""Testing : Bedrag en valuta"")",Chrome 77.0.3865.90,,,2019-09-24 18:39:00,2019-09-24 18:39:01,0.796s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:39:01,2019-09-24 18:39:02,1.004s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/7 BEZITTINGEN_BAGAGE/Koffers ja""))",Chrome 77.0.3865.90,,,2019-09-24 18:39:02,2019-09-24 18:39:03,0.685s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:39:03,2019-09-24 18:39:04,1.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/7 BEZITTINGEN_BAGAGE/Tasen ja""))",Chrome 77.0.3865.90,,,2019-09-24 18:39:04,2019-09-24 18:39:04,0.611s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:39:04,2019-09-24 18:39:05,1.003s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/7 BEZITTINGEN_BAGAGE/Dozen""))",Chrome 77.0.3865.90,,,2019-09-24 18:39:05,2019-09-24 18:39:06,0.615s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:39:06,2019-09-24 18:39:07,1.004s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/7 BEZITTINGEN_BAGAGE/Reis ja""))",Chrome 77.0.3865.90,,,2019-09-24 18:39:07,2019-09-24 18:39:07,0.611s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:39:07,2019-09-24 18:39:08,1.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/MBSC SAVE""))",Chrome 77.0.3865.90,,,2019-09-24 18:39:08,2019-09-24 18:39:09,0.626s,PASSED
+,,,,,,,
+Test Cases/JIRA Tasks/Release 6.6/ACTPOL-566,Chrome 77.0.3865.90,"Description:
+It should be possible to create documents related to this Vreemdeling.
+
+Solution:
+create a tab Document with the functionality to fetch information of all these MBES18 tabs and records.
+This in done in all rol/proces and also in Arrestanten module.
+
+Testplan:
+Step 1: Go to Opsporing - MBES18
+Step 2: Enter a new record in MBES18 module, fill in the required fields and click save.
+Step 3: Go to tab Documenten and generate a document
+Step 4: This document should contain the same values in the MBES18 record
+
+Navigation:
+Opsporing - MBES18 -Tab Documenten",ACTPOL-566,2019-09-24 18:39:12,2019-09-24 18:39:52,39.936s,FAILED
+"callTestCase(findTestCase(""main/Actpol_Login_testenv""), [:], STOP_ON_FAILURE)",Chrome 77.0.3865.90,,,2019-09-24 18:39:12,2019-09-24 18:39:36,23.485s,PASSED
+delay(6),Chrome 77.0.3865.90,,,2019-09-24 18:39:36,2019-09-24 18:39:42,6.006s,PASSED
+"mouseOver(findTestObject(""Actpol_Scripts/Menu navigation/Generiek/Generiek""))",Chrome 77.0.3865.90,Mouse over to Generic tab,,2019-09-24 18:39:42,2019-09-24 18:39:42,0.351s,PASSED
+delay(4),Chrome 77.0.3865.90,,,2019-09-24 18:39:42,2019-09-24 18:39:46,4.010s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/MBES18 TAB""))",Chrome 77.0.3865.90,,,2019-09-24 18:39:46,2019-09-24 18:39:46,0.442s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:39:46,2019-09-24 18:39:47,1.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/8 Documenten/edit default mbes 18""))",Chrome 77.0.3865.90,,,2019-09-24 18:39:47,2019-09-24 18:39:49,2.015s,FAILED
+,,,,,,,
+Test Cases/JIRA Tasks/Release 6.6/ACTPOL-569,Chrome 77.0.3865.90,"Description:
+Possibility to search in MBES18 module (left column).
+
+Solution:
+Create in the MBES18 module posibility to search on Datum incident, Bijzonderheden, Voornaam, Achternaam and Geboortedatum.
+
+Testplan:
+Step 1: Go to Opsporing - MBES18
+Step 2: Select a voornaam that is visible in the grid.
+Step 3: enter this voornaam in the left column in field voornaam and click filter.
+Step 4: All record where this voornaam is entered should show in the search results.
+
+Navigation:
+Opsporing - MBES18",ACTPOL-569,2019-09-24 18:39:52,2019-09-24 18:41:11,1m - 19.784s,FAILED
+"callTestCase(findTestCase(""main/Actpol_Login_testenv""), [:], STOP_ON_FAILURE)",Chrome 77.0.3865.90,,,2019-09-24 18:39:52,2019-09-24 18:40:13,20.770s,PASSED
+delay(6),Chrome 77.0.3865.90,,,2019-09-24 18:40:13,2019-09-24 18:40:19,6.005s,PASSED
+"mouseOver(findTestObject(""Actpol_Scripts/Menu navigation/Generiek/Generiek""))",Chrome 77.0.3865.90,Mouse over to Generic tab,,2019-09-24 18:40:19,2019-09-24 18:40:20,0.502s,PASSED
+delay(4),Chrome 77.0.3865.90,,,2019-09-24 18:40:20,2019-09-24 18:40:24,4.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/MBES18 TAB""))",Chrome 77.0.3865.90,,,2019-09-24 18:40:24,2019-09-24 18:40:24,0.379s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:40:24,2019-09-24 18:40:25,1.006s,PASSED
+"mouseOver(findTestObject(""Actpol_Scripts/Menu navigation/Autorisatie/Autorisatie""))",Chrome 77.0.3865.90,Mouse over to Generic tab,,2019-09-24 18:40:25,2019-09-24 18:40:25,0.373s,PASSED
+"comment(""Adding all feilds of MBES18 "")",Chrome 77.0.3865.90,,,2019-09-24 18:40:25,2019-09-24 18:40:25,0.007s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:40:25,2019-09-24 18:40:27,2.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Datum Incident Calender icon""))",Chrome 77.0.3865.90,,,2019-09-24 18:40:27,2019-09-24 18:40:28,0.803s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:40:28,2019-09-24 18:40:30,2.011s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Leftmonth""), ""sep"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:40:30,2019-09-24 18:40:31,0.440s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:40:31,2019-09-24 18:40:32,1.006s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Leftyear""), ""2019"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:40:32,2019-09-24 18:40:32,0.439s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:40:32,2019-09-24 18:40:33,1.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Date/14 th""))",Chrome 77.0.3865.90,,,2019-09-24 18:40:33,2019-09-24 18:40:34,0.535s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:40:34,2019-09-24 18:40:35,1.007s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Organisatie""), Bijzonderheden, false)",Chrome 77.0.3865.90,,,2019-09-24 18:40:35,2019-09-24 18:40:35,0.700s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:40:35,2019-09-24 18:40:36,1.006s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Voornaam""), Voornaam)",Chrome 77.0.3865.90,,,2019-09-24 18:40:36,2019-09-24 18:40:37,0.616s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:40:37,2019-09-24 18:40:38,1.006s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Achternaam""), Achternaam)",Chrome 77.0.3865.90,,,2019-09-24 18:40:38,2019-09-24 18:40:39,0.595s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:40:39,2019-09-24 18:40:40,1.005s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Geboortedatum textbox""), Geboortedatum)",Chrome 77.0.3865.90,,,2019-09-24 18:40:40,2019-09-24 18:40:40,0.006s,NOT_RUN
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Geboortedatum Calender icon""))",Chrome 77.0.3865.90,,,2019-09-24 18:40:40,2019-09-24 18:40:40,0.770s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:40:40,2019-09-24 18:40:42,2.005s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Leftmonth""), ""jan"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:40:42,2019-09-24 18:40:43,0.557s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:40:43,2019-09-24 18:40:43,0.002s,NOT_RUN
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Leftyear""), ""2009"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:40:43,2019-09-24 18:40:43,0.004s,NOT_RUN
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:40:43,2019-09-24 18:40:43,0.002s,NOT_RUN
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Leftyear""), ""1999"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:40:43,2019-09-24 18:40:43,0.002s,NOT_RUN
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:40:43,2019-09-24 18:40:43,0.002s,NOT_RUN
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Leftyear""), ""1989"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:40:43,2019-09-24 18:40:43,0.004s,NOT_RUN
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:40:43,2019-09-24 18:40:43,0.002s,NOT_RUN
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Leftyear""), ""1985"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:40:43,2019-09-24 18:40:43,0.003s,NOT_RUN
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:40:43,2019-09-24 18:40:44,1.004s,PASSED
+"click(findTestObject(""Actpol_Scripts/Date/26th""))",Chrome 77.0.3865.90,,,2019-09-24 18:40:44,2019-09-24 18:40:45,0.613s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:40:45,2019-09-24 18:40:47,2.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Filter""))",Chrome 77.0.3865.90,,,2019-09-24 18:40:47,2019-09-24 18:40:47,0.640s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:40:47,2019-09-24 18:40:48,1.005s,PASSED
+"scrollToPosition(10, 7)",Chrome 77.0.3865.90,,,2019-09-24 18:40:48,2019-09-24 18:40:48,0.057s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:40:48,2019-09-24 18:40:49,1.005s,PASSED
+log = new com.kms.katalon.core.logging.KeywordLogger(),Chrome 77.0.3865.90,,,2019-09-24 18:40:49,2019-09-24 18:40:49,0.002s,PASSED
+"log.logInfo(getText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Datum Incident get text"")))",Chrome 77.0.3865.90,,,2019-09-24 18:40:49,2019-09-24 18:40:50,0.451s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:40:50,2019-09-24 18:40:51,1.005s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/resetform""))",Chrome 77.0.3865.90,,,2019-09-24 18:40:51,2019-09-24 18:40:51,0.651s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:40:51,2019-09-24 18:40:52,1.005s,PASSED
+"comment(""Checking combinations Search module"")",Chrome 77.0.3865.90,,,2019-09-24 18:40:52,2019-09-24 18:40:52,0.006s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:40:52,2019-09-24 18:40:53,1.005s,PASSED
+"comment(""Checking Datum Incident  and Bijzonderheden"")",Chrome 77.0.3865.90,,,2019-09-24 18:40:53,2019-09-24 18:40:53,0.004s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Datum Incident Calender icon""))",Chrome 77.0.3865.90,,,2019-09-24 18:40:53,2019-09-24 18:40:54,0.631s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:40:54,2019-09-24 18:40:56,2.007s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Leftmonth""), ""sep"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:40:56,2019-09-24 18:40:57,0.439s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:40:57,2019-09-24 18:40:58,1.006s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Leftyear""), ""2019"", false)",Chrome 77.0.3865.90,,,2019-09-24 18:40:58,2019-09-24 18:40:58,0.466s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:40:58,2019-09-24 18:40:59,1.006s,PASSED
+"click(findTestObject(""Actpol_Scripts/Date/14 th""))",Chrome 77.0.3865.90,,,2019-09-24 18:40:59,2019-09-24 18:41:05,5.590s,PASSED
+delay(1),Chrome 77.0.3865.90,,,2019-09-24 18:41:05,2019-09-24 18:41:06,1.005s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Organisatie""), Bijzonderheden, false)",Chrome 77.0.3865.90,,,2019-09-24 18:41:06,2019-09-24 18:41:06,0.503s,PASSED
+delay(2),Chrome 77.0.3865.90,,,2019-09-24 18:41:06,2019-09-24 18:41:08,2.004s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Filter""))",Chrome 77.0.3865.90,,,2019-09-24 18:41:08,2019-09-24 18:41:09,1.048s,FAILED

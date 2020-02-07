@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>I am seeing two closing buttons and both are working properly. No need two buttons for closing.
+
+Test plan::
+Step 1: Go to Generiek: Geweld / Disciplinaire Rapport Select optional user
+Step 2: Click View icon
+Step 3: It’s showing two closed options</description>
+   <name>ACTPOL-519</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>b16af9d8-638c-4592-93aa-1320968fcba9</testCaseGuid>
+</TestCaseEntity>

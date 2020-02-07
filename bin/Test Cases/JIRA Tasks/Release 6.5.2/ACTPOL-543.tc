@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Description:
+Nothing is happening when user click on &quot;PDF&quot; icon.
+Solution:
+PDF report should generate.
+Test plan:
+Step 1: Go to Opsporing: Taktiek.
+Step 2: Go to Case Screening Uitgedeeld.
+Step 3: Click Pdf File.
+Navigation:
+Opsporing: Taktiek</description>
+   <name>ACTPOL-543</name>
+   <tag>ACTPOL-543</tag>
+   <comment></comment>
+   <testCaseGuid>79c66ecb-4ad4-4693-b720-6a07fba4466c</testCaseGuid>
+</TestCaseEntity>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Step 1: Algemene Zoekopdracht - Select Vaartuig
+Step 2: Set text Next Poc
+Step 3: Search results is an Next Poc</description>
+   <name>Algemene Zoekopdracht - Select type Vaartuig-Next Poc(Next Poc-1)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>77dbc482-b02d-4301-adb6-1bef2e9baed4</testCaseGuid>
+</TestCaseEntity>

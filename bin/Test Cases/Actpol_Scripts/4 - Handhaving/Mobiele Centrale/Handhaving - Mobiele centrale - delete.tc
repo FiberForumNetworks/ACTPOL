@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Enter a new mobiele centrale and fill all possible fields and tabs</description>
+   <name>Handhaving - Mobiele centrale - delete</name>
+   <tag>Handhaving</tag>
+   <comment></comment>
+   <testCaseGuid>5f2f3c8f-8f42-4ec9-ad78-76a92f5ca0f0</testCaseGuid>
+</TestCaseEntity>

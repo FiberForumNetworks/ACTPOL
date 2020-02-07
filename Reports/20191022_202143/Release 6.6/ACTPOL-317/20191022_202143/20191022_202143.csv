@@ -1,0 +1,45 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ACTPOL-317,Chrome 77.0.3865.120,#New Tab Maatregelen Bewaring vreemdeling,,2019-10-22 20:21:48,2019-10-22 20:23:48,1m - 59.666s,INCOMPLETE
+,,,,,,,
+Test Cases/JIRA Tasks/Release 6.6/ACTPOL-317,Chrome 77.0.3865.120,"Description
+For the Vremdeling module phase 2 there are some chanes required.
+To have additional field to create complete documents and to register Bewaring.
+
+Solution
+Add in the Vreemdeling rol/process, a new tab called ""Maatregelen bewaring"". This should be linked to the role process ""bekende aangehouden verdachte"".
+This should be stored in a new table that will linked to the table series KPNAPF04xx.
+This should be a new table but there should be an additional column to differentiate between ""Bekende aangehouden verdachte"" records and ""Maatregelen bewaring"" records in query.
+
+For detailled description and screenshots, check attachment.
+
+Testplan
+Step 1: Go to Generiek - Assistentie.
+Step 2: Go to Rol/proces tab and add a new Vreemdeling proces
+Step 3: Fill in mandatory fields and save
+Step 4: Go to tab Maatregelen Bewaring and fill in the mandatory fields.
+Step 5: Save record.
+
+Navigation
+Generiek - Asstentie - rol/proces - Vreemdeling - tab Weigering",ACTPOL-317,2019-10-22 20:21:48,2019-10-22 20:23:48,1m - 59.143s,PASSED
+"callTestCase(findTestCase(""main/Actpol_Login_testenv""), [:], STOP_ON_FAILURE)",Chrome 77.0.3865.120,,,2019-10-22 20:21:50,2019-10-22 20:22:15,25.442s,PASSED
+"markPassed(""PASS::Actpol web application login successfully"")",Chrome 77.0.3865.120,,,2019-10-22 20:22:15,2019-10-22 20:22:15,0.027s,PASSED
+log = new com.kms.katalon.core.logging.KeywordLogger(),Chrome 77.0.3865.120,,,2019-10-22 20:22:15,2019-10-22 20:22:15,0.003s,PASSED
+"selectOptionByValue(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie""), ""assist"", false)",Chrome 77.0.3865.120,,,2019-10-22 20:22:15,2019-10-22 20:22:19,3.693s,PASSED
+"setText(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Assistentie Set text""), Generiekassistenite_Module)",Chrome 77.0.3865.120,,,2019-10-22 20:22:19,2019-10-22 20:22:20,1.129s,PASSED
+delay(2),Chrome 77.0.3865.120,,,2019-10-22 20:22:20,2019-10-22 20:22:22,2.007s,PASSED
+"click(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Zoeken new""))",Chrome 77.0.3865.120,,,2019-10-22 20:22:22,2019-10-22 20:22:23,0.774s,PASSED
+delay(8),Chrome 77.0.3865.120,,,2019-10-22 20:22:23,2019-10-22 20:22:31,8.008s,PASSED
+AssistentiedynamicId = Generiekassistenite_Module,Chrome 77.0.3865.120,Remember first set default assistentieid after run the script,,2019-10-22 20:22:31,2019-10-22 20:22:31,0.003s,PASSED
+"Assistentiexpath = ""//*[text()="""" + AssistentiedynamicId + """"]/preceding-sibling::td/a[2]""",Chrome 77.0.3865.120,,,2019-10-22 20:22:31,2019-10-22 20:22:31,0.002s,PASSED
+"to = findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/View Assistentie"")",Chrome 77.0.3865.120,,,2019-10-22 20:22:31,2019-10-22 20:22:31,0.379s,PASSED
+"to.addProperty(""xpath"", EQUALS, Assistentiexpath)",Chrome 77.0.3865.120,,,2019-10-22 20:22:31,2019-10-22 20:22:31,0.041s,PASSED
+println(to),Chrome 77.0.3865.120,,,2019-10-22 20:22:31,2019-10-22 20:22:31,0.005s,PASSED
+click(to),Chrome 77.0.3865.120,,,2019-10-22 20:22:31,2019-10-22 20:22:32,0.607s,PASSED
+"click(findTestObject(""Actpol_Scripts/General Search/Algemene Zoekopdracht -test env/Confirmeren""))",Chrome 77.0.3865.120,,,2019-10-22 20:22:32,2019-10-22 20:22:33,0.850s,PASSED
+delay(12),Chrome 77.0.3865.120,,,2019-10-22 20:22:33,2019-10-22 20:22:45,12.009s,PASSED
+"click(findTestObject(""Actpol_Scripts/Generiek/Assistentie/Click roll process""))",Chrome 77.0.3865.120,,,2019-10-22 20:22:45,2019-10-22 20:22:48,2.787s,PASSED
+delay(2),Chrome 77.0.3865.120,,,2019-10-22 20:22:48,2019-10-22 20:22:50,2.006s,PASSED
+"Vreemdelingverify = verifyElementVisible(findTestObject(""Object Repository/JIRA/A Relese 6.6/ACTPOL-317/Vreemdeling verify""), OPTIONAL)",Chrome 77.0.3865.120,,,2019-10-22 20:22:50,2019-10-22 20:22:50,0.548s,PASSED
+println(Vreemdelingverify),Chrome 77.0.3865.120,,,2019-10-22 20:22:50,2019-10-22 20:22:50,0.003s,PASSED
+"verify2 = ""true""",Chrome 77.0.3865.120,,,2019-10-22 20:22:50,2019-10-22 20:22:50,0.009s,PASSED
+if (Vreemdelingverify == verify2),Chrome 77.0.3865.120,,,2019-10-22 20:22:50,2019-10-22 20:23:45,55.042s,PASSED

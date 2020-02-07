@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>Grid not showing data on Vaartuig
+
+Test Plan::
+
+Step 1: Go to Home: Algemene Zoekopdracht Select Type Vaartuig
+Step 2: Go to Next poc 
+Step 2: Click filter</description>
+   <name>ACTPOL-529</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a9f41f30-a1b3-4171-b10f-4159d74f70d9</testCaseGuid>
+</TestCaseEntity>

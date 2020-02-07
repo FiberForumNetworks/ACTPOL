@@ -1,0 +1,128 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+ACTPOL-569,Chrome 76.0.3809.132,#MBES18 module,,2019-09-10 21:17:24,2019-09-10 21:20:42,3m - 17.849s,INCOMPLETE
+,,,,,,,
+Test Cases/JIRA Tasks/Release 6.6/ACTPOL-569,Chrome 76.0.3809.132,"Description:
+Possibility to search in MBES18 module (left column).
+
+Solution:
+Create in the MBES18 module posibility to search on Datum incident, Bijzonderheden, Voornaam, Achternaam and Geboortedatum.
+
+Testplan:
+Step 1: Go to Opsporing - MBES18
+Step 2: Select a voornaam that is visible in the grid.
+Step 3: enter this voornaam in the left column in field voornaam and click filter.
+Step 4: All record where this voornaam is entered should show in the search results.
+
+Navigation:
+Opsporing - MBES18",ACTPOL-569,2019-09-10 21:17:25,2019-09-10 21:20:42,3m - 16.834s,PASSED
+"callTestCase(findTestCase(""main/Actpol_Login_testenv""), [:], STOP_ON_FAILURE)",Chrome 76.0.3809.132,,,2019-09-10 21:17:28,2019-09-10 21:18:25,57.558s,PASSED
+"mouseOver(findTestObject(""Actpol_Scripts/Menu navigation/Opsporing/Opsporing""))",Chrome 76.0.3809.132,,,2019-09-10 21:18:25,2019-09-10 21:18:44,18.459s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:18:44,2019-09-10 21:18:45,1.024s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/MBES18 TAB""))",Chrome 76.0.3809.132,,,2019-09-10 21:18:45,2019-09-10 21:18:49,4.277s,PASSED
+"comment(""Adding all feilds of MBES18 "")",Chrome 76.0.3809.132,,,2019-09-10 21:18:49,2019-09-10 21:18:49,0.025s,PASSED
+delay(2),Chrome 76.0.3809.132,,,2019-09-10 21:18:49,2019-09-10 21:18:51,2.031s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Datum Incident Calender icon""))",Chrome 76.0.3809.132,,,2019-09-10 21:18:51,2019-09-10 21:18:53,1.730s,PASSED
+delay(2),Chrome 76.0.3809.132,,,2019-09-10 21:18:53,2019-09-10 21:18:55,2.009s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Leftmonth""), ""sep"", false)",Chrome 76.0.3809.132,,,2019-09-10 21:18:55,2019-09-10 21:18:56,0.799s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:18:56,2019-09-10 21:18:57,1.009s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Leftyear""), ""2019"", false)",Chrome 76.0.3809.132,,,2019-09-10 21:18:57,2019-09-10 21:18:58,0.815s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:18:58,2019-09-10 21:18:59,1.008s,PASSED
+"click(findTestObject(""Actpol_Scripts/Date/14 th""))",Chrome 76.0.3809.132,,,2019-09-10 21:18:59,2019-09-10 21:19:00,1.007s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:19:00,2019-09-10 21:19:01,1.010s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Bijzonderheden""), Bijzonderheden)",Chrome 76.0.3809.132,,,2019-09-10 21:19:01,2019-09-10 21:19:02,1.062s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:19:02,2019-09-10 21:19:03,1.007s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Voornaam""), Voornaam)",Chrome 76.0.3809.132,,,2019-09-10 21:19:03,2019-09-10 21:19:04,1.105s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:19:04,2019-09-10 21:19:05,1.015s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Achternaam""), Achternaam)",Chrome 76.0.3809.132,,,2019-09-10 21:19:05,2019-09-10 21:19:06,0.930s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:19:06,2019-09-10 21:19:07,1.006s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Geboortedatum textbox""), Geboortedatum)",Chrome 76.0.3809.132,,,2019-09-10 21:19:07,2019-09-10 21:19:08,1.035s,PASSED
+delay(2),Chrome 76.0.3809.132,,,2019-09-10 21:19:08,2019-09-10 21:19:10,2.008s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Filter""))",Chrome 76.0.3809.132,,,2019-09-10 21:19:10,2019-09-10 21:19:12,2.338s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:19:12,2019-09-10 21:19:13,1.005s,PASSED
+"scrollToPosition(10, 7)",Chrome 76.0.3809.132,,,2019-09-10 21:19:13,2019-09-10 21:19:13,0.069s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:19:13,2019-09-10 21:19:14,1.007s,PASSED
+log = new com.kms.katalon.core.logging.KeywordLogger(),Chrome 76.0.3809.132,,,2019-09-10 21:19:14,2019-09-10 21:19:14,0.005s,PASSED
+"log.logInfo(getText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Datum Incident get text"")))",Chrome 76.0.3809.132,,,2019-09-10 21:19:14,2019-09-10 21:19:15,1.005s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:19:15,2019-09-10 21:19:16,1.015s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/resetform""))",Chrome 76.0.3809.132,,,2019-09-10 21:19:16,2019-09-10 21:19:18,2.159s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:19:18,2019-09-10 21:19:19,1.008s,PASSED
+"comment(""Checking combinations Search module"")",Chrome 76.0.3809.132,,,2019-09-10 21:19:19,2019-09-10 21:19:19,0.009s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:19:19,2019-09-10 21:19:20,1.007s,PASSED
+"comment(""Checking Datum Incident  and Bijzonderheden"")",Chrome 76.0.3809.132,,,2019-09-10 21:19:20,2019-09-10 21:19:20,0.007s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Datum Incident Calender icon""))",Chrome 76.0.3809.132,,,2019-09-10 21:19:20,2019-09-10 21:19:21,0.724s,PASSED
+delay(2),Chrome 76.0.3809.132,,,2019-09-10 21:19:21,2019-09-10 21:19:23,2.029s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Leftmonth""), ""sep"", false)",Chrome 76.0.3809.132,,,2019-09-10 21:19:23,2019-09-10 21:19:24,0.551s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:19:24,2019-09-10 21:19:25,1.007s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Leftyear""), ""2019"", false)",Chrome 76.0.3809.132,,,2019-09-10 21:19:25,2019-09-10 21:19:25,0.559s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:19:25,2019-09-10 21:19:26,1.008s,PASSED
+"click(findTestObject(""Actpol_Scripts/Date/14 th""))",Chrome 76.0.3809.132,,,2019-09-10 21:19:26,2019-09-10 21:19:27,0.758s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:19:27,2019-09-10 21:19:28,1.011s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Bijzonderheden""), Bijzonderheden)",Chrome 76.0.3809.132,,,2019-09-10 21:19:28,2019-09-10 21:19:29,0.557s,PASSED
+delay(2),Chrome 76.0.3809.132,,,2019-09-10 21:19:29,2019-09-10 21:19:31,2.008s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Filter""))",Chrome 76.0.3809.132,,,2019-09-10 21:19:31,2019-09-10 21:19:33,2.361s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:19:33,2019-09-10 21:19:34,1.010s,PASSED
+"scrollToPosition(10, 7)",Chrome 76.0.3809.132,,,2019-09-10 21:19:34,2019-09-10 21:19:34,0.042s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:19:34,2019-09-10 21:19:35,1.012s,PASSED
+"log.logInfo(getText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Datum Incident get text"")))",Chrome 76.0.3809.132,,,2019-09-10 21:19:35,2019-09-10 21:19:36,0.594s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:19:36,2019-09-10 21:19:37,1.005s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:19:37,2019-09-10 21:19:38,1.008s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/resetform""))",Chrome 76.0.3809.132,,,2019-09-10 21:19:38,2019-09-10 21:19:40,2.040s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:19:40,2019-09-10 21:19:41,1.013s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:19:41,2019-09-10 21:19:42,1.011s,PASSED
+"comment(""Checking Datum Incident  and Voornaam"")",Chrome 76.0.3809.132,,,2019-09-10 21:19:42,2019-09-10 21:19:42,0.006s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:19:42,2019-09-10 21:19:43,1.008s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Datum Incident Calender icon""))",Chrome 76.0.3809.132,,,2019-09-10 21:19:43,2019-09-10 21:19:44,0.702s,PASSED
+delay(2),Chrome 76.0.3809.132,,,2019-09-10 21:19:44,2019-09-10 21:19:46,2.008s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Leftmonth""), ""sep"", false)",Chrome 76.0.3809.132,,,2019-09-10 21:19:46,2019-09-10 21:19:46,0.674s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:19:46,2019-09-10 21:19:47,1.008s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Leftyear""), ""2019"", false)",Chrome 76.0.3809.132,,,2019-09-10 21:19:47,2019-09-10 21:19:48,0.682s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:19:48,2019-09-10 21:19:49,1.007s,PASSED
+"click(findTestObject(""Actpol_Scripts/Date/14 th""))",Chrome 76.0.3809.132,,,2019-09-10 21:19:49,2019-09-10 21:19:50,0.677s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:19:50,2019-09-10 21:19:51,1.016s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Voornaam""), Voornaam)",Chrome 76.0.3809.132,,,2019-09-10 21:19:51,2019-09-10 21:19:51,0.709s,PASSED
+delay(2),Chrome 76.0.3809.132,,,2019-09-10 21:19:51,2019-09-10 21:19:53,2.007s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Filter""))",Chrome 76.0.3809.132,,,2019-09-10 21:19:53,2019-09-10 21:19:55,2.125s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:19:55,2019-09-10 21:19:56,1.008s,PASSED
+"scrollToPosition(10, 7)",Chrome 76.0.3809.132,,,2019-09-10 21:19:56,2019-09-10 21:19:56,0.028s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:19:56,2019-09-10 21:19:57,1.007s,PASSED
+"log.logInfo(getText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Datum Incident get text"")))",Chrome 76.0.3809.132,,,2019-09-10 21:19:57,2019-09-10 21:19:58,0.406s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:19:58,2019-09-10 21:19:59,1.008s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/resetform""))",Chrome 76.0.3809.132,,,2019-09-10 21:19:59,2019-09-10 21:20:00,1.389s,PASSED
+"comment(""Checking Datum Incident  and Achternaam"")",Chrome 76.0.3809.132,,,2019-09-10 21:20:00,2019-09-10 21:20:00,0.011s,PASSED
+delay(2),Chrome 76.0.3809.132,,,2019-09-10 21:20:00,2019-09-10 21:20:02,2.015s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Datum Incident Calender icon""))",Chrome 76.0.3809.132,,,2019-09-10 21:20:02,2019-09-10 21:20:03,0.679s,PASSED
+delay(2),Chrome 76.0.3809.132,,,2019-09-10 21:20:03,2019-09-10 21:20:05,2.009s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Leftmonth""), ""sep"", false)",Chrome 76.0.3809.132,,,2019-09-10 21:20:05,2019-09-10 21:20:06,0.509s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:20:06,2019-09-10 21:20:07,1.007s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Leftyear""), ""2019"", false)",Chrome 76.0.3809.132,,,2019-09-10 21:20:07,2019-09-10 21:20:07,0.502s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:20:07,2019-09-10 21:20:08,1.008s,PASSED
+"click(findTestObject(""Actpol_Scripts/Date/14 th""))",Chrome 76.0.3809.132,,,2019-09-10 21:20:08,2019-09-10 21:20:09,0.640s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:20:09,2019-09-10 21:20:10,1.011s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Achternaam""), Achternaam)",Chrome 76.0.3809.132,,,2019-09-10 21:20:10,2019-09-10 21:20:10,0.651s,PASSED
+delay(2),Chrome 76.0.3809.132,,,2019-09-10 21:20:10,2019-09-10 21:20:12,2.008s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Filter""))",Chrome 76.0.3809.132,,,2019-09-10 21:20:12,2019-09-10 21:20:15,2.178s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:20:15,2019-09-10 21:20:16,1.008s,PASSED
+"scrollToPosition(10, 7)",Chrome 76.0.3809.132,,,2019-09-10 21:20:16,2019-09-10 21:20:16,0.042s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:20:16,2019-09-10 21:20:17,1.011s,PASSED
+"log.logInfo(getText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Datum Incident get text"")))",Chrome 76.0.3809.132,,,2019-09-10 21:20:17,2019-09-10 21:20:17,0.509s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:20:17,2019-09-10 21:20:18,1.009s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:20:18,2019-09-10 21:20:19,1.011s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/resetform""))",Chrome 76.0.3809.132,,,2019-09-10 21:20:19,2019-09-10 21:20:21,2.175s,PASSED
+"comment(""Checking Datum Incident  and Geboortedatum"")",Chrome 76.0.3809.132,,,2019-09-10 21:20:21,2019-09-10 21:20:21,0.012s,PASSED
+delay(2),Chrome 76.0.3809.132,,,2019-09-10 21:20:21,2019-09-10 21:20:23,2.008s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Datum Incident Calender icon""))",Chrome 76.0.3809.132,,,2019-09-10 21:20:23,2019-09-10 21:20:24,0.531s,PASSED
+delay(2),Chrome 76.0.3809.132,,,2019-09-10 21:20:24,2019-09-10 21:20:26,2.010s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Leftmonth""), ""sep"", false)",Chrome 76.0.3809.132,,,2019-09-10 21:20:26,2019-09-10 21:20:26,0.500s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:20:26,2019-09-10 21:20:27,1.006s,PASSED
+"selectOptionByLabel(findTestObject(""Actpol_Scripts/Monthyear/Leftyear""), ""2019"", false)",Chrome 76.0.3809.132,,,2019-09-10 21:20:27,2019-09-10 21:20:28,0.539s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:20:28,2019-09-10 21:20:29,1.011s,PASSED
+"click(findTestObject(""Actpol_Scripts/Date/14 th""))",Chrome 76.0.3809.132,,,2019-09-10 21:20:29,2019-09-10 21:20:30,0.626s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:20:30,2019-09-10 21:20:31,1.017s,PASSED
+"setText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Geboortedatum textbox""), Geboortedatum)",Chrome 76.0.3809.132,,,2019-09-10 21:20:31,2019-09-10 21:20:31,0.863s,PASSED
+delay(2),Chrome 76.0.3809.132,,,2019-09-10 21:20:31,2019-09-10 21:20:33,2.008s,PASSED
+"click(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Filter""))",Chrome 76.0.3809.132,,,2019-09-10 21:20:33,2019-09-10 21:20:35,1.985s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:20:35,2019-09-10 21:20:36,1.013s,PASSED
+"scrollToPosition(10, 7)",Chrome 76.0.3809.132,,,2019-09-10 21:20:36,2019-09-10 21:20:36,0.028s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:20:36,2019-09-10 21:20:37,1.006s,PASSED
+"log.logInfo(getText(findTestObject(""Actpol_Scripts/Opsporing/MBES18/10 MBES search module/Datum Incident get text"")))",Chrome 76.0.3809.132,,,2019-09-10 21:20:37,2019-09-10 21:20:38,0.436s,PASSED
+delay(1),Chrome 76.0.3809.132,,,2019-09-10 21:20:38,2019-09-10 21:20:39,1.008s,PASSED
